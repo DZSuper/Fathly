@@ -11,20 +11,50 @@
   var _aktifUlama    = 'semua'; // filter ulama aktif
 
   var TEMA_LIST = [
-    { id: 'semua',  label: 'Semua',          icon: '📋' },
-    { id: 'tauhid', label: 'Tauhid & Aqidah',icon: '☀️' },
-    { id: 'hati',   label: 'Hati & Jiwa',    icon: '🫀' },
-    { id: 'ilmu',   label: 'Ilmu & Belajar', icon: '📚' },
-    { id: 'taubat', label: 'Taubat',          icon: '🌿' },
-    { id: 'quran',  label: 'Al-Qur\'an',     icon: '📖' },
-    { id: 'akhlak', label: 'Akhlak & Adab',  icon: '✨' },
-    { id: 'sabar',  label: 'Sabar',           icon: '⚓' },
-    { id: 'ibadah', label: 'Ibadah',          icon: '🕌' },
+    { id: 'semua',   label: 'Semua',           icon: '📋' },
+    { id: 'tauhid',  label: 'Tauhid & Aqidah', icon: '☀️' },
+    { id: 'hati',    label: 'Hati & Jiwa',     icon: '🫀' },
+    { id: 'ilmu',    label: 'Ilmu & Belajar',  icon: '📚' },
+    { id: 'sunnah',  label: 'Sunnah & Bid\'ah',icon: '🔆' },
+    { id: 'ibadah',  label: 'Ibadah',           icon: '🕌' },
+    { id: 'akhlak',  label: 'Akhlak & Adab',   icon: '✨' },
+    { id: 'ikhlas',  label: 'Ikhlas & Niat',   icon: '💎' },
+    { id: 'taubat',  label: 'Taubat',           icon: '🌿' },
+    { id: 'sabar',   label: 'Sabar',            icon: '⚓' },
+    { id: 'zuhud',   label: 'Zuhud & Dunia',   icon: '🍃' },
+    { id: 'nasihat', label: 'Nasihat',          icon: '🗒️' },
+    { id: 'quran',   label: 'Al-Qur\'an',      icon: '📖' },
+    { id: 'akhirat', label: 'Akhirat & Maut',  icon: '🌙' },
+    { id: 'doa',     label: 'Doa & Dzikir',    icon: '🤲' },
+    { id: 'syukur',  label: 'Syukur',           icon: '🌟' },
+    { id: 'tawakal', label: 'Tawakkal',         icon: '🏹' },
   ];
 
   // Nama tema untuk label badge di entry
   var TEMA_LABEL_MAP = {};
   TEMA_LIST.forEach(function (t) { TEMA_LABEL_MAP[t.id] = t.label; });
+
+  // ── GUARD: cegah swipe horizontal child naik ke tab-switcher ──
+  // Dipasang pada elemen yang punya overflow-x scroll agar swipe
+  // pada elemen tersebut tidak menutup/membuka tab lain.
+  function attachHScrollGuard(el) {
+    if (!el) return;
+    var gStartX = 0, gStartY = 0, gIsH = false;
+    el.addEventListener('touchstart', function (e) {
+      gStartX = e.touches[0].clientX;
+      gStartY = e.touches[0].clientY;
+      gIsH    = false;
+    }, { passive: true });
+    el.addEventListener('touchmove', function (e) {
+      var dx = Math.abs(e.touches[0].clientX - gStartX);
+      var dy = Math.abs(e.touches[0].clientY - gStartY);
+      if (!gIsH && dx > 4) gIsH = dx > dy;
+      if (gIsH) e.stopPropagation();
+    }, { passive: true });
+    el.addEventListener('touchend', function (e) {
+      if (gIsH) e.stopPropagation();
+    }, { passive: true });
+  }
 
   // ── HELPERS ─────────────────────────────────
   function esc(str) {
@@ -113,6 +143,8 @@
     });
 
     sidebar.innerHTML = html;
+    // Pasang guard agar sidebar tidak memicu swipe tab
+    attachHScrollGuard(sidebar);
 
     sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -175,6 +207,8 @@
         if (main) main.scrollTop = 0;
       });
     });
+    // Guard: geser chips tidak memicu swipe tab
+    attachHScrollGuard(chipsEl);
   }
 
   // ── FILTER HELPER ────────────────────────────
