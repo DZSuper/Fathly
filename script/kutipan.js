@@ -280,6 +280,10 @@
 
     _activeUlamaTab = 'bio';
 
+    // Sembunyikan hamburger agar tidak menimpa tombol Kembali
+    var hbBtn = document.getElementById('hamburgerBtn');
+    if (hbBtn) hbBtn.style.display = 'none';
+
     var milik = _kutipanData.kutipan.filter(function (k) { return k.ulama === ulamaId; });
 
     // Bangun konten panel
@@ -304,7 +308,7 @@
       // Tab bar
       '<div class="kup-tabs">' +
         '<button class="kup-tab-btn active" data-tab="bio">Biografi</button>' +
-        '<button class="kup-tab-btn" data-tab="kitab">Karangan (' + u.kitab_karangan.length + ')</button>' +
+        '<button class="kup-tab-btn" data-tab="kitab">Kitab (' + u.kitab_karangan.length + ')</button>' +
         '<button class="kup-tab-btn" data-tab="kutipan">Kutipan (' + milik.length + ')</button>' +
       '</div>';
 
@@ -403,6 +407,9 @@
     var panel = document.getElementById('kutipanUlamaPanel');
     if (panel) panel.classList.remove('show');
     document.body.style.overflow = '';
+    // Tampilkan kembali hamburger
+    var hbBtn = document.getElementById('hamburgerBtn');
+    if (hbBtn) hbBtn.style.display = '';
   }
 
 })();
