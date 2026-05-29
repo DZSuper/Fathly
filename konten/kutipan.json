@@ -1,0 +1,252 @@
+{
+  "ulama": [
+    {
+      "id": "ibnulQayyim",
+      "nama": "Ibnul Qayyim al-Jauziyah",
+      "nama_lengkap": "Syamsuddin Muhammad ibn Abi Bakr ibn Ayyub az-Zur'i al-Hanbali",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Damaskus, 7 Shafar 691 H / 1292 M",
+      "wafat": "13 Rajab 751 H / 1350 M — Damaskus",
+      "bio": "Imam besar Mazhab Hanbali, ahli fiqih, tafsir, hadits, dan ilmu hati. Murid paling setia Ibnu Taimiyah. Dikenal dengan kedalaman pembahasannya tentang perjalanan jiwa menuju Allah dan pembelaan kukuh terhadap Aqidah Salaf.",
+      "guru": [
+        "Syaikhul Islam Ibnu Taimiyah (murid paling setia)",
+        "Syamsuddin al-Maqrizi",
+        "Ibnu Syirazi",
+        "Al-Baha' ibn Qudamah"
+      ],
+      "murid": [
+        "Ibnu Rajab al-Hanbali",
+        "Ibnu Katsir",
+        "Ibnu Abdil Hadi"
+      ],
+      "kitab_karangan": [
+        { "judul": "Madarijus Salikin", "topik": "Ilmu Hati & Suluk" },
+        { "judul": "Ighaatsatul Lahfan", "topik": "Penyakit Hati & Terapinya" },
+        { "judul": "Zaadul Ma'ad", "topik": "Sirah Nabawi & Fiqih" },
+        { "judul": "I'lamul Muwaqqi'in", "topik": "Ushul Fiqih" },
+        { "judul": "Ath-Thuruq al-Hukmiyah", "topik": "Fiqih & Peradilan" },
+        { "judul": "Ar-Ruh", "topik": "Hakikat Ruh & Alam Barzakh" },
+        { "judul": "Hadi al-Arwah", "topik": "Surga & Nikmat Akhirat" },
+        { "judul": "Ash-Shawa'iq al-Mursalah", "topik": "Bantahan Ta'wil Sifat Allah" }
+      ]
+    },
+    {
+      "id": "ibnTaymiyah",
+      "nama": "Ibnu Taimiyah",
+      "nama_lengkap": "Taqiyuddin Ahmad ibn Abdul Halim ibn Abdus Salam ibn Taimiyah al-Harrani al-Hanbali",
+      "kuniyah": "Abul Abbas",
+      "lahir": "Harran (kini wilayah Turki), 10 Rabi'ul Awwal 661 H / 1263 M",
+      "wafat": "20 Dzulqa'dah 728 H / 1328 M — di penjara Benteng Damaskus",
+      "bio": "Syaikhul Islam, mujaddid abad ke-8 H, imam para ulama Sunnah di zamannya. Dikenal karena keberanian menyampaikan kebenaran dan kecerdasan luar biasa. Beliau membela Aqidah Ahlus Sunnah wal Jama'ah dengan pena dan lisan di tengah berbagai ujian dan pemenjaraan.",
+      "guru": [
+        "Syamsuddin al-Maqdisi",
+        "Ibnu Abi al-Yusr",
+        "Al-Munqa al-Balbani",
+        "Ibnu Abi al-Khair az-Zarkasyi"
+      ],
+      "murid": [
+        "Ibnul Qayyim al-Jauziyah",
+        "Ibnu Katsir",
+        "Adz-Dzahabi",
+        "Ibnu Abdil Hadi"
+      ],
+      "kitab_karangan": [
+        { "judul": "Majmu' al-Fatawa (37 jilid)", "topik": "Fatwa & Berbagai Ilmu Agama" },
+        { "judul": "Minhaj as-Sunnah an-Nabawiyah", "topik": "Bantahan terhadap Rafidhah & Mu'tazilah" },
+        { "judul": "Al-Aqidah al-Wasithiyah", "topik": "Aqidah Ahlus Sunnah" },
+        { "judul": "Al-Aqidah al-Hamawiyah", "topik": "Sifat-sifat Allah" },
+        { "judul": "Dar'u Ta'arudh al-'Aql wan Naql", "topik": "Ushul & Kalam" },
+        { "judul": "Iqtidha' ash-Shirath al-Mustaqim", "topik": "Bantahan Bid'ah & Tasyabbuh" },
+        { "judul": "Al-'Ubudiyah", "topik": "Penghambaan kepada Allah" },
+        { "judul": "Al-Furqan bayna Awliyair Rahman wa Awliyaisy Syaithan", "topik": "Kewali-an & Tasawuf" }
+      ]
+    },
+    {
+      "id": "ibnKatsir",
+      "nama": "Ibnu Katsir",
+      "nama_lengkap": "Imaduddin Ismail ibn Umar ibn Katsir al-Quraisyi al-Bushrawi ad-Dimasyqi",
+      "kuniyah": "Abu al-Fida'",
+      "lahir": "Bosra, Suriah, sekitar 701 H / 1301 M",
+      "wafat": "26 Sya'ban 774 H / 1373 M — Damaskus",
+      "bio": "Imam ahli tafsir, hadits, fiqih, dan sejarah dari Mazhab Syafi'i. Murid Ibnu Taimiyah dan menantu Al-Mizzi. Karyanya Tafsir Al-Qur'an al-'Adzim dan Al-Bidayah wan Nihayah menjadi rujukan utama umat Islam di seluruh dunia hingga hari ini.",
+      "guru": [
+        "Syaikhul Islam Ibnu Taimiyah",
+        "Al-Mizzi (mertua beliau)",
+        "Adz-Dzahabi",
+        "Ibnu al-Zahiri"
+      ],
+      "murid": [
+        "Ibnu Hijji",
+        "Ibnu Habib",
+        "Al-Adzra'i"
+      ],
+      "kitab_karangan": [
+        { "judul": "Tafsir Al-Qur'an al-'Adzim (Tafsir Ibnu Katsir)", "topik": "Tafsir Al-Qur'an" },
+        { "judul": "Al-Bidayah wan Nihayah (14 jilid)", "topik": "Sejarah Islam dari Awal hingga Akhir Zaman" },
+        { "judul": "Al-Ba'its al-Hatsits", "topik": "Ulum al-Hadits" },
+        { "judul": "Jami' al-Masanid was Sunan", "topik": "Kumpulan Musnad Hadits" },
+        { "judul": "As-Sirah an-Nabawiyah", "topik": "Biografi Nabi ﷺ" },
+        { "judul": "Ikhtishar Ulum al-Hadits", "topik": "Ringkasan Ilmu Hadits" }
+      ]
+    },
+    {
+      "id": "nawawi",
+      "nama": "Imam an-Nawawi",
+      "nama_lengkap": "Muhyiddin Yahya ibn Syaraf ibn Murri al-Hizami an-Nawawi",
+      "kuniyah": "Abu Zakariya",
+      "lahir": "Nawa, Hauran, Suriah, Muharram 631 H / 1234 M",
+      "wafat": "24 Rajab 676 H / 1277 M — Nawa (wafat di usia 45 tahun)",
+      "bio": "Imam besar Mazhab Syafi'i, dikenal dengan kezuhudan, wara', dan produktivitas yang luar biasa. Meski hanya hidup 45 tahun, beliau meninggalkan warisan keilmuan yang terus menjadi rujukan utama umat Islam di seluruh penjuru dunia.",
+      "guru": [
+        "Abul Baqa' al-Ablawi",
+        "Ibnu Abdid Da'im",
+        "Zainuddin al-Farqi",
+        "Abul Faraj ibn Qudamah"
+      ],
+      "murid": [
+        "Alauddin al-Attar",
+        "Ibnu al-Athar",
+        "Ibnu Abi al-Fath"
+      ],
+      "kitab_karangan": [
+        { "judul": "Riyadhus Shalihin", "topik": "Hadits-hadits Akhlak & Ibadah" },
+        { "judul": "Al-Arba'in an-Nawawiyah", "topik": "40 Hadits Pokok Agama" },
+        { "judul": "Al-Majmu' Syarh al-Muhadzdzab", "topik": "Fiqih Syafi'i (ensiklopedi besar)" },
+        { "judul": "Raudhah ath-Thalibin", "topik": "Fiqih Syafi'i" },
+        { "judul": "Minhaj ath-Thalibin", "topik": "Fiqih Syafi'i (ringkasan)" },
+        { "judul": "Al-Adzkar", "topik": "Kumpulan Dzikir & Doa" },
+        { "judul": "At-Tibyan fi Adab Hamalat al-Qur'an", "topik": "Adab dengan Al-Qur'an" }
+      ]
+    }
+  ],
+  "kutipan": [
+    {
+      "id": "k001",
+      "arab": "اَلْقَلْبُ فِي سَيْرِهِ إِلَى اللهِ عَزَّ وَجَلَّ بِمَنْزِلَةِ الطَّائِرِ، فَالْمَحَبَّةُ رَأْسُهُ، وَالْخَوْفُ وَالرَّجَاءُ جَنَاحَاهُ",
+      "teks": "Hati dalam perjalanannya menuju Allah bagaikan seekor burung: cinta adalah kepalanya, sedangkan rasa takut dan harap adalah kedua sayapnya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Bab al-Khauf war Raja' (Bab tentang Rasa Takut dan Harap)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 508",
+      "tema": "hati",
+      "faedah": [
+        "Cinta kepada Allah adalah inti dan penopang utama — tanpanya burung tidak bisa terbang meski bersayap",
+        "Rasa takut tanpa harap menjadikan seseorang putus asa dari rahmat Allah; harap tanpa takut menjadikannya lalai",
+        "Ketiganya (cinta, takut, harap) harus hadir bersama agar hati tetap dalam keseimbangan menuju Allah"
+      ]
+    },
+    {
+      "id": "k002",
+      "arab": "مَنْ لَمْ يَصْبِرْ عَلَى أَلَمِ التَّعَلُّمِ بَقِيَ فِي ذُلِّ الْجَهْلِ مَدَى الْحَيَاةِ",
+      "teks": "Barangsiapa tidak bersabar atas pedihnya menuntut ilmu, ia akan selamanya tinggal dalam hinanya kebodohan.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab al-'Ilm (Pembahasan tentang Ilmu)",
+      "jilid": "Jilid 10",
+      "halaman": "Hal. 45",
+      "tema": "ilmu",
+      "faedah": [
+        "Kesabaran dalam belajar bukan pilihan, melainkan syarat untuk meraih ilmu yang bermanfaat",
+        "Kebodohan terhadap agama adalah kehinaan yang nyata di sisi Allah dan manusia yang berakal",
+        "Rasa sakit dalam belajar bersifat sementara, namun manfaatnya kekal di dunia dan akhirat"
+      ]
+    },
+    {
+      "id": "k003",
+      "arab": "التَّوْبَةُ الصَّادِقَةُ لَا تُقْتَصَرُ عَلَى تَرْكِ الذَّنْبِ، بَلْ لَا بُدَّ أَنْ يَكُونَ الْعَبْدُ مُبْغِضًا لَهُ كَارِهًا لِذِكْرِهِ",
+      "teks": "Taubat yang jujur tidak cukup dengan sekadar meninggalkan dosa. Bahkan seorang hamba harus benar-benar membenci dosa itu dan tidak suka mengingatnya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Bab at-Tawbah (Pembahasan Hakikat Taubat)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 299",
+      "tema": "taubat",
+      "faedah": [
+        "Taubat bukan sekadar berhenti dari dosa secara lahir, tetapi kondisi batin yang sungguh-sungguh benci terhadap kemaksiatan",
+        "Kebencian sejati terhadap dosa adalah tanda bahwa taubat seseorang benar-benar tulus",
+        "Masih adanya kerinduan kepada dosa lama adalah tanda taubat yang belum sempurna"
+      ]
+    },
+    {
+      "id": "k004",
+      "arab": "التَّوْحِيدُ هُوَ أَصْلُ دِينِ الإِسْلَامِ وَرَأْسُهُ، وَسَائِرُ الأَعْمَالِ الصَّالِحَةِ كَالْبِنَاءِ عَلَيْهِ، فَمَنْ لَمْ يَأْتِ بِهِ لَمْ تُقْبَلْ مِنْهُ",
+      "teks": "Tauhid adalah pokok agama Islam dan puncaknya. Seluruh amal shalih ibarat bangunan yang berdiri di atasnya. Barangsiapa tidak mendatangkannya, maka amalnya tidak akan diterima.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Al-Aqidah al-Wasithiyah",
+      "bab": "Muqaddimah (Pendahuluan Aqidah Wasithiyah)",
+      "jilid": "—",
+      "halaman": "Hal. 3",
+      "tema": "tauhid",
+      "faedah": [
+        "Tauhid adalah syarat diterimanya seluruh amal ibadah — tanpanya semua amal sia-sia",
+        "Mendahulukan tauhid dalam belajar dan dakwah adalah metode seluruh para Nabi dan Rasul",
+        "Amal tanpa fondasi tauhid yang benar seperti bangunan tanpa pondasi, pasti roboh"
+      ]
+    },
+    {
+      "id": "k005",
+      "arab": "هَذَا الْقُرْآنُ هُوَ النُّورُ الْمُبِينُ، وَالذِّكْرُ الْحَكِيمُ، وَالصِّرَاطُ الْمُسْتَقِيمُ، مَنِ اعْتَصَمَ بِهِ عَصَمَهُ اللهُ، وَمَنِ اتَّبَعَهُ هَدَاهُ اللهُ",
+      "teks": "Al-Qur'an ini adalah cahaya yang nyata, dzikir yang penuh hikmah, dan jalan yang lurus. Barangsiapa berpegang teguh dengannya, Allah akan menjaganya; barangsiapa mengikutinya, Allah akan memberinya petunjuk.",
+      "ulama": "ibnKatsir",
+      "kitab": "Tafsir Al-Qur'an al-'Adzim",
+      "bab": "Muqaddimah fi Fadhl al-Qur'an (Pendahuluan tentang Keutamaan Al-Qur'an)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 2",
+      "tema": "quran",
+      "faedah": [
+        "Al-Qur'an memiliki tiga fungsi utama: sebagai cahaya penerang, dzikir yang hidup, dan jalan yang harus ditempuh",
+        "Penjagaan Allah hadir bagi siapa yang sungguh-sungguh berpegang kepada Al-Qur'an dalam ilmu dan amal",
+        "Hidayah adalah buah nyata dari mengikuti Al-Qur'an — bukan hanya membaca, tetapi mengamalkan"
+      ]
+    },
+    {
+      "id": "k006",
+      "arab": "أَعْجَزُ النَّاسِ مَنْ عَجَزَ عَنِ الدُّعَاءِ، وَأَبْخَلُ النَّاسِ مَنْ بَخِلَ بِالسَّلَامِ",
+      "teks": "Manusia yang paling lemah adalah yang lemah dalam berdoa. Manusia yang paling kikir adalah yang kikir dalam mengucapkan salam.",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Fadhl ad-Du'a' & Bab Ifsya' as-Salam (Keutamaan Doa & Menyebarkan Salam)",
+      "jilid": "—",
+      "halaman": "Hal. 494 & 849",
+      "tema": "akhlak",
+      "faedah": [
+        "Doa adalah ibadah paling mudah namun paling sering dilalaikan — meninggalkannya adalah kelemahan yang sebenarnya",
+        "Kelemahan sejati bukan pada fisik atau harta, melainkan pada hubungan hamba dengan Allah dalam doa",
+        "Menyebarkan salam adalah sedekah yang tidak memerlukan harta apapun dan pahalanya sangat besar"
+      ]
+    },
+    {
+      "id": "k007",
+      "arab": "الصَّبْرُ عَلَى الطَّاعَةِ أَيْسَرُ مِنَ الصَّبْرِ عَلَى عَذَابِ اللهِ",
+      "teks": "Bersabar dalam menjalankan ketaatan kepada Allah jauh lebih ringan daripada bersabar menanggung azab Allah.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ighaatsatul Lahfan",
+      "bab": "Fashl fi Daraj ash-Shabr (Pasal tentang Tingkatan-tingkatan Sabar)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 37",
+      "tema": "sabar",
+      "faedah": [
+        "Perbandingan ini memotivasi hamba untuk menanggung beratnya ibadah dengan lapang dada",
+        "Azab Allah jauh lebih berat dari segala beban ketaatan yang pernah dirasakan di dunia",
+        "Sabar ada tiga: sabar dari kemaksiatan, sabar dalam ketaatan, dan sabar atas ujian takdir"
+      ]
+    },
+    {
+      "id": "k008",
+      "arab": "مَنْ أَرَادَ السَّعَادَةَ الأَبَدِيَّةَ فَلْيَلْزَمْ عَتَبَةَ الْعُبُودِيَّةِ",
+      "teks": "Barangsiapa menginginkan kebahagiaan yang abadi, hendaklah ia selalu berada di ambang pintu penghambaan (kepada Allah).",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Al-'Ubudiyah",
+      "bab": "Fashl fi Haqiqat al-'Ubudiyah (Pasal tentang Hakikat Penghambaan kepada Allah)",
+      "jilid": "—",
+      "halaman": "Hal. 12",
+      "tema": "ibadah",
+      "faedah": [
+        "Kebahagiaan sejati dan abadi hanya ditemukan dalam penghambaan total kepada Allah, bukan pada selain-Nya",
+        "Ubudiyah (penghambaan) adalah kedudukan tertinggi seorang hamba sekaligus sebab kemuliaan dan ketenangannya",
+        "Siapapun yang mencari bahagia di luar penghambaan kepada Allah pasti akan kecewa dan gelisah"
+      ]
+    }
+  ]
+}
