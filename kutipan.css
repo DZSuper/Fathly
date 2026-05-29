@@ -600,14 +600,15 @@
 /* Kitab cards */
 .kup-kitab-grid {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 .kup-kitab-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 11px 13px;
+  padding: 14px 15px;
+  margin-bottom: 12px;
 }
 
 .kup-kitab-judul {
