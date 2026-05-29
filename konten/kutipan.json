@@ -9,7 +9,7 @@
       "wafat": "13 Rajab 751 H / 1350 M — Damaskus",
       "bio": "Imam besar Mazhab Hanbali, ahli fiqih, tafsir, hadits, dan ilmu hati. Murid paling setia Ibnu Taimiyah. Dikenal dengan kedalaman pembahasannya tentang perjalanan jiwa menuju Allah dan pembelaan kukuh terhadap Aqidah Salaf.",
       "guru": [
-        "Syaikhul Islam Ibnu Taimiyah (murid paling setia)",
+        "Syaikhul Islam Ibnu Taimiyah",
         "Syamsuddin al-Maqrizi",
         "Ibnu Syirazi",
         "Al-Baha' ibn Qudamah"
@@ -20,14 +20,38 @@
         "Ibnu Abdil Hadi"
       ],
       "kitab_karangan": [
-        { "judul": "Madarijus Salikin", "topik": "Ilmu Hati & Suluk" },
-        { "judul": "Ighaatsatul Lahfan", "topik": "Penyakit Hati & Terapinya" },
-        { "judul": "Zaadul Ma'ad", "topik": "Sirah Nabawi & Fiqih" },
-        { "judul": "I'lamul Muwaqqi'in", "topik": "Ushul Fiqih" },
-        { "judul": "Ath-Thuruq al-Hukmiyah", "topik": "Fiqih & Peradilan" },
-        { "judul": "Ar-Ruh", "topik": "Hakikat Ruh & Alam Barzakh" },
-        { "judul": "Hadi al-Arwah", "topik": "Surga & Nikmat Akhirat" },
-        { "judul": "Ash-Shawa'iq al-Mursalah", "topik": "Bantahan Ta'wil Sifat Allah" }
+        {
+          "judul": "Madarijus Salikin",
+          "topik": "Ilmu Hati & Suluk"
+        },
+        {
+          "judul": "Ighaatsatul Lahfan",
+          "topik": "Penyakit Hati & Terapinya"
+        },
+        {
+          "judul": "Zaadul Ma'ad",
+          "topik": "Sirah Nabawi & Fiqih"
+        },
+        {
+          "judul": "I'lamul Muwaqqi'in",
+          "topik": "Ushul Fiqih"
+        },
+        {
+          "judul": "Ar-Ruh",
+          "topik": "Hakikat Ruh & Alam Barzakh"
+        },
+        {
+          "judul": "Hadi al-Arwah",
+          "topik": "Surga & Nikmat Akhirat"
+        },
+        {
+          "judul": "Ash-Shawa'iq al-Mursalah",
+          "topik": "Bantahan Ta'wil Sifat Allah"
+        },
+        {
+          "judul": "Ad-Da' wad Dawa'",
+          "topik": "Penyakit & Obat Hati"
+        }
       ]
     },
     {
@@ -51,14 +75,34 @@
         "Ibnu Abdil Hadi"
       ],
       "kitab_karangan": [
-        { "judul": "Majmu' al-Fatawa (37 jilid)", "topik": "Fatwa & Berbagai Ilmu Agama" },
-        { "judul": "Minhaj as-Sunnah an-Nabawiyah", "topik": "Bantahan terhadap Rafidhah & Mu'tazilah" },
-        { "judul": "Al-Aqidah al-Wasithiyah", "topik": "Aqidah Ahlus Sunnah" },
-        { "judul": "Al-Aqidah al-Hamawiyah", "topik": "Sifat-sifat Allah" },
-        { "judul": "Dar'u Ta'arudh al-'Aql wan Naql", "topik": "Ushul & Kalam" },
-        { "judul": "Iqtidha' ash-Shirath al-Mustaqim", "topik": "Bantahan Bid'ah & Tasyabbuh" },
-        { "judul": "Al-'Ubudiyah", "topik": "Penghambaan kepada Allah" },
-        { "judul": "Al-Furqan bayna Awliyair Rahman wa Awliyaisy Syaithan", "topik": "Kewali-an & Tasawuf" }
+        {
+          "judul": "Majmu' al-Fatawa (37 jilid)",
+          "topik": "Fatwa & Berbagai Ilmu Agama"
+        },
+        {
+          "judul": "Minhaj as-Sunnah an-Nabawiyah",
+          "topik": "Bantahan terhadap Rafidhah & Mu'tazilah"
+        },
+        {
+          "judul": "Al-Aqidah al-Wasithiyah",
+          "topik": "Aqidah Ahlus Sunnah"
+        },
+        {
+          "judul": "Al-Aqidah al-Hamawiyah",
+          "topik": "Sifat-sifat Allah"
+        },
+        {
+          "judul": "Iqtidha' ash-Shirath al-Mustaqim",
+          "topik": "Bantahan Bid'ah & Tasyabbuh"
+        },
+        {
+          "judul": "Al-'Ubudiyah",
+          "topik": "Penghambaan kepada Allah"
+        },
+        {
+          "judul": "Dar'u Ta'arudh al-'Aql wan Naql",
+          "topik": "Ushul & Kalam"
+        }
       ]
     },
     {
@@ -81,12 +125,26 @@
         "Al-Adzra'i"
       ],
       "kitab_karangan": [
-        { "judul": "Tafsir Al-Qur'an al-'Adzim (Tafsir Ibnu Katsir)", "topik": "Tafsir Al-Qur'an" },
-        { "judul": "Al-Bidayah wan Nihayah (14 jilid)", "topik": "Sejarah Islam dari Awal hingga Akhir Zaman" },
-        { "judul": "Al-Ba'its al-Hatsits", "topik": "Ulum al-Hadits" },
-        { "judul": "Jami' al-Masanid was Sunan", "topik": "Kumpulan Musnad Hadits" },
-        { "judul": "As-Sirah an-Nabawiyah", "topik": "Biografi Nabi ﷺ" },
-        { "judul": "Ikhtishar Ulum al-Hadits", "topik": "Ringkasan Ilmu Hadits" }
+        {
+          "judul": "Tafsir Al-Qur'an al-'Adzim",
+          "topik": "Tafsir Al-Qur'an"
+        },
+        {
+          "judul": "Al-Bidayah wan Nihayah (14 jilid)",
+          "topik": "Sejarah Islam dari Awal hingga Akhir Zaman"
+        },
+        {
+          "judul": "Al-Ba'its al-Hatsits",
+          "topik": "Ulum al-Hadits"
+        },
+        {
+          "judul": "As-Sirah an-Nabawiyah",
+          "topik": "Biografi Nabi ﷺ"
+        },
+        {
+          "judul": "Ikhtishar Ulum al-Hadits",
+          "topik": "Ringkasan Ilmu Hadits"
+        }
       ]
     },
     {
@@ -95,7 +153,7 @@
       "nama_lengkap": "Muhyiddin Yahya ibn Syaraf ibn Murri al-Hizami an-Nawawi",
       "kuniyah": "Abu Zakariya",
       "lahir": "Nawa, Hauran, Suriah, Muharram 631 H / 1234 M",
-      "wafat": "24 Rajab 676 H / 1277 M — Nawa (wafat di usia 45 tahun)",
+      "wafat": "24 Rajab 676 H / 1277 M — Nawa",
       "bio": "Imam besar Mazhab Syafi'i, dikenal dengan kezuhudan, wara', dan produktivitas yang luar biasa. Meski hanya hidup 45 tahun, beliau meninggalkan warisan keilmuan yang terus menjadi rujukan utama umat Islam di seluruh penjuru dunia.",
       "guru": [
         "Abul Baqa' al-Ablawi",
@@ -109,13 +167,531 @@
         "Ibnu Abi al-Fath"
       ],
       "kitab_karangan": [
-        { "judul": "Riyadhus Shalihin", "topik": "Hadits-hadits Akhlak & Ibadah" },
-        { "judul": "Al-Arba'in an-Nawawiyah", "topik": "40 Hadits Pokok Agama" },
-        { "judul": "Al-Majmu' Syarh al-Muhadzdzab", "topik": "Fiqih Syafi'i (ensiklopedi besar)" },
-        { "judul": "Raudhah ath-Thalibin", "topik": "Fiqih Syafi'i" },
-        { "judul": "Minhaj ath-Thalibin", "topik": "Fiqih Syafi'i (ringkasan)" },
-        { "judul": "Al-Adzkar", "topik": "Kumpulan Dzikir & Doa" },
-        { "judul": "At-Tibyan fi Adab Hamalat al-Qur'an", "topik": "Adab dengan Al-Qur'an" }
+        {
+          "judul": "Riyadhus Shalihin",
+          "topik": "Hadits-hadits Akhlak & Ibadah"
+        },
+        {
+          "judul": "Al-Arba'in an-Nawawiyah",
+          "topik": "40 Hadits Pokok Agama"
+        },
+        {
+          "judul": "Al-Majmu' Syarh al-Muhadzdzab",
+          "topik": "Fiqih Syafi'i (ensiklopedi besar)"
+        },
+        {
+          "judul": "Al-Adzkar",
+          "topik": "Kumpulan Dzikir & Doa"
+        },
+        {
+          "judul": "At-Tibyan fi Adab Hamalat al-Qur'an",
+          "topik": "Adab dengan Al-Qur'an"
+        }
+      ]
+    },
+    {
+      "id": "ibnRajab",
+      "nama": "Ibnu Rajab al-Hanbali",
+      "nama_lengkap": "Zainuddin Abdurrahman ibn Ahmad ibn Rajab al-Baghdadi al-Hanbali",
+      "kuniyah": "Abu al-Faraj",
+      "lahir": "Baghdad, 736 H / 1335 M",
+      "wafat": "795 H / 1393 M — Damaskus",
+      "bio": "Imam ahli hadits, fiqih, dan ilmu hati dari Mazhab Hanbali. Murid Ibnul Qayyim. Dikenal dengan keluasan ilmu, kedalaman pemahaman riwayat, dan kelembutan dalam menyentuh hati. Karyanya Jami'ul Ulum wal Hikam menjadi syarah hadits paling komprehensif.",
+      "guru": [
+        "Ibnul Qayyim al-Jauziyah",
+        "Ibnu Qudamah al-Maqdisi",
+        "Adz-Dzahabi"
+      ],
+      "murid": [
+        "Ibnu al-Jazari",
+        "Ibnu Muflih",
+        "Shadruddin al-Hanbali"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Jami'ul Ulum wal Hikam",
+          "topik": "Syarah 50 Hadits Pokok"
+        },
+        {
+          "judul": "Latha'if al-Ma'arif",
+          "topik": "Keutamaan Bulan-bulan Hijriyah"
+        },
+        {
+          "judul": "Kasyf al-Kurbah fi Washf Hal Ahlil Ghurbah",
+          "topik": "Tentang Keterasingan Salaf"
+        },
+        {
+          "judul": "Dzail Thabaqat al-Hanabilah",
+          "topik": "Sejarah Ulama Hanbali"
+        }
+      ]
+    },
+    {
+      "id": "ibnQudamah",
+      "nama": "Ibnu Qudamah al-Maqdisi",
+      "nama_lengkap": "Muwaffaquddin Abdullah ibn Ahmad ibn Muhammad ibn Qudamah al-Maqdisi al-Hanbali",
+      "kuniyah": "Abu Muhammad",
+      "lahir": "Jamma'il, Palestina, 541 H / 1147 M",
+      "wafat": "620 H / 1223 M — Damaskus",
+      "bio": "Imam besar Mazhab Hanbali di masanya, hafizh hadits, ahli fiqih dan aqidah. Dikenal sebagai 'Ibnu Qudamah al-Akbar'. Karyanya Al-Mughni adalah ensiklopedi fiqih terbesar Mazhab Hanbali, sementara Lum'atul I'tiqad merupakan matan aqidah yang ringkas dan padat.",
+      "guru": [
+        "Ibnu al-Baththi al-Baghdadi",
+        "Abul Fath ibn al-Manna",
+        "Abdul Qadir al-Jailani"
+      ],
+      "murid": [
+        "Ibnu al-Shalah",
+        "Adz-Dzahabi (tidak langsung)",
+        "Ibnu Rajab (tidak langsung)"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Mughni (10 jilid)",
+          "topik": "Ensiklopedi Fiqih Hanbali"
+        },
+        {
+          "judul": "Lum'atul I'tiqad",
+          "topik": "Matan Aqidah Salaf"
+        },
+        {
+          "judul": "Mukhtashar Minhaj al-Qashidin",
+          "topik": "Ringkasan Ihya Ulumuddin"
+        },
+        {
+          "judul": "Raudhah an-Nazhir",
+          "topik": "Ushul Fiqih"
+        },
+        {
+          "judul": "Al-'Umdah fi al-Fiqh",
+          "topik": "Fiqih Hanbali (ringkasan)"
+        }
+      ]
+    },
+    {
+      "id": "ibnBaz",
+      "nama": "Syaikh Ibnu Baz",
+      "nama_lengkap": "Abdul Aziz ibn Abdullah ibn Baz",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Riyadh, Arab Saudi, 12 Dzulhijjah 1330 H / 1909 M",
+      "wafat": "27 Muharram 1420 H / 13 Mei 1999 M — Tha'if, Arab Saudi",
+      "bio": "Mufti Besar Kerajaan Arab Saudi, salah satu ulama terbesar abad ke-20 yang bermanhaj Salafi. Kehilangan penglihatan di usia sekitar 20 tahun namun tidak menghalanginya menjadi rujukan ilmu seluruh dunia. Dikenal dengan kelembutan, kerendahan hati, dan produktivitas dakwah yang luar biasa.",
+      "guru": [
+        "Muhammad ibn Ibrahim Alu asy-Syaikh",
+        "Sa'd ibn Hamad al-Muthliq",
+        "Muhammad ibn Abdul Lathif Alu asy-Syaikh"
+      ],
+      "murid": [
+        "Syaikh Ibnu Utsaimin",
+        "Syaikh al-Fauzan",
+        "Syaikh al-Albani (rekan seangkatan)"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Majmu' Fatawa wa Maqalat Mutanawwi'ah (30 jilid)",
+          "topik": "Kumpulan Fatwa"
+        },
+        {
+          "judul": "At-Tahqiq wal Idhah li Katsir min Masa'il al-Hajj",
+          "topik": "Fiqih Haji & Umrah"
+        },
+        {
+          "judul": "Al-'Aqidah ash-Shahihah wa Naqidhuha",
+          "topik": "Aqidah yang Benar"
+        },
+        {
+          "judul": "Wujub al-'Amal bis Sunnah wa Kufr man Ankaraha",
+          "topik": "Kewajiban Mengikuti Sunnah"
+        }
+      ]
+    },
+    {
+      "id": "ibnUtsaimin",
+      "nama": "Syaikh Ibnu Utsaimin",
+      "nama_lengkap": "Muhammad ibn Shalih ibn Muhammad al-Utsaimin at-Tamimi",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Unaizah, Arab Saudi, 27 Ramadhan 1347 H / 1929 M",
+      "wafat": "15 Syawal 1421 H / 10 Januari 2001 M — Jeddah, Arab Saudi",
+      "bio": "Ulama besar Saudi Arabia abad ke-20, pengikut setia Manhaj Salaf. Dikenal sebagai 'Ibnu Utsaimin' atau 'Syaikh Muhammad'. Karyanya sangat luas dalam aqidah, fiqih, dan tafsir. Fatwa-fatwanya beredar di seluruh penjuru dunia dan kelas-kelasnya dihadiri ribuan penuntut ilmu.",
+      "guru": [
+        "Syaikh Ibnu Baz",
+        "Abdurrahman as-Sa'di (paling banyak pengaruhnya)",
+        "Muhammad Amin asy-Syinqithi"
+      ],
+      "murid": [
+        "Banyak ulama Saudi dan dunia Islam kontemporer"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Syarh al-Aqidah al-Wasithiyah",
+          "topik": "Aqidah Ahlus Sunnah"
+        },
+        {
+          "judul": "Al-Qawl al-Mufid 'ala Kitab at-Tauhid",
+          "topik": "Syarah Kitab Tauhid"
+        },
+        {
+          "judul": "Syarh al-Arba'in an-Nawawiyah",
+          "topik": "Syarah 40 Hadits Nawawi"
+        },
+        {
+          "judul": "Majmu' Fatawa wa Rasa'il (30 jilid)",
+          "topik": "Kumpulan Fatwa"
+        },
+        {
+          "judul": "Tafsir al-Qur'an al-Karim",
+          "topik": "Tafsir Al-Qur'an"
+        }
+      ]
+    },
+    {
+      "id": "albani",
+      "nama": "Syaikh al-Albani",
+      "nama_lengkap": "Muhammad Nashiruddin ibn Nuh ibn Adam al-Albani al-Arnauth",
+      "kuniyah": "Abu Abdurrahman",
+      "lahir": "Shkodër, Albania, 1333 H / 1914 M",
+      "wafat": "22 Jumadal Akhirah 1420 H / 2 Oktober 1999 M — Amman, Yordania",
+      "bio": "Imam hadits terbesar abad ke-20, digelari 'Muhaddits zaman ini'. Seorang otodidak dalam ilmu hadits yang kemudian menjadi rujukan seluruh dunia dalam tashih dan tadh'if hadits. Hidupnya didedikasikan untuk memurnikan sunnah dari hadits-hadits lemah dan palsu.",
+      "guru": [
+        "Muhammad Raghib ath-Thabbakh (bidang hadits)",
+        "Belajar mandiri dari ribuan kitab hadits"
+      ],
+      "murid": [
+        "Syaikh Muqbil ibn Hadi al-Wadi'i",
+        "Syaikh Ali Hasan al-Halabi",
+        "Banyak ulama hadits dunia"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Silsilah al-Ahadits ash-Shahihah (9 jilid)",
+          "topik": "Kumpulan Hadits Shahih"
+        },
+        {
+          "judul": "Silsilah al-Ahadits adh-Dha'ifah wal Maudhu'ah (14 jilid)",
+          "topik": "Hadits Lemah & Palsu"
+        },
+        {
+          "judul": "Shahih wa Dha'if al-Jami' ash-Shaghir",
+          "topik": "Takhrij Hadits"
+        },
+        {
+          "judul": "Irwa' al-Ghalil (9 jilid)",
+          "topik": "Takhrij Hadits-hadits Fiqih"
+        },
+        {
+          "judul": "Sifah Shalatin Nabi ﷺ",
+          "topik": "Tata Cara Shalat Nabi ﷺ"
+        }
+      ]
+    },
+    {
+      "id": "ibnulJauziy",
+      "nama": "Ibnul Jauzi",
+      "nama_lengkap": "Jamal ad-Din Abdurrahman ibn Ali ibn Muhammad al-Jauzi al-Baghdadi al-Hanbali",
+      "kuniyah": "Abul Faraj",
+      "lahir": "Baghdad, sekitar 508 H / 1114 M",
+      "wafat": "12 Ramadhan 597 H / 1201 M — Baghdad",
+      "bio": "Imam besar Mazhab Hanbali, ahli tafsir, hadits, sejarah, dan pemberi nasihat yang terkenal di Baghdad. Dikenal dengan kemampuan berbicara dan menulis yang memukau. Karya-karyanya mencakup ratusan judul dalam berbagai bidang ilmu, dan majelis-majelisnya dihadiri puluhan ribu orang.",
+      "guru": [
+        "Ibn Nashr ad-Dinawari",
+        "Ibn al-Baththi al-Baghdadi",
+        "Muhammad ibn Nashir"
+      ],
+      "murid": [
+        "Sibt Ibnul Jauzi (cucunya)",
+        "Ibnu Qudamah (sezaman)"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Talbis Iblis",
+          "topik": "Tipu Daya Setan & Penyimpangan Beragama"
+        },
+        {
+          "judul": "Shaidul Khathir",
+          "topik": "Mutiara Nasihat & Hikmah"
+        },
+        {
+          "judul": "Shifat ash-Shafwah",
+          "topik": "Biografi Para Wali & Orang Shalih"
+        },
+        {
+          "judul": "Zad al-Masir fi 'Ilm at-Tafsir",
+          "topik": "Tafsir Al-Qur'an"
+        },
+        {
+          "judul": "Al-Muntazham fi Tarikh al-Muluk wal Umam",
+          "topik": "Sejarah Islam"
+        }
+      ]
+    },
+    {
+      "id": "adzDzahabi",
+      "nama": "Imam adz-Dzahabi",
+      "nama_lengkap": "Syamsuddin Muhammad ibn Ahmad ibn Utsman adz-Dzahabi at-Turkumani ad-Dimasyqi",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Damaskus (atau Mayyafariqin), 3 Rabi'ul Awwal 673 H / 1274 M",
+      "wafat": "3 Dzulqa'dah 748 H / 1348 M — Damaskus",
+      "bio": "Imam hafizh, ahli jarh wa ta'dil, dan sejarawan Islam terbesar. Murid Ibnu Taimiyah. Karyanya Siyar A'lam an-Nubala' adalah ensiklopedi biografi ulama Islam paling lengkap, sementara Mizan al-I'tidal menjadi rujukan utama dalam kritik perawi hadits.",
+      "guru": [
+        "Syaikhul Islam Ibnu Taimiyah",
+        "Al-Mizzi",
+        "Ibnu Daqiq al-'Id"
+      ],
+      "murid": [
+        "Ibnu Katsir",
+        "Ibnu Hajar al-Asqalani (tidak langsung)",
+        "As-Subki"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Siyar A'lam an-Nubala' (23 jilid)",
+          "topik": "Ensiklopedi Biografi Ulama Islam"
+        },
+        {
+          "judul": "Mizan al-I'tidal (4 jilid)",
+          "topik": "Jarh wa Ta'dil Perawi Hadits"
+        },
+        {
+          "judul": "Al-Kasyif",
+          "topik": "Ringkasan Perawi Hadits"
+        },
+        {
+          "judul": "Tarikh al-Islam (52 jilid)",
+          "topik": "Sejarah Islam Lengkap"
+        }
+      ]
+    },
+    {
+      "id": "ibnHajar",
+      "nama": "Ibnu Hajar al-Asqalani",
+      "nama_lengkap": "Syihabuddin Ahmad ibn Ali ibn Muhammad ibn Muhammad ibn Ali ibn Ahmad al-Kinani al-Asqalani",
+      "kuniyah": "Abul Fadhl",
+      "lahir": "Kairo, Mesir, 12 Sya'ban 773 H / 1372 M",
+      "wafat": "28 Dzulhijjah 852 H / 1449 M — Kairo",
+      "bio": "Hafizh terbesar abad ke-9 H, imam ahli hadits, fiqih Syafi'i, dan kritik perawi. Dijuluki 'Amirul Mukminin fil Hadits' di zamannya. Karyanya Fathul Bari adalah syarah Shahih Bukhari paling monumental yang pernah ditulis, menjadi rujukan utama para ulama hingga kini.",
+      "guru": [
+        "Ibnul Qayyim al-Jauziyah (tidak langsung)",
+        "Sirajuddin al-Bulqini",
+        "Nuruddin al-Haitsami",
+        "Al-'Iraqi (Zainuddin)"
+      ],
+      "murid": [
+        "As-Sakhawi",
+        "As-Suyuthi",
+        "Ibnu Qadi Syuhbah"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Fathul Bari Syarh Shahih al-Bukhari (13 jilid)",
+          "topik": "Syarah Shahih Bukhari"
+        },
+        {
+          "judul": "Tahdzibut Tahdzib (12 jilid)",
+          "topik": "Biografi Perawi Hadits"
+        },
+        {
+          "judul": "Taqribut Tahdzib",
+          "topik": "Ringkasan Biografi Perawi"
+        },
+        {
+          "judul": "Al-Ishabah fi Tamyiz ash-Shahabah (8 jilid)",
+          "topik": "Ensiklopedi Biografi Sahabat"
+        },
+        {
+          "judul": "Bulughul Maram",
+          "topik": "Hadits-hadits Hukum Fiqih"
+        },
+        {
+          "judul": "Nukhbatul Fikr",
+          "topik": "Ushul Ilmu Hadits"
+        }
+      ]
+    },
+    {
+      "id": "suyuthi",
+      "nama": "Imam as-Suyuthi",
+      "nama_lengkap": "Jalaluddin Abdurrahman ibn Abi Bakr ibn Muhammad al-Khudhairi as-Suyuthi",
+      "kuniyah": "Abul Fadhl",
+      "lahir": "Kairo, Mesir, 1 Rajab 849 H / 1445 M",
+      "wafat": "19 Jumadal Ula 911 H / 1505 M — Kairo",
+      "bio": "Imam hafizh, mufassir, muhaddits, fakih Syafi'i, dan sejarawan. Mujaddid abad ke-9 H dengan produktivitas yang hampir tak tertandingi — menulis lebih dari 500 karya dalam berbagai disiplin ilmu. Beliau juga ahli bahasa Arab dan sastra yang sangat produktif.",
+      "guru": [
+        "Ibnu Hajar al-Asqalani (tidak langsung, dari murid-muridnya)",
+        "Kamaluddin ibn al-Humam",
+        "Syarafuddin al-Munawi"
+      ],
+      "murid": [
+        "Ad-Dawudi",
+        "Ibnu Iyas",
+        "Para ulama Mesir sesudahnya"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Itqan fi Ulum al-Qur'an",
+          "topik": "Ilmu-ilmu Al-Qur'an"
+        },
+        {
+          "judul": "Tafsir al-Jalalayn (bersama al-Mahalli)",
+          "topik": "Tafsir Al-Qur'an ringkas"
+        },
+        {
+          "judul": "Tadribur Rawi",
+          "topik": "Ulum al-Hadits"
+        },
+        {
+          "judul": "Ad-Durr al-Mantsur fit Tafsir bil Ma'tsur",
+          "topik": "Tafsir bil Ma'tsur"
+        },
+        {
+          "judul": "Al-Jami' ash-Shaghir",
+          "topik": "Kumpulan Hadits Pendek"
+        },
+        {
+          "judul": "Al-Ashbah wan Nazhair",
+          "topik": "Qawa'id Fiqhiyah Syafi'i"
+        }
+      ]
+    },
+    {
+      "id": "ibnAbdilBarr",
+      "nama": "Ibnu Abdil Barr",
+      "nama_lengkap": "Abu Umar Yusuf ibn Abdillah ibn Muhammad ibn Abdil Barr an-Namari al-Andalusi al-Maliki",
+      "kuniyah": "Abu Umar",
+      "lahir": "Kordoba, Andalusia (Spanyol), 5 Rabi'ul Awwal 368 H / 978 M",
+      "wafat": "2 Rabi'ul Akhir 463 H / 1071 M — Syathibah (Xàtiva), Spanyol",
+      "bio": "Imam hafizh terbesar di Barat Islam (Andalusia), ahli hadits, fiqih Maliki, dan ilmu sahabat. Dijuluki 'Hafizh Maghrib'. Karyanya Al-Istidzkar dan Jami' Bayanil Ilmi wa Fadhlih menjadi rujukan penting dalam ilmu hadits dan adab para penuntut ilmu.",
+      "guru": [
+        "Abu Abdillah ibn Mufradj",
+        "Ahmad ibn Qasim al-Bazzaz",
+        "Abdulwaris ibn Sufyan"
+      ],
+      "murid": [
+        "Ibnu Hazm al-Andalusi",
+        "Humaid ibn Muhammad al-Andalusi"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Jami' Bayanil Ilmi wa Fadhlihi",
+          "topik": "Keutamaan Ilmu & Adab Menuntutnya"
+        },
+        {
+          "judul": "Al-Istidzkar (8 jilid)",
+          "topik": "Syarah Muwattha' Imam Malik"
+        },
+        {
+          "judul": "At-Tamhid (26 jilid)",
+          "topik": "Syarah Hadits Muwattha' secara Mendalam"
+        },
+        {
+          "judul": "Al-Isti'ab fi Ma'rifat al-Ashhab",
+          "topik": "Biografi Para Sahabat Nabi ﷺ"
+        }
+      ]
+    },
+    {
+      "id": "ibnMuflih",
+      "nama": "Ibnu Muflih al-Maqdisi",
+      "nama_lengkap": "Syamsuddin Muhammad ibn Muflih ibn Muhammad ibn Mufarraj al-Maqdisi al-Hanbali",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Palestina, sekitar 708 H / 1308 M",
+      "wafat": "763 H / 1362 M — Damaskus",
+      "bio": "Imam faqih Hanbali, ahli ushul dan adab. Murid langsung Ibnu Taimiyah yang sangat dipercaya, sehingga Ibnu Taimiyah berkata tentangnya: 'Tiada di bawah kolong langit seseorang yang lebih mengetahui madzhabku melebihi Ibnu Muflih.' Karyanya Al-Adab Asy-Syar'iyah adalah ensiklopedi adab Islam paling komprehensif.",
+      "guru": [
+        "Syaikhul Islam Ibnu Taimiyah",
+        "Ibnul Qayyim al-Jauziyah",
+        "Ibnu Qudamah"
+      ],
+      "murid": [
+        "Ibnu Rajab al-Hanbali",
+        "Al-Mardawi"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Adab Asy-Syar'iyah (3 jilid)",
+          "topik": "Ensiklopedi Adab Islami"
+        },
+        {
+          "judul": "Al-Furu' (6 jilid)",
+          "topik": "Fiqih Hanbali"
+        },
+        {
+          "judul": "Al-Mubdi' Syarh al-Muqni'",
+          "topik": "Syarah Kitab Fiqih Hanbali"
+        },
+        {
+          "judul": "Ushul al-Fiqh",
+          "topik": "Ushul Fiqih Madzhab Hanbali"
+        }
+      ]
+    },
+    {
+      "id": "ibnBattah",
+      "nama": "Ibnu Battah al-Ukbari",
+      "nama_lengkap": "Abu Abdillah Ubaidullah ibn Muhammad ibn Battah al-Akbari al-Hanbali",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Ukbara, dekat Baghdad, sekitar 304 H / 916 M",
+      "wafat": "387 H / 997 M — Ukbara",
+      "bio": "Imam ahli hadits, fiqih Hanbali, dan aqidah Salaf. Dikenal dengan kezuhudan dan kewara'an yang sangat tinggi. Karyanya Al-Ibanah al-Kubra dan Al-Ibanah ash-Shughra menjadi rujukan penting dalam aqidah Ahlus Sunnah wal Jama'ah.",
+      "guru": [
+        "Abul Qasim al-Baghawi",
+        "Ibnu Abi Dawud",
+        "Abu Ali ibn Khuzaymah"
+      ],
+      "murid": [
+        "Al-Qadhi Abu Ya'la al-Farra'",
+        "Ibnu Abi al-Muzaffar"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Ibanah al-Kubra (7 jilid)",
+          "topik": "Aqidah Ahlus Sunnah wal Jama'ah"
+        },
+        {
+          "judul": "Al-Ibanah ash-Shughra",
+          "topik": "Pengantar Aqidah Salaf"
+        },
+        {
+          "judul": "Al-Iman",
+          "topik": "Hakikat Iman menurut Salaf"
+        }
+      ]
+    },
+    {
+      "id": "fawzan",
+      "nama": "Syaikh Shalih al-Fawzan",
+      "nama_lengkap": "Shalih ibn Fawzan ibn Abdillah al-Fawzan",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Syaqra', Arab Saudi, 1354 H / 1935 M",
+      "wafat": "Masih hidup (lahir 1354 H)",
+      "bio": "Ulama kibar Arab Saudi masa kini, anggota Lajnah Daimah Lil Buhuts al-'Ilmiyah wal Ifta' (Komite Fatwa Arab Saudi), dan anggota Majelis Ulama Kibar. Dikenal dengan kekokohan aqidah, kejelasan dalam membantah penyimpangan, dan keluasan fiqih. Murid langsung para ulama Salaf besar Saudi.",
+      "guru": [
+        "Syaikh Ibnu Baz",
+        "Syaikh Muhammad Amin Asy-Syinqithi",
+        "Syaikh Abdurrazaq al-'Afifi"
+      ],
+      "murid": [
+        "Banyak ulama Arab Saudi generasi berikutnya"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Muntaqa min Fatawa al-Fawzan",
+          "topik": "Kumpulan Fatwa"
+        },
+        {
+          "judul": "At-Tawhid wa Bayan ma Yunafihi",
+          "topik": "Tauhid & Pembatalnya"
+        },
+        {
+          "judul": "I'anat al-Mustafid bi Syarh Kitab at-Tawhid",
+          "topik": "Syarah Kitabut Tauhid"
+        },
+        {
+          "judul": "Al-Mulakhkhas al-Fiqhi",
+          "topik": "Ringkasan Fiqih Lengkap"
+        },
+        {
+          "judul": "Majmu' Fatawa wa Maqalat",
+          "topik": "Fatwa & Artikel Ilmiah"
+        }
       ]
     }
   ],
@@ -126,14 +702,14 @@
       "teks": "Hati dalam perjalanannya menuju Allah bagaikan seekor burung: cinta adalah kepalanya, sedangkan rasa takut dan harap adalah kedua sayapnya.",
       "ulama": "ibnulQayyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Bab al-Khauf war Raja' (Bab tentang Rasa Takut dan Harap)",
+      "bab": "Bab al-Khauf war Raja'",
       "jilid": "Jilid 1",
       "halaman": "Hal. 508",
       "tema": "hati",
       "faedah": [
-        "Cinta kepada Allah adalah inti dan penopang utama — tanpanya burung tidak bisa terbang meski bersayap",
-        "Rasa takut tanpa harap menjadikan seseorang putus asa dari rahmat Allah; harap tanpa takut menjadikannya lalai",
-        "Ketiganya (cinta, takut, harap) harus hadir bersama agar hati tetap dalam keseimbangan menuju Allah"
+        "Cinta kepada Allah adalah inti — tanpanya burung tidak bisa terbang meski bersayap",
+        "Rasa takut tanpa harap menjadikan seseorang putus asa; harap tanpa takut menjadikannya lalai",
+        "Ketiganya harus hadir bersama agar hati tetap dalam keseimbangan menuju Allah"
       ]
     },
     {
@@ -142,14 +718,14 @@
       "teks": "Barangsiapa tidak bersabar atas pedihnya menuntut ilmu, ia akan selamanya tinggal dalam hinanya kebodohan.",
       "ulama": "ibnTaymiyah",
       "kitab": "Majmu' al-Fatawa",
-      "bab": "Kitab al-'Ilm (Pembahasan tentang Ilmu)",
+      "bab": "Kitab al-'Ilm",
       "jilid": "Jilid 10",
       "halaman": "Hal. 45",
       "tema": "ilmu",
       "faedah": [
-        "Kesabaran dalam belajar bukan pilihan, melainkan syarat untuk meraih ilmu yang bermanfaat",
-        "Kebodohan terhadap agama adalah kehinaan yang nyata di sisi Allah dan manusia yang berakal",
-        "Rasa sakit dalam belajar bersifat sementara, namun manfaatnya kekal di dunia dan akhirat"
+        "Kesabaran dalam belajar adalah syarat untuk meraih ilmu yang bermanfaat",
+        "Kebodohan terhadap agama adalah kehinaan nyata di sisi Allah",
+        "Rasa sakit dalam belajar bersifat sementara, namun manfaatnya kekal"
       ]
     },
     {
@@ -158,13 +734,13 @@
       "teks": "Taubat yang jujur tidak cukup dengan sekadar meninggalkan dosa. Bahkan seorang hamba harus benar-benar membenci dosa itu dan tidak suka mengingatnya.",
       "ulama": "ibnulQayyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Bab at-Tawbah (Pembahasan Hakikat Taubat)",
+      "bab": "Bab at-Tawbah",
       "jilid": "Jilid 1",
       "halaman": "Hal. 299",
       "tema": "taubat",
       "faedah": [
-        "Taubat bukan sekadar berhenti dari dosa secara lahir, tetapi kondisi batin yang sungguh-sungguh benci terhadap kemaksiatan",
-        "Kebencian sejati terhadap dosa adalah tanda bahwa taubat seseorang benar-benar tulus",
+        "Taubat bukan sekadar berhenti dari dosa secara lahir, tapi kondisi batin yang benci kemaksiatan",
+        "Kebencian sejati terhadap dosa adalah tanda taubat yang sungguh-sungguh tulus",
         "Masih adanya kerinduan kepada dosa lama adalah tanda taubat yang belum sempurna"
       ]
     },
@@ -174,30 +750,30 @@
       "teks": "Tauhid adalah pokok agama Islam dan puncaknya. Seluruh amal shalih ibarat bangunan yang berdiri di atasnya. Barangsiapa tidak mendatangkannya, maka amalnya tidak akan diterima.",
       "ulama": "ibnTaymiyah",
       "kitab": "Al-Aqidah al-Wasithiyah",
-      "bab": "Muqaddimah (Pendahuluan Aqidah Wasithiyah)",
+      "bab": "Muqaddimah",
       "jilid": "—",
       "halaman": "Hal. 3",
       "tema": "tauhid",
       "faedah": [
-        "Tauhid adalah syarat diterimanya seluruh amal ibadah — tanpanya semua amal sia-sia",
-        "Mendahulukan tauhid dalam belajar dan dakwah adalah metode seluruh para Nabi dan Rasul",
+        "Tauhid adalah syarat diterimanya seluruh amal ibadah",
+        "Mendahulukan tauhid dalam belajar dan dakwah adalah metode para Nabi dan Rasul",
         "Amal tanpa fondasi tauhid yang benar seperti bangunan tanpa pondasi, pasti roboh"
       ]
     },
     {
       "id": "k005",
-      "arab": "هَذَا الْقُرْآنُ هُوَ النُّورُ الْمُبِينُ، وَالذِّكْرُ الْحَكِيمُ، وَالصِّرَاطُ الْمُسْتَقِيمُ، مَنِ اعْتَصَمَ بِهِ عَصَمَهُ اللهُ، وَمَنِ اتَّبَعَهُ هَدَاهُ اللهُ",
-      "teks": "Al-Qur'an ini adalah cahaya yang nyata, dzikir yang penuh hikmah, dan jalan yang lurus. Barangsiapa berpegang teguh dengannya, Allah akan menjaganya; barangsiapa mengikutinya, Allah akan memberinya petunjuk.",
+      "arab": "هَذَا الْقُرْآنُ هُوَ النُّورُ الْمُبِينُ، وَالذِّكْرُ الْحَكِيمُ، وَالصِّرَاطُ الْمُسْتَقِيمُ، مَنِ اعْتَصَمَ بِهِ عَصَمَهُ اللهُ",
+      "teks": "Al-Qur'an ini adalah cahaya yang nyata, dzikir yang penuh hikmah, dan jalan yang lurus. Barangsiapa berpegang teguh dengannya, Allah akan menjaganya.",
       "ulama": "ibnKatsir",
       "kitab": "Tafsir Al-Qur'an al-'Adzim",
-      "bab": "Muqaddimah fi Fadhl al-Qur'an (Pendahuluan tentang Keutamaan Al-Qur'an)",
+      "bab": "Muqaddimah fi Fadhl al-Qur'an",
       "jilid": "Jilid 1",
       "halaman": "Hal. 2",
       "tema": "quran",
       "faedah": [
-        "Al-Qur'an memiliki tiga fungsi utama: sebagai cahaya penerang, dzikir yang hidup, dan jalan yang harus ditempuh",
-        "Penjagaan Allah hadir bagi siapa yang sungguh-sungguh berpegang kepada Al-Qur'an dalam ilmu dan amal",
-        "Hidayah adalah buah nyata dari mengikuti Al-Qur'an — bukan hanya membaca, tetapi mengamalkan"
+        "Al-Qur'an memiliki tiga fungsi utama: cahaya, dzikir, dan jalan yang harus ditempuh",
+        "Penjagaan Allah hadir bagi siapa yang sungguh-sungguh berpegang kepada Al-Qur'an",
+        "Hidayah adalah buah nyata dari mengikuti Al-Qur'an dalam ilmu dan amal"
       ]
     },
     {
@@ -206,14 +782,14 @@
       "teks": "Manusia yang paling lemah adalah yang lemah dalam berdoa. Manusia yang paling kikir adalah yang kikir dalam mengucapkan salam.",
       "ulama": "nawawi",
       "kitab": "Riyadhus Shalihin",
-      "bab": "Bab Fadhl ad-Du'a' & Bab Ifsya' as-Salam (Keutamaan Doa & Menyebarkan Salam)",
+      "bab": "Bab Fadhl ad-Du'a' wa Ifsya' as-Salam",
       "jilid": "—",
-      "halaman": "Hal. 494 & 849",
-      "tema": "akhlak",
+      "halaman": "Hal. 494",
+      "tema": "doa",
       "faedah": [
-        "Doa adalah ibadah paling mudah namun paling sering dilalaikan — meninggalkannya adalah kelemahan yang sebenarnya",
+        "Doa adalah ibadah paling mudah namun paling sering dilalaikan",
         "Kelemahan sejati bukan pada fisik atau harta, melainkan pada hubungan hamba dengan Allah dalam doa",
-        "Menyebarkan salam adalah sedekah yang tidak memerlukan harta apapun dan pahalanya sangat besar"
+        "Menyebarkan salam adalah sedekah yang tidak memerlukan harta apapun"
       ]
     },
     {
@@ -222,14 +798,14 @@
       "teks": "Bersabar dalam menjalankan ketaatan kepada Allah jauh lebih ringan daripada bersabar menanggung azab Allah.",
       "ulama": "ibnulQayyim",
       "kitab": "Ighaatsatul Lahfan",
-      "bab": "Fashl fi Daraj ash-Shabr (Pasal tentang Tingkatan-tingkatan Sabar)",
+      "bab": "Fashl fi Daraj ash-Shabr",
       "jilid": "Jilid 1",
       "halaman": "Hal. 37",
       "tema": "sabar",
       "faedah": [
         "Perbandingan ini memotivasi hamba untuk menanggung beratnya ibadah dengan lapang dada",
         "Azab Allah jauh lebih berat dari segala beban ketaatan yang pernah dirasakan di dunia",
-        "Sabar ada tiga: sabar dari kemaksiatan, sabar dalam ketaatan, dan sabar atas ujian takdir"
+        "Sabar ada tiga: dari kemaksiatan, dalam ketaatan, dan atas ujian takdir"
       ]
     },
     {
@@ -238,14 +814,1614 @@
       "teks": "Barangsiapa menginginkan kebahagiaan yang abadi, hendaklah ia selalu berada di ambang pintu penghambaan (kepada Allah).",
       "ulama": "ibnTaymiyah",
       "kitab": "Al-'Ubudiyah",
-      "bab": "Fashl fi Haqiqat al-'Ubudiyah (Pasal tentang Hakikat Penghambaan kepada Allah)",
+      "bab": "Fashl fi Haqiqat al-'Ubudiyah",
       "jilid": "—",
       "halaman": "Hal. 12",
       "tema": "ibadah",
       "faedah": [
-        "Kebahagiaan sejati dan abadi hanya ditemukan dalam penghambaan total kepada Allah, bukan pada selain-Nya",
-        "Ubudiyah (penghambaan) adalah kedudukan tertinggi seorang hamba sekaligus sebab kemuliaan dan ketenangannya",
-        "Siapapun yang mencari bahagia di luar penghambaan kepada Allah pasti akan kecewa dan gelisah"
+        "Kebahagiaan sejati hanya ditemukan dalam penghambaan total kepada Allah",
+        "Ubudiyah adalah kedudukan tertinggi seorang hamba sekaligus sebab kemuliaannya",
+        "Siapapun yang mencari bahagia di luar penghambaan kepada Allah pasti akan kecewa"
+      ]
+    },
+    {
+      "id": "k009",
+      "arab": "الْعِلْمُ نُقْطَةٌ وَاحِدَةٌ، وَإِنَّمَا كَثَّرَهُ الْجَاهِلُونَ",
+      "teks": "Ilmu itu hanya satu titik, hanyalah orang-orang bodoh yang membuatnya seolah banyak dan rumit.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab al-'Ilm wal Ijtihad",
+      "jilid": "Jilid 13",
+      "halaman": "Hal. 136",
+      "tema": "ilmu",
+      "faedah": [
+        "Inti dari seluruh ilmu agama adalah mengenal Allah dan beribadah kepada-Nya",
+        "Kerumitan yang dibuat-buat dalam agama sering kali bersumber dari kebodohan, bukan kedalaman ilmu",
+        "Kesederhanaan dalam mengajarkan ilmu adalah tanda ulama yang benar-benar faham"
+      ]
+    },
+    {
+      "id": "k010",
+      "arab": "لَيْسَ الزُّهْدُ فِي الدُّنْيَا تَحْرِيمَ الْحَلَالِ وَإِضَاعَةَ الْمَالِ، وَلَكِنَّ الزُّهْدَ أَنْ تَكُونَ بِمَا فِي يَدِ اللهِ أَوْثَقَ مِنْكَ بِمَا فِي يَدِكَ",
+      "teks": "Zuhud bukan berarti mengharamkan yang halal atau menyia-nyiakan harta. Tetapi zuhud adalah engkau lebih percaya kepada apa yang ada di tangan Allah daripada apa yang ada di tanganmu.",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits ath-Thalatsun (Hadits ke-31 tentang Zuhud)",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 155",
+      "tema": "zuhud",
+      "faedah": [
+        "Zuhud bukan kemiskinan atau meninggalkan dunia sepenuhnya, melainkan sikap hati terhadap dunia",
+        "Kepercayaan penuh kepada Allah dalam rezeki adalah inti dari zuhud yang hakiki",
+        "Orang zuhud bisa memiliki harta banyak, selama hatinya tidak bergantung padanya"
+      ]
+    },
+    {
+      "id": "k011",
+      "arab": "مَنِ اسْتَغْنَى بِاللهِ أَغْنَاهُ اللهُ، وَمَنِ افْتَقَرَ إِلَى اللهِ أَعْطَاهُ مَا سَأَلَ",
+      "teks": "Barangsiapa merasa cukup karena Allah, Allah akan mencukupinya. Barangsiapa mengharapkan Allah dalam kefakirannya, Allah akan memberi apa yang ia minta.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah al-Ghina billah",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 204",
+      "tema": "tawakal",
+      "faedah": [
+        "Merasa cukup karena Allah bukan berarti tidak berusaha, tapi tidak bergantung pada selain Allah",
+        "Doa dan ketergantungan kepada Allah adalah jalan paling pasti menuju pemenuhan kebutuhan",
+        "Seseorang yang sungguh-sungguh meminta kepada Allah tidak akan pernah kecewa"
+      ]
+    },
+    {
+      "id": "k012",
+      "arab": "الْبِدْعَةُ كُلُّهَا ضَلَالَةٌ، وَإِنْ رَآهَا النَّاسُ حَسَنَةً",
+      "teks": "Semua bid'ah adalah kesesatan, meskipun orang-orang memandangnya sebagai sesuatu yang baik.",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits al-Khamis (Hadits 5 tentang Bid'ah)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 130",
+      "tema": "sunnah",
+      "faedah": [
+        "Standar kebenaran ibadah adalah dalil, bukan perasaan atau akal semata",
+        "Banyaknya pelaku bid'ah tidak menjadikannya sunnah — kebenaran bukan soal mayoritas",
+        "Setiap bid'ah pasti ada sunnah yang ditinggalkan sebagai gantinya"
+      ]
+    },
+    {
+      "id": "k013",
+      "arab": "مَنْ أَحَبَّ شَيْئًا آثَرَهُ وَإِلَّا فَدَعْوَاهُ كَاذِبَةٌ",
+      "teks": "Barangsiapa benar-benar mencintai sesuatu, ia pasti mendahulukannya. Jika tidak, maka pengakuan cintanya hanyalah dusta.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah al-Mahabbah",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 9",
+      "tema": "hati",
+      "faedah": [
+        "Cinta yang benar kepada Allah terbukti dari prioritas dalam amal, bukan sekadar ucapan",
+        "Ukuran cinta seseorang kepada Allah terlihat dari seberapa besar ia mendahulukan perintah-Nya",
+        "Pengakuan cinta tanpa amal nyata adalah tipuan diri sendiri"
+      ]
+    },
+    {
+      "id": "k014",
+      "arab": "كُلُّ عَمَلٍ لَا يُرَادُ بِهِ وَجْهُ اللهِ فَإِنَّهُ يَضُرُّ صَاحِبَهُ وَلَا يَنْفَعُهُ",
+      "teks": "Setiap amal yang tidak diniatkan untuk mengharap wajah Allah, maka amal itu akan membahayakan pelakunya dan tidak memberinya manfaat.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab an-Niyyat wal Ikhlas",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 95",
+      "tema": "ikhlas",
+      "faedah": [
+        "Ikhlas adalah syarat diterimanya amal — tanpanya, amal bisa menjadi bumerang",
+        "Amal yang dilakukan karena riya' justru akan menjadi beban bagi pelakunya di akhirat",
+        "Niat adalah ruh amal; tanpanya amal hanyalah gerakan atau kata-kata tanpa makna"
+      ]
+    },
+    {
+      "id": "k015",
+      "arab": "السَّعِيدُ مَنْ وُعِظَ بِغَيْرِهِ، وَالشَّقِيُّ مَنْ وَعِظَ غَيْرَهُ",
+      "teks": "Orang yang beruntung adalah yang bisa mengambil pelajaran dari orang lain. Orang yang celaka adalah yang hanya menasihati orang lain (tanpa memperbaiki dirinya).",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khathir",
+      "bab": "Fashl fi al-Ittidz bil Ghayr",
+      "jilid": "—",
+      "halaman": "Hal. 43",
+      "tema": "nasihat",
+      "faedah": [
+        "Mengambil pelajaran dari musibah orang lain adalah tanda kecerdasan dan keberuntungan",
+        "Penceramah atau penasehat yang tidak mengamalkan nasihatnya sendiri justru dalam kecelakaan",
+        "Melihat kesalahan orang lain seharusnya membuat kita lebih waspada terhadap diri sendiri"
+      ]
+    },
+    {
+      "id": "k016",
+      "arab": "مَنْ تَأَمَّلَ أَحْوَالَ الصَّحَابَةِ عَلِمَ أَنَّهُمْ كَانُوا أَحْرَصَ النَّاسِ عَلَى الْعِلْمِ",
+      "teks": "Barangsiapa merenungi keadaan para sahabat, ia akan tahu bahwa mereka adalah manusia yang paling bersemangat dalam menuntut ilmu.",
+      "ulama": "ibnKatsir",
+      "kitab": "Al-Ba'its al-Hatsits",
+      "bab": "Muqaddimah fi Fann al-Hadits",
+      "jilid": "—",
+      "halaman": "Hal. 7",
+      "tema": "ilmu",
+      "faedah": [
+        "Para sahabat menjadikan menuntut ilmu sebagai prioritas karena mereka paham besarnya nilainya",
+        "Semangat belajar para sahabat lahir dari cinta yang mendalam kepada Allah dan Rasul-Nya",
+        "Mencontoh semangat sahabat dalam menuntut ilmu adalah bagian dari ittiba'"
+      ]
+    },
+    {
+      "id": "k017",
+      "arab": "الدُّعَاءُ هُوَ الْعِبَادَةُ، وَمَنْ لَمْ يَدْعُ اللهَ غَضِبَ اللهُ عَلَيْهِ",
+      "teks": "Doa adalah inti ibadah, dan barangsiapa tidak berdoa kepada Allah, maka Allah akan murka kepadanya.",
+      "ulama": "nawawi",
+      "kitab": "Al-Adzkar",
+      "bab": "Bab fi Fadhl ad-Du'a' wa al-Amr bihi",
+      "jilid": "—",
+      "halaman": "Hal. 342",
+      "tema": "doa",
+      "faedah": [
+        "Meninggalkan doa adalah kesombongan terselubung seolah-olah tidak butuh kepada Allah",
+        "Doa bukan sekadar meminta, melainkan pengakuan seorang hamba atas kebutuhannya kepada Allah",
+        "Allah murka kepada yang tidak berdoa karena doa adalah tanda ketundukan dan kehambaan"
+      ]
+    },
+    {
+      "id": "k018",
+      "arab": "الإِخْلَاصُ سِرٌّ بَيْنَ اللهِ وَعَبْدِهِ لَا يَعْلَمُهُ مَلَكٌ فَيَكْتُبَهُ وَلَا شَيْطَانٌ فَيُفْسِدَهُ",
+      "teks": "Ikhlas adalah rahasia antara Allah dan hamba-Nya. Tidak ada malaikat yang mengetahuinya untuk mencatatnya, dan tidak ada setan yang mengetahuinya untuk merusaknya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah al-Ikhlas",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 91",
+      "tema": "ikhlas",
+      "faedah": [
+        "Ikhlas adalah benteng terkuat dari riya' dan godaan setan karena tersembunyi dalam hati",
+        "Rahasia ikhlas adalah ia tidak bisa ditiru atau dipalsukan oleh siapapun selain hati yang benar-benar tulus",
+        "Setan tidak bisa merusak ikhlas yang sejati karena ia tidak tahu tempatnya"
+      ]
+    },
+    {
+      "id": "k019",
+      "arab": "اَلدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ، فَكَيْفَ تَكُونُ جَنَّتُكَ مَا أَنْتَ خَارِجٌ مِنْهَا",
+      "teks": "Dunia adalah penjara bagi orang beriman dan surga bagi orang kafir. Bagaimana mungkin surga itu adalah sesuatu yang (segera) akan kamu tinggalkan.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ad-Da' wad Dawa'",
+      "bab": "Fashl fi Haqiqat ad-Dunya",
+      "jilid": "—",
+      "halaman": "Hal. 197",
+      "tema": "zuhud",
+      "faedah": [
+        "Dunia terasa sempit bagi mukmin karena ia tahu keindahan yang menunggunya di akhirat",
+        "Keterikatan pada dunia menandakan lemahnya iman dan sedikitnya ilmu tentang akhirat",
+        "Orang kafir merasa dunia adalah segalanya karena ia tidak punya harapan setelah mati"
+      ]
+    },
+    {
+      "id": "k020",
+      "arab": "الشُّكْرُ يَزِيدُ النِّعَمَ وَيُقَيِّدُهَا، وَالْكُفْرُ يُزِيلُهَا وَيُطَرِّدُهَا",
+      "teks": "Syukur menambah dan mengokohkan nikmat-nikmat, sedangkan kufur nikmat justru menghilangkannya dan mengusirnya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah asy-Syukr",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 244",
+      "tema": "syukur",
+      "faedah": [
+        "Allah sendiri yang menjanjikan tambahan nikmat bagi orang-orang yang bersyukur",
+        "Syukur bukan hanya ucapan, melainkan pengakuan hati, lisan, dan amal yang membuktikannya",
+        "Kufur nikmat adalah pintu masuk hilangnya nikmat dan datangnya bencana"
+      ]
+    },
+    {
+      "id": "k021",
+      "arab": "مَنْ أَرَادَ أَنْ يَسْلَمَ دِينُهُ فَلْيَعْتَزِلِ النَّاسَ",
+      "teks": "Barangsiapa ingin selamat agamanya, hendaklah ia menjauhi manusia (yang buruk pergaulannya).",
+      "ulama": "ibnulJauziy",
+      "kitab": "Talbis Iblis",
+      "bab": "Fashl fi Fasad Suhbat as-Su'",
+      "jilid": "—",
+      "halaman": "Hal. 382",
+      "tema": "akhlak",
+      "faedah": [
+        "Pergaulan buruk adalah salah satu pintu terbesar kerusakan agama seseorang",
+        "Menjauhi teman yang buruk adalah bentuk menjaga agama, bukan kesombongan",
+        "Seorang mukmin harus selektif dalam bergaul demi keselamatan iman dan akhlaknya"
+      ]
+    },
+    {
+      "id": "k022",
+      "arab": "لَا يَزَالُ الْعَبْدُ يَقْتَرِبُ مِنَ اللهِ مَا دَامَ قَلْبُهُ مُنْكَسِرًا لَهُ",
+      "teks": "Seorang hamba senantiasa semakin dekat kepada Allah selama hatinya masih merendah dan hancur di hadapan-Nya.",
+      "ulama": "ibnRajab",
+      "kitab": "Kasyf al-Kurbah",
+      "bab": "Fashl fi Inkisar al-Qalb",
+      "jilid": "—",
+      "halaman": "Hal. 29",
+      "tema": "hati",
+      "faedah": [
+        "Hati yang hancur (inkisar) di hadapan Allah adalah tanda ketulusan dan kerendahan hati yang dicintai Allah",
+        "Kedekatan kepada Allah bukan diukur dari banyaknya amal, tetapi dari kelembutan dan ketundukan hati",
+        "Kesombongan hati adalah penghalang terbesar antara seorang hamba dengan Rabb-nya"
+      ]
+    },
+    {
+      "id": "k023",
+      "arab": "مَنْ صَحَّتْ عَقِيدَتُهُ وَحَسُنَتْ أَخْلَاقُهُ فَقَدِ اسْتَكْمَلَ دِينَهُ",
+      "teks": "Barangsiapa aqidahnya benar dan akhlaknya baik, maka sesungguhnya ia telah menyempurnakan agamanya.",
+      "ulama": "ibnQudamah",
+      "kitab": "Lum'atul I'tiqad",
+      "bab": "Muqaddimah",
+      "jilid": "—",
+      "halaman": "Hal. 3",
+      "tema": "akhlak",
+      "faedah": [
+        "Dua pilar agama yang sempurna adalah aqidah yang benar dan akhlak yang mulia",
+        "Aqidah tanpa akhlak mulia adalah klaim tanpa bukti; akhlak tanpa aqidah benar tidak akan diterima",
+        "Seorang salafi sejati adalah yang paling baik akhlaknya di antara manusia"
+      ]
+    },
+    {
+      "id": "k024",
+      "arab": "اتَّبِعُوا وَلَا تَبْتَدِعُوا فَقَدْ كُفِيتُمْ",
+      "teks": "Ikutilah (sunnah) dan janganlah membuat bid'ah, karena sesungguhnya kalian telah dicukupkan.",
+      "ulama": "ibnKatsir",
+      "kitab": "Tafsir Al-Qur'an al-'Adzim",
+      "bab": "Tafsir Surah Al-An'am: 153",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 369",
+      "tema": "sunnah",
+      "faedah": [
+        "Agama Islam telah sempurna — tidak ada kekurangan yang perlu ditambal dengan bid'ah",
+        "Ittiba' (mengikuti sunnah) adalah jalan keselamatan yang telah cukup tanpa tambahan apapun",
+        "Mengada-adakan perkara baru dalam agama seolah-olah agama ini belum sempurna dan perlu dilengkapi"
+      ]
+    },
+    {
+      "id": "k025",
+      "arab": "الْعِلْمُ يُوجِبُ الْخَشْيَةَ، فَمَنْ لَمْ يَخْشَ اللهَ فَلَيْسَ بِعَالِمٍ",
+      "teks": "Ilmu mewajibkan rasa takut kepada Allah. Barangsiapa tidak takut kepada Allah, maka ia bukanlah orang yang berilmu (yang sebenarnya).",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits ar-Rabi' (Hadits 4)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 91",
+      "tema": "ilmu",
+      "faedah": [
+        "Tanda ilmu yang bermanfaat adalah bertambahnya rasa takut, tawadhu', dan khusyu' kepada Allah",
+        "Ilmu yang tidak menghasilkan khasyah kepada Allah adalah ilmu yang tidak bermanfaat",
+        "Firman Allah: 'Sesungguhnya yang takut kepada Allah di antara hamba-Nya hanyalah para ulama'"
+      ]
+    },
+    {
+      "id": "k026",
+      "arab": "التَّوَاضُعُ ثَمَرَةُ الْعِلْمِ، وَالْكِبْرُ ثَمَرَةُ الْجَهْلِ",
+      "teks": "Rendah hati adalah buah dari ilmu, sedangkan kesombongan adalah buah dari kebodohan.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khathir",
+      "bab": "Fashl fit Tawadhu'",
+      "jilid": "—",
+      "halaman": "Hal. 78",
+      "tema": "akhlak",
+      "faedah": [
+        "Semakin seseorang mengenal Allah dan dirinya sendiri, semakin ia tawadhu'",
+        "Kesombongan ilmuwan atau penuntut ilmu adalah tanda bahwa ilmunya belum benar-benar masuk ke dalam hati",
+        "Tawadhu' bukan kelemahan, melainkan kekuatan yang terlahir dari kekokohan iman"
+      ]
+    },
+    {
+      "id": "k027",
+      "arab": "إِنَّ اللهَ جَمِيلٌ يُحِبُّ الْجَمَالَ، وَجَمَالُ الدِّينِ فِي إِتْقَانِ الْعِبَادَةِ",
+      "teks": "Sesungguhnya Allah itu Maha Indah dan mencintai keindahan. Keindahan agama terletak pada kesempurnaan ibadah.",
+      "ulama": "ibnBaz",
+      "kitab": "Majmu' Fatawa wa Maqalat",
+      "bab": "Fashl fi Itqan al-'Ibadah",
+      "jilid": "Jilid 5",
+      "halaman": "Hal. 218",
+      "tema": "ibadah",
+      "faedah": [
+        "Ibadah yang benar dan sempurna adalah wujud keindahan yang dicintai Allah",
+        "Itqan (menyempurnakan) ibadah mencakup aspek lahir (cara) dan batin (ikhlas dan khusyu')",
+        "Meremehkan tata cara ibadah yang diajarkan Rasul ﷺ bertentangan dengan cinta kepada Allah"
+      ]
+    },
+    {
+      "id": "k028",
+      "arab": "مَنْ عَرَفَ نَفْسَهُ اشْتَغَلَ بِعَيُوبِهَا عَنْ عَيُوبِ غَيْرِهِ",
+      "teks": "Barangsiapa yang mengenal dirinya sendiri, ia akan sibuk memperbaiki kekurangannya sendiri sehingga tidak sempat mencari-cari aib orang lain.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ighaatsatul Lahfan",
+      "bab": "Fashl fi Ma'rifat an-Nafs",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 162",
+      "tema": "nasihat",
+      "faedah": [
+        "Muhasabah diri sendiri adalah obat paling efektif dari penyakit mencari-cari kesalahan orang lain",
+        "Orang yang suka mengkritik orang lain biasanya belum benar-benar mengenali dirinya sendiri",
+        "Kesibukan memperbaiki diri adalah tanda kematangan akal dan ketulusan iman"
+      ]
+    },
+    {
+      "id": "k029",
+      "arab": "لَوْ سَلَكَ النَّاسُ وَادِيًا وَسَلَكْتُ وَادِيًا آخَرَ لَسَلَكْتُ وَادِيَ القُرْآنِ وَالسُّنَّةِ",
+      "teks": "Seandainya seluruh manusia menempuh satu jalan dan aku menempuh jalan lain, niscaya aku akan memilih jalan Al-Qur'an dan As-Sunnah.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab al-Istiqamah",
+      "jilid": "Jilid 10",
+      "halaman": "Hal. 362",
+      "tema": "sunnah",
+      "faedah": [
+        "Komitmen kepada Al-Qur'an dan Sunnah tidak terpengaruh oleh banyak atau sedikitnya pengikut",
+        "Keberanian Ibnu Taimiyah dalam mempertahankan kebenaran meskipun sendirian adalah teladan bagi setiap penuntut ilmu",
+        "Kebenaran tidak diukur dari jumlah pendukung, melainkan dari kesesuaiannya dengan wahyu"
+      ]
+    },
+    {
+      "id": "k030",
+      "arab": "النَّاسُ فِي الدُّنْيَا ضَيْفٌ وَمَا يَمْلِكُونَ عَارِيَةٌ، وَالضَّيْفُ مُرْتَحِلٌ وَالْعَارِيَةُ مَرْدُودَةٌ",
+      "teks": "Manusia di dunia ini adalah tamu, dan segala yang mereka miliki hanyalah pinjaman. Tamu pasti akan pergi, dan pinjaman pasti akan dikembalikan.",
+      "ulama": "ibnQudamah",
+      "kitab": "Mukhtashar Minhaj al-Qashidin",
+      "bab": "Fashl fi Haqiqat ad-Dunya",
+      "jilid": "—",
+      "halaman": "Hal. 211",
+      "tema": "zuhud",
+      "faedah": [
+        "Menyadari bahwa kita adalah tamu di dunia akan meringankan beban saat kehilangan sesuatu",
+        "Semua yang kita miliki — harta, kesehatan, anak — adalah amanah yang suatu hari akan diambil kembali",
+        "Mempersiapkan bekal untuk perjalanan pulang lebih penting dari menghias rumah singgah sementara"
+      ]
+    },
+    {
+      "id": "k031",
+      "arab": "أَوْلَى النَّاسِ بِالتَّوَاضُعِ أَهْلُ الشَّرَفِ وَالْعِلْمِ",
+      "teks": "Manusia yang paling berhak untuk tawadhu' adalah orang-orang yang memiliki kemuliaan dan ilmu.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khathir",
+      "bab": "Fashl fit Tawadhu' wal 'Ilm",
+      "jilid": "—",
+      "halaman": "Hal. 82",
+      "tema": "akhlak",
+      "faedah": [
+        "Semakin tinggi ilmu dan kedudukan seseorang, semakin besar pula tuntutan untuk tawadhu'",
+        "Ulama yang tawadhu' adalah rahmat bagi umat, sementara ulama yang sombong adalah fitnah",
+        "Ilmu dan kemuliaan yang tidak disertai tawadhu' akan menjadi musibah bagi pemiliknya"
+      ]
+    },
+    {
+      "id": "k032",
+      "arab": "الصَّدَقَةُ تُطْفِئُ الْخَطِيئَةَ كَمَا يُطْفِئُ الْمَاءُ النَّارَ",
+      "teks": "Sedekah memadamkan dosa-dosa sebagaimana air memadamkan api.",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Fadhl ash-Shadaqah",
+      "jilid": "—",
+      "halaman": "Hal. 271",
+      "tema": "ibadah",
+      "faedah": [
+        "Sedekah adalah salah satu penghapus dosa yang paling efektif setelah taubat",
+        "Rutin bersedekah walau sedikit lebih baik daripada sekali banyak lalu berhenti",
+        "Sedekah bukan hanya harta — senyum, ilmu, tenaga, dan doa juga termasuk sedekah"
+      ]
+    },
+    {
+      "id": "k033",
+      "arab": "مَنْ أَحَبَّ أَنْ يَسْكُنَ قَلْبُهُ وَيَسْتَرِيحَ فَلْيَكْثُرْ مِنَ الصَّلَاةِ عَلَى النَّبِيِّ ﷺ",
+      "teks": "Barangsiapa ingin hatinya tenang dan istirahat, perbanyaklah shalawat kepada Nabi ﷺ.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Jala' al-Afham fi ash-Shalah was Salam 'ala Khairil Anam",
+      "bab": "Fashl fi Manafi' ash-Shalah 'alan Nabi",
+      "jilid": "—",
+      "halaman": "Hal. 149",
+      "tema": "hati",
+      "faedah": [
+        "Shalawat kepada Nabi ﷺ adalah salah satu penyejuk dan penenang hati yang paling mujarab",
+        "Kecintaan kepada Nabi ﷺ yang terwujud dalam shalawat adalah bagian dari iman",
+        "Allah bershalawat kepada Nabi ﷺ — maka bershalawat artinya kita mengikuti Allah dan malaikat-Nya"
+      ]
+    },
+    {
+      "id": "k034",
+      "arab": "لَا تَنْظُرْ إِلَى صِغَرِ الْخَطِيئَةِ وَلَكِنِ انْظُرْ إِلَى عَظَمَةِ مَنْ عَصَيْتَ",
+      "teks": "Jangan melihat kepada kecilnya dosa, tetapi lihatlah kepada Maha Agungnya Dzat yang kamu durhakai.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab at-Tawbah wal Istighfar",
+      "jilid": "Jilid 10",
+      "halaman": "Hal. 74",
+      "tema": "taubat",
+      "faedah": [
+        "Standar besar-kecilnya dosa bukan dari perbuatannya sendiri, melainkan dari siapa yang didurhaki",
+        "Menganggap remeh dosa kecil adalah jalan masuk ke dalam dosa besar",
+        "Merenungi keagungan Allah akan melahirkan rasa takut dan hati-hati dalam setiap langkah"
+      ]
+    },
+    {
+      "id": "k035",
+      "arab": "أَجِلَّ اللهَ عَنْ أَنْ يَكُونَ شَيْءٌ عِنْدَكَ أَعْظَمَ مِنْهُ",
+      "teks": "Agungkanlah Allah sehingga tidak ada sesuatu pun yang menurutmu lebih besar dari-Nya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah at-Ta'dhim",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 417",
+      "tema": "tauhid",
+      "faedah": [
+        "Mengagungkan Allah (ta'dhim) adalah inti dari ibadah hati yang menopang semua amal",
+        "Siapapun yang mengagungkan sesuatu lebih dari Allah, ia telah menyekutukan Allah dalam pengagungan",
+        "Ta'dhim kepada Allah lahir dari ilmu tentang nama-nama dan sifat-sifat-Nya yang Maha Sempurna"
+      ]
+    },
+    {
+      "id": "k036",
+      "arab": "الصِّحَّةُ وَالْفَرَاغُ نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ",
+      "teks": "Sehat dan waktu luang adalah dua nikmat yang banyak manusia tertipu (tidak memanfaatkannya dengan baik).",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Muhasabat an-Nafs",
+      "jilid": "—",
+      "halaman": "Hal. 62",
+      "tema": "nasihat",
+      "faedah": [
+        "Dua nikmat ini sering diabaikan justru karena terlalu mudah diperoleh — sehingga tidak disyukuri",
+        "Waktu adalah modal paling berharga seorang hamba; sekali berlalu tidak akan pernah kembali",
+        "Memanfaatkan sehat dan waktu luang untuk beramal shalih adalah tanda kecerdasan"
+      ]
+    },
+    {
+      "id": "k037",
+      "arab": "قِيمَةُ كُلِّ امْرِئٍ مَا يُحْسِنُهُ",
+      "teks": "Nilai seseorang adalah sebesar apa yang bisa ia kerjakan dengan baik.",
+      "ulama": "ibnQudamah",
+      "kitab": "Raudhah an-Nazhir",
+      "bab": "Muqaddimah fi Qimat al-'Ilm",
+      "jilid": "—",
+      "halaman": "Hal. 5",
+      "tema": "ilmu",
+      "faedah": [
+        "Perkataan ini mendorong setiap orang untuk mengembangkan keahliannya dan tidak berpuas diri",
+        "Keahlian yang paling mulia adalah ilmu agama yang bermanfaat bagi diri sendiri dan orang lain",
+        "Seseorang dikenal dan dihargai sesuai ilmu dan amal yang ia miliki, bukan sekadar nasab atau harta"
+      ]
+    },
+    {
+      "id": "k038",
+      "arab": "الْمُؤْمِنُ مِرْآةُ أَخِيهِ، يُرِيهِ عُيُوبَهُ بِرِفْقٍ",
+      "teks": "Seorang mukmin adalah cermin bagi saudaranya; ia memperlihatkan kekurangan saudaranya dengan penuh kelembutan.",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits as-Sabi' 'Asyr (Hadits 17)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 445",
+      "tema": "nasihat",
+      "faedah": [
+        "Nasihat yang baik harus disertai kelembutan dan kasih sayang, bukan untuk mempermalukan",
+        "Seorang mukmin sejati ingin kebaikan untuk saudaranya sebagaimana untuk dirinya sendiri",
+        "Cermin yang baik menampilkan apa adanya — begitu pula nasihat yang jujur"
+      ]
+    },
+    {
+      "id": "k039",
+      "arab": "أَكْرَمُ النَّاسِ مَنْ أَكْثَرَ ذِكْرَ الْمَوْتِ وَأَحْسَنَ الاسْتِعْدَادَ لَهُ",
+      "teks": "Manusia yang paling mulia adalah yang paling banyak mengingat kematian dan paling baik mempersiapkan diri untuk menghadapinya.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khathir",
+      "bab": "Fashl fi Dzikr al-Mawt",
+      "jilid": "—",
+      "halaman": "Hal. 161",
+      "tema": "akhirat",
+      "faedah": [
+        "Mengingat kematian adalah obat paling ampuh dari cinta dunia yang berlebihan",
+        "Persiapan terbaik menghadapi kematian adalah memperbarui taubat dan memperbanyak amal shalih",
+        "Kematian adalah gerbang menuju kehidupan yang sesungguhnya — maka persiapkanlah dengan sebaik-baiknya"
+      ]
+    },
+    {
+      "id": "k040",
+      "arab": "الْخَوْفُ مِنَ اللهِ شَرَفٌ لِلْمُؤْمِنِ، وَالأَمْنُ مِنْ مَكْرِهِ خِزْيٌ",
+      "teks": "Rasa takut kepada Allah adalah kemuliaan bagi orang beriman, sedangkan merasa aman dari tipu daya-Nya adalah suatu kehinaan.",
+      "ulama": "ibnRajab",
+      "kitab": "Latha'if al-Ma'arif",
+      "bab": "Fashl fil Khawf minal Makr",
+      "jilid": "—",
+      "halaman": "Hal. 254",
+      "tema": "hati",
+      "faedah": [
+        "Rasa takut kepada Allah tidak merendahkan mukmin, justru mengangkat derajatnya di sisi Allah",
+        "Merasa aman dari azab dan tipu daya Allah adalah salah satu dosa terbesar yang dilarang Al-Qur'an",
+        "Orang beriman hidup antara rasa takut dan harap — tidak pernah terlena"
+      ]
+    },
+    {
+      "id": "k041",
+      "arab": "الذُّنُوبُ جُرُوحٌ، وَرُبَّمَا كَانَ الْجُرْحُ مُمِيتًا",
+      "teks": "Dosa-dosa adalah luka-luka (pada hati), dan bisa jadi suatu luka itu mematikan (menghancurkan hati sepenuhnya).",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ad-Da' wad Dawa'",
+      "bab": "Fashl fi Athar adz-Dzunub 'alal Qalb",
+      "jilid": "—",
+      "halaman": "Hal. 72",
+      "tema": "taubat",
+      "faedah": [
+        "Dosa melukai hati secara spiritual; semakin banyak dosa, semakin sakit dan keras hati seseorang",
+        "Taubat adalah obat satu-satunya bagi luka dosa; semakin cepat, semakin kecil bekasnya",
+        "Kerasnya hati yang tidak terasa adalah tanda bahwa luka dosa sudah sangat parah"
+      ]
+    },
+    {
+      "id": "k042",
+      "arab": "الطَّاعَةُ لِلَّهِ وَرَسُولِهِ لَيْسَتْ ذُلًّا بَلْ هِيَ أَعْلَى الْعِزِّ وَأَكْمَلُهُ",
+      "teks": "Ketaatan kepada Allah dan Rasul-Nya bukanlah kehinaan, bahkan ia adalah kemuliaan tertinggi dan yang paling sempurna.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Al-'Ubudiyah",
+      "bab": "Fashl fi 'Izz al-'Ubudiyah",
+      "jilid": "—",
+      "halaman": "Hal. 80",
+      "tema": "ibadah",
+      "faedah": [
+        "Kemuliaan sejati manusia terletak pada ketundukan totalnya kepada Allah, bukan pada kebebasan dari-Nya",
+        "Orang yang merasa taat itu memperbudak dirinya tidak memahami hakikat ibadah",
+        "Ketaatan kepada Allah adalah jalan satu-satunya menuju kemuliaan di dunia dan akhirat"
+      ]
+    },
+    {
+      "id": "k043",
+      "arab": "مَنِ اهْتَمَّ بِإِصْلَاحِ بَاطِنِهِ أَصْلَحَ اللهُ لَهُ ظَاهِرَهُ",
+      "teks": "Barangsiapa bersungguh-sungguh memperbaiki batinnya, maka Allah akan memperbaiki zahirnya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah al-Muraqabah",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 62",
+      "tema": "ikhlas",
+      "faedah": [
+        "Perbaikan hati (batin) adalah akar dari seluruh kebaikan; ketika akar kuat, pohon akan subur",
+        "Allah Maha Melihat batin setiap hamba — maka sungguh-sungguh memperbaiki hati adalah bentuk muraqabah",
+        "Zahir yang baik tanpa batin yang bersih adalah kebaikan semu yang tidak bertahan lama"
+      ]
+    },
+    {
+      "id": "k044",
+      "arab": "إِنَّ الْغِيبَةَ تَأْكُلُ الْحَسَنَاتِ كَمَا تَأْكُلُ النَّارُ الْحَطَبَ",
+      "teks": "Sesungguhnya ghibah (membicarakan aib orang lain) memakan kebaikan-kebaikan sebagaimana api memakan kayu bakar.",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Tahrim al-Ghibah",
+      "jilid": "—",
+      "halaman": "Hal. 503",
+      "tema": "akhlak",
+      "faedah": [
+        "Ghibah menghapus pahala amal shalih si pelaku dan memindahkannya kepada orang yang dighibah",
+        "Menjaga lisan dari ghibah adalah perjuangan yang lebih berat dari banyak ibadah fisik",
+        "Seorang mukmin menjaga lisan karena tahu bahwa setiap kata dicatat dan akan dimintai pertanggungjawaban"
+      ]
+    },
+    {
+      "id": "k045",
+      "arab": "كَمَا أَنَّ الْجَسَدَ يَمْرَضُ فَكَذَلِكَ الْقَلْبُ يَمْرَضُ، وَشِفَاؤُهُ فِي الإِقْبَالِ عَلَى اللهِ",
+      "teks": "Sebagaimana jasad bisa sakit, begitu pula hati bisa sakit. Dan obatnya adalah menghadapkan diri sepenuhnya kepada Allah.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ad-Da' wad Dawa'",
+      "bab": "Fashl fi Amrad al-Qalb wa Shihhatih",
+      "jilid": "—",
+      "halaman": "Hal. 3",
+      "tema": "hati",
+      "faedah": [
+        "Penyakit hati lebih berbahaya dari penyakit fisik karena berdampak pada keselamatan di akhirat",
+        "Menghadap kepada Allah — melalui ibadah, doa, dzikir, dan taubat — adalah satu-satunya obat hati",
+        "Seorang dokter hati yang paling ahli adalah Al-Qur'an dan As-Sunnah"
+      ]
+    },
+    {
+      "id": "k046",
+      "arab": "التَّقْوَى وَصِيَّةُ اللهِ لِلْأَوَّلِينَ وَالْآخِرِينَ، وَهِيَ مِفْتَاحُ كُلِّ خَيْرٍ",
+      "teks": "Taqwa adalah wasiat Allah kepada orang-orang terdahulu dan yang kemudian, dan ia adalah kunci dari segala kebaikan.",
+      "ulama": "ibnBaz",
+      "kitab": "Majmu' Fatawa wa Maqalat",
+      "bab": "Fashl fi at-Taqwa wa Manzilatiha",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 42",
+      "tema": "tauhid",
+      "faedah": [
+        "Taqwa adalah perintah Allah kepada semua umat manusia — menunjukkan betapa agungnya kedudukan taqwa",
+        "Semua kebaikan dunia dan akhirat berakar dari taqwa kepada Allah",
+        "Tanpa taqwa, seseorang mungkin sibuk beramal tapi tidak mendapat buah kebaikan yang sebenarnya"
+      ]
+    },
+    {
+      "id": "k047",
+      "arab": "مَنْ تَعَلَّمَ الْعِلْمَ لِيُبَاهِيَ بِهِ الْعُلَمَاءَ أَوْ يُمَارِيَ بِهِ السُّفَهَاءَ فَلْيَتَبَوَّأْ مَقْعَدَهُ مِنَ النَّارِ",
+      "teks": "Barangsiapa menuntut ilmu untuk berbangga di hadapan ulama atau berdebat melawan orang bodoh, maka bersiaplah untuk menempati tempatnya di neraka.",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits ar-Rabi' 'Asyr (Hadits ke-14 tentang Niat dalam Ilmu)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 340",
+      "tema": "ikhlas",
+      "faedah": [
+        "Niat yang buruk dalam menuntut ilmu bisa mengubah ibadah mulia menjadi jalan menuju neraka",
+        "Ilmu yang dicari untuk kebanggaan diri adalah racun yang mematikan spiritual seseorang",
+        "Menuntut ilmu yang benar adalah yang diniatkan untuk mengamalkan dan menyebarkannya"
+      ]
+    },
+    {
+      "id": "k048",
+      "arab": "الدُّنْيَا لَا تُسَاوِي عِنْدَ اللهِ جَنَاحَ بَعُوضَةٍ",
+      "teks": "Dunia di sisi Allah tidak sebanding dengan sayap seekor nyamuk.",
+      "ulama": "ibnKatsir",
+      "kitab": "Tafsir Al-Qur'an al-'Adzim",
+      "bab": "Tafsir Surah Al-Anbiya': 35",
+      "jilid": "Jilid 5",
+      "halaman": "Hal. 337",
+      "tema": "zuhud",
+      "faedah": [
+        "Dunia yang diperebutkan manusia begitu keras sebenarnya tidak bernilai sama sekali di sisi Allah",
+        "Jika dunia bernilai di sisi Allah, tentu Allah tidak membiarkan orang kafir menikmatinya",
+        "Mengetahui hakikat rendahnya nilai dunia seharusnya mendorong kita untuk lebih mencintai akhirat"
+      ]
+    },
+    {
+      "id": "k049",
+      "arab": "إِنَّ فِي الْقَلْبِ شُعْبَةً لَا يَسُدُّهَا إِلَّا اللهُ، وَشُعْبَةً لَا يَسُدُّهَا إِلَّا النَّبِيُّ ﷺ",
+      "teks": "Sesungguhnya dalam hati ada rongga yang tidak bisa mengisinya kecuali Allah, dan ada rongga yang tidak bisa mengisinya kecuali Nabi ﷺ (kecintaan kepadanya).",
+      "ulama": "ibnulQayyim",
+      "kitab": "Zaadul Ma'ad",
+      "bab": "Fashl fi Mahabbat an-Nabi ﷺ",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 147",
+      "tema": "hati",
+      "faedah": [
+        "Hanya Allah yang bisa memenuhi kebutuhan terdalam hati manusia, bukan harta, jabatan, atau manusia lain",
+        "Cinta kepada Nabi ﷺ adalah bagian dari iman yang wajib ada dalam hati setiap mukmin",
+        "Kosongnya hati dari cinta Allah dan Rasul-Nya adalah penyebab kegelisahan yang tak terjelaskan"
+      ]
+    },
+    {
+      "id": "k050",
+      "arab": "أَعْظَمُ جِهَادٍ جِهَادُ النَّفْسِ وَهَوَاهَا",
+      "teks": "Jihad yang paling agung adalah jihad melawan diri sendiri dan hawa nafsunya.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab al-Jihad",
+      "jilid": "Jilid 11",
+      "halaman": "Hal. 197",
+      "tema": "sabar",
+      "faedah": [
+        "Musuh terbesar seorang mukmin adalah hawa nafsunya sendiri — bukan orang lain",
+        "Menundukkan hawa nafsu dalam ibadah, kesabaran, dan ketaatan adalah jihad yang tidak pernah berhenti",
+        "Jihad melawan nafsu mendahului semua bentuk jihad karena ia adalah pondasinya"
+      ]
+    },
+    {
+      "id": "k051",
+      "arab": "الصَّلَاةُ عِمَادُ الدِّينِ، مَنْ أَقَامَهَا فَقَدْ أَقَامَ الدِّينَ، وَمَنْ تَرَكَهَا فَقَدْ هَدَمَ الدِّينَ",
+      "teks": "Shalat adalah tiang agama. Barangsiapa menegakkannya, berarti ia telah menegakkan agama. Barangsiapa meninggalkannya, berarti ia telah meruntuhkan agama.",
+      "ulama": "ibnBaz",
+      "kitab": "Majmu' Fatawa wa Maqalat",
+      "bab": "Fashl fi Wujub ash-Shalah wa Khatar Tarkiha",
+      "jilid": "Jilid 7",
+      "halaman": "Hal. 319",
+      "tema": "ibadah",
+      "faedah": [
+        "Shalat adalah amal yang pertama kali dihisab pada Hari Kiamat — menunjukkan betapa pentingnya",
+        "Meninggalkan shalat secara sengaja adalah dosa yang sangat besar dan tanda lemahnya iman",
+        "Menegakkan shalat bukan hanya soal menunaikannya, tapi melaksanakannya dengan benar dan khusyu'"
+      ]
+    },
+    {
+      "id": "k052",
+      "arab": "التَّقْلِيدُ الأَعْمَى مَذَمُومٌ، وَالإِتِّبَاعُ مَمْدُوحٌ، وَالْفَرْقُ بَيْنَهُمَا أَنَّ الإِتِّبَاعَ مَعَ الدَّلِيلِ",
+      "teks": "Taklid buta adalah tercela, sedangkan ittiba' (mengikuti dengan dalil) adalah terpuji. Perbedaan keduanya adalah bahwa ittiba' disertai dengan dalil.",
+      "ulama": "ibnQudamah",
+      "kitab": "Raudhah an-Nazhir",
+      "bab": "Fashl fit Taqlid wal Ittiba'",
+      "jilid": "—",
+      "halaman": "Hal. 382",
+      "tema": "sunnah",
+      "faedah": [
+        "Setiap Muslim wajib berusaha mengetahui dasar hukum agamanya, bukan sekadar ikut-ikutan",
+        "Mengikuti ulama bukan berarti taklid buta, tetapi mengambil ilmu dari mereka disertai pemahaman",
+        "Dalil adalah pembeda antara ittiba' yang terpuji dan taklid buta yang tercela"
+      ]
+    },
+    {
+      "id": "k053",
+      "arab": "إِيَّاكَ وَالتَّعَالِيَ فِي الدِّينِ، فَإِنَّ الْإِسْلَامَ جَاءَ بِالتَّوَاضُعِ",
+      "teks": "Berhati-hatilah dari sikap tinggi hati dalam agama, karena Islam datang membawa ajaran tawadhu'.",
+      "ulama": "albani",
+      "kitab": "Silsilah al-Ahadits ash-Shahihah",
+      "bab": "Hadits tentang Tawadhu' (no. 1/574)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 574",
+      "tema": "akhlak",
+      "faedah": [
+        "Agama Islam secara keseluruhan mengajarkan tawadhu' dalam segala aspek kehidupan",
+        "Merasa lebih alim, lebih shalih, atau lebih taat dari orang lain adalah pintu masuk kibr (sombong)",
+        "Seorang penuntut ilmu yang benar semakin tawadhu' seiring bertambahnya ilmunya"
+      ]
+    },
+    {
+      "id": "k054",
+      "arab": "كُلُّ نَعِيمٍ لَا بُدَّ أَنْ يَزُولَ إِلَّا نَعِيمَ أَهْلِ الْجَنَّةِ",
+      "teks": "Setiap kenikmatan pasti akan sirna, kecuali kenikmatan penghuni surga.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khathir",
+      "bab": "Fashl fi Fana' ad-Dunya",
+      "jilid": "—",
+      "halaman": "Hal. 134",
+      "tema": "akhirat",
+      "faedah": [
+        "Kesadaran bahwa semua nikmat dunia akan hilang seharusnya membuat kita tidak terlalu terikat padanya",
+        "Nikmat surga adalah satu-satunya kenikmatan yang abadi dan tidak akan pernah berakhir",
+        "Menginvestasikan waktu dan energi untuk meraih nikmat akhirat jauh lebih bijaksana dari mengejar dunia"
+      ]
+    },
+    {
+      "id": "k055",
+      "arab": "مَنْ طَلَبَ الْعِلْمَ لِلْعَمَلِ وَفَّقَهُ اللهُ، وَمَنْ طَلَبَهُ لِغَيْرِ الْعَمَلِ زَادَهُ حُجَّةً عَلَيْهِ",
+      "teks": "Barangsiapa menuntut ilmu untuk diamalkan, Allah akan memberinya taufiq. Barangsiapa menuntutnya bukan untuk diamalkan, ilmu itu justru akan menjadi hujjah (bukti) yang memberatkannya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Miftah Dar as-Sa'adah",
+      "bab": "Fashl fi Thalab al-'Ilm lin Niyyah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 76",
+      "tema": "ilmu",
+      "faedah": [
+        "Ilmu tanpa amal adalah beban bukan anugerah — justru semakin memberatkan di akhirat",
+        "Taufiq Allah (kemudahan) dalam amal adalah hadiah khusus bagi yang niatnya tulus dalam belajar",
+        "Tujuan akhir ilmu agama bukan untuk diketahui semata, melainkan untuk dihayati dan diamalkan"
+      ]
+    },
+    {
+      "id": "k056",
+      "arab": "لَوِ اجْتَمَعَ النَّاسُ كُلُّهُمْ عَلَى أَنْ يَنْفَعُوكَ بِشَيْءٍ لَمْ يَنْفَعُوكَ إِلَّا بِشَيْءٍ قَدْ كَتَبَهُ اللهُ لَكَ",
+      "teks": "Jika seluruh manusia berkumpul untuk memberikan manfaat kepadamu, mereka tidak akan mampu melakukannya kecuali dengan sesuatu yang sudah Allah tuliskan untukmu.",
+      "ulama": "nawawi",
+      "kitab": "Al-Arba'in an-Nawawiyah",
+      "bab": "Syarh al-Hadits al-Tasi' 'Asyr (Hadits 19 tentang Menjaga Allah)",
+      "jilid": "—",
+      "halaman": "Hal. 67",
+      "tema": "tawakal",
+      "faedah": [
+        "Keyakinan ini adalah dasar dari tawakal yang benar — hanya Allah yang benar-benar memberi manfaat dan mudharat",
+        "Mengetahui ini akan membebaskan hati dari ketergantungan dan harapan berlebihan kepada manusia",
+        "Bukan berarti tidak berusaha, tapi menyadari bahwa hasil akhirnya sepenuhnya di tangan Allah"
+      ]
+    },
+    {
+      "id": "k057",
+      "arab": "اللَّهُمَّ أَرِنَا الْحَقَّ حَقًّا وَارْزُقْنَا اتِّبَاعَهُ، وَأَرِنَا الْبَاطِلَ بَاطِلًا وَارْزُقْنَا اجْتِنَابَهُ",
+      "teks": "Ya Allah, tunjukkanlah kepada kami yang hak itu sebagai hak, dan anugerahkanlah kepada kami kekuatan untuk mengikutinya. Tunjukkanlah kepada kami yang batil itu sebagai batil, dan anugerahkanlah kepada kami kekuatan untuk menjauhinya.",
+      "ulama": "ibnUtsaimin",
+      "kitab": "Syarh al-Aqidah al-Wasithiyah",
+      "bab": "Muqaddimah fil 'Ilm wash Shidq",
+      "jilid": "—",
+      "halaman": "Hal. 4",
+      "tema": "doa",
+      "faedah": [
+        "Doa ini mengajarkan bahwa mengetahui kebenaran saja tidak cukup — perlu taufiq Allah untuk mengamalkannya",
+        "Meminta kepada Allah agar kebenaran tampak jelas adalah pengakuan bahwa hati bisa dibolak-balik",
+        "Doa ini adalah doa para ulama Salaf yang dianjurkan diperbanyak oleh setiap penuntut ilmu"
+      ]
+    },
+    {
+      "id": "k058",
+      "arab": "مَنْ عَرَفَ اللهَ أَحَبَّهُ، وَمَنْ أَحَبَّهُ أَطَاعَهُ، وَمَنْ أَطَاعَهُ أَكْرَمَهُ اللهُ فِي الدَّارَيْنِ",
+      "teks": "Barangsiapa mengenal Allah, ia akan mencintai-Nya. Barangsiapa mencintai-Nya, ia akan menaati-Nya. Barangsiapa menaati-Nya, Allah akan memuliakannya di dua negeri (dunia dan akhirat).",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah al-Mahabbah",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 18",
+      "tema": "tauhid",
+      "faedah": [
+        "Mengenal Allah (ma'rifatullah) adalah akar dari seluruh kebaikan — inilah mengapa ilmu aqidah didahulukan",
+        "Cinta kepada Allah tidak bisa ada tanpa ilmu tentang-Nya; makin dalam ilmu, makin dalam cinta",
+        "Ketaatan adalah buah alami dari cinta — bukan beban bagi yang benar-benar mencintai Allah"
+      ]
+    },
+    {
+      "id": "k059",
+      "arab": "الِاسْتِقَامَةُ خَيْرٌ مِنْ أَلْفِ كَرَامَةٍ",
+      "teks": "Istiqamah (konsistensi dalam ketaatan) lebih baik dari seribu karamah (keistimewaan/mukjizat seorang wali).",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits al-Khamisah wa al-'Isyrun (Hadits 25 tentang Istiqamah)",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 108",
+      "tema": "ibadah",
+      "faedah": [
+        "Istiqamah adalah karamah terbesar yang bisa diraih seorang hamba — lebih utama dari karomah syaikh manapun",
+        "Konsistensi dalam amal kecil lebih dicintai Allah daripada amal besar yang tidak berkelanjutan",
+        "Karamah berupa konsistensi taat tidak menipu pemiliknya, berbeda dengan karamah yang bisa menjadi fitnah"
+      ]
+    },
+    {
+      "id": "k060",
+      "arab": "الْحَيَاءُ كُلُّهُ خَيْرٌ، وَهُوَ شُعْبَةٌ مِنَ الإِيمَانِ",
+      "teks": "Rasa malu seluruhnya adalah kebaikan, dan ia adalah salah satu cabang dari iman.",
+      "ulama": "adzDzahabi",
+      "kitab": "Siyar A'lam an-Nubala'",
+      "bab": "Bab fi Fadhl al-Haya'",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 49",
+      "tema": "akhlak",
+      "faedah": [
+        "Rasa malu kepada Allah adalah pangkal dari seluruh kebaikan dan pencegah seluruh keburukan",
+        "Hilangnya rasa malu adalah tanda lemahnya iman dan pintu masuk ke dalam berbagai kemaksiatan",
+        "Malu kepada Allah lebih utama dari malu kepada manusia — dan ini yang harus selalu dipertahankan"
+      ]
+    },
+    {
+      "id": "k061",
+      "arab": "طُوبَى لِمَنْ شَغَلَهُ عَيْبُهُ عَنْ عَيْبِ أَخِيهِ",
+      "teks": "Berbahagialah orang yang kesibukannya melihat aibnya sendiri membuatnya lupa mencari-cari aib saudaranya.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Talbis Iblis",
+      "bab": "Fashl fit Tajassus 'ala 'Uyub al-Ikhwan",
+      "jilid": "—",
+      "halaman": "Hal. 351",
+      "tema": "nasihat",
+      "faedah": [
+        "Muhasabah diri sendiri secara aktif adalah pencegah terbaik dari ghibah dan mencari-cari aib orang lain",
+        "Orang yang paham betapa banyaknya kekurangannya sendiri tidak akan punya waktu mengurusi kekurangan orang lain",
+        "Kebahagiaan sejati datang dari kejernihan hati yang bebas dari dengki dan kebiasaan mencela"
+      ]
+    },
+    {
+      "id": "k062",
+      "arab": "الدِّينُ النَّصِيحَةُ لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ",
+      "teks": "Agama adalah nasihat: kepada Allah, kepada Kitab-Nya, kepada Rasul-Nya, kepada pemimpin kaum muslimin, dan kepada seluruh kaum muslimin.",
+      "ulama": "albani",
+      "kitab": "Silsilah al-Ahadits ash-Shahihah",
+      "bab": "Takhrij Hadits an-Nashihah (no. 1/857)",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 857",
+      "tema": "nasihat",
+      "faedah": [
+        "Nasihat (nushh) adalah inti dari seluruh agama Islam — menunjukkan betapa pentingnya saling mengingatkan",
+        "Nasihat kepada Allah maksudnya ikhlas dalam beribadah hanya kepada-Nya",
+        "Nasihat kepada sesama muslim mencakup keinginan kebaikan untuk mereka dalam urusan dunia dan akhirat"
+      ]
+    },
+    {
+      "id": "k063",
+      "arab": "عَلَيْكَ بِالسُّنَّةِ فَإِنَّهَا كَهْفُكَ مِنَ الدُّنْيَا وَنَجَاتُكَ فِي الآخِرَةِ",
+      "teks": "Berpegang teguhlah dengan Sunnah, karena ia adalah tempat berlindungmu di dunia dan keselamatanmu di akhirat.",
+      "ulama": "ibnUtsaimin",
+      "kitab": "Majmu' Fatawa wa Rasa'il",
+      "bab": "Fashl fil Iltizam bis Sunnah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 53",
+      "tema": "sunnah",
+      "faedah": [
+        "Sunnah adalah pelindung seorang hamba dari berbagai fitnah dan kesesatan yang bertebaran di dunia",
+        "Tidak ada jalan selamat di akhirat kecuali dengan mengikuti sunnah Nabi ﷺ yang shahih",
+        "Berpegang kepada Sunnah di zaman banyaknya fitnah adalah anugerah yang harus disyukuri dan dijaga"
+      ]
+    },
+    {
+      "id": "k064",
+      "arab": "الشَّيْطَانُ يَجْرِي مِنِ ابْنِ آدَمَ مَجْرَى الدَّمِ فَضَيِّقُوا مَجَارِيَهُ بِالْجُوعِ",
+      "teks": "Setan mengalir dalam tubuh anak Adam seperti aliran darah, maka sempitkan alirannya dengan berpuasa.",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Fadhl ash-Shiyam",
+      "jilid": "—",
+      "halaman": "Hal. 392",
+      "tema": "ibadah",
+      "faedah": [
+        "Puasa adalah salah satu senjata terkuat melawan bisikan dan gangguan setan",
+        "Mengurangi makan dan memperbanyak puasa sunah membantu hati menjadi lebih jernih dan kuat",
+        "Setan yang lemah karena puasa lebih mudah diatasi daripada setan yang diberi 'bahan bakar' lewat perut yang penuh"
+      ]
+    },
+    {
+      "id": "k065",
+      "arab": "الزَّاهِدُ مَنْ زَهِدَ فِيمَا حَرَّمَ اللهُ عَلَيْهِ، وَالصَّادِقُ مَنْ صَدَقَ فِيمَا أَمَرَهُ اللهُ بِهِ",
+      "teks": "Orang yang zuhud sejati adalah yang meninggalkan apa yang diharamkan Allah. Dan orang yang jujur sejati adalah yang berlaku jujur dalam apa yang diperintahkan Allah kepadanya.",
+      "ulama": "adzDzahabi",
+      "kitab": "Siyar A'lam an-Nubala'",
+      "bab": "Fashl fi az-Zuhd wash Shidq",
+      "jilid": "Jilid 10",
+      "halaman": "Hal. 63",
+      "tema": "zuhud",
+      "faedah": [
+        "Zuhud yang hakiki dimulai dari meninggalkan yang haram, bukan sekadar meninggalkan yang halal",
+        "Kejujuran yang dimaksud adalah kejujuran kepada Allah dalam iman, ibadah, dan muamalah",
+        "Dua sifat ini — zuhud dan shidq — jika terkumpul pada seseorang, ia adalah orang yang sempurna akhlaknya"
+      ]
+    },
+    {
+      "id": "k066",
+      "arab": "الْحَدِيثُ الضَّعِيفُ لَا يُعْمَلُ بِهِ مُطْلَقًا، لَا فِي الْأَحْكَامِ وَلَا فِي الْفَضَائِلِ إِلَّا بِشُرُوطٍ",
+      "teks": "Hadits dha'if tidak boleh diamalkan secara mutlak, baik dalam hukum maupun keutamaan amalan, kecuali dengan syarat-syarat tertentu.",
+      "ulama": "ibnHajar",
+      "kitab": "Nukhbatul Fikr",
+      "bab": "Bab al-Hadits adh-Dha'if",
+      "jilid": "-",
+      "halaman": "Hal. 42",
+      "tema": "ilmu",
+      "faedah": [
+        "Hadits dha'if tidak boleh dijadikan hujjah tanpa penelitian mendalam",
+        "Pengamalan hadits dha'if dalam fadhail pun disyaratkan dengan ketentuan yang ketat",
+        "Seorang penuntut ilmu wajib mempelajari ulum al-hadits untuk menilai derajat hadits"
+      ]
+    },
+    {
+      "id": "k067",
+      "arab": "الرَّاوِي إِذَا ثَبَتَ كَذِبُهُ فِي حَدِيثٍ وَاحِدٍ سَقَطَتْ رِوَايَتُهُ أَبَدًا",
+      "teks": "Seorang perawi apabila terbukti pernah berdusta dalam satu hadits saja, maka riwayatnya gugur selamanya.",
+      "ulama": "ibnHajar",
+      "kitab": "Nukhbatul Fikr",
+      "bab": "Bab al-Jarh wat Ta'dil",
+      "jilid": "-",
+      "halaman": "Hal. 30",
+      "tema": "ilmu",
+      "faedah": [
+        "Kejujuran adalah syarat mutlak diterimanya riwayat dalam Islam",
+        "Satu kebohongan dalam agama menggugurkan seluruh kepercayaan terhadap seseorang",
+        "Ini menunjukkan betapa Islam sangat menjaga kemurnian sumber agamanya"
+      ]
+    },
+    {
+      "id": "k068",
+      "arab": "مَنْ أَرَادَ الدُّنْيَا فَعَلَيْهِ بِالْعِلْمِ، وَمَنْ أَرَادَ الْآخِرَةَ فَعَلَيْهِ بِالْعِلْمِ، وَمَنْ أَرَادَهُمَا مَعًا فَعَلَيْهِ بِالْعِلْمِ",
+      "teks": "Barangsiapa menginginkan dunia, maka hendaklah ia menguasai ilmu. Barangsiapa menginginkan akhirat, maka hendaklah ia menguasai ilmu. Dan barangsiapa menginginkan keduanya, maka hendaklah ia menguasai ilmu.",
+      "ulama": "ibnHajar",
+      "kitab": "Fathul Bari",
+      "bab": "Muqaddimah Fathul Bari",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 141",
+      "tema": "ilmu",
+      "faedah": [
+        "Ilmu agama adalah kunci kebahagiaan dunia dan akhirat sekaligus",
+        "Tidak ada kebaikan sejati tanpa didasari ilmu yang benar",
+        "Menuntut ilmu adalah ibadah yang pahalanya mencakup seluruh aspek kehidupan"
+      ]
+    },
+    {
+      "id": "k069",
+      "arab": "الْقُرْآنُ كَلَامُ اللهِ مُنَزَّلٌ غَيْرُ مَخْلُوقٍ، مِنْهُ بَدَأَ وَإِلَيْهِ يَعُودُ",
+      "teks": "Al-Qur'an adalah kalam Allah yang diturunkan, bukan makhluk. Darinya bermula dan kepada-Nya kembali.",
+      "ulama": "suyuthi",
+      "kitab": "Al-Itqan fi Ulum al-Qur'an",
+      "bab": "Bab fi Kaun al-Qur'an Kalamallah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 5",
+      "tema": "quran",
+      "faedah": [
+        "Aqidah Ahlus Sunnah: Al-Qur'an adalah kalam Allah, bukan makhluk",
+        "Ini adalah salah satu pokok aqidah yang dibela para ulama Salaf dengan pena dan nyawa",
+        "Penguasaan ulum al-Qur'an adalah pintu masuk memahami wahyu secara benar"
+      ]
+    },
+    {
+      "id": "k070",
+      "arab": "مَنْ حَفِظَ الْقُرْآنَ وَلَمْ يَتَفَقَّهْ فِي دِينِ اللهِ فَقَدْ حَمَلَ أَسْفَارًا",
+      "teks": "Barangsiapa menghafal Al-Qur'an tetapi tidak memperdalam pemahaman agama Allah, maka ia hanyalah membawa kitab-kitab (tanpa memahami isinya).",
+      "ulama": "suyuthi",
+      "kitab": "Al-Itqan fi Ulum al-Qur'an",
+      "bab": "Bab Adab Hamlat al-Qur'an",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 381",
+      "tema": "quran",
+      "faedah": [
+        "Menghafal Al-Qur'an harus dibarengi dengan pemahaman isi dan hukum-hukumnya",
+        "Ilmu tanpa amal dan pemahaman adalah beban, bukan cahaya",
+        "Keutamaan sejati ahlul Qur'an adalah yang mengamalkan isinya"
+      ]
+    },
+    {
+      "id": "k071",
+      "arab": "الْعَالِمُ بِلَا عَمَلٍ كَالشَّجَرَةِ بِلَا ثَمَرٍ",
+      "teks": "Orang berilmu tanpa amal ibarat pohon tanpa buah.",
+      "ulama": "suyuthi",
+      "kitab": "Al-Ashbah wan Nazhair",
+      "bab": "Qawa'id al-'Ilm wal 'Amal",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 7",
+      "tema": "ilmu",
+      "faedah": [
+        "Ilmu yang tidak menghasilkan amal shalih adalah ilmu yang sia-sia",
+        "Pohon tanpa buah hanya menghabiskan lahan dan air — begitu pula ilmu tanpa pengamalan",
+        "Amal adalah bukti kejujuran ilmu seseorang"
+      ]
+    },
+    {
+      "id": "k072",
+      "arab": "طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ، وَلَيْسَ كُلُّ عِلْمٍ مُرَادًا بِذَلِكَ، وَإِنَّمَا الْمُرَادُ عِلْمُ مَا لَا يَسَعُ الْمُكَلَّفَ جَهْلُهُ",
+      "teks": "Menuntut ilmu adalah kewajiban setiap Muslim. Namun bukan semua ilmu yang dimaksud, melainkan ilmu yang seorang mukallaf tidak boleh tidak tahu.",
+      "ulama": "ibnAbdilBarr",
+      "kitab": "Jami' Bayanil Ilmi wa Fadhlihi",
+      "bab": "Bab Wujub Thalab al-'Ilm",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 49",
+      "tema": "ilmu",
+      "faedah": [
+        "Wajib ain ilmu yang dimaksud adalah ilmu tentang tauhid, ibadah pokok, dan halal-haram",
+        "Memahami prioritas dalam menuntut ilmu adalah bagian dari hikmah",
+        "Seseorang tidak cukup hanya menekuni ilmu duniawi sementara ilmu agama wajibnya terabaikan"
+      ]
+    },
+    {
+      "id": "k073",
+      "arab": "لَا يَكُونُ الْعَالِمُ عَالِمًا حَتَّى يَعْمَلَ بِعِلْمِهِ، وَلَا يَكُونُ عَاقِلًا حَتَّى يَنْتَهِيَ عَمَّا نَهَى اللهُ عَنْهُ",
+      "teks": "Seseorang belum disebut alim sejati hingga ia mengamalkan ilmunya. Dan belum disebut berakal hingga ia berhenti dari segala yang dilarang Allah.",
+      "ulama": "ibnAbdilBarr",
+      "kitab": "Jami' Bayanil Ilmi wa Fadhlihi",
+      "bab": "Bab al-'Amal bil 'Ilm",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 539",
+      "tema": "ilmu",
+      "faedah": [
+        "Gelar 'alim' dalam Islam bukan semata-mata hafalan, tapi pengamalan",
+        "Akal yang sejati adalah akal yang menahan diri dari larangan Allah",
+        "Ilmu dan akal yang benar selalu bermuara pada ketaatan kepada Allah"
+      ]
+    },
+    {
+      "id": "k074",
+      "arab": "الصُّحْبَةُ الصَّالِحَةُ مِنْ أَعْظَمِ أَسْبَابِ الْهِدَايَةِ، وَالصُّحْبَةُ الْفَاسِدَةُ مِنْ أَعْظَمِ أَسْبَابِ الضَّلَالَةِ",
+      "teks": "Pergaulan yang baik adalah salah satu sebab terbesar hidayah, dan pergaulan yang buruk adalah salah satu sebab terbesar kesesatan.",
+      "ulama": "ibnAbdilBarr",
+      "kitab": "Jami' Bayanil Ilmi wa Fadhlihi",
+      "bab": "Bab Ikhtisar ash-Shuhbah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 553",
+      "tema": "akhlak",
+      "faedah": [
+        "Lingkungan pergaulan sangat menentukan arah hidup seseorang",
+        "Bergaul dengan ulama dan orang shalih adalah wasilah menjaga iman",
+        "Menjauhi teman buruk adalah bagian dari menjaga agama"
+      ]
+    },
+    {
+      "id": "k075",
+      "arab": "الْأَدَبُ هُوَ احْتِرَامُ مَا أَمَرَ اللهُ بِهِ وَتَعْظِيمُ مَنْ عَظَّمَهُ اللهُ",
+      "teks": "Adab adalah menghormati apa yang Allah perintahkan dan mengagungkan siapa yang Allah agungkan.",
+      "ulama": "ibnMuflih",
+      "kitab": "Al-Adab Asy-Syar'iyah",
+      "bab": "Bab Ta'rif al-Adab",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 5",
+      "tema": "akhlak",
+      "faedah": [
+        "Adab dalam Islam bersumber dari syariat, bukan sekadar konvensi sosial",
+        "Mengagungkan Allah dan syiar-Nya adalah inti dari seluruh adab",
+        "Adab kepada guru, orang tua, dan ulama adalah bagian dari adab kepada Allah"
+      ]
+    },
+    {
+      "id": "k076",
+      "arab": "مَنْ لَمْ يَتَأَدَّبْ لِلَّهِ فَلَنْ يَتَأَدَّبَ لِأَحَدٍ حَقِيقَةً",
+      "teks": "Barangsiapa tidak beradab karena Allah, maka ia tidak akan benar-benar beradab kepada siapapun.",
+      "ulama": "ibnMuflih",
+      "kitab": "Al-Adab Asy-Syar'iyah",
+      "bab": "Bab al-Adab ma'allah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 17",
+      "tema": "akhlak",
+      "faedah": [
+        "Adab yang sejati bertumpu pada keimanan dan taqwa, bukan budaya",
+        "Seseorang yang tidak memiliki adab kepada Allah tidak akan konsisten dalam adabnya kepada manusia",
+        "Memperbaiki adab harus dimulai dari memperbaiki hubungan dengan Allah"
+      ]
+    },
+    {
+      "id": "k077",
+      "arab": "مِنْ تَمَامِ الصِّدْقِ أَنْ لَا يُثْنِيَ الْمَرْءُ عَلَى نَفْسِهِ وَلَا يُزَكِّيَهَا",
+      "teks": "Termasuk kesempurnaan kejujuran adalah seseorang tidak memuji dirinya sendiri dan tidak mensucikannya.",
+      "ulama": "ibnMuflih",
+      "kitab": "Al-Adab Asy-Syar'iyah",
+      "bab": "Bab ash-Shidq",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 87",
+      "tema": "ikhlas",
+      "faedah": [
+        "Ujub (kagum pada diri sendiri) adalah penyakit yang menggerogoti amal shalih",
+        "Orang yang jujur menyadari kekurangannya dan tidak membanggakan diri",
+        "Memuji diri sendiri adalah tanda kurang ikhlas dalam beramal"
+      ]
+    },
+    {
+      "id": "k078",
+      "arab": "أَصْلُ الدِّينِ مَعْرِفَةُ اللهِ بِأَسْمَائِهِ وَصِفَاتِهِ، ثُمَّ الْعَمَلُ بِمُقْتَضَاهَا",
+      "teks": "Pokok agama adalah mengenal Allah melalui nama-nama dan sifat-sifat-Nya, kemudian beramal sesuai tuntutannya.",
+      "ulama": "ibnBattah",
+      "kitab": "Al-Ibanah al-Kubra",
+      "bab": "Bab Ma'rifatullah bil Asma' wash Shifat",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 48",
+      "tema": "tauhid",
+      "faedah": [
+        "Mengenal Allah secara benar adalah fondasi seluruh ibadah dan amal shalih",
+        "Setiap nama dan sifat Allah menuntut konsekuensi ibadah tertentu",
+        "Tauhid asma' wa sifat bukan sekadar pengetahuan teoritis, tapi mendorong ketaatan nyata"
+      ]
+    },
+    {
+      "id": "k079",
+      "arab": "اِتَّبِعُوا وَلَا تَبْتَدِعُوا فَقَدْ كُفِيتُمْ، وَكُلُّ بِدْعَةٍ ضَلَالَةٌ",
+      "teks": "Ikutilah (Sunnah) dan jangan membuat bid'ah, karena kalian sudah dicukupkan (dengan apa yang telah ada). Dan setiap bid'ah adalah kesesatan.",
+      "ulama": "ibnBattah",
+      "kitab": "Al-Ibanah ash-Shughra",
+      "bab": "Bab al-Amr bil Ittiba' wan Nahy 'anil Ibtida'",
+      "jilid": "-",
+      "halaman": "Hal. 26",
+      "tema": "sunnah",
+      "faedah": [
+        "Agama Islam sudah sempurna — tidak butuh tambahan atau pengurangan apapun",
+        "Setiap bid'ah dalam agama, betapapun terlihat baik, adalah kesesatan",
+        "Ittiba' (mengikuti Sunnah) adalah jalan keselamatan yang tidak boleh ditinggalkan"
+      ]
+    },
+    {
+      "id": "k080",
+      "arab": "لَيْسَ الْإِيمَانُ بِالتَّمَنِّي وَلَا بِالتَّحَلِّي بَلْ هُوَ مَا وَقَرَ فِي الْقَلْبِ وَصَدَّقَهُ الْعَمَلُ",
+      "teks": "Iman itu bukan dengan angan-angan dan bukan dengan penampilan, melainkan sesuatu yang tertancap kokoh di hati dan dibenarkan oleh amal perbuatan.",
+      "ulama": "ibnBattah",
+      "kitab": "Al-Iman",
+      "bab": "Bab Haqiqat al-Iman",
+      "jilid": "-",
+      "halaman": "Hal. 39",
+      "tema": "tauhid",
+      "faedah": [
+        "Iman adalah kombinasi keyakinan hati, ucapan lisan, dan amal anggota badan",
+        "Penampilan luar tidak mencerminkan iman tanpa kecocokan batin dan amal",
+        "Ini adalah aqidah Ahlus Sunnah yang membedakan mereka dari Murji'ah"
+      ]
+    },
+    {
+      "id": "k081",
+      "arab": "التَّوْحِيدُ هُوَ أَوَّلُ وَاجِبٍ عَلَى الْمُكَلَّفِ وَآخِرُ مَا يُفَارِقُهُ عِنْدَ الْمَوْتِ",
+      "teks": "Tauhid adalah kewajiban pertama bagi seorang mukallaf dan hal terakhir yang menyertai seseorang ketika menjelang kematian.",
+      "ulama": "fawzan",
+      "kitab": "I'anat al-Mustafid bi Syarh Kitab at-Tawhid",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 9",
+      "tema": "tauhid",
+      "faedah": [
+        "Tauhid adalah prioritas pertama yang harus ditegakkan sebelum amalan lainnya",
+        "Kalimat tauhid adalah bekal terpenting saat menghadapi sakaratul maut",
+        "Seseorang yang memulai dakwah harus mendahulukan tauhid seperti yang dilakukan para nabi"
+      ]
+    },
+    {
+      "id": "k082",
+      "arab": "الشِّرْكُ بِاللهِ أَكْبَرُ ذَنْبٍ عُصِيَ اللهُ بِهِ، وَهُوَ الَّذِي لَا يَغْفِرُهُ اللهُ لِمَنْ مَاتَ عَلَيْهِ",
+      "teks": "Syirik kepada Allah adalah dosa terbesar yang dilakukan seorang hamba, dan itulah dosa yang tidak Allah ampuni bagi siapa yang mati dalam keadaan melakukannya.",
+      "ulama": "fawzan",
+      "kitab": "At-Tawhid wa Bayan ma Yunafihi",
+      "bab": "Bab Khathar asy-Syirk",
+      "jilid": "-",
+      "halaman": "Hal. 15",
+      "tema": "tauhid",
+      "faedah": [
+        "Syirik adalah dosa yang paling besar dan paling Allah benci",
+        "Seseorang yang mati dalam keadaan syirik tidak akan diampuni Allah",
+        "Menjauhi syirik adalah prioritas utama dalam kehidupan seorang Muslim"
+      ]
+    },
+    {
+      "id": "k083",
+      "arab": "الدَّعْوَةُ إِلَى اللهِ يَجِبُ أَنْ تَقُومَ عَلَى الْعِلْمِ وَالْبَصِيرَةِ، لَا عَلَى الْجَهْلِ وَالْحَمَاسَةِ",
+      "teks": "Dakwah kepada Allah wajib dibangun di atas ilmu dan bashirah (pandangan yang jelas), bukan di atas kebodohan dan semangat yang membabi buta.",
+      "ulama": "fawzan",
+      "kitab": "Majmu' Fatawa wa Maqalat",
+      "bab": "Bab Adab ad-Da'iyah",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 198",
+      "tema": "ilmu",
+      "faedah": [
+        "Semangat berdakwah tanpa ilmu bisa berbahaya dan menyesatkan",
+        "Bashirah adalah syarat seorang dai — memahami apa yang didakwahkan dan kepada siapa",
+        "Nabi ﷺ tidak berdakwah sebelum menerima wahyu dan ilmu dari Allah"
+      ]
+    },
+    {
+      "id": "k084",
+      "arab": "الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ، فَمَنْ خَرَجَ مِنَ السِّجْنِ كَانَ فِي الرَّاحَةِ",
+      "teks": "Dunia adalah penjara bagi orang beriman dan surga bagi orang kafir. Maka barangsiapa keluar dari penjara, ia telah berada dalam kenyamanan.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ighaatsatul Lahfan",
+      "bab": "Bab Haqiqat ad-Dunya",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 195",
+      "tema": "zuhud",
+      "faedah": [
+        "Orang beriman tidak seharusnya terikat oleh kemewahan dunia karena ia tahu ini hanya sementara",
+        "Kematian bagi orang beriman adalah pintu kebebasan dari penjara dunia",
+        "Orang kafir menjadikan dunia sebagai puncak kebahagiaan karena tidak percaya akhirat"
+      ]
+    },
+    {
+      "id": "k085",
+      "arab": "الْغَفْلَةُ عَنِ اللهِ هِيَ أُمُّ أَمْرَاضِ الْقُلُوبِ كُلِّهَا",
+      "teks": "Lalai dari Allah adalah induk dari semua penyakit hati.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Madarijus Salikin",
+      "bab": "Bab al-Yaqazah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 98",
+      "tema": "hati",
+      "faedah": [
+        "Semua penyakit hati — riya, hasad, sombong, tamak — berakar dari kelalaian terhadap Allah",
+        "Dzikir yang terus-menerus adalah obat utama untuk melawan kelalaian",
+        "Hati yang terjaga adalah hati yang selalu sadar bahwa Allah melihatnya"
+      ]
+    },
+    {
+      "id": "k086",
+      "arab": "مَنْ عَرَفَ اللهَ أَحَبَّهُ، وَمَنْ أَحَبَّهُ أَطَاعَهُ، وَمَنْ أَطَاعَهُ رَضِيَ اللهُ عَنْهُ",
+      "teks": "Barangsiapa mengenal Allah, niscaya ia akan mencintai-Nya. Barangsiapa mencintai-Nya, niscaya ia akan taat kepada-Nya. Dan barangsiapa taat kepada-Nya, niscaya Allah ridha kepadanya.",
+      "ulama": "ibnulQayyim",
+      "kitab": "Ad-Da' wad Dawa'",
+      "bab": "Bab Ma'rifatullah",
+      "jilid": "-",
+      "halaman": "Hal. 102",
+      "tema": "tauhid",
+      "faedah": [
+        "Ma'rifatullah adalah akar cinta kepada Allah — tanpanya cinta itu hanya klise",
+        "Kecintaan yang benar kepada Allah pasti melahirkan ketaatan yang konsisten",
+        "Ridha Allah adalah buah tertinggi dari perjalanan mengenal dan mencintai-Nya"
+      ]
+    },
+    {
+      "id": "k087",
+      "arab": "الدُّنْيَا وَالْآخِرَةُ لَا يَجْتَمِعَانِ فِي الْقَلْبِ، بَلْ قَدْرُ مَا يَدْخُلُ مِنْهَا يَخْرُجُ مِنَ الْأُخْرَى",
+      "teks": "Dunia dan akhirat tidak bisa bersatu dalam satu hati. Seberapa besar dunia masuk ke dalam hati, sebesar itu pula akhirat keluar darinya.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Kitab az-Zuhd wal Wara'",
+      "jilid": "Jilid 11",
+      "halaman": "Hal. 23",
+      "tema": "zuhud",
+      "faedah": [
+        "Hati manusia punya kapasitas terbatas — semakin penuh dengan cinta dunia, semakin kosong dari cinta akhirat",
+        "Zuhud bukan berarti tidak memiliki dunia, tapi tidak membiarkan dunia memiliki hati",
+        "Ini adalah ukuran bagi seorang Muslim untuk mengevaluasi keadaan hatinya"
+      ]
+    },
+    {
+      "id": "k088",
+      "arab": "مَا تَرَكَ قَوْمٌ السُّنَّةَ إِلَّا ابْتُلُوا بِالْبِدْعَةِ",
+      "teks": "Tidaklah suatu kaum meninggalkan Sunnah melainkan mereka akan diuji dengan bid'ah.",
+      "ulama": "ibnTaymiyah",
+      "kitab": "Iqtidha' ash-Shirath al-Mustaqim",
+      "bab": "Bab Asbab al-Bid'ah",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 593",
+      "tema": "sunnah",
+      "faedah": [
+        "Meninggalkan Sunnah membuka pintu bagi masuknya bid'ah",
+        "Vakum dari sunnah akan diisi oleh sesuatu — dan sesuatu itu biasanya adalah bid'ah",
+        "Menjaga Sunnah adalah tameng terkuat untuk mencegah penyimpangan"
+      ]
+    },
+    {
+      "id": "k089",
+      "arab": "مَنْ أَحَبَّ الدُّنْيَا أَضَرَّتْ بِدِينِهِ، وَمَنْ أَحَبَّ الآخِرَةَ أَضَرَّتْ بِدُنْيَاهُ، فَاخْتَارُوا الَّذِي يَبْقَى",
+      "teks": "Barangsiapa mencintai dunia, dunia itu merusak agamanya. Barangsiapa mencintai akhirat, akhirat itu merusak (ambisi) duniawinya. Maka pilihlah yang kekal.",
+      "ulama": "ibnRajab",
+      "kitab": "Jami'ul Ulum wal Hikam",
+      "bab": "Syarh al-Hadits ath-Thalathun",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 243",
+      "tema": "zuhud",
+      "faedah": [
+        "Cinta dunia dan cinta akhirat tidak bisa dikejar bersamaan dengan sama-sama kuat",
+        "Ketika seseorang memilih akhirat, ia akan rela mengorbankan ambisi duniawinya",
+        "Pilihan terbaik adalah selalu memilih yang kekal atas yang fana"
+      ]
+    },
+    {
+      "id": "k090",
+      "arab": "الْخَشِيَةُ الصَّادِقَةُ هِيَ الَّتِي تَحُولُ بَيْنَ الْعَبْدِ وَبَيْنَ مَعَاصِي اللهِ",
+      "teks": "Rasa takut yang sejati kepada Allah adalah yang menghalangi seorang hamba dari kemaksiatan kepada-Nya.",
+      "ulama": "ibnRajab",
+      "kitab": "Latha'if al-Ma'arif",
+      "bab": "Bab al-Khasyah",
+      "jilid": "-",
+      "halaman": "Hal. 173",
+      "tema": "hati",
+      "faedah": [
+        "Khasyah (takut kepada Allah) adalah buah dari ilmu dan ma'rifatullah yang benar",
+        "Jika rasa takut tidak menghalangi maksiat, maka itu belum khasyah yang sebenarnya",
+        "Orang yang berilmu tentang Allah adalah yang paling takut kepada-Nya"
+      ]
+    },
+    {
+      "id": "k091",
+      "arab": "يَنْبَغِي لِطَالِبِ الْعِلْمِ أَنْ يُجَاهِدَ نَفْسَهُ عَلَى الْإِخْلَاصِ فِي طَلَبِهِ وَأَنْ لَا يَقْصِدَ بِهِ سِوَى اللهِ",
+      "teks": "Seorang penuntut ilmu seharusnya bersungguh-sungguh melawan nafsunya untuk ikhlas dalam menuntut ilmu, dan tidak bertujuan dengan ilmunya kecuali hanya Allah.",
+      "ulama": "nawawi",
+      "kitab": "Al-Majmu' Syarh al-Muhadzdzab",
+      "bab": "Muqaddimah, Bab Adab Thalib al-'Ilm",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 37",
+      "tema": "ikhlas",
+      "faedah": [
+        "Ikhlas dalam menuntut ilmu adalah jihad yang tidak boleh berhenti",
+        "Niat yang menyimpang dalam menuntut ilmu bisa merusak seluruh nilai amalnya",
+        "Setiap kali niat membelok, seorang penuntut ilmu harus segera meluruskannya kembali"
+      ]
+    },
+    {
+      "id": "k092",
+      "arab": "مَنْ أَرَادَ أَنْ يَنْتَفِعَ بِعِلْمِهِ فَلْيَعْمَلْ بِهِ، وَإِلَّا كَانَ كَالْمِصْبَاحِ يُضِيءُ لِلنَّاسِ وَيَحْرِقُ نَفْسَهُ",
+      "teks": "Barangsiapa ingin mengambil manfaat dari ilmunya, hendaklah ia mengamalkannya. Jika tidak, ia bagaikan lilin yang menerangi orang lain sementara dirinya sendiri terbakar.",
+      "ulama": "nawawi",
+      "kitab": "At-Tibyan fi Adab Hamalat al-Qur'an",
+      "bab": "Bab al-'Amal bil 'Ilm",
+      "jilid": "-",
+      "halaman": "Hal. 33",
+      "tema": "ilmu",
+      "faedah": [
+        "Ilmu yang tidak diamalkan hanya menjadi hujjah yang memberatkan pemiliknya",
+        "Ulama yang tidak mengamalkan ilmunya menanggung dosa ganda: dosa sendiri dan salah memberi contoh",
+        "Lilin yang menerangi orang lain sambil dirinya terbakar adalah gambaran paling menyentuh tentang ilmu tanpa amal"
+      ]
+    },
+    {
+      "id": "k093",
+      "arab": "مِنْ أَعْظَمِ الْمُصِيبَاتِ أَنْ يَمُوتَ الْعِلْمُ بِمَوْتِ أَهْلِهِ وَيَبْقَى النَّاسُ بِلَا هُدًى",
+      "teks": "Termasuk musibah terbesar adalah matinya ilmu dengan meninggalnya para ulama, dan manusia pun tertinggal tanpa petunjuk.",
+      "ulama": "nawawi",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Fadhl al-'Ilm",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 66",
+      "tema": "ilmu",
+      "faedah": [
+        "Meninggalnya ulama adalah musibah yang lebih besar dari hilangnya harta benda",
+        "Masyarakat tanpa ulama yang mumpuni akan mudah terseret bid'ah dan kesesatan",
+        "Menuntut ilmu dan menyebarkannya adalah berkontribusi nyata dalam menjaga agama"
+      ]
+    },
+    {
+      "id": "k094",
+      "arab": "التَّفْسِيرُ بِالْمَأْثُورِ هُوَ أَصَحُّ الطُّرُقِ وَأَوْلَاهَا فِي فَهْمِ كِتَابِ اللهِ",
+      "teks": "Tafsir bil ma'tsur adalah metode yang paling shahih dan paling utama dalam memahami Kitabullah.",
+      "ulama": "ibnKatsir",
+      "kitab": "Tafsir Al-Qur'an al-'Adzim",
+      "bab": "Muqaddimah at-Tafsir",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 4",
+      "tema": "quran",
+      "faedah": [
+        "Al-Qur'an paling tepat ditafsirkan dengan Al-Qur'an, lalu Hadits, lalu perkataan Sahabat",
+        "Tafsir berdasarkan akal semata tanpa riwayat adalah jalan yang penuh bahaya",
+        "Metode salaf dalam memahami Al-Qur'an adalah jalan paling selamat"
+      ]
+    },
+    {
+      "id": "k095",
+      "arab": "إِنَّ مِنْ أَعْظَمِ نِعَمِ اللهِ عَلَى عَبْدِهِ أَنْ يُوَفِّقَهُ لِمَعْرِفَةِ أَحْوَالِ السَّلَفِ الصَّالِحِ",
+      "teks": "Sesungguhnya di antara nikmat Allah yang paling besar kepada seorang hamba adalah diberi taufiq untuk mengetahui keadaan-keadaan Salafush Shalih.",
+      "ulama": "ibnKatsir",
+      "kitab": "Al-Bidayah wan Nihayah",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 8",
+      "tema": "sunnah",
+      "faedah": [
+        "Mempelajari perjalanan hidup Salafush Shalih adalah nikmat yang perlu disyukuri",
+        "Mengenal generasi terbaik Islam memberi arah yang jelas dalam menjalani agama",
+        "Sejarah Islam bukan hanya pengetahuan, tapi cahaya yang menerangi jalan"
+      ]
+    },
+    {
+      "id": "k096",
+      "arab": "مَنْ تَرَكَ الدُّنْيَا لِلَّهِ أَتَتْهُ الدُّنْيَا وَهِيَ رَاغِمَةٌ، وَمَنْ طَلَبَهَا بِالشَّرَهِ فَرَّتْ مِنْهُ",
+      "teks": "Barangsiapa meninggalkan dunia karena Allah, dunia akan datang kepadanya dalam keadaan merendah. Barangsiapa mengejarnya dengan rakus, dunia itu justru lari darinya.",
+      "ulama": "ibnQudamah",
+      "kitab": "Mukhtashar Minhajul Qashidin",
+      "bab": "Bab adz-Dzamm ad-Dunya",
+      "jilid": "-",
+      "halaman": "Hal. 287",
+      "tema": "zuhud",
+      "faedah": [
+        "Zuhud bukan mengundang kemiskinan, tapi justru memanggil keberkahan",
+        "Seseorang yang mengejar dunia dengan tamak akan terus merasa kurang",
+        "Ridha dan tawakkal kepada Allah adalah jalan datangnya rezeki tanpa disangka"
+      ]
+    },
+    {
+      "id": "k097",
+      "arab": "الصَّبْرُ عَلَى الطَّاعَةِ أَشَدُّ مِنَ الصَّبْرِ عَلَى الْمَعْصِيَةِ، وَكِلَاهُمَا أَشَدُّ مِنَ الصَّبْرِ عَلَى الْمُصِيبَةِ",
+      "teks": "Sabar dalam ketaatan lebih berat daripada sabar dari kemaksiatan. Dan keduanya lebih berat daripada sabar atas musibah.",
+      "ulama": "ibnQudamah",
+      "kitab": "Mukhtashar Minhajul Qashidin",
+      "bab": "Bab ash-Shabr",
+      "jilid": "-",
+      "halaman": "Hal. 156",
+      "tema": "sabar",
+      "faedah": [
+        "Ada tiga tingkatan sabar: sabar dalam taat, sabar dari maksiat, dan sabar atas musibah",
+        "Konsisten dalam ibadah bertahun-tahun lebih berat daripada sekadar menahan satu kemaksiatan",
+        "Memahami tingkatan sabar membantu seseorang menentukan mana prioritas yang harus dikuatkan"
+      ]
+    },
+    {
+      "id": "k098",
+      "arab": "الدَّعْوَةُ إِلَى اللهِ بِالْحِكْمَةِ تَعْنِي وَضْعَ الشَّيْءِ فِي مَوْضِعِهِ، وَمُخَاطَبَةَ كُلِّ إِنْسَانٍ بِمَا يُنَاسِبُهُ",
+      "teks": "Berdakwah kepada Allah dengan hikmah berarti menempatkan sesuatu pada tempatnya dan menyampaikan kepada setiap orang sesuai dengan apa yang cocok baginya.",
+      "ulama": "ibnBaz",
+      "kitab": "Majmu' Fatawa Ibn Baz",
+      "bab": "Bab Adab ad-Da'wah",
+      "jilid": "Jilid 5",
+      "halaman": "Hal. 31",
+      "tema": "nasihat",
+      "faedah": [
+        "Hikmah dalam dakwah adalah ilmu, bukan sekadar kelembutan",
+        "Dakwah yang tepat sasaran mempertimbangkan kondisi, latar belakang, dan kapasitas penerima",
+        "Nabi ﷺ adalah contoh terbaik dalam menempatkan setiap dakwah sesuai keadaan lawan bicara"
+      ]
+    },
+    {
+      "id": "k099",
+      "arab": "عَلَى الْمُسْلِمِ أَنْ يَتَمَسَّكَ بِالسُّنَّةِ وَإِنْ كَانَ وَحْدَهُ، فَإِنَّ الْجَمَاعَةَ مَنِ اتَّبَعَ الْحَقَّ",
+      "teks": "Wajib bagi seorang Muslim untuk berpegang teguh dengan Sunnah meskipun ia sendirian. Karena sesungguhnya al-jama'ah adalah orang-orang yang mengikuti kebenaran.",
+      "ulama": "ibnBaz",
+      "kitab": "Majmu' Fatawa Ibn Baz",
+      "bab": "Bab al-I'tishom bis Sunnah",
+      "jilid": "Jilid 8",
+      "halaman": "Hal. 172",
+      "tema": "sunnah",
+      "faedah": [
+        "Al-jama'ah dalam Islam bukan sekadar jumlah orang terbanyak, tapi yang mengikuti kebenaran",
+        "Seorang yang berpegang pada Sunnah tidak boleh goyah meski sendirian",
+        "Ini adalah prinsip yang menjaga seorang Muslim dari tekanan sosial yang melawan kebenaran"
+      ]
+    },
+    {
+      "id": "k100",
+      "arab": "الشَّكُّ فِي الْعِبَادَاتِ إِذَا كَثُرَ فَهُوَ مِنَ الشَّيْطَانِ، وَعِلَاجُهُ أَنْ لَا يَلْتَفِتَ إِلَيْهِ",
+      "teks": "Keraguan yang banyak dalam ibadah berasal dari setan, dan obatnya adalah dengan tidak menghiraukan keraguan itu.",
+      "ulama": "ibnUtsaimin",
+      "kitab": "Majmu' Fatawa wa Rasa'il Ibn Utsaimin",
+      "bab": "Bab al-Waswas fish Shalah",
+      "jilid": "Jilid 14",
+      "halaman": "Hal. 89",
+      "tema": "ibadah",
+      "faedah": [
+        "Waswas dalam ibadah adalah tipu daya setan untuk merusak kekhusyukan",
+        "Obat terbaik waswas adalah mengabaikannya dan meneruskan ibadah",
+        "Memberikan perhatian pada waswas justru semakin memperburuk keadaan"
+      ]
+    },
+    {
+      "id": "k101",
+      "arab": "الْعِبَادَةُ لَا تُقْبَلُ إِلَّا بِشَرْطَيْنِ: الْإِخْلَاصُ لِلَّهِ، وَالْمُتَابَعَةُ لِرَسُولِ اللهِ ﷺ",
+      "teks": "Ibadah tidak diterima kecuali dengan dua syarat: ikhlas karena Allah dan mengikuti (sunnah) Rasulullah ﷺ.",
+      "ulama": "ibnUtsaimin",
+      "kitab": "Syarh al-Arba'in an-Nawawiyah",
+      "bab": "Syarh al-Hadits ats-Tsalits",
+      "jilid": "-",
+      "halaman": "Hal. 45",
+      "tema": "ibadah",
+      "faedah": [
+        "Dua syarat diterimanya amal ini adalah pondasi yang tidak bisa ditawar",
+        "Ikhlas tanpa ittiba' = bid'ah. Ittiba' tanpa ikhlas = riya. Keduanya harus ada",
+        "Ini adalah intisari dari dua kalimat syahadat yang harus mewarnai setiap ibadah"
+      ]
+    },
+    {
+      "id": "k102",
+      "arab": "إِذَا صَحَّ الْحَدِيثُ فَهُوَ مَذْهَبِي، وَهَذَا قَوْلُ كُلِّ إِمَامٍ مُعْتَبَرٍ",
+      "teks": "Apabila hadits shahih maka itulah madzhabku — dan ini adalah perkataan setiap imam yang mu'tabar.",
+      "ulama": "albani",
+      "kitab": "Silsilah al-Ahadits ash-Shahihah",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 5",
+      "tema": "sunnah",
+      "faedah": [
+        "Para imam madzhab sendiri tidak pernah memerintahkan taklid buta kepada mereka",
+        "Ketika dalil shahih bertentangan dengan pendapat madzhab, dalil yang diikuti",
+        "Ini adalah prinsip Ahlus Sunnah dalam berfiqih: dalil di atas pendapat pribadi siapapun"
+      ]
+    },
+    {
+      "id": "k103",
+      "arab": "التَّصْحِيحُ وَالتَّضْعِيفُ مِنْ أَهَمِّ أَعْمَالِ أَهْلِ الْحَدِيثِ، وَبِهِ يُمَيِّزُ الصَّحِيحُ مِنَ السَّقِيمِ",
+      "teks": "Penilaian hadits shahih dan dha'if adalah salah satu kerja terpenting ahli hadits, dan dengannyalah yang shahih dipisahkan dari yang sakit (lemah).",
+      "ulama": "albani",
+      "kitab": "Silsilah al-Ahadits adh-Dha'ifah",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 3",
+      "tema": "ilmu",
+      "faedah": [
+        "Ilmu jarh wa ta'dil adalah benteng yang menjaga Sunnah dari pemalsuan",
+        "Umat Islam wajib berterima kasih kepada ulama hadits yang mendedikasikan hidup untuk menjaga Sunnah",
+        "Mengamalkan hadits dha'if tanpa mengetahuinya adalah kelalaian yang perlu dikoreksi"
+      ]
+    },
+    {
+      "id": "k104",
+      "arab": "مَنْ شَغَلَ قَلْبَهُ بِالدُّنْيَا أُفْرِغَ مِنَ الآخِرَةِ، وَمَنْ شَغَلَهُ بِالآخِرَةِ امْتَلَأَ بِهَا",
+      "teks": "Barangsiapa menyibukkan hatinya dengan dunia, maka akhirat dikosongkan darinya. Dan barangsiapa menyibukkannya dengan akhirat, maka hatinya akan dipenuhi dengannya.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khatir",
+      "bab": "Bab adz-Dzamm ad-Dunya",
+      "jilid": "-",
+      "halaman": "Hal. 193",
+      "tema": "zuhud",
+      "faedah": [
+        "Hati ibarat wadah — apa yang dimasukkan secara konsisten akan memenuhinya",
+        "Kesibukan mengingat akhirat secara bertahap menggeser kesibukan atas dunia",
+        "Ini adalah prinsip manajemen hati yang diajarkan para ulama salaf"
+      ]
+    },
+    {
+      "id": "k105",
+      "arab": "الْعَارِفُ بِاللهِ لَا يَسْكُنُ إِلَى دَارِ الزَّوَالِ، وَلَا يَرْكَنُ إِلَى زَخَارِفِ الدُّنْيَا",
+      "teks": "Orang yang benar-benar mengenal Allah tidak akan tenang di negeri yang fana ini, dan tidak akan terpikat oleh perhiasan dunia.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Shaidul Khatir",
+      "bab": "Bab Ma'rifatullah",
+      "jilid": "-",
+      "halaman": "Hal. 65",
+      "tema": "zuhud",
+      "faedah": [
+        "Ma'rifatullah yang benar menghasilkan zuhud yang alami, bukan zuhud yang dipaksakan",
+        "Orang yang kenal Allah tahu bahwa dunia tidak sebanding dengan akhirat",
+        "Keterikatan pada dunia adalah tanda bahwa ma'rifatullah masih perlu diperdalam"
+      ]
+    },
+    {
+      "id": "k106",
+      "arab": "مَا أَنْفَعَ الدَّمْعَةَ الَّتِي تَخْرُجُ خَشْيَةً مِنَ اللهِ وَتَصْحَبُهَا الْإِنَابَةُ إِلَيْهِ",
+      "teks": "Betapa bermanfaatnya air mata yang keluar karena takut kepada Allah dan disertai dengan kembali (bertaubat) kepada-Nya.",
+      "ulama": "ibnulJauziy",
+      "kitab": "Bahr ad-Dumu'",
+      "bab": "Fadhlu al-Buka' Khasyatallah",
+      "jilid": "-",
+      "halaman": "Hal. 47",
+      "tema": "taubat",
+      "faedah": [
+        "Air mata khasyah adalah tanda kelembutan hati yang sangat berharga",
+        "Tangisan yang tidak diikuti taubat dan perubahan hanyalah emosi sesaat",
+        "Menggabungkan rasa takut dengan inabah (kembali) adalah tanda taubat yang benar"
+      ]
+    },
+    {
+      "id": "k107",
+      "arab": "الْمُحَدِّثُ الصَّادِقُ أَحَقُّ النَّاسِ بِالتَّعْظِيمِ لِأَنَّهُ حَارِسُ السُّنَّةِ",
+      "teks": "Seorang muhaddits yang jujur adalah orang yang paling berhak mendapat penghormatan karena ia adalah penjaga Sunnah.",
+      "ulama": "adzDzahabi",
+      "kitab": "Siyar A'lam an-Nubala'",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 3",
+      "tema": "ilmu",
+      "faedah": [
+        "Para ulama hadits adalah benteng terakhir kemurnian Sunnah Nabi ﷺ",
+        "Menghormati ulama hadits adalah bentuk menghormati Sunnah itu sendiri",
+        "Kejujuran dalam meriwayatkan hadits adalah amanah yang sangat besar"
+      ]
+    },
+    {
+      "id": "k108",
+      "arab": "إِيَّاكَ وَالْكَلَامَ فِيمَا لَا يَعْنِيكَ وَلَا تَتَكَلَّمْ إِلَّا فِيمَا تَعْلَمُ",
+      "teks": "Waspadalah dari berbicara tentang sesuatu yang tidak ada urusannya denganmu. Dan janganlah kamu berbicara kecuali tentang apa yang kamu ketahui.",
+      "ulama": "adzDzahabi",
+      "kitab": "Siyar A'lam an-Nubala'",
+      "bab": "Bab Adab al-'Alim",
+      "jilid": "Jilid 7",
+      "halaman": "Hal. 421",
+      "tema": "akhlak",
+      "faedah": [
+        "Diam dari hal yang tidak diketahui adalah tanda keilmuan dan kejujuran",
+        "Berbicara tanpa ilmu bisa menyesatkan orang lain dan mendatangkan dosa",
+        "Prinsip 'la adri' (aku tidak tahu) adalah separuh ilmu menurut ulama salaf"
       ]
     }
   ]
