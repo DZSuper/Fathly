@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FathlyWeb</title>
+  <title>FathlyWebinar</title>
   <!-- =============================================
        SEO — DASAR
        Dibaca oleh Google untuk menampilkan website
@@ -64,6 +64,7 @@
       .catch(function() {});
   </script>
   <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="kutipan.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
@@ -245,7 +246,7 @@
         <div class="about-info">
           <div class="about-row">
             <span class="about-key">Versi</span>
-            <span class="about-val">1.1.0</span>
+            <span class="about-val">1.1.1</span>
           </div>
           <div class="about-row">
             <span class="about-key">Pembuat</span>
@@ -362,10 +363,19 @@
 
     <!-- TAB: KUTIPAN -->
     <main class="tab-content" id="tab-kutipan">
-      <div class="tab-empty">
-        <div class="tab-empty-icon">💬</div>
-        <div class="tab-empty-title">Kutipan Ulama</div>
-        <div class="tab-empty-desc">Kumpulan perkataan dan hikmah para Ulama Salaf<br>akan segera tersedia.</div>
+      <div class="kutipan-layout">
+        <!-- Sidebar tema -->
+        <aside class="kutipan-sidebar" id="kutipanSidebar"></aside>
+        <!-- Konten utama -->
+        <div class="kutipan-main">
+          <div class="kutipan-topbar">
+            <div class="kutipan-info-bar" id="kutipanInfoBar"></div>
+            <div class="kutipan-chips" id="kutipanChips"></div>
+          </div>
+          <div class="kutipan-entries" id="kutipanEntries">
+            <div class="kutipan-loading">Pilih tab Kutipan untuk memuat...</div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -445,7 +455,15 @@
     </div>
   </div>
 
+
+  <!-- PANEL ULAMA (untuk tab Kutipan) -->
+  <div class="kutipan-ulama-panel" id="kutipanUlamaPanel">
+    <div class="kup-header" id="kutipanUlamaPanelHeader"></div>
+    <div class="kup-body" id="kutipanUlamaPanelBody"></div>
+  </div>
+
   <script src="script/main.js"></script>
+  <script src="script/kutipan.js"></script>
   <script>
     // Load konten dari JSON
     fetch('konten/index.json')
