@@ -8,6 +8,7 @@
   var _kutipanData   = null;   // { ulama:[], kutipan:[] }
   var _kutipanLoaded = false;
   var _aktifTema     = 'semua';
+  var _aktifUlama    = 'semua'; // filter ulama aktif
 
   var TEMA_LIST = [
     { id: 'semua',  label: 'Semua',          icon: '📋' },
@@ -116,6 +117,7 @@
     sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         _aktifTema = btn.getAttribute('data-tema');
+        _aktifUlama = 'semua'; // reset filter ulama saat tema berganti
         // Update active state
         sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (b) {
           b.classList.toggle('active', b.getAttribute('data-tema') === _aktifTema);
@@ -135,36 +137,53 @@
     var chipsEl = document.getElementById('kutipanChips');
     if (!infoBar || !chipsEl || !_kutipanData) return;
 
-    var filtered = filterKutipan(_aktifTema);
-    infoBar.textContent = filtered.length + ' kutipan · ' + (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
+    var filtered = filterKutipan(_aktifTema, _aktifUlama);
+    var temaLabel = _aktifTema === 'semua' ? 'Semua Tema' : (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
+    infoBar.textContent = filtered.length + ' kutipan · ' + temaLabel;
 
-    // Himpun ulama yang punya kutipan di tema ini
+    // Himpun ulama yang punya kutipan di tema ini (tanpa filter ulama agar semua chip tampil)
+    var baseFiltered = filterKutipan(_aktifTema, 'semua');
     var ulamaIds = [];
-    filtered.forEach(function (k) {
+    baseFiltered.forEach(function (k) {
       if (ulamaIds.indexOf(k.ulama) === -1) ulamaIds.push(k.ulama);
     });
 
-    var chipsHtml = '';
+    // Chip "Semua Ulama"
+    var chipsHtml = '<button class="kutipan-chip' + (_aktifUlama === 'semua' ? ' active' : '') + '" data-ulama="semua">\u{1F465} Semua Ulama</button>';
+
     ulamaIds.forEach(function (uid) {
       var u = getUlama(uid);
       if (!u) return;
-      var cnt = filtered.filter(function (k) { return k.ulama === uid; }).length;
-      chipsHtml += '<button class="kutipan-chip" data-ulama="' + esc(uid) + '">📜 ' + esc(u.nama) + ' <span style="opacity:0.6">(' + cnt + ')</span></button>';
+      var cnt = baseFiltered.filter(function (k) { return k.ulama === uid; }).length;
+      var namaChip = u.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, '');
+      chipsHtml += '<button class="kutipan-chip' + (_aktifUlama === uid ? ' active' : '') + '" data-ulama="' + esc(uid) + '">\u{1F4DC} ' + esc(namaChip) + ' <span style="opacity:0.6">(' + cnt + ')</span></button>';
     });
     chipsEl.innerHTML = chipsHtml;
 
     chipsEl.querySelectorAll('.kutipan-chip').forEach(function (chip) {
       chip.addEventListener('click', function () {
-        openUlamaPanel(chip.getAttribute('data-ulama'));
+        var uid = chip.getAttribute('data-ulama');
+        if (_aktifUlama === uid) return;
+        _aktifUlama = uid;
+        chipsEl.querySelectorAll('.kutipan-chip').forEach(function (c) {
+          c.classList.toggle('active', c.getAttribute('data-ulama') === _aktifUlama);
+        });
+        var newFiltered = filterKutipan(_aktifTema, _aktifUlama);
+        infoBar.textContent = newFiltered.length + ' kutipan · ' + temaLabel;
+        renderEntries(_aktifTema);
+        var main = document.querySelector('.kutipan-main');
+        if (main) main.scrollTop = 0;
       });
     });
   }
 
   // ── FILTER HELPER ────────────────────────────
-  function filterKutipan(tema) {
+  function filterKutipan(tema, ulama) {
     if (!_kutipanData) return [];
-    if (tema === 'semua') return _kutipanData.kutipan;
-    return _kutipanData.kutipan.filter(function (k) { return k.tema === tema; });
+    var list = _kutipanData.kutipan;
+    if (tema && tema !== 'semua') list = list.filter(function (k) { return k.tema === tema; });
+    if (ulama && ulama !== 'semua') list = list.filter(function (k) { return k.ulama === ulama; });
+    return list;
   }
 
   // ── RENDER ENTRIES ───────────────────────────
@@ -172,7 +191,7 @@
     var container = document.getElementById('kutipanEntries');
     if (!container || !_kutipanData) return;
 
-    var list = filterKutipan(tema);
+    var list = filterKutipan(tema, _aktifUlama);
     if (list.length === 0) {
       container.innerHTML = '<div class="kutipan-empty"><div class="kutipan-empty-icon">🔍</div><div class="kutipan-empty-title">Belum ada kutipan</div><div class="kutipan-empty-desc">Tema ini belum memiliki kutipan yang tersedia.</div></div>';
       return;
@@ -191,14 +210,8 @@
         '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '">' +
           '<div class="kutipan-tema-badge">' + esc(temaLabel) + '</div>' +
 
-          // Toggle Arab
-          '<button class="kutipan-arab-toggle" data-id="' + esc(k.id) + '">' +
-            '<span class="kutipan-arab-toggle-label">النص العربي · Teks Arab</span>' +
-            '<span class="kutipan-arab-toggle-arrow">›</span>' +
-          '</button>' +
-
-          // Kotak teks Arab
-          '<div class="kutipan-arab-box" id="karab-' + esc(k.id) + '">' +
+          // Teks Arab (langsung tampil)
+          '<div class="kutipan-arab-box open" id="karab-' + esc(k.id) + '">' +
             '<p class="kutipan-arab-text">' + esc(k.arab) + '</p>' +
           '</div>' +
 
@@ -237,17 +250,6 @@
     });
 
     container.innerHTML = html;
-
-    // Pasang event: toggle Arab
-    container.querySelectorAll('.kutipan-arab-toggle').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var id    = btn.getAttribute('data-id');
-        var box   = document.getElementById('karab-' + id);
-        var isOpen = btn.classList.contains('open');
-        btn.classList.toggle('open', !isOpen);
-        if (box) box.classList.toggle('open', !isOpen);
-      });
-    });
 
     // Pasang event: toggle Faedah
     container.querySelectorAll('.kutipan-faedah-toggle').forEach(function (btn) {
