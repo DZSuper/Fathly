@@ -9,6 +9,7 @@
   var _kutipanLoaded = false;
   var _aktifTema     = 'semua';
   var _aktifUlama    = 'semua'; // filter ulama aktif
+  var _querySearch   = '';      // kata kunci pencarian
 
   var TEMA_LIST = [
     { id: 'semua',   label: 'Semua',           icon: '📋' },
@@ -119,6 +120,7 @@
     renderSidebar();
     renderTopbar();
     renderEntries(_aktifTema);
+    initSearch();
   }
 
   // ── SIDEBAR TEMA ─────────────────────────────
@@ -172,7 +174,9 @@
 
     var filtered = filterKutipan(_aktifTema, _aktifUlama);
     var temaLabel = _aktifTema === 'semua' ? 'Semua Tema' : (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
-    infoBar.textContent = filtered.length + ' kutipan · ' + temaLabel;
+    var infoText = filtered.length + ' kutipan · ' + temaLabel;
+    if (_querySearch) infoText += ' · "' + _querySearch + '"';
+    infoBar.textContent = infoText;
 
     // Himpun ulama yang punya kutipan di tema ini (tanpa filter ulama agar semua chip tampil)
     var baseFiltered = filterKutipan(_aktifTema, 'semua');
@@ -219,6 +223,19 @@
     var list = _kutipanData.kutipan;
     if (tema && tema !== 'semua') list = list.filter(function (k) { return k.tema === tema; });
     if (ulama && ulama !== 'semua') list = list.filter(function (k) { return k.ulama === ulama; });
+    if (_querySearch) {
+      var q = _querySearch.toLowerCase();
+      list = list.filter(function (k) {
+        var u = getUlama(k.ulama);
+        return (
+          k.teks.toLowerCase().includes(q) ||
+          k.arab.includes(_querySearch) ||
+          k.kitab.toLowerCase().includes(q) ||
+          (u && u.nama.toLowerCase().includes(q)) ||
+          (TEMA_LABEL_MAP[k.tema] || '').toLowerCase().includes(q)
+        );
+      });
+    }
     return list;
   }
 
@@ -229,7 +246,16 @@
 
     var list = filterKutipan(tema, _aktifUlama);
     if (list.length === 0) {
-      container.innerHTML = '<div class="kutipan-empty"><div class="kutipan-empty-icon">🔍</div><div class="kutipan-empty-title">Belum ada kutipan</div><div class="kutipan-empty-desc">Tema ini belum memiliki kutipan yang tersedia.</div></div>';
+      if (_querySearch) {
+        container.innerHTML =
+          '<div class="kutipan-empty-search">' +
+            '<div class="kutipan-empty-search-icon">🔍</div>' +
+            '<div class="kutipan-empty-search-title">Tidak ditemukan</div>' +
+            '<div class="kutipan-empty-search-desc">Tidak ada kutipan yang cocok dengan kata kunci <span class="kutipan-empty-search-query">"' + esc(_querySearch) + '"</span>. Coba kata lain atau hapus filter tema.</div>' +
+          '</div>';
+      } else {
+        container.innerHTML = '<div class="kutipan-empty"><div class="kutipan-empty-icon">📭</div><div class="kutipan-empty-title">Belum ada kutipan</div><div class="kutipan-empty-desc">Tema ini belum memiliki kutipan yang tersedia.</div></div>';
+      }
       return;
     }
 
@@ -780,6 +806,42 @@
         a.click();
       });
     });
+  }
+
+
+  // ── SEARCH ───────────────────────────────────
+  function initSearch() {
+    var input = document.getElementById('kutipanSearch');
+    var clearBtn = document.getElementById('kutipanSearchClear');
+    if (!input) return;
+
+    // Debounce agar tidak render tiap huruf
+    var debounceTimer;
+    input.addEventListener('input', function () {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
+        _querySearch = input.value.trim();
+        // Tampilkan/sembunyikan tombol clear
+        clearBtn.classList.toggle('visible', _querySearch.length > 0);
+        // Reset scroll
+        var main = document.querySelector('.kutipan-main');
+        if (main) main.scrollTop = 0;
+        renderTopbar();
+        renderEntries(_aktifTema);
+      }, 250);
+    });
+
+    clearBtn.addEventListener('click', function () {
+      input.value = '';
+      _querySearch = '';
+      clearBtn.classList.remove('visible');
+      input.focus();
+      renderTopbar();
+      renderEntries(_aktifTema);
+    });
+
+    // Saat tema/ulama berganti, clear search jika ingin fresh — tidak wajib, tapi UX lebih bersih
+    // Kita biarkan search tetap aktif agar bisa kombinasi filter + search
   }
 
 })();
