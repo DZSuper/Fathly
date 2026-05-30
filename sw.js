@@ -4,7 +4,7 @@
 //            Network-First untuk konten JSON
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.0.0';
+const CACHE_NAME = 'fathlyweb-v1.2.10';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [

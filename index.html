@@ -246,7 +246,7 @@
         <div class="about-info">
           <div class="about-row">
             <span class="about-key">Versi</span>
-            <span class="about-val">1.1.1</span>
+            <span class="about-val" id="appVersion">...</span>
           </div>
           <div class="about-row">
             <span class="about-key">Pembuat</span>
@@ -255,10 +255,6 @@
           <div class="about-row">
             <span class="about-key">Tanggal Dibuat</span>
             <span class="about-val">6 - November - 2025</span>
-          </div>
-          <div class="about-row">
-            <span class="about-key">Versi</span>
-            <span class="about-val">1.1.0</span>
           </div>
           <div class="about-row">
             <span class="about-key">WhatsApp</span>
@@ -307,6 +303,12 @@
       <button class="tab-btn" data-tab="catatan">
         <span class="tab-icon">✏️</span> Catatan
       </button>
+      <button class="tab-btn" data-tab="matan">
+        <span class="tab-icon">📖</span> Matan
+      </button>
+      <button class="tab-btn" data-tab="dzikir">
+        <span class="tab-icon">🤲</span> Doa & Dzikir
+      </button>
       <div id="tabIndicator"></div>
     </div>
   </div><!-- end sticky-header -->
@@ -354,10 +356,20 @@
 
     <!-- TAB: DALIL -->
     <main class="tab-content" id="tab-dalil">
-      <div class="tab-empty">
-        <div class="tab-empty-icon">📖</div>
-        <div class="tab-empty-title">Dalil</div>
-        <div class="tab-empty-desc">Referensi dalil Al-Qur'an, Hadits, dan Ijma'<br>akan segera tersedia.</div>
+      <div class="coming-soon-wrap">
+        <div class="coming-soon-icon">📚</div>
+        <div class="coming-soon-badge">Segera Hadir</div>
+        <div class="coming-soon-title">Dalil</div>
+        <div class="coming-soon-desc">
+          Referensi dalil dari Al-Qur'an, Hadits Shahih, dan Ijma' Ulama —
+          dikelompokkan per tema fiqih dan aqidah, lengkap dengan teks Arab dan terjemahan.
+        </div>
+        <div class="coming-soon-features">
+          <div class="csf-item">📖 Dalil dari Al-Qur'an</div>
+          <div class="csf-item">📜 Hadits Shahih pilihan</div>
+          <div class="csf-item">🤝 Ijma' Ulama per masalah</div>
+          <div class="csf-item">🔎 Cari dalil berdasarkan tema</div>
+        </div>
       </div>
     </main>
 
@@ -369,6 +381,18 @@
         <!-- Konten utama -->
         <div class="kutipan-main">
           <div class="kutipan-topbar">
+            <div class="kutipan-search-wrap">
+              <span class="kutipan-search-icon">🔍</span>
+              <input
+                type="search"
+                id="kutipanSearch"
+                class="kutipan-search-input"
+                placeholder="Cari kutipan, ulama, atau kitab..."
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <button class="kutipan-search-clear" id="kutipanSearchClear" aria-label="Hapus pencarian">✕</button>
+            </div>
             <div class="kutipan-info-bar" id="kutipanInfoBar"></div>
             <div class="kutipan-chips" id="kutipanChips"></div>
           </div>
@@ -389,8 +413,50 @@
       <div id="catatanGrid" class="catatan-grid"></div>
     </main>
 
+    <!-- TAB MATAN -->
+    <main class="tab-content" id="tab-matan">
+      <div class="coming-soon-wrap">
+        <div class="coming-soon-icon">📖</div>
+        <div class="coming-soon-badge">Segera Hadir</div>
+        <div class="coming-soon-title">Matan</div>
+        <div class="coming-soon-desc">
+          Kumpulan matan (teks inti) kitab-kitab klasik yang dipelajari dalam halaqah dan pesantren —
+          lengkap dengan syakal, terjemahan baris per baris, dan penjelasan ringkas per bait.
+        </div>
+        <div class="coming-soon-features">
+          <div class="csf-item">📝 Matan Ajurumiyah</div>
+          <div class="csf-item">📝 Matan Al-Baiquniyah</div>
+          <div class="csf-item">📝 Matan Abi Syuja'</div>
+          <div class="csf-item">📝 Matan Al-Waraqat</div>
+          <div class="csf-item">📝 Matan Al-Arba'in An-Nawawiyah</div>
+          <div class="csf-item">📝 Dan lainnya...</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- TAB DOA & DZIKIR -->
+    <main class="tab-content" id="tab-dzikir">
+      <div class="coming-soon-wrap">
+        <div class="coming-soon-icon">🤲</div>
+        <div class="coming-soon-badge">Segera Hadir</div>
+        <div class="coming-soon-title">Doa & Dzikir</div>
+        <div class="coming-soon-desc">
+          Kumpulan doa dan dzikir dari Al-Qur'an dan Sunnah yang shahih —
+          dilengkapi teks Arab, latin, terjemahan, dan keterangan waktu pengamalannya.
+        </div>
+        <div class="coming-soon-features">
+          <div class="csf-item">🌅 Dzikir Pagi & Petang</div>
+          <div class="csf-item">🌙 Doa Sebelum & Sesudah Tidur</div>
+          <div class="csf-item">🕌 Dzikir Setelah Shalat</div>
+          <div class="csf-item">🍽️ Doa Makan & Minum</div>
+          <div class="csf-item">🚗 Doa Bepergian</div>
+          <div class="csf-item">🤲 Doa-doa Pilihan dari Al-Qur'an</div>
+        </div>
+      </div>
+    </main>
+
     <footer>
-      <p>© 2025 FathlyWeb · Dani Surya Anugrah</p>
+      <p>© 2025 FathlyWeb · Dani Surya Anugrah · <span id="footerVersion">v1.2.10</span></p>
     </footer>
   </div>
 

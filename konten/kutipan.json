@@ -838,6 +838,153 @@
           "topik": "Bantahan terhadap Jahmiyah"
         }
       ]
+    },
+    {
+      "id": "SufyanAtsTsauri",
+      "nama": "Sufyan Ats-Tsauri",
+      "nama_lengkap": "Sufyan ibn Sa'id ibn Masruq Ats-Tsauri Al-Kufi",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Kufah, Iraq, 97 H / 715 M",
+      "wafat": "161 H / 778 M — Bashrah, Iraq",
+      "bio": "Imam ahli hadits, fiqih, dan kezuhudan. Dijuluki 'Amirul Mukminin fil Hadits' di zamannya. Terkenal dengan wara', kehati-hatian, dan kezuhudan yang luar biasa. Para ulama sepakat bahwa beliau adalah hujjah (otoritas) dalam ilmu hadits.",
+      "guru": [
+        "Manshur ibn al-Mu'tamir",
+        "Al-A'masy",
+        "Abu Ishaq as-Sabi'i",
+        "Ibnu Abi Najih"
+      ],
+      "murid": [
+        "Ibnu al-Mubarak",
+        "Waki' ibn al-Jarrah",
+        "Yahya ibn Sa'id al-Qaththan",
+        "Abdurrahman ibn Mahdi"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Al-Jami' al-Kabir",
+          "topik": "Kumpulan Hadits"
+        },
+        {
+          "judul": "Al-Jami' ash-Shaghir",
+          "topik": "Kumpulan Hadits Ringkas"
+        },
+        {
+          "judul": "Perkataan-perkataannya tersebar di banyak kitab zuhud dan hilyah",
+          "topik": "Nasihat & Kezuhudan"
+        }
+      ]
+    },
+    {
+      "id": "AlHasanAlBashri",
+      "nama": "Al-Hasan Al-Bashri",
+      "nama_lengkap": "Al-Hasan ibn Abi Al-Hasan Yasar Al-Bashri",
+      "kuniyah": "Abu Sa'id",
+      "lahir": "Madinah, 21 H / 642 M",
+      "wafat": "110 H / 728 M — Bashrah, Iraq",
+      "bio": "Imam para Tabi'in, dikenal dengan kedalaman ilmu, kefasihan berbicara, dan kezuhudan yang luar biasa. Dilahirkan dua tahun sebelum wafatnya Umar ibn al-Khattab, dan sempat hidup bersama banyak Sahabat Nabi ﷺ.",
+      "guru": [
+        "Utsman ibn Affan",
+        "Ali ibn Abi Thalib",
+        "Ibnu Abbas",
+        "Ibnu Umar",
+        "Anas ibn Malik"
+      ],
+      "murid": [
+        "Ayyub as-Sakhtiyani",
+        "Ibnu 'Aun",
+        "Yunus ibn 'Ubaid",
+        "Qatadah ibn Di'amah"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Ar-Risalah (surat-suratnya kepada khalifah dan para pemimpin)",
+          "topik": "Nasihat kepada Penguasa"
+        },
+        {
+          "judul": "Perkataan-perkataannya terkumpul dalam Az-Zuhd (Ahmad) dan Hilyah al-Awliya'",
+          "topik": "Kezuhudan & Nasihat Hati"
+        }
+      ]
+    },
+    {
+      "id": "MuhammadBinAbdulWahhab",
+      "nama": "Muhammad Bin Abdul Wahhab",
+      "nama_lengkap": "Muhammad ibn Abdul Wahhab ibn Sulaiman At-Tamimi Al-Hanbali An-Najdi",
+      "kuniyah": "Abu Ali",
+      "lahir": "Al-'Uyainah, Najd (Arab Saudi), 1115 H / 1703 M",
+      "wafat": "1206 H / 1792 M — Ad-Dir'iyah",
+      "bio": "Mujaddid dakwah tauhid di Jazirah Arabia abad ke-12 H. Dakwahnya berfokus pada pemurnian tauhid, pemberantasan syirik, dan menghidupkan kembali Sunnah Nabi ﷺ sesuai pemahaman Salafush Shalih.",
+      "guru": [
+        "Abdullah ibn Ibrahim ibn Saif",
+        "Muhammad Hayat as-Sindi (Madinah)",
+        "Abdullah ibn Muhammad ibn Humaid"
+      ],
+      "murid": [
+        "Putranya: Husain, Ali, Ibrahim",
+        "Abdul Aziz ibn Muhammad ibn Su'ud"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Kitab at-Tauhid",
+          "topik": "Pokok-pokok Tauhid & Bantahan Syirik"
+        },
+        {
+          "judul": "Kashf asy-Syubuhat",
+          "topik": "Membantah Syubhat-syubhat Seputar Tauhid"
+        },
+        {
+          "judul": "Al-Ushul ats-Tsalatsah",
+          "topik": "Tiga Landasan Aqidah Islam"
+        },
+        {
+          "judul": "Al-Qawa'id al-Arba'",
+          "topik": "Empat Kaidah Membedakan Tauhid & Syirik"
+        },
+        {
+          "judul": "Nawaqidh al-Islam",
+          "topik": "Hal-hal yang Membatalkan Keislaman"
+        }
+      ]
+    },
+    {
+      "id": "AbdurrahmanAsSadi",
+      "nama": "Abdurrahman As-Sa'di",
+      "nama_lengkap": "Abdurrahman ibn Nashir ibn Abdullah As-Sa'di At-Tamimi Al-Hanbali",
+      "kuniyah": "Abu Abdillah",
+      "lahir": "Unaizah, Qashim (Arab Saudi), 12 Muharram 1307 H / 1889 M",
+      "wafat": "23 Jumadal Akhirah 1376 H / 1956 M — Unaizah",
+      "bio": "Ulama besar abad ke-14 H dari Najd. Dikenal dengan tafsirnya yang mudah dipahami namun kaya ilmu, serta gaya penulisan yang jernih dan menyentuh hati. Guru langsung Syaikh Ibnu Utsaimin.",
+      "guru": [
+        "Ibrahim ibn Hamad ibn Jasir",
+        "Shalih ibn Utsman al-Qadhi",
+        "Muhammad al-Amin asy-Syinqithi"
+      ],
+      "murid": [
+        "Muhammad ibn Shalih al-Utsaimin (Ibnu Utsaimin)",
+        "Abdullah ibn Aqil"
+      ],
+      "kitab_karangan": [
+        {
+          "judul": "Taisir al-Karim ar-Rahman (Tafsir As-Sa'di)",
+          "topik": "Tafsir Al-Qur'an"
+        },
+        {
+          "judul": "Bahjah Qulub al-Abrar",
+          "topik": "Syarh 99 Hadits Pilihan"
+        },
+        {
+          "judul": "Al-Qawa'id al-Hisan li Tafsir al-Qur'an",
+          "topik": "Kaidah-kaidah Tafsir"
+        },
+        {
+          "judul": "Mandzhumah al-Qawa'id al-Fiqhiyyah",
+          "topik": "Kaidah Fiqih dalam Nazham"
+        },
+        {
+          "judul": "Taudhih al-Kafiyah asy-Syafiyah",
+          "topik": "Syarh Aqidah Ibnu Abi Dawud"
+        }
+      ]
     }
   ],
   "kutipan": [
@@ -3559,6 +3706,486 @@
         "Wara' yang sejati dimulai dari menjaga lisan dari perkataan sia-sia dan dusta",
         "Lisan adalah anggota badan yang paling mudah berbuat dosa tapi sering diabaikan",
         "Imam Ahmad sangat terkenal dengan sikap diamnya — beliau berbicara hanya bila perlu"
+      ]
+    },
+    {
+      "id": "k171",
+      "ulama": "SufyanAtsTsauri",
+      "tema": "wara",
+      "arab": "الْوَرَعُ تَرْكُ مَا يَرِيبُكَ إِلَى مَا لَا يَرِيبُكَ",
+      "teks": "Wara' adalah meninggalkan apa yang meragukanmu menuju apa yang tidak meragukanmu.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Tarjamah Sufyan Ats-Tsauri",
+      "jilid": "Jilid 7",
+      "halaman": "Hal. 67",
+      "faedah": [
+        "Wara' bukan sekadar meninggalkan yang haram, tetapi juga menjauhi yang meragukan",
+        "Seseorang yang ragu antara halal dan haram harus memilih yang paling aman bagi agamanya",
+        "Kehati-hatian ini adalah tanda ketakwaan dan kepedulian terhadap kesucian amal"
+      ]
+    },
+    {
+      "id": "k172",
+      "ulama": "SufyanAtsTsauri",
+      "tema": "ikhlas",
+      "arab": "مَا عَالَجْتُ شَيْئًا أَشَدَّ عَلَيَّ مِنْ نِيَّتِي، إِنَّهَا تَنْقَلِبُ عَلَيَّ",
+      "teks": "Tidak ada sesuatu yang lebih berat aku hadapi daripada niatku, karena ia selalu berubah-ubah terhadapku.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Tarjamah Sufyan Ats-Tsauri",
+      "jilid": "Jilid 7",
+      "halaman": "Hal. 65",
+      "faedah": [
+        "Menjaga keikhlasan niat adalah perjuangan terberat bahkan bagi ulama besar sekalipun",
+        "Niat selalu berubah; seseorang harus terus-menerus memperbarui dan memeriksa niatnya",
+        "Bahwa imam sekelas Sufyan pun merasa berat menjaga niat mengajarkan kita untuk tidak sombong"
+      ]
+    },
+    {
+      "id": "k173",
+      "ulama": "SufyanAtsTsauri",
+      "tema": "sunnah",
+      "arab": "إِذَا رَأَيْتَ الرَّجُلَ يَعْمَلُ بِالسُّنَّةِ فَأَعِنْهُ، وَإِذَا رَأَيْتَهُ يَعْمَلُ بِالْبِدْعَةِ فَاهْجُرْهُ",
+      "teks": "Jika kamu melihat seseorang beramal dengan Sunnah, bantulah dia. Jika kamu melihatnya beramal dengan bid'ah, tinggalkanlah.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Tarjamah Sufyan Ats-Tsauri",
+      "jilid": "Jilid 7",
+      "halaman": "Hal. 72",
+      "faedah": [
+        "Mendukung ahlu sunnah dan menjauhi ahlu bid'ah adalah bagian dari membela agama",
+        "Membantu orang yang beramal dengan Sunnah adalah amal sunnah itu sendiri",
+        "Al-Hijr (menjauhi) pelaku bid'ah adalah obat yang digunakan para ulama untuk menjaga Sunnah"
+      ]
+    },
+    {
+      "id": "k174",
+      "ulama": "SufyanAtsTsauri",
+      "tema": "zuhud",
+      "arab": "كُنَّا نَرَى أَنَّ الدُّنْيَا مَا طَالَبَتْنَا كَانَتْ تُعِينُنَا عَلَى الآخِرَةِ",
+      "teks": "Kami dahulu berpandangan bahwa dunia yang datang kepada kami sedang membantu kami mempersiapkan akhirat.",
+      "kitab": "Az-Zuhd (Imam Ahmad)",
+      "bab": "Zuhd Sufyan Ats-Tsauri",
+      "jilid": "—",
+      "halaman": "Hal. 218",
+      "faedah": [
+        "Para Salaf memandang dunia yang datang kepada mereka sebagai alat untuk mempersiapkan akhirat",
+        "Pandangan ini mengubah rizki duniawi menjadi sarana ibadah dan investasi akhirat",
+        "Dengan pandangan seperti ini, seseorang tidak akan pernah terlena oleh dunia yang datang kepadanya"
+      ]
+    },
+    {
+      "id": "k175",
+      "ulama": "AlHasanAlBashri",
+      "tema": "tawadhu",
+      "arab": "مَنْ عَرَفَ نَفْسَهُ هَانَتْ عَلَيْهِ الدُّنْيَا، وَمَنْ عَرَفَ رَبَّهُ هَانَ عَلَيْهِ كُلُّ شَيْءٍ",
+      "teks": "Barangsiapa mengenal dirinya, dunia menjadi ringan baginya. Barangsiapa mengenal Rabb-nya, segala sesuatu menjadi ringan baginya.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Tarjamah Al-Hasan Al-Bashri",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 154",
+      "faedah": [
+        "Mengenal diri sendiri (hakikat kelemahan dan kekurangan) melahirkan kezuhudan terhadap dunia",
+        "Mengenal Allah dengan benar melahirkan keberanian dan ketenangan menghadapi semua cobaan",
+        "Keduanya saling berkaitan: semakin mengenal diri, semakin mengenal Rabb-nya"
+      ]
+    },
+    {
+      "id": "k176",
+      "ulama": "AlHasanAlBashri",
+      "tema": "ukhuwah",
+      "arab": "أَخُوكَ الصَّادِقُ مَنْ يَصْدُقُكَ لَا مَنْ يُصَدِّقُكَ",
+      "teks": "Saudaramu yang tulus adalah yang berkata jujur kepadamu, bukan yang selalu membenarkan perkataanmu.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Tarjamah Al-Hasan Al-Bashri",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 158",
+      "faedah": [
+        "Kejujuran adalah pondasi persaudaraan yang sesungguhnya, bukan saling memuji dan membenarkan",
+        "Teman yang selalu membenarkan kita adalah musuh tersembunyi yang membiarkan kita dalam kesalahan",
+        "Menerima kritik dari saudara yang tulus adalah tanda kecerdasan dan kebesaran jiwa"
+      ]
+    },
+    {
+      "id": "k177",
+      "ulama": "AlHasanAlBashri",
+      "tema": "nasihat",
+      "arab": "بِئْسَ الصَّاحِبُ صَاحِبٌ لَا تَذْكُرُهُ بِخَيْرٍ وَلَا يَذْكُرُكَ بِخَيْرٍ",
+      "teks": "Seburuk-buruk teman adalah teman yang tidak kamu sebutkan kebaikannya dan tidak menyebutkan kebaikanmu.",
+      "kitab": "Az-Zuhd (Imam Ahmad)",
+      "bab": "Zuhd Al-Hasan Al-Bashri",
+      "jilid": "—",
+      "halaman": "Hal. 274",
+      "faedah": [
+        "Persahabatan yang baik adalah yang saling mengingatkan kebaikan dan saling mendoakan",
+        "Teman yang tidak memberi pengaruh positif adalah beban, bukan bantuan",
+        "Pilihlah teman yang kehadirannya mengingatkanmu kepada Allah dan kebaikannya menginspirasimu"
+      ]
+    },
+    {
+      "id": "k178",
+      "ulama": "AlHasanAlBashri",
+      "tema": "hati",
+      "arab": "لَا تَغْتَرَّ بِكَثْرَةِ الأَعْمَالِ، وَانْظُرْ إِلَى قَلْبِكَ هَلْ هُوَ مَعَ اللهِ أَمْ لَا",
+      "teks": "Jangan terpukau oleh banyaknya amal, tapi lihatlah hatimu: apakah ia bersama Allah ataukah tidak.",
+      "kitab": "Hilyah al-Awliya'",
+      "bab": "Mawa'izh Al-Hasan",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 162",
+      "faedah": [
+        "Kualitas hati lebih penting dari kuantitas amal lahiriah",
+        "Amal yang banyak tanpa hati yang hadir bersama Allah tidak mencapai tujuannya yang sejati",
+        "Muhasabah (introspeksi) hati adalah amalan para Salaf yang selalu mereka lakukan"
+      ]
+    },
+    {
+      "id": "k179",
+      "ulama": "MuhammadBinAbdulWahhab",
+      "tema": "tauhid",
+      "arab": "مَنْ حَقَّقَ التَّوْحِيدَ دَخَلَ الْجَنَّةَ بِغَيْرِ حِسَابٍ وَلَا عَذَابٍ",
+      "teks": "Barangsiapa menyempurnakan tauhidnya, ia akan masuk surga tanpa hisab dan tanpa azab.",
+      "kitab": "Kashf asy-Syubuhat",
+      "bab": "Fadhilah at-Tauhid",
+      "jilid": "—",
+      "halaman": "Hal. 7",
+      "faedah": [
+        "Tauhid yang sempurna adalah kunci masuk surga tanpa melalui proses hisab yang berat",
+        "Menyempurnakan tauhid berarti membersihkannya dari segala noda syirik, bid'ah, dan kemunafikan",
+        "Ini adalah motivasi terbesar untuk terus mempelajari dan mengamalkan tauhid dengan sungguh-sungguh"
+      ]
+    },
+    {
+      "id": "k180",
+      "ulama": "MuhammadBinAbdulWahhab",
+      "tema": "ilmu",
+      "arab": "مَعْرِفَةُ الشِّرْكِ وَالْبِدْعَةِ وَاجِبَةٌ لِكُلِّ مُسْلِمٍ، كَمَا أَنَّ مَعْرِفَةَ التَّوْحِيدِ وَالسُّنَّةِ وَاجِبَةٌ",
+      "teks": "Mengetahui syirik dan bid'ah wajib bagi setiap Muslim, sebagaimana mengetahui tauhid dan Sunnah juga wajib.",
+      "kitab": "Muallafat asy-Syaikh",
+      "bab": "Risalah ila Ahl al-Qashim",
+      "jilid": "—",
+      "halaman": "Hal. 12",
+      "faedah": [
+        "Mengenal kejahatan adalah syarat menghindarinya; mengenal syirik adalah syarat menghindari syirik",
+        "Tidak cukup hanya belajar yang benar tanpa mengenal yang salah agar bisa membedakannya",
+        "Para Salaf mempelajari keburukan bukan untuk mengamalkannya, tetapi untuk menghindarinya"
+      ]
+    },
+    {
+      "id": "k181",
+      "ulama": "MuhammadBinAbdulWahhab",
+      "tema": "sunnah",
+      "arab": "لَا يَجُوزُ الاعْتِمَادُ فِي أُمُورِ الدِّينِ عَلَى رَأْيِ أَحَدٍ مِنَ النَّاسِ إِلَّا إِذَا وَافَقَ الدَّلِيلَ",
+      "teks": "Tidak boleh bersandar dalam urusan agama pada pendapat siapapun, kecuali jika sesuai dengan dalil.",
+      "kitab": "Muallafat asy-Syaikh",
+      "bab": "Ar-Radd 'alal Mutaqallidin",
+      "jilid": "—",
+      "halaman": "Hal. 42",
+      "faedah": [
+        "Standar kebenaran dalam agama adalah dalil Al-Qur'an dan Sunnah, bukan pendapat tokoh manapun",
+        "Mengembalikan semua permasalahan kepada dalil adalah manhaj Ahlus Sunnah yang wajib dijaga",
+        "Ini bukan berarti meremehkan ulama, tetapi menempatkan dalil di atas segalanya sesuai wasiat para imam"
+      ]
+    },
+    {
+      "id": "k182",
+      "ulama": "AbdurrahmanAsSadi",
+      "tema": "tawadhu",
+      "arab": "التَّوَاضُعُ مِنْ أَعْظَمِ الأَخْلَاقِ الَّتِي يَتَقَرَّبُ بِهَا الْعَبْدُ إِلَى اللهِ",
+      "teks": "Tawadhu' termasuk akhlak terbesar yang dengannya seorang hamba mendekatkan diri kepada Allah.",
+      "kitab": "Bahjah Qulub al-Abrar",
+      "bab": "Al-Akhlaq al-Mahmudah",
+      "jilid": "—",
+      "halaman": "Hal. 208",
+      "faedah": [
+        "Tawadhu' bukan kelemahan, melainkan kekuatan yang mendekatkan kepada Allah",
+        "Allah mengangkat derajat orang yang merendahkan diri karena-Nya",
+        "Ulama yang benar-benar berilmu selalu paling rendah hati karena mereka paling tahu keterbatasan dirinya"
+      ]
+    },
+    {
+      "id": "k183",
+      "ulama": "AbdurrahmanAsSadi",
+      "tema": "birulwalidain",
+      "arab": "بِرُّ الْوَالِدَيْنِ مِنْ آكَدِ الْوَاجِبَاتِ وَأَعْظَمِ الْقُرُبَاتِ",
+      "teks": "Berbakti kepada kedua orang tua termasuk kewajiban yang paling ditekankan dan ibadah yang paling utama.",
+      "kitab": "Taisir al-Karim ar-Rahman",
+      "bab": "Tafsir Surat Al-Isra' ayat 23",
+      "jilid": "—",
+      "halaman": "Hal. 455",
+      "faedah": [
+        "Birrul walidain ditempatkan Al-Qur'an langsung setelah perintah tauhid — ini menunjukkan kedudukannya",
+        "Tidak ada penghalang yang membolehkan seseorang durhaka kepada orang tuanya kecuali dalam kemaksiatan kepada Allah",
+        "Keridhaan Allah terkait dengan keridhaan orang tua, dan kemurkaan-Nya terkait dengan kemurkaan mereka"
+      ]
+    },
+    {
+      "id": "k184",
+      "ulama": "AbdurrahmanAsSadi",
+      "tema": "wara",
+      "arab": "مِنَ الْوَرَعِ الصَّادِقِ الْبُعْدُ عَنِ الشُّبُهَاتِ وَالأُمُورِ الْمُشْكِلَةِ",
+      "teks": "Termasuk wara' yang tulus adalah menjauh dari hal-hal yang meragukan dan perkara-perkara yang tidak jelas.",
+      "kitab": "Bahjah Qulub al-Abrar",
+      "bab": "Al-Wara' was Zuhd",
+      "jilid": "—",
+      "halaman": "Hal. 216",
+      "faedah": [
+        "Wara' mendorong seseorang untuk selalu memilih jalan yang paling selamat bagi agamanya",
+        "Menghindari syubhat (hal meragukan) adalah pagar pelindung dari terjerumus ke yang haram",
+        "Seseorang yang terbiasa dengan syubhat lama-lama tidak akan merasa berat dengan yang haram"
+      ]
+    },
+    {
+      "id": "k185",
+      "ulama": "AbdurrahmanAsSadi",
+      "tema": "quran",
+      "arab": "الْقُرْآنُ الْكَرِيمُ هُوَ الدَّوَاءُ الشَّافِي لِأَمْرَاضِ الْقُلُوبِ وَمُشْكِلَاتِ الْحَيَاةِ",
+      "teks": "Al-Qur'an Al-Karim adalah obat yang menyembuhkan bagi penyakit-penyakit hati dan problematika kehidupan.",
+      "kitab": "Taisir al-Karim ar-Rahman",
+      "bab": "Tafsir Surat Al-Isra' ayat 82",
+      "jilid": "—",
+      "halaman": "Hal. 465",
+      "faedah": [
+        "Al-Qur'an tidak hanya menyembuhkan penyakit rohani tetapi juga memberikan solusi bagi persoalan hidup",
+        "Orang yang sungguh-sungguh kembali kepada Al-Qur'an dalam setiap masalah pasti akan menemukan jalan keluarnya",
+        "Meninggalkan Al-Qur'an adalah sebab utama dari berbagai penyakit hati dan kesulitan hidup"
+      ]
+    },
+    {
+      "id": "k186",
+      "ulama": "IbnuTaimiyah",
+      "tema": "tawadhu",
+      "arab": "التَّوَاضُعُ هُوَ أَنْ تَعْرِفَ قَدْرَ نَفْسِكَ وَتُنَزِّلَهَا مَنْزِلَتَهَا",
+      "teks": "Tawadhu' adalah mengetahui kadar diri sendiri dan menempatkannya pada kedudukan yang sebenarnya.",
+      "kitab": "Majmu' al-Fatawa",
+      "bab": "Al-Akhlaq al-Islamiyah",
+      "jilid": "Jilid 10",
+      "halaman": "Hal. 279",
+      "faedah": [
+        "Tawadhu' yang benar bukan merendahkan diri secara semu, tetapi mengenal hakikat diri yang sesungguhnya",
+        "Orang yang tawadhu' menempatkan dirinya sesuai porsinya — tidak merendahkan diri melebihi batas pun tidak melebihi kadarnya",
+        "Mengenal diri dengan jujur adalah pangkal dari segala akhlak yang mulia"
+      ]
+    },
+    {
+      "id": "k187",
+      "ulama": "AnNawawi",
+      "tema": "birulwalidain",
+      "arab": "بِرُّ الْوَالِدَيْنِ فَرْضُ عَيْنٍ عَلَى كُلِّ مُسْلِمٍ، وَهُوَ مِنْ أَفْضَلِ الأَعْمَالِ بَعْدَ الإِيمَانِ",
+      "teks": "Berbakti kepada kedua orang tua adalah fardhu 'ain bagi setiap Muslim, dan ia termasuk amal terbaik setelah iman kepada Allah.",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Birrul Walidain",
+      "jilid": "—",
+      "halaman": "Hal. 201",
+      "faedah": [
+        "Birrul walidain adalah fardhu 'ain — kewajiban individual yang tidak bisa diwakili siapapun",
+        "Imam Nawawi menempatkan birrul walidain sebagai amal terbaik kedua setelah iman",
+        "Mengabaikan orang tua dengan alasan kesibukan ibadah lain adalah kesalahan dalam memahami prioritas agama"
+      ]
+    },
+    {
+      "id": "k188",
+      "ulama": "IbnuHajar",
+      "tema": "wara",
+      "arab": "الْوَرَعُ هُوَ اجْتِنَابُ الشُّبُهَاتِ خَشْيَةَ الْوُقُوعِ فِي الْمُحَرَّمَاتِ",
+      "teks": "Wara' adalah menjauhi hal-hal yang meragukan karena khawatir terjerumus ke dalam yang diharamkan.",
+      "kitab": "Fath al-Bari",
+      "bab": "Syarh Hadits al-Halal wal Haram",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 130",
+      "faedah": [
+        "Wara' adalah sikap preventif: mencegah sebelum terjadi bukan menyelesaikan setelah jatuh",
+        "Perbedaan antara wara' dan was-was: wara' berdasarkan ilmu, was-was berdasarkan keraguan tanpa dasar",
+        "Seseorang yang wara' hidupnya lebih tenang karena selalu berada di zona yang jelas kehalalannya"
+      ]
+    },
+    {
+      "id": "k189",
+      "ulama": "IbnulQoyyim",
+      "tema": "tawadhu",
+      "arab": "التَّوَاضُعُ رَأْسُ كُلِّ خُلُقٍ حَسَنٍ، وَالْكِبْرُ رَأْسُ كُلِّ خُلُقٍ سَيِّءٍ",
+      "teks": "Tawadhu' adalah pangkal dari setiap akhlak yang baik, dan sombong adalah pangkal dari setiap akhlak yang buruk.",
+      "kitab": "Madarijus Salikin",
+      "bab": "Manzilah at-Tawadhu'",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 336",
+      "faedah": [
+        "Tawadhu' adalah induk dari seluruh akhlak mulia: kesabaran, kedermawanan, kasih sayang, dan lainnya",
+        "Sombong adalah akar dari semua akhlak tercela: dengki, kejam, pelit, dan sebagainya",
+        "Memperbaiki dua sifat ini berarti memperbaiki seluruh akhlak sekaligus"
+      ]
+    },
+    {
+      "id": "k190",
+      "ulama": "IbnuRajab",
+      "tema": "ukhuwah",
+      "arab": "مِنْ حُقُوقِ الأُخُوَّةِ الإِسْلَامِيَّةِ أَنْ تُحِبَّ لِأَخِيكَ مَا تُحِبُّ لِنَفْسِكَ",
+      "teks": "Termasuk hak-hak persaudaraan Islam adalah mencintai untuk saudaramu apa yang kamu cintai untuk dirimu sendiri.",
+      "kitab": "Jami' al-Ulum wal Hikam",
+      "bab": "Syarh Hadits al-Ukhuwwah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 310",
+      "faedah": [
+        "Standar ukhuwah yang benar adalah menyamakan saudara dengan diri sendiri dalam cinta dan pemberian",
+        "Seseorang yang hanya mengambil manfaat dari saudaranya tanpa memberi belum memenuhi hak ukhuwah",
+        "Mencintai kebaikan untuk saudara seagama adalah tanda iman yang sempurna"
+      ]
+    },
+    {
+      "id": "k191",
+      "ulama": "IbnuKatsir",
+      "tema": "birulwalidain",
+      "arab": "جَعَلَ اللهُ حَقَّ الْوَالِدَيْنِ فِي الْقُرْآنِ مَقْرُونًا بِحَقِّهِ تَعَالَى، دَلَالَةً عَلَى عِظَمِ حَقِّهِمَا",
+      "teks": "Allah menjadikan hak kedua orang tua dalam Al-Qur'an berdampingan dengan hak-Nya, sebagai penunjuk atas besarnya hak keduanya.",
+      "kitab": "Tafsir Al-Qur'an al-'Adzim",
+      "bab": "Tafsir Surat Al-Isra' ayat 23",
+      "jilid": "Jilid 5",
+      "halaman": "Hal. 61",
+      "faedah": [
+        "Menyandingkan hak orang tua dengan hak Allah adalah penghormatan tertinggi yang tidak diberikan kepada selain keduanya",
+        "Ini menunjukkan bahwa durhaka kepada orang tua hampir setara dengan kedurhakaan kepada Allah",
+        "Menaati orang tua dalam kebaikan adalah bagian dari menaati Allah"
+      ]
+    },
+    {
+      "id": "k192",
+      "ulama": "IbnuQudamah",
+      "tema": "wara",
+      "arab": "مَنِ اتَّقَى اللهَ فِي السِّرِّ وَالْعَلَنِ فَقَدْ بَلَغَ دَرَجَةَ الْوَرَعِ الصَّادِقِ",
+      "teks": "Barangsiapa bertakwa kepada Allah baik secara tersembunyi maupun terang-terangan, maka ia telah mencapai derajat wara' yang sejati.",
+      "kitab": "Mukhtasar Minhaj al-Qasidin",
+      "bab": "Bab al-Wara' waz Zuhd",
+      "jilid": "—",
+      "halaman": "Hal. 320",
+      "faedah": [
+        "Konsistensi antara sikap tersembunyi dan terang-terangan adalah tanda wara' yang sesungguhnya",
+        "Seseorang yang bertakwa hanya di depan umum belum mencapai derajat wara'",
+        "Muraqabatullah (merasa selalu diawasi Allah) adalah kunci untuk mencapai konsistensi ini"
+      ]
+    },
+    {
+      "id": "k193",
+      "ulama": "IbnuBaz",
+      "tema": "ukhuwah",
+      "arab": "الْوَحْدَةُ وَالتَّآلُفُ وَالتَّرَاحُمُ بَيْنَ الْمُسْلِمِينَ مِنْ أَعْظَمِ وَاجِبَاتِ الدِّينِ",
+      "teks": "Persatuan, saling bersatu, dan saling menyayangi antar sesama Muslim termasuk kewajiban terbesar dalam agama.",
+      "kitab": "Majmu' Fatawa Ibnu Baz",
+      "bab": "Al-Ukhuwwah al-Islamiyah",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 290",
+      "faedah": [
+        "Persatuan umat Islam bukan pilihan, melainkan kewajiban yang Allah perintahkan dalam Al-Qur'an",
+        "Perpecahan melemahkan umat dan menggembirakan musuh; persatuan menguatkan dan memberkati",
+        "Membangun ukhuwah dimulai dari diri sendiri: memaafkan, tidak berburuk sangka, dan mendoakan sesama Muslim"
+      ]
+    },
+    {
+      "id": "k194",
+      "ulama": "IbnuUtsaimin",
+      "tema": "tawadhu",
+      "arab": "مِنْ عَلَامَاتِ التَّوَاضُعِ أَنْ تَقْبَلَ الْحَقَّ مِمَّنْ جَاءَ بِهِ وَإِنْ كَانَ صَغِيرًا",
+      "teks": "Termasuk tanda-tanda tawadhu' adalah menerima kebenaran dari siapapun yang membawanya, meski ia lebih muda.",
+      "kitab": "Syarh Al-Arba'in An-Nawawiyah",
+      "bab": "Syarh Hadits at-Tawadhu'",
+      "jilid": "—",
+      "halaman": "Hal. 112",
+      "faedah": [
+        "Menerima kebenaran dari yang lebih muda atau lebih rendah statusnya adalah tanda kebesaran jiwa",
+        "Sombong menghalangi seseorang dari menerima kebenaran; tawadhu' membuka hati untuk menerimanya",
+        "Kebenaran tidak dilihat dari siapa yang mengucapkan tetapi dari isi perkataannya"
+      ]
+    },
+    {
+      "id": "k195",
+      "ulama": "IbnuUtsaimin",
+      "tema": "birulwalidain",
+      "arab": "لَوْ عَلِمَ الْوَلَدُ كَمْ تَعِبَتِ الأُمُّ فِي تَرْبِيَتِهِ مَا عَصَاهَا طَرْفَةَ عَيْنٍ",
+      "teks": "Seandainya seorang anak mengetahui betapa lelahnya ibunya dalam mendidiknya, ia tidak akan mendurhakai sekedipan mata pun.",
+      "kitab": "Liqa' al-Bab al-Maftuh",
+      "bab": "Birrul Walidain",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 88",
+      "faedah": [
+        "Kedurhakaaan kepada orang tua seringkali lahir dari tidak menyadari pengorbanan yang telah mereka berikan",
+        "Merenungi jasa orang tua adalah obat yang efektif untuk melunakkan hati yang keras terhadap mereka",
+        "Seorang anak yang menghitung jasa ibunya pasti akan kehabisan hitungan sebelum selesai"
+      ]
+    },
+    {
+      "id": "k196",
+      "ulama": "AlAlbani",
+      "tema": "wara",
+      "arab": "الطَّالِبُ لِلْحَدِيثِ النَّبَوِيِّ يَجِبُ أَنْ يَكُونَ وَرِعًا فِي رِوَايَتِهِ وَنَقْلِهِ",
+      "teks": "Penuntut ilmu hadits wajib berlaku wara' dalam meriwayatkan dan menyampaikannya.",
+      "kitab": "Silsilah al-Ahadits adh-Dha'ifah",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 3",
+      "faedah": [
+        "Menyebarkan hadits dha'if atau palsu tanpa keterangan adalah bentuk kelalaian dalam amanah ilmu",
+        "Wara' dalam meriwayatkan hadits berarti tidak menyebarkan sesuatu kecuali setelah memastikan keshahihannya",
+        "Kehati-hatian dalam menyampaikan hadits adalah bentuk nyata dari mencintai Nabi ﷺ"
+      ]
+    },
+    {
+      "id": "k197",
+      "ulama": "AlFauzan",
+      "tema": "birulwalidain",
+      "arab": "عُقُوقُ الْوَالِدَيْنِ مِنَ الْكَبَائِرِ الْعِظَامِ الَّتِي تُوجِبُ غَضَبَ اللهِ وَعِقَابَهُ",
+      "teks": "Durhaka kepada kedua orang tua termasuk dosa-dosa besar yang mendatangkan murka Allah dan azab-Nya.",
+      "kitab": "Al-Muntaqa min Fatawa Al-Fawzan",
+      "bab": "Birrul Walidain wa 'Uququhuma",
+      "jilid": "Jilid 3",
+      "halaman": "Hal. 48",
+      "faedah": [
+        "'Uquq (durhaka orang tua) disebutkan Nabi ﷺ setelah syirik dalam daftar dosa-dosa terbesar",
+        "Murka orang tua adalah pintu dari murka Allah; keridhaan mereka adalah jalan keridhaan-Nya",
+        "Meminta maaf dan memperbaiki hubungan dengan orang tua adalah taubat yang harus segera dilakukan"
+      ]
+    },
+    {
+      "id": "k198",
+      "ulama": "IbnuAbdilBarr",
+      "tema": "ilmu",
+      "arab": "اطْلُبُوا الْعِلْمَ فَإِنَّهُ لَا يُعَادُ سِوَاهُ مِنَ الْعُلُومِ، وَطَلَبُهُ عِبَادَةٌ وَمُذَاكَرَتُهُ تَسْبِيحٌ",
+      "teks": "Carilah ilmu (agama), karena tidak ada ilmu yang bisa menyamainya. Mencarinya adalah ibadah dan mempelajarinya bersama adalah tasbih.",
+      "kitab": "Jami' Bayan al-'Ilm wa Fadhlih",
+      "bab": "Fadhl Thalab al-'Ilm",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 7",
+      "faedah": [
+        "Ilmu agama memiliki keistimewaan yang tidak dimiliki ilmu apapun: mencarinya adalah ibadah itu sendiri",
+        "Mempelajari ilmu agama bersama-sama (mudzakarah) adalah bentuk tasbih dan dzikir kepada Allah",
+        "Tidak ada investasi terbaik dari waktu dan energi melebihi menuntut ilmu agama yang bermanfaat"
+      ]
+    },
+    {
+      "id": "k199",
+      "ulama": "AsSuyuthi",
+      "tema": "ilmu",
+      "arab": "مَنْ جَهِلَ شَيْئًا عَادَاهُ، وَمَنْ عَلِمَهُ قَدَّرَهُ وَأَعْطَاهُ حَقَّهُ",
+      "teks": "Barangsiapa tidak tahu sesuatu, ia akan memusuhinya. Barangsiapa mengetahuinya, ia akan menghargai dan memberikan haknya.",
+      "kitab": "Al-Itqan fi 'Ulum al-Qur'an",
+      "bab": "Muqaddimah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 3",
+      "faedah": [
+        "Kebodohan adalah sumber permusuhan, sedangkan ilmu adalah sumber penghargaan dan keadilan",
+        "Banyak perselisihan dan perpecahan berakar dari kebodohan masing-masing pihak tentang yang lain",
+        "Menuntut ilmu dengan niat yang benar menjadikan seseorang lebih adil, bijak, dan penyayang"
+      ]
+    },
+    {
+      "id": "k200",
+      "ulama": "IbnuMuflih",
+      "tema": "ukhuwah",
+      "arab": "مِنْ حَقِّ أَخِيكَ الْمُسْلِمِ عَلَيْكَ أَنْ تُحِبَّ لَهُ مَا تُحِبُّ لِنَفْسِكَ وَتَكْرَهَ لَهُ مَا تَكْرَهُ لَهَا",
+      "teks": "Termasuk hak saudaramu sesama Muslim atasmu adalah mencintai untuknya apa yang kamu cintai untuk dirimu dan membenci untuknya apa yang kamu benci untuk dirimu.",
+      "kitab": "Al-Adab asy-Syar'iyah",
+      "bab": "Huquq al-Ukhuwwah",
+      "jilid": "Jilid 1",
+      "halaman": "Hal. 412",
+      "faedah": [
+        "Standar iman yang sempurna adalah menyamakan hak saudara seagama dengan hak diri sendiri",
+        "Seseorang tidak bisa mengklaim sempurnanya iman selama masih pilih kasih antara kepentingan diri dan saudara",
+        "Mengamalkan hak ukhuwah ini secara konsisten adalah yang menjadikan komunitas Muslim kuat dan bersatu"
       ]
     }
   ]

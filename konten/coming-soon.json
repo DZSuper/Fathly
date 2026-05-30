@@ -8,6 +8,34 @@
       "deskripsi": "Website ini akan segera tampil dengan desain baru! Ada 5 kandidat template yang sedang dipertimbangkan.",
       "status": "voting",
       "link": "berita/template.html"
+    },
+    {
+      "id": "tanya-jawab",
+      "judul": "❓ Tanya Jawab",
+      "deskripsi": "Kumpulan fatwa dan jawaban ulama kibar Ahlus Sunnah atas pertanyaan-pertanyaan kontemporer.",
+      "status": "",
+      "link": "konten/coming-soon.json"
+    },
+    {
+      "id": "jadwal-kajian",
+      "judul": "🗓️ Jadwal Kajian",
+      "deskripsi": "Catat dan kelola jadwal kajian rutin — lengkap dengan pengingat dan riwayat kehadiran.",
+      "status": "",
+      "link": "konten/coming-soon.json"
+    },
+    {
+      "id": "sanad-biografi",
+      "judul": "🧬 Sanad & Biografi",
+      "deskripsi": "Pohon sanad ulama — visualisasi hubungan guru-murid dari generasi ke generasi sejak para Sahabat.",
+      "status": "",
+      "link": "konten/coming-soon.json"
+    },
+    {
+      "id": "kamus-istilah",
+      "judul": "📘 Kamus Istilah",
+      "deskripsi": "Glosarium istilah ilmu syar'i — dari ushul fiqih, musthalah hadits, nahwu, hingga aqidah.",
+      "status": "",
+      "link": "konten/coming-soon.json"
     }
   ]
 }
