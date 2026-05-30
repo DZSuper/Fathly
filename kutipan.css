@@ -100,7 +100,110 @@
   z-index: 10;
   background: var(--bg-dark);
   border-bottom: 1px solid var(--border);
-  padding: 8px 14px 8px;
+  padding: 8px 14px 6px;
+}
+
+/* Search bar */
+.kutipan-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.kutipan-search-icon {
+  position: absolute;
+  left: 11px;
+  font-size: 0.8rem;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.kutipan-search-input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 36px 9px 34px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  color: var(--text-light);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+}
+
+.kutipan-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.kutipan-search-input:focus {
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.07);
+}
+
+/* Hapus default clear button browser */
+.kutipan-search-input::-webkit-search-cancel-button { display: none; }
+
+.kutipan-search-clear {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 50%;
+  font-family: inherit;
+  display: none;
+  line-height: 1;
+  transition: color 0.2s, background 0.2s;
+}
+
+.kutipan-search-clear.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kutipan-search-clear:hover {
+  color: var(--text-light);
+  background: rgba(255,255,255,0.08);
+}
+
+/* State kosong saat search tidak menemukan hasil */
+.kutipan-empty-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.kutipan-empty-search-icon {
+  font-size: 2.2rem;
+  opacity: 0.5;
+}
+
+.kutipan-empty-search-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.kutipan-empty-search-desc {
+  font-size: 0.75rem;
+  max-width: 260px;
+  line-height: 1.6;
+}
+
+.kutipan-empty-search-query {
+  color: var(--gold);
+  font-weight: 700;
 }
 
 .kutipan-info-bar {
