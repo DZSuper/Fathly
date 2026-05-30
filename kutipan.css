@@ -148,13 +148,44 @@
 
 /* ── ENTRIES ── */
 .kutipan-entries {
-  padding: 0 14px 32px;
+  padding: 12px 14px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .kutipan-entry {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.35s;
+  padding: 20px 16px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 3px solid transparent;
+  border-radius: 12px;
+  background: var(--bg-card);
+  transition: background 0.35s, border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+  position: relative;
+}
+
+/* Garis warna atas berdasarkan tema — satu-satunya identitas warna kartu */
+.kutipan-entry[data-tema="tauhid"]  { border-top-color: #38bdf8; }
+.kutipan-entry[data-tema="hati"]    { border-top-color: #fb7185; }
+.kutipan-entry[data-tema="ilmu"]    { border-top-color: #facc15; }
+.kutipan-entry[data-tema="sunnah"]  { border-top-color: #4ade80; }
+.kutipan-entry[data-tema="zuhud"]   { border-top-color: #c8975a; }
+.kutipan-entry[data-tema="akhlak"]  { border-top-color: #c084fc; }
+.kutipan-entry[data-tema="ikhlas"]  { border-top-color: #2dd4bf; }
+.kutipan-entry[data-tema="taubat"]  { border-top-color: #fb923c; }
+.kutipan-entry[data-tema="ibadah"]  { border-top-color: #818cf8; }
+.kutipan-entry[data-tema="nasihat"] { border-top-color: #a3e635; }
+.kutipan-entry[data-tema="sabar"]   { border-top-color: #94a3b8; }
+.kutipan-entry[data-tema="tawakal"] { border-top-color: #22d3ee; }
+.kutipan-entry[data-tema="syukur"]  { border-top-color: #34d399; }
+.kutipan-entry[data-tema="akhirat"] { border-top-color: #cbd5e1; }
+.kutipan-entry[data-tema="doa"]     { border-top-color: #f43f5e; }
+.kutipan-entry[data-tema="quran"]   { border-top-color: #eab308; }
+
+.kutipan-entry:last-child {
+  margin-bottom: 0;
 }
 
 .kutipan-entry.highlighted {
@@ -164,60 +195,120 @@
   margin: 0 -10px;
 }
 
-/* Tema badge */
+/* Tema badge — warna per tema */
 .kutipan-tema-badge {
   display: inline-flex;
   align-items: center;
-  background: rgba(0, 255, 136, 0.1);
-  color: var(--green);
   border-radius: 5px;
-  padding: 2px 8px;
+  padding: 2px 9px;
   font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   margin-bottom: 10px;
+  /* default fallback */
+  background: rgba(0, 255, 136, 0.12);
+  color: #00ff88;
+}
+
+/* Tauhid & Aqidah — biru langit */
+.kutipan-tema-badge[data-tema="tauhid"] {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* Hati & Jiwa — merah muda */
+.kutipan-tema-badge[data-tema="hati"] {
+  background: rgba(251, 113, 133, 0.15);
+  color: #fb7185;
+}
+
+/* Ilmu & Belajar — kuning emas */
+.kutipan-tema-badge[data-tema="ilmu"] {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}
+
+/* Sunnah — hijau daun */
+.kutipan-tema-badge[data-tema="sunnah"] {
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80;
+}
+
+/* Zuhud — cokelat tanah */
+.kutipan-tema-badge[data-tema="zuhud"] {
+  background: rgba(180, 130, 80, 0.18);
+  color: #c8975a;
+}
+
+/* Akhlak & Adab — ungu */
+.kutipan-tema-badge[data-tema="akhlak"] {
+  background: rgba(192, 132, 252, 0.15);
+  color: #c084fc;
+}
+
+/* Ikhlas & Niat — teal */
+.kutipan-tema-badge[data-tema="ikhlas"] {
+  background: rgba(45, 212, 191, 0.15);
+  color: #2dd4bf;
+}
+
+/* Taubat — oranye */
+.kutipan-tema-badge[data-tema="taubat"] {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fb923c;
+}
+
+/* Ibadah — indigo */
+.kutipan-tema-badge[data-tema="ibadah"] {
+  background: rgba(129, 140, 248, 0.15);
+  color: #818cf8;
+}
+
+/* Nasihat — kuning kehijauan */
+.kutipan-tema-badge[data-tema="nasihat"] {
+  background: rgba(163, 230, 53, 0.13);
+  color: #a3e635;
+}
+
+/* Sabar — abu-abu biru */
+.kutipan-tema-badge[data-tema="sabar"] {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+}
+
+/* Tawakal — cyan */
+.kutipan-tema-badge[data-tema="tawakal"] {
+  background: rgba(34, 211, 238, 0.13);
+  color: #22d3ee;
+}
+
+/* Syukur — hijau zamrud */
+.kutipan-tema-badge[data-tema="syukur"] {
+  background: rgba(52, 211, 153, 0.13);
+  color: #34d399;
+}
+
+/* Akhirat — silver */
+.kutipan-tema-badge[data-tema="akhirat"] {
+  background: rgba(226, 232, 240, 0.1);
+  color: #cbd5e1;
+}
+
+/* Doa — merah marun */
+.kutipan-tema-badge[data-tema="doa"] {
+  background: rgba(244, 63, 94, 0.13);
+  color: #f43f5e;
+}
+
+/* Al-Qur'an — emas tua */
+.kutipan-tema-badge[data-tema="quran"] {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
 }
 
 /* Arabic toggle button */
 .kutipan-arab-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 7px 12px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-family: inherit;
-  transition: all 0.2s;
-}
-
-.kutipan-arab-toggle.open {
-  background: rgba(255, 215, 0, 0.08);
-  border-color: rgba(255, 215, 0, 0.35);
-}
-
-.kutipan-arab-toggle-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  transition: color 0.2s;
-}
-
-.kutipan-arab-toggle.open .kutipan-arab-toggle-label {
-  color: var(--gold);
-}
-
-.kutipan-arab-toggle-arrow {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  transition: transform 0.2s;
-}
-
-.kutipan-arab-toggle.open .kutipan-arab-toggle-arrow {
-  transform: rotate(90deg);
+  display: none;
 }
 
 /* Arabic text box */
@@ -225,20 +316,16 @@
   background: rgba(255, 215, 0, 0.05);
   border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 10px;
-  padding: 16px 14px;
+  padding: 14px 14px;
   margin-bottom: 12px;
   direction: rtl;
   text-align: right;
-  display: none;
-}
-
-.kutipan-arab-box.open {
   display: block;
 }
 
 .kutipan-arab-text {
-  font-size: 1.25rem;
-  line-height: 2.1;
+  font-size: 1.08rem;
+  line-height: 2.0;
   color: var(--text-light);
   font-family: 'Traditional Arabic', 'Scheherazade New', 'Amiri', 'Arial', serif;
   margin: 0;

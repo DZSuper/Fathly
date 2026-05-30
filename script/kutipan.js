@@ -34,6 +34,20 @@
   var TEMA_LABEL_MAP = {};
   TEMA_LIST.forEach(function (t) { TEMA_LABEL_MAP[t.id] = t.label; });
 
+  // ── HELPERS ─────────────────────────────────
+  function esc(str) {
+    return String(str || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function getUlama(id) {
+    if (!_kutipanData) return null;
+    return _kutipanData.ulama.find(function (u) { return u.id === id; }) || null;
+  }
+
   // ── GUARD: cegah swipe horizontal child naik ke tab-switcher ──
   // Dipasang pada elemen yang punya overflow-x scroll agar swipe
   // pada elemen tersebut tidak menutup/membuka tab lain.
@@ -54,20 +68,6 @@
     el.addEventListener('touchend', function (e) {
       if (gIsH) e.stopPropagation();
     }, { passive: true });
-  }
-
-  // ── HELPERS ─────────────────────────────────
-  function esc(str) {
-    return String(str || '')
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
-
-  function getUlama(id) {
-    if (!_kutipanData) return null;
-    return _kutipanData.ulama.find(function (u) { return u.id === id; }) || null;
   }
 
   // ── INISIALISASI ─────────────────────────────
@@ -143,6 +143,7 @@
     });
 
     sidebar.innerHTML = html;
+
     // Pasang guard agar sidebar tidak memicu swipe tab
     attachHScrollGuard(sidebar);
 
@@ -192,6 +193,9 @@
     });
     chipsEl.innerHTML = chipsHtml;
 
+    // Guard: geser chips tidak memicu swipe tab
+    attachHScrollGuard(chipsEl);
+
     chipsEl.querySelectorAll('.kutipan-chip').forEach(function (chip) {
       chip.addEventListener('click', function () {
         var uid = chip.getAttribute('data-ulama');
@@ -207,8 +211,6 @@
         if (main) main.scrollTop = 0;
       });
     });
-    // Guard: geser chips tidak memicu swipe tab
-    attachHScrollGuard(chipsEl);
   }
 
   // ── FILTER HELPER ────────────────────────────
@@ -241,8 +243,8 @@
       if (k.halaman && k.halaman !== '—') keterangan.push(k.halaman);
 
       html +=
-        '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '">' +
-          '<div class="kutipan-tema-badge">' + esc(temaLabel) + '</div>' +
+        '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
+          '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
 
           // Teks Arab (langsung tampil)
           '<div class="kutipan-arab-box open" id="karab-' + esc(k.id) + '">' +
