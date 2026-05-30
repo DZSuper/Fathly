@@ -143,20 +143,26 @@
     var sidebar = document.getElementById('kutipanSidebar');
     if (!sidebar || !_kutipanData) return;
 
-    var bmCount = getBookmarks().length;
+    var bmCount = filterKutipan(_aktifTema, _aktifUlama).filter(function(k){
+      return getBookmarks().indexOf(k.id) !== -1;
+    }).length;
+    var totalBm = getBookmarks().length;
     var html =
       '<button class="kutipan-tema-btn kutipan-bookmark-btn' + (_showBookmark ? ' active' : '') + '" id="sidebarBookmarkBtn">' +
         '<span class="ktb-icon">🔖</span>' +
         '<span class="ktb-text">' +
           '<span class="ktb-nama">Favorit</span>' +
-          '<span class="ktb-count">' + bmCount + ' kutipan</span>' +
+          '<span class="ktb-count">' + totalBm + ' tersimpan</span>' +
         '</span>' +
       '</button>' +
       '<div class="kutipan-sidebar-label">TEMA</div>';
     TEMA_LIST.forEach(function (t) {
+      var baseList = _showBookmark
+        ? _kutipanData.kutipan.filter(function(k){ return getBookmarks().indexOf(k.id) !== -1; })
+        : _kutipanData.kutipan;
       var count = t.id === 'semua'
-        ? _kutipanData.kutipan.length
-        : _kutipanData.kutipan.filter(function (k) { return k.tema === t.id; }).length;
+        ? baseList.length
+        : baseList.filter(function (k) { return k.tema === t.id; }).length;
       if (t.id !== 'semua' && count === 0) return; // sembunyikan tema kosong
 
       html += '<button class="kutipan-tema-btn' + (t.id === _aktifTema ? ' active' : '') + '" data-tema="' + t.id + '">' +
@@ -178,12 +184,6 @@
     if (bmBtn) {
       bmBtn.addEventListener('click', function () {
         _showBookmark = !_showBookmark;
-        _aktifUlama = 'semua';
-        _querySearch = '';
-        var searchInput = document.getElementById('kutipanSearch');
-        if (searchInput) searchInput.value = '';
-        var clearBtn = document.getElementById('kutipanSearchClear');
-        if (clearBtn) clearBtn.classList.remove('visible');
         renderSidebar();
         renderTopbar();
         renderEntries(_aktifTema);
@@ -194,11 +194,12 @@
 
     sidebar.querySelectorAll('.kutipan-tema-btn:not(#sidebarBookmarkBtn)').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        _showBookmark = false;
-        _aktifTema = btn.getAttribute('data-tema');
-        _aktifUlama = 'semua';
-        sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (b) {
-          b.classList.toggle('active', b === btn);
+        var newTema = btn.getAttribute('data-tema');
+        // Jika tema sama diklik lagi → toggle off ke 'semua'
+        _aktifTema = (_aktifTema === newTema && newTema !== 'semua') ? 'semua' : newTema;
+        // Bookmark tetap tidak berubah — tema bisa dikombinasi dengan favorit
+        sidebar.querySelectorAll('.kutipan-tema-btn:not(#sidebarBookmarkBtn)').forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-tema') === _aktifTema);
         });
         renderTopbar();
         renderEntries(_aktifTema);
@@ -216,16 +217,18 @@
 
     var filtered = filterKutipan(_aktifTema, _aktifUlama);
     var temaLabel = _aktifTema === 'semua' ? 'Semua Tema' : (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
-    var infoText;
-    if (_showBookmark) {
-      infoText = filtered.length + ' kutipan tersimpan';
-    } else {
-      infoText = filtered.length + ' kutipan · ' + temaLabel;
+    var parts = [];
+    parts.push(filtered.length + ' kutipan');
+    if (_showBookmark) parts.push('🔖 Favorit');
+    if (_aktifTema !== 'semua') parts.push(temaLabel);
+    if (_aktifUlama !== 'semua') {
+      var uObj = getUlama(_aktifUlama);
+      if (uObj) parts.push(uObj.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, ''));
     }
-    if (_querySearch) infoText += ' · "' + _querySearch + '"';
-    infoBar.textContent = infoText;
+    if (_querySearch) parts.push('"' + _querySearch + '"');
+    infoBar.textContent = parts.join(' · ');
 
-    // Himpun ulama yang punya kutipan di tema ini (tanpa filter ulama agar semua chip tampil)
+    // Himpun ulama dari hasil filter aktif (bookmark+tema), tanpa filter ulama
     var baseFiltered = filterKutipan(_aktifTema, 'semua');
     var ulamaIds = [];
     baseFiltered.forEach(function (k) {
@@ -250,13 +253,16 @@
     chipsEl.querySelectorAll('.kutipan-chip').forEach(function (chip) {
       chip.addEventListener('click', function () {
         var uid = chip.getAttribute('data-ulama');
-        if (_aktifUlama === uid) return;
-        _aktifUlama = uid;
+        if (_aktifUlama === uid) {
+          // Klik ulang chip yang aktif → reset ke semua ulama
+          _aktifUlama = 'semua';
+        } else {
+          _aktifUlama = uid;
+        }
         chipsEl.querySelectorAll('.kutipan-chip').forEach(function (c) {
           c.classList.toggle('active', c.getAttribute('data-ulama') === _aktifUlama);
         });
-        var newFiltered = filterKutipan(_aktifTema, _aktifUlama);
-        infoBar.textContent = newFiltered.length + ' kutipan · ' + temaLabel;
+        renderTopbar();
         renderEntries(_aktifTema);
         var main = document.querySelector('.kutipan-main');
         if (main) main.scrollTop = 0;
@@ -268,13 +274,24 @@
   function filterKutipan(tema, ulama) {
     if (!_kutipanData) return [];
     var list = _kutipanData.kutipan;
+
+    // Bookmark: filter awal, bisa dikombinasi semua filter lain
     if (_showBookmark) {
       var bm = getBookmarks();
       list = list.filter(function (k) { return bm.indexOf(k.id) !== -1; });
-    } else {
-      if (tema && tema !== 'semua') list = list.filter(function (k) { return k.tema === tema; });
     }
-    if (ulama && ulama !== 'semua') list = list.filter(function (k) { return k.ulama === ulama; });
+
+    // Tema (tetap aktif bahkan saat mode favorit)
+    if (tema && tema !== 'semua') {
+      list = list.filter(function (k) { return k.tema === tema; });
+    }
+
+    // Ulama
+    if (ulama && ulama !== 'semua') {
+      list = list.filter(function (k) { return k.ulama === ulama; });
+    }
+
+    // Pencarian teks
     if (_querySearch) {
       var q = _querySearch.toLowerCase();
       list = list.filter(function (k) {
@@ -288,6 +305,7 @@
         );
       });
     }
+
     return list;
   }
 
@@ -298,12 +316,19 @@
 
     var list = filterKutipan(tema, _aktifUlama);
     if (list.length === 0) {
-      if (_showBookmark) {
+      if (_showBookmark && getBookmarks().length === 0) {
         container.innerHTML =
           '<div class="kutipan-empty-search">' +
             '<div class="kutipan-empty-search-icon">🔖</div>' +
             '<div class="kutipan-empty-search-title">Favorit kosong</div>' +
             '<div class="kutipan-empty-search-desc">Tap ☆ pada kutipan manapun untuk menyimpannya di sini.</div>' +
+          '</div>';
+      } else if (_showBookmark) {
+        container.innerHTML =
+          '<div class="kutipan-empty-search">' +
+            '<div class="kutipan-empty-search-icon">🔖</div>' +
+            '<div class="kutipan-empty-search-title">Tidak ada favorit di sini</div>' +
+            '<div class="kutipan-empty-search-desc">Tidak ada kutipan favorit yang cocok dengan filter aktif. Coba ubah tema, ulama, atau kata kunci.</div>' +
           '</div>';
       } else if (_querySearch) {
         container.innerHTML =
@@ -920,9 +945,8 @@
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(function () {
         _querySearch = input.value.trim();
-        // Tampilkan/sembunyikan tombol clear
         clearBtn.classList.toggle('visible', _querySearch.length > 0);
-        // Reset scroll
+        // Semua filter aktif tetap — search hanya mempersempit hasil
         var main = document.querySelector('.kutipan-main');
         if (main) main.scrollTop = 0;
         renderTopbar();
