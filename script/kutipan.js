@@ -10,6 +10,21 @@
   var _aktifTema     = 'semua';
   var _aktifUlama    = 'semua'; // filter ulama aktif
   var _querySearch   = '';      // kata kunci pencarian
+  var _showBookmark  = false;   // mode tampilkan favorit saja
+
+  // ── BOOKMARK HELPERS (localStorage) ──────────
+  var BOOKMARK_KEY = 'fathly_bookmarks';
+  function getBookmarks() {
+    try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]'); } catch(e) { return []; }
+  }
+  function isBookmarked(id) { return getBookmarks().indexOf(id) !== -1; }
+  function toggleBookmark(id) {
+    var bm = getBookmarks();
+    var idx = bm.indexOf(id);
+    if (idx === -1) bm.push(id); else bm.splice(idx, 1);
+    localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bm));
+    return idx === -1; // true = baru ditambah
+  }
 
   var TEMA_LIST = [
     { id: 'semua',   label: 'Semua',           icon: '📋' },
@@ -128,7 +143,16 @@
     var sidebar = document.getElementById('kutipanSidebar');
     if (!sidebar || !_kutipanData) return;
 
-    var html = '<div class="kutipan-sidebar-label">TEMA</div>';
+    var bmCount = getBookmarks().length;
+    var html =
+      '<button class="kutipan-tema-btn kutipan-bookmark-btn' + (_showBookmark ? ' active' : '') + '" id="sidebarBookmarkBtn">' +
+        '<span class="ktb-icon">🔖</span>' +
+        '<span class="ktb-text">' +
+          '<span class="ktb-nama">Favorit</span>' +
+          '<span class="ktb-count">' + bmCount + ' kutipan</span>' +
+        '</span>' +
+      '</button>' +
+      '<div class="kutipan-sidebar-label">TEMA</div>';
     TEMA_LIST.forEach(function (t) {
       var count = t.id === 'semua'
         ? _kutipanData.kutipan.length
@@ -149,17 +173,35 @@
     // Pasang guard agar sidebar tidak memicu swipe tab
     attachHScrollGuard(sidebar);
 
-    sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (btn) {
+    // Tombol Favorit
+    var bmBtn = sidebar.querySelector('#sidebarBookmarkBtn');
+    if (bmBtn) {
+      bmBtn.addEventListener('click', function () {
+        _showBookmark = !_showBookmark;
+        _aktifUlama = 'semua';
+        _querySearch = '';
+        var searchInput = document.getElementById('kutipanSearch');
+        if (searchInput) searchInput.value = '';
+        var clearBtn = document.getElementById('kutipanSearchClear');
+        if (clearBtn) clearBtn.classList.remove('visible');
+        renderSidebar();
+        renderTopbar();
+        renderEntries(_aktifTema);
+        var main = document.querySelector('.kutipan-main');
+        if (main) main.scrollTop = 0;
+      });
+    }
+
+    sidebar.querySelectorAll('.kutipan-tema-btn:not(#sidebarBookmarkBtn)').forEach(function (btn) {
       btn.addEventListener('click', function () {
+        _showBookmark = false;
         _aktifTema = btn.getAttribute('data-tema');
-        _aktifUlama = 'semua'; // reset filter ulama saat tema berganti
-        // Update active state
+        _aktifUlama = 'semua';
         sidebar.querySelectorAll('.kutipan-tema-btn').forEach(function (b) {
-          b.classList.toggle('active', b.getAttribute('data-tema') === _aktifTema);
+          b.classList.toggle('active', b === btn);
         });
         renderTopbar();
         renderEntries(_aktifTema);
-        // Scroll main ke atas
         var main = document.querySelector('.kutipan-main');
         if (main) main.scrollTop = 0;
       });
@@ -174,7 +216,12 @@
 
     var filtered = filterKutipan(_aktifTema, _aktifUlama);
     var temaLabel = _aktifTema === 'semua' ? 'Semua Tema' : (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
-    var infoText = filtered.length + ' kutipan · ' + temaLabel;
+    var infoText;
+    if (_showBookmark) {
+      infoText = filtered.length + ' kutipan tersimpan';
+    } else {
+      infoText = filtered.length + ' kutipan · ' + temaLabel;
+    }
     if (_querySearch) infoText += ' · "' + _querySearch + '"';
     infoBar.textContent = infoText;
 
@@ -221,7 +268,12 @@
   function filterKutipan(tema, ulama) {
     if (!_kutipanData) return [];
     var list = _kutipanData.kutipan;
-    if (tema && tema !== 'semua') list = list.filter(function (k) { return k.tema === tema; });
+    if (_showBookmark) {
+      var bm = getBookmarks();
+      list = list.filter(function (k) { return bm.indexOf(k.id) !== -1; });
+    } else {
+      if (tema && tema !== 'semua') list = list.filter(function (k) { return k.tema === tema; });
+    }
     if (ulama && ulama !== 'semua') list = list.filter(function (k) { return k.ulama === ulama; });
     if (_querySearch) {
       var q = _querySearch.toLowerCase();
@@ -246,7 +298,14 @@
 
     var list = filterKutipan(tema, _aktifUlama);
     if (list.length === 0) {
-      if (_querySearch) {
+      if (_showBookmark) {
+        container.innerHTML =
+          '<div class="kutipan-empty-search">' +
+            '<div class="kutipan-empty-search-icon">🔖</div>' +
+            '<div class="kutipan-empty-search-title">Favorit kosong</div>' +
+            '<div class="kutipan-empty-search-desc">Tap ☆ pada kutipan manapun untuk menyimpannya di sini.</div>' +
+          '</div>';
+      } else if (_querySearch) {
         container.innerHTML =
           '<div class="kutipan-empty-search">' +
             '<div class="kutipan-empty-search-icon">🔍</div>' +
@@ -270,7 +329,12 @@
 
       html +=
         '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
-          '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
+          '<div class="kutipan-entry-header">' +
+            '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
+            '<button class="kutipan-bookmark-star' + (isBookmarked(k.id) ? ' saved' : '') + '" data-id="' + esc(k.id) + '" title="' + (isBookmarked(k.id) ? 'Hapus dari favorit' : 'Simpan ke favorit') + '">' +
+              (isBookmarked(k.id) ? '★' : '☆') +
+            '</button>' +
+          '</div>' +
 
           // Teks Arab (langsung tampil)
           '<div class="kutipan-arab-box open" id="karab-' + esc(k.id) + '">' +
@@ -333,6 +397,41 @@
     container.querySelectorAll('.kutipan-ulama-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         openUlamaPanel(btn.getAttribute('data-ulama'));
+      });
+    });
+
+    // Pasang event: bookmark star
+    container.querySelectorAll('.kutipan-bookmark-star').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var kid = btn.getAttribute('data-id');
+        var added = toggleBookmark(kid);
+        btn.textContent = added ? '★' : '☆';
+        btn.classList.toggle('saved', added);
+        btn.title = added ? 'Hapus dari favorit' : 'Simpan ke favorit';
+        // Update jumlah di sidebar tanpa full re-render
+        var bmCountEl = document.querySelector('#sidebarBookmarkBtn .ktb-count');
+        if (bmCountEl) bmCountEl.textContent = getBookmarks().length + ' kutipan';
+        // Jika mode favorit aktif dan dihapus, hapus kartu dari DOM
+        if (_showBookmark && !added) {
+          var entry = document.getElementById('kentry-' + kid);
+          if (entry) {
+            entry.style.transition = 'opacity 0.3s, transform 0.3s';
+            entry.style.opacity = '0';
+            entry.style.transform = 'scale(0.97)';
+            setTimeout(function() {
+              entry.remove();
+              // Cek apakah masih ada entry
+              if (!container.querySelector('.kutipan-entry')) {
+                container.innerHTML =
+                  '<div class="kutipan-empty-search">' +
+                    '<div class="kutipan-empty-search-icon">🔖</div>' +
+                    '<div class="kutipan-empty-search-title">Favorit kosong</div>' +
+                    '<div class="kutipan-empty-search-desc">Tap ☆ pada kutipan manapun untuk menyimpannya di sini.</div>' +
+                  '</div>';
+              }
+            }, 300);
+          }
+        }
       });
     });
 

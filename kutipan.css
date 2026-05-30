@@ -1060,3 +1060,54 @@
 .kimg-btn-share:hover {
   background: rgba(255,215,0,0.18);
 }
+
+/* ── BOOKMARK ────────────────────────────────── */
+
+/* Header baris badge + bintang favorit */
+.kutipan-entry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+/* Tombol bintang favorit */
+.kutipan-bookmark-star {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 2px 4px;
+  border-radius: 6px;
+  transition: color 0.2s, transform 0.2s;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.kutipan-bookmark-star:hover {
+  color: var(--gold);
+  transform: scale(1.2);
+}
+
+.kutipan-bookmark-star.saved {
+  color: var(--gold);
+}
+
+.kutipan-bookmark-star.saved:hover {
+  color: #e0a800;
+  transform: scale(1.15);
+}
+
+/* Tombol Favorit di sidebar */
+.kutipan-bookmark-btn {
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px !important;
+}
+
+.kutipan-bookmark-btn.active .ktb-icon,
+.kutipan-bookmark-btn.active .ktb-nama {
+  color: var(--gold);
+}
