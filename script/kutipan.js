@@ -43,7 +43,11 @@
     { id: 'akhirat', label: 'Akhirat & Maut',  icon: '🌙' },
     { id: 'doa',     label: 'Doa & Dzikir',    icon: '🤲' },
     { id: 'syukur',  label: 'Syukur',           icon: '🌟' },
-    { id: 'tawakal', label: 'Tawakkal',         icon: '🏹' },
+    { id: 'tawakal',       label: 'Tawakkal',          icon: '🏹' },
+    { id: 'tawadhu',       label: "Tawadhu'",          icon: '🌾' },
+    { id: 'ukhuwah',       label: 'Ukhuwah',            icon: '🤝' },
+    { id: 'birulwalidain', label: 'Birrul Walidain',    icon: '🏡' },
+    { id: 'wara',          label: "Wara'",              icon: '⚖️' },
   ];
 
   // Nama tema untuk label badge di entry
@@ -633,7 +637,11 @@
     syukur:  { accent: '#34d399', bg1: '#071210', bg2: '#0c1e18', text: '#d1fae5' },
     akhirat: { accent: '#cbd5e1', bg1: '#0c0e12', bg2: '#141820', text: '#f1f5f9' },
     doa:     { accent: '#f43f5e', bg1: '#140608', bg2: '#200c10', text: '#ffe4e6' },
-    quran:   { accent: '#eab308', bg1: '#120e02', bg2: '#1e1604', text: '#fef9c3' },
+    quran:         { accent: '#eab308', bg1: '#120e02', bg2: '#1e1604', text: '#fef9c3' },
+    tawadhu:       { accent: '#7ec8a8', bg1: '#051210', bg2: '#0a1e18', text: '#d4f5e8' },
+    ukhuwah:       { accent: '#f0a858', bg1: '#140900', bg2: '#201400', text: '#fff0d8' },
+    birulwalidain: { accent: '#e888b0', bg1: '#120608', bg2: '#1e0c14', text: '#ffe8f4' },
+    wara:          { accent: '#98b8d8', bg1: '#080c10', bg2: '#10161e', text: '#d8e8f8' },
   };
 
   var TEMA_LABEL_LOCAL = {
@@ -641,7 +649,8 @@
     sunnah:'Sunnah & Bid\'ah', zuhud:'Zuhud & Dunia', akhlak:'Akhlak & Adab',
     ikhlas:'Ikhlas & Niat', taubat:'Taubat', ibadah:'Ibadah',
     nasihat:'Nasihat', sabar:'Sabar', tawakal:'Tawakkal',
-    syukur:'Syukur', akhirat:'Akhirat & Maut', doa:'Doa & Dzikir', quran:'Al-Qur\'an'
+    syukur:'Syukur', akhirat:'Akhirat & Maut', doa:'Doa & Dzikir', quran:"Al-Qur'an",
+    tawadhu:"Tawadhu'", ukhuwah:'Ukhuwah', birulwalidain:'Birrul Walidain', wara:"Wara'"
   };
 
   function generateKutipanImage(k, u) {
