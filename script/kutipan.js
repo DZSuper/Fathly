@@ -282,6 +282,11 @@
             }).join('') +
           '</div>' +
 
+          // Tombol generate gambar
+          '<div class="kutipan-actions">' +
+            '<button class="kutipan-btn-generate" data-id="' + esc(k.id) + '">Kartu Kutipan</button>' +
+          '</div>' +
+
         '</div>';
     });
 
@@ -302,6 +307,16 @@
     container.querySelectorAll('.kutipan-ulama-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         openUlamaPanel(btn.getAttribute('data-ulama'));
+      });
+    });
+
+    // Pasang event: generate gambar
+    container.querySelectorAll('.kutipan-btn-generate').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var kid = btn.getAttribute('data-id');
+        var k = _kutipanData.kutipan.find(function(q){ return q.id === kid; });
+        var u = k ? getUlama(k.ulama) : null;
+        if (k && u) generateKutipanImage(k, u);
       });
     });
   }
@@ -448,6 +463,323 @@
     // Tampilkan kembali hamburger
     var hbBtn = document.getElementById('hamburgerBtn');
     if (hbBtn) hbBtn.style.display = '';
+  }
+
+
+  // ── GENERATE GAMBAR KUTIPAN ──────────────────
+  var TEMA_PALETTE = {
+    tauhid:  { accent: '#38bdf8', bg1: '#0a1628', bg2: '#0d2040', text: '#e0f2fe' },
+    hati:    { accent: '#fb7185', bg1: '#1a0a10', bg2: '#2a0f18', text: '#ffe4e6' },
+    ilmu:    { accent: '#facc15', bg1: '#141008', bg2: '#221a0a', text: '#fef9c3' },
+    sunnah:  { accent: '#4ade80', bg1: '#081410', bg2: '#0d2018', text: '#dcfce7' },
+    zuhud:   { accent: '#c8975a', bg1: '#120d06', bg2: '#1e1508', text: '#fde8c8' },
+    akhlak:  { accent: '#c084fc', bg1: '#100818', bg2: '#1a0d28', text: '#f3e8ff' },
+    ikhlas:  { accent: '#2dd4bf', bg1: '#071412', bg2: '#0c1e1c', text: '#ccfbf1' },
+    taubat:  { accent: '#fb923c', bg1: '#150a04', bg2: '#221208', text: '#ffedd5' },
+    ibadah:  { accent: '#818cf8', bg1: '#090a18', bg2: '#10122a', text: '#e0e7ff' },
+    nasihat: { accent: '#a3e635', bg1: '#0c1204', bg2: '#141c06', text: '#ecfccb' },
+    sabar:   { accent: '#94a3b8', bg1: '#0c0e12', bg2: '#14181e', text: '#e2e8f0' },
+    tawakal: { accent: '#22d3ee', bg1: '#061214', bg2: '#0a1e22', text: '#cffafe' },
+    syukur:  { accent: '#34d399', bg1: '#071210', bg2: '#0c1e18', text: '#d1fae5' },
+    akhirat: { accent: '#cbd5e1', bg1: '#0c0e12', bg2: '#141820', text: '#f1f5f9' },
+    doa:     { accent: '#f43f5e', bg1: '#140608', bg2: '#200c10', text: '#ffe4e6' },
+    quran:   { accent: '#eab308', bg1: '#120e02', bg2: '#1e1604', text: '#fef9c3' },
+  };
+
+  var TEMA_LABEL_LOCAL = {
+    tauhid:'Tauhid & Aqidah', hati:'Hati & Jiwa', ilmu:'Ilmu & Belajar',
+    sunnah:'Sunnah & Bid\'ah', zuhud:'Zuhud & Dunia', akhlak:'Akhlak & Adab',
+    ikhlas:'Ikhlas & Niat', taubat:'Taubat', ibadah:'Ibadah',
+    nasihat:'Nasihat', sabar:'Sabar', tawakal:'Tawakkal',
+    syukur:'Syukur', akhirat:'Akhirat & Maut', doa:'Doa & Dzikir', quran:'Al-Qur\'an'
+  };
+
+  function generateKutipanImage(k, u) {
+    var pal = TEMA_PALETTE[k.tema] || { accent:'#ffd700', bg1:'#0b0c0e', bg2:'#141618', text:'#f2f2f2' };
+
+    // Canvas dimensions — rasio 4:5 (cocok Instagram/WA)
+    var W = 1080, H = 1350;
+    var canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    var ctx = canvas.getContext('2d');
+
+    // ── Background: diagonal gradient kaya ──
+    var bgGrad = ctx.createLinearGradient(0, 0, W, H);
+    bgGrad.addColorStop(0,   pal.bg1);
+    bgGrad.addColorStop(0.4, pal.bg2);
+    bgGrad.addColorStop(1,   pal.bg1);
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, W, H);
+
+    // ── Cahaya aksen: sudut kiri atas ──
+    var radTL = ctx.createRadialGradient(W * 0.05, H * 0.05, 0, W * 0.05, H * 0.05, W * 0.55);
+    radTL.addColorStop(0, hexAlpha(pal.accent, 0.08));
+    radTL.addColorStop(1, 'transparent');
+    ctx.fillStyle = radTL;
+    ctx.fillRect(0, 0, W, H);
+
+    // ── Cahaya aksen: sudut kanan bawah ──
+    var radBR = ctx.createRadialGradient(W * 0.95, H * 0.92, 0, W * 0.95, H * 0.92, W * 0.55);
+    radBR.addColorStop(0, hexAlpha(pal.accent, 0.07));
+    radBR.addColorStop(1, 'transparent');
+    ctx.fillStyle = radBR;
+    ctx.fillRect(0, 0, W, H);
+
+    // ── Bintang-bintang kecil ──
+    drawStars(ctx, W, H, pal.accent);
+
+    // ── Garis aksen kiri ──
+    ctx.fillStyle = pal.accent;
+    ctx.fillRect(60, 90, 5, H - 180);
+
+    // ── Badge tema ──
+    var temaLabel = TEMA_LABEL_LOCAL[k.tema] || k.tema;
+    ctx.font = 'bold 30px serif';
+    var badgeW = ctx.measureText(temaLabel).width + 40;
+    roundRect(ctx, 90, 90, badgeW, 52, 10);
+    ctx.fillStyle = hexAlpha(pal.accent, 0.15);
+    ctx.fill();
+    ctx.strokeStyle = hexAlpha(pal.accent, 0.5);
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    ctx.fillStyle = pal.accent;
+    ctx.textBaseline = 'middle';
+    ctx.fillText(temaLabel, 110, 116);
+
+    // ── Teks Arab ──
+    var arabY = 200;
+    ctx.font = '52px serif';
+    ctx.fillStyle = pal.text;
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'top';
+    var arabLines = wrapText(ctx, k.arab, W - 100, 90, 800);
+    arabLines.forEach(function(line, i) {
+      ctx.fillText(line, W - 90, arabY + i * 76);
+    });
+    arabY += arabLines.length * 76 + 20;
+
+    // ── Garis pemisah ──
+    var sepY = arabY + 18;
+    ctx.strokeStyle = hexAlpha(pal.accent, 0.35);
+    ctx.lineWidth = 1;
+    ctx.setLineDash([6, 6]);
+    ctx.beginPath();
+    ctx.moveTo(90, sepY); ctx.lineTo(W - 90, sepY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // ── Terjemahan ──
+    var terjY = sepY + 36;
+    ctx.font = 'italic 36px serif';
+    ctx.fillStyle = pal.text;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.globalAlpha = 0.92;
+    // Tanda kutip pembuka
+    ctx.font = 'bold 72px serif';
+    ctx.fillStyle = hexAlpha(pal.accent, 0.4);
+    ctx.fillText('\u201C', 88, terjY - 10);
+    ctx.font = 'italic 36px serif';
+    ctx.fillStyle = pal.text;
+    var terjLines = wrapText(ctx, k.teks, ctx, 110, 900);
+    terjLines.forEach(function(line, i) {
+      ctx.fillText(line, 110, terjY + 52 + i * 54);
+    });
+    terjY += 52 + terjLines.length * 54 + 20;
+    ctx.globalAlpha = 1;
+
+    // ── Atribusi (nama ulama + kitab) ──
+    var attrY = Math.max(terjY + 40, H - 280);
+
+    // Garis aksen sebelum atribusi
+    ctx.fillStyle = pal.accent;
+    ctx.fillRect(90, attrY, 60, 3);
+
+    ctx.font = 'bold 38px serif';
+    ctx.fillStyle = pal.accent;
+    ctx.textAlign = 'left';
+    ctx.fillText('— ' + u.nama, 90, attrY + 24);
+
+    ctx.font = '28px serif';
+    ctx.fillStyle = hexAlpha(pal.text, 0.65);
+    ctx.fillText(k.kitab, 90, attrY + 76);
+
+    // ── Footer: nama app ──
+    ctx.font = 'bold 26px serif';
+    ctx.fillStyle = hexAlpha(pal.accent, 0.5);
+    ctx.textAlign = 'center';
+    ctx.fillText('FathlyWeb · Kutipan Ulama Salaf', W / 2, H - 60);
+
+    // ── Modal preview ──
+    showImageModal(canvas, k, pal);
+  }
+
+  function drawStars(ctx, W, H, accentColor) {
+    // Seed pseudo-random agar bintang konsisten per render
+    var stars = [
+      // [x_ratio, y_ratio, radius, alpha]
+      // Zona tepi kiri atas
+      [0.04, 0.06, 2.5, 0.55], [0.08, 0.13, 1.5, 0.35], [0.03, 0.19, 2.0, 0.45],
+      [0.12, 0.08, 1.2, 0.30], [0.06, 0.27, 1.8, 0.40],
+      // Zona tepi kanan atas
+      [0.88, 0.04, 2.2, 0.50], [0.93, 0.11, 1.6, 0.38], [0.96, 0.18, 2.8, 0.45],
+      [0.84, 0.09, 1.3, 0.28], [0.91, 0.22, 1.7, 0.42], [0.97, 0.29, 1.4, 0.32],
+      // Zona tepi kanan tengah
+      [0.95, 0.42, 2.0, 0.35], [0.98, 0.50, 1.5, 0.28], [0.93, 0.58, 1.8, 0.38],
+      // Zona tepi kiri tengah
+      [0.02, 0.38, 1.6, 0.32], [0.05, 0.46, 2.2, 0.42], [0.03, 0.55, 1.4, 0.30],
+      // Zona tepi kiri bawah
+      [0.04, 0.70, 2.0, 0.38], [0.07, 0.78, 1.5, 0.30], [0.03, 0.86, 2.4, 0.45],
+      [0.10, 0.83, 1.2, 0.25], [0.06, 0.92, 1.8, 0.35],
+      // Zona tepi kanan bawah
+      [0.92, 0.72, 1.6, 0.32], [0.96, 0.80, 2.2, 0.42], [0.89, 0.88, 1.4, 0.30],
+      [0.94, 0.93, 2.0, 0.38], [0.97, 0.87, 1.5, 0.28],
+      // Zona atas tengah (jauh dari teks)
+      [0.35, 0.02, 1.8, 0.35], [0.52, 0.015, 2.2, 0.45], [0.68, 0.025, 1.5, 0.30],
+      [0.25, 0.04, 1.2, 0.28], [0.78, 0.03, 1.9, 0.38],
+      // Zona bawah tengah (di atas footer)
+      [0.30, 0.97, 1.5, 0.30], [0.50, 0.975, 1.8, 0.38], [0.70, 0.968, 1.4, 0.28],
+    ];
+
+    stars.forEach(function(s) {
+      var x = s[0] * W, y = s[1] * H, r = s[2], a = s[3];
+      // Bintang 4 titik (cross/diamond lebih elegan dari lingkaran)
+      ctx.save();
+      ctx.globalAlpha = a;
+      ctx.fillStyle = accentColor;
+      // Titik besar di tengah
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fill();
+      // Glow samar
+      var glow = ctx.createRadialGradient(x, y, 0, x, y, r * 4);
+      glow.addColorStop(0, hexAlpha(accentColor, 0.3));
+      glow.addColorStop(1, 'transparent');
+      ctx.fillStyle = glow;
+      ctx.beginPath();
+      ctx.arc(x, y, r * 4, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // Beberapa bintang lebih besar berbentuk "+"/salib kecil
+    var bigStars = [
+      [0.96, 0.14, 5, 0.5], [0.04, 0.65, 4, 0.45], [0.93, 0.67, 4.5, 0.4],
+      [0.07, 0.10, 4, 0.4], [0.50, 0.01, 3.5, 0.45]
+    ];
+    bigStars.forEach(function(s) {
+      var x = s[0]*W, y = s[1]*H, r = s[2], a = s[3];
+      ctx.save();
+      ctx.globalAlpha = a;
+      ctx.strokeStyle = accentColor;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x - r*2.5, y); ctx.lineTo(x + r*2.5, y);
+      ctx.moveTo(x, y - r*2.5); ctx.lineTo(x, y + r*2.5);
+      ctx.stroke();
+      ctx.fillStyle = accentColor;
+      ctx.beginPath();
+      ctx.arc(x, y, r * 0.7, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    });
+  }
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+
+  function wrapText(ctx, text, _dummy, x, maxWidth) {
+    // Split by space (for translation) or char chunks (for Arab)
+    var isArab = /[\u0600-\u06FF]/.test(text);
+    var words = isArab ? text.split(' ') : text.split(' ');
+    var lines = [], current = '';
+    words.forEach(function(w) {
+      var test = current ? current + ' ' + w : w;
+      if (ctx.measureText(test).width > maxWidth && current) {
+        lines.push(current);
+        current = w;
+      } else {
+        current = test;
+      }
+    });
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  function hexAlpha(hex, alpha) {
+    var r = parseInt(hex.slice(1,3),16);
+    var g = parseInt(hex.slice(3,5),16);
+    var b = parseInt(hex.slice(5,7),16);
+    return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+  }
+
+  function showImageModal(canvas, k, pal) {
+    // Hapus modal lama jika ada
+    var old = document.getElementById('kutipanImgModal');
+    if (old) old.remove();
+
+    var dataUrl = canvas.toDataURL('image/png');
+
+    var modal = document.createElement('div');
+    modal.id = 'kutipanImgModal';
+    modal.className = 'kimg-modal';
+    modal.innerHTML =
+      '<div class="kimg-backdrop"></div>' +
+      '<div class="kimg-sheet">' +
+        '<div class="kimg-header">' +
+          '<span class="kimg-title">Gambar Siap Posting</span>' +
+          '<button class="kimg-close" id="kimg-close-btn">✕</button>' +
+        '</div>' +
+        '<div class="kimg-preview">' +
+          '<img src="' + dataUrl + '" class="kimg-img" alt="kutipan" />' +
+        '</div>' +
+        '<div class="kimg-actions">' +
+          '<a class="kimg-btn kimg-btn-dl" download="kutipan-' + k.id + '.png" href="' + dataUrl + '">Unduh PNG</a>' +
+          '<button class="kimg-btn kimg-btn-share" id="kimg-share-btn">Bagikan</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(modal);
+    requestAnimationFrame(function() { modal.classList.add('open'); });
+
+    // Close
+    modal.querySelector('#kimg-close-btn').addEventListener('click', function() {
+      modal.classList.remove('open');
+      setTimeout(function() { modal.remove(); }, 300);
+    });
+    modal.querySelector('.kimg-backdrop').addEventListener('click', function() {
+      modal.classList.remove('open');
+      setTimeout(function() { modal.remove(); }, 300);
+    });
+
+    // Share (Web Share API jika tersedia)
+    modal.querySelector('#kimg-share-btn').addEventListener('click', function() {
+      canvas.toBlob(function(blob) {
+        if (navigator.share && navigator.canShare) {
+          var file = new File([blob], 'kutipan-' + k.id + '.png', { type: 'image/png' });
+          if (navigator.canShare({ files: [file] })) {
+            navigator.share({ files: [file], title: 'Kutipan Ulama Salaf' });
+            return;
+          }
+        }
+        // Fallback: download
+        var a = document.createElement('a');
+        a.href = canvas.toDataURL('image/png');
+        a.download = 'kutipan-' + k.id + '.png';
+        a.click();
+      });
+    });
   }
 
 })();
