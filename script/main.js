@@ -101,8 +101,32 @@ document.addEventListener('DOMContentLoaded', function () {
   if (navTentang) {
     navTentang.addEventListener('click', function () {
       openPanel(panelTentang, navTentang);
+      // Baca versi dari sw.js
+      var verEl = document.getElementById('appVersion');
+      if (verEl && verEl.textContent === '...') {
+        fetch('sw.js')
+          .then(function(r) { return r.text(); })
+          .then(function(txt) {
+            var m = txt.match(/CACHE_NAME\s*=\s*['"]fathlyweb-v([\d.]+)['"]/);
+            if (m) verEl.textContent = m[1];
+          })
+          .catch(function() { verEl.textContent = '-'; });
+      }
     });
   }
+
+  // Versi footer — baca dari sw.js saat halaman dimuat
+  (function loadFooterVersion() {
+    var footerVer = document.getElementById('footerVersion');
+    if (!footerVer) return;
+    fetch('sw.js')
+      .then(function(r) { return r.text(); })
+      .then(function(txt) {
+        var m = txt.match(/CACHE_NAME\s*=\s*['"]fathlyweb-v([\d.]+)['"]/);
+        if (m) footerVer.textContent = 'v' + m[1];
+      })
+      .catch(function() {});
+  })();
 
   if (navMasukan) {
     navMasukan.addEventListener('click', function () {
@@ -152,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ── FUNGSI UTAMA PINDAH TAB ──────────────
-  var TAB_ORDER = ['materi', 'ceramah', 'dalil', 'kutipan', 'catatan'];
+  var TAB_ORDER = ['materi', 'ceramah', 'dalil', 'kutipan', 'catatan', 'matan', 'dzikir'];
 
   function switchTab(target, direction) {
     var prevContent = document.querySelector('.tab-content.active');
@@ -364,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // =============================================
   var comingSoonLoaded = false;
   var comingSoonBody   = document.getElementById('comingSoonBody');
-  var CS_CACHE_KEY     = 'cs_html_cache';
+  var CS_CACHE_KEY     = 'cs_html_cache_v2';
 
   // Pre-render dari cache SEGERA saat halaman dimuat
   // Sehingga saat panel dibuka, konten sudah siap (tidak ada "Memuat...")
