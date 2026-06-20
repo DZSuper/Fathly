@@ -1246,18 +1246,18 @@
     },
     {
       "id": "k017",
-      "arab": "الدُّعَاءُ هُوَ الْعِبَادَةُ، وَمَنْ لَمْ يَدْعُ اللهَ غَضِبَ اللهُ عَلَيْهِ",
-      "teks": "Doa adalah inti ibadah, dan barangsiapa tidak berdoa kepada Allah, maka Allah akan murka kepadanya.",
+      "arab": "الذِّكْرُ مَطْلُوبٌ فِي جَمِيعِ الأَحْوَالِ، وَلَا يَنْبَغِي أَنْ يُهْجَرَ إِلَّا بِعُذْرٍ شَرْعِيٍّ",
+      "teks": "Dzikir dianjurkan dalam segala keadaan, dan tidak sepantasnya ditinggalkan kecuali dengan alasan yang dibenarkan syariat.",
       "ulama": "AnNawawi",
       "kitab": "Al-Adzkar",
-      "bab": "Bab fi Fadhl ad-Du'a' wa al-Amr bihi",
+      "bab": "Muqaddimah",
       "jilid": "—",
-      "halaman": "Hal. 342",
+      "halaman": "—",
       "tema": "doa",
       "faedah": [
-        "Meninggalkan doa adalah kesombongan terselubung seolah-olah tidak butuh kepada Allah",
-        "Doa bukan sekadar meminta, melainkan pengakuan seorang hamba atas kebutuhannya kepada Allah",
-        "Allah murka kepada yang tidak berdoa karena doa adalah tanda ketundukan dan kehambaan"
+        "Dzikir bukan ibadah musiman, tetapi anjuran yang berlaku di seluruh kondisi seorang Muslim",
+        "Meninggalkan dzikir tanpa alasan syar'i adalah kerugian yang seharusnya dihindari",
+        "Imam Nawawi menulis kitab Al-Adzkar khusus untuk mendorong umat agar konsisten berdzikir"
       ]
     },
     {
@@ -1486,18 +1486,18 @@
     },
     {
       "id": "k032",
-      "arab": "الصَّدَقَةُ تُطْفِئُ الْخَطِيئَةَ كَمَا يُطْفِئُ الْمَاءُ النَّارَ",
-      "teks": "Sedekah memadamkan dosa-dosa sebagaimana air memadamkan api.",
+      "arab": "قَصَدْتُ بِهَذَا الْكِتَابِ أَنْ يَكُونَ صَاحِبُهُ عَلَى ذِكْرٍ مِنَ الآخِرَةِ مَا دَامَ نَاظِرًا فِيهِ",
+      "teks": "Aku bermaksud dengan kitab ini agar pemiliknya selalu teringat akhirat selama ia menelaahnya.",
       "ulama": "AnNawawi",
       "kitab": "Riyadhus Shalihin",
-      "bab": "Bab Fadhl ash-Shadaqah",
+      "bab": "Muqaddimah",
       "jilid": "—",
-      "halaman": "Hal. 271",
+      "halaman": "—",
       "tema": "ibadah",
       "faedah": [
-        "Sedekah adalah salah satu penghapus dosa yang paling efektif setelah taubat",
-        "Rutin bersedekah walau sedikit lebih baik daripada sekali banyak lalu berhenti",
-        "Sedekah bukan hanya harta — senyum, ilmu, tenaga, dan doa juga termasuk sedekah"
+        "Tujuan utama Imam Nawawi menyusun Riyadhus Shalihin adalah mengingatkan pembaca akan akhirat",
+        "Sebuah kitab ilmu yang baik seharusnya menggerakkan hati, bukan sekadar menambah informasi",
+        "Membaca dengan niat mengingat akhirat akan mengubah cara seseorang memahami dan mengamalkan ilmu"
       ]
     },
     {
@@ -1550,18 +1550,18 @@
     },
     {
       "id": "k036",
-      "arab": "الصِّحَّةُ وَالْفَرَاغُ نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ",
-      "teks": "Sehat dan waktu luang adalah dua nikmat yang banyak manusia tertipu (tidak memanfaatkannya dengan baik).",
+      "arab": "مَنْ أَرَادَ النَّجَاةَ فَلْيَلْزَمِ الزُّهْدَ فِي الدُّنْيَا وَالرَّغْبَةَ فِي الآخِرَةِ",
+      "teks": "Barangsiapa menginginkan keselamatan, hendaklah ia berpegang pada zuhud terhadap dunia dan kerinduan kepada akhirat.",
       "ulama": "AnNawawi",
-      "kitab": "Riyadhus Shalihin",
-      "bab": "Bab Muhasabat an-Nafs",
+      "kitab": "Bustanul 'Arifin",
+      "bab": "Fashl fiz Zuhd war Raghbah fil Akhirah",
       "jilid": "—",
-      "halaman": "Hal. 62",
+      "halaman": "—",
       "tema": "nasihat",
       "faedah": [
-        "Dua nikmat ini sering diabaikan justru karena terlalu mudah diperoleh — sehingga tidak disyukuri",
-        "Waktu adalah modal paling berharga seorang hamba; sekali berlalu tidak akan pernah kembali",
-        "Memanfaatkan sehat dan waktu luang untuk beramal shalih adalah tanda kecerdasan"
+        "Keselamatan dunia dan akhirat bergantung pada dua sikap: zuhud terhadap dunia dan rindu kepada akhirat",
+        "Zuhud bukan meninggalkan dunia secara fisik, tetapi tidak menjadikannya tujuan hidup",
+        "Kerinduan kepada akhirat adalah bahan bakar yang mendorong seseorang istiqamah dalam ibadah"
       ]
     },
     {
@@ -1870,18 +1870,18 @@
     },
     {
       "id": "k056",
-      "arab": "لَوِ اجْتَمَعَ النَّاسُ كُلُّهُمْ عَلَى أَنْ يَنْفَعُوكَ بِشَيْءٍ لَمْ يَنْفَعُوكَ إِلَّا بِشَيْءٍ قَدْ كَتَبَهُ اللهُ لَكَ",
-      "teks": "Jika seluruh manusia berkumpul untuk memberikan manfaat kepadamu, mereka tidak akan mampu melakukannya kecuali dengan sesuatu yang sudah Allah tuliskan untukmu.",
+      "arab": "حَقُّ الْمُسْلِمِ عَلَى الْمُسْلِمِ النَّصِيحَةُ وَالدُّعَاءُ لَهُ بِظَهْرِ الْغَيْبِ",
+      "teks": "Hak seorang Muslim atas Muslim lainnya adalah memberi nasihat dan mendoakannya tanpa sepengetahuannya.",
       "ulama": "AnNawawi",
-      "kitab": "Al-Arba'in an-Nawawiyah",
-      "bab": "Syarh al-Hadits al-Tasi' 'Asyr (Hadits 19 tentang Menjaga Allah)",
+      "kitab": "Al-Adzkar",
+      "bab": "Bab ad-Du'a lil Ghaib",
       "jilid": "—",
-      "halaman": "Hal. 67",
+      "halaman": "—",
       "tema": "tawakal",
       "faedah": [
-        "Keyakinan ini adalah dasar dari tawakal yang benar — hanya Allah yang benar-benar memberi manfaat dan mudharat",
-        "Mengetahui ini akan membebaskan hati dari ketergantungan dan harapan berlebihan kepada manusia",
-        "Bukan berarti tidak berusaha, tapi menyadari bahwa hasil akhirnya sepenuhnya di tangan Allah"
+        "Mendoakan saudara seiman di belakangnya adalah hak ukhuwah yang sering dilupakan",
+        "Doa yang dipanjatkan tanpa sepengetahuan orang yang didoakan lebih ikhlas dan lebih cepat dikabulkan",
+        "Imam Nawawi menjadikan saling mendoakan sebagai salah satu hak persaudaraan sesama Muslim"
       ]
     },
     {
@@ -1998,18 +1998,18 @@
     },
     {
       "id": "k064",
-      "arab": "الشَّيْطَانُ يَجْرِي مِنِ ابْنِ آدَمَ مَجْرَى الدَّمِ فَضَيِّقُوا مَجَارِيَهُ بِالْجُوعِ",
-      "teks": "Setan mengalir dalam tubuh anak Adam seperti aliran darah, maka sempitkan alirannya dengan berpuasa.",
+      "arab": "مُجَاهَدَةُ النَّفْسِ عَلَى تَرْكِ الشَّهَوَاتِ أَصْلُ كُلِّ طَاعَةٍ",
+      "teks": "Bersungguh-sungguh melawan hawa nafsu untuk meninggalkan syahwat adalah pondasi dari segala bentuk ketaatan.",
       "ulama": "AnNawawi",
-      "kitab": "Riyadhus Shalihin",
-      "bab": "Bab Fadhl ash-Shiyam",
+      "kitab": "Bustanul 'Arifin",
+      "bab": "Fashl fi Mujahadatin Nafs",
       "jilid": "—",
-      "halaman": "Hal. 392",
+      "halaman": "—",
       "tema": "ibadah",
       "faedah": [
-        "Puasa adalah salah satu senjata terkuat melawan bisikan dan gangguan setan",
-        "Mengurangi makan dan memperbanyak puasa sunah membantu hati menjadi lebih jernih dan kuat",
-        "Setan yang lemah karena puasa lebih mudah diatasi daripada setan yang diberi 'bahan bakar' lewat perut yang penuh"
+        "Mujahadatun nafs (melawan hawa nafsu) adalah jihad yang paling mendasar bagi setiap Muslim",
+        "Seluruh ketaatan besar berakar dari kemenangan kecil melawan syahwat sehari-hari",
+        "Tanpa mengendalikan syahwat, ketaatan lain akan sulit konsisten dan mudah goyah"
       ]
     },
     {
