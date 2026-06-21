@@ -994,9 +994,9 @@
       "teks": "Hati dalam perjalanannya menuju Allah bagaikan seekor burung: cinta adalah kepalanya, sedangkan rasa takut dan harap adalah kedua sayapnya.",
       "ulama": "IbnulQoyyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Bab al-Khauf war Raja'",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 508",
+      "bab": "Fashl Manzilah al-Isyfaq (dalam Manzilah Iyyaka Na'budu wa Iyyaka Nasta'in)",
+      "jilid": "Jilid 2",
+      "halaman": "Hal. 188",
       "tema": "hati",
       "faedah": [
         "Cinta kepada Allah adalah inti — tanpanya burung tidak bisa terbang meski bersayap",
@@ -1004,7 +1004,7 @@
         "Ketiganya harus hadir bersama agar hati tetap dalam keseimbangan menuju Allah"
       ],
       "verifikasi": "terverifikasi",
-      "catatan_verifikasi": "Cocok persis dgn Madarijus Salikin. Rujukan spesifik ditemukan: Jilid 2, Hal. 188. Bab lebih tepat: \"Fashl Manzilah al-Isyfaq\""
+      "catatan_verifikasi": "Cocok persis dgn Madarijus Salikin. Rujukan spesifik ditemukan: Jilid 2, Hal. 188."
     },
     {
       "id": "k002",
@@ -1012,17 +1012,17 @@
       "teks": "Barangsiapa tidak bersabar atas pedihnya menuntut ilmu, ia akan selamanya tinggal dalam hinanya kebodohan.",
       "ulama": "IbnuTaimiyah",
       "kitab": "Majmu' al-Fatawa",
-      "bab": "Kitab al-'Ilm",
-      "jilid": "Jilid 10",
-      "halaman": "Hal. 45",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ilmu",
       "faedah": [
         "Kesabaran dalam belajar adalah syarat untuk meraih ilmu yang bermanfaat",
         "Kebodohan terhadap agama adalah kehinaan nyata di sisi Allah",
         "Rasa sakit dalam belajar bersifat sementara, namun manfaatnya kekal"
       ],
-      "verifikasi": "salah_nisbat",
-      "catatan_verifikasi": "TIDAK ditemukan di Majmu al-Fatawa. Sumber konsisten menisbatkan ke Al-Asmai, atau anonim \"ba'dus salaf\". Bukan Ibnu Taimiyah."
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Bukan Ibnu Taimiyah — sumber konsisten menisbatkan ke Al-Asma'i atau anonim \"ba'dus salaf\"."
     },
     {
       "id": "k003",
@@ -1030,17 +1030,16 @@
       "teks": "Taubat yang jujur tidak cukup dengan sekadar meninggalkan dosa. Bahkan seorang hamba harus benar-benar membenci dosa itu dan tidak suka mengingatnya.",
       "ulama": "IbnulQoyyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Bab at-Tawbah",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 299",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "taubat",
       "faedah": [
         "Taubat bukan sekadar berhenti dari dosa secara lahir, tapi kondisi batin yang benci kemaksiatan",
         "Kebencian sejati terhadap dosa adalah tanda taubat yang sungguh-sungguh tulus",
         "Masih adanya kerinduan kepada dosa lama adalah tanda taubat yang belum sempurna"
       ],
-      "verifikasi": "belum_diverifikasi",
-      "catatan_verifikasi": "Tidak ditemukan verbatim. Tema konsisten dgn ajaran Ibnul Qoyyim ttg taubat. Perlu cek manual."
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k004",
@@ -1048,17 +1047,16 @@
       "teks": "Tauhid adalah pokok agama Islam dan puncaknya. Seluruh amal shalih ibarat bangunan yang berdiri di atasnya. Barangsiapa tidak mendatangkannya, maka amalnya tidak akan diterima.",
       "ulama": "IbnuTaimiyah",
       "kitab": "Al-Aqidah al-Wasithiyah",
-      "bab": "Muqaddimah",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 3",
+      "halaman": "—",
       "tema": "tauhid",
       "faedah": [
         "Tauhid adalah syarat diterimanya seluruh amal ibadah",
         "Mendahulukan tauhid dalam belajar dan dakwah adalah metode para Nabi dan Rasul",
         "Amal tanpa fondasi tauhid yang benar seperti bangunan tanpa pondasi, pasti roboh"
       ],
-      "verifikasi": "belum_diverifikasi",
-      "catatan_verifikasi": "Tidak ditemukan verbatim di Al-Aqidah al-Wasithiyah. Perlu cek manual."
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k005",
@@ -1066,17 +1064,16 @@
       "teks": "Al-Qur'an ini adalah cahaya yang nyata, dzikir yang penuh hikmah, dan jalan yang lurus. Barangsiapa berpegang teguh dengannya, Allah akan menjaganya.",
       "ulama": "IbnuKatsir",
       "kitab": "Tafsir Al-Qur'an al-'Adzim",
-      "bab": "Muqaddimah fi Fadhl al-Qur'an",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 2",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "quran",
       "faedah": [
         "Al-Qur'an memiliki tiga fungsi utama: cahaya, dzikir, dan jalan yang harus ditempuh",
         "Penjagaan Allah hadir bagi siapa yang sungguh-sungguh berpegang kepada Al-Qur'an",
         "Hidayah adalah buah nyata dari mengikuti Al-Qur'an dalam ilmu dan amal"
       ],
-      "verifikasi": "belum_diverifikasi",
-      "catatan_verifikasi": "Tidak ditemukan verbatim di Tafsir Ibnu Katsir. Perlu cek manual."
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k006",
@@ -1084,17 +1081,17 @@
       "teks": "Manusia yang paling lemah adalah yang lemah dalam berdoa. Manusia yang paling kikir adalah yang kikir dalam mengucapkan salam.",
       "ulama": "AnNawawi",
       "kitab": "Riyadhus Shalihin",
-      "bab": "Bab Fadhl ad-Du'a' wa Ifsya' as-Salam",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 494",
+      "halaman": "—",
       "tema": "doa",
       "faedah": [
         "Doa adalah ibadah paling mudah namun paling sering dilalaikan",
         "Kelemahan sejati bukan pada fisik atau harta, melainkan pada hubungan hamba dengan Allah dalam doa",
         "Menyebarkan salam adalah sedekah yang tidak memerlukan harta apapun"
       ],
-      "verifikasi": "hadits_dinisbatkan_ulama",
-      "catatan_verifikasi": "Ini HADITS SHAHIH riwayat Abu Hurairah (As-Silsilah Ash-Shahihah no.601, Shahih al-Jami no.1044), bukan perkataan asli An-Nawawi."
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Ini adalah HADITS SHAHIH riwayat Abu Hurairah (As-Silsilah Ash-Shahihah no.601), bukan perkataan asli An-Nawawi."
     },
     {
       "id": "k007",
@@ -1102,17 +1099,16 @@
       "teks": "Bersabar dalam menjalankan ketaatan kepada Allah jauh lebih ringan daripada bersabar menanggung azab Allah.",
       "ulama": "IbnulQoyyim",
       "kitab": "Ighaatsatul Lahfan",
-      "bab": "Fashl fi Daraj ash-Shabr",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 37",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "sabar",
       "faedah": [
         "Perbandingan ini memotivasi hamba untuk menanggung beratnya ibadah dengan lapang dada",
         "Azab Allah jauh lebih berat dari segala beban ketaatan yang pernah dirasakan di dunia",
         "Sabar ada tiga: dari kemaksiatan, dalam ketaatan, dan atas ujian takdir"
       ],
-      "verifikasi": "belum_diverifikasi",
-      "catatan_verifikasi": "Konsep \"sabar taat > sabar musibah\" cocok dgn Uddatush Shobirin, tapi redaksi \"adzab Allah\" tidak ditemukan. Perlu cek manual."
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k008",
@@ -1120,9 +1116,9 @@
       "teks": "Barangsiapa menginginkan kebahagiaan yang abadi, hendaklah ia selalu berada di ambang pintu penghambaan (kepada Allah).",
       "ulama": "IbnuTaimiyah",
       "kitab": "Al-'Ubudiyah",
-      "bab": "Fashl fi Haqiqat al-'Ubudiyah",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 12",
+      "halaman": "—",
       "tema": "ibadah",
       "faedah": [
         "Kebahagiaan sejati hanya ditemukan dalam penghambaan total kepada Allah",
@@ -1138,17 +1134,17 @@
       "teks": "Ilmu itu hanya satu titik, hanyalah orang-orang bodoh yang membuatnya seolah banyak dan rumit.",
       "ulama": "IbnuTaimiyah",
       "kitab": "Majmu' al-Fatawa",
-      "bab": "Kitab al-'Ilm wal Ijtihad",
-      "jilid": "Jilid 13",
-      "halaman": "Hal. 136",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ilmu",
       "faedah": [
         "Inti dari seluruh ilmu agama adalah mengenal Allah dan beribadah kepada-Nya",
         "Kerumitan yang dibuat-buat dalam agama sering kali bersumber dari kebodohan, bukan kedalaman ilmu",
         "Kesederhanaan dalam mengajarkan ilmu adalah tanda ulama yang benar-benar faham"
       ],
-      "verifikasi": "salah_nisbat",
-      "catatan_verifikasi": "Bukan Ibnu Taimiyah. Ini perkataan masyhur Ali bin Abi Thalib radhiyallahu anhu."
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Bukan Ibnu Taimiyah — ini perkataan masyhur Ali bin Abi Thalib radhiyallahu 'anhu."
     },
     {
       "id": "k010",
@@ -1156,17 +1152,17 @@
       "teks": "Zuhud bukan berarti mengharamkan yang halal atau menyia-nyiakan harta. Tetapi zuhud adalah engkau lebih percaya kepada apa yang ada di tangan Allah daripada apa yang ada di tanganmu.",
       "ulama": "IbnuRajab",
       "kitab": "Jami'ul Ulum wal Hikam",
-      "bab": "Syarh al-Hadits ath-Thalatsun (Hadits ke-31 tentang Zuhud)",
-      "jilid": "Jilid 2",
-      "halaman": "Hal. 155",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "zuhud",
       "faedah": [
         "Zuhud bukan kemiskinan atau meninggalkan dunia sepenuhnya, melainkan sikap hati terhadap dunia",
         "Kepercayaan penuh kepada Allah dalam rezeki adalah inti dari zuhud yang hakiki",
         "Orang zuhud bisa memiliki harta banyak, selama hatinya tidak bergantung padanya"
       ],
-      "verifikasi": "salah_nisbat",
-      "catatan_verifikasi": "Ibnu Rajab MENGUTIP ini dari Al-Hasan Al-Bashri (atau Yunus ibn Maysarah) di kitabnya, bukan perkataan asli beliau."
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Ibnu Rajab hanya MENGUTIP perkataan ini dari Al-Hasan Al-Bashri (atau Yunus ibn Maysarah) di kitabnya."
     },
     {
       "id": "k011",
@@ -1174,16 +1170,16 @@
       "teks": "Barangsiapa merasa cukup karena Allah, Allah akan mencukupinya. Barangsiapa mengharapkan Allah dalam kefakirannya, Allah akan memberi apa yang ia minta.",
       "ulama": "IbnulQoyyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Manzilah al-Ghina billah",
-      "jilid": "Jilid 2",
-      "halaman": "Hal. 204",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "tawakal",
       "faedah": [
         "Merasa cukup karena Allah bukan berarti tidak berusaha, tapi tidak bergantung pada selain Allah",
         "Doa dan ketergantungan kepada Allah adalah jalan paling pasti menuju pemenuhan kebutuhan",
         "Seseorang yang sungguh-sungguh meminta kepada Allah tidak akan pernah kecewa"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k012",
@@ -1191,16 +1187,17 @@
       "teks": "Semua bid'ah adalah kesesatan, meskipun orang-orang memandangnya sebagai sesuatu yang baik.",
       "ulama": "IbnuRajab",
       "kitab": "Jami'ul Ulum wal Hikam",
-      "bab": "Syarh al-Hadits al-Khamis (Hadits 5 tentang Bid'ah)",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 130",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "sunnah",
       "faedah": [
         "Standar kebenaran ibadah adalah dalil, bukan perasaan atau akal semata",
         "Banyaknya pelaku bid'ah tidak menjadikannya sunnah — kebenaran bukan soal mayoritas",
         "Setiap bid'ah pasti ada sunnah yang ditinggalkan sebagai gantinya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"Kullu bid'atin dholalah, wa in ro-aha an-naasu hasanah\" adalah perkataan Ibnu Umar radhiyallahu 'anhu (Sahabat Nabi ﷺ). Ibnu Rajab hanya mensyarahnya."
     },
     {
       "id": "k013",
@@ -1208,33 +1205,34 @@
       "teks": "Barangsiapa benar-benar mencintai sesuatu, ia pasti mendahulukannya. Jika tidak, maka pengakuan cintanya hanyalah dusta.",
       "ulama": "IbnulQoyyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Manzilah al-Mahabbah",
-      "jilid": "Jilid 3",
-      "halaman": "Hal. 9",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "hati",
       "faedah": [
         "Cinta yang benar kepada Allah terbukti dari prioritas dalam amal, bukan sekadar ucapan",
         "Ukuran cinta seseorang kepada Allah terlihat dari seberapa besar ia mendahulukan perintah-Nya",
         "Pengakuan cinta tanpa amal nyata adalah tipuan diri sendiri"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k014",
       "arab": "كُلُّ عَمَلٍ لَا يُرَادُ بِهِ وَجْهُ اللهِ فَإِنَّهُ يَضُرُّ صَاحِبَهُ وَلَا يَنْفَعُهُ",
       "teks": "Setiap amal yang tidak diniatkan untuk mengharap wajah Allah, maka amal itu akan membahayakan pelakunya dan tidak memberinya manfaat.",
       "ulama": "IbnuTaimiyah",
-      "kitab": "Majmu' al-Fatawa",
-      "bab": "Kitab an-Niyyat wal Ikhlas",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 95",
+      "kitab": "Al-'Ubudiyah",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ikhlas",
       "faedah": [
         "Ikhlas adalah syarat diterimanya amal — tanpanya, amal bisa menjadi bumerang",
         "Amal yang dilakukan karena riya' justru akan menjadi beban bagi pelakunya di akhirat",
         "Niat adalah ruh amal; tanpanya amal hanyalah gerakan atau kata-kata tanpa makna"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Pemilik kutipan benar (Ibnu Taimiyah). Namun redaksi lengkap \"yadhurru shahibahu wa la yanfa'uhu\" belum ditemukan persis — versi yang ditemukan: \"wa kullu 'amalin la yuradu bihi wajhullah fahuwa baathil\" dari Risalah Al-'Ubudiyyah. Kemungkinan kitab rujukan perlu diubah dari \"Majmu' al-Fatawa\" menjadi \"Al-'Ubudiyyah\"."
     },
     {
       "id": "k015",
@@ -1242,16 +1240,17 @@
       "teks": "Orang yang beruntung adalah yang bisa mengambil pelajaran dari orang lain. Orang yang celaka adalah yang hanya menasihati orang lain (tanpa memperbaiki dirinya).",
       "ulama": "IbnulJauzi",
       "kitab": "Shaidul Khathir",
-      "bab": "Fashl fi al-Ittidz bil Ghayr",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 43",
+      "halaman": "—",
       "tema": "nasihat",
       "faedah": [
         "Mengambil pelajaran dari musibah orang lain adalah tanda kecerdasan dan keberuntungan",
         "Penceramah atau penasehat yang tidak mengamalkan nasihatnya sendiri justru dalam kecelakaan",
         "Melihat kesalahan orang lain seharusnya membuat kita lebih waspada terhadap diri sendiri"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"As-sa'iidu man wu'idza bighoirih\" adalah pepatah Arab kuno / atsar dari Ibnu Mas'ud (HR. Muslim 2645, mauquf), bukan perkataan asli Ibnul Jauzi."
     },
     {
       "id": "k016",
@@ -1268,7 +1267,7 @@
         "Semangat belajar para sahabat lahir dari cinta yang mendalam kepada Allah dan Rasul-Nya",
         "Mencontoh semangat sahabat dalam menuntut ilmu adalah bagian dari ittiba'"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k017",
@@ -1276,16 +1275,17 @@
       "teks": "Doa adalah inti ibadah, dan barangsiapa tidak berdoa kepada Allah, maka Allah akan murka kepadanya.",
       "ulama": "AnNawawi",
       "kitab": "Al-Adzkar",
-      "bab": "Bab fi Fadhl ad-Du'a' wa al-Amr bihi",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 342",
+      "halaman": "—",
       "tema": "doa",
       "faedah": [
         "Meninggalkan doa adalah kesombongan terselubung seolah-olah tidak butuh kepada Allah",
         "Doa bukan sekadar meminta, melainkan pengakuan seorang hamba atas kebutuhannya kepada Allah",
         "Allah murka kepada yang tidak berdoa karena doa adalah tanda ketundukan dan kehambaan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Ini adalah HADITS riwayat Ibnu Majah/At-Tirmidzi (dishahihkan), bukan perkataan asli An-Nawawi. Beliau hanya mengumpulkannya di Al-Adzkar."
     },
     {
       "id": "k018",
@@ -1293,16 +1293,17 @@
       "teks": "Ikhlas adalah rahasia antara Allah dan hamba-Nya. Tidak ada malaikat yang mengetahuinya untuk mencatatnya, dan tidak ada setan yang mengetahuinya untuk merusaknya.",
       "ulama": "IbnulQoyyim",
       "kitab": "Madarijus Salikin",
-      "bab": "Manzilah al-Ikhlas",
-      "jilid": "Jilid 2",
-      "halaman": "Hal. 91",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ikhlas",
       "faedah": [
         "Ikhlas adalah benteng terkuat dari riya' dan godaan setan karena tersembunyi dalam hati",
         "Rahasia ikhlas adalah ia tidak bisa ditiru atau dipalsukan oleh siapapun selain hati yang benar-benar tulus",
         "Setan tidak bisa merusak ikhlas yang sejati karena ia tidak tahu tempatnya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"Al-Ikhlasu sirrun bainallahi wa abdih...\" adalah perkataan Al-Junaid (imam sufi awal, w. 298H), bukan perkataan asli Ibnul Qoyyim. Kemungkinan beliau hanya mengutipnya saat membahas ikhlas."
     },
     {
       "id": "k019",
@@ -1310,16 +1311,17 @@
       "teks": "Dunia adalah penjara bagi orang beriman dan surga bagi orang kafir. Bagaimana mungkin surga itu adalah sesuatu yang (segera) akan kamu tinggalkan.",
       "ulama": "IbnulQoyyim",
       "kitab": "Ad-Da' wad Dawa'",
-      "bab": "Fashl fi Haqiqat ad-Dunya",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 197",
+      "halaman": "—",
       "tema": "zuhud",
       "faedah": [
         "Dunia terasa sempit bagi mukmin karena ia tahu keindahan yang menunggunya di akhirat",
         "Keterikatan pada dunia menandakan lemahnya iman dan sedikitnya ilmu tentang akhirat",
         "Orang kafir merasa dunia adalah segalanya karena ia tidak punya harapan setelah mati"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"Ad-dunya sijnul mu'min wa jannatul kafir\" adalah HADITS NABI ﷺ (HR. Muslim 2956, shahih), bukan perkataan asli Ibnul Qoyyim."
     },
     {
       "id": "k020",
@@ -1336,7 +1338,7 @@
         "Syukur bukan hanya ucapan, melainkan pengakuan hati, lisan, dan amal yang membuktikannya",
         "Kufur nikmat adalah pintu masuk hilangnya nikmat dan datangnya bencana"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k021",
@@ -1353,7 +1355,7 @@
         "Menjauhi teman yang buruk adalah bentuk menjaga agama, bukan kesombongan",
         "Seorang mukmin harus selektif dalam bergaul demi keselamatan iman dan akhlaknya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k022",
@@ -1370,7 +1372,7 @@
         "Kedekatan kepada Allah bukan diukur dari banyaknya amal, tetapi dari kelembutan dan ketundukan hati",
         "Kesombongan hati adalah penghalang terbesar antara seorang hamba dengan Rabb-nya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k023",
@@ -1387,7 +1389,7 @@
         "Aqidah tanpa akhlak mulia adalah klaim tanpa bukti; akhlak tanpa aqidah benar tidak akan diterima",
         "Seorang salafi sejati adalah yang paling baik akhlaknya di antara manusia"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k024",
@@ -1395,16 +1397,17 @@
       "teks": "Ikutilah (sunnah) dan janganlah membuat bid'ah, karena sesungguhnya kalian telah dicukupkan.",
       "ulama": "IbnuKatsir",
       "kitab": "Tafsir Al-Qur'an al-'Adzim",
-      "bab": "Tafsir Surah Al-An'am: 153",
-      "jilid": "Jilid 3",
-      "halaman": "Hal. 369",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "sunnah",
       "faedah": [
         "Agama Islam telah sempurna — tidak ada kekurangan yang perlu ditambal dengan bid'ah",
         "Ittiba' (mengikuti sunnah) adalah jalan keselamatan yang telah cukup tanpa tambahan apapun",
         "Mengada-adakan perkara baru dalam agama seolah-olah agama ini belum sempurna dan perlu dilengkapi"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"Ittabi'u wa laa tabtadi'u faqad kufiitum\" adalah perkataan Ibnu Mas'ud radhiyallahu 'anhu (Sahabat Nabi ﷺ), bukan perkataan asli Ibnu Katsir — beliau hanya mengutipnya."
     },
     {
       "id": "k025",
@@ -1412,16 +1415,17 @@
       "teks": "Ilmu mewajibkan rasa takut kepada Allah. Barangsiapa tidak takut kepada Allah, maka ia bukanlah orang yang berilmu (yang sebenarnya).",
       "ulama": "IbnuRajab",
       "kitab": "Jami'ul Ulum wal Hikam",
-      "bab": "Syarh al-Hadits ar-Rabi' (Hadits 4)",
-      "jilid": "Jilid 1",
-      "halaman": "Hal. 91",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ilmu",
       "faedah": [
         "Tanda ilmu yang bermanfaat adalah bertambahnya rasa takut, tawadhu', dan khusyu' kepada Allah",
         "Ilmu yang tidak menghasilkan khasyah kepada Allah adalah ilmu yang tidak bermanfaat",
         "Firman Allah: 'Sesungguhnya yang takut kepada Allah di antara hamba-Nya hanyalah para ulama'"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"Man lam yakhsyallaha falaisa bi'alim\" adalah perkataan Anas bin Malik (Sahabat) atau Ar-Rabi' bin Anas (Tabi'in) menurut tafsir-tafsir klasik, bukan perkataan asli Ibnu Rajab — meski beliau membahas tema ini secara luas di kitabnya."
     },
     {
       "id": "k026",
@@ -1438,7 +1442,7 @@
         "Kesombongan ilmuwan atau penuntut ilmu adalah tanda bahwa ilmunya belum benar-benar masuk ke dalam hati",
         "Tawadhu' bukan kelemahan, melainkan kekuatan yang terlahir dari kekokohan iman"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k027",
@@ -1446,16 +1450,17 @@
       "teks": "Sesungguhnya Allah itu Maha Indah dan mencintai keindahan. Keindahan agama terletak pada kesempurnaan ibadah.",
       "ulama": "IbnuBaz",
       "kitab": "Majmu' Fatawa wa Maqalat",
-      "bab": "Fashl fi Itqan al-'Ibadah",
-      "jilid": "Jilid 5",
-      "halaman": "Hal. 218",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "ibadah",
       "faedah": [
         "Ibadah yang benar dan sempurna adalah wujud keindahan yang dicintai Allah",
         "Itqan (menyempurnakan) ibadah mencakup aspek lahir (cara) dan batin (ikhlas dan khusyu')",
         "Meremehkan tata cara ibadah yang diajarkan Rasul ﷺ bertentangan dengan cinta kepada Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. Kalimat pembuka \"Innallaha jamiilun yuhibbul jamal\" adalah HADITS SHAHIH (HR. Muslim), bukan perkataan asli Ibnu Baz."
     },
     {
       "id": "k028",
@@ -1463,16 +1468,17 @@
       "teks": "Barangsiapa yang mengenal dirinya sendiri, ia akan sibuk memperbaiki kekurangannya sendiri sehingga tidak sempat mencari-cari aib orang lain.",
       "ulama": "IbnulQoyyim",
       "kitab": "Ighaatsatul Lahfan",
-      "bab": "Fashl fi Ma'rifat an-Nafs",
-      "jilid": "Jilid 2",
-      "halaman": "Hal. 162",
+      "bab": "—",
+      "jilid": "—",
+      "halaman": "—",
       "tema": "nasihat",
       "faedah": [
         "Muhasabah diri sendiri adalah obat paling efektif dari penyakit mencari-cari kesalahan orang lain",
         "Orang yang suka mengkritik orang lain biasanya belum benar-benar mengenali dirinya sendiri",
         "Kesibukan memperbaiki diri adalah tanda kematangan akal dan ketulusan iman"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Pemilik kutipan benar (Ibnul Qoyyim) — ditemukan konsisten di banyak sumber. Namun redaksi sedikit berbeda: versi yang ditemukan adalah \"...اشتغل بإصلاحها عن عيوب الناس\" bukan \"...اشتغل بعيوبها عن عيوب غيره\"."
     },
     {
       "id": "k029",
@@ -1489,7 +1495,7 @@
         "Keberanian Ibnu Taimiyah dalam mempertahankan kebenaran meskipun sendirian adalah teladan bagi setiap penuntut ilmu",
         "Kebenaran tidak diukur dari jumlah pendukung, melainkan dari kesesuaiannya dengan wahyu"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan"
     },
     {
       "id": "k030",
@@ -1497,16 +1503,17 @@
       "teks": "Manusia di dunia ini adalah tamu, dan segala yang mereka miliki hanyalah pinjaman. Tamu pasti akan pergi, dan pinjaman pasti akan dikembalikan.",
       "ulama": "IbnuQudamah",
       "kitab": "Mukhtashar Minhaj al-Qashidin",
-      "bab": "Fashl fi Haqiqat ad-Dunya",
+      "bab": "—",
       "jilid": "—",
-      "halaman": "Hal. 211",
+      "halaman": "—",
       "tema": "zuhud",
       "faedah": [
         "Menyadari bahwa kita adalah tamu di dunia akan meringankan beban saat kehilangan sesuatu",
         "Semua yang kita miliki — harta, kesehatan, anak — adalah amanah yang suatu hari akan diambil kembali",
         "Mempersiapkan bekal untuk perjalanan pulang lebih penting dari menghias rumah singgah sementara"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Pemilik kutipan TIDAK BENAR. \"An-naasu fid dunya dhoif...\" adalah perkataan Ibnu Mas'ud radhiyallahu 'anhu (Sahabat Nabi ﷺ), bukan perkataan asli Ibnu Qudamah."
     },
     {
       "id": "k031",

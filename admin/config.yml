@@ -294,6 +294,100 @@ collections:
             widget: "string"
             hint: "Pisahkan dengan koma. Contoh: ilmu agama islam, manhaj salaf, tauhid"
 
+  # ── KUTIPAN ─────────────────────────────────────────────────
+  - name: "kutipan-mgr"
+    label: "💬 Kutipan"
+    files:
+      - name: "kutipan"
+        label: "Kutipan & Ulama"
+        file: "konten/kutipan.json"
+        fields:
+
+          - name: "ulama"
+            label: "👤 Daftar Ulama"
+            widget: "list"
+            summary: "{{fields.nama}}"
+            fields:
+              - {name: "id", label: "ID (PascalCase, tanpa spasi)", widget: "string", hint: "Contoh: IbnulQoyyim. Dipakai untuk menghubungkan ke kutipan."}
+              - {name: "nama", label: "Nama Tampil", widget: "string", hint: "Contoh: Ibnul Qoyyim Al-Jauziyah"}
+              - {name: "nama_lengkap", label: "Nama Lengkap", widget: "string"}
+              - {name: "kuniyah", label: "Kuniyah", widget: "string", required: false}
+              - {name: "lahir", label: "Lahir (tempat, tahun H/M)", widget: "string"}
+              - {name: "wafat", label: "Wafat (tahun H/M, tempat)", widget: "string"}
+              - {name: "bio", label: "Biografi Singkat", widget: "text"}
+              - name: "guru"
+                label: "Guru-guru"
+                widget: "list"
+                required: false
+              - name: "murid"
+                label: "Murid-murid"
+                widget: "list"
+                required: false
+              - name: "kitab_karangan"
+                label: "Kitab Karangan"
+                widget: "list"
+                required: false
+                summary: "{{fields.judul}}"
+                fields:
+                  - {name: "judul", label: "Judul Kitab", widget: "string"}
+                  - {name: "topik", label: "Topik/Bahasan", widget: "string"}
+
+          - name: "kutipan"
+            label: "📜 Daftar Kutipan"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.teks}}"
+            fields:
+              - {name: "id", label: "ID (contoh: k201)", widget: "string", hint: "Harus unik, format: k diikuti angka 3 digit"}
+              - {name: "ulama", label: "ID Ulama Pemilik Kutipan", widget: "string", hint: "Harus sama persis dengan salah satu ID di Daftar Ulama di atas"}
+              - name: "tema"
+                label: "Tema"
+                widget: "select"
+                options:
+                  - {label: "Tauhid & Aqidah", value: "tauhid"}
+                  - {label: "Hati & Jiwa", value: "hati"}
+                  - {label: "Ilmu & Belajar", value: "ilmu"}
+                  - {label: "Sunnah & Bid'ah", value: "sunnah"}
+                  - {label: "Ibadah", value: "ibadah"}
+                  - {label: "Akhlak & Adab", value: "akhlak"}
+                  - {label: "Ikhlas & Niat", value: "ikhlas"}
+                  - {label: "Taubat", value: "taubat"}
+                  - {label: "Sabar", value: "sabar"}
+                  - {label: "Zuhud & Dunia", value: "zuhud"}
+                  - {label: "Nasihat", value: "nasihat"}
+                  - {label: "Al-Qur'an", value: "quran"}
+                  - {label: "Akhirat & Maut", value: "akhirat"}
+                  - {label: "Doa & Dzikir", value: "doa"}
+                  - {label: "Syukur", value: "syukur"}
+                  - {label: "Tawakkal", value: "tawakal"}
+                  - {label: "Tawadhu'", value: "tawadhu"}
+                  - {label: "Ukhuwah", value: "ukhuwah"}
+                  - {label: "Birrul Walidain", value: "birulwalidain"}
+                  - {label: "Wara'", value: "wara"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "teks", label: "Terjemah Indonesia", widget: "text"}
+              - {name: "kitab", label: "Nama Kitab", widget: "string"}
+              - {name: "bab", label: "Bab/Pembahasan", widget: "string", required: false, hint: "Kosongkan ( — ) jika tidak yakin"}
+              - {name: "jilid", label: "Jilid", widget: "string", required: false, hint: "Kosongkan ( — ) jika tidak yakin"}
+              - {name: "halaman", label: "Halaman", widget: "string", required: false, hint: "Kosongkan ( — ) jika tidak yakin"}
+              - name: "faedah"
+                label: "Faedah (poin-poin pelajaran)"
+                widget: "list"
+              - name: "verifikasi"
+                label: "Status Verifikasi"
+                widget: "select"
+                default: "belum_diverifikasi"
+                options:
+                  - {label: "✓ Terverifikasi", value: "terverifikasi"}
+                  - {label: "⚠ Perlu Ditinjau", value: "perlu_ditinjau"}
+                  - {label: "✗ Tidak Benar", value: "tidak_benar"}
+                  - {label: "∅ Tidak Ditemukan (sudah dicari)", value: "tidak_ditemukan"}
+                  - {label: "? Belum Diverifikasi", value: "belum_diverifikasi"}
+              - name: "catatan_verifikasi"
+                label: "Catatan Verifikasi"
+                widget: "text"
+                required: false
+                hint: "Wajib diisi jika status bukan 'Terverifikasi' atau 'Belum Diverifikasi'. Jelaskan temuan/masalahnya."
+
   # ── CERAMAH ─────────────────────────────────────────────────
   - name: "ceramah-index-mgr"
     label: "🗂️ Ceramah — Daftar ID"

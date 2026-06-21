@@ -313,7 +313,30 @@
   color: #00ff88;
 }
 
-/* ── BADGE STATUS VERIFIKASI ─────────────────────── */
+/* ── BADGE NOMOR URUT ─────────────────────────────── */
+.kutipan-num-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  background: rgba(212, 168, 73, 0.12);
+  color: var(--gold);
+  border: 1px solid rgba(212, 168, 73, 0.28);
+  font-variant-numeric: tabular-nums;
+}
+
+.kutipan-num-badge.mini {
+  margin-bottom: 0;
+  padding: 1px 6px;
+  font-size: 0.58rem;
+}
+
+/* ── BADGE STATUS VERIFIKASI (4 status) ──────────── */
 .kutipan-verif-badge {
   display: inline-flex;
   align-items: center;
@@ -327,22 +350,39 @@
   white-space: nowrap;
 }
 
+/* 1. Terverifikasi — hijau */
 .kutipan-verif-badge.verified {
   background: rgba(58, 191, 128, 0.14);
   color: #3abf80;
   border: 1px solid rgba(58, 191, 128, 0.3);
 }
 
+/* 2. Perlu Ditinjau — kuning-oranye */
+.kutipan-verif-badge.review {
+  background: rgba(235, 165, 35, 0.14);
+  color: #eba523;
+  border: 1px solid rgba(235, 165, 35, 0.35);
+}
+
+/* 3. Tidak Benar — merah */
+.kutipan-verif-badge.invalid {
+  background: rgba(225, 70, 70, 0.14);
+  color: #e84646;
+  border: 1px solid rgba(225, 70, 70, 0.35);
+}
+
+/* 4. Tidak Ditemukan — ungu (sudah dicari tapi tidak ketemu) */
+.kutipan-verif-badge.notfound {
+  background: rgba(155, 110, 215, 0.14);
+  color: #b48ee8;
+  border: 1px solid rgba(155, 110, 215, 0.35);
+}
+
+/* 5. Belum Diverifikasi — abu-abu */
 .kutipan-verif-badge.unverified {
   background: rgba(150, 160, 180, 0.12);
   color: #9ba3b8;
   border: 1px solid rgba(150, 160, 180, 0.25);
-}
-
-.kutipan-verif-badge.flagged {
-  background: rgba(230, 120, 60, 0.14);
-  color: #e6783c;
-  border: 1px solid rgba(230, 120, 60, 0.35);
 }
 
 /* Catatan verifikasi (kotak penjelasan di bawah header) */
@@ -363,16 +403,28 @@
   color: #b8e8cc;
 }
 
+.kutipan-verif-note.review {
+  background: rgba(235, 165, 35, 0.08);
+  border: 1px solid rgba(235, 165, 35, 0.3);
+  color: #f5dba0;
+}
+
+.kutipan-verif-note.invalid {
+  background: rgba(225, 70, 70, 0.08);
+  border: 1px solid rgba(225, 70, 70, 0.3);
+  color: #f8b8b8;
+}
+
+.kutipan-verif-note.notfound {
+  background: rgba(155, 110, 215, 0.08);
+  border: 1px solid rgba(155, 110, 215, 0.3);
+  color: #ddc8f5;
+}
+
 .kutipan-verif-note.pending {
   background: rgba(150, 160, 180, 0.06);
   border: 1px solid rgba(150, 160, 180, 0.18);
   color: #c4cad8;
-}
-
-.kutipan-verif-note.warning {
-  background: rgba(230, 120, 60, 0.08);
-  border: 1px solid rgba(230, 120, 60, 0.3);
-  color: #f8d4bc;
 }
 
 .kutipan-verif-note-icon {
@@ -394,24 +446,16 @@
   height: 16px;
   border-radius: 50%;
   font-size: 0.6rem;
+  font-weight: 700;
   margin-left: 5px;
   vertical-align: middle;
 }
 
-.kutipan-verif-mini.verified {
-  background: rgba(58, 191, 128, 0.18);
-  color: #3abf80;
-}
-
-.kutipan-verif-mini.unverified {
-  background: rgba(150, 160, 180, 0.18);
-  color: #9ba3b8;
-}
-
-.kutipan-verif-mini.flagged {
-  background: rgba(230, 120, 60, 0.2);
-  color: #e6783c;
-}
+.kutipan-verif-mini.verified   { background: rgba(58, 191, 128, 0.18); color: #3abf80; }
+.kutipan-verif-mini.review     { background: rgba(235, 165, 35, 0.2);  color: #eba523; }
+.kutipan-verif-mini.invalid    { background: rgba(225, 70, 70, 0.2);   color: #e84646; }
+.kutipan-verif-mini.notfound   { background: rgba(155, 110, 215, 0.2);  color: #b48ee8; }
+.kutipan-verif-mini.unverified { background: rgba(150, 160, 180, 0.18);color: #9ba3b8; }
 
 /* Tauhid & Aqidah — biru langit */
 .kutipan-tema-badge[data-tema="tauhid"] {
