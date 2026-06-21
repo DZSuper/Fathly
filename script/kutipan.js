@@ -356,14 +356,35 @@
       if (k.jilid && k.jilid !== '—') keterangan.push(k.jilid);
       if (k.halaman && k.halaman !== '—') keterangan.push(k.halaman);
 
+      // Badge status verifikasi
+      var verif = k.verifikasi || 'belum_diverifikasi';
+      var verifBadgeHtml = '';
+      var verifNoteHtml  = '';
+      if (verif === 'terverifikasi') {
+        verifBadgeHtml = '<span class="kutipan-verif-badge verified" title="Sumber sudah diverifikasi">✓ Terverifikasi</span>';
+      } else if (verif === 'salah_nisbat' || verif === 'hadits_dinisbatkan_ulama') {
+        verifBadgeHtml = '<span class="kutipan-verif-badge flagged" title="Ada masalah pada sumber kutipan ini">⚠ Perlu Ditinjau</span>';
+      } else {
+        verifBadgeHtml = '<span class="kutipan-verif-badge unverified" title="Sumber belum diverifikasi">⏳ Belum Diverifikasi</span>';
+      }
+      if (k.catatan_verifikasi) {
+        verifNoteHtml =
+          '<div class="kutipan-verif-note ' + (verif === 'terverifikasi' ? 'ok' : (verif === 'belum_diverifikasi' ? 'pending' : 'warning')) + '">' +
+            '<span class="kutipan-verif-note-icon">' + (verif === 'terverifikasi' ? '✓' : (verif === 'belum_diverifikasi' ? 'ℹ' : '⚠')) + '</span>' +
+            '<span class="kutipan-verif-note-text">' + esc(k.catatan_verifikasi) + '</span>' +
+          '</div>';
+      }
+
       html +=
         '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
           '<div class="kutipan-entry-header">' +
             '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
+            verifBadgeHtml +
             '<button class="kutipan-bookmark-star' + (isBookmarked(k.id) ? ' saved' : '') + '" data-id="' + esc(k.id) + '" title="' + (isBookmarked(k.id) ? 'Hapus dari favorit' : 'Simpan ke favorit') + '">' +
               (isBookmarked(k.id) ? '★' : '☆') +
             '</button>' +
           '</div>' +
+          verifNoteHtml +
 
           // Teks Arab (langsung tampil)
           '<div class="kutipan-arab-box open" id="karab-' + esc(k.id) + '">' +
@@ -542,8 +563,15 @@
       ? '<div class="kutipan-empty"><div class="kutipan-empty-icon">📭</div><div class="kutipan-empty-title">Belum ada kutipan</div></div>'
       : milik.map(function (k) {
           var tl = TEMA_LABEL_MAP[k.tema] || k.tema;
+          var kVerif = k.verifikasi || 'belum_diverifikasi';
+          var kVerifMini = kVerif === 'terverifikasi'
+            ? '<span class="kutipan-verif-mini verified" title="Terverifikasi">✓</span>'
+            : (kVerif === 'salah_nisbat' || kVerif === 'hadits_dinisbatkan_ulama')
+              ? '<span class="kutipan-verif-mini flagged" title="Perlu ditinjau">⚠</span>'
+              : '<span class="kutipan-verif-mini unverified" title="Belum diverifikasi">⏳</span>';
           return '<button class="kup-quote-card" data-kutipan-id="' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
             '<span class="kutipan-tema-badge">' + esc(tl) + '</span>' +
+            kVerifMini +
             '<div class="kup-quote-preview">"' + esc(k.teks.substring(0, 100)) + (k.teks.length > 100 ? '…' : '') + '"</div>' +
             '<div class="kup-quote-meta">' + esc(k.kitab) + ' · ' + esc(k.halaman) + '</div>' +
           '</button>';

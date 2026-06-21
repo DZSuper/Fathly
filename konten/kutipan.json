@@ -1002,7 +1002,9 @@
         "Cinta kepada Allah adalah inti — tanpanya burung tidak bisa terbang meski bersayap",
         "Rasa takut tanpa harap menjadikan seseorang putus asa; harap tanpa takut menjadikannya lalai",
         "Ketiganya harus hadir bersama agar hati tetap dalam keseimbangan menuju Allah"
-      ]
+      ],
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Cocok persis dgn Madarijus Salikin. Rujukan spesifik ditemukan: Jilid 2, Hal. 188. Bab lebih tepat: \"Fashl Manzilah al-Isyfaq\""
     },
     {
       "id": "k002",
@@ -1018,7 +1020,9 @@
         "Kesabaran dalam belajar adalah syarat untuk meraih ilmu yang bermanfaat",
         "Kebodohan terhadap agama adalah kehinaan nyata di sisi Allah",
         "Rasa sakit dalam belajar bersifat sementara, namun manfaatnya kekal"
-      ]
+      ],
+      "verifikasi": "salah_nisbat",
+      "catatan_verifikasi": "TIDAK ditemukan di Majmu al-Fatawa. Sumber konsisten menisbatkan ke Al-Asmai, atau anonim \"ba'dus salaf\". Bukan Ibnu Taimiyah."
     },
     {
       "id": "k003",
@@ -1034,7 +1038,9 @@
         "Taubat bukan sekadar berhenti dari dosa secara lahir, tapi kondisi batin yang benci kemaksiatan",
         "Kebencian sejati terhadap dosa adalah tanda taubat yang sungguh-sungguh tulus",
         "Masih adanya kerinduan kepada dosa lama adalah tanda taubat yang belum sempurna"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi",
+      "catatan_verifikasi": "Tidak ditemukan verbatim. Tema konsisten dgn ajaran Ibnul Qoyyim ttg taubat. Perlu cek manual."
     },
     {
       "id": "k004",
@@ -1050,7 +1056,9 @@
         "Tauhid adalah syarat diterimanya seluruh amal ibadah",
         "Mendahulukan tauhid dalam belajar dan dakwah adalah metode para Nabi dan Rasul",
         "Amal tanpa fondasi tauhid yang benar seperti bangunan tanpa pondasi, pasti roboh"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi",
+      "catatan_verifikasi": "Tidak ditemukan verbatim di Al-Aqidah al-Wasithiyah. Perlu cek manual."
     },
     {
       "id": "k005",
@@ -1066,7 +1074,9 @@
         "Al-Qur'an memiliki tiga fungsi utama: cahaya, dzikir, dan jalan yang harus ditempuh",
         "Penjagaan Allah hadir bagi siapa yang sungguh-sungguh berpegang kepada Al-Qur'an",
         "Hidayah adalah buah nyata dari mengikuti Al-Qur'an dalam ilmu dan amal"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi",
+      "catatan_verifikasi": "Tidak ditemukan verbatim di Tafsir Ibnu Katsir. Perlu cek manual."
     },
     {
       "id": "k006",
@@ -1082,7 +1092,9 @@
         "Doa adalah ibadah paling mudah namun paling sering dilalaikan",
         "Kelemahan sejati bukan pada fisik atau harta, melainkan pada hubungan hamba dengan Allah dalam doa",
         "Menyebarkan salam adalah sedekah yang tidak memerlukan harta apapun"
-      ]
+      ],
+      "verifikasi": "hadits_dinisbatkan_ulama",
+      "catatan_verifikasi": "Ini HADITS SHAHIH riwayat Abu Hurairah (As-Silsilah Ash-Shahihah no.601, Shahih al-Jami no.1044), bukan perkataan asli An-Nawawi."
     },
     {
       "id": "k007",
@@ -1098,7 +1110,9 @@
         "Perbandingan ini memotivasi hamba untuk menanggung beratnya ibadah dengan lapang dada",
         "Azab Allah jauh lebih berat dari segala beban ketaatan yang pernah dirasakan di dunia",
         "Sabar ada tiga: dari kemaksiatan, dalam ketaatan, dan atas ujian takdir"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi",
+      "catatan_verifikasi": "Konsep \"sabar taat > sabar musibah\" cocok dgn Uddatush Shobirin, tapi redaksi \"adzab Allah\" tidak ditemukan. Perlu cek manual."
     },
     {
       "id": "k008",
@@ -1114,7 +1128,9 @@
         "Kebahagiaan sejati hanya ditemukan dalam penghambaan total kepada Allah",
         "Ubudiyah adalah kedudukan tertinggi seorang hamba sekaligus sebab kemuliaannya",
         "Siapapun yang mencari bahagia di luar penghambaan kepada Allah pasti akan kecewa"
-      ]
+      ],
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Konsisten dinisbatkan ke Ibnu Taimiyah di banyak sumber."
     },
     {
       "id": "k009",
@@ -1130,7 +1146,9 @@
         "Inti dari seluruh ilmu agama adalah mengenal Allah dan beribadah kepada-Nya",
         "Kerumitan yang dibuat-buat dalam agama sering kali bersumber dari kebodohan, bukan kedalaman ilmu",
         "Kesederhanaan dalam mengajarkan ilmu adalah tanda ulama yang benar-benar faham"
-      ]
+      ],
+      "verifikasi": "salah_nisbat",
+      "catatan_verifikasi": "Bukan Ibnu Taimiyah. Ini perkataan masyhur Ali bin Abi Thalib radhiyallahu anhu."
     },
     {
       "id": "k010",
@@ -1146,7 +1164,9 @@
         "Zuhud bukan kemiskinan atau meninggalkan dunia sepenuhnya, melainkan sikap hati terhadap dunia",
         "Kepercayaan penuh kepada Allah dalam rezeki adalah inti dari zuhud yang hakiki",
         "Orang zuhud bisa memiliki harta banyak, selama hatinya tidak bergantung padanya"
-      ]
+      ],
+      "verifikasi": "salah_nisbat",
+      "catatan_verifikasi": "Ibnu Rajab MENGUTIP ini dari Al-Hasan Al-Bashri (atau Yunus ibn Maysarah) di kitabnya, bukan perkataan asli beliau."
     },
     {
       "id": "k011",
@@ -1162,7 +1182,8 @@
         "Merasa cukup karena Allah bukan berarti tidak berusaha, tapi tidak bergantung pada selain Allah",
         "Doa dan ketergantungan kepada Allah adalah jalan paling pasti menuju pemenuhan kebutuhan",
         "Seseorang yang sungguh-sungguh meminta kepada Allah tidak akan pernah kecewa"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k012",
@@ -1178,7 +1199,8 @@
         "Standar kebenaran ibadah adalah dalil, bukan perasaan atau akal semata",
         "Banyaknya pelaku bid'ah tidak menjadikannya sunnah — kebenaran bukan soal mayoritas",
         "Setiap bid'ah pasti ada sunnah yang ditinggalkan sebagai gantinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k013",
@@ -1194,7 +1216,8 @@
         "Cinta yang benar kepada Allah terbukti dari prioritas dalam amal, bukan sekadar ucapan",
         "Ukuran cinta seseorang kepada Allah terlihat dari seberapa besar ia mendahulukan perintah-Nya",
         "Pengakuan cinta tanpa amal nyata adalah tipuan diri sendiri"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k014",
@@ -1210,7 +1233,8 @@
         "Ikhlas adalah syarat diterimanya amal — tanpanya, amal bisa menjadi bumerang",
         "Amal yang dilakukan karena riya' justru akan menjadi beban bagi pelakunya di akhirat",
         "Niat adalah ruh amal; tanpanya amal hanyalah gerakan atau kata-kata tanpa makna"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k015",
@@ -1226,7 +1250,8 @@
         "Mengambil pelajaran dari musibah orang lain adalah tanda kecerdasan dan keberuntungan",
         "Penceramah atau penasehat yang tidak mengamalkan nasihatnya sendiri justru dalam kecelakaan",
         "Melihat kesalahan orang lain seharusnya membuat kita lebih waspada terhadap diri sendiri"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k016",
@@ -1242,23 +1267,25 @@
         "Para sahabat menjadikan menuntut ilmu sebagai prioritas karena mereka paham besarnya nilainya",
         "Semangat belajar para sahabat lahir dari cinta yang mendalam kepada Allah dan Rasul-Nya",
         "Mencontoh semangat sahabat dalam menuntut ilmu adalah bagian dari ittiba'"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k017",
-      "arab": "الذِّكْرُ مَطْلُوبٌ فِي جَمِيعِ الأَحْوَالِ، وَلَا يَنْبَغِي أَنْ يُهْجَرَ إِلَّا بِعُذْرٍ شَرْعِيٍّ",
-      "teks": "Dzikir dianjurkan dalam segala keadaan, dan tidak sepantasnya ditinggalkan kecuali dengan alasan yang dibenarkan syariat.",
+      "arab": "الدُّعَاءُ هُوَ الْعِبَادَةُ، وَمَنْ لَمْ يَدْعُ اللهَ غَضِبَ اللهُ عَلَيْهِ",
+      "teks": "Doa adalah inti ibadah, dan barangsiapa tidak berdoa kepada Allah, maka Allah akan murka kepadanya.",
       "ulama": "AnNawawi",
       "kitab": "Al-Adzkar",
-      "bab": "Muqaddimah",
+      "bab": "Bab fi Fadhl ad-Du'a' wa al-Amr bihi",
       "jilid": "—",
-      "halaman": "—",
+      "halaman": "Hal. 342",
       "tema": "doa",
       "faedah": [
-        "Dzikir bukan ibadah musiman, tetapi anjuran yang berlaku di seluruh kondisi seorang Muslim",
-        "Meninggalkan dzikir tanpa alasan syar'i adalah kerugian yang seharusnya dihindari",
-        "Imam Nawawi menulis kitab Al-Adzkar khusus untuk mendorong umat agar konsisten berdzikir"
-      ]
+        "Meninggalkan doa adalah kesombongan terselubung seolah-olah tidak butuh kepada Allah",
+        "Doa bukan sekadar meminta, melainkan pengakuan seorang hamba atas kebutuhannya kepada Allah",
+        "Allah murka kepada yang tidak berdoa karena doa adalah tanda ketundukan dan kehambaan"
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k018",
@@ -1274,7 +1301,8 @@
         "Ikhlas adalah benteng terkuat dari riya' dan godaan setan karena tersembunyi dalam hati",
         "Rahasia ikhlas adalah ia tidak bisa ditiru atau dipalsukan oleh siapapun selain hati yang benar-benar tulus",
         "Setan tidak bisa merusak ikhlas yang sejati karena ia tidak tahu tempatnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k019",
@@ -1290,7 +1318,8 @@
         "Dunia terasa sempit bagi mukmin karena ia tahu keindahan yang menunggunya di akhirat",
         "Keterikatan pada dunia menandakan lemahnya iman dan sedikitnya ilmu tentang akhirat",
         "Orang kafir merasa dunia adalah segalanya karena ia tidak punya harapan setelah mati"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k020",
@@ -1306,7 +1335,8 @@
         "Allah sendiri yang menjanjikan tambahan nikmat bagi orang-orang yang bersyukur",
         "Syukur bukan hanya ucapan, melainkan pengakuan hati, lisan, dan amal yang membuktikannya",
         "Kufur nikmat adalah pintu masuk hilangnya nikmat dan datangnya bencana"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k021",
@@ -1322,7 +1352,8 @@
         "Pergaulan buruk adalah salah satu pintu terbesar kerusakan agama seseorang",
         "Menjauhi teman yang buruk adalah bentuk menjaga agama, bukan kesombongan",
         "Seorang mukmin harus selektif dalam bergaul demi keselamatan iman dan akhlaknya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k022",
@@ -1338,7 +1369,8 @@
         "Hati yang hancur (inkisar) di hadapan Allah adalah tanda ketulusan dan kerendahan hati yang dicintai Allah",
         "Kedekatan kepada Allah bukan diukur dari banyaknya amal, tetapi dari kelembutan dan ketundukan hati",
         "Kesombongan hati adalah penghalang terbesar antara seorang hamba dengan Rabb-nya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k023",
@@ -1354,7 +1386,8 @@
         "Dua pilar agama yang sempurna adalah aqidah yang benar dan akhlak yang mulia",
         "Aqidah tanpa akhlak mulia adalah klaim tanpa bukti; akhlak tanpa aqidah benar tidak akan diterima",
         "Seorang salafi sejati adalah yang paling baik akhlaknya di antara manusia"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k024",
@@ -1370,7 +1403,8 @@
         "Agama Islam telah sempurna — tidak ada kekurangan yang perlu ditambal dengan bid'ah",
         "Ittiba' (mengikuti sunnah) adalah jalan keselamatan yang telah cukup tanpa tambahan apapun",
         "Mengada-adakan perkara baru dalam agama seolah-olah agama ini belum sempurna dan perlu dilengkapi"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k025",
@@ -1386,7 +1420,8 @@
         "Tanda ilmu yang bermanfaat adalah bertambahnya rasa takut, tawadhu', dan khusyu' kepada Allah",
         "Ilmu yang tidak menghasilkan khasyah kepada Allah adalah ilmu yang tidak bermanfaat",
         "Firman Allah: 'Sesungguhnya yang takut kepada Allah di antara hamba-Nya hanyalah para ulama'"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k026",
@@ -1402,7 +1437,8 @@
         "Semakin seseorang mengenal Allah dan dirinya sendiri, semakin ia tawadhu'",
         "Kesombongan ilmuwan atau penuntut ilmu adalah tanda bahwa ilmunya belum benar-benar masuk ke dalam hati",
         "Tawadhu' bukan kelemahan, melainkan kekuatan yang terlahir dari kekokohan iman"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k027",
@@ -1418,7 +1454,8 @@
         "Ibadah yang benar dan sempurna adalah wujud keindahan yang dicintai Allah",
         "Itqan (menyempurnakan) ibadah mencakup aspek lahir (cara) dan batin (ikhlas dan khusyu')",
         "Meremehkan tata cara ibadah yang diajarkan Rasul ﷺ bertentangan dengan cinta kepada Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k028",
@@ -1434,7 +1471,8 @@
         "Muhasabah diri sendiri adalah obat paling efektif dari penyakit mencari-cari kesalahan orang lain",
         "Orang yang suka mengkritik orang lain biasanya belum benar-benar mengenali dirinya sendiri",
         "Kesibukan memperbaiki diri adalah tanda kematangan akal dan ketulusan iman"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k029",
@@ -1450,7 +1488,8 @@
         "Komitmen kepada Al-Qur'an dan Sunnah tidak terpengaruh oleh banyak atau sedikitnya pengikut",
         "Keberanian Ibnu Taimiyah dalam mempertahankan kebenaran meskipun sendirian adalah teladan bagi setiap penuntut ilmu",
         "Kebenaran tidak diukur dari jumlah pendukung, melainkan dari kesesuaiannya dengan wahyu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k030",
@@ -1466,7 +1505,8 @@
         "Menyadari bahwa kita adalah tamu di dunia akan meringankan beban saat kehilangan sesuatu",
         "Semua yang kita miliki — harta, kesehatan, anak — adalah amanah yang suatu hari akan diambil kembali",
         "Mempersiapkan bekal untuk perjalanan pulang lebih penting dari menghias rumah singgah sementara"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k031",
@@ -1482,23 +1522,25 @@
         "Semakin tinggi ilmu dan kedudukan seseorang, semakin besar pula tuntutan untuk tawadhu'",
         "Ulama yang tawadhu' adalah rahmat bagi umat, sementara ulama yang sombong adalah fitnah",
         "Ilmu dan kemuliaan yang tidak disertai tawadhu' akan menjadi musibah bagi pemiliknya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k032",
-      "arab": "قَصَدْتُ بِهَذَا الْكِتَابِ أَنْ يَكُونَ صَاحِبُهُ عَلَى ذِكْرٍ مِنَ الآخِرَةِ مَا دَامَ نَاظِرًا فِيهِ",
-      "teks": "Aku bermaksud dengan kitab ini agar pemiliknya selalu teringat akhirat selama ia menelaahnya.",
+      "arab": "الصَّدَقَةُ تُطْفِئُ الْخَطِيئَةَ كَمَا يُطْفِئُ الْمَاءُ النَّارَ",
+      "teks": "Sedekah memadamkan dosa-dosa sebagaimana air memadamkan api.",
       "ulama": "AnNawawi",
       "kitab": "Riyadhus Shalihin",
-      "bab": "Muqaddimah",
+      "bab": "Bab Fadhl ash-Shadaqah",
       "jilid": "—",
-      "halaman": "—",
+      "halaman": "Hal. 271",
       "tema": "ibadah",
       "faedah": [
-        "Tujuan utama Imam Nawawi menyusun Riyadhus Shalihin adalah mengingatkan pembaca akan akhirat",
-        "Sebuah kitab ilmu yang baik seharusnya menggerakkan hati, bukan sekadar menambah informasi",
-        "Membaca dengan niat mengingat akhirat akan mengubah cara seseorang memahami dan mengamalkan ilmu"
-      ]
+        "Sedekah adalah salah satu penghapus dosa yang paling efektif setelah taubat",
+        "Rutin bersedekah walau sedikit lebih baik daripada sekali banyak lalu berhenti",
+        "Sedekah bukan hanya harta — senyum, ilmu, tenaga, dan doa juga termasuk sedekah"
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k033",
@@ -1514,7 +1556,8 @@
         "Shalawat kepada Nabi ﷺ adalah salah satu penyejuk dan penenang hati yang paling mujarab",
         "Kecintaan kepada Nabi ﷺ yang terwujud dalam shalawat adalah bagian dari iman",
         "Allah bershalawat kepada Nabi ﷺ — maka bershalawat artinya kita mengikuti Allah dan malaikat-Nya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k034",
@@ -1530,7 +1573,8 @@
         "Standar besar-kecilnya dosa bukan dari perbuatannya sendiri, melainkan dari siapa yang didurhaki",
         "Menganggap remeh dosa kecil adalah jalan masuk ke dalam dosa besar",
         "Merenungi keagungan Allah akan melahirkan rasa takut dan hati-hati dalam setiap langkah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k035",
@@ -1546,23 +1590,25 @@
         "Mengagungkan Allah (ta'dhim) adalah inti dari ibadah hati yang menopang semua amal",
         "Siapapun yang mengagungkan sesuatu lebih dari Allah, ia telah menyekutukan Allah dalam pengagungan",
         "Ta'dhim kepada Allah lahir dari ilmu tentang nama-nama dan sifat-sifat-Nya yang Maha Sempurna"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k036",
-      "arab": "مَنْ أَرَادَ النَّجَاةَ فَلْيَلْزَمِ الزُّهْدَ فِي الدُّنْيَا وَالرَّغْبَةَ فِي الآخِرَةِ",
-      "teks": "Barangsiapa menginginkan keselamatan, hendaklah ia berpegang pada zuhud terhadap dunia dan kerinduan kepada akhirat.",
+      "arab": "الصِّحَّةُ وَالْفَرَاغُ نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ",
+      "teks": "Sehat dan waktu luang adalah dua nikmat yang banyak manusia tertipu (tidak memanfaatkannya dengan baik).",
       "ulama": "AnNawawi",
-      "kitab": "Bustanul 'Arifin",
-      "bab": "Fashl fiz Zuhd war Raghbah fil Akhirah",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Muhasabat an-Nafs",
       "jilid": "—",
-      "halaman": "—",
+      "halaman": "Hal. 62",
       "tema": "nasihat",
       "faedah": [
-        "Keselamatan dunia dan akhirat bergantung pada dua sikap: zuhud terhadap dunia dan rindu kepada akhirat",
-        "Zuhud bukan meninggalkan dunia secara fisik, tetapi tidak menjadikannya tujuan hidup",
-        "Kerinduan kepada akhirat adalah bahan bakar yang mendorong seseorang istiqamah dalam ibadah"
-      ]
+        "Dua nikmat ini sering diabaikan justru karena terlalu mudah diperoleh — sehingga tidak disyukuri",
+        "Waktu adalah modal paling berharga seorang hamba; sekali berlalu tidak akan pernah kembali",
+        "Memanfaatkan sehat dan waktu luang untuk beramal shalih adalah tanda kecerdasan"
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k037",
@@ -1578,7 +1624,8 @@
         "Perkataan ini mendorong setiap orang untuk mengembangkan keahliannya dan tidak berpuas diri",
         "Keahlian yang paling mulia adalah ilmu agama yang bermanfaat bagi diri sendiri dan orang lain",
         "Seseorang dikenal dan dihargai sesuai ilmu dan amal yang ia miliki, bukan sekadar nasab atau harta"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k038",
@@ -1594,7 +1641,8 @@
         "Nasihat yang baik harus disertai kelembutan dan kasih sayang, bukan untuk mempermalukan",
         "Seorang mukmin sejati ingin kebaikan untuk saudaranya sebagaimana untuk dirinya sendiri",
         "Cermin yang baik menampilkan apa adanya — begitu pula nasihat yang jujur"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k039",
@@ -1610,7 +1658,8 @@
         "Mengingat kematian adalah obat paling ampuh dari cinta dunia yang berlebihan",
         "Persiapan terbaik menghadapi kematian adalah memperbarui taubat dan memperbanyak amal shalih",
         "Kematian adalah gerbang menuju kehidupan yang sesungguhnya — maka persiapkanlah dengan sebaik-baiknya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k040",
@@ -1626,7 +1675,8 @@
         "Rasa takut kepada Allah tidak merendahkan mukmin, justru mengangkat derajatnya di sisi Allah",
         "Merasa aman dari azab dan tipu daya Allah adalah salah satu dosa terbesar yang dilarang Al-Qur'an",
         "Orang beriman hidup antara rasa takut dan harap — tidak pernah terlena"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k041",
@@ -1642,7 +1692,8 @@
         "Dosa melukai hati secara spiritual; semakin banyak dosa, semakin sakit dan keras hati seseorang",
         "Taubat adalah obat satu-satunya bagi luka dosa; semakin cepat, semakin kecil bekasnya",
         "Kerasnya hati yang tidak terasa adalah tanda bahwa luka dosa sudah sangat parah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k042",
@@ -1658,7 +1709,8 @@
         "Kemuliaan sejati manusia terletak pada ketundukan totalnya kepada Allah, bukan pada kebebasan dari-Nya",
         "Orang yang merasa taat itu memperbudak dirinya tidak memahami hakikat ibadah",
         "Ketaatan kepada Allah adalah jalan satu-satunya menuju kemuliaan di dunia dan akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k043",
@@ -1674,7 +1726,8 @@
         "Perbaikan hati (batin) adalah akar dari seluruh kebaikan; ketika akar kuat, pohon akan subur",
         "Allah Maha Melihat batin setiap hamba — maka sungguh-sungguh memperbaiki hati adalah bentuk muraqabah",
         "Zahir yang baik tanpa batin yang bersih adalah kebaikan semu yang tidak bertahan lama"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k044",
@@ -1690,7 +1743,8 @@
         "Ghibah menghapus pahala amal shalih si pelaku dan memindahkannya kepada orang yang dighibah",
         "Menjaga lisan dari ghibah adalah perjuangan yang lebih berat dari banyak ibadah fisik",
         "Seorang mukmin menjaga lisan karena tahu bahwa setiap kata dicatat dan akan dimintai pertanggungjawaban"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k045",
@@ -1706,7 +1760,8 @@
         "Penyakit hati lebih berbahaya dari penyakit fisik karena berdampak pada keselamatan di akhirat",
         "Menghadap kepada Allah — melalui ibadah, doa, dzikir, dan taubat — adalah satu-satunya obat hati",
         "Seorang dokter hati yang paling ahli adalah Al-Qur'an dan As-Sunnah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k046",
@@ -1722,7 +1777,8 @@
         "Taqwa adalah perintah Allah kepada semua umat manusia — menunjukkan betapa agungnya kedudukan taqwa",
         "Semua kebaikan dunia dan akhirat berakar dari taqwa kepada Allah",
         "Tanpa taqwa, seseorang mungkin sibuk beramal tapi tidak mendapat buah kebaikan yang sebenarnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k047",
@@ -1738,7 +1794,8 @@
         "Niat yang buruk dalam menuntut ilmu bisa mengubah ibadah mulia menjadi jalan menuju neraka",
         "Ilmu yang dicari untuk kebanggaan diri adalah racun yang mematikan spiritual seseorang",
         "Menuntut ilmu yang benar adalah yang diniatkan untuk mengamalkan dan menyebarkannya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k048",
@@ -1754,7 +1811,8 @@
         "Dunia yang diperebutkan manusia begitu keras sebenarnya tidak bernilai sama sekali di sisi Allah",
         "Jika dunia bernilai di sisi Allah, tentu Allah tidak membiarkan orang kafir menikmatinya",
         "Mengetahui hakikat rendahnya nilai dunia seharusnya mendorong kita untuk lebih mencintai akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k049",
@@ -1770,7 +1828,8 @@
         "Hanya Allah yang bisa memenuhi kebutuhan terdalam hati manusia, bukan harta, jabatan, atau manusia lain",
         "Cinta kepada Nabi ﷺ adalah bagian dari iman yang wajib ada dalam hati setiap mukmin",
         "Kosongnya hati dari cinta Allah dan Rasul-Nya adalah penyebab kegelisahan yang tak terjelaskan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k050",
@@ -1786,7 +1845,8 @@
         "Musuh terbesar seorang mukmin adalah hawa nafsunya sendiri — bukan orang lain",
         "Menundukkan hawa nafsu dalam ibadah, kesabaran, dan ketaatan adalah jihad yang tidak pernah berhenti",
         "Jihad melawan nafsu mendahului semua bentuk jihad karena ia adalah pondasinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k051",
@@ -1802,7 +1862,8 @@
         "Shalat adalah amal yang pertama kali dihisab pada Hari Kiamat — menunjukkan betapa pentingnya",
         "Meninggalkan shalat secara sengaja adalah dosa yang sangat besar dan tanda lemahnya iman",
         "Menegakkan shalat bukan hanya soal menunaikannya, tapi melaksanakannya dengan benar dan khusyu'"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k052",
@@ -1818,7 +1879,8 @@
         "Setiap Muslim wajib berusaha mengetahui dasar hukum agamanya, bukan sekadar ikut-ikutan",
         "Mengikuti ulama bukan berarti taklid buta, tetapi mengambil ilmu dari mereka disertai pemahaman",
         "Dalil adalah pembeda antara ittiba' yang terpuji dan taklid buta yang tercela"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k053",
@@ -1834,7 +1896,8 @@
         "Agama Islam secara keseluruhan mengajarkan tawadhu' dalam segala aspek kehidupan",
         "Merasa lebih alim, lebih shalih, atau lebih taat dari orang lain adalah pintu masuk kibr (sombong)",
         "Seorang penuntut ilmu yang benar semakin tawadhu' seiring bertambahnya ilmunya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k054",
@@ -1850,7 +1913,8 @@
         "Kesadaran bahwa semua nikmat dunia akan hilang seharusnya membuat kita tidak terlalu terikat padanya",
         "Nikmat surga adalah satu-satunya kenikmatan yang abadi dan tidak akan pernah berakhir",
         "Menginvestasikan waktu dan energi untuk meraih nikmat akhirat jauh lebih bijaksana dari mengejar dunia"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k055",
@@ -1866,23 +1930,25 @@
         "Ilmu tanpa amal adalah beban bukan anugerah — justru semakin memberatkan di akhirat",
         "Taufiq Allah (kemudahan) dalam amal adalah hadiah khusus bagi yang niatnya tulus dalam belajar",
         "Tujuan akhir ilmu agama bukan untuk diketahui semata, melainkan untuk dihayati dan diamalkan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k056",
-      "arab": "حَقُّ الْمُسْلِمِ عَلَى الْمُسْلِمِ النَّصِيحَةُ وَالدُّعَاءُ لَهُ بِظَهْرِ الْغَيْبِ",
-      "teks": "Hak seorang Muslim atas Muslim lainnya adalah memberi nasihat dan mendoakannya tanpa sepengetahuannya.",
+      "arab": "لَوِ اجْتَمَعَ النَّاسُ كُلُّهُمْ عَلَى أَنْ يَنْفَعُوكَ بِشَيْءٍ لَمْ يَنْفَعُوكَ إِلَّا بِشَيْءٍ قَدْ كَتَبَهُ اللهُ لَكَ",
+      "teks": "Jika seluruh manusia berkumpul untuk memberikan manfaat kepadamu, mereka tidak akan mampu melakukannya kecuali dengan sesuatu yang sudah Allah tuliskan untukmu.",
       "ulama": "AnNawawi",
-      "kitab": "Al-Adzkar",
-      "bab": "Bab ad-Du'a lil Ghaib",
+      "kitab": "Al-Arba'in an-Nawawiyah",
+      "bab": "Syarh al-Hadits al-Tasi' 'Asyr (Hadits 19 tentang Menjaga Allah)",
       "jilid": "—",
-      "halaman": "—",
+      "halaman": "Hal. 67",
       "tema": "tawakal",
       "faedah": [
-        "Mendoakan saudara seiman di belakangnya adalah hak ukhuwah yang sering dilupakan",
-        "Doa yang dipanjatkan tanpa sepengetahuan orang yang didoakan lebih ikhlas dan lebih cepat dikabulkan",
-        "Imam Nawawi menjadikan saling mendoakan sebagai salah satu hak persaudaraan sesama Muslim"
-      ]
+        "Keyakinan ini adalah dasar dari tawakal yang benar — hanya Allah yang benar-benar memberi manfaat dan mudharat",
+        "Mengetahui ini akan membebaskan hati dari ketergantungan dan harapan berlebihan kepada manusia",
+        "Bukan berarti tidak berusaha, tapi menyadari bahwa hasil akhirnya sepenuhnya di tangan Allah"
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k057",
@@ -1898,7 +1964,8 @@
         "Doa ini mengajarkan bahwa mengetahui kebenaran saja tidak cukup — perlu taufiq Allah untuk mengamalkannya",
         "Meminta kepada Allah agar kebenaran tampak jelas adalah pengakuan bahwa hati bisa dibolak-balik",
         "Doa ini adalah doa para ulama Salaf yang dianjurkan diperbanyak oleh setiap penuntut ilmu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k058",
@@ -1914,7 +1981,8 @@
         "Mengenal Allah (ma'rifatullah) adalah akar dari seluruh kebaikan — inilah mengapa ilmu aqidah didahulukan",
         "Cinta kepada Allah tidak bisa ada tanpa ilmu tentang-Nya; makin dalam ilmu, makin dalam cinta",
         "Ketaatan adalah buah alami dari cinta — bukan beban bagi yang benar-benar mencintai Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k059",
@@ -1930,7 +1998,8 @@
         "Istiqamah adalah karamah terbesar yang bisa diraih seorang hamba — lebih utama dari karomah syaikh manapun",
         "Konsistensi dalam amal kecil lebih dicintai Allah daripada amal besar yang tidak berkelanjutan",
         "Karamah berupa konsistensi taat tidak menipu pemiliknya, berbeda dengan karamah yang bisa menjadi fitnah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k060",
@@ -1946,7 +2015,8 @@
         "Rasa malu kepada Allah adalah pangkal dari seluruh kebaikan dan pencegah seluruh keburukan",
         "Hilangnya rasa malu adalah tanda lemahnya iman dan pintu masuk ke dalam berbagai kemaksiatan",
         "Malu kepada Allah lebih utama dari malu kepada manusia — dan ini yang harus selalu dipertahankan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k061",
@@ -1962,7 +2032,8 @@
         "Muhasabah diri sendiri secara aktif adalah pencegah terbaik dari ghibah dan mencari-cari aib orang lain",
         "Orang yang paham betapa banyaknya kekurangannya sendiri tidak akan punya waktu mengurusi kekurangan orang lain",
         "Kebahagiaan sejati datang dari kejernihan hati yang bebas dari dengki dan kebiasaan mencela"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k062",
@@ -1978,7 +2049,8 @@
         "Nasihat (nushh) adalah inti dari seluruh agama Islam — menunjukkan betapa pentingnya saling mengingatkan",
         "Nasihat kepada Allah maksudnya ikhlas dalam beribadah hanya kepada-Nya",
         "Nasihat kepada sesama muslim mencakup keinginan kebaikan untuk mereka dalam urusan dunia dan akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k063",
@@ -1994,23 +2066,25 @@
         "Sunnah adalah pelindung seorang hamba dari berbagai fitnah dan kesesatan yang bertebaran di dunia",
         "Tidak ada jalan selamat di akhirat kecuali dengan mengikuti sunnah Nabi ﷺ yang shahih",
         "Berpegang kepada Sunnah di zaman banyaknya fitnah adalah anugerah yang harus disyukuri dan dijaga"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k064",
-      "arab": "مُجَاهَدَةُ النَّفْسِ عَلَى تَرْكِ الشَّهَوَاتِ أَصْلُ كُلِّ طَاعَةٍ",
-      "teks": "Bersungguh-sungguh melawan hawa nafsu untuk meninggalkan syahwat adalah pondasi dari segala bentuk ketaatan.",
+      "arab": "الشَّيْطَانُ يَجْرِي مِنِ ابْنِ آدَمَ مَجْرَى الدَّمِ فَضَيِّقُوا مَجَارِيَهُ بِالْجُوعِ",
+      "teks": "Setan mengalir dalam tubuh anak Adam seperti aliran darah, maka sempitkan alirannya dengan berpuasa.",
       "ulama": "AnNawawi",
-      "kitab": "Bustanul 'Arifin",
-      "bab": "Fashl fi Mujahadatin Nafs",
+      "kitab": "Riyadhus Shalihin",
+      "bab": "Bab Fadhl ash-Shiyam",
       "jilid": "—",
-      "halaman": "—",
+      "halaman": "Hal. 392",
       "tema": "ibadah",
       "faedah": [
-        "Mujahadatun nafs (melawan hawa nafsu) adalah jihad yang paling mendasar bagi setiap Muslim",
-        "Seluruh ketaatan besar berakar dari kemenangan kecil melawan syahwat sehari-hari",
-        "Tanpa mengendalikan syahwat, ketaatan lain akan sulit konsisten dan mudah goyah"
-      ]
+        "Puasa adalah salah satu senjata terkuat melawan bisikan dan gangguan setan",
+        "Mengurangi makan dan memperbanyak puasa sunah membantu hati menjadi lebih jernih dan kuat",
+        "Setan yang lemah karena puasa lebih mudah diatasi daripada setan yang diberi 'bahan bakar' lewat perut yang penuh"
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k065",
@@ -2026,7 +2100,8 @@
         "Zuhud yang hakiki dimulai dari meninggalkan yang haram, bukan sekadar meninggalkan yang halal",
         "Kejujuran yang dimaksud adalah kejujuran kepada Allah dalam iman, ibadah, dan muamalah",
         "Dua sifat ini — zuhud dan shidq — jika terkumpul pada seseorang, ia adalah orang yang sempurna akhlaknya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k066",
@@ -2042,7 +2117,8 @@
         "Hadits dha'if tidak boleh dijadikan hujjah tanpa penelitian mendalam",
         "Pengamalan hadits dha'if dalam fadhail pun disyaratkan dengan ketentuan yang ketat",
         "Seorang penuntut ilmu wajib mempelajari ulum al-hadits untuk menilai derajat hadits"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k067",
@@ -2058,7 +2134,8 @@
         "Kejujuran adalah syarat mutlak diterimanya riwayat dalam Islam",
         "Satu kebohongan dalam agama menggugurkan seluruh kepercayaan terhadap seseorang",
         "Ini menunjukkan betapa Islam sangat menjaga kemurnian sumber agamanya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k068",
@@ -2074,7 +2151,8 @@
         "Ilmu agama adalah kunci kebahagiaan dunia dan akhirat sekaligus",
         "Tidak ada kebaikan sejati tanpa didasari ilmu yang benar",
         "Menuntut ilmu adalah ibadah yang pahalanya mencakup seluruh aspek kehidupan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k069",
@@ -2090,7 +2168,8 @@
         "Aqidah Ahlus Sunnah: Al-Qur'an adalah kalam Allah, bukan makhluk",
         "Ini adalah salah satu pokok aqidah yang dibela para ulama Salaf dengan pena dan nyawa",
         "Penguasaan ulum al-Qur'an adalah pintu masuk memahami wahyu secara benar"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k070",
@@ -2106,7 +2185,8 @@
         "Menghafal Al-Qur'an harus dibarengi dengan pemahaman isi dan hukum-hukumnya",
         "Ilmu tanpa amal dan pemahaman adalah beban, bukan cahaya",
         "Keutamaan sejati ahlul Qur'an adalah yang mengamalkan isinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k071",
@@ -2122,7 +2202,8 @@
         "Ilmu yang tidak menghasilkan amal shalih adalah ilmu yang sia-sia",
         "Pohon tanpa buah hanya menghabiskan lahan dan air — begitu pula ilmu tanpa pengamalan",
         "Amal adalah bukti kejujuran ilmu seseorang"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k072",
@@ -2138,7 +2219,8 @@
         "Wajib ain ilmu yang dimaksud adalah ilmu tentang tauhid, ibadah pokok, dan halal-haram",
         "Memahami prioritas dalam menuntut ilmu adalah bagian dari hikmah",
         "Seseorang tidak cukup hanya menekuni ilmu duniawi sementara ilmu agama wajibnya terabaikan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k073",
@@ -2154,7 +2236,8 @@
         "Gelar 'alim' dalam Islam bukan semata-mata hafalan, tapi pengamalan",
         "Akal yang sejati adalah akal yang menahan diri dari larangan Allah",
         "Ilmu dan akal yang benar selalu bermuara pada ketaatan kepada Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k074",
@@ -2170,7 +2253,8 @@
         "Lingkungan pergaulan sangat menentukan arah hidup seseorang",
         "Bergaul dengan ulama dan orang shalih adalah wasilah menjaga iman",
         "Menjauhi teman buruk adalah bagian dari menjaga agama"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k075",
@@ -2186,7 +2270,8 @@
         "Adab dalam Islam bersumber dari syariat, bukan sekadar konvensi sosial",
         "Mengagungkan Allah dan syiar-Nya adalah inti dari seluruh adab",
         "Adab kepada guru, orang tua, dan ulama adalah bagian dari adab kepada Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k076",
@@ -2202,7 +2287,8 @@
         "Adab yang sejati bertumpu pada keimanan dan taqwa, bukan budaya",
         "Seseorang yang tidak memiliki adab kepada Allah tidak akan konsisten dalam adabnya kepada manusia",
         "Memperbaiki adab harus dimulai dari memperbaiki hubungan dengan Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k077",
@@ -2218,7 +2304,8 @@
         "Ujub (kagum pada diri sendiri) adalah penyakit yang menggerogoti amal shalih",
         "Orang yang jujur menyadari kekurangannya dan tidak membanggakan diri",
         "Memuji diri sendiri adalah tanda kurang ikhlas dalam beramal"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k078",
@@ -2234,7 +2321,8 @@
         "Mengenal Allah secara benar adalah fondasi seluruh ibadah dan amal shalih",
         "Setiap nama dan sifat Allah menuntut konsekuensi ibadah tertentu",
         "Tauhid asma' wa sifat bukan sekadar pengetahuan teoritis, tapi mendorong ketaatan nyata"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k079",
@@ -2250,7 +2338,8 @@
         "Agama Islam sudah sempurna — tidak butuh tambahan atau pengurangan apapun",
         "Setiap bid'ah dalam agama, betapapun terlihat baik, adalah kesesatan",
         "Ittiba' (mengikuti Sunnah) adalah jalan keselamatan yang tidak boleh ditinggalkan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k080",
@@ -2266,7 +2355,8 @@
         "Iman adalah kombinasi keyakinan hati, ucapan lisan, dan amal anggota badan",
         "Penampilan luar tidak mencerminkan iman tanpa kecocokan batin dan amal",
         "Ini adalah aqidah Ahlus Sunnah yang membedakan mereka dari Murji'ah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k081",
@@ -2282,7 +2372,8 @@
         "Tauhid adalah prioritas pertama yang harus ditegakkan sebelum amalan lainnya",
         "Kalimat tauhid adalah bekal terpenting saat menghadapi sakaratul maut",
         "Seseorang yang memulai dakwah harus mendahulukan tauhid seperti yang dilakukan para nabi"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k082",
@@ -2298,7 +2389,8 @@
         "Syirik adalah dosa yang paling besar dan paling Allah benci",
         "Seseorang yang mati dalam keadaan syirik tidak akan diampuni Allah",
         "Menjauhi syirik adalah prioritas utama dalam kehidupan seorang Muslim"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k083",
@@ -2314,7 +2406,8 @@
         "Semangat berdakwah tanpa ilmu bisa berbahaya dan menyesatkan",
         "Bashirah adalah syarat seorang dai — memahami apa yang didakwahkan dan kepada siapa",
         "Nabi ﷺ tidak berdakwah sebelum menerima wahyu dan ilmu dari Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k084",
@@ -2330,7 +2423,8 @@
         "Orang beriman tidak seharusnya terikat oleh kemewahan dunia karena ia tahu ini hanya sementara",
         "Kematian bagi orang beriman adalah pintu kebebasan dari penjara dunia",
         "Orang kafir menjadikan dunia sebagai puncak kebahagiaan karena tidak percaya akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k085",
@@ -2346,7 +2440,8 @@
         "Semua penyakit hati — riya, hasad, sombong, tamak — berakar dari kelalaian terhadap Allah",
         "Dzikir yang terus-menerus adalah obat utama untuk melawan kelalaian",
         "Hati yang terjaga adalah hati yang selalu sadar bahwa Allah melihatnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k086",
@@ -2362,7 +2457,8 @@
         "Ma'rifatullah adalah akar cinta kepada Allah — tanpanya cinta itu hanya klise",
         "Kecintaan yang benar kepada Allah pasti melahirkan ketaatan yang konsisten",
         "Ridha Allah adalah buah tertinggi dari perjalanan mengenal dan mencintai-Nya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k087",
@@ -2378,7 +2474,8 @@
         "Hati manusia punya kapasitas terbatas — semakin penuh dengan cinta dunia, semakin kosong dari cinta akhirat",
         "Zuhud bukan berarti tidak memiliki dunia, tapi tidak membiarkan dunia memiliki hati",
         "Ini adalah ukuran bagi seorang Muslim untuk mengevaluasi keadaan hatinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k088",
@@ -2394,7 +2491,8 @@
         "Meninggalkan Sunnah membuka pintu bagi masuknya bid'ah",
         "Vakum dari sunnah akan diisi oleh sesuatu — dan sesuatu itu biasanya adalah bid'ah",
         "Menjaga Sunnah adalah tameng terkuat untuk mencegah penyimpangan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k089",
@@ -2410,7 +2508,8 @@
         "Cinta dunia dan cinta akhirat tidak bisa dikejar bersamaan dengan sama-sama kuat",
         "Ketika seseorang memilih akhirat, ia akan rela mengorbankan ambisi duniawinya",
         "Pilihan terbaik adalah selalu memilih yang kekal atas yang fana"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k090",
@@ -2426,7 +2525,8 @@
         "Khasyah (takut kepada Allah) adalah buah dari ilmu dan ma'rifatullah yang benar",
         "Jika rasa takut tidak menghalangi maksiat, maka itu belum khasyah yang sebenarnya",
         "Orang yang berilmu tentang Allah adalah yang paling takut kepada-Nya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k091",
@@ -2442,7 +2542,8 @@
         "Ikhlas dalam menuntut ilmu adalah jihad yang tidak boleh berhenti",
         "Niat yang menyimpang dalam menuntut ilmu bisa merusak seluruh nilai amalnya",
         "Setiap kali niat membelok, seorang penuntut ilmu harus segera meluruskannya kembali"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k092",
@@ -2458,7 +2559,8 @@
         "Ilmu yang tidak diamalkan hanya menjadi hujjah yang memberatkan pemiliknya",
         "Ulama yang tidak mengamalkan ilmunya menanggung dosa ganda: dosa sendiri dan salah memberi contoh",
         "Lilin yang menerangi orang lain sambil dirinya terbakar adalah gambaran paling menyentuh tentang ilmu tanpa amal"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k093",
@@ -2474,7 +2576,8 @@
         "Meninggalnya ulama adalah musibah yang lebih besar dari hilangnya harta benda",
         "Masyarakat tanpa ulama yang mumpuni akan mudah terseret bid'ah dan kesesatan",
         "Menuntut ilmu dan menyebarkannya adalah berkontribusi nyata dalam menjaga agama"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k094",
@@ -2490,7 +2593,8 @@
         "Al-Qur'an paling tepat ditafsirkan dengan Al-Qur'an, lalu Hadits, lalu perkataan Sahabat",
         "Tafsir berdasarkan akal semata tanpa riwayat adalah jalan yang penuh bahaya",
         "Metode salaf dalam memahami Al-Qur'an adalah jalan paling selamat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k095",
@@ -2506,7 +2610,8 @@
         "Mempelajari perjalanan hidup Salafush Shalih adalah nikmat yang perlu disyukuri",
         "Mengenal generasi terbaik Islam memberi arah yang jelas dalam menjalani agama",
         "Sejarah Islam bukan hanya pengetahuan, tapi cahaya yang menerangi jalan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k096",
@@ -2522,7 +2627,8 @@
         "Zuhud bukan mengundang kemiskinan, tapi justru memanggil keberkahan",
         "Seseorang yang mengejar dunia dengan tamak akan terus merasa kurang",
         "Ridha dan tawakkal kepada Allah adalah jalan datangnya rezeki tanpa disangka"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k097",
@@ -2538,7 +2644,8 @@
         "Ada tiga tingkatan sabar: sabar dalam taat, sabar dari maksiat, dan sabar atas musibah",
         "Konsisten dalam ibadah bertahun-tahun lebih berat daripada sekadar menahan satu kemaksiatan",
         "Memahami tingkatan sabar membantu seseorang menentukan mana prioritas yang harus dikuatkan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k098",
@@ -2554,7 +2661,8 @@
         "Hikmah dalam dakwah adalah ilmu, bukan sekadar kelembutan",
         "Dakwah yang tepat sasaran mempertimbangkan kondisi, latar belakang, dan kapasitas penerima",
         "Nabi ﷺ adalah contoh terbaik dalam menempatkan setiap dakwah sesuai keadaan lawan bicara"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k099",
@@ -2570,7 +2678,8 @@
         "Al-jama'ah dalam Islam bukan sekadar jumlah orang terbanyak, tapi yang mengikuti kebenaran",
         "Seorang yang berpegang pada Sunnah tidak boleh goyah meski sendirian",
         "Ini adalah prinsip yang menjaga seorang Muslim dari tekanan sosial yang melawan kebenaran"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k100",
@@ -2586,7 +2695,8 @@
         "Waswas dalam ibadah adalah tipu daya setan untuk merusak kekhusyukan",
         "Obat terbaik waswas adalah mengabaikannya dan meneruskan ibadah",
         "Memberikan perhatian pada waswas justru semakin memperburuk keadaan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k101",
@@ -2602,7 +2712,8 @@
         "Dua syarat diterimanya amal ini adalah pondasi yang tidak bisa ditawar",
         "Ikhlas tanpa ittiba' = bid'ah. Ittiba' tanpa ikhlas = riya. Keduanya harus ada",
         "Ini adalah intisari dari dua kalimat syahadat yang harus mewarnai setiap ibadah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k102",
@@ -2618,7 +2729,8 @@
         "Para imam madzhab sendiri tidak pernah memerintahkan taklid buta kepada mereka",
         "Ketika dalil shahih bertentangan dengan pendapat madzhab, dalil yang diikuti",
         "Ini adalah prinsip Ahlus Sunnah dalam berfiqih: dalil di atas pendapat pribadi siapapun"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k103",
@@ -2634,7 +2746,8 @@
         "Ilmu jarh wa ta'dil adalah benteng yang menjaga Sunnah dari pemalsuan",
         "Umat Islam wajib berterima kasih kepada ulama hadits yang mendedikasikan hidup untuk menjaga Sunnah",
         "Mengamalkan hadits dha'if tanpa mengetahuinya adalah kelalaian yang perlu dikoreksi"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k104",
@@ -2650,7 +2763,8 @@
         "Hati ibarat wadah — apa yang dimasukkan secara konsisten akan memenuhinya",
         "Kesibukan mengingat akhirat secara bertahap menggeser kesibukan atas dunia",
         "Ini adalah prinsip manajemen hati yang diajarkan para ulama salaf"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k105",
@@ -2666,7 +2780,8 @@
         "Ma'rifatullah yang benar menghasilkan zuhud yang alami, bukan zuhud yang dipaksakan",
         "Orang yang kenal Allah tahu bahwa dunia tidak sebanding dengan akhirat",
         "Keterikatan pada dunia adalah tanda bahwa ma'rifatullah masih perlu diperdalam"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k106",
@@ -2682,7 +2797,8 @@
         "Air mata khasyah adalah tanda kelembutan hati yang sangat berharga",
         "Tangisan yang tidak diikuti taubat dan perubahan hanyalah emosi sesaat",
         "Menggabungkan rasa takut dengan inabah (kembali) adalah tanda taubat yang benar"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k107",
@@ -2698,7 +2814,8 @@
         "Para ulama hadits adalah benteng terakhir kemurnian Sunnah Nabi ﷺ",
         "Menghormati ulama hadits adalah bentuk menghormati Sunnah itu sendiri",
         "Kejujuran dalam meriwayatkan hadits adalah amanah yang sangat besar"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k108",
@@ -2714,7 +2831,8 @@
         "Diam dari hal yang tidak diketahui adalah tanda keilmuan dan kejujuran",
         "Berbicara tanpa ilmu bisa menyesatkan orang lain dan mendatangkan dosa",
         "Prinsip 'la adri' (aku tidak tahu) adalah separuh ilmu menurut ulama salaf"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k109",
@@ -2730,7 +2848,8 @@
         "Syukur menjaga nikmat yang ada agar tidak dicabut",
         "Syukur adalah sebab datangnya nikmat baru",
         "Allah berjanji menambah nikmat bagi yang bersyukur (QS. Ibrahim: 7)"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k110",
@@ -2746,7 +2865,8 @@
         "Syukur adalah kemampuan yang perlu dilatih setiap hari",
         "Lupa bersyukur adalah bentuk kelemahan jiwa",
         "Orang yang bersyukur selalu melihat sisi pemberian, bukan sisi kekurangan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k111",
@@ -2762,7 +2882,8 @@
         "Syukur dimulai dari hal-hal kecil dalam keseharian",
         "Orang yang biasa mengabaikan nikmat kecil tidak akan menyadari nikmat besar",
         "Latih syukur pada nikmat sederhana: napas, air, kesehatan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k112",
@@ -2778,7 +2899,8 @@
         "Syukur bukan hanya ucapan 'alhamdulillah', tapi amal nyata",
         "Menggunakan nikmat untuk maksiat adalah kebalikan dari syukur",
         "Tiga rukun ini harus hadir bersama agar syukur benar-benar sempurna"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k113",
@@ -2794,7 +2916,8 @@
         "Angan-angan tentang surga tanpa amal adalah tipu daya",
         "Iman yang benar pasti mendorong amal untuk akhirat",
         "Sa'yu (usaha sungguh-sungguh) adalah syarat dikabulkannya keinginan akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k114",
@@ -2810,7 +2933,8 @@
         "Setiap amal dunia adalah benih yang akan berbuah di akhirat",
         "Tidak ada yang sia-sia — kebaikan sekecil apapun akan dipanen",
         "Penyesalan di akhirat tidak ada gunanya, maka bertindaklah sekarang"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k115",
@@ -2826,7 +2950,8 @@
         "Mengingat mati adalah obat paling mujarab untuk penyakit cinta dunia",
         "Panjang angan-angan membuat seseorang lalai dari mempersiapkan bekal akhirat",
         "Nabi ﷺ menganjurkan banyak mengingat 'penghancur kelezatan' yakni kematian"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k116",
@@ -2842,7 +2967,8 @@
         "Harta yang ditinggalkan tidak menolong di akhirat, tapi sedekah yang dikirimkan akan",
         "Amal shalih adalah 'tabungan' akhirat yang tidak pernah habis",
         "Ayat ini adalah peringatan keras agar manusia memprioritaskan amal untuk masa depan sejatinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k117",
@@ -2858,7 +2984,8 @@
         "Tawakal sejati menggabungkan usaha maksimal dengan penyerahan hasil kepada Allah",
         "Meninggalkan usaha lalu berkata 'tawakal' adalah kesalahan fahaman",
         "Nabi ﷺ bersabda: 'ikat dulu untamu, lalu bertawakallah'"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k118",
@@ -2874,7 +3001,8 @@
         "Tawakal yang benar membawa ketenangan total karena Allah yang menanggung",
         "Syarat mendapat jaminan Allah adalah tawakal yang benar-benar tulus",
         "Tawakal adalah sebab terbesar mendatangkan rezeki dan kecukupan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k119",
@@ -2890,7 +3018,8 @@
         "Semakin kuat iman seseorang, semakin mudah ia bertawakal",
         "Lemahnya tawakal adalah cermin lemahnya iman",
         "Memperkuat tawakal dimulai dari memperdalam ilmu tentang Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k120",
@@ -2906,7 +3035,8 @@
         "Taubat nashuhah adalah salah satu sebab Allah mengganti dosa menjadi pahala (QS. Al-Furqan: 70)",
         "Besarnya rahmat Allah tampak jelas dalam karunia taubat ini",
         "Tidak ada dosa yang terlalu besar untuk diampuni Allah bagi yang benar-benar bertaubat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k121",
@@ -2922,7 +3052,8 @@
         "Selama masih hidup, taubat selalu bisa diterima",
         "Menunda taubat sangat berbahaya karena kematian bisa datang kapan saja",
         "Kabar gembira ini bukan izin untuk terus bermaksiat, tapi motivasi segera bertaubat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k122",
@@ -2938,7 +3069,8 @@
         "Penyesalan yang tulus di hati adalah inti taubat",
         "Tanpa penyesalan, ucapan istighfar hanya formalitas kosong",
         "Penyesalan mendalam akan mendorong seseorang untuk tidak mengulangi dosa"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k123",
@@ -2954,7 +3086,8 @@
         "Doa adalah pengakuan nyata bahwa seseorang butuh kepada Allah",
         "Meninggalkan doa adalah tanda kesombongan hati",
         "Doa bukan hanya meminta, tapi bentuk penghambaan total kepada Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k124",
@@ -2970,7 +3103,8 @@
         "Allah mencintai hamba yang banyak berdoa dan murka kepada yang tidak berdoa",
         "Doa menunjukkan kerendahan hati dan pengakuan kelemahan di hadapan Allah",
         "Berdoa dalam kondisi lapang lebih dianjurkan agar doa dikabulkan saat sempit"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k125",
@@ -2986,7 +3120,8 @@
         "Doa adalah senjata yang tidak tertandingi oleh kekuatan apapun",
         "Tiang yang roboh membuat bangunan ambruk — begitu pula doa adalah penopang agama",
         "Orang yang meninggalkan doa berarti meletakkan senjatanya di hadapan musuh"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k126",
@@ -3002,7 +3137,8 @@
         "Nasihat yang tulus disampaikan dengan menjaga kehormatan yang dinasihati",
         "Nasihat di depan umum seringkali lebih terasa seperti penghinaan daripada perhatian",
         "Cara menyampaikan nasihat sama pentingnya dengan isi nasihat itu sendiri"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k127",
@@ -3018,7 +3154,8 @@
         "Hikmah sejati adalah kemampuan memilih prioritas di antara pilihan-pilihan yang ada",
         "Fiqhul awlawiyyat (fiqih prioritas) adalah ilmu yang sangat penting",
         "Banyak orang tahu yang baik dan buruk, tapi sedikit yang pandai memilih yang terbaik"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k128",
@@ -3034,7 +3171,8 @@
         "Memperbaiki hati adalah prioritas utama di atas memperbaiki penampilan luar",
         "Orang yang hatinya baik, kebaikannya akan memancar ke seluruh perilakunya",
         "Ini adalah makna sabda Nabi ﷺ tentang 'segumpal daging' dalam tubuh"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k129",
@@ -3050,7 +3188,8 @@
         "Hati yang 'hidup' bukan yang berdetak, tapi yang mengenal dan mencintai Allah",
         "Hati yang mati lebih berbahaya dari tubuh yang mati karena tidak terasa",
         "Obat hati yang mati adalah ilmu, dzikir, dan muhasabah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k130",
@@ -3066,7 +3205,8 @@
         "Hasad dan hiqd adalah dua penyakit hati yang menghancurkan amal tanpa disadari",
         "Api tidak pandang bulu membakar kayu — hasad pun membakar pahala apapun",
         "Membersihkan hati dari penyakit ini adalah jihad yang tidak pernah selesai"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k131",
@@ -3082,7 +3222,8 @@
         "Ibadah harus bersumber dari wahyu, bukan akal dan perasaan semata",
         "Mengikuti hawa nafsu dalam ibadah adalah jalan bid'ah",
         "Penilaian ibadah yang diterima adalah sesuai sunnah, bukan seberapa indah atau menyentuh hati"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k132",
@@ -3098,7 +3239,8 @@
         "Konsistensi dalam ibadah lebih dicintai Allah daripada amalan besar yang terputus",
         "Amal sedikit tapi rutin akan menumpuk menjadi amal yang sangat besar",
         "Inilah hikmah di balik sunnah harian yang Nabi ﷺ jaga terus-menerus"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k133",
@@ -3114,7 +3256,8 @@
         "Riya' disebut syirik kecil yang paling Nabi ﷺ khawatirkan atas umatnya",
         "Amal yang bercampur riya' tidak diterima Allah bahkan bisa menjadi bumerang",
         "Memeriksa niat sebelum, saat, dan setelah amal adalah cara mencegah riya'"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k134",
@@ -3130,7 +3273,8 @@
         "Ketika niat beramal tertuju pada Allah, dunia akan mengikuti dengan sendirinya",
         "Menjadikan dunia sebagai tujuan utama adalah penyimpangan yang merusak amal",
         "Ikhlas bukan berarti tidak peduli dunia, tapi menjaga agar dunia tidak menggeser akhirat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k135",
@@ -3146,7 +3290,8 @@
         "Kemanfaatan bagi orang lain adalah ukuran kedekatan seseorang kepada Allah",
         "Islam bukan agama yang hanya sibuk dengan ritual pribadi tapi mengabaikan sesama",
         "Menjadi orang yang bermanfaat adalah salah satu tujuan hidup seorang Muslim"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k136",
@@ -3162,7 +3307,8 @@
         "Kemuliaan sejati diukur dari akhlak, bukan status sosial atau kekayaan",
         "Harta hilang, tapi akhlak baik meninggalkan kenangan yang tidak terhapus",
         "Nabi ﷺ diutus untuk menyempurnakan akhlak yang mulia"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k137",
@@ -3178,7 +3324,8 @@
         "Para imam madzhab sendiri mengutamakan hadits shahih di atas pendapat mereka",
         "Taklid buta kepada madzhab tanpa memperhatikan dalil bukan ajaran para imam",
         "Imam Abu Hanifah adalah orang pertama yang menegaskan prinsip ini"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k138",
@@ -3194,7 +3341,8 @@
         "Imam Abu Hanifah melarang taklid buta tanpa mengetahui dalilnya",
         "Mengetahui sumber hukum adalah bagian dari tanggung jawab seorang faqih",
         "Ini menunjukkan para imam madzhab menginginkan murid-muridnya berpikir kritis, bukan sekadar mengikut"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k139",
@@ -3210,7 +3358,8 @@
         "Tiga sumber hukum utama ini adalah pegangan Ahlus Sunnah wal Jama'ah",
         "Ijma' Salafush Shalih adalah hujjah yang kuat dalam agama",
         "Imam Abu Hanifah termasuk ulama yang sangat menghormati atsar Salaf"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k140",
@@ -3226,7 +3375,8 @@
         "Hanya Nabi ﷺ yang pendapatnya tidak bisa ditolak karena bersumber dari wahyu",
         "Setiap ulama, setinggi apapun derajatnya, bisa salah dalam ijtihadnya",
         "Ini adalah dasar mengapa dalil harus selalu diutamakan di atas pendapat siapapun"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k141",
@@ -3242,7 +3392,8 @@
         "Ilmu sejati bukan sekadar hafalan, tapi pemahaman dan cahaya yang Allah anugerahkan",
         "Cahaya ilmu hanya datang dengan ikhlas, taqwa, dan membersihkan hati",
         "Banyak hafalan tanpa pemahaman dan amal tidak mencerminkan ilmu yang hakiki"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k142",
@@ -3258,7 +3409,8 @@
         "Wara' (kehati-hatian) adalah syarat seseorang layak dijadikan teladan",
         "Ulama yang tidak bisa menahan diri dari yang halal akan lebih mudah tergelincir ke yang haram",
         "Kewibawaan seorang alim lahir dari akhlak dan wara'-nya, bukan hanya ilmunya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k143",
@@ -3274,7 +3426,8 @@
         "Imam asy-Syafi'i menjadikan hadits shahih sebagai otoritas tertinggi di atas pendapat madzhabnya",
         "Mengikuti madzhab sejati berarti mengikuti dalil seperti yang dimaksud imamnya",
         "Perkataan ini adalah prinsip emas yang seharusnya dipegang setiap pengikut madzhab"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k144",
@@ -3290,7 +3443,8 @@
         "Imam asy-Syafi'i secara eksplisit meninggalkan pendapatnya jika bertentangan dengan hadits shahih",
         "Ini adalah contoh terbaik kerendahan hati seorang ulama besar terhadap Sunnah Nabi ﷺ",
         "Pengikut madzhab yang menemukan hadits shahih yang bertentangan dengan madzhab hendaknya mengikuti hadits"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k145",
@@ -3306,7 +3460,8 @@
         "Seorang Muslim harus selalu berkembang dan bertumbuh setiap harinya",
         "Stagnan dalam kebaikan sudah termasuk kerugian — apalagi kemunduran",
         "Ini adalah motivasi kuat untuk selalu muhasabah dan memperbaiki diri setiap hari"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k146",
@@ -3322,7 +3477,8 @@
         "Ukuran kebaikan suatu ilmu adalah manfaatnya bagi agama dan kehidupan",
         "Ilmu fiqih dan tauhid yang membentuk amal adalah yang paling dicintai para ulama salaf",
         "Menekuni ilmu yang tidak bermanfaat sementara ilmu wajib terabaikan adalah keliru"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k147",
@@ -3338,7 +3494,8 @@
         "Para sahabat adalah generasi terbaik yang paling memahami agama langsung dari Nabi ﷺ",
         "Menjadikan manhaj sahabat sebagai tolok ukur adalah inti dari manhaj Ahlus Sunnah",
         "Imam Ahmad meletakkan ini sebagai prinsip pertama dalam kitab aqidahnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k148",
@@ -3354,7 +3511,8 @@
         "Berfatwa sendirian tanpa dukungan ulama terdahulu adalah keberanian yang berbahaya",
         "Warisan pendapat ulama salaf adalah jaring pengaman dari kekeliruan ijtihad",
         "Imam Ahmad sangat berhati-hati dalam berfatwa dan sering berkata 'la adri' (aku tidak tahu)"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k149",
@@ -3370,7 +3528,8 @@
         "Imam Ahmad rela dipenjara dan dicambuk untuk mempertahankan aqidah ini",
         "Aqidah Ahlus Sunnah: Al-Qur'an adalah kalam Allah, bukan makhluk ciptaan",
         "Keteguhan Imam Ahmad menjadi benteng yang menyelamatkan aqidah umat Islam"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k150",
@@ -3386,7 +3545,8 @@
         "Wara' (menjauhi perkara syubhat) adalah nutrisi bagi hati",
         "Seseorang yang tidak berhati-hati dalam halal-haram akan semakin tumpul hatinya",
         "Imam Ahmad adalah teladan wara' — beliau sangat ketat menjaga diri dari perkara meragukan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k151",
@@ -3402,7 +3562,8 @@
         "Imam Abu Hanifah terkenal sangat berhati-hati dalam berfatwa dan sering menolak pertanyaan yang dirasa terlalu sulit",
         "Berfatwa tanpa ilmu yang cukup dapat menyesatkan umat dan membawa dosa besar",
         "Kehati-hatian dalam fatwa adalah tanda ilmu yang matang, bukan kelemahan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k152",
@@ -3418,7 +3579,8 @@
         "Imam Abu Hanifah sendiri melarang taklid membabi buta kepadanya",
         "Para imam madzhab menginginkan muridnya memahami dalil, bukan sekadar menghafal pendapat",
         "Orang yang mampu berijtihad tidak boleh taklid — ini adalah prinsip ushul fiqih"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k153",
@@ -3434,7 +3596,8 @@
         "Tauhid adalah ilmu pertama yang wajib dipelajari sebelum ilmu fiqih apapun",
         "Urutan belajar agama yang benar dimulai dari aqidah, baru kemudian syariah",
         "Inilah manhaj para nabi: mereka selalu memulai dakwah dengan tauhid"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k154",
@@ -3450,7 +3613,8 @@
         "Mengubah hukum Allah adalah bentuk kesombongan yang mengarah pada kekufuran",
         "Halal dan haram adalah hak prerogatif Allah semata, bukan manusia atau lembaga manapun",
         "Ini menunjukkan betapa seriusnya menjaga hukum-hukum Allah tanpa ditambah atau dikurangi"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k155",
@@ -3466,7 +3630,8 @@
         "Pendapat para sahabat memiliki bobot yang jauh lebih tinggi dari ulama sesudahnya",
         "Imam Abu Hanifah menempatkan dirinya di bawah para sahabat dalam hal keilmuan",
         "Ini adalah kerendahan hati seorang imam besar yang patut diteladani"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k156",
@@ -3482,7 +3647,8 @@
         "Imam Malik sangat keras dalam menolak bid'ah dan menganjurkan ittiba' Sunnah",
         "Mendahulukan pendapat akal di atas Sunnah adalah akar dari semua bid'ah",
         "Peringatan ini berlaku sepanjang zaman — bid'ah selalu hadir dalam wajah yang tampak baik"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k157",
@@ -3498,7 +3664,8 @@
         "Kembali kepada manhaj Salaf adalah satu-satunya jalan perbaikan umat",
         "Masalah umat hari ini tidak bisa diselesaikan dengan inovasi baru yang meninggalkan Sunnah",
         "Perkataan ini adalah prinsip abadi yang berlaku di setiap generasi"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k158",
@@ -3514,7 +3681,8 @@
         "Anggapan bahwa ada ibadah baik yang belum diajarkan Nabi ﷺ adalah tuduhan terhadap kesempurnaan risalah",
         "Islam telah sempurna — tidak ada celah untuk menambahkan ibadah baru apapun alasannya",
         "Ini adalah argumen terkuat membantah konsep 'bid'ah hasanah' dalam ibadah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k159",
@@ -3530,7 +3698,8 @@
         "Berpegang pada Sunnah adalah satu-satunya jalan keselamatan di lautan fitnah",
         "Meninggalkan Sunnah walau sedikit akan membawa seseorang ke arah yang salah",
         "Analogi kapal Nuh sangat tepat: tidak ada jalan lain menuju selamat kecuali masuk ke dalamnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k160",
@@ -3546,7 +3715,8 @@
         "Sabar dan yakin adalah dua pilar iman yang menopang seluruh bangunan agama",
         "Orang yang tidak bisa bersabar akan mudah tergoyahkan imannya",
         "Yaqin (keyakinan teguh) membuat seseorang tidak ragu dalam berislam walau apapun tantangannya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k161",
@@ -3562,7 +3732,8 @@
         "Ilmu yang fardhu kifayah lebih diprioritaskan daripada ibadah sunnah",
         "Menuntut ilmu agama adalah ibadah yang terus mengalirkan pahala selama ilmu itu diamalkan",
         "Imam asy-Syafi'i sendiri dikenal sebagai ulama yang sangat mengutamakan ilmu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k162",
@@ -3578,7 +3749,8 @@
         "Ilmu adalah jalan satu-satunya untuk meraih kebaikan dunia maupun akhirat",
         "Tanpa ilmu agama, ibadah bisa salah; tanpa ilmu dunia, usaha bisa gagal",
         "Perkataan senada juga dinukil dari Ibnu Hajar — menunjukkan prinsip ini disepakati para ulama"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k163",
@@ -3594,7 +3766,8 @@
         "Bertaubat secara terbuka bukanlah kelemahan, justru itu keberanian dan kerendahan hati",
         "Aib yang sebenarnya adalah terus-menerus mengulangi dosa tanpa rasa menyesal",
         "Jangan malu bertaubat — rasa malu yang salah tempat ini yang menghalangi banyak orang dari perbaikan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k164",
@@ -3610,7 +3783,8 @@
         "Ikhlas dan tawadhu' adalah dua sayap yang mengangkat seseorang dalam menuntut ilmu",
         "Kesombongan dalam menuntut ilmu membutakan hati dari menerima kebenaran",
         "Imam asy-Syafi'i adalah contoh ulama yang tawadhu' — beliau sering mengakui kesalahan dan merujuk dari pendapatnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k165",
@@ -3626,7 +3800,8 @@
         "Kesibukan kepemimpinan dan jabatan membuat seseorang kehilangan waktu untuk belajar mendalam",
         "Ilmu harus diutamakan sebelum jabatan — ini nasihat emas untuk generasi muda",
         "Banyak pemimpin yang lemah agamanya karena terburu-buru memegang kekuasaan sebelum matang ilmunya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k166",
@@ -3642,7 +3817,8 @@
         "Menolak hadits shahih dengan alasan apapun adalah jalan yang sangat berbahaya",
         "Imam Ahmad adalah pembela Sunnah terbesar di zamannya — penjara tidak membuatnya mundur",
         "Kedudukan hadits Nabi ﷺ adalah hujjah yang tidak bisa digantikan oleh pendapat siapapun"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k167",
@@ -3658,7 +3834,8 @@
         "Hirarki ittiba': Nabi ﷺ → Sahabat → Tabi'in (boleh memilih)",
         "Tidak semua pendapat tabi'in mengikat, berbeda dengan Nabi ﷺ dan para sahabat",
         "Memahami hirarki ini penting agar seseorang tahu seberapa kuat suatu hujjah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k168",
@@ -3674,7 +3851,8 @@
         "Imam Ahmad mengucapkan ini saat dipenjara dan dicambuk — bukan sekadar ucapan teoritis",
         "Perbandingan antara ujian dunia dan azab akhirat seharusnya memudahkan kita menerima cobaan",
         "Sabar atas ujian adalah bukti nyata keimanan yang tidak bisa dipalsukan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k169",
@@ -3690,7 +3868,8 @@
         "Imam Ahmad meletakkan Al-Qur'an dan Sunnah sebagai sumber pertama dan kedua yang tidak tergantikan",
         "Qiyas hanya digunakan saat darurat — ini berbeda dari madzhab yang lebih luas menggunakannya",
         "Memahami hierarki sumber hukum ini adalah fondasi seorang faqih yang sebenarnya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k170",
@@ -3706,7 +3885,8 @@
         "Wara' yang sejati dimulai dari menjaga lisan dari perkataan sia-sia dan dusta",
         "Lisan adalah anggota badan yang paling mudah berbuat dosa tapi sering diabaikan",
         "Imam Ahmad sangat terkenal dengan sikap diamnya — beliau berbicara hanya bila perlu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k171",
@@ -3722,7 +3902,8 @@
         "Wara' bukan sekadar meninggalkan yang haram, tetapi juga menjauhi yang meragukan",
         "Seseorang yang ragu antara halal dan haram harus memilih yang paling aman bagi agamanya",
         "Kehati-hatian ini adalah tanda ketakwaan dan kepedulian terhadap kesucian amal"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k172",
@@ -3738,7 +3919,8 @@
         "Menjaga keikhlasan niat adalah perjuangan terberat bahkan bagi ulama besar sekalipun",
         "Niat selalu berubah; seseorang harus terus-menerus memperbarui dan memeriksa niatnya",
         "Bahwa imam sekelas Sufyan pun merasa berat menjaga niat mengajarkan kita untuk tidak sombong"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k173",
@@ -3754,7 +3936,8 @@
         "Mendukung ahlu sunnah dan menjauhi ahlu bid'ah adalah bagian dari membela agama",
         "Membantu orang yang beramal dengan Sunnah adalah amal sunnah itu sendiri",
         "Al-Hijr (menjauhi) pelaku bid'ah adalah obat yang digunakan para ulama untuk menjaga Sunnah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k174",
@@ -3770,7 +3953,8 @@
         "Para Salaf memandang dunia yang datang kepada mereka sebagai alat untuk mempersiapkan akhirat",
         "Pandangan ini mengubah rizki duniawi menjadi sarana ibadah dan investasi akhirat",
         "Dengan pandangan seperti ini, seseorang tidak akan pernah terlena oleh dunia yang datang kepadanya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k175",
@@ -3786,7 +3970,8 @@
         "Mengenal diri sendiri (hakikat kelemahan dan kekurangan) melahirkan kezuhudan terhadap dunia",
         "Mengenal Allah dengan benar melahirkan keberanian dan ketenangan menghadapi semua cobaan",
         "Keduanya saling berkaitan: semakin mengenal diri, semakin mengenal Rabb-nya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k176",
@@ -3802,7 +3987,8 @@
         "Kejujuran adalah pondasi persaudaraan yang sesungguhnya, bukan saling memuji dan membenarkan",
         "Teman yang selalu membenarkan kita adalah musuh tersembunyi yang membiarkan kita dalam kesalahan",
         "Menerima kritik dari saudara yang tulus adalah tanda kecerdasan dan kebesaran jiwa"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k177",
@@ -3818,7 +4004,8 @@
         "Persahabatan yang baik adalah yang saling mengingatkan kebaikan dan saling mendoakan",
         "Teman yang tidak memberi pengaruh positif adalah beban, bukan bantuan",
         "Pilihlah teman yang kehadirannya mengingatkanmu kepada Allah dan kebaikannya menginspirasimu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k178",
@@ -3834,7 +4021,8 @@
         "Kualitas hati lebih penting dari kuantitas amal lahiriah",
         "Amal yang banyak tanpa hati yang hadir bersama Allah tidak mencapai tujuannya yang sejati",
         "Muhasabah (introspeksi) hati adalah amalan para Salaf yang selalu mereka lakukan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k179",
@@ -3850,7 +4038,8 @@
         "Tauhid yang sempurna adalah kunci masuk surga tanpa melalui proses hisab yang berat",
         "Menyempurnakan tauhid berarti membersihkannya dari segala noda syirik, bid'ah, dan kemunafikan",
         "Ini adalah motivasi terbesar untuk terus mempelajari dan mengamalkan tauhid dengan sungguh-sungguh"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k180",
@@ -3866,7 +4055,8 @@
         "Mengenal kejahatan adalah syarat menghindarinya; mengenal syirik adalah syarat menghindari syirik",
         "Tidak cukup hanya belajar yang benar tanpa mengenal yang salah agar bisa membedakannya",
         "Para Salaf mempelajari keburukan bukan untuk mengamalkannya, tetapi untuk menghindarinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k181",
@@ -3882,7 +4072,8 @@
         "Standar kebenaran dalam agama adalah dalil Al-Qur'an dan Sunnah, bukan pendapat tokoh manapun",
         "Mengembalikan semua permasalahan kepada dalil adalah manhaj Ahlus Sunnah yang wajib dijaga",
         "Ini bukan berarti meremehkan ulama, tetapi menempatkan dalil di atas segalanya sesuai wasiat para imam"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k182",
@@ -3898,7 +4089,8 @@
         "Tawadhu' bukan kelemahan, melainkan kekuatan yang mendekatkan kepada Allah",
         "Allah mengangkat derajat orang yang merendahkan diri karena-Nya",
         "Ulama yang benar-benar berilmu selalu paling rendah hati karena mereka paling tahu keterbatasan dirinya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k183",
@@ -3914,7 +4106,8 @@
         "Birrul walidain ditempatkan Al-Qur'an langsung setelah perintah tauhid — ini menunjukkan kedudukannya",
         "Tidak ada penghalang yang membolehkan seseorang durhaka kepada orang tuanya kecuali dalam kemaksiatan kepada Allah",
         "Keridhaan Allah terkait dengan keridhaan orang tua, dan kemurkaan-Nya terkait dengan kemurkaan mereka"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k184",
@@ -3930,7 +4123,8 @@
         "Wara' mendorong seseorang untuk selalu memilih jalan yang paling selamat bagi agamanya",
         "Menghindari syubhat (hal meragukan) adalah pagar pelindung dari terjerumus ke yang haram",
         "Seseorang yang terbiasa dengan syubhat lama-lama tidak akan merasa berat dengan yang haram"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k185",
@@ -3946,7 +4140,8 @@
         "Al-Qur'an tidak hanya menyembuhkan penyakit rohani tetapi juga memberikan solusi bagi persoalan hidup",
         "Orang yang sungguh-sungguh kembali kepada Al-Qur'an dalam setiap masalah pasti akan menemukan jalan keluarnya",
         "Meninggalkan Al-Qur'an adalah sebab utama dari berbagai penyakit hati dan kesulitan hidup"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k186",
@@ -3962,7 +4157,8 @@
         "Tawadhu' yang benar bukan merendahkan diri secara semu, tetapi mengenal hakikat diri yang sesungguhnya",
         "Orang yang tawadhu' menempatkan dirinya sesuai porsinya — tidak merendahkan diri melebihi batas pun tidak melebihi kadarnya",
         "Mengenal diri dengan jujur adalah pangkal dari segala akhlak yang mulia"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k187",
@@ -3978,7 +4174,8 @@
         "Birrul walidain adalah fardhu 'ain — kewajiban individual yang tidak bisa diwakili siapapun",
         "Imam Nawawi menempatkan birrul walidain sebagai amal terbaik kedua setelah iman",
         "Mengabaikan orang tua dengan alasan kesibukan ibadah lain adalah kesalahan dalam memahami prioritas agama"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k188",
@@ -3994,7 +4191,8 @@
         "Wara' adalah sikap preventif: mencegah sebelum terjadi bukan menyelesaikan setelah jatuh",
         "Perbedaan antara wara' dan was-was: wara' berdasarkan ilmu, was-was berdasarkan keraguan tanpa dasar",
         "Seseorang yang wara' hidupnya lebih tenang karena selalu berada di zona yang jelas kehalalannya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k189",
@@ -4010,7 +4208,8 @@
         "Tawadhu' adalah induk dari seluruh akhlak mulia: kesabaran, kedermawanan, kasih sayang, dan lainnya",
         "Sombong adalah akar dari semua akhlak tercela: dengki, kejam, pelit, dan sebagainya",
         "Memperbaiki dua sifat ini berarti memperbaiki seluruh akhlak sekaligus"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k190",
@@ -4026,7 +4225,8 @@
         "Standar ukhuwah yang benar adalah menyamakan saudara dengan diri sendiri dalam cinta dan pemberian",
         "Seseorang yang hanya mengambil manfaat dari saudaranya tanpa memberi belum memenuhi hak ukhuwah",
         "Mencintai kebaikan untuk saudara seagama adalah tanda iman yang sempurna"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k191",
@@ -4042,7 +4242,8 @@
         "Menyandingkan hak orang tua dengan hak Allah adalah penghormatan tertinggi yang tidak diberikan kepada selain keduanya",
         "Ini menunjukkan bahwa durhaka kepada orang tua hampir setara dengan kedurhakaan kepada Allah",
         "Menaati orang tua dalam kebaikan adalah bagian dari menaati Allah"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k192",
@@ -4058,7 +4259,8 @@
         "Konsistensi antara sikap tersembunyi dan terang-terangan adalah tanda wara' yang sesungguhnya",
         "Seseorang yang bertakwa hanya di depan umum belum mencapai derajat wara'",
         "Muraqabatullah (merasa selalu diawasi Allah) adalah kunci untuk mencapai konsistensi ini"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k193",
@@ -4074,7 +4276,8 @@
         "Persatuan umat Islam bukan pilihan, melainkan kewajiban yang Allah perintahkan dalam Al-Qur'an",
         "Perpecahan melemahkan umat dan menggembirakan musuh; persatuan menguatkan dan memberkati",
         "Membangun ukhuwah dimulai dari diri sendiri: memaafkan, tidak berburuk sangka, dan mendoakan sesama Muslim"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k194",
@@ -4090,7 +4293,8 @@
         "Menerima kebenaran dari yang lebih muda atau lebih rendah statusnya adalah tanda kebesaran jiwa",
         "Sombong menghalangi seseorang dari menerima kebenaran; tawadhu' membuka hati untuk menerimanya",
         "Kebenaran tidak dilihat dari siapa yang mengucapkan tetapi dari isi perkataannya"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k195",
@@ -4106,7 +4310,8 @@
         "Kedurhakaaan kepada orang tua seringkali lahir dari tidak menyadari pengorbanan yang telah mereka berikan",
         "Merenungi jasa orang tua adalah obat yang efektif untuk melunakkan hati yang keras terhadap mereka",
         "Seorang anak yang menghitung jasa ibunya pasti akan kehabisan hitungan sebelum selesai"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k196",
@@ -4122,7 +4327,8 @@
         "Menyebarkan hadits dha'if atau palsu tanpa keterangan adalah bentuk kelalaian dalam amanah ilmu",
         "Wara' dalam meriwayatkan hadits berarti tidak menyebarkan sesuatu kecuali setelah memastikan keshahihannya",
         "Kehati-hatian dalam menyampaikan hadits adalah bentuk nyata dari mencintai Nabi ﷺ"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k197",
@@ -4138,7 +4344,8 @@
         "'Uquq (durhaka orang tua) disebutkan Nabi ﷺ setelah syirik dalam daftar dosa-dosa terbesar",
         "Murka orang tua adalah pintu dari murka Allah; keridhaan mereka adalah jalan keridhaan-Nya",
         "Meminta maaf dan memperbaiki hubungan dengan orang tua adalah taubat yang harus segera dilakukan"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k198",
@@ -4154,7 +4361,8 @@
         "Ilmu agama memiliki keistimewaan yang tidak dimiliki ilmu apapun: mencarinya adalah ibadah itu sendiri",
         "Mempelajari ilmu agama bersama-sama (mudzakarah) adalah bentuk tasbih dan dzikir kepada Allah",
         "Tidak ada investasi terbaik dari waktu dan energi melebihi menuntut ilmu agama yang bermanfaat"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k199",
@@ -4170,7 +4378,8 @@
         "Kebodohan adalah sumber permusuhan, sedangkan ilmu adalah sumber penghargaan dan keadilan",
         "Banyak perselisihan dan perpecahan berakar dari kebodohan masing-masing pihak tentang yang lain",
         "Menuntut ilmu dengan niat yang benar menjadikan seseorang lebih adil, bijak, dan penyayang"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     },
     {
       "id": "k200",
@@ -4186,7 +4395,8 @@
         "Standar iman yang sempurna adalah menyamakan hak saudara seagama dengan hak diri sendiri",
         "Seseorang tidak bisa mengklaim sempurnanya iman selama masih pilih kasih antara kepentingan diri dan saudara",
         "Mengamalkan hak ukhuwah ini secara konsisten adalah yang menjadikan komunitas Muslim kuat dan bersatu"
-      ]
+      ],
+      "verifikasi": "belum_diverifikasi"
     }
   ]
 }

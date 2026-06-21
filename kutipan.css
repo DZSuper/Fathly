@@ -313,6 +313,106 @@
   color: #00ff88;
 }
 
+/* ── BADGE STATUS VERIFIKASI ─────────────────────── */
+.kutipan-verif-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 5px;
+  padding: 2px 9px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.kutipan-verif-badge.verified {
+  background: rgba(58, 191, 128, 0.14);
+  color: #3abf80;
+  border: 1px solid rgba(58, 191, 128, 0.3);
+}
+
+.kutipan-verif-badge.unverified {
+  background: rgba(150, 160, 180, 0.12);
+  color: #9ba3b8;
+  border: 1px solid rgba(150, 160, 180, 0.25);
+}
+
+.kutipan-verif-badge.flagged {
+  background: rgba(230, 120, 60, 0.14);
+  color: #e6783c;
+  border: 1px solid rgba(230, 120, 60, 0.35);
+}
+
+/* Catatan verifikasi (kotak penjelasan di bawah header) */
+.kutipan-verif-note {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  border-radius: 9px;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  font-size: 0.71rem;
+  line-height: 1.55;
+}
+
+.kutipan-verif-note.ok {
+  background: rgba(58, 191, 128, 0.07);
+  border: 1px solid rgba(58, 191, 128, 0.2);
+  color: #b8e8cc;
+}
+
+.kutipan-verif-note.pending {
+  background: rgba(150, 160, 180, 0.06);
+  border: 1px solid rgba(150, 160, 180, 0.18);
+  color: #c4cad8;
+}
+
+.kutipan-verif-note.warning {
+  background: rgba(230, 120, 60, 0.08);
+  border: 1px solid rgba(230, 120, 60, 0.3);
+  color: #f8d4bc;
+}
+
+.kutipan-verif-note-icon {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.kutipan-verif-note-text {
+  flex: 1;
+}
+
+/* Mini badge (di kartu kutipan dalam panel ulama) */
+.kutipan-verif-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.kutipan-verif-mini.verified {
+  background: rgba(58, 191, 128, 0.18);
+  color: #3abf80;
+}
+
+.kutipan-verif-mini.unverified {
+  background: rgba(150, 160, 180, 0.18);
+  color: #9ba3b8;
+}
+
+.kutipan-verif-mini.flagged {
+  background: rgba(230, 120, 60, 0.2);
+  color: #e6783c;
+}
+
 /* Tauhid & Aqidah — biru langit */
 .kutipan-tema-badge[data-tema="tauhid"] {
   background: rgba(56, 189, 248, 0.15);
@@ -1067,8 +1167,13 @@
 .kutipan-entry-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 0;
+}
+
+.kutipan-entry-header .kutipan-bookmark-star {
+  margin-left: auto;
 }
 
 /* Tombol bintang favorit */
