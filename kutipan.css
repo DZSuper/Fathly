@@ -313,6 +313,150 @@
   color: #00ff88;
 }
 
+/* ── BADGE NOMOR URUT ─────────────────────────────── */
+.kutipan-num-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  background: rgba(212, 168, 73, 0.12);
+  color: var(--gold);
+  border: 1px solid rgba(212, 168, 73, 0.28);
+  font-variant-numeric: tabular-nums;
+}
+
+.kutipan-num-badge.mini {
+  margin-bottom: 0;
+  padding: 1px 6px;
+  font-size: 0.58rem;
+}
+
+/* ── BADGE STATUS VERIFIKASI (4 status) ──────────── */
+.kutipan-verif-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 5px;
+  padding: 2px 9px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+/* 1. Terverifikasi — hijau */
+.kutipan-verif-badge.verified {
+  background: rgba(58, 191, 128, 0.14);
+  color: #3abf80;
+  border: 1px solid rgba(58, 191, 128, 0.3);
+}
+
+/* 2. Perlu Ditinjau — kuning-oranye */
+.kutipan-verif-badge.review {
+  background: rgba(235, 165, 35, 0.14);
+  color: #eba523;
+  border: 1px solid rgba(235, 165, 35, 0.35);
+}
+
+/* 3. Tidak Benar — merah */
+.kutipan-verif-badge.invalid {
+  background: rgba(225, 70, 70, 0.14);
+  color: #e84646;
+  border: 1px solid rgba(225, 70, 70, 0.35);
+}
+
+/* 4. Tidak Ditemukan — ungu (sudah dicari tapi tidak ketemu) */
+.kutipan-verif-badge.notfound {
+  background: rgba(155, 110, 215, 0.14);
+  color: #b48ee8;
+  border: 1px solid rgba(155, 110, 215, 0.35);
+}
+
+/* 5. Belum Diverifikasi — abu-abu */
+.kutipan-verif-badge.unverified {
+  background: rgba(150, 160, 180, 0.12);
+  color: #9ba3b8;
+  border: 1px solid rgba(150, 160, 180, 0.25);
+}
+
+/* Catatan verifikasi (kotak penjelasan di bawah header) */
+.kutipan-verif-note {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  border-radius: 9px;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  font-size: 0.71rem;
+  line-height: 1.55;
+}
+
+.kutipan-verif-note.ok {
+  background: rgba(58, 191, 128, 0.07);
+  border: 1px solid rgba(58, 191, 128, 0.2);
+  color: #b8e8cc;
+}
+
+.kutipan-verif-note.review {
+  background: rgba(235, 165, 35, 0.08);
+  border: 1px solid rgba(235, 165, 35, 0.3);
+  color: #f5dba0;
+}
+
+.kutipan-verif-note.invalid {
+  background: rgba(225, 70, 70, 0.08);
+  border: 1px solid rgba(225, 70, 70, 0.3);
+  color: #f8b8b8;
+}
+
+.kutipan-verif-note.notfound {
+  background: rgba(155, 110, 215, 0.08);
+  border: 1px solid rgba(155, 110, 215, 0.3);
+  color: #ddc8f5;
+}
+
+.kutipan-verif-note.pending {
+  background: rgba(150, 160, 180, 0.06);
+  border: 1px solid rgba(150, 160, 180, 0.18);
+  color: #c4cad8;
+}
+
+.kutipan-verif-note-icon {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.kutipan-verif-note-text {
+  flex: 1;
+}
+
+/* Mini badge (di kartu kutipan dalam panel ulama) */
+.kutipan-verif-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.kutipan-verif-mini.verified   { background: rgba(58, 191, 128, 0.18); color: #3abf80; }
+.kutipan-verif-mini.review     { background: rgba(235, 165, 35, 0.2);  color: #eba523; }
+.kutipan-verif-mini.invalid    { background: rgba(225, 70, 70, 0.2);   color: #e84646; }
+.kutipan-verif-mini.notfound   { background: rgba(155, 110, 215, 0.2);  color: #b48ee8; }
+.kutipan-verif-mini.unverified { background: rgba(150, 160, 180, 0.18);color: #9ba3b8; }
+
 /* Tauhid & Aqidah — biru langit */
 .kutipan-tema-badge[data-tema="tauhid"] {
   background: rgba(56, 189, 248, 0.15);
@@ -1067,8 +1211,13 @@
 .kutipan-entry-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 0;
+}
+
+.kutipan-entry-header .kutipan-bookmark-star {
+  margin-left: auto;
 }
 
 /* Tombol bintang favorit */

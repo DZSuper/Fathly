@@ -356,14 +356,42 @@
       if (k.jilid && k.jilid !== '—') keterangan.push(k.jilid);
       if (k.halaman && k.halaman !== '—') keterangan.push(k.halaman);
 
+      // Badge status verifikasi (4 status)
+      var verif = k.verifikasi || 'belum_diverifikasi';
+      var VERIF_MAP = {
+        terverifikasi:      { cls: 'verified',    icon: '✓', label: 'Terverifikasi' },
+        perlu_ditinjau:      { cls: 'review',      icon: '⚠', label: 'Perlu Ditinjau' },
+        tidak_benar:         { cls: 'invalid',     icon: '✗', label: 'Tidak Benar' },
+        tidak_ditemukan:     { cls: 'notfound',    icon: '∅', label: 'Tidak Ditemukan' },
+        belum_diverifikasi:  { cls: 'unverified',  icon: '?', label: 'Belum Diverifikasi' },
+      };
+      var vInfo = VERIF_MAP[verif] || VERIF_MAP.belum_diverifikasi;
+      var verifBadgeHtml = '<span class="kutipan-verif-badge ' + vInfo.cls + '" title="' + esc(vInfo.label) + '">' + vInfo.icon + ' ' + esc(vInfo.label) + '</span>';
+      var verifNoteHtml  = '';
+      if (k.catatan_verifikasi) {
+        var noteCls = (verif === 'terverifikasi') ? 'ok' : (verif === 'perlu_ditinjau') ? 'review' : (verif === 'tidak_benar') ? 'invalid' : (verif === 'tidak_ditemukan') ? 'notfound' : 'pending';
+        verifNoteHtml =
+          '<div class="kutipan-verif-note ' + noteCls + '">' +
+            '<span class="kutipan-verif-note-icon">' + vInfo.icon + '</span>' +
+            '<span class="kutipan-verif-note-text">' + esc(k.catatan_verifikasi) + '</span>' +
+          '</div>';
+      }
+
+      // Nomor urut (berdasarkan ID, stabil meski difilter)
+      var kNum = parseInt(k.id.replace(/[^0-9]/g, ''), 10) || 0;
+      var numBadgeHtml = '<span class="kutipan-num-badge">No. ' + kNum + '</span>';
+
       html +=
         '<div class="kutipan-entry" id="kentry-' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
           '<div class="kutipan-entry-header">' +
+            numBadgeHtml +
             '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
+            verifBadgeHtml +
             '<button class="kutipan-bookmark-star' + (isBookmarked(k.id) ? ' saved' : '') + '" data-id="' + esc(k.id) + '" title="' + (isBookmarked(k.id) ? 'Hapus dari favorit' : 'Simpan ke favorit') + '">' +
               (isBookmarked(k.id) ? '★' : '☆') +
             '</button>' +
           '</div>' +
+          verifNoteHtml +
 
           // Teks Arab (langsung tampil)
           '<div class="kutipan-arab-box open" id="karab-' + esc(k.id) + '">' +
@@ -384,7 +412,7 @@
             '</div>' +
             '<div class="kutipan-source-rows">' +
               '<div class="kutipan-source-row"><span class="kutipan-source-key">Kitab</span><span class="kutipan-source-val main">' + esc(k.kitab) + '</span></div>' +
-              '<div class="kutipan-source-row"><span class="kutipan-source-key">Bab/Pembahasan</span><span class="kutipan-source-val">' + esc(k.bab) + '</span></div>' +
+              ((k.bab && k.bab !== '—') ? '<div class="kutipan-source-row"><span class="kutipan-source-key">Bab/Pembahasan</span><span class="kutipan-source-val">' + esc(k.bab) + '</span></div>' : '') +
               (keterangan.length ? '<div class="kutipan-source-row"><span class="kutipan-source-key">Keterangan</span><span class="kutipan-source-val">' + esc(keterangan.join(' · ')) + '</span></div>' : '') +
             '</div>' +
           '</div>' +
@@ -542,8 +570,21 @@
       ? '<div class="kutipan-empty"><div class="kutipan-empty-icon">📭</div><div class="kutipan-empty-title">Belum ada kutipan</div></div>'
       : milik.map(function (k) {
           var tl = TEMA_LABEL_MAP[k.tema] || k.tema;
+          var kVerif = k.verifikasi || 'belum_diverifikasi';
+          var MINI_MAP = {
+            terverifikasi:      { cls: 'verified',   icon: '✓' },
+            perlu_ditinjau:      { cls: 'review',     icon: '⚠' },
+            tidak_benar:         { cls: 'invalid',    icon: '✗' },
+            tidak_ditemukan:     { cls: 'notfound',   icon: '∅' },
+            belum_diverifikasi:  { cls: 'unverified', icon: '?' },
+          };
+          var mInfo = MINI_MAP[kVerif] || MINI_MAP.belum_diverifikasi;
+          var kVerifMini = '<span class="kutipan-verif-mini ' + mInfo.cls + '">' + mInfo.icon + '</span>';
+          var kNumMini = parseInt(k.id.replace(/[^0-9]/g, ''), 10) || 0;
           return '<button class="kup-quote-card" data-kutipan-id="' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
+            '<span class="kutipan-num-badge mini">No. ' + kNumMini + '</span>' +
             '<span class="kutipan-tema-badge">' + esc(tl) + '</span>' +
+            kVerifMini +
             '<div class="kup-quote-preview">"' + esc(k.teks.substring(0, 100)) + (k.teks.length > 100 ? '…' : '') + '"</div>' +
             '<div class="kup-quote-meta">' + esc(k.kitab) + ' · ' + esc(k.halaman) + '</div>' +
           '</button>';
