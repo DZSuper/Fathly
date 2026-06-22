@@ -26,33 +26,26 @@
     return idx === -1; // true = baru ditambah
   }
 
+  // TEMA_LIST & TEMA_LABEL_MAP dibangun DINAMIS dari data JSON (tema_list)
+  // setelah kutipan.json berhasil dimuat — lihat buildTemaList().
+  // Daftar di bawah ini hanya fallback darurat jika tema_list kosong/gagal dimuat.
   var TEMA_LIST = [
-    { id: 'semua',   label: 'Semua',           icon: '📋' },
-    { id: 'tauhid',  label: 'Tauhid & Aqidah', icon: '☀️' },
-    { id: 'hati',    label: 'Hati & Jiwa',     icon: '🫀' },
-    { id: 'ilmu',    label: 'Ilmu & Belajar',  icon: '📚' },
-    { id: 'sunnah',  label: 'Sunnah & Bid\'ah',icon: '🔆' },
-    { id: 'ibadah',  label: 'Ibadah',           icon: '🕌' },
-    { id: 'akhlak',  label: 'Akhlak & Adab',   icon: '✨' },
-    { id: 'ikhlas',  label: 'Ikhlas & Niat',   icon: '💎' },
-    { id: 'taubat',  label: 'Taubat',           icon: '🌿' },
-    { id: 'sabar',   label: 'Sabar',            icon: '⚓' },
-    { id: 'zuhud',   label: 'Zuhud & Dunia',   icon: '🍃' },
-    { id: 'nasihat', label: 'Nasihat',          icon: '🗒️' },
-    { id: 'quran',   label: 'Al-Qur\'an',      icon: '📖' },
-    { id: 'akhirat', label: 'Akhirat & Maut',  icon: '🌙' },
-    { id: 'doa',     label: 'Doa & Dzikir',    icon: '🤲' },
-    { id: 'syukur',  label: 'Syukur',           icon: '🌟' },
-    { id: 'tawakal',       label: 'Tawakkal',          icon: '🏹' },
-    { id: 'tawadhu',       label: "Tawadhu'",          icon: '🌾' },
-    { id: 'ukhuwah',       label: 'Ukhuwah',            icon: '🤝' },
-    { id: 'birulwalidain', label: 'Birrul Walidain',    icon: '🏡' },
-    { id: 'wara',          label: "Wara'",              icon: '⚖️' },
+    { id: 'semua', label: 'Semua', icon: '📋' },
   ];
 
   // Nama tema untuk label badge di entry
   var TEMA_LABEL_MAP = {};
-  TEMA_LIST.forEach(function (t) { TEMA_LABEL_MAP[t.id] = t.label; });
+
+  function buildTemaList() {
+    TEMA_LIST = [{ id: 'semua', label: 'Semua', icon: '📋' }];
+    var src = (_kutipanData && _kutipanData.tema_list) || [];
+    src.forEach(function (t) {
+      if (!t || !t.id) return;
+      TEMA_LIST.push({ id: t.id, label: t.label || t.id, icon: t.icon || '🏷️' });
+    });
+    TEMA_LABEL_MAP = {};
+    TEMA_LIST.forEach(function (t) { TEMA_LABEL_MAP[t.id] = t.label; });
+  }
 
   // ── HELPERS ─────────────────────────────────
   function esc(str) {
@@ -136,6 +129,7 @@
 
   // ── BANGUN UI LENGKAP ────────────────────────
   function buildKutipanUI() {
+    buildTemaList();
     renderSidebar();
     renderTopbar();
     renderEntries(_aktifTema);
