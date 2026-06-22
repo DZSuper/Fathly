@@ -1530,7 +1530,8 @@
         "Ulama yang tawadhu' adalah rahmat bagi umat, sementara ulama yang sombong adalah fitnah",
         "Ilmu dan kemuliaan yang tidak disertai tawadhu' akan menjadi musibah bagi pemiliknya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Tema (tawadhu' bagi ahli ilmu) konsisten dengan gaya Ibnul Jauzi di Shaidul Khathir, namun redaksi Arab persis ini tidak saya temukan dalam sumber yang bisa diverifikasi."
     },
     {
       "id": "k032",
@@ -1543,11 +1544,12 @@
       "halaman": "Hal. 271",
       "tema": "ibadah",
       "faedah": [
-        "Sedekah adalah salah satu penghapus dosa yang paling efektif setelah taubat",
-        "Rutin bersedekah walau sedikit lebih baik daripada sekali banyak lalu berhenti",
-        "Sedekah bukan hanya harta — senyum, ilmu, tenaga, dan doa juga termasuk sedekah"
+        "Sedekah adalah salah satu sebab terhapusnya dosa-dosa kecil",
+        "Perumpamaan air memadamkan api menggambarkan betapa cepat dan nyatanya efek sedekah",
+        "Anjuran ini berlaku untuk sedekah besar maupun kecil"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Tirmidzi no. 2616, Ibnu Majah no. 3973, an-Nasa'i, Ahmad — dinilai hasan oleh Ibnu Hajar dan shahih oleh al-Albani), diriwayatkan dari Mu'adz bin Jabal. Bukan ucapan asli Imam an-Nawawi — beliau hanya mencantumkannya di Riyadhus Shalihin sebagai kutipan hadits."
     },
     {
       "id": "k033",
@@ -1564,7 +1566,8 @@
         "Kecintaan kepada Nabi ﷺ yang terwujud dalam shalawat adalah bagian dari iman",
         "Allah bershalawat kepada Nabi ﷺ — maka bershalawat artinya kita mengikuti Allah dan malaikat-Nya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Kitab & tema cocok kuat — Jala' al-Afham memang membahas ~39 faedah shalawat termasuk 'sebab hidayah dan hidupnya hati' (faedah ke-35). Namun redaksi Arab persis kalimat ini belum saya temukan verbatim; kemungkinan ini ringkasan/parafrase dari beberapa faedah, bukan kutipan langsung."
     },
     {
       "id": "k034",
@@ -1577,11 +1580,12 @@
       "halaman": "Hal. 74",
       "tema": "taubat",
       "faedah": [
-        "Standar besar-kecilnya dosa bukan dari perbuatannya sendiri, melainkan dari siapa yang didurhaki",
-        "Menganggap remeh dosa kecil adalah jalan masuk ke dalam dosa besar",
-        "Merenungi keagungan Allah akan melahirkan rasa takut dan hati-hati dalam setiap langkah"
+        "Ukuran besar-kecilnya dosa bukan dari bentuk perbuatannya, tapi dari siapa yang didurhakai",
+        "Memandang remeh dosa kecil adalah tanda lemahnya pengagungan terhadap Allah",
+        "Renungan ini mendorong sikap waspada terhadap dosa sekecil apapun"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan ini secara konsisten dinisbatkan kepada BILAL BIN SA'AD (seorang tabi'in, ahli nasihat), dengan sanad shahih melalui al-Auza'i — diriwayatkan Abu Nu'aim dalam Hilyatul Auliya' (5/223). Bukan perkataan Ibnu Taimiyah, dan sitasi 'Majmu' al-Fatawa Jilid 10 Hal. 74' tidak dapat saya temukan padanannya."
     },
     {
       "id": "k035",
@@ -1598,7 +1602,8 @@
         "Siapapun yang mengagungkan sesuatu lebih dari Allah, ia telah menyekutukan Allah dalam pengagungan",
         "Ta'dhim kepada Allah lahir dari ilmu tentang nama-nama dan sifat-sifat-Nya yang Maha Sempurna"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Tema (pengagungan kepada Allah) sesuai dengan pembahasan Madarijus Salikin, namun redaksi Arab persis ini tidak saya temukan dalam sumber yang bisa diverifikasi."
     },
     {
       "id": "k036",
@@ -1611,11 +1616,12 @@
       "halaman": "Hal. 62",
       "tema": "nasihat",
       "faedah": [
-        "Dua nikmat ini sering diabaikan justru karena terlalu mudah diperoleh — sehingga tidak disyukuri",
-        "Waktu adalah modal paling berharga seorang hamba; sekali berlalu tidak akan pernah kembali",
-        "Memanfaatkan sehat dan waktu luang untuk beramal shalih adalah tanda kecerdasan"
+        "Sehat dan waktu luang adalah dua nikmat yang sering disia-siakan manusia",
+        "Banyak orang baru menyadari nilai kedua nikmat ini setelah kehilangannya",
+        "Memanfaatkan sehat dan waktu luang untuk ketaatan adalah tanda kecerdasan seorang mukmin"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Bukhari no. 6412), diriwayatkan dari Ibnu Abbas radhiyallahu 'anhuma. Bukan ucapan asli Imam an-Nawawi — sama seperti k032, beliau hanya mencantumkannya di Riyadhus Shalihin."
     },
     {
       "id": "k037",
@@ -1628,11 +1634,12 @@
       "halaman": "Hal. 5",
       "tema": "ilmu",
       "faedah": [
-        "Perkataan ini mendorong setiap orang untuk mengembangkan keahliannya dan tidak berpuas diri",
-        "Keahlian yang paling mulia adalah ilmu agama yang bermanfaat bagi diri sendiri dan orang lain",
-        "Seseorang dikenal dan dihargai sesuai ilmu dan amal yang ia miliki, bukan sekadar nasab atau harta"
+        "Nilai seseorang ditentukan oleh keahlian dan kemampuannya, bukan oleh nasab atau status sosial",
+        "Ungkapan ini mendorong setiap orang untuk menguasai suatu bidang dengan baik",
+        "Semakin tinggi keahlian seseorang, semakin tinggi pula manfaat yang bisa ia berikan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan ini secara luas dan konsisten dinisbatkan kepada ALI BIN ABI THALIB radhiyallahu 'anhu (termuat dalam Nahjul Balaghah dan berbagai kitab adab). Bukan ucapan Ibnu Qudamah, dan sitasi 'Raudhah an-Nazhir, Hal. 5' tidak dapat saya temukan padanannya."
     },
     {
       "id": "k038",
@@ -1649,7 +1656,8 @@
         "Seorang mukmin sejati ingin kebaikan untuk saudaranya sebagaimana untuk dirinya sendiri",
         "Cermin yang baik menampilkan apa adanya — begitu pula nasihat yang jujur"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Frasa inti 'Mukmin adalah cermin saudaranya' sebenarnya HADITS (HR. Abu Dawud/Tirmidzi, dari Abu Hurairah). Ibnu Rajab memang mengutip & membahasnya dalam Jami'ul Ulum wal Hikam (mengutip ucapan Bilal bin Sa'd), tapi bukan ucapan asli Ibnu Rajab. Tambahan '...yuriihi 'uyuubahu birifq' tidak ditemukan dalam sumber yang saya cek — kemungkinan tambahan parafrase."
     },
     {
       "id": "k039",
@@ -1666,7 +1674,8 @@
         "Persiapan terbaik menghadapi kematian adalah memperbarui taubat dan memperbanyak amal shalih",
         "Kematian adalah gerbang menuju kehidupan yang sesungguhnya — maka persiapkanlah dengan sebaik-baiknya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Tema (memperbanyak mengingat kematian) sangat konsisten dengan pembahasan Shaidul Khathir, namun redaksi Arab persis ini tidak saya temukan dalam sumber yang bisa diverifikasi."
     },
     {
       "id": "k040",
@@ -1683,7 +1692,8 @@
         "Merasa aman dari azab dan tipu daya Allah adalah salah satu dosa terbesar yang dilarang Al-Qur'an",
         "Orang beriman hidup antara rasa takut dan harap — tidak pernah terlena"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Tema (khauf & tidak merasa aman dari makar Allah) adalah pembahasan inti Latha'if al-Ma'arif karya Ibnu Rajab, namun redaksi Arab persis ini tidak saya temukan dalam sumber yang bisa diverifikasi."
     },
     {
       "id": "k041",
@@ -1700,7 +1710,8 @@
         "Taubat adalah obat satu-satunya bagi luka dosa; semakin cepat, semakin kecil bekasnya",
         "Kerasnya hati yang tidak terasa adalah tanda bahwa luka dosa sudah sangat parah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Tema & kitab sangat sesuai — Ad-Da' wad Dawa' memang membahas pengaruh dosa terhadap hati secara panjang. Namun redaksi Arab persis ini belum saya temukan verbatim di halaman yang disebutkan. Kemungkinan ringkasan/parafrase dari isi kitab."
     },
     {
       "id": "k042",
@@ -1717,7 +1728,8 @@
         "Orang yang merasa taat itu memperbudak dirinya tidak memahami hakikat ibadah",
         "Ketaatan kepada Allah adalah jalan satu-satunya menuju kemuliaan di dunia dan akhirat"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Kitab Al-'Ubudiyah karya Ibnu Taimiyah memang membahas tema ini secara mendalam — bahwa 'ubudiyah adalah kemuliaan tertinggi. Namun redaksi Arab persis ini belum saya temukan verbatim. Kemungkinan ringkasan dari isi kitab, bukan kutipan langsung."
     },
     {
       "id": "k043",
@@ -1734,7 +1746,8 @@
         "Allah Maha Melihat batin setiap hamba — maka sungguh-sungguh memperbaiki hati adalah bentuk muraqabah",
         "Zahir yang baik tanpa batin yang bersih adalah kebaikan semu yang tidak bertahan lama"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Tema perbaikan batin yang mempengaruhi zahir sangat konsisten dengan Madarijus Salikin dan gaya Ibnul Qayyim secara umum. Namun redaksi Arab persis ini tidak saya temukan verbatim. Kemungkinan parafrase dari pembahasan manzilah muraqabah."
     },
     {
       "id": "k044",
@@ -1751,7 +1764,8 @@
         "Menjaga lisan dari ghibah adalah perjuangan yang lebih berat dari banyak ibadah fisik",
         "Seorang mukmin menjaga lisan karena tahu bahwa setiap kata dicatat dan akan dimintai pertanggungjawaban"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Redaksi 'memakan kebaikan seperti api memakan kayu' berasal dari hadits tentang HASAD (HR. Abu Dawud no. 4903, sanadnya dha'if), bukan tentang ghibah. Tidak ditemukan hadits shahih dengan redaksi persis ini tentang ghibah. An-Nawawi tidak mengucapkan ini sendiri — beliau hanya meriwayatkan hadits-hadits tentang ghibah di Riyadhus Shalihin dengan redaksi berbeda."
     },
     {
       "id": "k045",
@@ -1768,7 +1782,8 @@
         "Menghadap kepada Allah — melalui ibadah, doa, dzikir, dan taubat — adalah satu-satunya obat hati",
         "Seorang dokter hati yang paling ahli adalah Al-Qur'an dan As-Sunnah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Tema ini adalah inti utama kitab Ad-Da' wad Dawa' — perbandingan sakit jasad dan sakit hati ada di halaman-halaman awal. Namun redaksi Arab persis ini belum saya temukan verbatim. Kemungkinan ringkasan dari muqaddimah kitab."
     },
     {
       "id": "k046",
@@ -1785,7 +1800,8 @@
         "Semua kebaikan dunia dan akhirat berakar dari taqwa kepada Allah",
         "Tanpa taqwa, seseorang mungkin sibuk beramal tapi tidak mendapat buah kebaikan yang sebenarnya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Frasa 'taqwa adalah wasiat Allah kepada orang-orang terdahulu dan kemudian' berasal dari Al-Qur'an (QS. An-Nisa': 131 & QS. Al-Hadid: 16). Ibnu Baz kemungkinan mengucapkan ini sebagai penjelasan ayat, bukan kalimat orisinalnya. Redaksi persis dan sitasi Jilid 3 Hal. 42 belum terverifikasi."
     },
     {
       "id": "k047",
@@ -1802,7 +1818,8 @@
         "Ilmu yang dicari untuk kebanggaan diri adalah racun yang mematikan spiritual seseorang",
         "Menuntut ilmu yang benar adalah yang diniatkan untuk mengamalkan dan menyebarkannya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ — diriwayatkan oleh Ibnu Majah (no. 253-260) dari Ibn Umar, Abu Hurairah, Jabir, dan sahabat lain dengan berbagai redaksi. Ibnu Rajab memang membahasnya dalam Jami'ul Ulum wal Hikam, tapi beliau hanya mensyarah hadits ini, bukan mengucapkannya sendiri."
     },
     {
       "id": "k048",
@@ -1819,7 +1836,8 @@
         "Jika dunia bernilai di sisi Allah, tentu Allah tidak membiarkan orang kafir menikmatinya",
         "Mengetahui hakikat rendahnya nilai dunia seharusnya mendorong kita untuk lebih mencintai akhirat"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Tirmidzi no. 2320, dinilai shahih oleh al-Albani), dari Sahl bin Sa'd radhiyallahu 'anhu. Ibnu Katsir hanya mencantumkannya dalam tafsirnya sebagai hadits — bukan ucapan beliau sendiri. Sitasi 'Tafsir Surah al-Anbiya': 35 Jilid 5 Hal. 337' perlu dicek karena tema hadits ini tidak spesifik berkaitan dengan ayat tersebut."
     },
     {
       "id": "k049",
@@ -1836,7 +1854,8 @@
         "Cinta kepada Nabi ﷺ adalah bagian dari iman yang wajib ada dalam hati setiap mukmin",
         "Kosongnya hati dari cinta Allah dan Rasul-Nya adalah penyebab kegelisahan yang tak terjelaskan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Ucapan ini memang sering dinisbatkan kepada Ibnul Qayyim, namun sumber yang paling sering disebut adalah Al-Fawa'id (bukan Zadul Ma'ad). Sitasi 'Zadul Ma'ad Jilid 3 Hal. 147' perlu diverifikasi ulang — Zadul Ma'ad lebih membahas sirah dan hukum fiqih, bukan tema ma'rifatullah seperti ini."
     },
     {
       "id": "k050",
@@ -1853,7 +1872,8 @@
         "Menundukkan hawa nafsu dalam ibadah, kesabaran, dan ketaatan adalah jihad yang tidak pernah berhenti",
         "Jihad melawan nafsu mendahului semua bentuk jihad karena ia adalah pondasinya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Kesalahan serius: Di Majmu' al-Fatawa 11/197 yang sama, Ibnu Taimiyah justru MENOLAK dan mendha'ifkan hadits 'jihad terbesar adalah jihad nafsu' dengan berkata 'لا أصل له ولم يروه أحد من أهل المعرفة' (tidak ada asalnya dan tidak diriwayatkan oleh seorangpun ahli hadits). Hadits ini dinilai dha'if oleh al-Albani (Dha'if al-Jami' no. 4080) dan Ibnu Hajar. Sitasi ini secara ironis merujuk pada halaman di mana Ibnu Taimiyah membantah hadits tersebut."
     },
     {
       "id": "k051",
@@ -4404,6 +4424,108 @@
         "Mengamalkan hak ukhuwah ini secara konsisten adalah yang menjadikan komunitas Muslim kuat dan bersatu"
       ],
       "verifikasi": "belum_diverifikasi"
+    }
+  ],
+  "tema_list": [
+    {
+      "id": "tauhid",
+      "label": "Tauhid & Aqidah",
+      "icon": "☀️"
+    },
+    {
+      "id": "hati",
+      "label": "Hati & Jiwa",
+      "icon": "🫀"
+    },
+    {
+      "id": "ilmu",
+      "label": "Ilmu & Belajar",
+      "icon": "📚"
+    },
+    {
+      "id": "sunnah",
+      "label": "Sunnah & Bid'ah",
+      "icon": "🔆"
+    },
+    {
+      "id": "ibadah",
+      "label": "Ibadah",
+      "icon": "🕌"
+    },
+    {
+      "id": "akhlak",
+      "label": "Akhlak & Adab",
+      "icon": "✨"
+    },
+    {
+      "id": "ikhlas",
+      "label": "Ikhlas & Niat",
+      "icon": "💎"
+    },
+    {
+      "id": "taubat",
+      "label": "Taubat",
+      "icon": "🌿"
+    },
+    {
+      "id": "sabar",
+      "label": "Sabar",
+      "icon": "⚓"
+    },
+    {
+      "id": "zuhud",
+      "label": "Zuhud & Dunia",
+      "icon": "🍃"
+    },
+    {
+      "id": "nasihat",
+      "label": "Nasihat",
+      "icon": "🗒️"
+    },
+    {
+      "id": "quran",
+      "label": "Al-Qur'an",
+      "icon": "📖"
+    },
+    {
+      "id": "akhirat",
+      "label": "Akhirat & Maut",
+      "icon": "🌙"
+    },
+    {
+      "id": "doa",
+      "label": "Doa & Dzikir",
+      "icon": "🤲"
+    },
+    {
+      "id": "syukur",
+      "label": "Syukur",
+      "icon": "🌟"
+    },
+    {
+      "id": "tawakal",
+      "label": "Tawakkal",
+      "icon": "🏹"
+    },
+    {
+      "id": "tawadhu",
+      "label": "Tawadhu'",
+      "icon": "🌾"
+    },
+    {
+      "id": "ukhuwah",
+      "label": "Ukhuwah",
+      "icon": "🤝"
+    },
+    {
+      "id": "birulwalidain",
+      "label": "Birrul Walidain",
+      "icon": "🏡"
+    },
+    {
+      "id": "wara",
+      "label": "Wara'",
+      "icon": "⚖️"
     }
   ]
 }

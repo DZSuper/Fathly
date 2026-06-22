@@ -338,31 +338,24 @@ collections:
             summary: "{{fields.id}} — {{fields.teks}}"
             fields:
               - {name: "id", label: "ID (contoh: k201)", widget: "string", hint: "Harus unik, format: k diikuti angka 3 digit"}
-              - {name: "ulama", label: "ID Ulama Pemilik Kutipan", widget: "string", hint: "Harus sama persis dengan salah satu ID di Daftar Ulama di atas"}
+              - name: "ulama"
+                label: "Ulama Pemilik Kutipan"
+                widget: "relation"
+                collection: "kutipan-mgr"
+                file: "kutipan"
+                value_field: "ulama.*.id"
+                search_fields: ["ulama.*.nama", "ulama.*.id"]
+                display_fields: ["ulama.*.nama"]
+                hint: "Dipilih dari Daftar Ulama di atas. Kalau ulama yang dicari belum ada, tambah dulu di Daftar Ulama lalu simpan."
               - name: "tema"
                 label: "Tema"
-                widget: "select"
-                options:
-                  - {label: "Tauhid & Aqidah", value: "tauhid"}
-                  - {label: "Hati & Jiwa", value: "hati"}
-                  - {label: "Ilmu & Belajar", value: "ilmu"}
-                  - {label: "Sunnah & Bid'ah", value: "sunnah"}
-                  - {label: "Ibadah", value: "ibadah"}
-                  - {label: "Akhlak & Adab", value: "akhlak"}
-                  - {label: "Ikhlas & Niat", value: "ikhlas"}
-                  - {label: "Taubat", value: "taubat"}
-                  - {label: "Sabar", value: "sabar"}
-                  - {label: "Zuhud & Dunia", value: "zuhud"}
-                  - {label: "Nasihat", value: "nasihat"}
-                  - {label: "Al-Qur'an", value: "quran"}
-                  - {label: "Akhirat & Maut", value: "akhirat"}
-                  - {label: "Doa & Dzikir", value: "doa"}
-                  - {label: "Syukur", value: "syukur"}
-                  - {label: "Tawakkal", value: "tawakal"}
-                  - {label: "Tawadhu'", value: "tawadhu"}
-                  - {label: "Ukhuwah", value: "ukhuwah"}
-                  - {label: "Birrul Walidain", value: "birulwalidain"}
-                  - {label: "Wara'", value: "wara"}
+                widget: "relation"
+                collection: "kutipan-mgr"
+                file: "kutipan"
+                value_field: "tema_list.*.id"
+                search_fields: ["tema_list.*.label", "tema_list.*.id"]
+                display_fields: ["tema_list.*.label"]
+                hint: "Dipilih dari Daftar Tema di bawah. Tambah tema baru di bagian Daftar Tema lalu simpan, baru akan muncul di sini."
               - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
               - {name: "teks", label: "Terjemah Indonesia", widget: "text"}
               - {name: "kitab", label: "Nama Kitab", widget: "string"}
@@ -387,6 +380,16 @@ collections:
                 widget: "text"
                 required: false
                 hint: "Wajib diisi jika status bukan 'Terverifikasi' atau 'Belum Diverifikasi'. Jelaskan temuan/masalahnya."
+
+          - name: "tema_list"
+            label: "🏷️ Daftar Tema"
+            widget: "list"
+            summary: "{{fields.icon}} {{fields.label}}"
+            hint: "Tambah, edit, atau hapus tema di sini. Perubahan langsung muncul di pilihan dropdown Tema pada Daftar Kutipan di atas, dan juga di sidebar tema pada halaman website."
+            fields:
+              - {name: "id", label: "ID (huruf kecil, tanpa spasi)", widget: "string", hint: "Contoh: tauhid, hati, ilmu. Dipakai sistem, jangan diubah-ubah setelah dipakai banyak kutipan."}
+              - {name: "label", label: "Nama Tampil", widget: "string", hint: "Contoh: Tauhid & Aqidah"}
+              - {name: "icon", label: "Ikon (emoji)", widget: "string", required: false, hint: "Contoh: ☀️ — kosongkan jika tidak ada"}
 
   # ── CERAMAH ─────────────────────────────────────────────────
   - name: "ceramah-index-mgr"
