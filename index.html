@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
 <head>
+  <script>
+    // Redirect token Netlify Identity (reset password, konfirmasi, undangan)
+    // ke halaman /admin/ supaya widget CMS bisa memprosesnya.
+    if (/^#(recovery_token|confirmation_token|invite_token|access_token)=/.test(location.hash)) {
+      location.replace('/admin/' + location.hash);
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FathlyWeb</title>
@@ -376,25 +383,29 @@
     <!-- TAB: KUTIPAN -->
     <main class="tab-content" id="tab-kutipan">
       <div class="kutipan-layout">
-        <!-- Sidebar tema -->
-        <aside class="kutipan-sidebar" id="kutipanSidebar"></aside>
-        <!-- Konten utama -->
+        <!-- Konten utama (sidebar dihapus — filter sekarang lewat bottom sheet) -->
         <div class="kutipan-main">
           <div class="kutipan-topbar">
-            <div class="kutipan-search-wrap">
-              <span class="kutipan-search-icon">🔍</span>
-              <input
-                type="search"
-                id="kutipanSearch"
-                class="kutipan-search-input"
-                placeholder="Cari kutipan, ulama, atau kitab..."
-                autocomplete="off"
-                spellcheck="false"
-              />
-              <button class="kutipan-search-clear" id="kutipanSearchClear" aria-label="Hapus pencarian">✕</button>
+            <div class="kutipan-search-row">
+              <div class="kutipan-search-wrap">
+                <span class="kutipan-search-icon">🔍</span>
+                <input
+                  type="search"
+                  id="kutipanSearch"
+                  class="kutipan-search-input"
+                  placeholder="Cari kutipan, ulama, atau kitab..."
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+                <button class="kutipan-search-clear" id="kutipanSearchClear" aria-label="Hapus pencarian">✕</button>
+              </div>
+              <button class="kutipan-icon-btn" id="kutipanBookmarkBtn" aria-label="Favorit" title="Tampilkan favorit saja"><span class="kutipan-bm-star">⭐</span></button>
+              <button class="kutipan-icon-btn" id="kutipanFilterBtn" aria-label="Filter" title="Filter tema, ulama, status">
+                ⚙
+                <span class="kutipan-filter-badge" id="kutipanFilterBadge" style="display:none">0</span>
+              </button>
             </div>
             <div class="kutipan-info-bar" id="kutipanInfoBar"></div>
-            <div class="kutipan-chips" id="kutipanChips"></div>
           </div>
           <div class="kutipan-entries" id="kutipanEntries">
             <div class="kutipan-loading">Pilih tab Kutipan untuk memuat...</div>

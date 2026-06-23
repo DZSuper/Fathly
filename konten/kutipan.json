@@ -1890,7 +1890,8 @@
         "Meninggalkan shalat secara sengaja adalah dosa yang sangat besar dan tanda lemahnya iman",
         "Menegakkan shalat bukan hanya soal menunaikannya, tapi melaksanakannya dengan benar dan khusyu'"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ yang dinilai DHA'IF oleh al-Albani (Dha'if al-Jami' no. 3567), as-Suyuthi, as-Sakhawi, dan al-Nawawi sendiri menyebutnya 'munkar batil' (An-Nawawi, At-Tanqih). Ibnu Baz tidak mengucapkan kalimat ini — beliau hanya mensyarahnya sebagai hadits. Sitasi 'Majmu' Fatawa Jilid 7 Hal. 319' tidak terverifikasi."
     },
     {
       "id": "k052",
@@ -1907,7 +1908,8 @@
         "Mengikuti ulama bukan berarti taklid buta, tetapi mengambil ilmu dari mereka disertai pemahaman",
         "Dalil adalah pembeda antara ittiba' yang terpuji dan taklid buta yang tercela"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Kitab Raudhah an-Nazhir karya Ibnu Qudamah memang membahas perbedaan antara taqlid dan ittiba' secara panjang lebar di Bab al-Mujtahid wal Muqallid. Tema dan kitab sangat sesuai. Namun redaksi Arab persis ini belum ditemukan verbatim; kemungkinan ringkasan dari isi pembahasan beliau."
     },
     {
       "id": "k053",
@@ -1924,7 +1926,8 @@
         "Merasa lebih alim, lebih shalih, atau lebih taat dari orang lain adalah pintu masuk kibr (sombong)",
         "Seorang penuntut ilmu yang benar semakin tawadhu' seiring bertambahnya ilmunya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Silsilah al-Ahadits ash-Shahihah adalah koleksi HADITS NABI ﷺ beserta syarahnya — bukan ucapan asli al-Albani. No. 1/574 dalam kitab itu adalah hadits, dan al-Albani hanya menilai & mensyarahnya. Redaksi 'iyyaka wat ta'ali fid din' tidak ditemukan sebagai ucapan orisinal al-Albani."
     },
     {
       "id": "k054",
@@ -1941,7 +1944,8 @@
         "Nikmat surga adalah satu-satunya kenikmatan yang abadi dan tidak akan pernah berakhir",
         "Menginvestasikan waktu dan energi untuk meraih nikmat akhirat jauh lebih bijaksana dari mengejar dunia"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Tema fana-nya kenikmatan dunia kecuali surga sangat sesuai dengan gaya dan isi Shaidul Khathir. Namun redaksi Arab persis ini dan sitasi halaman 134 belum dapat diverifikasi secara verbatim dari sumber yang tersedia."
     },
     {
       "id": "k055",
@@ -1958,7 +1962,8 @@
         "Taufiq Allah (kemudahan) dalam amal adalah hadiah khusus bagi yang niatnya tulus dalam belajar",
         "Tujuan akhir ilmu agama bukan untuk diketahui semata, melainkan untuk dihayati dan diamalkan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Miftah Dar as-Sa'adah karya Ibnul Qayyim memang membahas tema niat dalam menuntut ilmu secara mendalam. Tema dan kitab sangat sesuai. Namun redaksi Arab persis ini dan sitasi Jilid 1 Hal. 76 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k056",
@@ -1975,7 +1980,8 @@
         "Mengetahui ini akan membebaskan hati dari ketergantungan dan harapan berlebihan kepada manusia",
         "Bukan berarti tidak berusaha, tapi menyadari bahwa hasil akhirnya sepenuhnya di tangan Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Tirmidzi no. 2516, shahih — dari wasiat Nabi kepada Ibnu Abbas). An-Nawawi hanya mencantumkannya di Riyadhus Shalihin (no. 62) sebagai hadits, bukan di Al-Arba'in an-Nawawiyah. Dua kesalahan sekaligus: bukan ucapan an-Nawawi, dan kitab yang disebutkan pun salah."
     },
     {
       "id": "k057",
@@ -1992,7 +1998,8 @@
         "Meminta kepada Allah agar kebenaran tampak jelas adalah pengakuan bahwa hati bisa dibolak-balik",
         "Doa ini adalah doa para ulama Salaf yang dianjurkan diperbanyak oleh setiap penuntut ilmu"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Doa ini adalah doa masyhur yang dinisbatkan kepada beberapa ulama Salaf — beberapa riwayat menyebutnya sebagai doa Umar bin Khattab radhiyallahu 'anhu. Ibnu Utsaimin memang menggunakannya dalam pengajaran, namun bukan ucapan orisinal beliau. Sitasi 'Syarh al-Aqidah al-Wasithiyah Hal. 4' sebagai sumber perlu diverifikasi."
     },
     {
       "id": "k058",
@@ -2009,7 +2016,8 @@
         "Cinta kepada Allah tidak bisa ada tanpa ilmu tentang-Nya; makin dalam ilmu, makin dalam cinta",
         "Ketaatan adalah buah alami dari cinta — bukan beban bagi yang benar-benar mencintai Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Madarijus Salikin Jilid 3 memang membahas manzilah al-mahabbah dan rantai ma'rifah → mahabbah → ta'ah sangat konsisten dengan ajaran Ibnul Qayyim. Namun redaksi Arab persis ini belum ditemukan verbatim di Jilid 3 Hal. 18."
     },
     {
       "id": "k059",
@@ -2026,7 +2034,8 @@
         "Konsistensi dalam amal kecil lebih dicintai Allah daripada amal besar yang tidak berkelanjutan",
         "Karamah berupa konsistensi taat tidak menipu pemiliknya, berbeda dengan karamah yang bisa menjadi fitnah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan 'al-istiqamah khairun min alfi karamah' adalah ucapan masyhur yang secara konsisten dinisbatkan kepada para ulama sufi Salaf seperti Abu Ali al-Juzdani atau Fudhail bin Iyadh — bukan Ibnu Rajab. Ibnu Rajab hanya mensyarah hadits tentang istiqamah dalam Jami'ul Ulum wal Hikam (Hadits 25). Sitasi 'Jilid 2 Hal. 108' merujuk pada syarh hadits, bukan ucapan beliau."
     },
     {
       "id": "k060",
@@ -2043,7 +2052,8 @@
         "Hilangnya rasa malu adalah tanda lemahnya iman dan pintu masuk ke dalam berbagai kemaksiatan",
         "Malu kepada Allah lebih utama dari malu kepada manusia — dan ini yang harus selalu dipertahankan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Kedua redaksi ini adalah HADITS NABI ﷺ: 'al-haya' la ya'ti illa bikhair' (HR. Bukhari no. 6117, dari Imran bin Husain) dan 'al-haya' shu'bah minal iman' (HR. Bukhari no. 9 & Muslim no. 35, dari Abu Hurairah). Adz-Dzahabi tidak mengucapkan ini — beliau hanya meriwayatkannya di Siyar A'lam an-Nubala'. Sitasi 'Jilid 1 Hal. 49' perlu dicek karena Siyar dimulai dari biografi sahabat."
     },
     {
       "id": "k061",
@@ -2060,7 +2070,8 @@
         "Orang yang paham betapa banyaknya kekurangannya sendiri tidak akan punya waktu mengurusi kekurangan orang lain",
         "Kebahagiaan sejati datang dari kejernihan hati yang bebas dari dengki dan kebiasaan mencela"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan ini adalah bagian dari HADITS NABI ﷺ — diriwayatkan oleh Thabrani (Mu'jam Kabir 5/71) dan Baihaqi (Syu'ab al-Iman 7/355) dari Anas bin Malik. Ibnul Jauzi kemungkinan mencantumkannya di Talbis Iblis sebagai hadits, bukan sebagai ucapan beliau sendiri. Perlu dicek apakah sitasi 'Hal. 351' merujuk pada pencantuman hadits atau ucapan Ibnul Jauzi."
     },
     {
       "id": "k062",
@@ -2077,7 +2088,8 @@
         "Nasihat kepada Allah maksudnya ikhlas dalam beribadah hanya kepada-Nya",
         "Nasihat kepada sesama muslim mencakup keinginan kebaikan untuk mereka dalam urusan dunia dan akhirat"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ yang sangat terkenal (HR. Muslim no. 55 dari Tamim ad-Dari, shahih). al-Albani di Silsilah ash-Shahihah no. 857 hanya menshahihkan hadits ini — bukan mengucapkannya sebagai pendapat beliau sendiri."
     },
     {
       "id": "k063",
@@ -2094,7 +2106,8 @@
         "Tidak ada jalan selamat di akhirat kecuali dengan mengikuti sunnah Nabi ﷺ yang shahih",
         "Berpegang kepada Sunnah di zaman banyaknya fitnah adalah anugerah yang harus disyukuri dan dijaga"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Redaksi 'al-Sunnah kahluk minad dunya wa najatuk fil akhirah' tidak ditemukan sebagai ucapan orisinal Ibnu Utsaimin. Ada ucapan serupa dari Sufyan ats-Tsauri tentang Sunnah sebagai 'kapal Nuh'. Sitasi 'Majmu' Fatawa Jilid 1 Hal. 53' tidak terverifikasi."
     },
     {
       "id": "k064",
@@ -2111,7 +2124,8 @@
         "Mengurangi makan dan memperbanyak puasa sunah membantu hati menjadi lebih jernih dan kuat",
         "Setan yang lemah karena puasa lebih mudah diatasi daripada setan yang diberi 'bahan bakar' lewat perut yang penuh"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Bukhari no. 2038 & Muslim no. 2174 dari Shafiyyah binti Huyay, shahih). An-Nawawi hanya mencantumkannya di Riyadhus Shalihin sebagai hadits — bukan ucapan beliau sendiri. Ini termasuk pola berulang: an-Nawawi sering salah dikutip seolah mengatakan hadits-hadits yang beliau kumpulkan."
     },
     {
       "id": "k065",
@@ -2128,7 +2142,8 @@
         "Kejujuran yang dimaksud adalah kejujuran kepada Allah dalam iman, ibadah, dan muamalah",
         "Dua sifat ini — zuhud dan shidq — jika terkumpul pada seseorang, ia adalah orang yang sempurna akhlaknya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Redaksi ini tidak ditemukan sebagai ucapan adz-Dzahabi sendiri. Konsep 'zuhud sejati adalah meninggalkan yang haram' adalah ucapan yang sering dinukil adz-Dzahabi dari ulama lain (seperti Sufyan ats-Tsauri) dalam Siyar A'lam. Kemungkinan ini adalah ucapan ulama yang dinukil adz-Dzahabi, bukan ucapan beliau sendiri."
     },
     {
       "id": "k066",
@@ -2145,7 +2160,8 @@
         "Pengamalan hadits dha'if dalam fadhail pun disyaratkan dengan ketentuan yang ketat",
         "Seorang penuntut ilmu wajib mempelajari ulum al-hadits untuk menilai derajat hadits"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Nukhbatul Fikr adalah kitab ulum al-hadits karya Ibnu Hajar dan membahas hadits dha'if. Namun Ibnu Hajar sebenarnya termasuk ulama yang membolehkan pengamalan hadits dha'if dalam fadhail dengan syarat-syarat tertentu — bukan melarangnya mutlak. Redaksi ini mungkin ringkasan dari beberapa pernyataan beliau yang berbeda, dan perlu diverifikasi dengan teks asli Nukhbatul Fikr."
     },
     {
       "id": "k067",
@@ -2162,7 +2178,8 @@
         "Satu kebohongan dalam agama menggugurkan seluruh kepercayaan terhadap seseorang",
         "Ini menunjukkan betapa Islam sangat menjaga kemurnian sumber agamanya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Prinsip ini adalah konsensus ulama hadits yang memang dibahas dalam Nukhbatul Fikr. Tema sangat sesuai dengan isi kitab. Namun redaksi Arab persis dan sitasi halaman 30 belum dapat diverifikasi secara verbatim dari teks yang tersedia."
     },
     {
       "id": "k068",
@@ -2179,7 +2196,8 @@
         "Tidak ada kebaikan sejati tanpa didasari ilmu yang benar",
         "Menuntut ilmu adalah ibadah yang pahalanya mencakup seluruh aspek kehidupan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan ini persis sama dengan k162 yang dinisbatkan kepada Imam asy-Syafi'i — menunjukkan ada kebingungan atribusi. Tidak ditemukan bukti bahwa Ibnu Hajar mengucapkan kalimat ini sebagai pendapat orisinal beliau di muqaddimah Fathul Bari Jilid 1 Hal. 141. Kemungkinan ini adalah ucapan yang dinukil dari ulama lain."
     },
     {
       "id": "k069",
@@ -2196,7 +2214,8 @@
         "Ini adalah salah satu pokok aqidah yang dibela para ulama Salaf dengan pena dan nyawa",
         "Penguasaan ulum al-Qur'an adalah pintu masuk memahami wahyu secara benar"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Itqan fi Ulum al-Qur'an karya as-Suyuthi memang membahas kedudukan Al-Qur'an sebagai kalam Allah. Frasa 'minhu bada'a wa ilaihi ya'ud' adalah ungkapan aqidah yang dikenal. Namun redaksi lengkap ini dan sitasi Jilid 1 Hal. 5 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k070",
@@ -2213,7 +2232,8 @@
         "Ilmu tanpa amal dan pemahaman adalah beban, bukan cahaya",
         "Keutamaan sejati ahlul Qur'an adalah yang mengamalkan isinya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Redaksi ini mengacu pada QS. Al-Jumu'ah: 5 tentang keledai pembawa kitab. Tidak ditemukan sebagai ucapan orisinal as-Suyuthi di Al-Itqan Jilid 2 Hal. 381. Al-Itqan Jilid 2 membahas topik ulum Al-Qur'an yang berbeda-beda; sitasi ini perlu diverifikasi ulang."
     },
     {
       "id": "k071",
@@ -2230,7 +2250,8 @@
         "Pohon tanpa buah hanya menghabiskan lahan dan air — begitu pula ilmu tanpa pengamalan",
         "Amal adalah bukti kejujuran ilmu seseorang"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ungkapan 'al-'alim bila 'amal kasy-syajarah bila thamar' secara luas dinisbatkan kepada al-Ghazali (Ihya' Ulum ad-Din) dan juga beredar sebagai hikam umum. Tidak ditemukan sebagai ucapan as-Suyuthi di Al-Ashbah wan Nazhair — kitab tersebut adalah kumpulan qawa'id fiqhiyah, bukan pembahasan adab ilmu dan amal."
     },
     {
       "id": "k072",
@@ -2247,7 +2268,8 @@
         "Memahami prioritas dalam menuntut ilmu adalah bagian dari hikmah",
         "Seseorang tidak cukup hanya menekuni ilmu duniawi sementara ilmu agama wajibnya terabaikan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Pembahasan ini ada di Jami' Bayanil Ilmi wa Fadhlihi, bab 'طلب العلم فريضة على كل مسلم'. Ibnu Abdil Barr memang membedakan antara ilmu fardhu ain (yang tidak boleh tidak diketahui setiap mukallaf) dan ilmu fardhu kifayah. Redaksi ini adalah ringkasan akurat dari pembahasan beliau."
     },
     {
       "id": "k073",
@@ -2264,7 +2286,8 @@
         "Akal yang sejati adalah akal yang menahan diri dari larangan Allah",
         "Ilmu dan akal yang benar selalu bermuara pada ketaatan kepada Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Jami' Bayanil Ilmi memang membahas tema amal dengan ilmu secara mendalam, termasuk bab tentang ulama yang tidak mengamalkan ilmunya. Tema sangat sesuai dengan gaya Ibnu Abdil Barr. Namun redaksi Arab persis dan sitasi Jilid 1 Hal. 539 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k074",
@@ -2281,7 +2304,8 @@
         "Bergaul dengan ulama dan orang shalih adalah wasilah menjaga iman",
         "Menjauhi teman buruk adalah bagian dari menjaga agama"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Jami' Bayanil Ilmi membahas pentingnya memilih teman belajar yang baik, konsisten dengan tema kutipan ini. Namun redaksi Arab persis 'al-shuhbah al-shalihah min a'zham asbab al-hidayah' dan sitasi Hal. 553 belum dapat diverifikasi secara verbatim sebagai ucapan langsung Ibnu Abdil Barr."
     },
     {
       "id": "k075",
@@ -2298,7 +2322,8 @@
         "Mengagungkan Allah dan syiar-Nya adalah inti dari seluruh adab",
         "Adab kepada guru, orang tua, dan ulama adalah bagian dari adab kepada Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Adab Asy-Syar'iyah Jilid 1 memang membuka dengan pembahasan hakikat dan definisi adab — posisi Hal. 5 sangat wajar sebagai pembukaan kitab. Tema dan kitab sangat sesuai. Namun redaksi Arab persis ini belum dapat diverifikasi secara verbatim dari teks yang tersedia."
     },
     {
       "id": "k076",
@@ -2315,7 +2340,8 @@
         "Seseorang yang tidak memiliki adab kepada Allah tidak akan konsisten dalam adabnya kepada manusia",
         "Memperbaiki adab harus dimulai dari memperbaiki hubungan dengan Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Adab Asy-Syar'iyah Jilid 1 memang membuka dengan bab-bab adab kepada Allah, dan tema ini sangat konsisten dengan isi kitab. Namun redaksi Arab persis ini belum dapat diverifikasi verbatim di halaman 17. Kemungkinan ringkasan dari pembahasan bab tersebut."
     },
     {
       "id": "k077",
@@ -2332,7 +2358,8 @@
         "Orang yang jujur menyadari kekurangannya dan tidak membanggakan diri",
         "Memuji diri sendiri adalah tanda kurang ikhlas dalam beramal"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Adab Asy-Syar'iyah memang membahas ash-shidq. Namun perlu dicatat bahwa kitab ini banyak berisi nukilan dari Imam Ahmad dan ulama lain — bukan selalu ucapan orisinal Ibnu Muflih. Perlu diverifikasi apakah redaksi ini ucapan Ibnu Muflih sendiri atau nukilan dari ulama yang dikutipnya."
     },
     {
       "id": "k078",
@@ -2349,7 +2376,8 @@
         "Setiap nama dan sifat Allah menuntut konsekuensi ibadah tertentu",
         "Tauhid asma' wa sifat bukan sekadar pengetahuan teoritis, tapi mendorong ketaatan nyata"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Ibanah al-Kubra karya Ibnu Battah memang membahas ma'rifatullah bil asma' wash shifat secara mendalam. Tema sangat sesuai. Namun redaksi persis 'aslud diin ma'rifatullah bi asma'ihi wa sifatihi...' dan sitasi Jilid 2 Hal. 48 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k079",
@@ -2366,7 +2394,8 @@
         "Setiap bid'ah dalam agama, betapapun terlihat baik, adalah kesesatan",
         "Ittiba' (mengikuti Sunnah) adalah jalan keselamatan yang tidak boleh ditinggalkan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ucapan 'ittabi'u wa la tabta'du faqad kufitum, wa kullu bid'atin dhalalah' adalah ucapan IBNU MAS'UD (sahabat Nabi ﷺ) — bukan Ibnu Battah. Ibnu Battah hanya meriwayatkannya di Al-Ibanah al-Kubra (no. 182) dengan sanad dari Ibrahim an-Nakha'i dari Ibnu Mas'ud. al-Albani menshahihkan atsar ini (Silsilah adh-Dha'ifah di bawah no. 533). Kitab yang disebutkan pun ('Al-Ibanah ash-Shughra') berbeda dengan tempat asli atsar ini."
     },
     {
       "id": "k080",
@@ -2383,7 +2412,8 @@
         "Penampilan luar tidak mencerminkan iman tanpa kecocokan batin dan amal",
         "Ini adalah aqidah Ahlus Sunnah yang membedakan mereka dari Murji'ah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Redaksi 'laysal iman bit tamanni wa la bit tahalli, bal huwa ma waqara fil qalb wa saddaqahul 'amal' adalah ucapan masyhur yang secara konsisten dinisbatkan kepada AL-HASAN AL-BASHRI (tabi'in) — bukan Ibnu Battah. Ibnu Battah kemungkinan hanya meriwayatkannya. Sitasi 'Al-Iman Hal. 39' perlu dicek apakah ini ucapan Ibnu Battah atau riwayat dari al-Hasan al-Bashri yang dicantumkannya."
     },
     {
       "id": "k081",
@@ -2400,7 +2430,8 @@
         "Kalimat tauhid adalah bekal terpenting saat menghadapi sakaratul maut",
         "Seseorang yang memulai dakwah harus mendahulukan tauhid seperti yang dilakukan para nabi"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "I'anat al-Mustafid bi Syarh Kitab at-Tawhid adalah karya nyata al-Fawzan dan berisi pembahasan tentang prioritas tauhid. Tema 'tauhid adalah awwalu wajib' sangat sesuai dengan isi kitab ini. Namun redaksi Arab persis dan sitasi Jilid 1 Hal. 9 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k082",
@@ -2417,7 +2448,8 @@
         "Seseorang yang mati dalam keadaan syirik tidak akan diampuni Allah",
         "Menjauhi syirik adalah prioritas utama dalam kehidupan seorang Muslim"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "At-Tawhid wa Bayan ma Yunafihi adalah karya nyata al-Fawzan. Tema 'syirik adalah dosa terbesar' sangat konsisten dengan pembahasan beliau. Namun redaksi Arab persis dan sitasi halaman 15 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k083",
@@ -2434,7 +2466,8 @@
         "Bashirah adalah syarat seorang dai — memahami apa yang didakwahkan dan kepada siapa",
         "Nabi ﷺ tidak berdakwah sebelum menerima wahyu dan ilmu dari Allah"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Majmu' Fatawa wa Maqalat al-Fawzan adalah karya nyata. Tema dakwah di atas ilmu dan bashirah sangat konsisten dengan pengajaran beliau dan QS. Yusuf: 108. Namun redaksi Arab persis dan sitasi Jilid 2 Hal. 198 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k084",
@@ -2451,7 +2484,8 @@
         "Kematian bagi orang beriman adalah pintu kebebasan dari penjara dunia",
         "Orang kafir menjadikan dunia sebagai puncak kebahagiaan karena tidak percaya akhirat"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Redaksi 'al-dunya sijnul mu'min wa jannat al-kafir' adalah HADITS NABI ﷺ (HR. Muslim no. 2956 dari Abu Hurairah, shahih). Ibnul Qayyim memang membahas hadits ini di Ighaatsatul Lahfan Jilid 2, namun beliau hanya mensyarahnya — bukan mengucapkannya sebagai pendapatnya sendiri."
     },
     {
       "id": "k085",
@@ -2468,7 +2502,8 @@
         "Dzikir yang terus-menerus adalah obat utama untuk melawan kelalaian",
         "Hati yang terjaga adalah hati yang selalu sadar bahwa Allah melihatnya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Madarijus Salikin memang membahas ghafla (kelalaian) sebagai penyakit hati — ditemukan ungkapan Ibnul Qayyim: 'washa' al-qalb bi amrayn: bil ghaflah wadz-dzanb'. Tema sangat sesuai. Namun redaksi persis 'al-ghafla 'anillah hiya ummu amradh al-qulub kullaha' belum ditemukan verbatim di halaman 98."
     },
     {
       "id": "k086",
@@ -2485,7 +2520,8 @@
         "Kecintaan yang benar kepada Allah pasti melahirkan ketaatan yang konsisten",
         "Ridha Allah adalah buah tertinggi dari perjalanan mengenal dan mencintai-Nya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Ad-Da' wad Dawa' memang membahas rantai ma'rifah → mahabbah → ta'ah sebagai tema sentralnya. Ini sangat konsisten dengan gaya dan pemikiran Ibnul Qayyim. Namun redaksi Arab persis dan sitasi halaman 102 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k087",
@@ -2502,7 +2538,8 @@
         "Zuhud bukan berarti tidak memiliki dunia, tapi tidak membiarkan dunia memiliki hati",
         "Ini adalah ukuran bagi seorang Muslim untuk mengevaluasi keadaan hatinya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Majmu' al-Fatawa Jilid 11 memang berisi Kitab az-Zuhd wal Wara' karya Ibnu Taimiyah yang membahas persaingan antara dunia dan akhirat dalam hati. Tema sangat sesuai. Namun redaksi Arab persis dan sitasi halaman 23 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k088",
@@ -2519,7 +2556,8 @@
         "Vakum dari sunnah akan diisi oleh sesuatu — dan sesuatu itu biasanya adalah bid'ah",
         "Menjaga Sunnah adalah tameng terkuat untuk mencegah penyimpangan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Iqtidha' ash-Shirath al-Mustaqim memang membahas kaitan antara meninggalkan Sunnah dan bid'ah secara panjang lebar (lihat 2/269). Tema dan kitab sangat sesuai. Namun redaksi persis 'ma taraka qawmun as-sunna illa ubtulaw bil bid'ah' sebagai ucapan langsung Ibnu Taimiyah belum ditemukan verbatim di Jilid 2 Hal. 593."
     },
     {
       "id": "k089",
@@ -2536,7 +2574,8 @@
         "Ketika seseorang memilih akhirat, ia akan rela mengorbankan ambisi duniawinya",
         "Pilihan terbaik adalah selalu memilih yang kekal atas yang fana"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_ditemukan",
+      "catatan_verifikasi": "Redaksi 'man ahabbad dunya adharrat bidinih, wa man ahabbel akhirah adharrat bidunyah' tidak ditemukan sebagai ucapan orisinal Ibnu Rajab di Jilid 2 Hal. 243. Ibnu Rajab mensyarah tema dunia vs akhirat di Jami'ul Ulum, namun redaksi ini lebih mirip atsar Salaf yang beliau nukil daripada ucapan beliau sendiri."
     },
     {
       "id": "k090",
@@ -2553,7 +2592,8 @@
         "Jika rasa takut tidak menghalangi maksiat, maka itu belum khasyah yang sebenarnya",
         "Orang yang berilmu tentang Allah adalah yang paling takut kepada-Nya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ungkapan tentang 'khasyah yang menghalangi dari maksiat' lebih konsisten dengan IBNUL QAYYIM (ditemukan pembahasan serupa dalam karya beliau tentang dzunub: 'ta'zhim Allah wa jalalihi fi qalb al-'abd tahul baynahuwabaynadz-dzunub'). Tidak ditemukan sebagai ucapan orisinal Ibnu Rajab di Latha'if al-Ma'arif Hal. 173."
     },
     {
       "id": "k091",
@@ -4424,108 +4464,6 @@
         "Mengamalkan hak ukhuwah ini secara konsisten adalah yang menjadikan komunitas Muslim kuat dan bersatu"
       ],
       "verifikasi": "belum_diverifikasi"
-    }
-  ],
-  "tema_list": [
-    {
-      "id": "tauhid",
-      "label": "Tauhid & Aqidah",
-      "icon": "☀️"
-    },
-    {
-      "id": "hati",
-      "label": "Hati & Jiwa",
-      "icon": "🫀"
-    },
-    {
-      "id": "ilmu",
-      "label": "Ilmu & Belajar",
-      "icon": "📚"
-    },
-    {
-      "id": "sunnah",
-      "label": "Sunnah & Bid'ah",
-      "icon": "🔆"
-    },
-    {
-      "id": "ibadah",
-      "label": "Ibadah",
-      "icon": "🕌"
-    },
-    {
-      "id": "akhlak",
-      "label": "Akhlak & Adab",
-      "icon": "✨"
-    },
-    {
-      "id": "ikhlas",
-      "label": "Ikhlas & Niat",
-      "icon": "💎"
-    },
-    {
-      "id": "taubat",
-      "label": "Taubat",
-      "icon": "🌿"
-    },
-    {
-      "id": "sabar",
-      "label": "Sabar",
-      "icon": "⚓"
-    },
-    {
-      "id": "zuhud",
-      "label": "Zuhud & Dunia",
-      "icon": "🍃"
-    },
-    {
-      "id": "nasihat",
-      "label": "Nasihat",
-      "icon": "🗒️"
-    },
-    {
-      "id": "quran",
-      "label": "Al-Qur'an",
-      "icon": "📖"
-    },
-    {
-      "id": "akhirat",
-      "label": "Akhirat & Maut",
-      "icon": "🌙"
-    },
-    {
-      "id": "doa",
-      "label": "Doa & Dzikir",
-      "icon": "🤲"
-    },
-    {
-      "id": "syukur",
-      "label": "Syukur",
-      "icon": "🌟"
-    },
-    {
-      "id": "tawakal",
-      "label": "Tawakkal",
-      "icon": "🏹"
-    },
-    {
-      "id": "tawadhu",
-      "label": "Tawadhu'",
-      "icon": "🌾"
-    },
-    {
-      "id": "ukhuwah",
-      "label": "Ukhuwah",
-      "icon": "🤝"
-    },
-    {
-      "id": "birulwalidain",
-      "label": "Birrul Walidain",
-      "icon": "🏡"
-    },
-    {
-      "id": "wara",
-      "label": "Wara'",
-      "icon": "⚖️"
     }
   ]
 }
