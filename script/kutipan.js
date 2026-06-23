@@ -5,12 +5,29 @@
 
 (function () {
 
-  var _kutipanData   = null;   // { ulama:[], kutipan:[] }
+  var _kutipanData   = null;   // { ulama:[], kutipan:[], tema_list:[] }
   var _kutipanLoaded = false;
-  var _aktifTema     = 'semua';
-  var _aktifUlama    = 'semua'; // filter ulama aktif
+  var _aktifTemaList  = [];     // array tema id aktif (kosong = semua)
+  var _aktifUlamaList = [];     // array ulama id aktif (kosong = semua)
+  var _aktifVerifList = [];     // array status verifikasi aktif (kosong = semua)
   var _querySearch   = '';      // kata kunci pencarian
   var _showBookmark  = false;   // mode tampilkan favorit saja
+
+  var VERIF_META = {
+    terverifikasi:      { cls: 'verified',    icon: '✓', label: 'Terverifikasi' },
+    perlu_ditinjau:      { cls: 'review',      icon: '⚠', label: 'Perlu Ditinjau' },
+    tidak_benar:         { cls: 'invalid',     icon: '✗', label: 'Tidak Benar' },
+    tidak_ditemukan:     { cls: 'notfound',    icon: '∅', label: 'Tidak Ditemukan' },
+    belum_diverifikasi:  { cls: 'unverified',  icon: '?', label: 'Belum Diverifikasi' },
+  };
+  var VERIF_ORDER = ['terverifikasi','perlu_ditinjau','tidak_benar','tidak_ditemukan','belum_diverifikasi'];
+
+  // Toggle satu nilai dalam array filter (multiselect)
+  function toggleInArray(arr, val) {
+    var idx = arr.indexOf(val);
+    if (idx === -1) arr.push(val); else arr.splice(idx, 1);
+    return arr;
+  }
 
   // ── BOOKMARK HELPERS (localStorage) ──────────
   var BOOKMARK_KEY = 'fathly_bookmarks';
@@ -130,166 +147,276 @@
   // ── BANGUN UI LENGKAP ────────────────────────
   function buildKutipanUI() {
     buildTemaList();
-    renderSidebar();
     renderTopbar();
-    renderEntries(_aktifTema);
+    renderEntries();
     initSearch();
+    initFilterControls();
   }
 
-  // ── SIDEBAR TEMA ─────────────────────────────
-  function renderSidebar() {
-    var sidebar = document.getElementById('kutipanSidebar');
-    if (!sidebar || !_kutipanData) return;
-
-    var bmCount = filterKutipan(_aktifTema, _aktifUlama).filter(function(k){
-      return getBookmarks().indexOf(k.id) !== -1;
-    }).length;
-    var totalBm = getBookmarks().length;
-    var html =
-      '<button class="kutipan-tema-btn kutipan-bookmark-btn' + (_showBookmark ? ' active' : '') + '" id="sidebarBookmarkBtn">' +
-        '<span class="ktb-icon">🔖</span>' +
-        '<span class="ktb-text">' +
-          '<span class="ktb-nama">Favorit</span>' +
-          '<span class="ktb-count">' + totalBm + ' tersimpan</span>' +
-        '</span>' +
-      '</button>' +
-      '<div class="kutipan-sidebar-label">TEMA</div>';
-    TEMA_LIST.forEach(function (t) {
-      var baseList = _showBookmark
-        ? _kutipanData.kutipan.filter(function(k){ return getBookmarks().indexOf(k.id) !== -1; })
-        : _kutipanData.kutipan;
-      var count = t.id === 'semua'
-        ? baseList.length
-        : baseList.filter(function (k) { return k.tema === t.id; }).length;
-      if (t.id !== 'semua' && count === 0) return; // sembunyikan tema kosong
-
-      html += '<button class="kutipan-tema-btn' + (t.id === _aktifTema ? ' active' : '') + '" data-tema="' + t.id + '">' +
-        '<span class="ktb-icon">' + t.icon + '</span>' +
-        '<span class="ktb-text">' +
-          '<span class="ktb-nama">' + esc(t.label) + '</span>' +
-          '<span class="ktb-count">' + count + ' kutipan</span>' +
-        '</span>' +
-      '</button>';
-    });
-
-    sidebar.innerHTML = html;
-
-    // Pasang guard agar sidebar tidak memicu swipe tab
-    attachHScrollGuard(sidebar);
-
-    // Tombol Favorit
-    var bmBtn = sidebar.querySelector('#sidebarBookmarkBtn');
-    if (bmBtn) {
-      bmBtn.addEventListener('click', function () {
-        _showBookmark = !_showBookmark;
-        renderSidebar();
-        renderTopbar();
-        renderEntries(_aktifTema);
-        var main = document.querySelector('.kutipan-main');
-        if (main) main.scrollTop = 0;
-      });
-    }
-
-    sidebar.querySelectorAll('.kutipan-tema-btn:not(#sidebarBookmarkBtn)').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var newTema = btn.getAttribute('data-tema');
-        // Jika tema sama diklik lagi → toggle off ke 'semua'
-        _aktifTema = (_aktifTema === newTema && newTema !== 'semua') ? 'semua' : newTema;
-        // Bookmark tetap tidak berubah — tema bisa dikombinasi dengan favorit
-        sidebar.querySelectorAll('.kutipan-tema-btn:not(#sidebarBookmarkBtn)').forEach(function (b) {
-          b.classList.toggle('active', b.getAttribute('data-tema') === _aktifTema);
-        });
-        renderTopbar();
-        renderEntries(_aktifTema);
-        var main = document.querySelector('.kutipan-main');
-        if (main) main.scrollTop = 0;
-      });
-    });
-  }
-
-  // ── TOPBAR (chips ulama + info) ──────────────
+  // ── TOPBAR (info bar + badge filter) ─────────
   function renderTopbar() {
     var infoBar = document.getElementById('kutipanInfoBar');
-    var chipsEl = document.getElementById('kutipanChips');
-    if (!infoBar || !chipsEl || !_kutipanData) return;
+    if (!infoBar || !_kutipanData) return;
 
-    var filtered = filterKutipan(_aktifTema, _aktifUlama);
-    var temaLabel = _aktifTema === 'semua' ? 'Semua Tema' : (TEMA_LABEL_MAP[_aktifTema] || _aktifTema);
-    var parts = [];
-    parts.push(filtered.length + ' kutipan');
-    if (_showBookmark) parts.push('🔖 Favorit');
-    if (_aktifTema !== 'semua') parts.push(temaLabel);
-    if (_aktifUlama !== 'semua') {
-      var uObj = getUlama(_aktifUlama);
-      if (uObj) parts.push(uObj.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, ''));
+    var filtered = filterKutipan();
+    var parts = [filtered.length + ' kutipan'];
+    if (_showBookmark) parts.push('⭐ Favorit');
+
+    if (_aktifTemaList.length === 1) {
+      parts.push(TEMA_LABEL_MAP[_aktifTemaList[0]] || _aktifTemaList[0]);
+    } else if (_aktifTemaList.length > 1) {
+      parts.push(_aktifTemaList.length + ' tema');
     }
+
+    if (_aktifUlamaList.length === 1) {
+      var uObj = getUlama(_aktifUlamaList[0]);
+      if (uObj) parts.push(uObj.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, ''));
+    } else if (_aktifUlamaList.length > 1) {
+      parts.push(_aktifUlamaList.length + ' ulama');
+    }
+
+    if (_aktifVerifList.length === 1) {
+      parts.push((VERIF_META[_aktifVerifList[0]] || {}).label || _aktifVerifList[0]);
+    } else if (_aktifVerifList.length > 1) {
+      parts.push(_aktifVerifList.length + ' status');
+    }
+
     if (_querySearch) parts.push('"' + _querySearch + '"');
     infoBar.textContent = parts.join(' · ');
 
-    // Himpun ulama dari hasil filter aktif (bookmark+tema), tanpa filter ulama
-    var baseFiltered = filterKutipan(_aktifTema, 'semua');
-    var ulamaIds = [];
-    baseFiltered.forEach(function (k) {
-      if (ulamaIds.indexOf(k.ulama) === -1) ulamaIds.push(k.ulama);
-    });
+    updateFilterButton();
+  }
 
-    // Chip "Semua Ulama"
-    var chipsHtml = '<button class="kutipan-chip' + (_aktifUlama === 'semua' ? ' active' : '') + '" data-ulama="semua">\u{1F465} Semua Ulama</button>';
+  // Update badge angka & state aktif pada tombol Filter & Favorit
+  function updateFilterButton() {
+    var badge = document.getElementById('kutipanFilterBadge');
+    var filterBtn = document.getElementById('kutipanFilterBtn');
+    var bmBtn = document.getElementById('kutipanBookmarkBtn');
+    var count = _aktifTemaList.length + _aktifUlamaList.length + _aktifVerifList.length;
+    if (badge) {
+      badge.textContent = count;
+      badge.style.display = count > 0 ? '' : 'none';
+    }
+    if (filterBtn) filterBtn.classList.toggle('active', count > 0);
+    if (bmBtn) bmBtn.classList.toggle('active', _showBookmark);
+  }
 
-    ulamaIds.forEach(function (uid) {
-      var u = getUlama(uid);
-      if (!u) return;
-      var cnt = baseFiltered.filter(function (k) { return k.ulama === uid; }).length;
-      var namaChip = u.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, '');
-      chipsHtml += '<button class="kutipan-chip' + (_aktifUlama === uid ? ' active' : '') + '" data-ulama="' + esc(uid) + '">\u{1F4DC} ' + esc(namaChip) + ' <span style="opacity:0.6">(' + cnt + ')</span></button>';
-    });
-    chipsEl.innerHTML = chipsHtml;
-
-    // Guard: geser chips tidak memicu swipe tab
-    attachHScrollGuard(chipsEl);
-
-    chipsEl.querySelectorAll('.kutipan-chip').forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        var uid = chip.getAttribute('data-ulama');
-        if (_aktifUlama === uid) {
-          // Klik ulang chip yang aktif → reset ke semua ulama
-          _aktifUlama = 'semua';
-        } else {
-          _aktifUlama = uid;
-        }
-        chipsEl.querySelectorAll('.kutipan-chip').forEach(function (c) {
-          c.classList.toggle('active', c.getAttribute('data-ulama') === _aktifUlama);
-        });
+  // ── KONTROL: tombol Favorit & tombol Filter ──
+  function initFilterControls() {
+    var bmBtn = document.getElementById('kutipanBookmarkBtn');
+    if (bmBtn) {
+      bmBtn.addEventListener('click', function () {
+        _showBookmark = !_showBookmark;
         renderTopbar();
-        renderEntries(_aktifTema);
+        renderEntries();
         var main = document.querySelector('.kutipan-main');
         if (main) main.scrollTop = 0;
       });
-    });
+    }
+
+    var filterBtn = document.getElementById('kutipanFilterBtn');
+    if (filterBtn) {
+      filterBtn.addEventListener('click', openFilterSheet);
+    }
   }
 
-  // ── FILTER HELPER ────────────────────────────
-  function filterKutipan(tema, ulama) {
+  // ── FILTER SHEET (bottom sheet: Tema + Ulama + Verifikasi, semua multiselect) ──
+  function openFilterSheet() {
+    var old = document.getElementById('kutipanFilterModal');
+    if (old) old.remove();
+
+    // ── DRAFT STATE ───────────────────────────────────────────
+    // Salinan terpisah dari state asli. Semua tap di dalam sheet
+    // hanya mengubah salinan ini. State asli (_aktifTemaList dst)
+    // HANYA diperbarui saat tombol "Terapkan" ditekan. Kalau sheet
+    // ditutup tanpa Terapkan, salinan ini dibuang begitu saja dan
+    // state asli tidak pernah tersentuh.
+    var draftTema  = _aktifTemaList.slice();
+    var draftUlama = _aktifUlamaList.slice();
+    var draftVerif = _aktifVerifList.slice();
+
+    // Hitung jumlah hasil filter berdasarkan DRAFT (bukan state asli),
+    // tanpa mengubah state asli sama sekali.
+    function previewCount() {
+      var savedTema = _aktifTemaList, savedUlama = _aktifUlamaList, savedVerif = _aktifVerifList;
+      _aktifTemaList = draftTema; _aktifUlamaList = draftUlama; _aktifVerifList = draftVerif;
+      var n = filterKutipan().length;
+      _aktifTemaList = savedTema; _aktifUlamaList = savedUlama; _aktifVerifList = savedVerif;
+      return n;
+    }
+
+    // Daftar ulama yg muncul di kutipan (urut sesuai kemunculan pertama)
+    var ulamaIds = [];
+    _kutipanData.kutipan.forEach(function (k) {
+      if (ulamaIds.indexOf(k.ulama) === -1) ulamaIds.push(k.ulama);
+    });
+
+    function chipRow(items, getKey, getLabel, activeArr, dataAttr) {
+      return items.map(function (item) {
+        var key = getKey(item);
+        var active = activeArr.indexOf(key) !== -1;
+        return '<button class="kfilter-chip' + (active ? ' active' : '') + '" data-' + dataAttr + '="' + esc(key) + '">' +
+          esc(getLabel(item)) +
+        '</button>';
+      }).join('');
+    }
+
+    var temaChips = chipRow(
+      TEMA_LIST.filter(function (t) { return t.id !== 'semua'; }),
+      function (t) { return t.id; },
+      function (t) { return t.icon + ' ' + t.label; },
+      draftTema, 'tema'
+    );
+
+    var ulamaChips = chipRow(
+      ulamaIds, function (id) { return id; },
+      function (id) { var u = getUlama(id); return u ? u.nama.replace(/^(Syaikh|Imam|Syaikhul Islam)\s+/i, '') : id; },
+      draftUlama, 'ulama'
+    );
+
+    var verifChips = VERIF_ORDER.map(function (v) {
+      var info = VERIF_META[v];
+      var active = draftVerif.indexOf(v) !== -1;
+      var vc = verifColor(v);
+      var styleAttr = active ? ' style="border-color:' + vc + ';color:' + vc + ';background:' + hexAlpha(vc, 0.16) + '"' : '';
+      return '<button class="kfilter-chip kfilter-chip-verif' + (active ? ' active' : '') + '" data-verif="' + v + '"' + styleAttr + '>' +
+        info.icon + ' ' + info.label +
+      '</button>';
+    }).join('');
+
+    var modal = document.createElement('div');
+    modal.id = 'kutipanFilterModal';
+    modal.className = 'kfilter-modal';
+    modal.innerHTML =
+      '<div class="kfilter-backdrop"></div>' +
+      '<div class="kfilter-sheet">' +
+        '<div class="kfilter-header">' +
+          '<span class="kfilter-title">Filter Kutipan</span>' +
+          '<button class="kfilter-reset" id="kfilterReset">Reset semua</button>' +
+        '</div>' +
+        '<div class="kfilter-body">' +
+          '<div class="kfilter-section-label">STATUS VERIFIKASI</div>' +
+          '<div class="kfilter-chip-grid">' + verifChips + '</div>' +
+
+          '<div class="kfilter-section-label">TEMA</div>' +
+          '<div class="kfilter-chip-grid">' + temaChips + '</div>' +
+
+          '<div class="kfilter-section-label">ULAMA</div>' +
+          '<div class="kfilter-chip-grid">' + ulamaChips + '</div>' +
+        '</div>' +
+        '<div class="kfilter-actions">' +
+          '<button class="kfilter-apply-btn" id="kfilterApply">Terapkan</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(modal);
+    requestAnimationFrame(function () { modal.classList.add('open'); });
+
+    // Tutup TANPA menerapkan apapun — draft dibuang, state asli tetap.
+    function closeWithoutApply() {
+      modal.classList.remove('open');
+      setTimeout(function () { modal.remove(); }, 280);
+    }
+
+    modal.querySelector('.kfilter-backdrop').addEventListener('click', closeWithoutApply);
+
+    // Tutup DENGAN menerapkan — commit draft ke state asli, baru render ulang.
+    modal.querySelector('#kfilterApply').addEventListener('click', function () {
+      _aktifTemaList  = draftTema;
+      _aktifUlamaList = draftUlama;
+      _aktifVerifList = draftVerif;
+      renderTopbar();
+      renderEntries();
+      var main = document.querySelector('.kutipan-main');
+      if (main) main.scrollTop = 0;
+      closeWithoutApply();
+    });
+
+    modal.querySelector('#kfilterReset').addEventListener('click', function () {
+      draftTema = []; draftUlama = []; draftVerif = [];
+      modal.querySelectorAll('.kfilter-chip').forEach(function (c) {
+        c.classList.remove('active');
+        // Chip verifikasi pakai inline style warna — harus dibersihkan manual
+        if (c.hasAttribute('data-verif')) {
+          c.style.borderColor = '';
+          c.style.color = '';
+          c.style.background = '';
+        }
+      });
+      updateApplyLabel();
+    });
+
+    modal.querySelectorAll('.kfilter-chip[data-tema]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        toggleInArray(draftTema, chip.getAttribute('data-tema'));
+        chip.classList.toggle('active');
+        updateApplyLabel();
+      });
+    });
+    modal.querySelectorAll('.kfilter-chip[data-ulama]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        toggleInArray(draftUlama, chip.getAttribute('data-ulama'));
+        chip.classList.toggle('active');
+        updateApplyLabel();
+      });
+    });
+    modal.querySelectorAll('.kfilter-chip[data-verif]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var v = chip.getAttribute('data-verif');
+        toggleInArray(draftVerif, v);
+        var nowActive = chip.classList.toggle('active');
+        if (nowActive) {
+          var vc = verifColor(v);
+          chip.style.borderColor = vc;
+          chip.style.color = vc;
+          chip.style.background = hexAlpha(vc, 0.16);
+        } else {
+          chip.style.borderColor = '';
+          chip.style.color = '';
+          chip.style.background = '';
+        }
+        updateApplyLabel();
+      });
+    });
+
+    function updateApplyLabel() {
+      var applyBtn = modal.querySelector('#kfilterApply');
+      if (applyBtn) applyBtn.textContent = 'Terapkan (' + previewCount() + ' kutipan)';
+    }
+    updateApplyLabel();
+  }
+
+
+  function verifColor(v) {
+    var map = {
+      terverifikasi: '#3abf80', perlu_ditinjau: '#eba523', tidak_benar: '#e84646',
+      tidak_ditemukan: '#b48ee8', belum_diverifikasi: '#9ba3b8',
+    };
+    return map[v] || '#9ba3b8';
+  }
+
+  // ── FILTER HELPER (multiselect: OR di tiap kategori, AND antar kategori) ──
+  function filterKutipan() {
     if (!_kutipanData) return [];
     var list = _kutipanData.kutipan;
 
-    // Bookmark: filter awal, bisa dikombinasi semua filter lain
     if (_showBookmark) {
       var bm = getBookmarks();
       list = list.filter(function (k) { return bm.indexOf(k.id) !== -1; });
     }
 
-    // Tema (tetap aktif bahkan saat mode favorit)
-    if (tema && tema !== 'semua') {
-      list = list.filter(function (k) { return k.tema === tema; });
+    if (_aktifTemaList.length) {
+      list = list.filter(function (k) { return _aktifTemaList.indexOf(k.tema) !== -1; });
     }
 
-    // Ulama
-    if (ulama && ulama !== 'semua') {
-      list = list.filter(function (k) { return k.ulama === ulama; });
+    if (_aktifUlamaList.length) {
+      list = list.filter(function (k) { return _aktifUlamaList.indexOf(k.ulama) !== -1; });
     }
 
-    // Pencarian teks
+    if (_aktifVerifList.length) {
+      list = list.filter(function (k) { return _aktifVerifList.indexOf(k.verifikasi || 'belum_diverifikasi') !== -1; });
+    }
+
     if (_querySearch) {
       var q = _querySearch.toLowerCase();
       list = list.filter(function (k) {
@@ -308,11 +435,11 @@
   }
 
   // ── RENDER ENTRIES ───────────────────────────
-  function renderEntries(tema) {
+  function renderEntries() {
     var container = document.getElementById('kutipanEntries');
     if (!container || !_kutipanData) return;
 
-    var list = filterKutipan(tema, _aktifUlama);
+    var list = filterKutipan();
     if (list.length === 0) {
       if (_showBookmark && getBookmarks().length === 0) {
         container.innerHTML =
@@ -382,7 +509,7 @@
             '<div class="kutipan-tema-badge" data-tema="' + esc(k.tema) + '">' + esc(temaLabel) + '</div>' +
             verifBadgeHtml +
             '<button class="kutipan-bookmark-star' + (isBookmarked(k.id) ? ' saved' : '') + '" data-id="' + esc(k.id) + '" title="' + (isBookmarked(k.id) ? 'Hapus dari favorit' : 'Simpan ke favorit') + '">' +
-              (isBookmarked(k.id) ? '★' : '☆') +
+              '<span class="kutipan-bm-star">⭐</span>' +
             '</button>' +
           '</div>' +
           verifNoteHtml +
@@ -456,12 +583,10 @@
       btn.addEventListener('click', function () {
         var kid = btn.getAttribute('data-id');
         var added = toggleBookmark(kid);
-        btn.textContent = added ? '★' : '☆';
         btn.classList.toggle('saved', added);
         btn.title = added ? 'Hapus dari favorit' : 'Simpan ke favorit';
-        // Update jumlah di sidebar tanpa full re-render
-        var bmCountEl = document.querySelector('#sidebarBookmarkBtn .ktb-count');
-        if (bmCountEl) bmCountEl.textContent = getBookmarks().length + ' kutipan';
+        // Update info bar jika mode favorit sedang aktif
+        if (_showBookmark) renderTopbar();
         // Jika mode favorit aktif dan dihapus, hapus kartu dari DOM
         if (_showBookmark && !added) {
           var entry = document.getElementById('kentry-' + kid);
@@ -575,7 +700,7 @@
           var mInfo = MINI_MAP[kVerif] || MINI_MAP.belum_diverifikasi;
           var kVerifMini = '<span class="kutipan-verif-mini ' + mInfo.cls + '">' + mInfo.icon + '</span>';
           var kNumMini = parseInt(k.id.replace(/[^0-9]/g, ''), 10) || 0;
-          return '<button class="kup-quote-card" data-kutipan-id="' + esc(k.id) + '" data-tema="' + esc(k.tema) + '">' +
+          return '<button class="kup-quote-card" data-kutipan-id="' + esc(k.id) + '" data-tema="' + esc(k.tema) + '" data-ulama-id="' + esc(k.ulama) + '">' +
             '<span class="kutipan-num-badge mini">No. ' + kNumMini + '</span>' +
             '<span class="kutipan-tema-badge">' + esc(tl) + '</span>' +
             kVerifMini +
@@ -622,14 +747,21 @@
       card.addEventListener('click', function () {
         var kid   = card.getAttribute('data-kutipan-id');
         var tema  = card.getAttribute('data-tema');
+        var uid   = card.getAttribute('data-ulama-id');
         closeUlamaPanel();
 
-        // Ganti tema jika perlu
-        if (_aktifTema !== 'semua' && _aktifTema !== tema) {
-          _aktifTema = tema;
-          renderSidebar();
+        // Pastikan kutipan target tidak tersembunyi oleh filter aktif
+        var akanTersembunyi =
+          (_aktifTemaList.length && _aktifTemaList.indexOf(tema) === -1) ||
+          (_aktifUlamaList.length && uid && _aktifUlamaList.indexOf(uid) === -1) ||
+          (_aktifVerifList.length) || _querySearch || _showBookmark;
+        if (akanTersembunyi) {
+          _aktifTemaList = []; _aktifUlamaList = []; _aktifVerifList = [];
+          _querySearch = ''; _showBookmark = false;
+          var searchInput = document.getElementById('kutipanSearch');
+          if (searchInput) searchInput.value = '';
           renderTopbar();
-          renderEntries(_aktifTema);
+          renderEntries();
         }
 
         // Scroll & highlight
@@ -994,7 +1126,7 @@
         var main = document.querySelector('.kutipan-main');
         if (main) main.scrollTop = 0;
         renderTopbar();
-        renderEntries(_aktifTema);
+        renderEntries();
       }, 250);
     });
 
@@ -1004,7 +1136,7 @@
       clearBtn.classList.remove('visible');
       input.focus();
       renderTopbar();
-      renderEntries(_aktifTema);
+      renderEntries();
     });
 
     // Saat tema/ulama berganti, clear search jika ingin fresh — tidak wajib, tapi UX lebih bersih

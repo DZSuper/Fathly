@@ -7,85 +7,7 @@
   overflow: hidden;
 }
 
-/* ── SIDEBAR ── */
-.kutipan-sidebar {
-  width: 118px;
-  flex-shrink: 0;
-  border-right: 1px solid var(--border);
-  overflow-y: auto;
-  background: var(--bg-sidebar);
-  padding: 10px 6px;
-}
-
-.kutipan-sidebar-label {
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--text-muted);
-  padding-left: 6px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.kutipan-tema-btn {
-  width: 100%;
-  text-align: left;
-  padding: 7px 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 3px;
-  background: transparent;
-  border-left: 2px solid transparent;
-  transition: all 0.15s;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-family: inherit;
-}
-
-.kutipan-tema-btn:hover {
-  background: var(--bg-card);
-}
-
-.kutipan-tema-btn.active {
-  background: rgba(255, 215, 0, 0.08);
-  border-left-color: var(--gold);
-}
-
-.ktb-icon {
-  font-size: 0.75rem;
-  flex-shrink: 0;
-}
-
-.ktb-text {
-  flex: 1;
-  min-width: 0;
-}
-
-.ktb-nama {
-  font-size: 0.68rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  line-height: 1.3;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.kutipan-tema-btn.active .ktb-nama {
-  color: var(--gold);
-  font-weight: 700;
-}
-
-.ktb-count {
-  font-size: 0.6rem;
-  color: var(--text-muted);
-  opacity: 0.6;
-}
-
-/* ── MAIN AREA ── */
+/* ── MAIN AREA (sidebar dihapus, filter via bottom sheet) ── */
 .kutipan-main {
   flex: 1;
   overflow-y: auto;
@@ -93,7 +15,7 @@
   flex-direction: column;
 }
 
-/* Sticky top bar (chips + count) */
+/* Sticky top bar */
 .kutipan-topbar {
   position: sticky;
   top: 0;
@@ -101,6 +23,96 @@
   background: var(--bg-dark);
   border-bottom: 1px solid var(--border);
   padding: 8px 14px 6px;
+}
+
+/* Baris: search + tombol ikon (favorit, filter) */
+.kutipan-search-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.kutipan-search-row .kutipan-search-wrap {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Tombol ikon bulat (Favorit ⭐ & Filter ⚙) */
+.kutipan-icon-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.kutipan-icon-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.kutipan-icon-btn.active {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* Tombol Favorit (⭐) — border selalu solid (sama dgn search & filter),
+   yang redup/cerah hanya ikonnya saja, sama seperti bintang di Catatan */
+#kutipanBookmarkBtn {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+.kutipan-bm-star {
+  display: inline-flex;
+  opacity: 0.35;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #kutipanBookmarkBtn:hover .kutipan-bm-star {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+#kutipanBookmarkBtn.active {
+  background: var(--bg-card);
+  border-color: var(--gold);
+}
+
+#kutipanBookmarkBtn.active .kutipan-bm-star {
+  opacity: 1;
+}
+
+.kutipan-filter-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 3px;
+  border-radius: 9px;
+  background: var(--gold);
+  color: #0b0c0e;
+  font-size: 0.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 /* Search bar */
@@ -212,41 +224,151 @@
   margin-bottom: 7px;
 }
 
-/* Ulama chips */
-.kutipan-chips {
+/* =============================================
+   FILTER SHEET (bottom sheet: Tema + Ulama + Verifikasi)
+============================================= */
+.kfilter-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
   display: flex;
-  gap: 5px;
-  overflow-x: auto;
-  padding-bottom: 2px;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.kutipan-chips::-webkit-scrollbar { display: none; }
+.kfilter-modal.open {
+  pointer-events: all;
+  opacity: 1;
+}
 
-.kutipan-chip {
+.kfilter-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+}
+
+.kfilter-sheet {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 86vh;
+  background: var(--bg-card);
+  border-radius: 18px 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(40px);
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.kfilter-modal.open .kfilter-sheet {
+  transform: translateY(0);
+}
+
+.kfilter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--border);
   flex-shrink: 0;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.68rem;
+}
+
+.kfilter-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.kfilter-reset {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 4px 6px;
+}
+
+.kfilter-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 18px 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.kfilter-section-label {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin: 14px 0 9px;
+  text-transform: uppercase;
+}
+
+.kfilter-section-label:first-child {
+  margin-top: 0;
+}
+
+.kfilter-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.kfilter-chip {
+  padding: 7px 13px;
+  border-radius: 9px;
+  font-size: 0.74rem;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid var(--border);
-  background: var(--bg-card);
+  background: var(--bg-dark);
   color: var(--text-muted);
   font-family: inherit;
   transition: all 0.15s;
   white-space: nowrap;
 }
 
-.kutipan-chip:hover {
+.kfilter-chip:hover {
   border-color: var(--gold);
-  color: var(--gold);
 }
 
-.kutipan-chip.active {
+.kfilter-chip.active:not(.kfilter-chip-verif) {
   background: rgba(255, 215, 0, 0.15);
   border-color: var(--gold);
   color: var(--gold);
   font-weight: 700;
+}
+
+/* Chip status verifikasi pakai warna dinamis per status (diisi via JS inline style) */
+.kfilter-chip-verif.active {
+  border-color: var(--vc);
+  color: var(--vc);
+  font-weight: 700;
+}
+
+.kfilter-actions {
+  padding: 12px 18px 20px;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.kfilter-apply-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 11px;
+  background: var(--gold);
+  color: #0b0c0e;
+  border: none;
+  font-weight: 800;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /* ── ENTRIES ── */
@@ -1220,43 +1342,36 @@
   margin-left: auto;
 }
 
-/* Tombol bintang favorit */
+/* Tombol bintang favorit — sama persis sistemnya dgn tombol Favorit di topbar:
+   satu emoji ⭐ tetap, yang berubah hanya opacity (redup/cerah) */
 .kutipan-bookmark-star {
   background: none;
   border: none;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1;
   cursor: pointer;
-  color: var(--text-muted);
   padding: 2px 4px;
   border-radius: 6px;
-  transition: color 0.2s, transform 0.2s;
   font-family: inherit;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(-2px); /* sejajarkan tengah dgn baris badge */
 }
 
-.kutipan-bookmark-star:hover {
-  color: var(--gold);
-  transform: scale(1.2);
+.kutipan-bm-star {
+  display: inline-flex;
+  opacity: 0.35;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.kutipan-bookmark-star.saved {
-  color: var(--gold);
+@media (hover: hover) and (pointer: fine) {
+  .kutipan-bookmark-star:hover .kutipan-bm-star {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
 }
 
-.kutipan-bookmark-star.saved:hover {
-  color: #e0a800;
-  transform: scale(1.15);
-}
-
-/* Tombol Favorit di sidebar */
-.kutipan-bookmark-btn {
-  margin-bottom: 6px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 10px !important;
-}
-
-.kutipan-bookmark-btn.active .ktb-icon,
-.kutipan-bookmark-btn.active .ktb-nama {
-  color: var(--gold);
+.kutipan-bookmark-star.saved .kutipan-bm-star {
+  opacity: 1;
 }
