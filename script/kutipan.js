@@ -118,6 +118,24 @@
       }
     } catch (e) {}
 
+    // ── Kunci scroll body HANYA saat tab Kutipan aktif ──────
+    // Tab Kutipan punya scroll mandiri sendiri (.kutipan-main), beda dari
+    // tab lain yang mengandalkan scroll di level body. Daripada menempel
+    // ke setiap kemungkinan cara pindah tab (klik tombol, swipe, dst),
+    // cukup amati langsung class "active" pada #tab-kutipan — apapun cara
+    // perpindahannya pasti tertangkap di sini.
+    var kutipanTabEl = document.getElementById('tab-kutipan');
+    if (kutipanTabEl) {
+      var syncBodyLock = function () {
+        document.body.classList.toggle('kutipan-tab-active', kutipanTabEl.classList.contains('active'));
+      };
+      syncBodyLock();
+      new MutationObserver(syncBodyLock).observe(kutipanTabEl, {
+        attributes: true,
+        attributeFilter: ['class'],
+      });
+    }
+
     // Ulama panel back button
     var backBtn = document.getElementById('kutipanUlamaPanelBack');
     if (backBtn) {
@@ -218,6 +236,17 @@
     if (filterBtn) {
       filterBtn.addEventListener('click', openFilterSheet);
     }
+
+    // Cegah sentuhan yang dimulai dari toolbar ikut menggeser halaman
+    // (body tidak overflow:hidden, jadi browser bisa "mencari" elemen
+    // scroll lain ke atas kalau drag dimulai dari area yang sendirinya
+    // tidak punya scroll, seperti toolbar ini).
+    var topbarEl = document.querySelector('.kutipan-topbar');
+    if (topbarEl) {
+      topbarEl.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+      }, { passive: false });
+    }
   }
 
   // ── FILTER SHEET (bottom sheet: Tema + Ulama + Verifikasi, semua multiselect) ──
@@ -290,6 +319,7 @@
     modal.innerHTML =
       '<div class="kfilter-backdrop"></div>' +
       '<div class="kfilter-sheet">' +
+        '<div class="kfilter-drag-handle-zone" id="kfilterDragZone"><div class="kfilter-drag-handle"></div></div>' +
         '<div class="kfilter-header">' +
           '<span class="kfilter-title">Filter Kutipan</span>' +
           '<button class="kfilter-reset" id="kfilterReset">Reset semua</button>' +
@@ -319,6 +349,49 @@
     }
 
     modal.querySelector('.kfilter-backdrop').addEventListener('click', closeWithoutApply);
+
+    // ── Geser ke bawah untuk menutup secara manual ──────────
+    var sheetEl   = modal.querySelector('.kfilter-sheet');
+    var dragZone  = modal.querySelector('#kfilterDragZone');
+    var dragStartY = 0, dragDelta = 0, isDragging = false;
+
+    dragZone.addEventListener('touchstart', function (e) {
+      dragStartY = e.touches[0].clientY;
+      isDragging = true;
+      sheetEl.style.transition = 'none';
+    }, { passive: true });
+
+    dragZone.addEventListener('touchmove', function (e) {
+      if (!isDragging) return;
+      dragDelta = Math.max(0, e.touches[0].clientY - dragStartY);
+      sheetEl.style.transform = 'translateY(' + dragDelta + 'px)';
+    }, { passive: true });
+
+    dragZone.addEventListener('touchend', function () {
+      if (!isDragging) return;
+      isDragging = false;
+
+      if (dragDelta > 80) {
+        // Lanjutkan turun dari posisi geser saat ini — JANGAN bersihkan
+        // transform dulu (itu yang bikin sheet melompat balik ke posisi
+        // terbuka sebelum animasi tutup berjalan). Animasikan langsung
+        // menuju keluar layar sepenuhnya, sambil modal mulai memudar.
+        modal.classList.remove('open'); // mulai fade opacity backdrop+modal
+        sheetEl.style.transition = 'transform 0.22s cubic-bezier(0.4,0,1,1)';
+        var offscreen = sheetEl.offsetHeight + 40;
+        // Paksa browser mendaftarkan transition sebelum ganti target,
+        // supaya animasinya benar2 dari posisi geser saat ini, bukan lompat.
+        requestAnimationFrame(function () {
+          sheetEl.style.transform = 'translateY(' + offscreen + 'px)';
+        });
+        setTimeout(function () { modal.remove(); }, 280);
+      } else {
+        // Batal — kembali mulus ke posisi terbuka penuh
+        sheetEl.style.transition = '';
+        sheetEl.style.transform = '';
+      }
+      dragDelta = 0;
+    });
 
     // Tutup DENGAN menerapkan — commit draft ke state asli, baru render ulang.
     modal.querySelector('#kfilterApply').addEventListener('click', function () {
