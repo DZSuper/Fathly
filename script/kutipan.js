@@ -118,22 +118,35 @@
       }
     } catch (e) {}
 
-    // ── Kunci scroll body HANYA saat tab Kutipan aktif ──────
-    // Tab Kutipan punya scroll mandiri sendiri (.kutipan-main), beda dari
-    // tab lain yang mengandalkan scroll di level body. Daripada menempel
-    // ke setiap kemungkinan cara pindah tab (klik tombol, swipe, dst),
-    // cukup amati langsung class "active" pada #tab-kutipan — apapun cara
-    // perpindahannya pasti tertangkap di sini.
+    // ── Cegah HANYA elemen chrome tertentu memicu scroll halaman ──
+    // Daripada mengunci body sepenuhnya (itu mematikan pull-to-refresh
+    // bawaan browser), kita tandai status "tab Kutipan aktif" lewat
+    // MutationObserver (akurat utk semua cara pindah tab), lalu pakai
+    // status itu untuk membatalkan drag HANYA kalau berasal dari tab
+    // navigasi global — bukan mengunci seluruh halaman.
     var kutipanTabEl = document.getElementById('tab-kutipan');
+    var isKutipanActive = false;
     if (kutipanTabEl) {
-      var syncBodyLock = function () {
-        document.body.classList.toggle('kutipan-tab-active', kutipanTabEl.classList.contains('active'));
+      var syncActiveFlag = function () {
+        isKutipanActive = kutipanTabEl.classList.contains('active');
+        document.body.classList.toggle('kutipan-tab-active', isKutipanActive); // dipakai utk styling, bukan lagi utk lock
       };
-      syncBodyLock();
-      new MutationObserver(syncBodyLock).observe(kutipanTabEl, {
+      syncActiveFlag();
+      new MutationObserver(syncActiveFlag).observe(kutipanTabEl, {
         attributes: true,
         attributeFilter: ['class'],
       });
+    }
+
+    var stickyHeaderEl = document.querySelector('.sticky-header');
+    if (stickyHeaderEl) {
+      var headerStartY = 0;
+      stickyHeaderEl.addEventListener('touchstart', function (e) {
+        headerStartY = e.touches[0].clientY;
+      }, { passive: true });
+      stickyHeaderEl.addEventListener('touchmove', function (e) {
+        if (isKutipanActive && e.touches[0].clientY < headerStartY) e.preventDefault();
+      }, { passive: false });
     }
 
     // Ulama panel back button
@@ -240,11 +253,17 @@
     // Cegah sentuhan yang dimulai dari toolbar ikut menggeser halaman
     // (body tidak overflow:hidden, jadi browser bisa "mencari" elemen
     // scroll lain ke atas kalau drag dimulai dari area yang sendirinya
-    // tidak punya scroll, seperti toolbar ini).
+    // tidak punya scroll, seperti toolbar ini). Hanya blokir arah ke ATAS
+    // (yang menyebabkan bug toolbar hilang) — geser ke BAWAH dibiarkan
+    // lewat supaya pull-to-refresh bawaan browser tetap berfungsi.
     var topbarEl = document.querySelector('.kutipan-topbar');
     if (topbarEl) {
+      var topbarStartY = 0;
+      topbarEl.addEventListener('touchstart', function (e) {
+        topbarStartY = e.touches[0].clientY;
+      }, { passive: true });
       topbarEl.addEventListener('touchmove', function (e) {
-        e.preventDefault();
+        if (e.touches[0].clientY < topbarStartY) e.preventDefault();
       }, { passive: false });
     }
   }
@@ -351,23 +370,49 @@
     modal.querySelector('.kfilter-backdrop').addEventListener('click', closeWithoutApply);
 
     // ── Geser ke bawah untuk menutup secara manual ──────────
-    var sheetEl   = modal.querySelector('.kfilter-sheet');
-    var dragZone  = modal.querySelector('#kfilterDragZone');
-    var dragStartY = 0, dragDelta = 0, isDragging = false;
+    var sheetEl = modal.querySelector('.kfilter-sheet');
+    var bodyEl  = modal.querySelector('.kfilter-body');
+    var dragStartY = 0, dragDelta = 0, isDragging = false, canDrag = false;
 
-    dragZone.addEventListener('touchstart', function (e) {
+    sheetEl.addEventListener('touchstart', function (e) {
       dragStartY = e.touches[0].clientY;
+      // Kalau sentuhan dimulai dari area chip (.kfilter-body) yang punya
+      // scroll sendiri, geser-tutup hanya boleh aktif kalau area itu
+      // sedang di posisi paling atas. Kalau dimulai dari header/pegangan
+      // (yang tidak punya scroll sendiri), selalu boleh.
+      var startedInBody = bodyEl && bodyEl.contains(e.target);
+      canDrag = startedInBody ? (bodyEl.scrollTop <= 0) : true;
       isDragging = true;
       sheetEl.style.transition = 'none';
     }, { passive: true });
 
-    dragZone.addEventListener('touchmove', function (e) {
+    sheetEl.addEventListener('touchmove', function (e) {
       if (!isDragging) return;
-      dragDelta = Math.max(0, e.touches[0].clientY - dragStartY);
-      sheetEl.style.transform = 'translateY(' + dragDelta + 'px)';
-    }, { passive: true });
+      var currentY = e.touches[0].clientY;
+      var delta = currentY - dragStartY;
 
-    dragZone.addEventListener('touchend', function () {
+      if (!canDrag || delta <= 0) {
+        // Bukan geser-tutup yang valid (geser ke atas, atau dimulai saat
+        // area chip belum di posisi paling atas) — biarkan native scroll
+        // jalan seperti biasa, jangan ganggu apapun.
+        dragDelta = 0;
+        return;
+      }
+
+      // Kalau area chip baru sampai paling atas DI TENGAH gesture (misal
+      // mulai geser dari tengah list, lalu list-nya habis discroll ke atas
+      // sebelum jari berhenti), baru di titik itu geser-tutup ikut aktif.
+      if (bodyEl && bodyEl.contains(e.target) && bodyEl.scrollTop > 0) {
+        dragDelta = 0;
+        return;
+      }
+
+      e.preventDefault();
+      dragDelta = delta;
+      sheetEl.style.transform = 'translateY(' + dragDelta + 'px)';
+    }, { passive: false });
+
+    sheetEl.addEventListener('touchend', function () {
       if (!isDragging) return;
       isDragging = false;
 

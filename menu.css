@@ -52,17 +52,6 @@ body {
   transition: background-color var(--transition), color var(--transition);
 }
 
-/* Khusus saat tab Kutipan aktif — body dikunci agar tidak ikut scroll,
-   karena tab Kutipan punya scroll mandiri sendiri (.kutipan-main).
-   Tab lain tidak terpengaruh sama sekali (class ini hanya dipasang/
-   dilepas oleh kutipan.js saat tab dibuka/ditutup). */
-body.kutipan-tab-active {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  overscroll-behavior: contain;
-}
-
 /* =============================================
    HAMBURGER BUTTON
 ============================================= */

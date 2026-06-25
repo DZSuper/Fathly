@@ -3330,7 +3330,8 @@
         "Mengikuti hawa nafsu dalam ibadah adalah jalan bid'ah",
         "Penilaian ibadah yang diterima adalah sesuai sunnah, bukan seberapa indah atau menyentuh hati"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Ibanah al-Kubra adalah karya nyata Ibnu Battah yang memang membahas wajibnya ittiba' dalam ibadah. Tema sangat sesuai. Namun redaksi persis 'man arada an ya'budallah falyа'budhu kama amar' dan sitasi Jilid 1 Hal. 71 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k132",
@@ -3347,7 +3348,8 @@
         "Amal sedikit tapi rutin akan menumpuk menjadi amal yang sangat besar",
         "Inilah hikmah di balik sunnah harian yang Nabi ﷺ jaga terus-menerus"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ (HR. Bukhari no. 6465 & Muslim no. 2818 dari Aisyah, shahih). an-Nawawi hanya mencantumkannya di Riyadhus Shalihin (Bab al-Mudawamah 'alal 'Amal) sebagai hadits — bukan ucapan beliau sendiri. Ini adalah pola yang sangat berulang dalam kutipan-kutipan an-Nawawi."
     },
     {
       "id": "k133",
@@ -3364,7 +3366,8 @@
         "Amal yang bercampur riya' tidak diterima Allah bahkan bisa menjadi bumerang",
         "Memeriksa niat sebelum, saat, dan setelah amal adalah cara mencegah riya'"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Fathul Bari Jilid 11 memang membahas bab ar-Riya'. Konsep 'riya' adalah syirik khafi' berasal dari hadits Nabi ﷺ yang disyarah Ibnu Hajar. Perlu dicek apakah di Jilid 11 Hal. 336 redaksi ini adalah ucapan orisinal Ibnu Hajar atau hanya syarah/penjelasan dari hadits yang ada."
     },
     {
       "id": "k134",
@@ -3381,7 +3384,8 @@
         "Menjadikan dunia sebagai tujuan utama adalah penyimpangan yang merusak amal",
         "Ikhlas bukan berarti tidak peduli dunia, tapi menjaga agar dunia tidak menggeser akhirat"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Shaidul Khathir adalah karya renungan nyata Ibnul Jauzi yang memang membahas ikhlas. Tema sangat sesuai. Namun redaksi Arab persis 'i'mal amalan lillah, waj'alid dunya taba'an la matbu'an' dan sitasi halaman 51 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k135",
@@ -3398,7 +3402,8 @@
         "Islam bukan agama yang hanya sibuk dengan ritual pribadi tapi mengabaikan sesama",
         "Menjadi orang yang bermanfaat adalah salah satu tujuan hidup seorang Muslim"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "tidak_benar",
+      "catatan_verifikasi": "Ini adalah HADITS NABI ﷺ dari Ibnu Umar (HR. Thabrani, dihasankan al-Albani dalam Shahih at-Targhib no. 906). adz-Dzahabi tidak mengucapkan ini — Siyar A'lam Jilid 4 berisi biografi generasi tabi'in, dan di sana adz-Dzahabi menukil hadits ini dalam konteks biografi seseorang, bukan sebagai ucapannya sendiri."
     },
     {
       "id": "k136",
@@ -3415,7 +3420,8 @@
         "Harta hilang, tapi akhlak baik meninggalkan kenangan yang tidak terhapus",
         "Nabi ﷺ diutus untuk menyempurnakan akhlak yang mulia"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Adab Asy-Syar'iyah Jilid 1 Hal. 453 ada dalam rentang bab yang membahas akhlak dan kemuliaan. Namun kitab ini banyak berisi nukilan dari Imam Ahmad dan ulama lain — perlu dipastikan apakah redaksi ini ucapan orisinal Ibnu Muflih atau nukilan dari ulama yang dikutipnya."
     },
     {
       "id": "k137",
@@ -3432,7 +3438,8 @@
         "Taklid buta kepada madzhab tanpa memperhatikan dalil bukan ajaran para imam",
         "Imam Abu Hanifah adalah orang pertama yang menegaskan prinsip ini"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi bahwa ucapan ini memang dari Abu Hanifah dan memang dicantumkan Ibnul Qayyim dalam I'lam al-Muwaqqi'in. Namun sitasi yang lebih akurat adalah Jilid 1 Hal. 79 (bukan Jilid 2 Hal. 309). Beberapa sumber juga mencantumkan redaksi ini dari Ibnu Abdil Barr dalam Al-Intiqo'. Atribusi kepada Abu Hanifah telah dikonfirmasi dari berbagai jalur."
     },
     {
       "id": "k138",
@@ -3449,7 +3456,8 @@
         "Mengetahui sumber hukum adalah bagian dari tanggung jawab seorang faqih",
         "Ini menunjukkan para imam madzhab menginginkan murid-muridnya berpikir kritis, bukan sekadar mengikut"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Ucapan Abu Hanifah 'la yahillu li ahad an ya'khudha biqawlina ma lam ya'lam min ayna akhadhnahu' adalah ucapan masyhur yang dinukil oleh banyak ulama termasuk Ibnul Qayyim. Meskipun sitasi 'Jilid 2 Hal. 309' perlu dikonfirmasi lebih lanjut, atribusi kepada Abu Hanifah sendiri sangat kuat berdasarkan banyak jalur riwayat."
     },
     {
       "id": "k139",
@@ -3466,7 +3474,8 @@
         "Ijma' Salafush Shalih adalah hujjah yang kuat dalam agama",
         "Imam Abu Hanifah termasuk ulama yang sangat menghormati atsar Salaf"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Al-Fiqh al-Akbar adalah kitab aqidah yang dinisbatkan kepada Abu Hanifah, dan syarah Mulla Ali al-Qari atasnya adalah nyata. Namun redaksi 'ad-din yu'khaz minal Kitab was-Sunnah wa ma ajma'a 'alayhis salaf' lebih merupakan prinsip ushul fiqih umum yang dinisbatkan ke banyak ulama. Perlu dicek apakah ada di syarh halaman 7 secara verbatim."
     },
     {
       "id": "k140",
@@ -3483,7 +3492,8 @@
         "Setiap ulama, setinggi apapun derajatnya, bisa salah dalam ijtihadnya",
         "Ini adalah dasar mengapa dalil harus selalu diutamakan di atas pendapat siapapun"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Ucapan Imam Malik 'kulluna raddun wa marduddun 'alaih illa shahibul qabr' sangat terkenal dan dikonfirmasi dari berbagai sumber — beliau mengucapkannya sambil menunjuk makam Nabi ﷺ di Madinah. Ibnul Qayyim mencantumkannya dalam I'lam al-Muwaqqi'in sebagai argumen agar tidak taklid buta kepada siapapun selain Nabi ﷺ."
     },
     {
       "id": "k141",
@@ -3500,7 +3510,8 @@
         "Cahaya ilmu hanya datang dengan ikhlas, taqwa, dan membersihkan hati",
         "Banyak hafalan tanpa pemahaman dan amal tidak mencerminkan ilmu yang hakiki"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi dengan sanad shahih. Ucapan Imam Malik ini diriwayatkan dari Ibnu Wahb dari Malik dengan sanad yang dinilai shahih. Dikutip oleh Ibnu Katsir dalam tafsirnya, tercantum dalam Jami' Bayanil Ilmi wa Fadhlihi karya Ibnu Abdil Barr, dan dalam Mawahib al-Jalil. Redaksi sangat konsisten di berbagai sumber."
     },
     {
       "id": "k142",
@@ -3517,7 +3528,8 @@
         "Ulama yang tidak bisa menahan diri dari yang halal akan lebih mudah tergelincir ke yang haram",
         "Kewibawaan seorang alim lahir dari akhlak dan wara'-nya, bukan hanya ilmunya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Tema wara' sebagai syarat menjadi panutan sangat sesuai dengan ajaran Imam Malik. Al-Muwattha' adalah kitab nyata. Namun redaksi persis 'la yakunu ar-rajul imaman yuqtada bihi hatta yakuffa 'an ba'dhi ma yahillu lahu' dan sitasi Jilid 2 Hal. 990 belum dapat diverifikasi secara verbatim — Al-Muwattha' bab Wara' wal Ifta' perlu dicek."
     },
     {
       "id": "k143",
@@ -3534,7 +3546,8 @@
         "Mengikuti madzhab sejati berarti mengikuti dalil seperti yang dimaksud imamnya",
         "Perkataan ini adalah prinsip emas yang seharusnya dipegang setiap pengikut madzhab"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. an-Nawawi memang mencantumkan ucapan Imam asy-Syafi'i 'idza sahhal hadits fahuwa madzhabi' di Muqaddimah Al-Majmu' Syarh al-Muhadzdzab Jilid 1. Ucapan ini adalah salah satu ucapan asy-Syafi'i yang paling terkenal dan dikonfirmasi dari berbagai kitab ushul fiqih."
     },
     {
       "id": "k144",
@@ -3551,7 +3564,8 @@
         "Ini adalah contoh terbaik kerendahan hati seorang ulama besar terhadap Sunnah Nabi ﷺ",
         "Pengikut madzhab yang menemukan hadits shahih yang bertentangan dengan madzhab hendaknya mengikuti hadits"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Ibnul Qayyim mencantumkan ucapan asy-Syafi'i ini dalam I'lam al-Muwaqqi'in — ini adalah salah satu pernyataan terkuat asy-Syafi'i tentang kewajiban mengikuti hadits shahih di atas pendapat madzhab. Dikonfirmasi dari berbagai kitab ushul fiqih dan biografi asy-Syafi'i."
     },
     {
       "id": "k145",
@@ -3568,7 +3582,8 @@
         "Stagnan dalam kebaikan sudah termasuk kerugian — apalagi kemunduran",
         "Ini adalah motivasi kuat untuk selalu muhasabah dan memperbaiki diri setiap hari"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Ucapan ini memang dinisbatkan kepada Imam asy-Syafi'i dan Abu Nu'aim al-Ashbahani mencantumkan banyak ucapan asy-Syafi'i di Hilyatul Awliya' Jilid 9 (tarjamah asy-Syafi'i). Ucapan ini dikutip secara konsisten dari beliau di berbagai sumber dan dikenal luas sebagai ucapan asli asy-Syafi'i."
     },
     {
       "id": "k146",
@@ -3585,7 +3600,8 @@
         "Ilmu fiqih dan tauhid yang membentuk amal adalah yang paling dicintai para ulama salaf",
         "Menekuni ilmu yang tidak bermanfaat sementara ilmu wajib terabaikan adalah keliru"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Diwan al-Imam asy-Syafi'i umumnya berisi syair, bukan prosa. Redaksi ini berbentuk prosa sehingga perlu dicek apakah benar ada di Diwan halaman 44 atau dari sumber lain. Ada ucapan serupa: 'laysal 'ilmu ma hufizh, al-'ilmu ma nafa'' yang lebih sering dinisbatkan kepada asy-Syafi'i. Sitasi perlu diverifikasi."
     },
     {
       "id": "k147",
@@ -3602,7 +3618,8 @@
         "Menjadikan manhaj sahabat sebagai tolok ukur adalah inti dari manhaj Ahlus Sunnah",
         "Imam Ahmad meletakkan ini sebagai prinsip pertama dalam kitab aqidahnya"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Pembukaan Kitab as-Sunnah karya Imam Ahmad memang berisi pernyataan bahwa pokok-pokok Sunnah adalah berpegang kepada manhaj para sahabat. Ini adalah salah satu dokumen aqidah Imam Ahmad yang paling terkenal dan dikonfirmasi dari berbagai sumber."
     },
     {
       "id": "k148",
@@ -3619,7 +3636,8 @@
         "Warisan pendapat ulama salaf adalah jaring pengaman dari kekeliruan ijtihad",
         "Imam Ahmad sangat berhati-hati dalam berfatwa dan sering berkata 'la adri' (aku tidak tahu)"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "I'lam al-Muwaqqi'in memang berisi banyak ucapan Imam Ahmad tentang adab fatwa. Tema ini sangat sesuai dengan karakter Imam Ahmad yang terkenal sangat berhati-hati — beliau sering berkata 'la adri'. Namun redaksi persis dan sitasi Jilid 4 Hal. 199 belum dapat diverifikasi secara verbatim."
     },
     {
       "id": "k149",
@@ -3636,7 +3654,8 @@
         "Aqidah Ahlus Sunnah: Al-Qur'an adalah kalam Allah, bukan makhluk ciptaan",
         "Keteguhan Imam Ahmad menjadi benteng yang menyelamatkan aqidah umat Islam"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "terverifikasi",
+      "catatan_verifikasi": "Terverifikasi. Imam Ahmad memang menyatakan dengan tegas dalam Kitab as-Sunnah bahwa al-Qur'an adalah kalam Allah, bukan makhluk. Beliau mempertahankan aqidah ini dengan pengorbanan besar (dipenjara dan dicambuk). Ini adalah salah satu aqidah paling terkenal dari Imam Ahmad yang dikonfirmasi dari banyak sumber."
     },
     {
       "id": "k150",
@@ -3653,7 +3672,8 @@
         "Seseorang yang tidak berhati-hati dalam halal-haram akan semakin tumpul hatinya",
         "Imam Ahmad adalah teladan wara' — beliau sangat ketat menjaga diri dari perkara meragukan"
       ],
-      "verifikasi": "belum_diverifikasi"
+      "verifikasi": "perlu_ditinjau",
+      "catatan_verifikasi": "Az-Zuhd karya Imam Ahmad adalah kitab nyata dan membahas wara'. Tema sangat sesuai dengan karakter Imam Ahmad. Namun redaksi persis 'man qalla wara'uhu mata qalbuhu' dan sitasi halaman 57 belum dapat diverifikasi secara verbatim dari sumber yang tersedia."
     },
     {
       "id": "k151",
