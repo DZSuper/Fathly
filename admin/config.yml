@@ -294,6 +294,110 @@ collections:
             widget: "string"
             hint: "Pisahkan dengan koma. Contoh: ilmu agama islam, manhaj salaf, tauhid"
 
+  # ── DOA & DZIKIR ────────────────────────────────────────────
+  - name: "doa-mgr"
+    label: "🤲 Doa & Dzikir"
+    files:
+      - name: "dzikir-pagi"
+        label: "🌅 Dzikir Pagi"
+        file: "konten/dzikir-pagi.json"
+        fields:
+          - {name: "kategori", label: "Nama Kategori", widget: "string"}
+          - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
+          - name: "doa"
+            label: "Daftar Doa/Dzikir"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - {name: "id", label: "ID (unik, contoh: dp01)", widget: "string"}
+              - {name: "judul", label: "Judul", widget: "string"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "latin", label: "Tulisan Latin", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - {name: "sumber", label: "Sumber", widget: "string", required: false, hint: "Contoh: HR. Muslim, no. 2723 / QS. Al-Baqarah: 255"}
+              - {name: "jumlah", label: "Jumlah Bacaan", widget: "string", required: false, hint: "Contoh: 1x, 3x, 33x. Kosongkan jika tidak ada hitungan ulang."}
+              - {name: "keterangan", label: "Keterangan/Faedah", widget: "text", required: false}
+
+      - name: "dzikir-petang"
+        label: "🌇 Dzikir Petang"
+        file: "konten/dzikir-petang.json"
+        fields:
+          - {name: "kategori", label: "Nama Kategori", widget: "string"}
+          - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
+          - name: "doa"
+            label: "Daftar Doa/Dzikir"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - {name: "id", label: "ID (unik, contoh: dp01)", widget: "string"}
+              - {name: "judul", label: "Judul", widget: "string"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "latin", label: "Tulisan Latin", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - {name: "sumber", label: "Sumber", widget: "string", required: false, hint: "Contoh: HR. Muslim, no. 2723 / QS. Al-Baqarah: 255"}
+              - {name: "jumlah", label: "Jumlah Bacaan", widget: "string", required: false, hint: "Contoh: 1x, 3x, 33x. Kosongkan jika tidak ada hitungan ulang."}
+              - {name: "keterangan", label: "Keterangan/Faedah", widget: "text", required: false}
+
+      - name: "dzikir-sholat"
+        label: "🕌 Dzikir Setelah Sholat"
+        file: "konten/dzikir-sholat.json"
+        fields:
+          - {name: "kategori", label: "Nama Kategori", widget: "string"}
+          - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
+          - name: "doa"
+            label: "Daftar Doa/Dzikir"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - {name: "id", label: "ID (unik, contoh: dp01)", widget: "string"}
+              - {name: "judul", label: "Judul", widget: "string"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "latin", label: "Tulisan Latin", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - {name: "sumber", label: "Sumber", widget: "string", required: false, hint: "Contoh: HR. Muslim, no. 2723 / QS. Al-Baqarah: 255"}
+              - {name: "jumlah", label: "Jumlah Bacaan", widget: "string", required: false, hint: "Contoh: 1x, 3x, 33x. Kosongkan jika tidak ada hitungan ulang."}
+              - {name: "keterangan", label: "Keterangan/Faedah", widget: "text", required: false}
+
+      - name: "doa-harian"
+        label: "🗓️ Doa Sehari-hari"
+        file: "konten/doa-harian.json"
+        fields:
+          - {name: "kategori", label: "Nama Kategori", widget: "string"}
+          - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
+          - name: "doa"
+            label: "Daftar Doa/Dzikir"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - {name: "id", label: "ID (unik, contoh: dp01)", widget: "string"}
+              - {name: "judul", label: "Judul", widget: "string"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "latin", label: "Tulisan Latin", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - {name: "sumber", label: "Sumber", widget: "string", required: false, hint: "Contoh: HR. Muslim, no. 2723 / QS. Al-Baqarah: 255"}
+              - {name: "jumlah", label: "Jumlah Bacaan", widget: "string", required: false, hint: "Contoh: 1x, 3x, 33x. Kosongkan jika tidak ada hitungan ulang."}
+              - {name: "keterangan", label: "Keterangan/Faedah", widget: "text", required: false}
+
+      - name: "doa-munajat"
+        label: "🤲 Doa-doa Munajat"
+        file: "konten/doa-munajat.json"
+        fields:
+          - {name: "kategori", label: "Nama Kategori", widget: "string"}
+          - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
+          - name: "doa"
+            label: "Daftar Doa/Dzikir"
+            widget: "list"
+            summary: "{{fields.judul}}"
+            fields:
+              - {name: "id", label: "ID (unik, contoh: dp01)", widget: "string"}
+              - {name: "judul", label: "Judul", widget: "string"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text", hint: "Tulis dari kanan ke kiri, lengkap dengan harakat"}
+              - {name: "latin", label: "Tulisan Latin", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - {name: "sumber", label: "Sumber", widget: "string", required: false, hint: "Contoh: HR. Muslim, no. 2723 / QS. Al-Baqarah: 255"}
+              - {name: "jumlah", label: "Jumlah Bacaan", widget: "string", required: false, hint: "Contoh: 1x, 3x, 33x. Kosongkan jika tidak ada hitungan ulang."}
+              - {name: "keterangan", label: "Keterangan/Faedah", widget: "text", required: false}
+
   # ── KUTIPAN ─────────────────────────────────────────────────
   - name: "kutipan-mgr"
     label: "💬 Kutipan"

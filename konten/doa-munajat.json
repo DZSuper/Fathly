@@ -1,0 +1,125 @@
+{
+  "kategori": "Doa-doa Munajat",
+  "waktu": "Doa permohonan kepada Allah, tidak terkait kegiatan atau waktu tertentu",
+  "doa": [
+    {
+      "id": "dm01",
+      "judul": "Memohon Ilmu yang Bermanfaat",
+      "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+      "latin": "Allahumma innii as-aluka 'ilman naafi'an, wa rizqan thayyiban, wa 'amalan mutaqabbalaa.",
+      "terjemahan": "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.",
+      "sumber": "HR. Ibnu Majah, no. 925",
+      "jumlah": null
+    },
+    {
+      "id": "dm02",
+      "judul": "Memohon Hati yang Kokoh di Atas Agama",
+      "arab": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+      "latin": "Yaa muqalliban quluub, tsabbit qalbii 'alaa diinik.",
+      "terjemahan": "Wahai Yang Maha membalik-balikkan hati, tetapkanlah hatiku di atas agama-Mu.",
+      "sumber": "HR. Tirmidzi, no. 2140",
+      "jumlah": null,
+      "keterangan": "Ini adalah doa yang sering diucapkan Nabi ﷺ, menunjukkan betapa pentingnya memohon keteguhan hati di atas agama."
+    },
+    {
+      "id": "dm03",
+      "judul": "Memohon Dijauhkan dari Fitnah & Musibah",
+      "arab": "اللَّهُمَّ إِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّينِ، وَعَافِيَةً فِي الْجَسَدِ، وَزِيَادَةً فِي الْعِلْمِ، وَبَرَكَةً فِي الرِّزْقِ، وَتَوْبَةً قَبْلَ الْمَوْتِ، وَرَحْمَةً عِنْدَ الْمَوْتِ، وَمَغْفِرَةً بَعْدَ الْمَوْتِ",
+      "latin": "Allahumma innaa nas-aluka salaamatan fid diin, wa 'aafiyatan fil jasad, wa ziyaadatan fil 'ilmi, wa barakatan fir rizqi, wa taubatan qablal mawt, wa rahmatan 'indal mawt, wa maghfiratan ba'dal mawt.",
+      "terjemahan": "Ya Allah, sesungguhnya kami memohon kepada-Mu keselamatan dalam agama, kesehatan dalam tubuh, bertambahnya ilmu, berkahnya rezeki, taubat sebelum mati, rahmat ketika mati, dan ampunan setelah mati.",
+      "sumber": "Diriwayatkan Ibnu Hibban dalam Raudhatul 'Uqala'",
+      "jumlah": null
+    },
+    {
+      "id": "dm04",
+      "judul": "Memohon Surga & Berlindung dari Neraka",
+      "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ، وَأَعُوذُ بِكَ مِنَ النَّارِ",
+      "latin": "Allahumma innii as-alukal jannah, wa a'uudzu bika minan naar.",
+      "terjemahan": "Ya Allah, sesungguhnya aku memohon kepada-Mu surga, dan aku berlindung kepada-Mu dari neraka.",
+      "sumber": "HR. Abu Dawud, no. 792",
+      "jumlah": "3x"
+    },
+    {
+      "id": "dm05",
+      "judul": "Memohon Husnul Khotimah",
+      "arab": "اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الْأُمُورِ كُلِّهَا، وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الْآخِرَةِ",
+      "latin": "Allahumma ahsin 'aaqibatanaa fil umuuri kullihaa, wa ajirnaa min khizyid dunyaa wa 'adzaabil aakhirah.",
+      "terjemahan": "Ya Allah, baguskanlah akhir dari segala urusan kami, dan lindungilah kami dari kehinaan dunia dan azab akhirat.",
+      "sumber": "Disebutkan dalam Al-Adzkar oleh Imam An-Nawawi",
+      "jumlah": null
+    },
+    {
+      "id": "dm06",
+      "judul": "Memohon Kepahaman Agama (Doa untuk Ibnu Abbas)",
+      "arab": "اللَّهُمَّ فَقِّهْهُ فِي الدِّينِ وَعَلِّمْهُ التَّأْوِيلَ",
+      "latin": "Allahumma faqqihhu fid diin wa 'allimhut ta'wiil.",
+      "terjemahan": "Ya Allah, pahamkanlah ia dalam agama dan ajarkanlah ia tafsir (Al-Qur'an).",
+      "sumber": "HR. Bukhari, no. 75 (doa Nabi ﷺ untuk Ibnu Abbas, dapat diamalkan sbg doa pribadi)",
+      "jumlah": null
+    },
+    {
+      "id": "dm07",
+      "judul": "Memohon Ampunan & Rahmat",
+      "arab": "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
+      "latin": "Rabbighfir lii wa tub 'alayya innaka antat tawwaabur rahiim.",
+      "terjemahan": "Wahai Rabbku, ampunilah aku dan terimalah taubatku, sesungguhnya Engkau Maha Penerima Taubat, Maha Penyayang.",
+      "sumber": "HR. Abu Dawud, no. 1516",
+      "jumlah": "100x",
+      "keterangan": "Nabi ﷺ membaca doa ini dalam satu majelis sebanyak seratus kali."
+    },
+    {
+      "id": "dm08",
+      "judul": "Memohon Keberkahan Rezeki",
+      "arab": "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا، وَقِنَا عَذَابَ النَّارِ",
+      "latin": "Allahumma baarik lanaa fiimaa razaqtanaa, wa qinaa 'adzaaban naar.",
+      "terjemahan": "Ya Allah, berkahilah kami pada apa yang telah Engkau rezekikan kepada kami, dan lindungilah kami dari azab neraka.",
+      "sumber": "Diriwayatkan dalam berbagai kitab doa harian",
+      "jumlah": null
+    },
+    {
+      "id": "dm09",
+      "judul": "Berlindung dari Empat Hal",
+      "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
+      "latin": "Allahumma innii a'uudzu bika min 'ilmin laa yanfa', wa min qalbin laa yakhsya', wa min nafsin laa tasyba', wa min da'watin laa yustajaabu lahaa.",
+      "terjemahan": "Ya Allah, sesungguhnya aku berlindung kepada-Mu dari ilmu yang tidak bermanfaat, dari hati yang tidak khusyu', dari jiwa yang tidak pernah merasa cukup, dan dari doa yang tidak dikabulkan.",
+      "sumber": "HR. Muslim, no. 2722",
+      "jumlah": null
+    },
+    {
+      "id": "dm10",
+      "judul": "Doa Nabi Musa Memohon Kemudahan",
+      "arab": "رَبِّ اشْرَحْ لِي صَدْرِي، وَيَسِّرْ لِي أَمْرِي",
+      "latin": "Rabbisyrah lii shadrii, wa yassir lii amrii.",
+      "terjemahan": "Wahai Rabbku, lapangkanlah dadaku, dan mudahkanlah urusanku.",
+      "sumber": "QS. Thaha: 25-26",
+      "jumlah": null
+    },
+    {
+      "id": "dm11",
+      "judul": "Doa Nabi Ibrahim Dijauhkan dari Syirik",
+      "arab": "وَاجْنُبْنِي وَبَنِيَّ أَنْ نَّعْبُدَ الْأَصْنَامَ",
+      "latin": "Wajnubnii wa baniyya an na'budal ashnaam.",
+      "terjemahan": "Dan jauhkanlah aku beserta anak cucuku dari menyembah berhala-berhala.",
+      "sumber": "QS. Ibrahim: 35",
+      "jumlah": null
+    },
+    {
+      "id": "dm12",
+      "judul": "Memohon Kebaikan Dunia & Akhirat",
+      "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "latin": "Rabbanaa aatinaa fid dunyaa hasanataw wa fil aakhirati hasanataw wa qinaa 'adzaaban naar.",
+      "terjemahan": "Wahai Rabb kami, berikanlah kepada kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+      "sumber": "QS. Al-Baqarah: 201",
+      "jumlah": null
+    },
+    {
+      "id": "dm13",
+      "judul": "Memohon Keteguhan dalam Kebenaran",
+      "arab": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ",
+      "latin": "Rabbanaa laa tuzigh quluubanaa ba'da idz hadaitanaa wa hab lanaa min ladunka rahmah, innaka antal wahhaab.",
+      "terjemahan": "Wahai Rabb kami, janganlah Engkau jadikan hati kami berpaling (dari kebenaran) setelah Engkau berikan petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu. Sesungguhnya Engkaulah Maha Pemberi.",
+      "sumber": "QS. Ali 'Imran: 8",
+      "jumlah": null
+    }
+  ]
+}
