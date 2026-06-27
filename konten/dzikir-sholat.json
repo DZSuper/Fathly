@@ -1,0 +1,62 @@
+{
+  "kategori": "Dzikir Setelah Sholat",
+  "waktu": "Dibaca setelah salam, sebelum beranjak dari tempat shalat",
+  "doa": [
+    {
+      "id": "ds01",
+      "judul": "Istighfar",
+      "arab": "أَسْتَغْفِرُ اللَّهَ",
+      "latin": "Astaghfirullah.",
+      "terjemahan": "Aku memohon ampun kepada Allah.",
+      "sumber": "HR. Muslim, no. 591",
+      "jumlah": "3x"
+    },
+    {
+      "id": "ds02",
+      "judul": "Allahumma Antas Salam",
+      "arab": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+      "latin": "Allahumma anta salaamu wa minka salaamu, tabaarakta yaa dzal jalaali wal ikraam.",
+      "terjemahan": "Ya Allah, Engkau adalah As-Salam (Yang Maha Sejahtera) dan dari-Mu kesejahteraan. Maha Suci Engkau, wahai Pemilik keagungan dan kemuliaan.",
+      "sumber": "HR. Muslim, no. 591",
+      "jumlah": "1x"
+    },
+    {
+      "id": "ds03",
+      "judul": "La Ilaha Illallah Wahdahu",
+      "arab": "لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلٰى كُلِّ شَيْءٍ قَدِيرٌ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ، لَا إِلٰهَ إِلَّا اللَّهُ، وَلَا نَعْبُدُ إِلَّا إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ",
+      "latin": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir, laa haula wa laa quwwata illaa billaah, laa ilaaha illallaah, wa laa na'budu illaa iyyaah, lahun ni'matu wa lahul fadhlu wa lahuts tsanaa-ul hasan.",
+      "terjemahan": "Tidak ada sesembahan yang berhak disembah selain Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Milik-Nya kerajaan, milik-Nya segala puji, dan Dia Maha Kuasa atas segala sesuatu. Tidak ada daya dan kekuatan kecuali dengan (izin) Allah. Tidak ada sesembahan yang berhak disembah selain Allah, dan kami tidak menyembah selain-Nya. Milik-Nya segala nikmat, milik-Nya segala karunia, dan milik-Nya segala puji yang baik.",
+      "sumber": "HR. Muslim, no. 594",
+      "jumlah": "1x"
+    },
+    {
+      "id": "ds04",
+      "judul": "Ayat Kursi",
+      "arab": "اللَّهُ لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+      "latin": "Allaahu laa ilaaha illaa huwal hayyul qayyuum, laa ta'khudzuhuu sinatuw wa laa nawm...",
+      "terjemahan": "Allah, tidak ada sesembahan yang berhak disembah selain Dia, Yang Maha Hidup, Yang terus menerus mengurus makhluk-Nya. Tidak mengantuk dan tidak pula tidur...",
+      "sumber": "QS. Al-Baqarah: 255",
+      "jumlah": "1x",
+      "keterangan": "Siapa membacanya setiap selesai shalat wajib, tidak ada yang menghalanginya masuk surga kecuali kematian."
+    },
+    {
+      "id": "ds05",
+      "judul": "Tasbih, Tahmid, Takbir (33x)",
+      "arab": "سُبْحَانَ اللَّهِ ۝ وَالْحَمْدُ لِلَّهِ ۝ وَاللَّهُ أَكْبَرُ",
+      "latin": "Subhaanallah (33x), walhamdu lillaah (33x), wallaahu akbar (33x).",
+      "terjemahan": "Maha Suci Allah (33x), segala puji bagi Allah (33x), Allah Maha Besar (33x).",
+      "sumber": "HR. Muslim, no. 597",
+      "jumlah": "33x masing-masing",
+      "keterangan": "Ditutup dengan kalimat genap seratus: 'Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir' (1x). Siapa yang menjaganya, dosanya akan diampuni."
+    },
+    {
+      "id": "ds06",
+      "judul": "Al-Mu'awwidzatain (Khusus Subuh & Maghrib)",
+      "arab": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+      "latin": "Qul a'uudzu birabbil falaq... Qul a'uudzu birabbin naas...",
+      "terjemahan": "Katakanlah: aku berlindung kepada Rabb yang menguasai waktu Subuh... Katakanlah: aku berlindung kepada Rabb manusia...",
+      "sumber": "QS. Al-Falaq & An-Nas",
+      "jumlah": "3x (khusus setelah Subuh & Maghrib)"
+    }
+  ]
+}
