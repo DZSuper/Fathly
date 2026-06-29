@@ -34,7 +34,20 @@ body {
   line-height: 1.7;
 }
 
-/* Tombol kembali — sama persis dgn pola tema.css */
+/* Header sticky: tombol kembali + buka/tutup semua, tetap terlihat saat scroll */
+.doa-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--bg-dark);
+  border-bottom: 1px solid var(--border);
+}
+
 .back-btn {
   display: inline-block;
   color: var(--green);
@@ -44,12 +57,33 @@ body {
   padding: 8px 16px;
   transition: all 0.3s ease;
   font-size: 0.85rem;
-  margin: 16px 16px 0;
+  flex-shrink: 0;
 }
 
 .back-btn:hover {
   background-color: var(--green);
   color: var(--bg-dark);
+}
+
+.doa-toggle-all-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: rgba(255, 215, 0, 0.08);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.doa-toggle-all-btn:hover {
+  background: rgba(255, 215, 0, 0.16);
 }
 
 .doa-page-wrap {
@@ -89,6 +123,44 @@ body {
   padding: 48px 20px;
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+/* ── KOTAK PENCARIAN (khusus halaman doa, bukan dzikir) ── */
+.doa-search-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.doa-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.doa-search-input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px 10px 34px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: var(--text-light);
+  outline: none;
+}
+
+.doa-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.doa-search-count {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
 }
 
 /* ── AKORDEON ITEM ── */
@@ -249,8 +321,8 @@ body {
 .doa-counter {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
+  justify-content: flex-start;
+  gap: 10px;
   margin-top: 14px;
   padding-top: 14px;
   border-top: 1px solid var(--border);
@@ -276,6 +348,20 @@ body {
   background: rgba(255, 215, 0, 0.12);
   color: var(--gold);
   font-weight: 800;
+  margin-left: auto;
+}
+
+.doa-counter-btn.reset {
+  width: 30px;
+  height: 30px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-right: 4px;
+}
+
+.doa-counter-btn.reset:hover {
+  opacity: 1;
+  border-color: var(--text-muted);
 }
 
 .doa-counter-display {
@@ -300,4 +386,80 @@ body {
 
 .doa-item.counter-done {
   border-color: rgba(0, 255, 136, 0.4);
+}
+
+/* =============================================
+   MODE LAYAR LEBAR (tablet landscape, laptop, PC)
+   2 kolom: kiri daftar pilihan, kanan konten.
+   Tidak ada akordeon — klik judul langsung tampil di kanan.
+============================================= */
+.doa-mobile-view { display: block; }
+.doa-desktop-view { display: none; }
+
+@media (min-width: 900px) {
+  .doa-page-wrap {
+    max-width: 1100px;
+  }
+
+  .doa-mobile-view { display: none; }
+  .doa-desktop-view { display: flex; }
+
+  .doa-toggle-all-btn { display: none; } /* tidak relevan di mode 2 kolom */
+
+  .doa-desktop-view {
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .doa-desktop-sidebar {
+    flex: 0 0 300px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    position: sticky;
+    top: 78px;
+  }
+
+  .doa-desktop-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 9px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    margin-bottom: 2px;
+  }
+
+  .doa-desktop-list-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .doa-desktop-list-item.active {
+    background: rgba(255, 215, 0, 0.1);
+  }
+
+  .doa-desktop-list-item.active .doa-item-judul {
+    color: var(--gold);
+  }
+
+  .doa-desktop-content {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    min-height: 320px;
+  }
+
+  .doa-desktop-content .doa-arab-text { font-size: 1.4rem; }
+  .doa-desktop-content .doa-latin,
+  .doa-desktop-content .doa-terjemahan { font-size: 0.88rem; }
 }

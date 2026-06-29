@@ -50,13 +50,23 @@
       "keterangan": "Ditutup dengan kalimat genap seratus: 'Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir' (1x). Siapa yang menjaganya, dosanya akan diampuni."
     },
     {
-      "id": "ds06",
-      "judul": "Al-Mu'awwidzatain (Khusus Subuh & Maghrib)",
-      "arab": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-      "latin": "Qul a'uudzu birabbil falaq... Qul a'uudzu birabbin naas...",
-      "terjemahan": "Katakanlah: aku berlindung kepada Rabb yang menguasai waktu Subuh... Katakanlah: aku berlindung kepada Rabb manusia...",
-      "sumber": "QS. Al-Falaq & An-Nas",
-      "jumlah": "3x (khusus setelah Subuh & Maghrib)"
+      "id": "ds06_1",
+      "judul": "Surat Al-Falaq",
+      "arab": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِنْ شَرِّ مَا خَلَقَ ۝ وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "latin": "Qul a'uudzu birabbil falaq. Min syarri maa khalaq. Wa min syarri ghaasiqin idzaa waqab. Wa min syarrin naffaatsaati fil 'uqad. Wa min syarri haasidin idzaa hasad.",
+      "terjemahan": "Katakanlah: Aku berlindung kepada Rabb yang menguasai waktu Subuh. Dari kejahatan makhluk-Nya. Dan dari kejahatan malam apabila telah gelap gulita. Dan dari kejahatan wanita-wanita tukang sihir yang menghembus pada buhul-buhul (talinya). Dan dari kejahatan orang yang dengki apabila ia dengki.",
+      "sumber": "QS. Al-Falaq: 1-5",
+      "jumlah": "3x",
+      "keterangan": "Al-Falaq dan An-Nas (Mu'awwidzatain) masing-masing dibaca 3x, khusus setelah shalat Subuh & Maghrib."
+    },
+    {
+      "id": "ds06_2",
+      "judul": "Surat An-Nas",
+      "arab": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلٰهِ النَّاسِ ۝ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ",
+      "latin": "Qul a'uudzu birabbin naas. Malikin naas. Ilaahin naas. Min syarril waswaasil khannaas. Alladzii yuwaswisu fii shuduurin naas. Minal jinnati wan naas.",
+      "terjemahan": "Katakanlah: Aku berlindung kepada Rabb manusia. Raja manusia. Sesembahan manusia. Dari kejahatan (bisikan) setan yang biasa bersembunyi. Yang membisikkan (kejahatan) ke dalam dada manusia. Dari (golongan) jin dan manusia.",
+      "sumber": "QS. An-Nas: 1-6",
+      "jumlah": "3x"
     }
   ]
 }
