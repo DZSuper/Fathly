@@ -1,14 +1,5 @@
 // =============================================
 // DOA & DZIKIR — Logika Halaman Kategori
-// Dipakai bersama oleh semua halaman di /doa/*.html
-//
-// Struktur yang diharapkan di HTML:
-//   <div class="doa-sticky-header">
-//     <a class="back-btn">...</a>
-//     <button id="doaToggleAllBtn" class="doa-toggle-all-btn">...</button>
-//   </div>
-//   <main id="doaMain" data-konten="dzikir-pagi" data-searchable="true">
-//     (data-searchable opsional — hanya untuk halaman Doa, bukan Dzikir)
 // =============================================
 
 (function () {
@@ -23,6 +14,15 @@
 
   var _allDoa = [];
   var _isSearchable = false;
+
+  // ── STATE COUNTER TERSENTRALISASI ─────────────────────────
+  // Satu sumber kebenaran untuk semua hitungan, terlepas dari mode
+  // tampilan (akordeon vs 2-kolom). Setiap kali counter berubah,
+  // SEMUA elemen yang menampilkan id itu (bisa ada di kedua mode
+  // sekaligus dalam DOM) ikut diperbarui. State ini hanya direset
+  // saat halaman benar-benar dimuat ulang (sesuai permintaan: hanya
+  // hilang jika user keluar lalu masuk lagi ke halaman).
+  var _counterState = {}; // { [id]: currentCount }
 
   document.addEventListener('DOMContentLoaded', function () {
     var main = document.getElementById('doaMain');
@@ -50,9 +50,13 @@
         return;
       }
 
+      // Inisialisasi state counter untuk semua dzikir yang punya jumlah
+      _allDoa.forEach(function (d) {
+        if (d.jumlah) _counterState[d.id] = 0;
+      });
+
       var bodyHtml = '';
 
-      // ── Kotak pencarian (hanya utk halaman yang ditandai searchable) ──
       if (_isSearchable) {
         bodyHtml +=
           '<div class="doa-search-wrap">' +
@@ -81,6 +85,10 @@
     }
   });
 
+  function targetOf(jumlahLabel) {
+    return parseInt(String(jumlahLabel).replace(/[^0-9]/g, ''), 10) || 0;
+  }
+
   // ── Bangun isi detail satu doa (dipakai mobile & desktop) ──
   function buildDetailHtml(d) {
     var hasJumlah = !!d.jumlah;
@@ -95,53 +103,91 @@
   }
 
   function buildCounterHtml(id, jumlahLabel) {
-    var target = parseInt(String(jumlahLabel).replace(/[^0-9]/g, ''), 10) || 0;
+    var target = targetOf(jumlahLabel);
     return (
-      '<div class="doa-counter" data-target="' + target + '" id="counter-' + esc(id) + '">' +
+      '<div class="doa-counter" data-id="' + esc(id) + '" data-target="' + target + '">' +
         '<button class="doa-counter-btn reset" data-id="' + esc(id) + '" aria-label="Ulangi dari awal">↺</button>' +
         '<button class="doa-counter-btn minus" data-id="' + esc(id) + '" aria-label="Kurangi">−</button>' +
-        '<div class="doa-counter-display" id="counterNum-' + esc(id) + '">0 <span>/ ' + (target || '?') + 'x</span></div>' +
+        '<div class="doa-counter-display js-counter-display">0 <span>/ ' + (target || '?') + 'x</span></div>' +
         '<button class="doa-counter-btn plus" data-id="' + esc(id) + '" aria-label="Tambah">+</button>' +
       '</div>'
     );
   }
 
+  // ── Pasang event counter, baca/tulis dari _counterState ───
+  // (dipanggil ulang setiap kali bagian DOM yang berisi counter
+  // dirender, baik di mode akordeon maupun mode 2-kolom)
   function initCounters(scope) {
     scope.querySelectorAll('.doa-counter').forEach(function (counterEl) {
+      var id = counterEl.getAttribute('data-id');
       var target = parseInt(counterEl.getAttribute('data-target'), 10) || 0;
-      var count = 0;
-
-      function update() {
-        var numEl = counterEl.querySelector('.doa-counter-display');
-        numEl.innerHTML = count + ' <span>/ ' + (target || '?') + 'x</span>';
-        var done = target > 0 && count >= target;
-        counterEl.classList.toggle('done', done);
-        var itemEl = counterEl.closest('.doa-item');
-        if (itemEl) itemEl.classList.toggle('counter-done', done);
-      }
 
       counterEl.querySelectorAll('.doa-counter-btn.plus').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
           e.stopPropagation();
-          count++;
-          update();
+          var cur = _counterState[id] || 0;
+          // Poin 1: tidak bisa melewati batas target
+          if (target > 0 && cur >= target) return;
+          _counterState[id] = cur + 1;
+          refreshCounterUI(id);
         });
       });
       counterEl.querySelectorAll('.doa-counter-btn.minus').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
           e.stopPropagation();
-          count = Math.max(0, count - 1);
-          update();
+          var cur = _counterState[id] || 0;
+          _counterState[id] = Math.max(0, cur - 1);
+          refreshCounterUI(id);
         });
       });
       counterEl.querySelectorAll('.doa-counter-btn.reset').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
           e.stopPropagation();
-          count = 0;
-          update();
+          _counterState[id] = 0;
+          refreshCounterUI(id);
         });
       });
     });
+
+    // Render awal sesuai state yang sudah ada (penting saat pindah mode
+    // tampilan — angka yang sudah berjalan harus langsung tampil benar,
+    // bukan mulai dari 0 lagi).
+    scope.querySelectorAll('.doa-counter').forEach(function (counterEl) {
+      refreshCounterUI(counterEl.getAttribute('data-id'));
+    });
+  }
+
+  // Perbarui SEMUA elemen counter & centang utk id ini, di manapun
+  // posisinya di DOM (mobile view & desktop view bisa sama-sama ada).
+  function refreshCounterUI(id) {
+    var cur = _counterState[id] || 0;
+    document.querySelectorAll('.doa-counter[data-id="' + id + '"]').forEach(function (counterEl) {
+      var target = parseInt(counterEl.getAttribute('data-target'), 10) || 0;
+      var displayEl = counterEl.querySelector('.js-counter-display');
+      if (displayEl) displayEl.innerHTML = cur + ' <span>/ ' + (target || '?') + 'x</span>';
+
+      var done = target > 0 && cur >= target;
+      counterEl.classList.toggle('done', done);
+
+      var plusBtn = counterEl.querySelector('.doa-counter-btn.plus');
+      if (plusBtn) plusBtn.disabled = done; // Poin 1: nonaktifkan tombol + saat sudah mentok
+
+      var itemEl = counterEl.closest('.doa-item');
+      if (itemEl) itemEl.classList.toggle('counter-done', done);
+    });
+
+    // Poin 3: perbarui tanda centang di judul, baik di akordeon
+    // maupun di daftar sidebar mode 2-kolom.
+    var target2 = (_allDoa.find(function (d) { return d.id === id; }) || {}).jumlah;
+    var done2 = targetOf(target2) > 0 && cur >= targetOf(target2);
+    document.querySelectorAll('.js-check-icon[data-id="' + id + '"]').forEach(function (chk) {
+      chk.classList.toggle('checked', done2);
+      chk.textContent = done2 ? '✓' : '';
+    });
+  }
+
+  function checkIconHtml(id) {
+    return '<span class="doa-check-icon js-check-icon" data-id="' + esc(id) + '"></span>';
   }
 
   // ── MOBILE: render akordeon ──
@@ -163,6 +209,7 @@
             '<span class="doa-item-num">' + (i + 1) + '</span>' +
             '<span class="doa-item-judul">' + esc(d.judul) + '</span>' +
             (hasJumlah ? '<span class="doa-item-jumlah">' + esc(d.jumlah) + '</span>' : '') +
+            (hasJumlah ? checkIconHtml(d.id) : '') +
             '<span class="doa-item-arrow">›</span>' +
           '</button>' +
           '<div class="doa-item-body">' + buildDetailHtml(d) + '</div>' +
@@ -193,10 +240,12 @@
 
     var html = '';
     list.forEach(function (d, i) {
+      var hasJumlah = !!d.jumlah;
       html +=
         '<button class="doa-desktop-list-item" data-id="' + esc(d.id) + '">' +
           '<span class="doa-item-num">' + (i + 1) + '</span>' +
           '<span class="doa-item-judul">' + esc(d.judul) + '</span>' +
+          (hasJumlah ? checkIconHtml(d.id) : '') +
         '</button>';
     });
     sidebar.innerHTML = html;
@@ -205,6 +254,12 @@
       btn.addEventListener('click', function () {
         selectDesktopItem(btn.getAttribute('data-id'));
       });
+    });
+
+    // Centang di sidebar harus diperbarui begitu dirender (tidak ada
+    // .doa-counter di sini, jadi panggil langsung per item).
+    list.forEach(function (d) {
+      if (d.jumlah) refreshCounterUI(d.id);
     });
   }
 

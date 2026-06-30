@@ -207,6 +207,27 @@ body {
   line-height: 1.4;
 }
 
+/* Tanda centang penyelesaian bacaan (muncul di samping judul) */
+.doa-check-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: transparent;
+  transition: all 0.25s;
+}
+
+.doa-check-icon.checked {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--bg-dark);
+}
+
 .doa-item-jumlah {
   flex-shrink: 0;
   background: rgba(0, 255, 136, 0.12);
@@ -349,6 +370,14 @@ body {
   color: var(--gold);
   font-weight: 800;
   margin-left: auto;
+}
+
+.doa-counter-btn.plus:disabled {
+  border-color: var(--green);
+  background: rgba(0, 255, 136, 0.12);
+  color: var(--green);
+  cursor: default;
+  opacity: 0.6;
 }
 
 .doa-counter-btn.reset {
