@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta   name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umdatul Ahkam | FathlyWeb</title>
+  <link rel="stylesheet" href="../supports/materi.css">
+</head>
+<body data-konten="umdatul-ahkam">
+  <!-- Header dengan tombol kembali, page selector, dan default -->
+  <div class="header-buttons">
+    <a href="../../../index.html" class="back-btn">← Kembali ke Beranda</a>
+    
+    <div class="page-selector">
+      <button class="page-btn active" data-page="1">1</button>
+      <button class="page-btn" data-page="2">2</button>
+      <button class="page-btn" data-page="3">3</button>
+    </div>
+    
+    <button class="default-btn" id="defaultBtn" style="display: none;">DEFAULT</button>
+  </div>
+  
+  <h1 class="tema-title">Umdatul Ahkam</h1>
+  
+  <!-- ========== HALAMAN 1: DEFAULT (READ-ONLY) ========== -->
+  <div class="page-container active" id="page1">
+    <div class="content-wrapper">
+      <aside class="kelompok-section">
+        <h2 class="section-title">Kelompok</h2>
+        <div class="kelompok-buttons">
+          <button class="kelompok-btn active" data-kelompok="ahlussunnah" data-page="1">Ahlus Sunnah wal Jama'ah</button>
+          <button class="kelompok-btn" data-kelompok="murjiah" data-page="1">Murji'ah</button>
+          <button class="kelompok-btn" data-kelompok="khawarij" data-page="1">Khawarij</button>
+          <button class="kelompok-btn" data-kelompok="jahmiyah" data-page="1">Jahmiyah</button>
+          <button class="kelompok-btn" data-kelompok="muktazilah" data-page="1">Mu'tazilah</button>
+        </div>
+        <select class="kelompok-dropdown" id="kelompokSelect1">
+          <option value="ahlussunnah">Ahlus Sunnah wal Jama'ah</option>
+          <option value="murjiah">Murji'ah</option>
+          <option value="khawarij">Khawarij</option>
+          <option value="jahmiyah">Jahmiyah</option>
+          <option value="muktazilah">Mu'tazilah</option>
+        </select>
+      </aside>
+      
+      <main class="penjelasan-section">
+        <div class="section-title">
+          <span>Penjelasan</span>
+        </div>
+        <div class="penjelasan-content" id="penjelasanContent1">
+          <div class="penjelasan-item active" data-kelompok="ahlussunnah">
+            <h3>Ahlus Sunnah wal Jama'ah</h3>
+            <p>Tauhid menurut Ahlus Sunnah wal Jama'ah adalah mengesakan Allah dalam tiga aspek:</p>
+            <p><strong>1. Tauhid Rububiyah:</strong> Meyakini bahwa Allah adalah satu-satunya Rabb (Pencipta, Penguasa, Pengatur) seluruh alam.</p>
+            <p><strong>2. Tauhid Uluhiyah:</strong> Mengikhlaskan ibadah hanya kepada Allah semata, tidak menyekutukan-Nya dengan yang lain.</p>
+            <p><strong>3. Tauhid Asma' wa Sifat:</strong> Menetapkan nama-nama dan sifat-sifat Allah sebagaimana yang disebutkan dalam Al-Qur'an dan Sunnah tanpa tahrif, ta'thil, takyif, dan tamtsil.</p>
+            <p>Inilah aqidah yang diajarkan oleh Rasulullah ﷺ dan para sahabatnya radhiyallahu 'anhum.</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="murjiah">
+            <h3>Murji'ah</h3>
+            <p>Murji'ah adalah kelompok yang menyimpang dalam memahami iman. Mereka berpendapat bahwa iman hanya sekedar pembenaran dalam hati (tashdiq) saja, tanpa perlu perkataan lisan dan amalan anggota badan.</p>
+            <p><strong>Kesalahan mereka:</strong></p>
+            <p>• Mereka menganggap orang yang berbuat dosa besar tetap mukmin sempurna imannya.</p>
+            <p>• Mereka memisahkan amal dari hakikat iman, padahal amal adalah bagian dari iman menurut Ahlus Sunnah.</p>
+            <p>• Pandangan ini membuat orang meremehkan amal shalih dan berbuat maksiat tanpa takut berkurangnya iman.</p>
+            <p><strong>Dalil bantahan:</strong> Allah berfirman, "Sesungguhnya orang-orang mukmin yang sebenarnya adalah mereka yang beriman kepada Allah dan Rasul-Nya kemudian mereka tidak ragu-ragu dan mereka berjihad dengan harta dan jiwa mereka di jalan Allah. Mereka itulah orang-orang yang benar." (QS. Al-Hujurat: 15)</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="khawarij">
+            <h3>Khawarij</h3>
+            <p>Khawarij adalah kelompok yang keluar dari jamaah kaum muslimin dan mengkafirkan pelaku dosa besar.</p>
+            <p><strong>Kesalahan mereka:</strong></p>
+            <p>• Mereka mengkafirkan Muslim yang berbuat dosa besar dan menganggapnya kekal di neraka.</p>
+            <p>• Mereka menghalalkan darah dan harta kaum muslimin yang mereka anggap kafir.</p>
+            <p>• Mereka keluar dari imam/pemimpin kaum muslimin dan memecah belah persatuan umat.</p>
+            <p>• Mereka memahami Al-Qur'an secara literal tanpa ilmu dan tanpa mengikuti pemahaman Salafus Shalih.</p>
+            <p><strong>Ciri-ciri mereka:</strong> Rasulullah ﷺ bersabda, "Mereka membaca Al-Qur'an tetapi tidak melampaui kerongkongan mereka. Mereka keluar dari agama sebagaimana anak panah keluar dari busurnya." (HR. Bukhari & Muslim)</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="jahmiyah">
+            <h3>Jahmiyah</h3>
+            <p>Jahmiyah adalah pengikut Jahm bin Shafwan yang sangat ekstrem dalam menafikan sifat-sifat Allah.</p>
+            <p><strong>Kesalahan mereka dalam Tauhid:</strong></p>
+            <p>• Mereka menafikan (ta'thil) semua sifat Allah, termasuk sifat-sifat yang disebutkan dalam Al-Qur'an dan Sunnah seperti wajah, tangan, istiwa di atas Arsy, dll.</p>
+            <p>• Mereka mengatakan Allah tidak memiliki sifat apapun, bahkan tidak bisa dikatakan bahwa Allah berilmu, berkuasa, atau mendengar.</p>
+            <p>• Mereka mengingkari bahwa Allah berada di atas Arsy, bahkan mengatakan Allah ada di mana-mana.</p>
+            <p>• Pandangan ini bertentangan dengan ayat-ayat Al-Qur'an yang jelas menetapkan sifat-sifat Allah.</p>
+            <p><strong>Dalil bantahan:</strong> "Tidak ada sesuatu pun yang serupa dengan-Nya, dan Dia Maha Mendengar lagi Maha Melihat." (QS. Asy-Syura: 11) - Ayat ini menetapkan sifat mendengar dan melihat bagi Allah, sekaligus menafikan penyerupaan.</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="muktazilah">
+            <h3>Mu'tazilah</h3>
+            <p>Mu'tazilah adalah kelompok yang mendahulukan akal daripada wahyu dan menafikan sebagian sifat Allah.</p>
+            <p><strong>Kesalahan mereka dalam Tauhid:</strong></p>
+            <p>• Mereka menafikan sifat-sifat Allah yang menurut mereka "menyerupai makhluk" seperti tangan, wajah, mata, dll.</p>
+            <p>• Mereka menakwil ayat-ayat sifat dengan takwil yang batil. Contoh: "tangan Allah" ditakwil menjadi "kekuasaan Allah".</p>
+            <p>• Mereka mengingkari Qadar (takdir) dan mengatakan manusia menciptakan perbuatannya sendiri tanpa campur tangan Allah.</p>
+            <p>• Mereka mendahulukan akal daripada nash (Al-Qur'an dan Sunnah), sehingga jika ada nash yang bertentangan dengan akal mereka, maka mereka menolak atau menakwilnya.</p>
+            <p><strong>Bantahan Ahlus Sunnah:</strong> Ahlus Sunnah menetapkan semua sifat Allah tanpa tahrif dan tanpa tamtsil, sesuai dengan firman Allah, "Tidak ada sesuatu pun yang serupa dengan-Nya" sambil tetap menetapkan sifat-sifat-Nya sebagaimana yang disebutkan dalam Al-Qur'an dan Sunnah.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ========== HALAMAN 2: EDITING ========== -->
+  <div class="page-container" id="page2">
+    <div class="content-wrapper">
+      <aside class="kelompok-section">
+        <h2 class="section-title">Kelompok</h2>
+        <div class="kelompok-buttons">
+          <button class="kelompok-btn active" data-kelompok="ahlussunnah" data-page="2">Ahlus Sunnah wal Jama'ah</button>
+          <button class="kelompok-btn" data-kelompok="murjiah" data-page="2">Murji'ah</button>
+          <button class="kelompok-btn" data-kelompok="khawarij" data-page="2">Khawarij</button>
+          <button class="kelompok-btn" data-kelompok="jahmiyah" data-page="2">Jahmiyah</button>
+          <button class="kelompok-btn" data-kelompok="muktazilah" data-page="2">Mu'tazilah</button>
+        </div>
+        <select class="kelompok-dropdown" id="kelompokSelect2">
+          <option value="ahlussunnah">Ahlus Sunnah wal Jama'ah</option>
+          <option value="murjiah">Murji'ah</option>
+          <option value="khawarij">Khawarij</option>
+          <option value="jahmiyah">Jahmiyah</option>
+          <option value="muktazilah">Mu'tazilah</option>
+        </select>
+      </aside>
+      
+      <main class="penjelasan-section">
+        <div class="section-title">
+          <span>Penjelasan</span>
+          <button class="edit-btn" id="editBtn">EDIT</button>
+        </div>
+        <div class="penjelasan-content" id="penjelasanContent2">
+          <div class="penjelasan-item active" data-kelompok="ahlussunnah">
+            <h3>Ahlus Sunnah wal Jama'ah</h3>
+            <p>Tauhid menurut Ahlus Sunnah wal Jama'ah adalah mengesakan Allah dalam tiga aspek:</p>
+            <p><strong>1. Tauhid Rububiyah:</strong> Meyakini bahwa Allah adalah satu-satunya Rabb (Pencipta, Penguasa, Pengatur) seluruh alam.</p>
+            <p><strong>2. Tauhid Uluhiyah:</strong> Mengikhlaskan ibadah hanya kepada Allah semata, tidak menyekutukan-Nya dengan yang lain.</p>
+            <p><strong>3. Tauhid Asma' wa Sifat:</strong> Menetapkan nama-nama dan sifat-sifat Allah sebagaimana yang disebutkan dalam Al-Qur'an dan Sunnah tanpa tahrif, ta'thil, takyif, dan tamtsil.</p>
+            <p>Inilah aqidah yang diajarkan oleh Rasulullah ﷺ dan para sahabatnya radhiyallahu 'anhum.</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="murjiah">
+            <h3>Murji'ah</h3>
+            <p>Murji'ah adalah kelompok yang menyimpang dalam memahami iman. Mereka berpendapat bahwa iman hanya sekedar pembenaran dalam hati (tashdiq) saja, tanpa perlu perkataan lisan dan amalan anggota badan.</p>
+            <p><strong>Kesalahan mereka:</strong></p>
+            <p>• Mereka menganggap orang yang berbuat dosa besar tetap mukmin sempurna imannya.</p>
+            <p>• Mereka memisahkan amal dari hakikat iman, padahal amal adalah bagian dari iman menurut Ahlus Sunnah.</p>
+            <p>• Pandangan ini membuat orang meremehkan amal shalih dan berbuat maksiat tanpa takut berkurangnya iman.</p>
+            <p><strong>Dalil bantahan:</strong> Allah berfirman, "Sesungguhnya orang-orang mukmin yang sebenarnya adalah mereka yang beriman kepada Allah dan Rasul-Nya kemudian mereka tidak ragu-ragu dan mereka berjihad dengan harta dan jiwa mereka di jalan Allah. Mereka itulah orang-orang yang benar." (QS. Al-Hujurat: 15)</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="khawarij">
+            <h3>Khawarij</h3>
+            <p>Khawarij adalah kelompok yang keluar dari jamaah kaum muslimin dan mengkafirkan pelaku dosa besar.</p>
+            <p><strong>Kesalahan mereka:</strong></p>
+            <p>• Mereka mengkafirkan Muslim yang berbuat dosa besar dan menganggapnya kekal di neraka.</p>
+            <p>• Mereka menghalalkan darah dan harta kaum muslimin yang mereka anggap kafir.</p>
+            <p>• Mereka keluar dari imam/pemimpin kaum muslimin dan memecah belah persatuan umat.</p>
+            <p>• Mereka memahami Al-Qur'an secara literal tanpa ilmu dan tanpa mengikuti pemahaman Salafus Shalih.</p>
+            <p><strong>Ciri-ciri mereka:</strong> Rasulullah ﷺ bersabda, "Mereka membaca Al-Qur'an tetapi tidak melampaui kerongkongan mereka. Mereka keluar dari agama sebagaimana anak panah keluar dari busurnya." (HR. Bukhari & Muslim)</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="jahmiyah">
+            <h3>Jahmiyah</h3>
+            <p>Jahmiyah adalah pengikut Jahm bin Shafwan yang sangat ekstrem dalam menafikan sifat-sifat Allah.</p>
+            <p><strong>Kesalahan mereka dalam Tauhid:</strong></p>
+            <p>• Mereka menafikan (ta'thil) semua sifat Allah, termasuk sifat-sifat yang disebutkan dalam Al-Qur'an dan Sunnah seperti wajah, tangan, istiwa di atas Arsy, dll.</p>
+            <p>• Mereka mengatakan Allah tidak memiliki sifat apapun, bahkan tidak bisa dikatakan bahwa Allah berilmu, berkuasa, atau mendengar.</p>
+            <p>• Mereka mengingkari bahwa Allah berada di atas Arsy, bahkan mengatakan Allah ada di mana-mana.</p>
+            <p>• Pandangan ini bertentangan dengan ayat-ayat Al-Qur'an yang jelas menetapkan sifat-sifat Allah.</p>
+            <p><strong>Dalil bantahan:</strong> "Tidak ada sesuatu pun yang serupa dengan-Nya, dan Dia Maha Mendengar lagi Maha Melihat." (QS. Asy-Syura: 11) - Ayat ini menetapkan sifat mendengar dan melihat bagi Allah, sekaligus menafikan penyerupaan.</p>
+          </div>
+          <div class="penjelasan-item" data-kelompok="muktazilah">
+            <h3>Mu'tazilah</h3>
+            <p>Mu'tazilah adalah kelompok yang mendahulukan akal daripada wahyu dan menafikan sebagian sifat Allah.</p>
+            <p><strong>Kesalahan mereka dalam Tauhid:</strong></p>
+            <p>• Mereka menafikan sifat-sifat Allah yang menurut mereka "menyerupai makhluk" seperti tangan, wajah, mata, dll.</p>
+            <p>• Mereka menakwil ayat-ayat sifat dengan takwil yang batil. Contoh: "tangan Allah" ditakwil menjadi "kekuasaan Allah".</p>
+            <p>• Mereka mengingkari Qadar (takdir) dan mengatakan manusia menciptakan perbuatannya sendiri tanpa campur tangan Allah.</p>
+            <p>• Mereka mendahulukan akal daripada nash (Al-Qur'an dan Sunnah), sehingga jika ada nash yang bertentangan dengan akal mereka, maka mereka menolak atau menakwilnya.</p>
+            <p><strong>Bantahan Ahlus Sunnah:</strong> Ahlus Sunnah menetapkan semua sifat Allah tanpa tahrif dan tanpa tamtsil, sesuai dengan firman Allah, "Tidak ada sesuatu pun yang serupa dengan-Nya" sambil tetap menetapkan sifat-sifat-Nya sebagaimana yang disebutkan dalam Al-Qur'an dan Sunnah.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>  
+
+  <!-- ========== HALAMAN 3: CATATAN ========== -->
+<div class="page-container" id="page3">
+  <div class="catatan-wrapper">
+    <!-- Header Catatan -->
+    <div class="catatan-header">
+      <button class="catatan-mode-btn" id="catatanModeBtn">MODE: BACA</button>
+    </div>
+    
+    <!-- Container Catatan -->
+    <div class="catatan-container">
+      <div class="catatan-content" contenteditable="false" id="catatanContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Format Toolbar (Fixed di Bawah) -->
+<div class="format-toolbar" id="formatToolbar">
+  <div class="toolbar-scroll">
+    <!-- Bold, Italic, Underline -->
+    <div class="toolbar-group">
+      <button class="format-btn bold" id="boldBtn" data-tooltip="Tebal (Bold)">B</button>
+      <button class="format-btn italic" id="italicBtn" data-tooltip="Miring (Italic)">I</button>
+      <button class="format-btn underline" id="underlineBtn" data-tooltip="Garis Bawah">U</button>
+    </div>
+    
+    <!-- Color -->
+    <div class="toolbar-group">
+      <button class="color-btn gray" id="colorGray" data-tooltip="Abu-abu (Default)"></button>
+      <button class="color-btn red" id="colorRed" data-tooltip="Merah"></button>
+      <button class="color-btn blue" id="colorBlue" data-tooltip="Biru"></button>
+      <button class="color-btn yellow" id="colorYellow" data-tooltip="Kuning"></button>
+      <button class="color-btn green" id="colorGreen" data-tooltip="Hijau"></button>
+    </div>
+    
+    <!-- Size -->
+    <div class="toolbar-group">
+      <button class="format-btn size-btn" id="size1" data-tooltip="Kecil (12px)">12</button>
+      <button class="format-btn size-btn" id="size2" data-tooltip="Normal Kecil (14px)">14</button>
+      <button class="format-btn size-btn" id="size3" data-tooltip="Normal (16px)">16</button>
+      <button class="format-btn size-btn" id="size4" data-tooltip="Besar (18px)">18</button>
+      <button class="format-btn size-btn" id="size5" data-tooltip="Sangat Besar (24px)">24</button>
+    </div>
+  </div>
+</div>
+      
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../supports/materi.js"></script>
+</body>
+</html>

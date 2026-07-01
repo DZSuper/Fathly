@@ -1,0 +1,228 @@
+/* ========================================================================== */
+/* == MATAN CSS == */
+/* ========================================================================== */
+
+/* --- General Styling --- */
+.matan-container {
+  padding: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.matan-section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* --- Bookmark Grid --- */
+.matan-bookmark-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.matan-bookmark-grid::-webkit-scrollbar { /* Chrome, Safari, Opera */
+  display: none;
+}
+
+.matan-bookmark-card {
+  flex-shrink: 0;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  max-width: 150px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.matan-bookmark-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.15);
+}
+.matan-bookmark-card-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+.matan-bookmark-card-category {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* --- Progress Bar Section --- */
+.matan-progress-section {
+  margin-bottom: 30px;
+}
+
+.matan-progress-list {
+  display: grid;
+  gap: 10px;
+}
+
+.matan-progress-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.matan-progress-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.matan-progress-item-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.matan-progress-percentage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.matan-progress-bar-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.matan-progress-bar {
+  height: 100%;
+  background-color: var(--gold);
+  width: 0%; /* Will be set by JS */
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* --- All Matan List --- */
+.matan-list-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.matan-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+.matan-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+}
+
+.matan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.matan-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-right: 10px;
+}
+
+.matan-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.matan-action-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.matan-action-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.matan-action-btn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background-color: rgba(255, 215, 0, 0.1);
+}
+.matan-action-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.matan-card-details {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.matan-card-details span {
+  display: block;
+}
+
+/* --- Responsive Layout --- */
+/* Mobile: Default vertical list */
+@media (min-width: 768px) {
+  .matan-list-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Tablet/Desktop: Minimalist wide layout */
+@media (min-width: 1024px) {
+  .matan-container {
+    padding: 20px;
+  }
+  .matan-section-title {
+    font-size: 1.5rem;
+  }
+  .matan-list-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for wider screens */
+    gap: 20px;
+  }
+  .matan-card {
+    padding: 20px;
+  }
+  .matan-card-title {
+    font-size: 1.2rem;
+  }
+  .matan-card-details {
+    font-size: 0.9rem;
+  }
+}
+
+/* Utility classes for hiding/showing elements */
+.hidden {
+  display: none !important;
+}

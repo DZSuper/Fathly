@@ -4,52 +4,64 @@
 //            Network-First untuk konten JSON
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.4.1';
+const CACHE_NAME = 'fathlyweb-v1.4.2';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/menu.css',
-  '/script/main.js',
-  '/manifest.json',
-  '/favicon.svg',
-  '/catatan/editor.html',
+  '/main.js',
+  '/static/manifest.json',
+  '/static/favicon.svg',
+  '/content/catatan/pages/editor.html',
   // Halaman materi
-  '/tema/abu-syuja.html',
-  '/tema/bidah.html',
-  '/tema/coming.html',
-  '/tema/iman.html',
-  '/tema/jurumiyah.html',
-  '/tema/mutammimah.html',
-  '/tema/sifat.html',
-  '/tema/siroh-nabawi.html',
-  '/tema/siroh-sahabat.html',
-  '/tema/tashrif.html',
-  '/tema/tauhid.html',
-  '/tema/umdatul-ahkam.html',
-  '/tema/wazan.html',
-  '/tema/tema.js',
-  '/tema/tema.css',
+  '/content/materi/pages/abu-syuja.html',
+  '/content/materi/pages/bidah.html',
+  '/content/materi/pages/coming.html',
+  '/content/materi/pages/iman.html',
+  '/content/materi/pages/jurumiyah.html',
+  '/content/materi/pages/mutammimah.html',
+  '/content/materi/pages/sifat.html',
+  '/content/materi/pages/siroh-nabawi.html',
+  '/content/materi/pages/siroh-sahabat.html',
+  '/content/materi/pages/tashrif.html',
+  '/content/materi/pages/tauhid.html',
+  '/content/materi/pages/umdatul-ahkam.html',
+  '/content/materi/pages/wazan.html',
+  '/content/materi/supports/materi.js',
+  '/content/materi/supports/materi.css',
   // Konten JSON
-  '/konten/index.json',
-  '/konten/abu-syuja.json',
-  '/konten/bidah.json',
-  '/konten/iman.json',
-  '/konten/jurumiyah.json',
-  '/konten/mutammimah.json',
-  '/konten/sifat.json',
-  '/konten/siroh-nabawi.json',
-  '/konten/siroh-sahabat.json',
-  '/konten/tashrif.json',
-  '/konten/tauhid.json',
-  '/konten/umdatul-ahkam.json',
-  '/konten/wazan.json',
-  '/konten/coming-soon.json',
-  '/konten/seo.json',
-  '/kutipan.css',
-  '/script/kutipan.js',
-  '/konten/kutipan.json',
+  '/content/_data/index.json',
+  '/content/materi/data/abu-syuja.json',
+  '/content/materi/data/bidah.json',
+  '/content/materi/data/iman.json',
+  '/content/materi/data/jurumiyah.json',
+  '/content/materi/data/mutammimah.json',
+  '/content/materi/data/sifat.json',
+  '/content/materi/data/siroh-nabawi.json',
+  '/content/materi/data/siroh-sahabat.json',
+  '/content/materi/data/tashrif.json',
+  '/content/materi/data/tauhid.json',
+  '/content/materi/data/umdatul-ahkam.json',
+  '/content/materi/data/wazan.json',
+  '/content/_data/coming-soon.json',
+  '/content/_data/seo.json',
+  '/content/kutipan/supports/kutipan.css',
+  '/content/kutipan/supports/kutipan.js',
+  '/content/kutipan/data/kutipan.json',
+  '/content/doa/pages/doa-harian.html',
+  '/content/doa/pages/doa-munajat.html',
+  '/content/doa/pages/dzikir-pagi.html',
+  '/content/doa/pages/dzikir-petang.html',
+  '/content/doa/pages/dzikir-sholat.html',
+  '/content/doa/supports/doa.css',
+  '/content/doa/supports/doa.js',
+  '/content/doa/data/doa-harian.json',
+  '/content/doa/data/doa-munajat.json',
+  '/content/doa/data/dzikir-pagi.json',
+  '/content/doa/data/dzikir-petang.json',
+  '/content/doa/data/dzikir-sholat.json',
 ];
 
 // ── INSTALL: cache semua aset penting ─────────
@@ -93,7 +105,7 @@ self.addEventListener('fetch', function(e) {
   if (url.origin !== location.origin) return;
 
   // JSON konten → Network-First (agar konten selalu fresh jika ada koneksi)
-  if (url.pathname.startsWith('/konten/')) {
+  if (url.pathname.startsWith("/content/")) {
     e.respondWith(networkFirst(e.request));
     return;
   }
