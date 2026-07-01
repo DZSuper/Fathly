@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Ceramah | FathlyWeb</title>
+  <link rel="manifest" href="../../../static/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0c0e;
+      --bg-card: #111318;
+      --bg-input: #161718;
+      --gold: #ffd700;
+      --green: #00ff88;
+      --blue: #4dabf7;
+      --text: #f2f2f2;
+      --muted: rgba(242,242,242,0.5);
+      --border: rgba(0,255,136,0.18);
+      --radius: 12px;
+      --tr: 0.22s ease;
+    }
+    [data-theme="light"] {
+      --bg: #f4f4f0; --bg-card: #fff; --bg-input: #eee;
+      --gold: #b8860b; --green: #1a7a4a; --blue: #1a6fc4;
+      --text: #1a1a1a; --muted: rgba(30,30,30,0.5);
+      --border: rgba(26,122,74,0.2);
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* TOPBAR */
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px 0;
+      overflow: visible;
+    }
+    .topbar-row {
+      display: flex; align-items: center; gap: 10px;
+      padding-bottom: 10px;
+    }
+    .back-btn {
+      background: none; border: none; color: var(--green);
+      font-size: 1.4rem; cursor: pointer; padding: 4px 8px;
+      border-radius: 8px; flex-shrink: 0;
+      transition: background var(--tr);
+    }
+    .back-btn:hover { background: rgba(0,255,136,0.1); }
+    .topbar-title { font-size: 1rem; font-weight: 600; color: var(--gold); flex: 1; }
+    .result-count { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+
+    /* SEARCH + FILTER */
+    .search-area { padding-bottom: 12px; }
+    .search-filter-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .search-box { position: relative; width: 100%; min-width: 0; }
+    .search-box .s-ico {
+      position: absolute; left: 11px; top: 50%;
+      transform: translateY(-50%); color: var(--muted); pointer-events: none;
+    }
+    .search-box input {
+      width: 100%; background: var(--bg-input);
+      border: 1.5px solid var(--border); border-radius: 10px;
+      padding: 10px 12px 10px 34px; color: var(--text);
+      font-family: 'Poppins', sans-serif; font-size: 0.88rem;
+      outline: none; transition: border-color var(--tr);
+      box-sizing: border-box;
+    }
+    .search-box input:focus { border-color: var(--green); }
+    .search-box input::placeholder { color: var(--muted); }
+
+    /* DROPDOWN */
+    .dd-row { display: flex; gap: 8px; width: 100%; }
+    .dd-wrap { position: relative; flex: 1; min-width: 0; }
+    .dd-btn {
+      display: flex; align-items: center; justify-content: space-between; gap: 4px;
+      width: 100%;
+      background: var(--bg-input); border: 1.5px solid var(--border);
+      border-radius: 10px; padding: 10px 10px;
+      font-family: 'Poppins', sans-serif; font-size: 0.82rem;
+      color: var(--text); cursor: pointer; white-space: nowrap;
+      overflow: hidden;
+      transition: border-color var(--tr), color var(--tr), background var(--tr);
+    }
+    .dd-btn span:first-child {
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1;
+    }
+    .dd-btn:hover { border-color: var(--green); }
+    .dd-btn.filtered { border-color: var(--green); color: var(--green); background: rgba(0,255,136,0.08); }
+    .dd-arrow { font-size: 0.65rem; color: var(--muted); display: inline-block; transition: transform var(--tr); flex-shrink: 0; }
+    .dd-btn.open .dd-arrow { transform: rotate(180deg); }
+    .dd-menu {
+      position: absolute; top: calc(100% + 5px); left: 0;
+      min-width: 100%; width: max-content; max-width: 220px;
+      background: var(--bg-input);
+      border: 1.5px solid var(--border); border-radius: 10px;
+      overflow: hidden; box-shadow: 0 10px 28px rgba(0,0,0,0.5);
+      z-index: 9999; display: none;
+    }
+    .dd-menu.open { display: block; animation: popIn 0.15s ease; }
+    @keyframes popIn { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:translateY(0); } }
+    .dd-item {
+      display: block; width: 100%; text-align: left;
+      background: none; border: none; padding: 10px 14px;
+      font-family: 'Poppins', sans-serif; font-size: 0.82rem;
+      color: var(--text); cursor: pointer; transition: background var(--tr);
+      white-space: nowrap;
+    }
+    .dd-item + .dd-item { border-top: 1px solid rgba(255,255,255,0.04); }
+    .dd-item:hover { background: rgba(0,255,136,0.08); }
+    .dd-item.active { color: var(--green); font-weight: 600; background: rgba(0,255,136,0.06); }
+
+    /* GRID */
+    .grid-area { padding: 12px 16px 80px; }
+    .c-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 560px) {
+      .c-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .c-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* KARTU — grid dengan 4 baris (jenis / judul / meta / deskripsi) */
+    .c-card {
+      background: var(--bg-card); border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 14px 16px;
+      cursor: pointer; position: relative; user-select: none;
+      transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease, border-color 0.2s ease;
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      align-content: start;
+    }
+    .c-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,255,136,0.15); border-color: rgba(0,255,136,0.5); }
+    .c-card:active { transform: scale(0.97); transition: transform 0.1s; }
+    .c-card.saved { border-color: var(--blue); }
+    .saved-badge {
+      position: absolute; top: 10px; right: 10px;
+      background: rgba(77,171,247,0.15); border: 1px solid var(--blue);
+      border-radius: 10px; padding: 2px 8px;
+      font-size: 0.65rem; color: var(--blue); font-weight: 500;
+    }
+    .c-jenis {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.25);
+      border-radius: 8px; padding: 3px 8px;
+      font-size: 0.7rem; color: var(--green); font-weight: 500;
+      margin-bottom: 8px;
+      align-self: start; justify-self: start;
+    }
+    .c-judul {
+      font-size: 0.92rem; font-weight: 600; color: var(--text);
+      line-height: 1.4; margin-bottom: 6px;
+      align-self: start;
+    }
+    .c-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; align-self: start; }
+    .c-pemb {
+      background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.2);
+      border-radius: 6px; padding: 2px 7px; font-size: 0.68rem; color: var(--gold);
+    }
+    .c-dur { font-size: 0.68rem; color: var(--muted); }
+    .c-ring {
+      font-size: 0.78rem; color: var(--muted); line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      align-self: start;
+    }
+
+    /* EMPTY */
+    .empty { display: none; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; text-align: center; gap: 8px; }
+    .empty.show { display: flex; }
+    .empty-ico { font-size: 2.5rem; }
+    .empty-ttl { font-size: 1rem; font-weight: 600; color: var(--muted); }
+    .empty-sub { font-size: 0.82rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-row">
+      <button class="back-btn" onclick="sessionStorage.removeItem('fw_ceramah_filter'); history.back()">&#8592;</button>
+      <span class="topbar-title">&#127908; Cari Ceramah</span>
+      <span class="result-count" id="resultCount">Memuat...</span>
+    </div>
+    <div class="search-area">
+      <div class="search-filter-row">
+        <div class="search-box">
+          <span class="s-ico">&#128269;</span>
+          <input type="text" id="searchInput" placeholder="Cari judul ceramah...">
+        </div>
+        <div class="dd-row">
+          <div class="dd-wrap">
+            <button class="dd-btn" id="btnJenis">
+              <span id="lblJenis">Jenis</span>
+              <span class="dd-arrow">&#9662;</span>
+            </button>
+            <div class="dd-menu" id="menuJenis">
+              <button class="dd-item active" data-v="all">Semua Jenis</button>
+              <button class="dd-item" data-v="khutbah-jumat">Khutbah Jum'at</button>
+              <button class="dd-item" data-v="kultum-subuh">Kultum Subuh</button>
+              <button class="dd-item" data-v="ceramah-tarawih">Ceramah Tarawih</button>
+              <button class="dd-item" data-v="kajian-biasa">Kajian Biasa</button>
+            </div>
+          </div>
+          <div class="dd-wrap">
+            <button class="dd-btn" id="btnPemb">
+              <span id="lblPemb">Pembahasan</span>
+              <span class="dd-arrow">&#9662;</span>
+            </button>
+            <div class="dd-menu" id="menuPemb">
+              <button class="dd-item active" data-v="all">Semua Pembahasan</button>
+              <button class="dd-item" data-v="aqidah">Aqidah</button>
+              <button class="dd-item" data-v="fiqih">Fiqih</button>
+              <button class="dd-item" data-v="akhlak">Akhlak</button>
+              <button class="dd-item" data-v="taubat">Taubat</button>
+              <button class="dd-item" data-v="ramadhan">Ramadhan</button>
+              <button class="dd-item" data-v="sedekah">Sedekah</button>
+              <button class="dd-item" data-v="ilmu">Ilmu</button>
+            </div>
+          </div>
+          <div class="dd-wrap">
+            <button class="dd-btn" id="btnWaktu">
+              <span id="lblWaktu">Waktu</span>
+              <span class="dd-arrow">&#9662;</span>
+            </button>
+            <div class="dd-menu" id="menuWaktu">
+              <button class="dd-item active" data-v="all">Semua Waktu</button>
+              <button class="dd-item" data-v="±5 menit">±5 menit</button>
+              <button class="dd-item" data-v="±7 menit">±7 menit</button>
+              <button class="dd-item" data-v="±10 menit">±10 menit</button>
+              <button class="dd-item" data-v="±15 menit">±15 menit</button>
+              <button class="dd-item" data-v="±20 menit">±20 menit</button>
+              <button class="dd-item" data-v="±25 menit">±25 menit</button>
+              <button class="dd-item" data-v="±30 menit">±30 menit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-area">
+    <div class="c-grid" id="cGrid"></div>
+    <div class="empty" id="emptyState">
+      <div class="empty-ico">&#128269;</div>
+      <div class="empty-ttl">Tidak ditemukan</div>
+      <div class="empty-sub">Coba kata kunci atau filter lain</div>
+    </div>
+  </div>
+
+  <script>
+    var DATA   = [];
+    var saved  = [];
+    var q      = '';
+    var fJenis = 'all';
+    var fPemb  = 'all';
+    var fWaktu = 'all';
+
+    var FILTER_KEY = 'fw_ceramah_filter';
+
+    var ICON = {
+      'khutbah-jumat':   'Khutbah Jum\'at',
+      'kultum-subuh':    'Kultum Subuh',
+      'ceramah-tarawih': 'Ceramah Tarawih',
+      'kajian-biasa':    'Kajian Biasa'
+    };
+
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('iai_theme') || 'dark');
+    } catch(e) {}
+
+    try { saved = JSON.parse(localStorage.getItem('fw_ceramah_saved') || '[]'); } catch(e) {}
+
+    // Restore filter dari sessionStorage (persist saat kembali dari baca.html)
+    function restoreFilter() {
+      try {
+        var saved_f = JSON.parse(sessionStorage.getItem(FILTER_KEY) || 'null');
+        if (!saved_f) return;
+        q = saved_f.q || ''; fJenis = saved_f.fJenis || 'all';
+        fPemb = saved_f.fPemb || 'all'; fWaktu = saved_f.fWaktu || 'all';
+        // Terapkan ke UI
+        if (q) {
+          var si = document.getElementById('searchInput');
+          if (si) si.value = q;
+        }
+        applyFilterUI('btnJenis', 'menuJenis', 'lblJenis', 'Jenis', fJenis);
+        applyFilterUI('btnPemb',  'menuPemb',  'lblPemb',  'Pembahasan', fPemb);
+        applyFilterUI('btnWaktu', 'menuWaktu', 'lblWaktu', 'Waktu', fWaktu);
+      } catch(e) {}
+    }
+
+    function applyFilterUI(btnId, menuId, lblId, defaultLbl, val) {
+      var btn  = document.getElementById(btnId);
+      var menu = document.getElementById(menuId);
+      if (!btn || !menu) return;
+      menu.querySelectorAll('.dd-item').forEach(function(item) {
+        var active = item.getAttribute('data-v') === val;
+        item.classList.toggle('active', active);
+        if (active && val !== 'all') {
+          document.getElementById(lblId).textContent = item.textContent.trim();
+          btn.classList.add('filtered');
+        }
+      });
+    }
+
+    function saveFilter() {
+      try {
+        sessionStorage.setItem(FILTER_KEY, JSON.stringify({ q: q, fJenis: fJenis, fPemb: fPemb, fWaktu: fWaktu }));
+      } catch(e) {}
+    }
+
+    function getFilteredList() {
+      var ql = q.toLowerCase();
+      return DATA.filter(function(c) {
+        var ok1 = !ql || c.judul.toLowerCase().indexOf(ql) > -1 || c.pembahasan_label.toLowerCase().indexOf(ql) > -1 || c.ringkasan.toLowerCase().indexOf(ql) > -1;
+        var ok2 = fJenis === 'all' || c.jenis === fJenis;
+        var ok3 = fPemb  === 'all' || c.pembahasan === fPemb;
+        var ok4 = fWaktu === 'all' || c.durasi === fWaktu;
+        return ok1 && ok2 && ok3 && ok4;
+      });
+    }
+
+    function render() {
+      // Baca ulang saved dari localStorage setiap render agar selalu sinkron
+      try { saved = JSON.parse(localStorage.getItem('fw_ceramah_saved') || '[]'); } catch(e) { saved = []; }
+
+      var list = getFilteredList();
+
+      document.getElementById('resultCount').textContent = list.length + ' ceramah';
+      var grid  = document.getElementById('cGrid');
+      var empty = document.getElementById('emptyState');
+
+      if (!list.length) {
+        grid.innerHTML = '';
+        empty.classList.add('show');
+        return;
+      }
+      empty.classList.remove('show');
+      grid.innerHTML = list.map(function(c) {
+        var sv = saved.indexOf(c.id) > -1;
+        return '<div class="c-card' + (sv ? ' saved' : '') + '" onclick="buka(\'' + c.id + '\')">' +
+          (sv ? '<span class="saved-badge">📌 Tersimpan</span>' : '') +
+          '<div class="c-jenis">' + c.jenis_label + '</div>' +
+          '<div class="c-judul">' + c.judul + '</div>' +
+          '<div class="c-meta">' +
+            '<span class="c-pemb">' + c.pembahasan_label + '</span>' +
+            '<span class="c-dur">' + c.durasi + '</span>' +
+          '</div>' +
+          '<div class="c-ring">' + c.ringkasan + '</div>' +
+        '</div>';
+      }).join('');
+
+      requestAnimationFrame(alignCardRows);
+    }
+
+    function buka(id) {
+      var list = getFilteredList();
+      var ids = list.map(function(c) { return c.id; });
+      sessionStorage.setItem('fw_ceramah_id', id);
+      sessionStorage.setItem('fw_ceramah_source', 'search');
+      sessionStorage.setItem('fw_ceramah_list', JSON.stringify(ids));
+      saveFilter();
+      location.href = 'baca.html';
+    }
+
+    function closeAllDD() {
+      document.querySelectorAll('.dd-menu').forEach(function(m) { m.classList.remove('open'); });
+      document.querySelectorAll('.dd-btn').forEach(function(b) { b.classList.remove('open'); });
+    }
+
+    function initDD(btnId, menuId, lblId, defaultLbl, onChange) {
+      var btn  = document.getElementById(btnId);
+      var menu = document.getElementById(menuId);
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var wasOpen = menu.classList.contains('open');
+        closeAllDD();
+        if (!wasOpen) { menu.classList.add('open'); btn.classList.add('open'); }
+      });
+      menu.querySelectorAll('.dd-item').forEach(function(item) {
+        item.addEventListener('click', function(e) {
+          e.stopPropagation();
+          menu.querySelectorAll('.dd-item').forEach(function(i) { i.classList.remove('active'); });
+          item.classList.add('active');
+          var val = item.getAttribute('data-v');
+          document.getElementById(lblId).textContent = val === 'all' ? defaultLbl : item.textContent.trim();
+          btn.classList.toggle('filtered', val !== 'all');
+          closeAllDD();
+          onChange(val);
+        });
+      });
+    }
+
+    document.addEventListener('click', closeAllDD);
+
+    initDD('btnJenis', 'menuJenis', 'lblJenis', 'Jenis', function(v) { fJenis = v; saveFilter(); render(); });
+    initDD('btnPemb',  'menuPemb',  'lblPemb',  'Pembahasan', function(v) { fPemb = v; saveFilter(); render(); });
+    initDD('btnWaktu', 'menuWaktu', 'lblWaktu', 'Waktu', function(v) { fWaktu = v; saveFilter(); render(); });
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+      q = this.value; saveFilter(); render();
+    });
+
+    fetch('../data/ceramah-index.json')
+      .then(function(r) { return r.json(); })
+      .then(function(idx) {
+        return Promise.all(idx.ids.map(function(id) {
+          return fetch('../data/items/' + id + '.json').then(function(r) { return r.json(); });
+        }));
+      })
+      .then(function(d) { DATA = d; restoreFilter(); render(); })
+      .catch(function() {
+        document.getElementById('resultCount').textContent = 'Gagal memuat';
+        document.getElementById('emptyState').classList.add('show');
+      });
+
+    // Samakan tinggi tiap elemen (jenis/judul/meta/deskripsi) antar kartu sebaris
+    function alignCardRows() {
+      var cards = Array.from(document.querySelectorAll('.c-card'));
+      if (!cards.length) return;
+
+      // Reset semua tinggi dulu
+      cards.forEach(function(card) {
+        ['c-jenis','c-judul','c-meta','c-ring'].forEach(function(cls) {
+          var el = card.querySelector('.' + cls);
+          if (el) el.style.minHeight = '';
+        });
+      });
+
+      // Kelompokkan kartu per baris (berdasarkan posisi top)
+      var rows = {};
+      cards.forEach(function(card) {
+        var top = Math.round(card.getBoundingClientRect().top);
+        if (!rows[top]) rows[top] = [];
+        rows[top].push(card);
+      });
+
+      // Untuk setiap baris, samakan tinggi per elemen
+      Object.values(rows).forEach(function(row) {
+        if (row.length < 2) return; // baris tunggal tidak perlu
+        ['c-jenis','c-judul','c-meta','c-ring'].forEach(function(cls) {
+          var maxH = 0;
+          row.forEach(function(card) {
+            var el = card.querySelector('.' + cls);
+            if (el) maxH = Math.max(maxH, el.offsetHeight);
+          });
+          if (maxH > 0) {
+            row.forEach(function(card) {
+              var el = card.querySelector('.' + cls);
+              if (el) el.style.minHeight = maxH + 'px';
+            });
+          }
+        });
+      });
+    }
+
+    window.addEventListener('resize', alignCardRows);
+  </script>
+</body>
+</html>
