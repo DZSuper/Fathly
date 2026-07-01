@@ -14,6 +14,7 @@
 
   var _allDoa = [];
   var _isSearchable = false;
+  var _isDzikir = false;
 
   // ── STATE COUNTER TERSENTRALISASI ─────────────────────────
   // Satu sumber kebenaran untuk semua hitungan, terlepas dari mode
@@ -30,6 +31,7 @@
     var slug = main.getAttribute('data-konten');
     if (!slug) return;
     _isSearchable = main.hasAttribute('data-searchable');
+    _isDzikir = slug.indexOf('dzikir') === 0;
 
     fetch('../konten/' + slug + '.json')
       .then(function (r) { return r.json(); })
@@ -209,7 +211,7 @@
             '<span class="doa-item-num">' + (i + 1) + '</span>' +
             '<span class="doa-item-judul">' + esc(d.judul) + '</span>' +
             (hasJumlah ? '<span class="doa-item-jumlah">' + esc(d.jumlah) + '</span>' : '') +
-            (hasJumlah ? checkIconHtml(d.id) : '') +
+            (hasJumlah && _isDzikir ? checkIconHtml(d.id) : '') +
             '<span class="doa-item-arrow">›</span>' +
           '</button>' +
           '<div class="doa-item-body">' + buildDetailHtml(d) + '</div>' +
@@ -245,7 +247,7 @@
         '<button class="doa-desktop-list-item" data-id="' + esc(d.id) + '">' +
           '<span class="doa-item-num">' + (i + 1) + '</span>' +
           '<span class="doa-item-judul">' + esc(d.judul) + '</span>' +
-          (hasJumlah ? checkIconHtml(d.id) : '') +
+          (hasJumlah && _isDzikir ? checkIconHtml(d.id) : '') +
         '</button>';
     });
     sidebar.innerHTML = html;
