@@ -1,0 +1,82 @@
+{
+  "judul_website": "FathlyWeb",
+  "mapel": [
+    {
+      "judul": "Aqidah",
+      "kartu": [
+        {
+          "nama": "Tauhid",
+          "link": "content/materi/pages/tauhid.html"
+        },
+        {
+          "nama": "Bid'ah",
+          "link": "content/materi/pages/bidah.html"
+        },
+        {
+          "nama": "Sifat Allah",
+          "link": "content/materi/pages/sifat.html"
+        },
+        {
+          "nama": "Iman",
+          "link": "content/materi/pages/iman.html"
+        },
+        {
+          "nama": "Takdir",
+          "link": "content/materi/pages/takdir.html"
+        }
+      ]
+    },
+    {
+      "judul": "Fiqih",
+      "kartu": [
+        {
+          "nama": "Matan Abu Syuja'",
+          "link": "content/materi/pages/abu-syuja.html"
+        },
+        {
+          "nama": "Umdatul Ahkam",
+          "link": "content/materi/pages/umdatul-ahkam.html"
+        }
+      ]
+    },
+    {
+      "judul": "Nahwu",
+      "kartu": [
+        {
+          "nama": "Matan Jurumiyah",
+          "link": "content/materi/pages/jurumiyah.html"
+        },
+        {
+          "nama": "Mutammimah",
+          "link": "content/materi/pages/mutammimah.html"
+        }
+      ]
+    },
+    {
+      "judul": "Shorof",
+      "kartu": [
+        {
+          "nama": "Kaedah-kaedah Tashrif",
+          "link": "content/materi/pages/tashrif.html"
+        },
+        {
+          "nama": "Wazan-wazan Shorf",
+          "link": "content/materi/pages/wazan.html"
+        }
+      ]
+    },
+    {
+      "judul": "Siroh",
+      "kartu": [
+        {
+          "nama": "Siroh Nabawi",
+          "link": "content/materi/pages/siroh-nabawi.html"
+        },
+        {
+          "nama": "Siroh Sahabat",
+          "link": "content/materi/pages/siroh-sahabat.html"
+        }
+      ]
+    }
+  ]
+}

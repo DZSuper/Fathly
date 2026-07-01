@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bid'ah | Aqidah Salafiyah | FathlyWeb</title>
+  <link rel="stylesheet" href="../supports/materi.css">
+</head>
+<body data-konten="bidah">
+  <!-- Header dengan tombol kembali, page selector, dan default -->
+  <div class="header-buttons">
+    <a href="../../../index.html" class="back-btn">← Kembali ke Beranda</a>
+    
+    <div class="page-selector">
+      <button class="page-btn active" data-page="1">1</button>
+      <button class="page-btn" data-page="2">2</button>
+      <button class="page-btn" data-page="3">3</button>
+    </div>
+    
+    <button class="default-btn" id="defaultBtn" style="display: none;">DEFAULT</button>
+  </div>
+  
+  <h1 class="tema-title">Bid'ah</h1>
+  
+  <!-- ========== HALAMAN 1: DEFAULT (READ-ONLY) ========== -->
+  <div class="page-container active" id="page1">
+    <div class="content-wrapper">
+      <aside class="kelompok-section">
+        <h2 class="section-title">Kelompok</h2>
+        <div class="kelompok-buttons">
+          <button class="kelompok-btn active" data-kelompok="ahlussunnah" data-page="1">Ahlus Sunnah wal Jama'ah</button>
+          <button class="kelompok-btn" data-kelompok="ahlulbidah" data-page="1">Ahlul Bid'ah</button>
+          <button class="kelompok-btn" data-kelompok="sufiyah" data-page="1">Sufiyah Ghulat</button>
+          <button class="kelompok-btn" data-kelompok="hizbiyah" data-page="1">Hizbiyah</button>
+        </div>
+        <select class="kelompok-dropdown" id="kelompokSelect1">
+          <option value="ahlussunnah">Ahlus Sunnah wal Jama'ah</option>
+          <option value="ahlulbidah">Ahlul Bid'ah</option>
+          <option value="sufiyah">Sufiyah Ghulat</option>
+          <option value="hizbiyah">Hizbiyah</option>
+        </select>
+      </aside>
+      
+      <main class="penjelasan-section">
+        <div class="section-title">
+          <span>Penjelasan</span>
+        </div>
+        <div class="penjelasan-content" id="penjelasanContent1">
+          <div class="penjelasan-item active" data-kelompok="ahlussunnah">
+            <h3>Ahlus Sunnah wal Jama'ah</h3>
+            <p><strong>Definisi Bid'ah:</strong> Bid'ah adalah sesuatu yang diada-adakan dalam agama tanpa dalil dari Al-Qur'an maupun Sunnah dengan tujuan mendekatkan diri kepada Allah.</p>
+            <p><strong>Hukum Bid'ah:</strong> Setiap bid'ah dalam urusan ibadah adalah sesat dan tertolak. Rasulullah ﷺ bersabda: "Barangsiapa yang mengada-adakan sesuatu dalam urusan (agama) kami ini yang bukan darinya, maka ia tertolak." (HR. Bukhari & Muslim)</p>
+            <p><strong>Prinsip Ahlus Sunnah:</strong></p>
+            <p>• Menolak semua bid'ah dalam ibadah, tidak ada bid'ah hasanah (baik) dalam agama.</p>
+            <p>• Berpegang teguh pada Sunnah Rasulullah ﷺ dan atsar para Salafus Shalih.</p>
+            <p>• Memahami bahwa kesempurnaan agama telah Allah nyatakan dalam firman-Nya: "Pada hari ini telah Aku sempurnakan agamamu untukmu." (QS. Al-Ma'idah: 3)</p>
+            <p>• Membedakan antara bid'ah dalam agama (yang dilarang) dengan hal-hal baru dalam urusan dunia (yang diperbolehkan selama tidak melanggar syariat).</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="ahlulbidah">
+            <h3>Ahlul Bid'ah (Umum)</h3>
+            <p>Ahlul Bid'ah adalah orang-orang yang mengada-adakan dalam agama apa yang tidak ada dasarnya dari Rasulullah ﷺ.</p>
+            <p><strong>Ciri-ciri umum Ahlul Bid'ah:</strong></p>
+            <p>• Menambah-tambah dalam ibadah tanpa dalil syar'i yang shahih.</p>
+            <p>• Membuat perayaan atau ritual yang tidak diajarkan Rasulullah ﷺ.</p>
+            <p>• Menganggap bid'ah mereka sebagai kebaikan dan mendekatkan diri kepada Allah.</p>
+            <p>• Fanatik terhadap bid'ah mereka dan membela dengan berbagai argumentasi.</p>
+            <p><strong>Contoh bid'ah yang tersebar:</strong></p>
+            <p>• Peringatan Maulid Nabi dengan cara-cara yang tidak diajarkan oleh Rasulullah ﷺ dan para sahabat.</p>
+            <p>• Tahlilan, yasinan, dan perayaan-perayaan untuk orang yang meninggal pada hari ke-3, ke-7, ke-40, dst.</p>
+            <p>• Dzikir berjamaah dengan suara keras secara rutin setelah shalat fardhu.</p>
+            <p>• Membaca shalawat dengan cara-cara tertentu yang diyakini memiliki fadilah khusus tanpa dalil.</p>
+            <p><strong>Bahaya bid'ah:</strong> Bid'ah lebih dicintai oleh syaitan daripada maksiat, karena pelaku maksiat tahu bahwa dia berdosa dan bisa bertaubat, sedangkan pelaku bid'ah mengira dia beribadah kepada Allah.</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="sufiyah">
+            <h3>Sufiyah Ghulat (Tasawuf yang Berlebihan)</h3>
+            <p>Sufiyah Ghulat adalah kelompok yang berlebihan dalam tasawuf hingga jatuh kepada bid'ah-bid'ah besar dan bahkan kesyirikan.</p>
+            <p><strong>Bid'ah-bid'ah mereka:</strong></p>
+            <p>• Tawassul dengan orang-orang shalih yang telah meninggal, meminta kepada mereka selain Allah.</p>
+            <p>• Thawaf (tawaf) mengelilingi kuburan untuk mencari berkah.</p>
+            <p>• Berkeyakinan adanya "al-ghawts" atau "al-quthub" yang mengurus alam semesta.</p>
+            <p>• Wirid-wirid dan dzikir-dzikir yang tidak diajarkan Rasulullah ﷺ dengan jumlah tertentu yang mereka buat-buat.</p>
+            <p>• Tarian dan musik dalam ibadah (seperti ritual hadrah).</p>
+            <p>• Konsep "wahdatul wujud" yang mengatakan bahwa wujud Allah dan makhluk adalah satu.</p>
+            <p><strong>Peringatan:</strong> Sebagian bid'ah mereka masuk dalam kategori syirik akbar yang mengeluarkan dari Islam, seperti berdoa kepada selain Allah dan meyakini orang-orang mati bisa memberi manfaat atau menolak mudarat.</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="hizbiyah">
+            <h3>Hizbiyah (Kelompok Partai)</h3>
+            <p>Hizbiyah adalah kelompok-kelompok yang membuat partai-partai dalam Islam dengan nama dakwah, namun mereka menyimpang dari manhaj Salaf.</p>
+            <p><strong>Bid'ah-bid'ah mereka:</strong></p>
+            <p>• Membuat jamaah-jamaah tertentu dengan bai'at (sumpah setia) kepada pemimpin mereka.</p>
+            <p>• Mewajibkan setia kepada jamaah mereka dan menganggap jamaah lain sesat.</p>
+            <p>• Ta'ashub (fanatik buta) kepada pemimpin dan tokoh-tokoh mereka.</p>
+            <p>• Merahasiakan sebagian ajaran mereka dari orang awam (bertingkat-tingkat).</p>
+            <p>• Tidak mengikuti ulama Ahlus Sunnah, bahkan menganggap ulama salaf sebagai "ulama sultan".</p>
+            <p><strong>Contoh kelompok:</strong> Ikhwanul Muslimin, Hizbut Tahrir, dan kelompok-kelompok hizbiyah lainnya.</p>
+            <p><strong>Dalil bantahan:</strong> Allah berfirman, "Sesungguhnya orang-orang yang memecah belah agama mereka dan mereka menjadi bergolongan-golongan, tidak ada sedikitpun tanggung jawabmu kepada mereka." (QS. Al-An'am: 159)</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ========== HALAMAN 2: EDITING ========== -->
+  <div class="page-container" id="page2">
+    <div class="content-wrapper">
+      <aside class="kelompok-section">
+        <h2 class="section-title">Kelompok</h2>
+        <div class="kelompok-buttons">
+          <button class="kelompok-btn active" data-kelompok="ahlussunnah" data-page="2">Ahlus Sunnah wal Jama'ah</button>
+          <button class="kelompok-btn" data-kelompok="ahlulbidah" data-page="2">Ahlul Bid'ah</button>
+          <button class="kelompok-btn" data-kelompok="sufiyah" data-page="2">Sufiyah Ghulat</button>
+          <button class="kelompok-btn" data-kelompok="hizbiyah" data-page="2">Hizbiyah</button>
+        </div>
+        <select class="kelompok-dropdown" id="kelompokSelect2">
+          <option value="ahlussunnah">Ahlus Sunnah wal Jama'ah</option>
+          <option value="ahlulbidah">Ahlul Bid'ah</option>
+          <option value="sufiyah">Sufiyah Ghulat</option>
+          <option value="hizbiyah">Hizbiyah</option>
+        </select>
+      </aside>
+      
+      <main class="penjelasan-section">
+        <div class="section-title">
+          <span>Penjelasan</span>
+          <button class="edit-btn" id="editBtn">EDIT</button>
+        </div>
+        <div class="penjelasan-content" id="penjelasanContent2">
+          <div class="penjelasan-item active" data-kelompok="ahlussunnah">
+            <h3>Ahlus Sunnah wal Jama'ah</h3>
+            <p><strong>Definisi Bid'ah:</strong> Bid'ah adalah sesuatu yang diada-adakan dalam agama tanpa dalil dari Al-Qur'an maupun Sunnah dengan tujuan mendekatkan diri kepada Allah.</p>
+            <p><strong>Hukum Bid'ah:</strong> Setiap bid'ah dalam urusan ibadah adalah sesat dan tertolak. Rasulullah ﷺ bersabda: "Barangsiapa yang mengada-adakan sesuatu dalam urusan (agama) kami ini yang bukan darinya, maka ia tertolak." (HR. Bukhari & Muslim)</p>
+            <p><strong>Prinsip Ahlus Sunnah:</strong></p>
+            <p>• Menolak semua bid'ah dalam ibadah, tidak ada bid'ah hasanah (baik) dalam agama.</p>
+            <p>• Berpegang teguh pada Sunnah Rasulullah ﷺ dan atsar para Salafus Shalih.</p>
+            <p>• Memahami bahwa kesempurnaan agama telah Allah nyatakan dalam firman-Nya: "Pada hari ini telah Aku sempurnakan agamamu untukmu." (QS. Al-Ma'idah: 3)</p>
+            <p>• Membedakan antara bid'ah dalam agama (yang dilarang) dengan hal-hal baru dalam urusan dunia (yang diperbolehkan selama tidak melanggar syariat).</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="ahlulbidah">
+            <h3>Ahlul Bid'ah (Umum)</h3>
+            <p>Ahlul Bid'ah adalah orang-orang yang mengada-adakan dalam agama apa yang tidak ada dasarnya dari Rasulullah ﷺ.</p>
+            <p><strong>Ciri-ciri umum Ahlul Bid'ah:</strong></p>
+            <p>• Menambah-tambah dalam ibadah tanpa dalil syar'i yang shahih.</p>
+            <p>• Membuat perayaan atau ritual yang tidak diajarkan Rasulullah ﷺ.</p>
+            <p>• Menganggap bid'ah mereka sebagai kebaikan dan mendekatkan diri kepada Allah.</p>
+            <p>• Fanatik terhadap bid'ah mereka dan membela dengan berbagai argumentasi.</p>
+            <p><strong>Contoh bid'ah yang tersebar:</strong></p>
+            <p>• Peringatan Maulid Nabi dengan cara-cara yang tidak diajarkan oleh Rasulullah ﷺ dan para sahabat.</p>
+            <p>• Tahlilan, yasinan, dan perayaan-perayaan untuk orang yang meninggal pada hari ke-3, ke-7, ke-40, dst.</p>
+            <p>• Dzikir berjamaah dengan suara keras secara rutin setelah shalat fardhu.</p>
+            <p>• Membaca shalawat dengan cara-cara tertentu yang diyakini memiliki fadilah khusus tanpa dalil.</p>
+            <p><strong>Bahaya bid'ah:</strong> Bid'ah lebih dicintai oleh syaitan daripada maksiat, karena pelaku maksiat tahu bahwa dia berdosa dan bisa bertaubat, sedangkan pelaku bid'ah mengira dia beribadah kepada Allah.</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="sufiyah">
+            <h3>Sufiyah Ghulat (Tasawuf yang Berlebihan)</h3>
+            <p>Sufiyah Ghulat adalah kelompok yang berlebihan dalam tasawuf hingga jatuh kepada bid'ah-bid'ah besar dan bahkan kesyirikan.</p>
+            <p><strong>Bid'ah-bid'ah mereka:</strong></p>
+            <p>• Tawassul dengan orang-orang shalih yang telah meninggal, meminta kepada mereka selain Allah.</p>
+            <p>• Thawaf (tawaf) mengelilingi kuburan untuk mencari berkah.</p>
+            <p>• Berkeyakinan adanya "al-ghawts" atau "al-quthub" yang mengurus alam semesta.</p>
+            <p>• Wirid-wirid dan dzikir-dzikir yang tidak diajarkan Rasulullah ﷺ dengan jumlah tertentu yang mereka buat-buat.</p>
+            <p>• Tarian dan musik dalam ibadah (seperti ritual hadrah).</p>
+            <p>• Konsep "wahdatul wujud" yang mengatakan bahwa wujud Allah dan makhluk adalah satu.</p>
+            <p><strong>Peringatan:</strong> Sebagian bid'ah mereka masuk dalam kategori syirik akbar yang mengeluarkan dari Islam, seperti berdoa kepada selain Allah dan meyakini orang-orang mati bisa memberi manfaat atau menolak mudarat.</p>
+          </div>
+          
+          <div class="penjelasan-item" data-kelompok="hizbiyah">
+            <h3>Hizbiyah (Kelompok Partai)</h3>
+            <p>Hizbiyah adalah kelompok-kelompok yang membuat partai-partai dalam Islam dengan nama dakwah, namun mereka menyimpang dari manhaj Salaf.</p>
+            <p><strong>Bid'ah-bid'ah mereka:</strong></p>
+            <p>• Membuat jamaah-jamaah tertentu dengan bai'at (sumpah setia) kepada pemimpin mereka.</p>
+            <p>• Mewajibkan setia kepada jamaah mereka dan menganggap jamaah lain sesat.</p>
+            <p>• Ta'ashub (fanatik buta) kepada pemimpin dan tokoh-tokoh mereka.</p>
+            <p>• Merahasiakan sebagian ajaran mereka dari orang awam (bertingkat-tingkat).</p>
+            <p>• Tidak mengikuti ulama Ahlus Sunnah, bahkan menganggap ulama salaf sebagai "ulama sultan".</p>
+            <p><strong>Contoh kelompok:</strong> Ikhwanul Muslimin, Hizbut Tahrir, dan kelompok-kelompok hizbiyah lainnya.</p>
+            <p><strong>Dalil bantahan:</strong> Allah berfirman, "Sesungguhnya orang-orang yang memecah belah agama mereka dan mereka menjadi bergolongan-golongan, tidak ada sedikitpun tanggung jawabmu kepada mereka." (QS. Al-An'am: 159)</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ========== HALAMAN 3: CATATAN ========== -->
+<div class="page-container" id="page3">
+  <div class="catatan-wrapper">
+    <!-- Header Catatan -->
+    <div class="catatan-header">
+      <button class="catatan-mode-btn" id="catatanModeBtn">MODE: BACA</button>
+    </div>
+    
+    <!-- Container Catatan -->
+    <div class="catatan-container">
+      <div class="catatan-content" contenteditable="false" id="catatanContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Format Toolbar (Fixed di Bawah) -->
+<div class="format-toolbar" id="formatToolbar">
+  <div class="toolbar-scroll">
+    <!-- Bold, Italic, Underline -->
+    <div class="toolbar-group">
+      <button class="format-btn bold" id="boldBtn" data-tooltip="Tebal (Bold)">B</button>
+      <button class="format-btn italic" id="italicBtn" data-tooltip="Miring (Italic)">I</button>
+      <button class="format-btn underline" id="underlineBtn" data-tooltip="Garis Bawah">U</button>
+    </div>
+    
+    <!-- Color -->
+    <div class="toolbar-group">
+      <button class="color-btn gray" id="colorGray" data-tooltip="Abu-abu (Default)"></button>
+      <button class="color-btn red" id="colorRed" data-tooltip="Merah"></button>
+      <button class="color-btn blue" id="colorBlue" data-tooltip="Biru"></button>
+      <button class="color-btn yellow" id="colorYellow" data-tooltip="Kuning"></button>
+      <button class="color-btn green" id="colorGreen" data-tooltip="Hijau"></button>
+    </div>
+    
+    <!-- Size -->
+    <div class="toolbar-group">
+      <button class="format-btn size-btn" id="size1" data-tooltip="Kecil (12px)">12</button>
+      <button class="format-btn size-btn" id="size2" data-tooltip="Normal Kecil (14px)">14</button>
+      <button class="format-btn size-btn" id="size3" data-tooltip="Normal (16px)">16</button>
+      <button class="format-btn size-btn" id="size4" data-tooltip="Besar (18px)">18</button>
+      <button class="format-btn size-btn" id="size5" data-tooltip="Sangat Besar (24px)">24</button>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../supports/materi.js"></script>
+
+
+</body>
+</html>

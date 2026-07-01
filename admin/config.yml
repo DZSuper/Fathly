@@ -15,7 +15,7 @@ collections:
     files:
       - name: "beranda"
         label: "Beranda (Mata Pelajaran & Kartu)"
-        file: "konten/index.json"
+        file: "config/site.json"
         fields:
           - name: "judul_website"
             label: "Judul Website"
@@ -47,7 +47,7 @@ collections:
 
       - name: "tauhid"
         label: "Tauhid"
-        file: "konten/tauhid.json"
+        file: "content/materi/data/tauhid.json"
         fields:
           - name: "judul"
             label: "Judul Halaman"
@@ -69,7 +69,7 @@ collections:
 
       - name: "bidah"
         label: "Bid'ah"
-        file: "konten/bidah.json"
+        file: "content/materi/data/bidah.json"
         fields:
           - name: "judul"
             label: "Judul Halaman"
@@ -91,7 +91,7 @@ collections:
 
       - name: "sifat"
         label: "Sifat Allah"
-        file: "konten/sifat.json"
+        file: "content/materi/data/sifat.json"
         fields:
           - name: "judul"
             label: "Judul Halaman"
@@ -113,7 +113,7 @@ collections:
 
       - name: "iman"
         label: "Iman"
-        file: "konten/iman.json"
+        file: "content/materi/data/iman.json"
         fields:
           - name: "judul"
             label: "Judul Halaman"
@@ -135,7 +135,7 @@ collections:
 
       - name: "abu-syuja"
         label: "Matan Abu Syuja'"
-        file: "konten/abu-syuja.json"
+        file: "content/materi/data/abu-syuja.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -149,7 +149,7 @@ collections:
 
       - name: "umdatul-ahkam"
         label: "Umdatul Ahkam"
-        file: "konten/umdatul-ahkam.json"
+        file: "content/materi/data/umdatul-ahkam.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -163,7 +163,7 @@ collections:
 
       - name: "jurumiyah"
         label: "Matan Jurumiyah"
-        file: "konten/jurumiyah.json"
+        file: "content/materi/data/jurumiyah.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -177,7 +177,7 @@ collections:
 
       - name: "mutammimah"
         label: "Mutammimah"
-        file: "konten/mutammimah.json"
+        file: "content/materi/data/mutammimah.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -191,7 +191,7 @@ collections:
 
       - name: "tashrif"
         label: "Kaedah-kaedah Tashrif"
-        file: "konten/tashrif.json"
+        file: "content/materi/data/tashrif.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -205,7 +205,7 @@ collections:
 
       - name: "wazan"
         label: "Wazan-wazan Shorf"
-        file: "konten/wazan.json"
+        file: "content/materi/data/wazan.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -219,7 +219,7 @@ collections:
 
       - name: "siroh-nabawi"
         label: "Siroh Nabawi"
-        file: "konten/siroh-nabawi.json"
+        file: "content/materi/data/siroh-nabawi.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -233,7 +233,7 @@ collections:
 
       - name: "siroh-sahabat"
         label: "Siroh Sahabat"
-        file: "konten/siroh-sahabat.json"
+        file: "content/materi/data/siroh-sahabat.json"
         fields:
           - {name: "judul", label: "Judul Halaman", widget: "string"}
           - name: "kelompok"
@@ -250,7 +250,7 @@ collections:
     files:
       - name: "coming-soon"
         label: "Halaman Coming Soon"
-        file: "konten/coming-soon.json"
+        file: "content/coming-soon/coming-soon.json"
         fields:
           - {name: "judul", label: "Judul", widget: "string"}
           - {name: "deskripsi", label: "Deskripsi", widget: "text"}
@@ -283,7 +283,7 @@ collections:
     files:
       - name: "seo"
         label: "Deskripsi & Kata Kunci"
-        file: "konten/seo.json"
+        file: "config/seo.json"
         fields:
           - name: "description"
             label: "Deskripsi Website"
@@ -300,7 +300,7 @@ collections:
     files:
       - name: "dzikir-pagi"
         label: "🌅 Dzikir Pagi"
-        file: "konten/dzikir-pagi.json"
+        file: "content/doa/data/dzikir-pagi.json"
         fields:
           - {name: "kategori", label: "Nama Kategori", widget: "string"}
           - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
@@ -320,7 +320,7 @@ collections:
 
       - name: "dzikir-petang"
         label: "🌇 Dzikir Petang"
-        file: "konten/dzikir-petang.json"
+        file: "content/doa/data/dzikir-petang.json"
         fields:
           - {name: "kategori", label: "Nama Kategori", widget: "string"}
           - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
@@ -340,7 +340,7 @@ collections:
 
       - name: "dzikir-sholat"
         label: "🕌 Dzikir Setelah Sholat"
-        file: "konten/dzikir-sholat.json"
+        file: "content/doa/data/dzikir-sholat.json"
         fields:
           - {name: "kategori", label: "Nama Kategori", widget: "string"}
           - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
@@ -360,7 +360,7 @@ collections:
 
       - name: "doa-harian"
         label: "🗓️ Doa Sehari-hari"
-        file: "konten/doa-harian.json"
+        file: "content/doa/data/doa-harian.json"
         fields:
           - {name: "kategori", label: "Nama Kategori", widget: "string"}
           - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
@@ -380,7 +380,7 @@ collections:
 
       - name: "doa-munajat"
         label: "🤲 Doa-doa Munajat"
-        file: "konten/doa-munajat.json"
+        file: "content/doa/data/doa-munajat.json"
         fields:
           - {name: "kategori", label: "Nama Kategori", widget: "string"}
           - {name: "waktu", label: "Keterangan Waktu", widget: "string", required: false}
@@ -404,7 +404,7 @@ collections:
     files:
       - name: "kutipan"
         label: "Kutipan & Ulama"
-        file: "konten/kutipan.json"
+        file: "content/kutipan/data/kutipan.json"
         fields:
 
           - name: "ulama"
@@ -501,7 +501,7 @@ collections:
     files:
       - name: "ceramah-index"
         label: "Daftar ID Ceramah (urutan tampil)"
-        file: "konten/ceramah-index.json"
+        file: "content/ceramah/data/ceramah-index.json"
         fields:
           - name: "ids"
             label: "ID Ceramah"
@@ -510,7 +510,7 @@ collections:
 
   - name: "ceramah"
     label: "🎙️ Ceramah — Isi"
-    folder: "konten/ceramah-items"
+    folder: "content/ceramah/data/items"
     create: true
     delete: true
     identifier_field: "id"

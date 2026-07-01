@@ -58,7 +58,7 @@
 
   <!-- Load SEO dari JSON agar bisa diedit di CMS -->
   <script>
-    fetch('konten/seo.json')
+    fetch('config/seo.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         var desc = document.getElementById('metaDescription');
@@ -71,10 +71,10 @@
       .catch(function() {});
   </script>
   <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="kutipan.css">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="favicon.svg">
-  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="content/kutipan/supports/kutipan.css">
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+  <link rel="apple-touch-icon" href="static/favicon.svg">
+  <link rel="manifest" href="static/manifest.json">
   <meta name="theme-color" content="#0b0c0e">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -450,11 +450,11 @@
     <main class="tab-content" id="tab-dzikir">
       <section class="mapel-section">
         <div class="card-container">
-          <a href="doa/dzikir-pagi.html" class="card"><h3>🌅 Dzikir Pagi</h3></a>
-          <a href="doa/dzikir-petang.html" class="card"><h3>🌇 Dzikir Petang</h3></a>
-          <a href="doa/dzikir-sholat.html" class="card"><h3>🕌 Dzikir Setelah Sholat</h3></a>
-          <a href="doa/doa-harian.html" class="card"><h3>🗓️ Doa Sehari-hari</h3></a>
-          <a href="doa/doa-munajat.html" class="card"><h3>🤲 Doa-doa Munajat</h3></a>
+          <a href="content/doa/pages/dzikir-pagi.html" class="card"><h3>🌅 Dzikir Pagi</h3></a>
+          <a href="content/doa/pages/dzikir-petang.html" class="card"><h3>🌇 Dzikir Petang</h3></a>
+          <a href="content/doa/pages/dzikir-sholat.html" class="card"><h3>🕌 Dzikir Setelah Sholat</h3></a>
+          <a href="content/doa/pages/doa-harian.html" class="card"><h3>🗓️ Doa Sehari-hari</h3></a>
+          <a href="content/doa/pages/doa-munajat.html" class="card"><h3>🤲 Doa-doa Munajat</h3></a>
         </div>
       </section>
     </main>
@@ -532,11 +532,11 @@
     <div class="kup-body" id="kutipanUlamaPanelBody"></div>
   </div>
 
-  <script src="script/main.js"></script>
-  <script src="script/kutipan.js"></script>
+  <script src="main.js"></script>
+  <script src="content/kutipan/supports/kutipan.js"></script>
   <script>
     // Load konten dari JSON
-    fetch('konten/index.json')
+    fetch('config/site.json')
       .then(function(r){ return r.json(); })
       .then(function(data){
         var main = document.getElementById('tab-materi');
