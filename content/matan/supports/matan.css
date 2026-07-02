@@ -1,228 +1,752 @@
-/* ========================================================================== */
-/* == MATAN CSS == */
-/* ========================================================================== */
+/* =============================================
+   MATAN.CSS — Tab Matan FathlyWeb
+   Design system: menu.css tokens
+============================================= */
 
-/* --- General Styling --- */
-.matan-container {
-  padding: 15px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+/* ── WRAPPER ── */
+.matan-mobile  { display: block; }
+.matan-desktop { display: none; }
 
-.matan-section-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--gold);
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-/* --- Bookmark Grid --- */
-.matan-bookmark-grid {
+/* ── SECTION HEADER ── */
+.section-header {
   display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-.matan-bookmark-grid::-webkit-scrollbar { /* Chrome, Safari, Opera */
-  display: none;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-.matan-bookmark-card {
-  flex-shrink: 0;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px 15px;
-  text-align: center;
-  min-width: 120px;
-  max-width: 150px;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.matan-bookmark-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.15);
-}
-.matan-bookmark-card-title {
+.section-header span:first-child { font-size: 1rem; }
+
+.section-header h3 {
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-light);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 5px;
+  flex: 1;
 }
-.matan-bookmark-card-category {
+
+.section-count {
+  font-family: 'Poppins', sans-serif;
   font-size: 0.75rem;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(255,215,0,0.1);
+  border-radius: 20px;
+  padding: 2px 10px;
 }
 
-/* --- Progress Bar Section --- */
-.matan-progress-section {
-  margin-bottom: 30px;
+.matan-section + .matan-section-block {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 18px 0;
 }
 
-.matan-progress-list {
-  display: grid;
+/* =============================================
+   MOBILE
+============================================= */
+
+.matan-mobile { padding: 14px; }
+
+/* ── BOOKMARK SCROLL (mobile) ── */
+.favorit-scroll, #favorit-scroll {
+  display: flex;
   gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  padding-bottom: 6px;
+  scrollbar-width: none;
+}
+#favorit-scroll::-webkit-scrollbar { display: none; }
+
+.favorit-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 140px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.favorit-item:hover { border-color: rgba(255,215,0,0.4); }
+
+.nama-arab {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-light);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
-.matan-progress-item {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px 15px;
+.nama-penulis {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+/* ── HAFALAN LIST (mobile) ── */
+#hafalan-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-height: calc(4 * 90px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,215,0,0.4) transparent;
+}
+#hafalan-list::-webkit-scrollbar { width: 3px; }
+#hafalan-list::-webkit-scrollbar-thumb {
+  background: rgba(255,215,0,0.4);
+  border-radius: 4px;
 }
 
-.matan-progress-item-header {
+.hafalan-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.hafalan-item:hover { border-color: rgba(255,215,0,0.3); }
+
+.hafalan-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 
-.matan-progress-item-title {
-  font-size: 1rem;
-  font-weight: 500;
+.hafalan-judul {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-light);
+  direction: rtl;
 }
 
-.matan-progress-percentage {
-  font-size: 0.9rem;
-  font-weight: 600;
+.hafalan-persen {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
   color: var(--gold);
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 
-.matan-progress-bar-wrapper {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  height: 8px;
+.hafalan-bar {
+  background: rgba(255,255,255,0.12);
+  border-radius: 6px;
+  height: 6px;
   overflow: hidden;
+  margin-bottom: 8px;
 }
-
-.matan-progress-bar {
+.hafalan-bar .fill {
   height: 100%;
-  background-color: var(--gold);
-  width: 0%; /* Will be set by JS */
-  border-radius: 5px;
-  transition: width 0.3s ease-in-out;
+  background: var(--gold);
+  border-radius: 6px;
+  transition: width 0.4s ease;
 }
 
-/* --- All Matan List --- */
-.matan-list-grid {
-  display: grid;
-  gap: 15px;
+.hafalan-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  direction: rtl;
+}
+.hafalan-meta span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
 }
 
-.matan-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 15px;
+/* ── SEMUA MATAN (mobile bar list) ── */
+#semua-list {
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease;
-}
-.matan-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
-}
-
-.matan-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-
-.matan-card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--gold);
-  margin-right: 10px;
-}
-
-.matan-card-actions {
-  display: flex;
   gap: 8px;
 }
 
-.matan-action-btn {
-  background: none;
+.semua-item {
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: border-color var(--transition);
+}
+.semua-item:hover { border-color: rgba(255,215,0,0.25); }
+
+.semua-left {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+}
+
+.semua-judul {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-light);
+  direction: rtl;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.semua-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4px;
+}
+.semua-meta span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
   color: var(--text-muted);
+}
+
+.semua-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* ── BADGE ── */
+.badge-kat {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: rgba(255,215,0,0.1);
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 6px;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* ── ACTION BUTTONS ── */
+.btn-action {
   width: 30px;
   height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  font-size: 0.8rem;
+  transition: all var(--transition);
+  padding: 0;
 }
-.matan-action-btn:hover {
+.btn-action:hover { border-color: rgba(255,215,0,0.4); }
+
+.btn-action.active-bookmark {
+  background: rgba(255,215,0,0.12);
   border-color: var(--gold);
-  color: var(--gold);
 }
-.matan-action-btn.active {
-  border-color: var(--gold);
-  color: var(--gold);
-  background-color: rgba(255, 215, 0, 0.1);
-}
-.matan-action-btn svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+.btn-action.active-hafalan {
+  background: rgba(0,255,136,0.08);
+  border-color: var(--green);
 }
 
-.matan-card-details {
-  font-size: 0.85rem;
+/* ── EMPTY STATE ── */
+.favorit-empty, .matan-empty {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  line-height: 1.5;
-}
-.matan-card-details span {
-  display: block;
+  text-align: center;
+  padding: 12px 0;
 }
 
-/* --- Responsive Layout --- */
-/* Mobile: Default vertical list */
-@media (min-width: 768px) {
-  .matan-list-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-}
+/* =============================================
+   DESKTOP (≥768px)
+============================================= */
 
-/* Tablet/Desktop: Minimalist wide layout */
 @media (min-width: 1024px) {
-  .matan-container {
-    padding: 20px;
+
+  .matan-mobile  { display: none; }
+  .matan-desktop {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 18px;
+    padding: 18px 22px 30px;
+    align-items: stretch;
   }
-  .matan-section-title {
-    font-size: 1.5rem;
+
+  /* ── SIDEBAR ── */
+  .matan-sidebar {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    position: relative;
   }
-  .matan-list-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for wider screens */
-    gap: 20px;
+
+  .sidebar-inner {
+    position: sticky;
+    top: 20px;
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
-  .matan-card {
-    padding: 20px;
+
+  .sidebar-header { margin-bottom: 14px; }
+
+  .sidebar-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--gold);
   }
-  .matan-card-title {
-    font-size: 1.2rem;
+
+  .sidebar-sub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 2px;
   }
-  .matan-card-details {
+
+  .filter-group { margin-top: 10px; }
+
+  .filter-group label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .filter-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all var(--transition);
+  }
+  .filter-item:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--text-light);
+  }
+  .filter-item.aktif {
+    background: rgba(255,215,0,0.1);
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .filter-item .count {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 1px 8px;
+    min-width: 22px;
+    text-align: center;
+  }
+  .filter-item.aktif .count {
+    background: rgba(255,215,0,0.15);
+    color: var(--gold);
+  }
+
+  .sort-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .sort-item:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--text-light);
+  }
+  .sort-item.aktif {
+    color: var(--gold);
+    font-weight: 600;
+    background: rgba(255,215,0,0.08);
+  }
+
+  .statistik-group {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .statistik-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+  }
+  .statistik-icon { font-size: 0.82rem; }
+  .statistik-label {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .statistik-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  /* ── MAIN CONTENT ── */
+  .matan-main {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  /* Top cards */
+  .desktop-top-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .top-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .top-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .top-card-icon { font-size: 0.95rem; }
+  .top-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-light);
+    flex: 1;
+  }
+  .top-card-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--gold);
+    background: rgba(255,215,0,0.1);
+    border-radius: 20px;
+    padding: 2px 10px;
+  }
+
+  .top-card-list {
+    max-height: calc(6 * 40px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,215,0,0.3) transparent;
+  }
+  .top-card-list::-webkit-scrollbar { width: 3px; }
+  .top-card-list::-webkit-scrollbar-thumb {
+    background: rgba(255,215,0,0.3);
+    border-radius: 4px;
+  }
+
+  .top-card-empty {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 14px 0;
+  }
+
+  /* Item dalam top-card: favorit & hafalan */
+  .top-card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .top-card-item:last-child { border-bottom: none; }
+
+  .item-judul {
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    direction: rtl;
+    flex: 1;
+    text-align: right;
+  }
+
+  .item-meta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    direction: rtl;
+    flex-shrink: 0;
+  }
+
+  .item-progress {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  /* Semua Matan desktop */
+  .desktop-list {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .desktop-list-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .list-title {
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-light);
+    flex: 1;
+  }
+  .list-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  /* Search */
+  .desktop-search-wrap {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .desktop-search-wrap input {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.83rem;
+    padding: 9px 14px 9px 36px;
+    outline: none;
+    transition: border-color var(--transition);
+  }
+  .desktop-search-wrap input:focus { border-color: rgba(255,215,0,0.4); }
+  .desktop-search-wrap input::placeholder { color: var(--text-muted); }
+  .desktop-search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    pointer-events: none;
+  }
+
+  /* Desktop matan row */
+  .desktop-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background var(--transition);
+  }
+  .desktop-list-item:last-child { border-bottom: none; }
+  .desktop-list-item:hover { background: rgba(255,255,255,0.03); }
+
+  .item-left {
+    flex: 1;
+    min-width: 0;
+    text-align: right;
+  }
+  /* .item-judul sudah didefinisikan di atas */
+  .item-penulis {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    direction: rtl;
+    margin-top: 2px;
+  }
+
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .item-badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(255,215,0,0.1);
+    border: 1px solid rgba(255,215,0,0.2);
+    border-radius: 6px;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  .item-stats {
+    display: flex;
+    gap: 8px;
+  }
+  .item-stats span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+
+  .item-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  /* Btn-action desktop (override mobile) */
+  .btn-action {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    transition: all var(--transition);
+    padding: 0;
+  }
+  .btn-action:hover { border-color: rgba(255,215,0,0.4); }
+  .btn-action.active-bookmark {
+    background: rgba(255,215,0,0.12);
+    border-color: var(--gold);
+  }
+  .btn-action.active-hafalan {
+    background: rgba(0,255,136,0.08);
+    border-color: var(--green);
   }
 }
 
-/* Utility classes for hiding/showing elements */
-.hidden {
-  display: none !important;
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .matan-desktop {
+    grid-template-columns: 180px 1fr;
+    padding: 14px 14px 24px;
+  }
+  .desktop-top-cards { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── MOBILE: section wrapper dan header ── */
+.matan-section {
+  margin-bottom: 6px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.section-count {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(255,215,0,0.1);
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.matan-section + .matan-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 1024px) {
+  /* Desktop: semua matan wrapper */
+  .desktop-list {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .desktop-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .list-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-light);
+  }
+
+  .list-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
 }

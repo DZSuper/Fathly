@@ -72,6 +72,7 @@
   </script>
   <link rel="stylesheet" href="menu.css">
   <link rel="stylesheet" href="content/kutipan/supports/kutipan.css">
+  <link rel="stylesheet" href="content/matan/supports/matan.css">
   <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
   <link rel="apple-touch-icon" href="static/favicon.svg">
   <link rel="manifest" href="static/manifest.json">
@@ -426,25 +427,138 @@
     </main>
 
     <!-- TAB MATAN -->
-    <main class="tab-content" id="tab-matan">
-      <div class="coming-soon-wrap">
-        <div class="coming-soon-icon">📖</div>
-        <div class="coming-soon-badge">Segera Hadir</div>
-        <div class="coming-soon-title">Matan</div>
-        <div class="coming-soon-desc">
-          Kumpulan matan (teks inti) kitab-kitab klasik yang dipelajari dalam halaqah dan pesantren —
-          lengkap dengan syakal, terjemahan baris per baris, dan penjelasan ringkas per bait.
+    <!-- Matan Tab - FathlyWeb -->
+<!-- Matan Tab - FathlyWeb -->
+<div id="tab-matan" class="tab-content">
+  <!-- Mobile View -->
+  <div class="matan-mobile">
+    <!-- Section 1: Matan Favorit -->
+    <section class="matan-section">
+      <div class="section-header">
+        <h3>⭐ Matan Favorit</h3>
+        <span class="section-count" id="favorit-count">0</span>
+      </div>
+      <div class="favorit-scroll" id="favorit-scroll">
+        <!-- Dikirim JS -->
+      </div>
+    </section>
+    
+    <!-- Section 2: Progres Hafalan -->
+    <section class="matan-section">
+      <div class="section-header">
+        <h3>📖 Progres Hafalan</h3>
+        <span class="section-count" id="hafalan-count">0</span>
+      </div>
+      <div class="hafalan-list" id="hafalan-list">
+        <!-- Dikirim JS -->
+      </div>
+    </section>
+    
+    <!-- Section 3: Daftar Semua Matan -->
+    <section class="matan-section">
+      <div class="section-header">
+        <h3>📚 Daftar Semua Matan</h3>
+        <span class="section-count" id="semua-count">0</span>
+      </div>
+      <div class="semua-list" id="semua-list">
+        <!-- Dikirim JS -->
+      </div>
+    </section>
+  </div>
+  
+  <!-- Desktop View -->
+  <div class="matan-desktop">
+    <div class="matan-sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-header">
+        <h2>📚 Matan</h2>
+        <p class="sidebar-sub">Koleksi kitab klasik</p>
+      </div>
+      
+      <div class="filter-group">
+        <label>Kategori</label>
+        <div class="filter-item aktif" data-filter="semua">Semua <span class="count" id="filter-semua">0</span></div>
+        <div class="filter-item" data-filter="nahwu">Nahwu <span class="count" id="filter-nahwu">0</span></div>
+        <div class="filter-item" data-filter="fiqih">Fiqih <span class="count" id="filter-fiqih">0</span></div>
+        <div class="filter-item" data-filter="ushul">Ushul <span class="count" id="filter-ushul">0</span></div>
+        <div class="filter-item" data-filter="tauhid">Tauhid <span class="count" id="filter-tauhid">0</span></div>
+        <div class="filter-item" data-filter="hadits">Hadits <span class="count" id="filter-hadits">0</span></div>
+        <div class="filter-item" data-filter="tasawuf">Tasawuf <span class="count" id="filter-tasawuf">0</span></div>
+      </div>
+      
+      <div class="filter-group">
+        <label>Urutkan</label>
+        <div class="filter-item aktif" data-sort="populer">Populer</div>
+        <div class="filter-item" data-sort="az">A-Z</div>
+        <div class="filter-item" data-sort="progress">Progress</div>
+      </div>
+      
+      <!-- Statistik Belajar -->
+      <div class="filter-group statistik-group">
+        <label>Statistik</label>
+        <div class="statistik-item">
+          <span class="statistik-icon">📚</span>
+          <span class="statistik-label">Total Matan</span>
+          <span class="statistik-value" id="stat-total">0</span>
         </div>
-        <div class="coming-soon-features">
-          <div class="csf-item">📝 Matan Ajurumiyah</div>
-          <div class="csf-item">📝 Matan Al-Baiquniyah</div>
-          <div class="csf-item">📝 Matan Abi Syuja'</div>
-          <div class="csf-item">📝 Matan Al-Waraqat</div>
-          <div class="csf-item">📝 Matan Al-Arba'in An-Nawawiyah</div>
-          <div class="csf-item">📝 Dan lainnya...</div>
+        <div class="statistik-item">
+          <span class="statistik-icon">⭐</span>
+          <span class="statistik-label">Favorit</span>
+          <span class="statistik-value" id="stat-favorit">0</span>
+        </div>
+        <div class="statistik-item">
+          <span class="statistik-icon">📖</span>
+          <span class="statistik-label">Sedang Dihafal</span>
+          <span class="statistik-value" id="stat-hafalan">0</span>
+        </div>
+        <div class="statistik-item">
+          <span class="statistik-icon">✅</span>
+          <span class="statistik-label">Selesai</span>
+          <span class="statistik-value" id="stat-selesai">0</span>
         </div>
       </div>
-    </main>
+    </div>
+    </div>
+    
+    <div class="matan-main">
+      <!-- Bookmark & Progress cards di atas daftar -->
+      <div class="desktop-top-cards">
+        <div class="top-card bookmark-card">
+          <div class="top-card-header">
+            <span class="top-card-icon">⭐</span>
+            <span class="top-card-title">Matan Favorit</span>
+            <span class="top-card-count" id="desktop-favorit-count">0</span>
+          </div>
+          <div class="top-card-list" id="desktop-favorit-list">
+            <!-- Dikirim JS -->
+          </div>
+        </div>
+        <div class="top-card progress-card">
+          <div class="top-card-header">
+            <span class="top-card-icon">📖</span>
+            <span class="top-card-title">Progres Hafalan</span>
+            <span class="top-card-count" id="desktop-hafalan-count">0</span>
+          </div>
+          <div class="top-card-list" id="desktop-hafalan-list">
+            <!-- Dikirim JS -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Daftar semua matan -->
+      <div class="desktop-list">
+        <div class="desktop-list-header">
+          <span class="list-title">📚 Semua Matan</span>
+          <span class="list-count" id="desktop-semua-count">0</span>
+        </div>
+        <div class="desktop-list-items" id="desktop-semua-list">
+          <!-- Dikirim JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- TAB DOA & DZIKIR -->
     <main class="tab-content" id="tab-dzikir">
@@ -613,5 +727,6 @@
       });
     }
   </script>
+  <script src="content/matan/supports/matan.js"></script>
 </body>
 </html>
