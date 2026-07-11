@@ -750,3 +750,29 @@
     color: var(--text-muted);
   }
 }
+
+/* ── STATUS KETERSEDIAAN MATAN ──
+   .matan-tersedia = kontennya sudah ada — tampil normal (warna sama seperti kartu lain),
+                      cuma cursor jadi pointer sebagai penanda bisa ditekan.
+   .matan-segera   = kontennya belum ada — diredupkan (opacity turun) supaya kontras
+                      dengan yang tersedia, dan tidak merespons klik. */
+.favorit-item.matan-tersedia,
+.hafalan-item.matan-tersedia,
+.semua-item.matan-tersedia,
+.desktop-list-item.matan-tersedia {
+  cursor: pointer;
+}
+
+.favorit-item.matan-segera,
+.hafalan-item.matan-segera,
+.semua-item.matan-segera,
+.desktop-list-item.matan-segera {
+  opacity: 0.45;
+  cursor: default;
+}
+.favorit-item.matan-segera:hover,
+.desktop-list-item.matan-segera:hover {
+  border-color: var(--border);
+  background: var(--bg-card);
+}
+.semua-item.matan-segera:hover { border-color: var(--border); }

@@ -4,7 +4,7 @@
 //            Network-First untuk konten JSON
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.5.0';
+const CACHE_NAME = 'fathlyweb-v1.6.0';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [
@@ -62,6 +62,13 @@ const PRECACHE_URLS = [
   '/content/doa/data/dzikir-pagi.json',
   '/content/doa/data/dzikir-petang.json',
   '/content/doa/data/dzikir-sholat.json',
+  // Tab Matan
+  '/content/matan/supports/matan.js',
+  '/content/matan/supports/matan.css',
+  '/content/matan/supports/matan-detail.js',
+  '/content/matan/supports/matan-detail.css',
+  '/content/matan/pages/jurumiyah.html',
+  '/content/matan/data/jurumiyah.json',
 ];
 
 // ── INSTALL: cache semua aset penting ─────────

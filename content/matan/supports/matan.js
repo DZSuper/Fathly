@@ -8,22 +8,21 @@
 
     // ===== DATA DUMMY =====
     var dataMatan = [
-        { id: 1, nama: 'الأجرومية', namaLatin: 'Al-Ajurrumiyyah', penulis: 'ابن آجروم', kategori: 'nahwu', bab: 12, bait: 45, popularitas: 98 },
+        { id: 1, nama: 'الأجرومية', namaLatin: 'Al-Ajurrumiyyah', penulis: 'ابن آجروم', kategori: 'nahwu', bab: 8, bait: 233, popularitas: 98, halaman: 'content/matan/pages/jurumiyah.html' },
         { id: 2, nama: 'متن أبي شجاع', namaLatin: 'Matn Abi Syuja\'', penulis: 'أبو شجاع', kategori: 'fiqih', bab: 14, bait: 68, popularitas: 95 },
         { id: 3, nama: 'الورقات', namaLatin: 'Al-Waraqat', penulis: 'الجويني', kategori: 'ushul', bab: 8, bait: 32, popularitas: 88 },
         { id: 4, nama: 'العقيدة الطحاوية', namaLatin: 'Al-Aqidah At-Tahawiyyah', penulis: 'الطحاوي', kategori: 'tauhid', bab: 10, bait: 56, popularitas: 92 },
         { id: 5, nama: 'الأربعون النووية', namaLatin: 'Al-Arba\'in An-Nawawiyyah', penulis: 'النووي', kategori: 'hadits', bab: 42, bait: 42, popularitas: 96 },
         { id: 6, nama: 'قطر الندى', namaLatin: 'Qatr an-Nada', penulis: 'ابن هشام', kategori: 'nahwu', bab: 15, bait: 72, popularitas: 85 },
-        { id: 7, nama: 'الحكم العطائية', namaLatin: 'Al-Hikam Al-‘Atha\'iyyah', penulis: 'ابن عطاء الله', kategori: 'tasawuf', bab: 7, bait: 264, popularitas: 90 },
+        { id: 7, nama: 'القواعد الأربع', namaLatin: "Al-Qawa'idul Arba'", penulis: 'محمد بن عبد الوهاب', kategori: 'tauhid', bab: 5, bait: 37, popularitas: 94, halaman: 'content/matan/pages/qawaidul-arba.html' },
         { id: 8, nama: 'عمدة الأحكام', namaLatin: 'Umdah al-Ahkam', penulis: 'ابن دقيق العيد', kategori: 'hadits', bab: 16, bait: 120, popularitas: 80 },
         { id: 9, nama: 'متن الغاية والتقريب', namaLatin: 'Matn Al-Ghayah wa At-Taqrib', penulis: 'أبو شجاع', kategori: 'fiqih', bab: 20, bait: 95, popularitas: 78 },
         { id: 10, nama: 'ألفية ابن مالك', namaLatin: 'Alfiyyah Ibn Malik', penulis: 'ابن مالك', kategori: 'nahwu', bab: 0, bait: 1002, popularitas: 93 },
-        { id: 11, nama: 'نظم الجزرية', namaLatin: 'Nazm Al-Jazariyyah', penulis: 'ابن الجزري', kategori: 'tajwid', bab: 0, bait: 108, popularitas: 82 },
-        { id: 12, nama: 'الآجرومية', namaLatin: 'Al-Ajurrumiyyah', penulis: 'ابن آجروم', kategori: 'nahwu', bab: 12, bait: 45, popularitas: 70 }
+        { id: 11, nama: 'نظم الجزرية', namaLatin: 'Nazm Al-Jazariyyah', penulis: 'ابن الجزري', kategori: 'tajwid', bab: 0, bait: 108, popularitas: 82 }
     ];
 
     var currentFilter = 'semua';
-    var currentSort = 'populer';
+    var currentSort = 'tersedia';
 
     // ===== HELPERS =====
     function findMatan(id) {
@@ -49,6 +48,31 @@
 
     function getBookmarks() {
         return getStorage('fw_matan_bookmarks', []);
+    }
+
+    // Bersihkan id favorit/hafalan yang tersimpan di localStorage tapi sudah
+    // tidak ada lagi di dataMatan (mis. sisa entri dummy yang sudah dihapus),
+    // supaya statistik "Favorit" / "Sedang Dihafal" / "Selesai" tidak pernah
+    // menghitung matan yang sebenarnya sudah tidak ada.
+    function cleanStaleData() {
+        var bookmarks = getBookmarks();
+        var cleanedBookmarks = [];
+        for (var i = 0; i < bookmarks.length; i++) {
+            if (findMatan(bookmarks[i])) cleanedBookmarks.push(bookmarks[i]);
+        }
+        if (cleanedBookmarks.length !== bookmarks.length) {
+            setBookmarks(cleanedBookmarks);
+        }
+
+        var hafalan = getHafalan();
+        var changed = false;
+        for (var id in hafalan) {
+            if (hafalan.hasOwnProperty(id) && !findMatan(parseInt(id, 10))) {
+                delete hafalan[id];
+                changed = true;
+            }
+        }
+        if (changed) setHafalan(hafalan);
     }
 
     function setBookmarks(bookmarks) {
@@ -121,7 +145,6 @@
             'ushul': 'Ushul',
             'tauhid': 'Tauhid',
             'hadits': 'Hadits',
-            'tasawuf': 'Tasawuf',
             'tajwid': 'Tajwid'
         };
         return map[kat] || kat;
@@ -146,7 +169,14 @@
         }
 
         // Sort
-        if (currentSort === 'populer') {
+        if (currentSort === 'tersedia') {
+            result.sort(function(a, b) {
+                var aAda = a.halaman ? 1 : 0;
+                var bAda = b.halaman ? 1 : 0;
+                if (bAda !== aAda) return bAda - aAda;
+                return b.popularitas - a.popularitas;
+            });
+        } else if (currentSort === 'populer') {
             result.sort(function(a, b) { return b.popularitas - a.popularitas; });
         } else if (currentSort === 'az') {
             result.sort(function(a, b) { return a.namaLatin.localeCompare(b.namaLatin); });
@@ -232,7 +262,7 @@
             var html = '';
             for (var j = 0; j < items.length; j++) {
                 var m = items[j];
-                html += '<div class="favorit-item" data-id="' + m.id + '">';
+                html += '<div class="favorit-item ' + (m.halaman ? 'matan-tersedia' : 'matan-segera') + '" data-id="' + m.id + '">';
                 html += '<div class="nama-arab">' + m.nama + '</div>';
                 html += '<div class="nama-penulis">' + m.penulis + '</div>';
                 html += '<span class="badge-kat">' + getKategoriLabel(m.kategori) + '</span>';
@@ -296,7 +326,7 @@
                 var item = items[j];
                 var m = item.matan;
                 var prog = item.progress;
-                html += '<div class="hafalan-item" data-id="' + m.id + '">';
+                html += '<div class="hafalan-item ' + (m.halaman ? 'matan-tersedia' : 'matan-segera') + '" data-id="' + m.id + '">';
                 html += '<div class="hafalan-top">';
                 html += '<span class="hafalan-judul">' + m.nama + '</span>';
                 html += '<span class="hafalan-persen">' + prog + '%</span>';
@@ -361,7 +391,7 @@
                 var m = data[i];
                 var isFav = isBookmarked(m.id);
                 var isHaf = isInHafalan(m.id);
-                html += '<div class="semua-item" data-id="' + m.id + '">';
+                html += '<div class="semua-item ' + (m.halaman ? 'matan-tersedia' : 'matan-segera') + '" data-id="' + m.id + '">';
                 html += '<div class="semua-left">';
                 html += '<div class="semua-judul">' + m.nama + '</div>';
                 html += '<div class="semua-meta">';
@@ -390,7 +420,7 @@
                     var m2 = data[j];
                     var isFav2 = isBookmarked(m2.id);
                     var isHaf2 = isInHafalan(m2.id);
-                    html2 += '<div class="desktop-list-item" data-id="' + m2.id + '">';
+                    html2 += '<div class="desktop-list-item ' + (m2.halaman ? 'matan-tersedia' : 'matan-segera') + '" data-id="' + m2.id + '">';
                     html2 += '<div class="item-left">';
                     html2 += '<div class="item-judul">' + m2.nama + '</div>';
                     html2 += '<div class="item-penulis">' + m2.penulis + '</div>';
@@ -460,6 +490,27 @@
         toggleHafalan(id);
     }
 
+    // ===== BUKA HALAMAN DETAIL MATAN =====
+    // Klik kartu (di luar tombol aksi) membuka halaman detail bait-per-bait
+    // jika matan tersebut sudah punya "halaman"; jika belum, tampilkan info ringkas.
+    function handleCardClick(e) {
+        var card = e.target.closest('.semua-item, .desktop-list-item, .favorit-item, .hafalan-item');
+        if (!card) return;
+        var id = parseInt(card.getAttribute('data-id'), 10);
+        var matan = findMatan(id);
+        if (!matan) return;
+        if (matan.halaman) {
+            window.location.href = matan.halaman;
+        }
+        // Matan yang belum tersedia: tidak melakukan apa-apa (tanpa pop-up).
+        // Statusnya sudah terlihat dari tampilan bar yang diredupkan.
+    }
+
+    function bindCardClicks() {
+        document.removeEventListener('click', handleCardClick);
+        document.addEventListener('click', handleCardClick);
+    }
+
     // ===== FAVORIT SCROLL TOUCH HANDLER =====
     function setupFavoritScroll() {
         var container = document.getElementById('favorit-scroll');
@@ -515,8 +566,10 @@
 
     // ===== INIT =====
     function initMatan() {
+        cleanStaleData();
         renderAll();
         bindEvents();
+        bindCardClicks();
         setupFavoritScroll();
     }
 

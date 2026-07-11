@@ -1,0 +1,1822 @@
+{
+  "babList": [
+    {
+      "babId": "bab-muqaddimah",
+      "title": "المقدمة",
+      "subBab": []
+    },
+    {
+      "babId": "bab-irab",
+      "title": "بَابُ الْإِعْرَابِ",
+      "subBab": []
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "title": "بَابُ مَعْرِفَةِ عَلَامَاتِ الْإِعْرَابِ",
+      "subBab": [
+        {
+          "subBabId": "alamat_rafa",
+          "title": "عَلَامَاتُ الرَّفْعِ"
+        },
+        {
+          "subBabId": "alamat_nasb",
+          "title": "عَلَامَاتُ النَّصْبِ"
+        },
+        {
+          "subBabId": "alamat_khafd",
+          "title": "عَلَامَاتُ الْخَفْضِ"
+        },
+        {
+          "subBabId": "alamat_jazm",
+          "title": "عَلَامَاتُ الْجَزْمِ"
+        }
+      ]
+    },
+    {
+      "babId": "bab-afal",
+      "title": "بَابُ الْأَفْعَالِ",
+      "subBab": []
+    },
+    {
+      "babId": "bab-marfuat",
+      "title": "بَابُ مَرْفُوعَاتِ الْأَسْمَاءِ",
+      "subBab": [
+        {
+          "subBabId": "marfuat-muqaddimah",
+          "title": "مُقَدِّمَةُ الْمَرْفُوعَاتِ"
+        },
+        {
+          "subBabId": "al-fail",
+          "title": "الْفَاعِلُ"
+        },
+        {
+          "subBabId": "naib-al-fail",
+          "title": "نَائِبُ الْفَاعِلِ"
+        },
+        {
+          "subBabId": "mubtada-khabar",
+          "title": "الْمُبْتَدَأُ وَالْخَبَرُ"
+        },
+        {
+          "subBabId": "ismu-kana",
+          "title": "اسْمُ كَانَ وَأَخَوَاتِهَا"
+        },
+        {
+          "subBabId": "khabar-inna",
+          "title": "خَبَرُ إِنَّ وَأَخَوَاتِهَا"
+        },
+        {
+          "subBabId": "tawabi-marfu",
+          "title": "التَّوَابِعُ لِلْمَرْفُوعِ"
+        }
+      ]
+    },
+    {
+      "babId": "bab-tawabi",
+      "title": "بَابُ التَّوَابِعِ",
+      "subBab": [
+        {
+          "subBabId": "tawabi-muqaddimah",
+          "title": "مُقَدِّمَةُ التَّوَابِعِ"
+        },
+        {
+          "subBabId": "naat",
+          "title": "النَّعْتُ"
+        },
+        {
+          "subBabId": "athof",
+          "title": "الْعَطْفُ"
+        },
+        {
+          "subBabId": "taukid",
+          "title": "التَّوْكِيدُ"
+        },
+        {
+          "subBabId": "badal",
+          "title": "الْبَدَلُ"
+        }
+      ]
+    },
+    {
+      "babId": "bab-manshubat",
+      "title": "بَابُ مَنْصُوبَاتِ الْأَسْمَاءِ",
+      "subBab": [
+        {
+          "subBabId": "manshubat-muqaddimah",
+          "title": "مُقَدِّمَةُ الْمَنْصُوبَاتِ"
+        },
+        {
+          "subBabId": "maful-bih",
+          "title": "الْمَفْعُولُ بِهِ"
+        },
+        {
+          "subBabId": "masdar",
+          "title": "الْمَصْدَرُ"
+        },
+        {
+          "subBabId": "dzaraf-zaman",
+          "title": "ظَرْفُ الزَّمَانِ"
+        },
+        {
+          "subBabId": "dzaraf-makan",
+          "title": "ظَرْفُ الْمَكَانِ"
+        },
+        {
+          "subBabId": "hal",
+          "title": "الْحَالُ"
+        },
+        {
+          "subBabId": "tamyiz",
+          "title": "التَّمْيِيزُ"
+        },
+        {
+          "subBabId": "istitsna",
+          "title": "الاِسْتِثْنَاءُ"
+        },
+        {
+          "subBabId": "la-nafiyah",
+          "title": "اسْمُ لَا"
+        },
+        {
+          "subBabId": "munada",
+          "title": "الْمُنَادَى"
+        },
+        {
+          "subBabId": "maful-lah",
+          "title": "الْمَفْعُولُ مِنْ أَجْلِهِ"
+        },
+        {
+          "subBabId": "maful-maah",
+          "title": "الْمَفْعُولُ مَعَهُ"
+        },
+        {
+          "subBabId": "khabar-kana",
+          "title": "خَبَرُ كَانَ وَأَخَوَاتِهَا"
+        },
+        {
+          "subBabId": "ismu-inna",
+          "title": "اسْمُ إِنَّ وَأَخَوَاتِهَا"
+        },
+        {
+          "subBabId": "tawabi-manshub",
+          "title": "التَّوَابِعُ لِلْمَنْصُوبِ"
+        }
+      ]
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "title": "بَابُ مَخْفُوضَاتِ الْأَسْمَاءِ",
+      "subBab": [
+        {
+          "subBabId": "makhfudhotul-muqaddimah",
+          "title": "مُقَدِّمَةُ الْمَخْفُوضَاتِ"
+        },
+        {
+          "subBabId": "majrur-bil-harf",
+          "title": "الْمَجْرُورُ بِالْحَرْفِ"
+        },
+        {
+          "subBabId": "majrur-bil-idhafah",
+          "title": "الْمَجْرُورُ بِالْإِضَافَةِ"
+        },
+        {
+          "subBabId": "tawabi-majrur",
+          "title": "التَّابِعُ لِلْمَخْفُوضِ"
+        }
+      ]
+    }
+  ],
+  "baits": [
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "keterangan": "<span class=\"arab-ref\">البسملة</span> adalah permulaan setiap kitab, mengandung permohonan berkah dan pertolongan Allah sebelum memulai suatu pekerjaan, termasuk menyusun kitab ilmu.",
+      "id": 0
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "قَالَ الْمُؤَلِّفُ رَحِمَهُ اللَّهُ تَعَالَى",
+      "keterangan": "Ungkapan pembuka yang menunjukkan bahwa kitab <em>Al-Jurumiyyah</em> ini disusun oleh Imam Ibnu Ajurrum, seorang ulama nahwu dari Fez, Maroko.",
+      "id": 1
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "الْكَلَامُ هُوَ: اللَّفْظُ الْمُرَكَّبُ الْمُفِيدُ بِالْوَضْعِ",
+      "keterangan": "Definisi <strong>kalam</strong> (ucapan) dalam istilah nahwu: lafazh yang tersusun dari dua kata atau lebih, memberi faedah yang sempurna, dan diletakkan menurut aturan bahasa Arab.",
+      "id": 2
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَأَقْسَامُهُ ثَلَاثَةٌ: اسْمٌ، وَفِعْلٌ، وَحَرْفٌ جَاءَ لِمَعْنًى",
+      "keterangan": "Kalam terbagi menjadi tiga jenis kata: <span class=\"arab-ref\">اسم</span> (kata benda), <span class=\"arab-ref\">فعل</span> (kata kerja), dan <span class=\"arab-ref\">حرف</span> (huruf) yang datang membawa makna tertentu.",
+      "id": 3
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "فَالِاسْمُ يُعْرَفُ بِالْخَفْضِ، وَالتَّنْوِينِ، وَدُخُولِ الْأَلِفِ وَاللَّامِ",
+      "keterangan": "Tanda-tanda <strong>isim</strong>: bisa di-<em>khafd</em>-kan (dijarkan), menerima <em>tanwin</em>, dan bisa kemasukan <em>alif lam</em> (ال) di awalnya.",
+      "id": 4
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَحُرُوفِ الْخَفْضِ، وَهِيَ: مِنْ، وَإِلَى، وَعَنْ، وَعَلَى، وَفِي",
+      "keterangan": "Isim juga dikenali dari kemungkinannya kemasukan <strong>huruf jar</strong>, di antaranya: <em>مِنْ</em> (dari), <em>إلى</em> (ke), <em>عَنْ</em> (dari/tentang), <em>عَلَى</em> (di atas), <em>فِي</em> (di dalam).",
+      "id": 5
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَرُبَّ، وَالْبَاءِ، وَالْكَافِ، وَاللَّامِ",
+      "keterangan": "Lanjutan huruf jar: <em>رُبَّ</em> (banyak/sedikit), <em>الباء</em> (dengan), <em>الكاف</em> (seperti), dan <em>اللام</em> (untuk/milik).",
+      "id": 6
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَحُرُوفِ الْقَسَمِ، وَهِيَ: الْوَاوُ، وَالْبَاءُ، وَالتَّاءُ",
+      "keterangan": "Serta huruf sumpah (qasam): <em>الواو</em>, <em>الباء</em>, dan <em>التاء</em>, seperti pada <em>وَاللَّهِ</em>, <em>بِاللَّهِ</em>, dan <em>تَاللَّهِ</em>.",
+      "id": 7
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَالْفِعْلُ يُعْرَفُ بِقَدْ، وَالسِّينِ، وَسَوْفَ، وَتَاءِ التَّأْنِيثِ السَّاكِنَةِ",
+      "keterangan": "Tanda-tanda <strong>fi'il</strong>: bisa kemasukan <em>قَدْ</em>, <em>السين</em>, <em>سوف</em>, dan <em>تاء تأنيث</em> yang sukun di akhirnya (menandakan pelakunya perempuan).",
+      "id": 8
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَالْحَرْفُ مَا لَا يَصْلُحُ مَعَهُ دَلِيلُ الاِسْمِ وَلَا دَلِيلُ الْفِعْلِ",
+      "keterangan": "<strong>Huruf</strong> adalah kata yang tidak layak menerima tanda-tanda isim maupun tanda-tanda fi'il; ia hanya bermakna bila digandengkan dengan kata lain.",
+      "id": 9
+    },
+    {
+      "babId": "bab-irab",
+      "subBabId": null,
+      "arab": "الْإِعْرَابُ هُوَ: تَغْيِيرُ أَوَاخِرِ الْكَلِمِ لِاخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهَا لَفْظًا أَوْ تَقْدِيرًا",
+      "keterangan": "<strong>I'rab</strong> adalah perubahan akhir kata karena perbedaan <em>'amil</em> (faktor) yang masuk padanya, baik secara lafazh (jelas) maupun taqdir (perkiraan/tersembunyi).",
+      "id": 10
+    },
+    {
+      "babId": "bab-irab",
+      "subBabId": null,
+      "arab": "وَأَقْسَامُهُ أَرْبَعَةٌ: رَفْعٌ، وَنَصْبٌ، وَخَفْضٌ، وَجَزْمٌ",
+      "keterangan": "I'rab terbagi menjadi empat macam: <span class=\"arab-ref\">رفع</span>, <span class=\"arab-ref\">نصب</span>, <span class=\"arab-ref\">خفض</span>, dan <span class=\"arab-ref\">جزم</span>.",
+      "id": 11
+    },
+    {
+      "babId": "bab-irab",
+      "subBabId": null,
+      "arab": "فَلِلْأَسْمَاءِ مِنْ ذَلِكَ: الرَّفْعُ، وَالنَّصْبُ، وَالْخَفْضُ، وَلَا جَزْمَ فِيهَا",
+      "keterangan": "Bagi <strong>isim</strong>, i'rab yang berlaku hanya tiga: rafa', nashab, dan khafd. Isim tidak pernah majzum.",
+      "id": 12
+    },
+    {
+      "babId": "bab-irab",
+      "subBabId": null,
+      "arab": "وَلِلْأَفْعَالِ مِنْ ذَلِكَ: الرَّفْعُ، وَالنَّصْبُ، وَالْجَزْمُ، وَلَا خَفْضَ فِيهَا",
+      "keterangan": "Bagi <strong>fi'il</strong> (khususnya fi'il mudhari'), i'rab yang berlaku adalah rafa', nashab, dan jazm. Fi'il tidak pernah majrur/khafd.",
+      "id": 13
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "لِلرَّفْعِ أَرْبَعُ عَلامَاتٍ",
+      "keterangan": "Rafa' memiliki empat tanda yang akan dirinci satu per satu berikut ini.",
+      "id": 14
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "الضَّمَّةُ، وَالْوَاوُ، وَالأَلِفُ، وَالنُّونُ",
+      "keterangan": "Keempat tanda rafa' tersebut adalah: <span class=\"arab-ref\">الضمة</span>, <span class=\"arab-ref\">الواو</span>, <span class=\"arab-ref\">الألف</span>, dan <span class=\"arab-ref\">النون</span>.",
+      "id": 15
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "فَأَمَّا الضَّمَّةُ فَتَكُونُ عَلامَةً لِلرَّفْعِ فِي أَرْبَعَةِ مَوَاضِعَ",
+      "keterangan": "Dhammah menjadi tanda rafa' pada empat tempat berikut.",
+      "id": 16
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "فِي الاِسْمِ الْمُفْرَدِ، وَجَمْعِ التَّكْسِيرِ",
+      "keterangan": "Yaitu pada <em>isim mufrad</em> (kata benda tunggal) dan <em>jamak taksir</em> (jamak yang berubah bentuknya).",
+      "id": 17
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَجَمْعِ الْمُؤَنَّثِ السَّالِمِ",
+      "keterangan": "Dan pada <em>jamak muannats salim</em> (jamak perempuan yang beraturan, berakhiran اتٌ).",
+      "id": 18
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَالْفِعْلِ الْمُضَارِعِ الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ",
+      "keterangan": "Serta pada <em>fi'il mudhari'</em> yang akhirnya tidak bersambung dengan huruf/dhamir apa pun.",
+      "id": 19
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَأَمَّا الْوَاوُ فَتَكُونُ عَلامَةً لِلرَّفْعِ فِي مَوْضِعَيْنِ",
+      "keterangan": "Waw menjadi tanda rafa' pada dua tempat.",
+      "id": 20
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "فِي جَمْعِ الْمُذَكَّرِ السَّالِمِ",
+      "keterangan": "Yaitu pada <em>jamak mudzakkar salim</em> (jamak laki-laki beraturan, berakhiran ونَ).",
+      "id": 21
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَفِي الأَسْمَاءِ الْخَمْسَةِ، وَهِيَ: أَبُوكَ وَأَخُوكَ",
+      "keterangan": "Dan pada <strong>al-asma' al-khamsah</strong> (lima isim khusus), dimulai dengan <em>أبوك</em> (ayahmu) dan <em>أخوك</em> (saudaramu).",
+      "id": 22
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَحَمُوكَ وَفُوكَ وَذُو مَالٍ",
+      "keterangan": "Dilanjutkan <em>حموك</em> (mertuamu/iparmu), <em>فوك</em> (mulutmu), dan <em>ذو مال</em> (yang memiliki harta) — inilah kelima isim tersebut.",
+      "id": 23
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَأَمَّا الأَلِفُ فَتَكُونُ عَلامَةً لِلرَّفْعِ فِي تَثْنِيَةِ الأَسْمَاءِ خَاصَّةً",
+      "keterangan": "Alif menjadi tanda rafa' khusus pada <em>tatsniyah</em> (bentuk dua/dual) dari isim.",
+      "id": 24
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "وَأَمَّا النُّونُ فَتَكُونُ عَلامَةً لِلرَّفْعِ فِي الْفِعْلِ الْمُضَارِعِ",
+      "keterangan": "Nun menjadi tanda rafa' pada fi'il mudhari'.",
+      "id": 25
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "إِذَا اتَّصَلَ بِهِ ضَمِيرُ تَثْنِيَةٍ، أَوْ ضَمِيرُ جَمْعٍ",
+      "keterangan": "Yaitu apabila fi'il mudhari' tersebut bersambung dengan <em>dhamir tatsniyah</em> (kata ganti dua) atau <em>dhamir jamak</em> (kata ganti banyak).",
+      "id": 26
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_rafa",
+      "arab": "أَوْ ضَمِيرُ الْمُؤَنَّثَةِ الْمُخَاطَبَةِ",
+      "keterangan": "Atau bersambung dengan <em>dhamir mu'annatsah mukhathabah</em> (kata ganti \"kamu\" perempuan tunggal), seperti pada <em>تَفْعَلِينَ</em>.",
+      "id": 27
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَلِلنَّصْبِ خَمْسُ عَلامَاتٍ",
+      "keterangan": "Nashab memiliki lima tanda.",
+      "id": 28
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "الْفَتْحَةُ، وَالأَلِفُ، وَالْكَسْرَةُ، وَالْيَاءُ، وَحَذْفُ النُّونِ",
+      "keterangan": "Kelima tanda nashab tersebut: <span class=\"arab-ref\">الفتحة</span>, <span class=\"arab-ref\">الألف</span>, <span class=\"arab-ref\">الكسرة</span>, <span class=\"arab-ref\">الياء</span>, dan <span class=\"arab-ref\">حذف النون</span> (membuang huruf nun).",
+      "id": 29
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "فَأَمَّا الْفَتْحَةُ فَتَكُونُ عَلامَةً لِلنَّصْبِ فِي ثَلاثَةِ مَوَاضِعَ",
+      "keterangan": "Fathah menjadi tanda nashab pada tiga tempat.",
+      "id": 30
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "فِي الاِسْمِ الْمُفْرَدِ، وَجَمْعِ التَّكْسِيرِ",
+      "keterangan": "Yaitu pada isim mufrad dan jamak taksir.",
+      "id": 31
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَالْفِعْلِ الْمُضَارِعِ إِذَا دَخَلَ عَلَيْهِ نَاصِبٌ وَلَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ",
+      "keterangan": "Serta pada fi'il mudhari' apabila kemasukan huruf nashab dan akhirnya tidak bersambung dengan apa pun.",
+      "id": 32
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَأَمَّا الأَلِفُ فَتَكُونُ عَلامَةً لِلنَّصْبِ فِي الأَسْمَاءِ الْخَمْسَةِ",
+      "keterangan": "Alif menjadi tanda nashab pada al-asma' al-khamsah (lima isim khusus).",
+      "id": 33
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "نَحْوَ: رَأَيْتُ أَبَاكَ وَأَخَاكَ، وَمَا أَشْبَهَ ذَلِكَ",
+      "keterangan": "Contoh: <em>رأيتُ أباكَ وأخاكَ</em> (aku melihat ayahmu dan saudaramu), dan yang serupa dengannya.",
+      "id": 34
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَأَمَّا الْكَسْرَةُ فَتَكُونُ عَلامَةً لِلنَّصْبِ فِي جَمْعِ الْمُؤَنَّثِ السَّالِمِ",
+      "keterangan": "Kasrah menjadi tanda nashab (menggantikan fathah) pada jamak muannats salim.",
+      "id": 35
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَأَمَّا الْيَاءُ فَتَكُونُ عَلامَةً لِلنَّصْبِ فِي التَّثْنِيَةِ وَالْجَمْعِ",
+      "keterangan": "Ya' menjadi tanda nashab pada bentuk tatsniyah dan jamak mudzakkar salim.",
+      "id": 36
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "وَأَمَّا حَذْفُ النُّونِ فَيَكُونُ عَلامَةً لِلنَّصْبِ",
+      "keterangan": "Membuang nun menjadi tanda nashab.",
+      "id": 37
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_nasb",
+      "arab": "فِي الأَفْعَالِ الْخَمْسَةِ الَّتِي رَفْعُهَا بِثَبَاتِ النُّونِ",
+      "keterangan": "Yaitu pada <strong>af'alul khamsah</strong> (lima fi'il mudhari' khusus) yang tanda rafa'-nya adalah tetapnya huruf nun.",
+      "id": 38
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "وَلِلْخَفْضِ ثَلاثُ عَلامَاتٍ",
+      "keterangan": "Khafd (jar) memiliki tiga tanda.",
+      "id": 39
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "الْكَسْرَةُ، وَالْيَاءُ، وَالْفَتْحَةُ",
+      "keterangan": "Ketiga tanda khafd tersebut: <span class=\"arab-ref\">الكسرة</span>, <span class=\"arab-ref\">الياء</span>, dan <span class=\"arab-ref\">الفتحة</span>.",
+      "id": 40
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "فَأَمَّا الْكَسْرَةُ فَتَكُونُ عَلامَةً لِلْخَفْضِ فِي ثَلاثَةِ مَوَاضِعَ",
+      "keterangan": "Kasrah menjadi tanda khafd pada tiga tempat.",
+      "id": 41
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "فِي الاِسْمِ الْمُفْرَدِ الْمُنْصَرِفِ",
+      "keterangan": "Yaitu pada isim mufrad yang <em>munsharif</em> (menerima tanwin).",
+      "id": 42
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "وَجَمْعِ التَّكْسِيرِ الْمُنْصَرِفِ، وَجَمْعِ الْمُؤَنَّثِ السَّالِمِ",
+      "keterangan": "Dan pada jamak taksir yang munsharif, serta jamak muannats salim.",
+      "id": 43
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "وَأَمَّا الْيَاءُ فَتَكُونُ عَلامَةً لِلْخَفْضِ فِي ثَلاثَةِ مَوَاضِعَ",
+      "keterangan": "Ya' menjadi tanda khafd pada tiga tempat.",
+      "id": 44
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "فِي الأَسْمَاءِ الْخَمْسَةِ، وَفِي التَّثْنِيَةِ، وَالْجَمْعِ",
+      "keterangan": "Yaitu pada al-asma' al-khamsah, bentuk tatsniyah, dan jamak mudzakkar salim.",
+      "id": 45
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "وَأَمَّا الْفَتْحَةُ فَتَكُونُ عَلامَةً لِلْخَفْضِ فِي الاِسْمِ الَّذِي لا يَنْصَرِفُ",
+      "keterangan": "Fathah menjadi tanda khafd (menggantikan kasrah) pada isim yang <em>ghairu munsharif</em> (tidak menerima tanwin).",
+      "id": 46
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "نَحْوَ: مَرَرْتُ بِأَحْمَدَ وَإِبْرَاهِيمَ",
+      "keterangan": "Contoh: <em>مررتُ بأحمدَ وإبراهيمَ</em> (aku melewati Ahmad dan Ibrahim).",
+      "id": 47
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_khafd",
+      "arab": "فَكُلٌّ مِنْهُمَا مَجْرُورٌ بِالْبَاءِ وَعَلامَةُ جَرِّهِ الْفَتْحَةُ نِيَابَةً عَنِ الْكَسْرَةِ",
+      "keterangan": "Kedua nama tersebut majrur oleh huruf <em>باء</em>, dan tanda jar-nya adalah fathah sebagai pengganti kasrah karena keduanya ghairu munsharif.",
+      "id": 48
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "وَلِلْجَزْمِ عَلامَتَانِ",
+      "keterangan": "Jazm memiliki dua tanda.",
+      "id": 49
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "السُّكُونُ، وَالْحَذْفُ",
+      "keterangan": "Kedua tanda jazm tersebut: <span class=\"arab-ref\">السكون</span> dan <span class=\"arab-ref\">الحذف</span> (membuang huruf).",
+      "id": 50
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "فَأَمَّا السُّكُونُ فَيَكُونُ عَلامَةً لِلْجَزْمِ فِي الْفِعْلِ الْمُضَارِعِ الصَّحِيحِ الآخِرِ",
+      "keterangan": "Sukun menjadi tanda jazm pada fi'il mudhari' yang akhirnya berupa huruf shahih (bukan huruf 'illat).",
+      "id": 51
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "وَأَمَّا الْحَذْفُ فَيَكُونُ عَلامَةً لِلْجَزْمِ فِي الْفِعْلِ الْمُضَارِعِ الْمُعْتَلِّ الآخِرِ",
+      "keterangan": "Membuang huruf menjadi tanda jazm pada fi'il mudhari' yang akhirnya berupa huruf 'illat (و ا ي).",
+      "id": 52
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "وَفِي الأَفْعَالِ الَّتِي رَفْعُهَا بِثَبَاتِ النُّونِ",
+      "keterangan": "Dan juga pada af'alul khamsah, dengan cara membuang huruf nun-nya.",
+      "id": 53
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "نَحْوَ: لَمْ يَخْشَ زَيْدٌ، وَلَمْ يَدْعُ زَيْدٌ",
+      "keterangan": "Contoh huruf 'illat yang dibuang: <em>لم يخشَ زيدٌ</em> dan <em>لم يدعُ زيدٌ</em>.",
+      "id": 54
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "وَلَمْ يَرْمِ زَيْدٌ",
+      "keterangan": "Contoh lain: <em>لم يرمِ زيدٌ</em> (Zaid tidak melempar).",
+      "id": 55
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "وَنَحْوَ: لَمْ يَضْرِبَا، وَلَمْ تَضْرِبَا",
+      "keterangan": "Contoh af'alul khamsah: <em>لم يضربا</em> dan <em>لم تضربا</em>.",
+      "id": 56
+    },
+    {
+      "babId": "bab-alamat-irab",
+      "subBabId": "alamat_jazm",
+      "arab": "فَهُمَا مَجْزُومَانِ بِلَمْ وَعَلامَةُ جَزْمِهِمَا حَذْفُ النُّونِ",
+      "keterangan": "Keduanya majzum oleh <em>لم</em> dan tanda jazm-nya adalah dibuangnya huruf nun.",
+      "id": 57
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "الْأَفْعَالُ ثَلَاثَةٌ: مَاضٍ، وَمُضَارِعٌ، وَأَمْرٌ",
+      "keterangan": "Fi'il (kata kerja) terbagi menjadi tiga jenis: <span class=\"arab-ref\">فعل ماضٍ</span> (lampau), <span class=\"arab-ref\">فعل مضارع</span> (sedang/akan), dan <span class=\"arab-ref\">فعل أمر</span> (perintah).",
+      "id": 58
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "نَحْوَ: ضَرَبَ، وَيَضْرِبُ، وَاضْرِبْ",
+      "keterangan": "Contoh ketiga bentuk tersebut: <em>ضَرَبَ</em> (telah memukul), <em>يَضْرِبُ</em> (sedang/akan memukul), dan <em>اضْرِبْ</em> (pukullah).",
+      "id": 59
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "فَالْمَاضِي مَفْتُوحُ الآخِرِ أَبَدًا",
+      "keterangan": "<strong>Fi'il madhi</strong> selalu berharakat <em>fathah</em> pada huruf akhirnya, tidak pernah berubah.",
+      "id": 60
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَالْأَمْرُ مَجْزُومٌ أَبَدًا",
+      "keterangan": "<strong>Fi'il amr</strong> selalu dalam keadaan <em>majzum</em>.",
+      "id": 61
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَالْمُضَارِعُ مَا كَانَ فِي أَوَّلِهِ إِحْدَى الزَّوَائِدِ الْأَرْبَعِ",
+      "keterangan": "<strong>Fi'il mudhari'</strong> adalah fi'il yang di awalnya terdapat salah satu dari empat huruf tambahan (huruf mudhara'ah).",
+      "id": 62
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "الَّتِي يَجْمَعُهَا قَوْلُكَ: أَنَيْتُ",
+      "keterangan": "Keempat huruf tersebut terkumpul dalam kata <em>أَنَيْتُ</em> — yaitu huruf <span class=\"arab-ref\">أ</span>, <span class=\"arab-ref\">ن</span>, <span class=\"arab-ref\">ي</span>, dan <span class=\"arab-ref\">ت</span>.",
+      "id": 63
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَهُوَ مَرْفُوعٌ أَبَدًا حَتَّى يَدْخُلَ عَلَيْهِ نَاصِبٌ أَوْ جَازِمٌ",
+      "keterangan": "Fi'il mudhari' pada asalnya selalu <strong>marfu'</strong>, sampai kemasukan 'amil nashab atau 'amil jazm.",
+      "id": 64
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "فَالنَّوَاصِبُ عَشْرَةٌ، وَهِيَ: أَنْ، وَلَنْ، وَإِذَنْ، وَكَيْ",
+      "keterangan": "'Amil-'amil nashab (yang membuat fi'il mudhari' menjadi manshub) ada sepuluh, dimulai dengan: <em>أنْ</em>, <em>لنْ</em>, <em>إذنْ</em>, dan <em>كي</em>.",
+      "id": 65
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَلَامُ كَيْ، وَلَامُ الْجُحُودِ، وَحَتَّى، وَالْجَوَابُ بِالْفَاءِ وَالْوَاوِ وَأَوْ",
+      "keterangan": "Dilanjutkan: <em>لام كي</em>, <em>لام الجحود</em>, <em>حتى</em>, dan huruf jawab dengan <em>الفاء</em>, <em>الواو</em>, atau <em>أو</em>.",
+      "id": 66
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَالْجَوَازِمُ ثَمَانِيَةَ عَشَرَ، وَهِيَ: لَمْ، وَلَمَّا، وَأَلَمْ، وَأَلَمَّا",
+      "keterangan": "'Amil-'amil jazm (yang membuat fi'il mudhari' menjadi majzum) ada delapan belas, dimulai dengan: <em>لم</em>, <em>لمّا</em>, <em>ألم</em>, dan <em>ألمّا</em>.",
+      "id": 67
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَلَامُ الأَمْرِ وَالدُّعَاءِ، وَلَا فِي النَّهْيِ وَالدُّعَاءِ",
+      "keterangan": "Dilanjutkan: <em>لام أمر</em> dan <em>لام do'a</em>, serta <em>لا</em> pada larangan (nahi) dan do'a.",
+      "id": 68
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَإِنْ، وَمَا، وَمَنْ، وَمَهْمَا، وَإِذْمَا، وَأَيٌّ",
+      "keterangan": "Huruf/kata syarat yang men-jazm-kan dua fi'il (jazm sababi): <em>إنْ</em>, <em>ما</em>, <em>مَنْ</em>, <em>مهما</em>, <em>إذما</em>, dan <em>أيّ</em>.",
+      "id": 69
+    },
+    {
+      "babId": "bab-afal",
+      "subBabId": null,
+      "arab": "وَمَتَى، وَأَيَّانَ، وَأَيْنَ، وَأَنَّى، وَحَيْثُمَا، وَكَيْفَمَا، وَإِذَا فِي الشِّعْرِ خَاصَّةً",
+      "keterangan": "Serta: <em>متى</em>, <em>أيّان</em>, <em>أين</em>, <em>أنّى</em>, <em>حيثما</em>, <em>كيفما</em>, dan <em>إذا</em> yang khusus digunakan dalam syair.",
+      "id": 70
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "marfuat-muqaddimah",
+      "arab": "الْمَرْفُوعَاتُ سَبْعَةُ أَشْيَاءَ",
+      "keterangan": "<span class=\"arab-ref\">المرفوعات</span> adalah isim-isim yang berstatus <strong>rafa'</strong> dalam ilmu nahwu, jumlahnya ada <strong>tujuh</strong> macam.",
+      "id": 71
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "marfuat-muqaddimah",
+      "arab": "الْفَاعِلُ، وَالْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ، وَالْمُبْتَدَأُ وَخَبَرُهُ",
+      "keterangan": "Tiga di antaranya: <span class=\"arab-ref\">الفاعل</span>, <span class=\"arab-ref\">نائب الفاعل</span> (maf'ul yang tidak disebut fa'ilnya), serta <span class=\"arab-ref\">المبتدأ</span> dan <span class=\"arab-ref\">خبره</span>.",
+      "id": 72
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "marfuat-muqaddimah",
+      "arab": "وَاسْمُ كَانَ وَأَخَوَاتِهَا، وَخَبَرُ إِنَّ وَأَخَوَاتِهَا",
+      "keterangan": "Ditambah: <span class=\"arab-ref\">اسم كان وأخواتها</span> dan <span class=\"arab-ref\">خبر إنّ وأخواتها</span>.",
+      "id": 73
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "marfuat-muqaddimah",
+      "arab": "وَالتَّابِعُ لِلْمَرْفُوعِ، وَهُوَ أَرْبَعَةُ أَشْيَاءَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ",
+      "keterangan": "Dan yang terakhir: isim yang mengikuti (tabi') isim marfu' sebelumnya, yaitu empat perkara: <em>na'at</em>, <em>athaf</em>, <em>taukid</em>, dan <em>badal</em>.",
+      "id": 74
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "بَابُ الْفَاعِلِ",
+      "keterangan": "Pembahasan tentang <strong>fa'il</strong> (subjek pelaku).",
+      "id": 75
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "الْفَاعِلُ هُوَ: الاِسْمُ الْمَرْفُوعُ الْمَذْكُورُ قَبْلَهُ فِعْلُهُ",
+      "keterangan": "<strong>Fa'il</strong> adalah isim marfu' yang disebutkan fi'ilnya sebelum dia.",
+      "id": 76
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَهُوَ عَلَى قِسْمَيْنِ: ظَاهِرٌ، وَمُضْمَرٌ",
+      "keterangan": "Fa'il terbagi dua: <em>zhahir</em> (isim yang tampak) dan <em>mudhmar</em> (kata ganti/dhamir).",
+      "id": 77
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "فَالظَّاهِرُ نَحْوَ قَوْلِكَ: قَامَ زَيْدٌ",
+      "keterangan": "Contoh fa'il zhahir: <em>قَامَ زَيْدٌ</em> (Zaid telah berdiri) — <em>زيدٌ</em> adalah fa'il.",
+      "id": 78
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَيَقُومُ زَيْدٌ، وَقَامَ الزَّيْدَانِ",
+      "keterangan": "Contoh lain: <em>يقومُ زيدٌ</em> (Zaid sedang berdiri) dan <em>قامَ الزيدانِ</em> (dua Zaid telah berdiri).",
+      "id": 79
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَقَامَ الزَّيْدُونَ، وَقَامَ الرِّجَالُ",
+      "keterangan": "Serta: <em>قامَ الزيدونَ</em> (para Zaid telah berdiri) dan <em>قامَ الرجالُ</em> (para lelaki telah berdiri).",
+      "id": 80
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَالْمُضْمَرُ اثْنَا عَشَرَ",
+      "keterangan": "Fa'il yang berupa dhamir (mudhmar) jumlahnya ada dua belas.",
+      "id": 81
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "نَحْوَ قَوْلِكَ: ضَرَبْتُ، وَضَرَبْنَا",
+      "keterangan": "Contoh: <em>ضربتُ</em> (aku telah memukul) dan <em>ضربنا</em> (kami telah memukul).",
+      "id": 82
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَضَرَبْتَ، وَضَرَبْتِ، وَضَرَبْتُمَا",
+      "keterangan": "Serta: <em>ضربتَ</em>, <em>ضربتِ</em>, dan <em>ضربتما</em>.",
+      "id": 83
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَضَرَبْتُمْ، وَضَرَبْتُنَّ، وَضَرَبَ، وَضَرَبَتْ",
+      "keterangan": "Serta: <em>ضربتم</em>, <em>ضربتنّ</em>, <em>ضرب</em>, dan <em>ضربت</em>.",
+      "id": 84
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "al-fail",
+      "arab": "وَضَرَبَا، وَضَرَبُوا، وَضَرَبْنَ",
+      "keterangan": "Dan yang terakhir: <em>ضربا</em>, <em>ضربوا</em>, dan <em>ضربنَ</em> — genap dua belas bentuk dhamir fa'il.",
+      "id": 85
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "بَابُ الْمَفْعُولِ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ",
+      "keterangan": "Pembahasan tentang <strong>na'ib al-fa'il</strong> (pengganti fa'il dalam kalimat pasif).",
+      "id": 86
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَهُوَ الاِسْمُ الْمَرْفُوعُ الَّذِي لَمْ يُذْكَرْ مَعَهُ فَاعِلُهُ",
+      "keterangan": "<strong>Na'ib al-fa'il</strong> adalah isim marfu' yang fa'ilnya tidak disebutkan bersamanya.",
+      "id": 87
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "فَإِنْ كَانَ الْفِعْلُ مَاضِيًا ضُمَّ أَوَّلُهُ وَكُسِرَ مَا قَبْلَ آخِرِهِ",
+      "keterangan": "Jika fi'ilnya <em>madhi</em>, maka huruf pertamanya di-<em>dhammah</em>-kan dan huruf sebelum akhir di-<em>kasrah</em>-kan.",
+      "id": 88
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَإِنْ كَانَ مُضَارِعًا ضُمَّ أَوَّلُهُ وَفُتِحَ مَا قَبْلَ آخِرِهِ",
+      "keterangan": "Jika fi'ilnya <em>mudhari'</em>, maka huruf pertamanya di-<em>dhammah</em>-kan dan huruf sebelum akhir di-<em>fathah</em>-kan.",
+      "id": 89
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَهُوَ عَلَى قِسْمَيْنِ: ظَاهِرٌ وَمُضْمَرٌ",
+      "keterangan": "Na'ib al-fa'il juga terbagi dua: zhahir dan mudhmar.",
+      "id": 90
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "فَالظَّاهِرُ نَحْوَ قَوْلِكَ: ضُرِبَ زَيْدٌ",
+      "keterangan": "Contoh na'ib al-fa'il zhahir: <em>ضُرِبَ زيدٌ</em> (Zaid telah dipukul).",
+      "id": 91
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَيُضْرَبُ زَيْدٌ، وَأُكْرِمَ عَمْرٌو",
+      "keterangan": "Serta: <em>يُضربُ زيدٌ</em> (Zaid sedang dipukul) dan <em>أُكرِمَ عَمرٌو</em> (Amr telah dimuliakan).",
+      "id": 92
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَيُكْرَمُ عَمْرٌو",
+      "keterangan": "Dan: <em>يُكرَمُ عَمرٌو</em> (Amr sedang dimuliakan).",
+      "id": 93
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَالْمُضْمَرُ اثْنَا عَشَرَ",
+      "keterangan": "Na'ib al-fa'il berupa dhamir juga berjumlah dua belas, sebagaimana pada fa'il.",
+      "id": 94
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "نَحْوَ قَوْلِكَ: ضُرِبْتُ، وَضُرِبْنَا",
+      "keterangan": "Contoh: <em>ضُربتُ</em> dan <em>ضُربنا</em>.",
+      "id": 95
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَضُرِبْتَ، وَضُرِبْتِ، وَضُرِبْتُمَا",
+      "keterangan": "Serta: <em>ضُربتَ</em>, <em>ضُربتِ</em>, dan <em>ضُربتما</em>.",
+      "id": 96
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَضُرِبْتُمْ، وَضُرِبْتُنَّ",
+      "keterangan": "Serta: <em>ضُربتم</em> dan <em>ضُربتنّ</em>.",
+      "id": 97
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "naib-al-fail",
+      "arab": "وَضُرِبَ، وَضُرِبَتْ، وَضُرِبَا، وَضُرِبُوا، وَضُرِبْنَ",
+      "keterangan": "Dan yang terakhir: <em>ضُرِب</em>, <em>ضُرِبَتْ</em>, <em>ضُرِبَا</em>, <em>ضُرِبُوا</em>, dan <em>ضُرِبْنَ</em>.",
+      "id": 98
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "بَابُ الْمُبْتَدَأِ وَالْخَبَرِ",
+      "keterangan": "Pembahasan tentang <strong>mubtada'</strong> dan <strong>khabar</strong>.",
+      "id": 99
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "الْمُبْتَدَأُ: هُوَ الاِسْمُ الْمَرْفُوعُ الْعَارِي عَنِ الْعَوَامِلِ اللَّفْظِيَّةِ",
+      "keterangan": "<strong>Mubtada'</strong> adalah isim marfu' yang bebas dari 'amil lafazh (tidak dimasuki 'amil yang tampak).",
+      "id": 100
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالْخَبَرُ: هُوَ الاِسْمُ الْمَرْفُوعُ الْمُسْنَدُ إِلَيْهِ",
+      "keterangan": "<strong>Khabar</strong> adalah isim marfu' yang disandarkan kepada mubtada' (predikatnya).",
+      "id": 101
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "نَحْوَ قَوْلِكَ: زَيْدٌ قَائِمٌ",
+      "keterangan": "Contoh: <em>زيدٌ قائمٌ</em> (Zaid berdiri) — <em>زيد</em> mubtada', <em>قائم</em> khabar.",
+      "id": 102
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالزَّيْدَانِ قَائِمَانِ، وَالزَّيْدُونَ قَائِمُونَ",
+      "keterangan": "Serta: <em>الزيدان قائمان</em> dan <em>الزيدون قائمون</em>.",
+      "id": 103
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالْمُبْتَدَأُ قِسْمَانِ: ظَاهِرٌ وَمُضْمَرٌ",
+      "keterangan": "Mubtada' terbagi dua: zhahir dan mudhmar.",
+      "id": 104
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "فَالظَّاهِرُ مَا تَقَدَّمَ ذِكْرُهُ",
+      "keterangan": "Mubtada' zhahir adalah seperti contoh-contoh yang telah disebutkan.",
+      "id": 105
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالْمُضْمَرُ اثْنَا عَشَرَ، وَهِيَ: أَنَا، وَنَحْنُ، وَأَنْتَ، وَأَنْتِ",
+      "keterangan": "Mubtada' mudhmar berjumlah dua belas: <em>أنا</em>, <em>نحن</em>, <em>أنتَ</em>, dan <em>أنتِ</em>.",
+      "id": 106
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَأَنْتُمَا، وَأَنْتُمْ، وَأَنْتُنَّ",
+      "keterangan": "Serta: <em>أنتما</em>, <em>أنتم</em>, dan <em>أنتنّ</em>.",
+      "id": 107
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَهُوَ، وَهِيَ، وَهُمَا، وَهُمْ، وَهُنَّ",
+      "keterangan": "Dan yang terakhir: <em>هو</em>, <em>هي</em>, <em>هما</em>, <em>هم</em>, dan <em>هنّ</em>.",
+      "id": 108
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "نَحْوَ قَوْلِكَ: أَنَا قَائِمٌ، وَنَحْنُ قَائِمُونَ",
+      "keterangan": "Contoh: <em>أنا قائمٌ</em> dan <em>نحن قائمونَ</em>.",
+      "id": 109
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالْخَبَرُ قِسْمَانِ: مُفْرَدٌ، وَغَيْرُ مُفْرَدٍ",
+      "keterangan": "Khabar terbagi dua: <em>mufrad</em> (tunggal, bukan berupa kalimat) dan <em>ghairu mufrad</em> (berupa kalimat/frasa).",
+      "id": 110
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "فَالْمُفْرَدُ نَحْوَ قَوْلِكَ: زَيْدٌ قَائِمٌ",
+      "keterangan": "Contoh khabar mufrad: <em>زيدٌ قائمٌ</em>.",
+      "id": 111
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَغَيْرُ الْمُفْرَدِ أَرْبَعَةُ أَشْيَاءَ: الْجَارُّ وَالْمَجْرُورُ، وَالظَّرْفُ",
+      "keterangan": "Khabar ghairu mufrad ada empat: <em>jar-majrur</em>, dan <em>zharaf</em> (keterangan tempat/waktu).",
+      "id": 112
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَالْفِعْلُ مَعَ فَاعِلِهِ، وَالْمُبْتَدَأُ مَعَ خَبَرِهِ",
+      "keterangan": "Serta: <em>fi'il beserta fa'ilnya</em>, dan <em>mubtada' beserta khabarnya</em> (kalimat di dalam kalimat).",
+      "id": 113
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "نَحْوَ قَوْلِكَ: زَيْدٌ فِي الدَّارِ",
+      "keterangan": "Contoh jar-majrur: <em>زيدٌ في الدارِ</em> (Zaid ada di rumah).",
+      "id": 114
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَزَيْدٌ عِنْدَكَ، وَزَيْدٌ قَامَ أَبُوهُ",
+      "keterangan": "Contoh zharaf: <em>زيدٌ عندَكَ</em>; contoh fi'il+fa'il: <em>زيدٌ قامَ أبوهُ</em> (Zaid, ayahnya telah berdiri).",
+      "id": 115
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "mubtada-khabar",
+      "arab": "وَزَيْدٌ جَارِيَتُهُ ذَاهِبَةٌ",
+      "keterangan": "Contoh mubtada'+khabar sebagai khabar: <em>زيدٌ جاريتُهُ ذاهبةٌ</em> (Zaid, budak perempuannya pergi).",
+      "id": 116
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "بَابُ كَانَ وَأَخَوَاتِهَا",
+      "keterangan": "Pembahasan tentang <em>كان</em> dan saudara-saudaranya, yaitu 'amil-'amil yang masuk pada mubtada'-khabar.",
+      "id": 117
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "وَهِيَ تَرْفَعُ الِاسْمَ، وَتَنْصِبُ الْخَبَرَ",
+      "keterangan": "<em>كان وأخواتها</em> beramal dengan <strong>me-rafa'-kan isimnya</strong> (disebut isim kana) dan <strong>me-nashab-kan khabarnya</strong>.",
+      "id": 118
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "وَهِيَ: كَانَ، وَأَمْسَى، وَأَصْبَحَ، وَأَضْحَى",
+      "keterangan": "Di antaranya: <em>كان</em> (menjadi/adalah), <em>أمسى</em> (menjadi di waktu sore), <em>أصبح</em> (menjadi di waktu pagi), dan <em>أضحى</em> (menjadi di waktu dhuha).",
+      "id": 119
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "وَظَلَّ، وَبَاتَ، وَصَارَ، وَلَيْسَ",
+      "keterangan": "Serta: <em>ظلّ</em> (menjadi sepanjang siang), <em>بات</em> (menjadi di waktu malam), <em>صار</em> (berubah menjadi), dan <em>ليس</em> (bukan/tidak).",
+      "id": 120
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "وَمَا زَالَ، وَمَا انْفَكَّ، وَمَا فَتِئَ، وَمَا بَرِحَ، وَمَا دَامَ، وَمَا تَصَرَّفَ مِنْهَا",
+      "keterangan": "Serta: <em>ما زال</em>, <em>ما انفكّ</em>, <em>ما فتئ</em>, <em>ما برح</em>, <em>ما دام</em>, dan seluruh bentuk tashrifnya.",
+      "id": 121
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "ismu-kana",
+      "arab": "تَقُولُ: كَانَ زَيْدٌ قَائِمًا، وَلَيْسَ عَمْرٌو شَاخِصًا",
+      "keterangan": "Contoh: <em>كانَ زيدٌ قائمًا</em> — <em>زيد</em> isim kana (marfu'), <em>قائمًا</em> khabar kana (manshub). Begitu pula <em>ليسَ عمرٌو شاخصًا</em>.",
+      "id": 122
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "بَابُ إِنَّ وَأَخَوَاتِهَا",
+      "keterangan": "Pembahasan tentang <em>إنّ</em> dan saudara-saudaranya.",
+      "id": 123
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "وَهِيَ تَنْصِبُ الِاسْمَ، وَتَرْفَعُ الْخَبَرَ",
+      "keterangan": "<em>إنّ وأخواتها</em> beramal kebalikan dari <em>كان</em>: <strong>me-nashab-kan isimnya</strong> dan <strong>me-rafa'-kan khabarnya</strong>.",
+      "id": 124
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "وَهِيَ: إِنَّ، وَأَنَّ، وَلَكِنَّ، وَكَأَنَّ، وَلَيْتَ، وَلَعَلَّ",
+      "keterangan": "Keenam huruf tersebut: <em>إنّ</em> dan <em>أنّ</em> (untuk taukid/penguatan), <em>لكنّ</em> (untuk istidrak), <em>كأنّ</em> (untuk tasybih/permisalan), <em>ليت</em> (untuk tamanni/pengandaian), dan <em>لعلّ</em> (untuk taraji/pengharapan).",
+      "id": 125
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "تَقُولُ: إِنَّ زَيْدًا قَائِمٌ، وَلَيْتَ عَمْرًا شَاخِصٌ",
+      "keterangan": "Contoh: <em>إنّ زيدًا قائمٌ</em> — <em>زيدًا</em> isim inna (manshub), <em>قائمٌ</em> khabar inna (marfu'). Begitu pula <em>ليتَ عمرًا شاخصٌ</em>.",
+      "id": 126
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "وَمَعْنَاهَا: التَّوْكِيدُ لِإِنَّ وَأَنَّ، وَالاِسْتِدْرَاكُ لِلَكِنَّ",
+      "keterangan": "<em>إنّ</em> dan <em>أنّ</em> bermakna penguat (taukid); <em>لكنّ</em> bermakna menyanggah/meralat (istidrak).",
+      "id": 127
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "khabar-inna",
+      "arab": "وَالتَّشْبِيهُ لِكَأَنَّ، وَالتَّمَنِّي لِلَيْتَ، وَالتَّرَجِّي لِلَعَلَّ",
+      "keterangan": "<em>كأنّ</em> bermakna permisalan (tasybih); <em>ليت</em> bermakna pengandaian sesuatu yang sulit/mustahil (tamanni); <em>لعلّ</em> bermakna harapan (taraji).",
+      "id": 128
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "tawabi-marfu",
+      "arab": "وَالتَّابِعُ لِلْمَرْفُوعِ مَرْفُوعٌ أَبَدًا",
+      "keterangan": "Isim yang men-tabi'-i (mengikuti) isim marfu' juga wajib berstatus <strong>marfu'</strong>.",
+      "id": 129
+    },
+    {
+      "babId": "bab-marfuat",
+      "subBabId": "tawabi-marfu",
+      "arab": "وَهُوَ أَرْبَعَةُ أَشْيَاءَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ",
+      "keterangan": "Keempat jenis tabi' tersebut — <em>na'at</em>, <em>athaf</em>, <em>taukid</em>, dan <em>badal</em> — akan dijelaskan rinci pada <strong>Bab Tawabi'</strong>.",
+      "id": 130
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "tawabi-muqaddimah",
+      "arab": "التَّوَابِعُ أَرْبَعَةُ أَشْيَاءَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ",
+      "keterangan": "<strong>Tawabi'</strong> (kata-kata yang mengikuti) ada empat jenis: <span class=\"arab-ref\">النعت</span>, <span class=\"arab-ref\">العطف</span>, <span class=\"arab-ref\">التوكيد</span>, dan <span class=\"arab-ref\">البدل</span>. Semuanya mengikuti i'rab kata yang diikutinya (rafa', nashab, khafd).",
+      "id": 131
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "naat",
+      "arab": "بَابُ النَّعْتِ",
+      "keterangan": "Pembahasan tentang <strong>na'at</strong> (kata sifat).",
+      "id": 132
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "naat",
+      "arab": "النَّعْتُ تَابِعٌ لِلْمَنْعُوتِ فِي رَفْعِهِ وَنَصْبِهِ وَخَفْضِهِ",
+      "keterangan": "<strong>Na'at</strong> mengikuti <em>man'ut</em> (yang disifati) dalam hal rafa', nashab, dan khafd-nya (i'rabnya).",
+      "id": 133
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "naat",
+      "arab": "وَتَعْرِيفِهِ وَتَنْكِيرِهِ",
+      "keterangan": "Na'at juga mengikuti man'ut dalam hal <em>ma'rifah</em> (definit) maupun <em>nakirah</em> (indefinit)-nya.",
+      "id": 134
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "naat",
+      "arab": "تَقُولُ: قَامَ زَيْدٌ الْعَاقِلُ، وَرَأَيْتُ زَيْدًا الْعَاقِلَ",
+      "keterangan": "Contoh: <em>قامَ زيدٌ العاقلُ</em> (Zaid yang berakal telah berdiri) dan <em>رأيتُ زيدًا العاقلَ</em> (aku melihat Zaid yang berakal).",
+      "id": 135
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "naat",
+      "arab": "وَمَرَرْتُ بِزَيْدٍ الْعَاقِلِ",
+      "keterangan": "Serta: <em>مررتُ بزيدٍ العاقلِ</em> (aku melewati Zaid yang berakal) — na'at <em>العاقل</em> mengikuti i'rab khafd dari <em>زيد</em>.",
+      "id": 136
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "بَابُ الْعَطْفِ",
+      "keterangan": "Pembahasan tentang <strong>'athaf</strong> (kata sambung).",
+      "id": 137
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "وَحُرُوفُهُ عَشَرَةٌ، وَهِيَ: الْوَاوُ، وَالْفَاءُ، وَثُمَّ، وَأَوْ، وَأَمْ",
+      "keterangan": "Huruf 'athaf ada sepuluh, dimulai dengan: <em>الواو</em> (dan), <em>الفاء</em> (lalu), <em>ثمّ</em> (kemudian), <em>أو</em> (atau), dan <em>أم</em> (ataukah).",
+      "id": 138
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "وَإِمَّا، وَبَلْ، وَلَا، وَلَكِنْ، وَحَتَّى فِي بَعْضِ الْمَوَاضِعِ",
+      "keterangan": "Dilanjutkan: <em>إمّا</em>, <em>بل</em>, <em>لا</em>, <em>لكن</em>, dan <em>حتى</em> pada sebagian keadaan.",
+      "id": 139
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "فَإِنْ عَطَفْتَ بِهَذِهِ الْحُرُوفِ عَلَى مَرْفُوعٍ رَفَعْتَ",
+      "keterangan": "Jika kamu meng-'athaf-kan dengan huruf-huruf ini pada isim marfu', maka kata yang di-'athaf-kan juga menjadi <strong>marfu'</strong>.",
+      "id": 140
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "أَوْ عَلَى مَنْصُوبٍ نَصَبْتَ، أَوْ عَلَى مَخْفُوضٍ خَفَضْتَ، أَوْ عَلَى مَجْزُومٍ جَزَمْتَ",
+      "keterangan": "Begitu pula jika di-'athaf-kan pada yang manshub, majrur, atau majzum — maka kata yang mengikutinya mengambil i'rab yang sama.",
+      "id": 141
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "تَقُولُ: قَامَ زَيْدٌ وَعَمْرٌو، وَرَأَيْتُ زَيْدًا وَعَمْرًا",
+      "keterangan": "Contoh: <em>قامَ زيدٌ وعمرٌو</em> (Zaid dan Amr telah berdiri) dan <em>رأيتُ زيدًا وعمرًا</em>.",
+      "id": 142
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "athof",
+      "arab": "وَمَرَرْتُ بِزَيْدٍ وَعَمْرٍو",
+      "keterangan": "Serta: <em>مررتُ بزيدٍ وعمرٍو</em> — <em>عمرو</em> mengikuti i'rab khafd dari <em>زيد</em>.",
+      "id": 143
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "taukid",
+      "arab": "بَابُ التَّوْكِيدِ",
+      "keterangan": "Pembahasan tentang <strong>taukid</strong> (penguat/penegasan).",
+      "id": 144
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "taukid",
+      "arab": "التَّوْكِيدُ تَابِعٌ لِلْمُؤَكَّدِ فِي رَفْعِهِ وَنَصْبِهِ وَخَفْضِهِ وَتَعْرِيفِهِ",
+      "keterangan": "<strong>Taukid</strong> mengikuti kata yang ditaukidi (<em>mu'akkad</em>) dalam i'rab (rafa', nashab, khafd) dan status ma'rifahnya.",
+      "id": 145
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "taukid",
+      "arab": "وَيَكُونُ بِأَلْفَاظٍ مَعْلُومَةٍ، وَهِيَ: النَّفْسُ، وَالْعَيْنُ، وَكُلٌّ",
+      "keterangan": "Taukid menggunakan lafazh-lafazh tertentu yang sudah dikenal: <em>النفس</em>, <em>العين</em>, dan <em>كلّ</em>.",
+      "id": 146
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "taukid",
+      "arab": "وَأَجْمَعُ، وَتَوَابِعُ أَجْمَعَ: وَهِيَ أَكْتَعُ، وَأَبْتَعُ، وَأَبْصَعُ",
+      "keterangan": "Serta: <em>أجمع</em>, dan kata-kata pengikutnya: <em>أكتع</em>, <em>أبتع</em>, dan <em>أبصع</em>.",
+      "id": 147
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "taukid",
+      "arab": "تَقُولُ: قَامَ زَيْدٌ نَفْسُهُ، وَرَأَيْتُ الْقَوْمَ كُلَّهُمْ",
+      "keterangan": "Contoh: <em>قامَ زيدٌ نفسُهُ</em> (Zaid sendiri telah berdiri) — sebagai penguat bahwa yang berdiri benar Zaid, bukan orang lain. Serta <em>رأيتُ القومَ كلَّهم</em> (aku melihat seluruh kaum itu).",
+      "id": 148
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "بَابُ الْبَدَلِ",
+      "keterangan": "Pembahasan tentang <strong>badal</strong> (kata pengganti).",
+      "id": 149
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "إِذَا أُبْدِلَ اسْمٌ مِنِ اسْمٍ، أَوْ فِعْلٌ مِنْ فِعْلٍ، تَبِعَهُ فِي جَمِيعِ إِعْرَابِهِ",
+      "keterangan": "Apabila suatu isim digantikan (di-<em>badal</em>-kan) dari isim lain, atau fi'il dari fi'il lain, maka <em>badal</em> mengikuti seluruh i'rab dari <em>mubdal minhu</em> (yang digantikan).",
+      "id": 150
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "وَهُوَ عَلَى أَرْبَعَةِ أَقْسَامٍ: بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ، وَبَدَلُ الْبَعْضِ مِنَ الْكُلِّ",
+      "keterangan": "Badal terbagi empat: <em>badal syai' min syai'</em> (badal sesuatu dari sesuatu yang sama/badal muthabiq) dan <em>badal ba'dh min kull</em> (badal sebagian dari keseluruhan).",
+      "id": 151
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "وَبَدَلُ الاِشْتِمَالِ، وَبَدَلُ الْغَلَطِ",
+      "keterangan": "Serta <em>badal isytimal</em> (badal yang mencakup makna) dan <em>badal ghalath</em> (badal karena kekeliruan/koreksi ucapan).",
+      "id": 152
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "نَحْوَ قَوْلِكَ: قَامَ زَيْدٌ أَخُوكَ",
+      "keterangan": "Contoh <em>badal syai' min syai'</em>: <em>قامَ زيدٌ أخوكَ</em> (Zaid, saudaramu, telah berdiri) — <em>أخوك</em> menjadi badal dari <em>زيد</em>.",
+      "id": 153
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "وَأَكَلْتُ الرَّغِيفَ ثُلُثَهُ",
+      "keterangan": "Contoh <em>badal ba'dh min kull</em>: <em>أكلتُ الرغيفَ ثلثَهُ</em> (aku memakan roti itu, sepertiganya) — <em>ثلثه</em> adalah sebagian dari <em>الرغيف</em>.",
+      "id": 154
+    },
+    {
+      "babId": "bab-tawabi",
+      "subBabId": "badal",
+      "arab": "وَنَفَعَنِي زَيْدٌ عِلْمُهُ",
+      "keterangan": "Contoh <em>badal isytimal</em>: <em>نفعني زيدٌ علمُهُ</em> (Zaid bermanfaat bagiku, ilmunya) — <em>علمه</em> mencakup makna dari <em>زيد</em> tanpa menjadi bagiannya secara fisik.",
+      "id": 155
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "manshubat-muqaddimah",
+      "arab": "الْمَنْصُوبَاتُ خَمْسَةَ عَشَرَ",
+      "keterangan": "<span class=\"arab-ref\">المنصوبات</span> adalah isim-isim yang berstatus <strong>nashab</strong>, jumlahnya ada <strong>lima belas</strong> macam yang akan dirinci pada sub-bab berikut.",
+      "id": 156
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "manshubat-muqaddimah",
+      "arab": "وَهِيَ: الْمَفْعُولُ بِهِ، وَالْمَصْدَرُ، وَظَرْفُ الزَّمَانِ، وَظَرْفُ الْمَكَانِ",
+      "keterangan": "Empat di antaranya: <span class=\"arab-ref\">المفعول به</span>, <span class=\"arab-ref\">المصدر</span>, <span class=\"arab-ref\">ظرف الزمان</span>, dan <span class=\"arab-ref\">ظرف المكان</span>.",
+      "id": 157
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "manshubat-muqaddimah",
+      "arab": "وَالْحَالُ، وَالتَّمْيِيزُ، وَالْمُسْتَثْنَى، وَاسْمُ لَا",
+      "keterangan": "Ditambah: <span class=\"arab-ref\">الحال</span>, <span class=\"arab-ref\">التمييز</span>, <span class=\"arab-ref\">المستثنى</span>, dan <span class=\"arab-ref\">اسم لا</span> (isim yang mengikuti لا nafiyah lil-jins).",
+      "id": 158
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "manshubat-muqaddimah",
+      "arab": "وَالْمُنَادَى، وَالْمَفْعُولُ مِنْ أَجْلِهِ، وَالْمَفْعُولُ مَعَهُ",
+      "keterangan": "Serta: <span class=\"arab-ref\">المنادى</span>, <span class=\"arab-ref\">المفعول من أجله</span>, dan <span class=\"arab-ref\">المفعول معه</span>.",
+      "id": 159
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "manshubat-muqaddimah",
+      "arab": "وَخَبَرُ كَانَ وَأَخَوَاتِهَا، وَاسْمُ إِنَّ وَأَخَوَاتِهَا، وَالتَّابِعُ لِلْمَنْصُوبِ",
+      "keterangan": "Dan yang terakhir: <span class=\"arab-ref\">خبر كان وأخواتها</span>, <span class=\"arab-ref\">اسم إنّ وأخواتها</span>, serta isim yang mengikuti (tabi') isim manshub.",
+      "id": 160
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-bih",
+      "arab": "بَابُ الْمَفْعُولِ بِهِ",
+      "keterangan": "Pembahasan tentang <strong>maf'ul bih</strong> (objek).",
+      "id": 161
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-bih",
+      "arab": "وَهُوَ الاِسْمُ الْمَنْصُوبُ الَّذِي يَقَعُ بِهِ الْفِعْلُ",
+      "keterangan": "<strong>Maf'ul bih</strong> adalah isim manshub yang dikenai suatu perbuatan oleh fa'il.",
+      "id": 162
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-bih",
+      "arab": "نَحْوَ قَوْلِكَ: ضَرَبْتُ زَيْدًا، وَرَكِبْتُ الْفَرَسَ",
+      "keterangan": "Contoh: <em>ضربتُ زيدًا</em> (aku memukul Zaid) dan <em>ركبتُ الفرسَ</em> (aku menunggangi kuda).",
+      "id": 163
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-bih",
+      "arab": "وَهُوَ يَنْقَسِمُ إِلَى ظَاهِرٍ وَمُضْمَرٍ",
+      "keterangan": "Maf'ul bih terbagi menjadi zhahir dan mudhmar, sebagaimana pada fa'il.",
+      "id": 164
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "بَابُ الْمَصْدَرِ",
+      "keterangan": "Pembahasan tentang <strong>masdar</strong> (kata benda abstrak/infinitif).",
+      "id": 165
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "وَهُوَ الاِسْمُ الْمَنْصُوبُ الَّذِي يَجِيءُ ثَالِثًا فِي تَصْرِيفِ الْفِعْلِ",
+      "keterangan": "<strong>Masdar</strong> adalah isim manshub yang muncul sebagai bentuk ketiga dalam tashrif fi'il (setelah fi'il madhi dan mudhari').",
+      "id": 166
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "نَحْوَ قَوْلِكَ: ضَرَبَ يَضْرِبُ ضَرْبًا",
+      "keterangan": "Contoh: <em>ضربَ يضرِبُ ضربًا</em> — <em>ضربًا</em> adalah masdar dari fi'il <em>ضرب</em>.",
+      "id": 167
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "وَهُوَ قِسْمَانِ: لَفْظِيٌّ وَمَعْنَوِيٌّ",
+      "keterangan": "Masdar terbagi dua: <em>masdar lafzhi</em> (sama huruf dan maknanya dengan fi'il) dan <em>masdar ma'nawi</em> (sama makna namun beda huruf/wazan).",
+      "id": 168
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "فَإِنْ وَافَقَ لَفْظُهُ لَفْظَ فِعْلِهِ فَهُوَ لَفْظِيٌّ، نَحْوَ: قَتَلْتُهُ قَتْلًا",
+      "keterangan": "Jika lafazh masdar sesuai dengan lafazh fi'ilnya disebut <em>lafzhi</em>, contoh: <em>قتلتُهُ قتلًا</em>.",
+      "id": 169
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "masdar",
+      "arab": "وَإِنْ وَافَقَ مَعْنَاهُ لَا لَفْظَهُ فَهُوَ مَعْنَوِيٌّ، نَحْوَ: جَلَسْتُ قُعُودًا",
+      "keterangan": "Jika hanya sesuai maknanya saja disebut <em>ma'nawi</em>, contoh: <em>جلستُ قعودًا</em> (aku duduk dengan duduk) — <em>قعودًا</em> semakna dengan <em>جلستُ</em> tapi beda akar kata.",
+      "id": 170
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-zaman",
+      "arab": "بَابُ ظَرْفِ الزَّمَانِ وَظَرْفِ الْمَكَانِ",
+      "keterangan": "Pembahasan tentang <strong>zharaf</strong> (keterangan waktu dan tempat).",
+      "id": 171
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-zaman",
+      "arab": "ظَرْفُ الزَّمَانِ: هُوَ اسْمُ الزَّمَانِ الْمَنْصُوبُ بِتَقْدِيرِ فِي",
+      "keterangan": "<strong>Zharaf zaman</strong> adalah isim waktu yang manshub dengan perkiraan makna <em>fi</em> (di dalam/pada).",
+      "id": 172
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-zaman",
+      "arab": "نَحْوَ: الْيَوْمَ، وَاللَّيْلَةَ، وَغُدْوَةً، وَبُكْرَةً، وَسَحَرًا، وَغَدًا، وَعَتَمَةً",
+      "keterangan": "Contoh: <em>اليومَ</em> (hari ini), <em>الليلةَ</em> (malam ini), <em>غدوةً</em>, <em>بكرةً</em>, <em>سحرًا</em>, <em>غدًا</em> (besok), dan <em>عتمةً</em>.",
+      "id": 173
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-zaman",
+      "arab": "وَصَبَاحًا، وَمَسَاءً، وَأَبَدًا، وَأَمَدًا، وَحِينًا، وَمَا أَشْبَهَ ذَلِكَ",
+      "keterangan": "Serta: <em>صباحًا</em>, <em>مساءً</em>, <em>أبدًا</em> (selamanya), <em>أمدًا</em>, <em>حينًا</em> (suatu waktu), dan yang serupa dengannya.",
+      "id": 174
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-makan",
+      "arab": "بَابُ ظَرْفِ الْمَكَانِ",
+      "keterangan": "Pembahasan tentang <strong>zharaf makan</strong> (keterangan tempat).",
+      "id": 175
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-makan",
+      "arab": "وَظَرْفُ الْمَكَانِ: هُوَ اسْمُ الْمَكَانِ الْمَنْصُوبُ بِتَقْدِيرِ فِي",
+      "keterangan": "<strong>Zharaf makan</strong> adalah isim tempat yang manshub dengan perkiraan makna <em>fi</em> (di).",
+      "id": 176
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-makan",
+      "arab": "نَحْوَ: أَمَامَ، وَخَلْفَ، وَقُدَّامَ، وَوَرَاءَ، وَفَوْقَ، وَتَحْتَ",
+      "keterangan": "Contoh: <em>أمامَ</em> (di depan), <em>خلفَ</em> (di belakang), <em>قدّامَ</em>, <em>وراءَ</em>, <em>فوقَ</em> (di atas), dan <em>تحتَ</em> (di bawah).",
+      "id": 177
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "dzaraf-makan",
+      "arab": "وَعِنْدَ، وَمَعَ، وَإِزَاءَ، وَحِذَاءَ، وَتِلْقَاءَ، وَثَمَّ، وَهُنَا، وَمَا أَشْبَهَ ذَلِكَ",
+      "keterangan": "Serta: <em>عندَ</em> (di sisi), <em>معَ</em> (bersama), <em>إزاءَ</em>, <em>حذاءَ</em>, <em>تلقاءَ</em>, <em>ثمَّ</em> (di sana), <em>هنا</em> (di sini), dan yang serupa dengannya.",
+      "id": 178
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "hal",
+      "arab": "بَابُ الْحَالِ",
+      "keterangan": "Pembahasan tentang <strong>hal</strong> (keterangan keadaan).",
+      "id": 179
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "hal",
+      "arab": "الْحَالُ: هُوَ الاِسْمُ الْمَنْصُوبُ الْمُفَسِّرُ لِمَا انْبَهَمَ مِنَ الْهَيْئَاتِ",
+      "keterangan": "<strong>Hal</strong> adalah isim manshub yang menjelaskan keadaan (bentuk/kondisi) yang masih samar dari pelaku atau objek.",
+      "id": 180
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "hal",
+      "arab": "نَحْوَ قَوْلِكَ: جَاءَ زَيْدٌ رَاكِبًا، وَرَكِبْتُ الْفَرَسَ مُسْرَجًا",
+      "keterangan": "Contoh: <em>جاءَ زيدٌ راكبًا</em> (Zaid datang dalam keadaan berkendara) dan <em>ركبتُ الفرسَ مسرَجًا</em> (aku menaiki kuda dalam keadaan sudah dipelanai).",
+      "id": 181
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "hal",
+      "arab": "وَلَا يَكُونُ الْحَالُ إِلَّا نَكِرَةً، وَلَا يَكُونُ إِلَّا بَعْدَ تَمَامِ الْكَلَامِ",
+      "keterangan": "Hal harus berupa isim <em>nakirah</em> (indefinit) dan hanya muncul setelah kalimat menjadi sempurna maknanya (setelah maf'ul atau fa'il disebutkan).",
+      "id": 182
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "hal",
+      "arab": "وَلَا يَكُونُ صَاحِبُهَا إِلَّا مَعْرِفَةً",
+      "keterangan": "Dan pemilik <em>hal</em> (<em>shahibul hal</em>) harus berupa isim <em>ma'rifah</em> (definit).",
+      "id": 183
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tamyiz",
+      "arab": "بَابُ التَّمْيِيزِ",
+      "keterangan": "Pembahasan tentang <strong>tamyiz</strong> (kata penjelas yang menghilangkan kesamaran).",
+      "id": 184
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tamyiz",
+      "arab": "التَّمْيِيزُ: هُوَ الاِسْمُ الْمَنْصُوبُ الْمُفَسِّرُ لِمَا انْبَهَمَ مِنَ الذَّوَاتِ",
+      "keterangan": "<strong>Tamyiz</strong> adalah isim manshub yang menjelaskan sesuatu yang masih samar dari suatu dzat/bilangan (berbeda dengan hal yang menjelaskan keadaan).",
+      "id": 185
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tamyiz",
+      "arab": "نَحْوَ قَوْلِكَ: تَصَبَّبَ زَيْدٌ عَرَقًا، وَتَفَقَّأَ بَكْرٌ شَحْمًا",
+      "keterangan": "Contoh: <em>تصبّبَ زيدٌ عرَقًا</em> (Zaid bercucuran keringat) dan <em>تفقّأَ بكرٌ شحمًا</em> (Bakr pecah karena lemak).",
+      "id": 186
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tamyiz",
+      "arab": "وَطَابَ مُحَمَّدٌ نَفْسًا، وَاشْتَرَيْتُ عِشْرِينَ غُلَامًا",
+      "keterangan": "Serta: <em>طابَ محمدٌ نفسًا</em> (Muhammad baik jiwanya) dan <em>اشتريتُ عشرينَ غلامًا</em> (aku membeli dua puluh budak) — <em>غلامًا</em> menjelaskan bilangan <em>عشرين</em>.",
+      "id": 187
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tamyiz",
+      "arab": "وَلَا يَكُونُ التَّمْيِيزُ إِلَّا نَكِرَةً",
+      "keterangan": "Tamyiz harus selalu berupa isim <em>nakirah</em>.",
+      "id": 188
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "بَابُ الاِسْتِثْنَاءِ",
+      "keterangan": "Pembahasan tentang <strong>istitsna'</strong> (pengecualian).",
+      "id": 189
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "وَحُرُوفُ الاِسْتِثْنَاءِ ثَمَانِيَةٌ، وَهِيَ: إِلَّا، وَغَيْرُ، وَسِوَى، وَسُوَى، وَسَوَاءٌ",
+      "keterangan": "Huruf/kata istitsna' ada delapan, di antaranya: <em>إلّا</em>, <em>غير</em>, <em>سوى</em>, <em>سُوى</em>, dan <em>سواء</em>.",
+      "id": 190
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "وَخَلَا، وَعَدَا، وَحَاشَا",
+      "keterangan": "Serta: <em>خلا</em>, <em>عدا</em>, dan <em>حاشا</em>.",
+      "id": 191
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "فَالْمُسْتَثْنَى بِإِلَّا يُنْصَبُ إِذَا كَانَ الْكَلَامُ تَامًّا مُوجَبًا",
+      "keterangan": "Kata yang dikecualikan (<em>mustatsna</em>) dengan <em>إلّا</em> dibaca <strong>manshub</strong> apabila kalimatnya <em>tam</em> (lengkap) dan <em>mujab</em> (positif, tanpa nafi).",
+      "id": 192
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "نَحْوَ قَوْلِكَ: قَامَ الْقَوْمُ إِلَّا زَيْدًا، وَخَرَجَ النَّاسُ إِلَّا عَمْرًا",
+      "keterangan": "Contoh: <em>قامَ القومُ إلّا زيدًا</em> (kaum itu berdiri kecuali Zaid) dan <em>خرجَ الناسُ إلّا عمرًا</em>.",
+      "id": 193
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "وَإِنْ كَانَ الْكَلَامُ مَنْفِيًّا تَامًّا جَازَ فِيهِ الْبَدَلُ وَالنَّصْبُ",
+      "keterangan": "Jika kalimatnya <em>manfi</em> (negatif) namun tetap lengkap, boleh dibaca sebagai <em>badal</em> mengikuti i'rab sebelumnya atau tetap <em>manshub</em>.",
+      "id": 194
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "istitsna",
+      "arab": "نَحْوَ قَوْلِكَ: مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ، وَإِلَّا زَيْدًا",
+      "keterangan": "Contoh: <em>ما قامَ القومُ إلّا زيدٌ</em> (dibaca rafa' sebagai badal) atau <em>إلّا زيدًا</em> (dibaca nashab).",
+      "id": 195
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "la-nafiyah",
+      "arab": "بَابُ لَا الَّتِي لِنَفْيِ الْجِنْسِ",
+      "keterangan": "Pembahasan tentang <em>لا</em> yang berfungsi menafikan seluruh jenis (<em>nafiyah lil-jins</em>).",
+      "id": 196
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "la-nafiyah",
+      "arab": "وَهِيَ تَعْمَلُ عَمَلَ إِنَّ إِذَا بَاشَرَتِ النَّكِرَةَ وَلَمْ تَتَكَرَّرْ لَا",
+      "keterangan": "<em>لا</em> jenis ini beramal seperti <em>إنّ</em> (menashabkan isim, merafa'kan khabar) apabila langsung bertemu isim <em>nakirah</em> dan tidak diulang.",
+      "id": 197
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "la-nafiyah",
+      "arab": "نَحْوَ قَوْلِكَ: لَا رَجُلَ فِي الدَّارِ",
+      "keterangan": "Contoh: <em>لا رجلَ في الدارِ</em> (tidak ada seorang pun laki-laki di rumah) — <em>رجلَ</em> menjadi isim <em>لا</em> yang manshub tanpa tanwin.",
+      "id": 198
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "la-nafiyah",
+      "arab": "فَإِنْ تَكَرَّرَتْ لَا جَازَ إِعْمَالُهَا وَإِلْغَاؤُهَا",
+      "keterangan": "Apabila <em>لا</em> diulang, boleh tetap beramal (menashabkan) atau dibiarkan tidak beramal.",
+      "id": 199
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "بَابُ النِّدَاءِ",
+      "keterangan": "Pembahasan tentang <strong>munada</strong> (kata yang dipanggil).",
+      "id": 200
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "حُرُوفُ النِّدَاءِ خَمْسَةٌ: يَا، وَأَيَا، وَهَيَا، وَأَيْ، وَالْهَمْزَةُ",
+      "keterangan": "Huruf nida' (panggilan) ada lima: <em>يا</em>, <em>أيا</em>, <em>هيا</em>, <em>أي</em>, dan <em>الهمزة</em> (أَ).",
+      "id": 201
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "فَالْمُنَادَى خَمْسَةُ أَنْوَاعٍ: الْمُفْرَدُ الْعَلَمُ، وَالنَّكِرَةُ الْمَقْصُودَةُ",
+      "keterangan": "Munada ada lima jenis, di antaranya: <em>mufrad 'alam</em> (nama tunggal) dan <em>nakirah maqshudah</em> (nakirah yang dimaksudkan tertentu).",
+      "id": 202
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "وَالنَّكِرَةُ غَيْرُ الْمَقْصُودَةِ، وَالْمُضَافُ، وَالشَّبِيهُ بِالْمُضَافِ",
+      "keterangan": "Serta: <em>nakirah ghairu maqshudah</em>, <em>mudhaf</em>, dan <em>syibhul mudhaf</em> (yang menyerupai mudhaf).",
+      "id": 203
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "فَأَمَّا الْمُفْرَدُ الْعَلَمُ وَالنَّكِرَةُ الْمَقْصُودَةُ فَيُبْنَيَانِ عَلَى الضَّمِّ مِنْ غَيْرِ تَنْوِينٍ",
+      "keterangan": "<em>Mufrad 'alam</em> dan <em>nakirah maqshudah</em> dibina di atas <em>dhammah</em> tanpa tanwin, contoh: <em>يا زيدُ</em>, <em>يا رجلُ</em>.",
+      "id": 204
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "munada",
+      "arab": "وَثَلاثَتُهَا الْبَاقِيَةُ مَنْصُوبَةٌ لَا غَيْرُ",
+      "keterangan": "Sedangkan tiga jenis yang lain (nakirah ghairu maqshudah, mudhaf, syibhul mudhaf) selalu dibaca <strong>manshub</strong>.",
+      "id": 205
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-lah",
+      "arab": "بَابُ الْمَفْعُولِ مِنْ أَجْلِهِ",
+      "keterangan": "Pembahasan tentang <strong>maf'ul li ajlih/min ajlih</strong> (objek sebab/alasan).",
+      "id": 206
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-lah",
+      "arab": "وَهُوَ الاِسْمُ الْمَنْصُوبُ الَّذِي يُذْكَرُ بَيَانًا لِسَبَبِ وُقُوعِ الْفِعْلِ",
+      "keterangan": "<strong>Maf'ul li ajlih</strong> adalah isim manshub yang disebutkan untuk menjelaskan sebab terjadinya suatu perbuatan.",
+      "id": 207
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-lah",
+      "arab": "نَحْوَ قَوْلِكَ: قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو، وَقَصَدْتُكَ ابْتِغَاءَ مَعْرُوفِكَ",
+      "keterangan": "Contoh: <em>قامَ زيدٌ إجلالًا لعمرٍو</em> (Zaid berdiri karena mengagungkan Amr) dan <em>قصدتُكَ ابتغاءَ معروفكَ</em> (aku menujumu karena mengharap kebaikanmu).",
+      "id": 208
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-maah",
+      "arab": "بَابُ الْمَفْعُولِ مَعَهُ",
+      "keterangan": "Pembahasan tentang <strong>maf'ul ma'ah</strong> (objek kebersamaan).",
+      "id": 209
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-maah",
+      "arab": "وَهُوَ الاِسْمُ الْمَنْصُوبُ الَّذِي يُذْكَرُ لِبَيَانِ مَنْ فُعِلَ مَعَهُ الْفِعْلُ",
+      "keterangan": "<strong>Maf'ul ma'ah</strong> adalah isim manshub yang disebutkan untuk menjelaskan sesuatu yang menyertai suatu perbuatan.",
+      "id": 210
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "maful-maah",
+      "arab": "نَحْوَ قَوْلِكَ: جَاءَ الْأَمِيرُ وَالْجَيْشَ، وَاسْتَوَى الْمَاءُ وَالْخَشَبَةَ",
+      "keterangan": "Contoh: <em>جاءَ الأميرُ والجيشَ</em> (Amir datang bersama pasukan) dan <em>استوى الماءُ والخشبةَ</em> (air itu rata dengan permukaan kayu).",
+      "id": 211
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "khabar-kana",
+      "arab": "بَابُ خَبَرِ كَانَ وَأَخَوَاتِهَا",
+      "keterangan": "Rincian tentang <strong>khabar kana</strong> yang berstatus manshub.",
+      "id": 212
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "khabar-kana",
+      "arab": "خَبَرُ كَانَ وَأَخَوَاتِهَا مَنْصُوبٌ أَبَدًا",
+      "keterangan": "<strong>Khabar</strong> dari <em>كان وأخواتها</em> selalu berstatus <strong>manshub</strong>, sedangkan isimnya tetap marfu'.",
+      "id": 213
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "khabar-kana",
+      "arab": "نَحْوَ: كَانَ زَيْدٌ قَائِمًا، وَأَصْبَحَ عَمْرٌو سَعِيدًا",
+      "keterangan": "Contoh: <em>كانَ زيدٌ قائمًا</em> dan <em>أصبحَ عمرٌو سعيدًا</em> — <em>قائمًا</em> dan <em>سعيدًا</em> adalah khabar yang manshub.",
+      "id": 214
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "ismu-inna",
+      "arab": "بَابُ اسْمِ إِنَّ وَأَخَوَاتِهَا",
+      "keterangan": "Rincian tentang <strong>isim inna</strong> yang berstatus manshub.",
+      "id": 215
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "ismu-inna",
+      "arab": "اسْمُ إِنَّ وَأَخَوَاتِهَا مَنْصُوبٌ أَبَدًا",
+      "keterangan": "<strong>Isim</strong> dari <em>إنّ وأخواتها</em> selalu berstatus <strong>manshub</strong>, sedangkan khabarnya tetap marfu'.",
+      "id": 216
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "ismu-inna",
+      "arab": "نَحْوَ: إِنَّ زَيْدًا قَائِمٌ، وَلَعَلَّ عَمْرًا شَاخِصٌ",
+      "keterangan": "Contoh: <em>إنّ زيدًا قائمٌ</em> dan <em>لعلّ عمرًا شاخصٌ</em> — <em>زيدًا</em> dan <em>عمرًا</em> adalah isim yang manshub.",
+      "id": 217
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tawabi-manshub",
+      "arab": "التَّابِعُ لِلْمَنْصُوبِ",
+      "keterangan": "Rincian tentang isim yang mengikuti (tabi') isim manshub.",
+      "id": 218
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tawabi-manshub",
+      "arab": "وَالتَّابِعُ لِلْمَنْصُوبِ مَنْصُوبٌ أَبَدًا، وَهُوَ أَرْبَعَةُ أَشْيَاءَ",
+      "keterangan": "Isim yang men-tabi'-i isim manshub juga wajib berstatus <strong>manshub</strong>, ada empat jenisnya.",
+      "id": 219
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tawabi-manshub",
+      "arab": "النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ، كَمَا تَقَدَّمَ فِي بَابِ التَّوَابِعِ",
+      "keterangan": "Yaitu <em>na'at</em>, <em>athaf</em>, <em>taukid</em>, dan <em>badal</em>, sebagaimana telah dijelaskan pada Bab Tawabi', namun di sini mengikuti kata yang berstatus manshub.",
+      "id": 220
+    },
+    {
+      "babId": "bab-manshubat",
+      "subBabId": "tawabi-manshub",
+      "arab": "نَحْوَ قَوْلِكَ: رَأَيْتُ زَيْدًا الْعَاقِلَ، وَرَأَيْتُ زَيْدًا وَعَمْرًا",
+      "keterangan": "Contoh na'at: <em>رأيتُ زيدًا العاقلَ</em>; contoh 'athaf: <em>رأيتُ زيدًا وعمرًا</em> — keduanya manshub mengikuti <em>زيدًا</em>.",
+      "id": 221
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "makhfudhotul-muqaddimah",
+      "arab": "الْمَخْفُوضَاتُ ثَلَاثَةٌ: مَخْفُوضٌ بِالْحَرْفِ، وَمَخْفُوضٌ بِالْإِضَافَةِ، وَتَابِعٌ لِلْمَخْفُوضِ",
+      "keterangan": "<span class=\"arab-ref\">المخفوضات</span> (isim-isim yang berstatus khafd/jar) ada tiga jenis: yang dikhafadkan oleh <strong>huruf jar</strong>, yang dikhafadkan oleh <strong>idhafah</strong> (penyandaran), dan yang mengikuti (tabi') isim yang majrur.",
+      "id": 222
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-harf",
+      "arab": "فَأَمَّا الْمَخْفُوضُ بِالْحَرْفِ فَهُوَ مَا يُخْفَضُ بِمِنْ، وَإِلَى، وَعَنْ، وَعَلَى، وَفِي",
+      "keterangan": "<strong>Majrur bil-harf</strong> adalah isim yang dijarkan oleh huruf jar seperti <em>مِنْ</em>, <em>إلى</em>, <em>عَنْ</em>, <em>على</em>, dan <em>في</em>.",
+      "id": 223
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-harf",
+      "arab": "وَرُبَّ، وَالْبَاءِ، وَالْكَافِ، وَاللَّامِ",
+      "keterangan": "Serta huruf jar: <em>رُبَّ</em>, <em>الباء</em>, <em>الكاف</em>, dan <em>اللام</em>.",
+      "id": 224
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-harf",
+      "arab": "وَبِوَاوِ رُبَّ، وَالتَّاءِ، وَمُذْ، وَمُنْذُ",
+      "keterangan": "Dan huruf jar: <em>واو رُبَّ</em> (waw yang bermakna rubba), <em>التاء</em> (untuk qasam), <em>مذ</em>, dan <em>منذ</em> (sejak).",
+      "id": 225
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-harf",
+      "arab": "نَحْوَ قَوْلِكَ: مَرَرْتُ بِزَيْدٍ، وَذَهَبْتُ إِلَى عَمْرٍو",
+      "keterangan": "Contoh: <em>مررتُ بزيدٍ</em> (aku melewati Zaid) dan <em>ذهبتُ إلى عمرٍو</em> (aku pergi kepada Amr).",
+      "id": 226
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-idhafah",
+      "arab": "وَأَمَّا الْمَخْفُوضُ بِالْإِضَافَةِ فَنَحْوَ قَوْلِكَ: غُلَامُ زَيْدٍ",
+      "keterangan": "<strong>Majrur bil-idhafah</strong> (dikhafadkan karena disandarkan pada isim lain), contoh: <em>غلامُ زيدٍ</em> (budak milik Zaid) — <em>زيد</em> majrur karena menjadi <em>mudhaf ilaih</em>.",
+      "id": 227
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-idhafah",
+      "arab": "وَالْإِضَافَةُ عَلَى قِسْمَيْنِ: مَا تَقْدِيرُهُ مِنْ، وَمَا تَقْدِيرُهُ اللَّامُ",
+      "keterangan": "Idhafah terbagi dua: yang taqdirnya bermakna <em>مِنْ</em> (dari, menunjukkan jenis) dan yang taqdirnya bermakna <em>اللام</em> (kepemilikan).",
+      "id": 228
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-idhafah",
+      "arab": "فَالَّذِي عَلَى تَقْدِيرِ اللَّامِ نَحْوَ قَوْلِكَ: غُلَامُ زَيْدٍ",
+      "keterangan": "Idhafah bermakna <em>اللام</em> (kepemilikan), contoh: <em>غلامُ زيدٍ</em> (budak kepunyaan Zaid).",
+      "id": 229
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "majrur-bil-idhafah",
+      "arab": "وَالَّذِي عَلَى تَقْدِيرِ مِنْ نَحْوَ قَوْلِكَ: ثَوْبُ خَزٍّ، وَبَابُ سَاجٍ، وَخَاتَمُ حَدِيدٍ",
+      "keterangan": "Idhafah bermakna <em>مِنْ</em> (menunjukkan bahan/jenis), contoh: <em>ثوبُ خزٍّ</em> (baju dari sutra), <em>بابُ ساجٍ</em> (pintu dari kayu jati), dan <em>خاتمُ حديدٍ</em> (cincin dari besi).",
+      "id": 230
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "tawabi-majrur",
+      "arab": "وَأَمَّا التَّابِعُ لِلْمَخْفُوضِ فَهُوَ مَجْرُورٌ أَبَدًا، وَهُوَ أَرْبَعَةُ أَشْيَاءَ",
+      "keterangan": "Isim yang men-tabi'-i isim majrur juga wajib berstatus <strong>majrur</strong>, ada empat jenisnya.",
+      "id": 231
+    },
+    {
+      "babId": "bab-makhfudhotul-asma",
+      "subBabId": "tawabi-majrur",
+      "arab": "النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ، نَحْوَ قَوْلِكَ: مَرَرْتُ بِزَيْدٍ الْعَاقِلِ",
+      "keterangan": "Yaitu <em>na'at</em>, <em>athaf</em>, <em>taukid</em>, dan <em>badal</em> — contoh na'at: <em>مررتُ بزيدٍ العاقلِ</em> (aku melewati Zaid yang berakal), <em>العاقل</em> mengikuti i'rab khafd dari <em>زيد</em>.",
+      "id": 232
+    }
+  ]
+}

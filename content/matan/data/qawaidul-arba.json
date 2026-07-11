@@ -1,0 +1,290 @@
+{
+  "babList": [
+    {
+      "babId": "bab-muqaddimah",
+      "title": "الْمُقَدِّمَةُ",
+      "subBab": []
+    },
+    {
+      "babId": "bab-qaidah-1",
+      "title": "الْقَاعِدَةُ الْأُولَى",
+      "subBab": []
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "title": "الْقَاعِدَةُ الثَّانِيَةُ",
+      "subBab": []
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "title": "الْقَاعِدَةُ الثَّالِثَةُ",
+      "subBab": []
+    },
+    {
+      "babId": "bab-qaidah-4",
+      "title": "الْقَاعِدَةُ الرَّابِعَةُ",
+      "subBab": []
+    }
+  ],
+  "baits": [
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "keterangan": "Penulis <em>rahimahullah</em> memulai risalahnya dengan <em>basmalah</em>, mengikuti sunnah para ulama dalam memulai setiap karya tulis dan perbuatan penting dengan menyebut nama Allah.",
+      "id": 1
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "أَسْأَلُ اللَّهَ الْكَرِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَتَوَلَّاكَ فِي الدُّنْيَا وَالْآخِرَةِ",
+      "keterangan": "Penulis membuka risalah ini dengan doa yang tulus untuk pembaca/penuntut ilmu: memohon kepada <strong>Allah Yang Maha Pemurah</strong>, <strong>Rabb (pemilik) 'Arsy yang agung</strong>, agar senantiasa menjaga dan menolongnya, baik di dunia maupun di akhirat.",
+      "id": 2
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَأَنْ يَجْعَلَكَ مُبَارَكًا أَيْنَمَا كُنْتَ",
+      "keterangan": "Doa berikutnya: agar Allah menjadikan pembaca sebagai pribadi yang penuh <strong>keberkahan</strong> di mana pun ia berada — bermanfaat bagi dirinya sendiri maupun orang lain.",
+      "id": 3
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَأَنْ يَجْعَلَكَ مِمَّنْ إِذَا أُعْطِيَ شَكَرَ، وَإِذَا ابْتُلِيَ صَبَرَ، وَإِذَا أَذْنَبَ اسْتَغْفَرَ",
+      "keterangan": "Penulis mendoakan agar pembaca termasuk golongan yang memiliki tiga sifat mulia: <strong>bersyukur</strong> ketika diberi nikmat, <strong>bersabar</strong> ketika ditimpa ujian, dan <strong>beristighfar</strong> (memohon ampun) ketika berbuat dosa.",
+      "id": 4
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "فَإِنَّ هَؤُلَاءِ الثَّلَاثَ عُنْوَانُ السَّعَادَةِ",
+      "keterangan": "Tiga sifat tadi — syukur, sabar, dan istighfar — disebut sebagai <strong>tanda/simbol kebahagiaan</strong> seorang hamba, karena mencakup seluruh keadaan hidup manusia: saat lapang, saat susah, dan saat berbuat salah.",
+      "id": 5
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "اعْلَمْ أَرْشَدَكَ اللَّهُ لِطَاعَتِهِ: أَنَّ الْحَنِيفِيَّةَ مِلَّةُ إِبْرَاهِيمَ: أَنْ تَعْبُدَ اللَّهَ وَحْدَهُ مُخْلِصًا لَهُ الدِّينَ",
+      "keterangan": "Penulis mulai masuk ke inti pembahasan: <strong>\"Ketahuilah, semoga Allah membimbingmu kepada ketaatan kepada-Nya\"</strong> — bahwa agama yang lurus (<em>al-hanīfiyyah</em>), yaitu millah/agama Nabi Ibrahim 'alaihissalam, intinya adalah <strong>beribadah kepada Allah semata dengan memurnikan agama (ibadah) hanya untuk-Nya</strong>.",
+      "id": 6
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "كَمَا قَالَ تَعَالَى: [[ayat:وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ]]",
+      "keterangan": "Dalil atas hal tersebut: <strong>QS. Adz-Dzariyat: 56</strong>. Allah berfirman bahwa Dia tidaklah menciptakan jin dan manusia melainkan agar mereka beribadah kepada-Nya semata — inilah tujuan penciptaan yang menjadi dasar seluruh pembahasan risalah ini.",
+      "id": 7
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "فَإِذَا عَرَفْتَ أَنَّ اللَّهَ خَلَقَكَ لِعِبَادَتِهِ، فَاعْلَمْ أَنَّ الْعِبَادَةَ لَا تُسَمَّى عِبَادَةً إِلَّا مَعَ التَّوْحِيدِ، كَمَا أَنَّ الصَّلَاةَ لَا تُسَمَّى صَلَاةً إِلَّا مَعَ الطَّهَارَةِ",
+      "keterangan": "Setelah mengetahui bahwa Allah menciptakan manusia untuk beribadah, penulis menjelaskan syarat sahnya ibadah: <strong>ibadah tidak disebut ibadah kecuali disertai tauhid</strong> — sama seperti shalat tidak sah disebut shalat kecuali disertai thaharah (bersuci). Perumpamaan ini menunjukkan bahwa tauhid adalah syarat mutlak diterimanya ibadah.",
+      "id": 8
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "فَإِذَا دَخَلَ الشِّرْكُ فِي الْعِبَادَةِ فَسَدَتْ، كَالْحَدَثِ إِذَا دَخَلَ فِي الطَّهَارَةِ",
+      "keterangan": "Sebagaimana wudhu batal jika terkena hadats, maka <strong>ibadah menjadi rusak apabila tercampuri kesyirikan</strong> — walau sekecil apa pun bentuk syirik yang masuk ke dalamnya, ibadah tersebut tidak lagi bernilai sebagai ibadah yang benar.",
+      "id": 9
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "فَإِذَا عَرَفْتَ أَنَّ الشِّرْكَ إِذَا خَالَطَ الْعِبَادَةَ أَفْسَدَهَا، وَأَحْبَطَ الْعَمَلَ، وَصَارَ صَاحِبُهُ مِنَ الْخَالِدِينَ فِي النَّارِ",
+      "keterangan": "Konsekuensi dari tercampurnya syirik dalam ibadah sangatlah besar: <strong>merusak seluruh amal, menggugurkan pahalanya</strong>, bahkan menjadikan pelakunya <strong>kekal di dalam neraka</strong> jika syirik tersebut adalah syirik besar dan ia mati di atasnya tanpa bertaubat.",
+      "id": 10
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "عَرَفْتَ أَنَّ أَهَمَّ مَا عَلَيْكَ مَعْرِفَةُ ذَلِكَ؛ لَعَلَّ اللَّهَ أَنْ يُخَلِّصَكَ مِنْ هَذِهِ الشَّبَكَةِ، وَهِيَ الشِّرْكُ بِاللَّهِ",
+      "keterangan": "Karena besarnya bahaya tersebut, penulis menegaskan bahwa <strong>perkara terpenting yang wajib diketahui</strong> setiap muslim adalah memahami hakikat syirik ini, dengan harapan Allah menyelamatkannya dari jeratan (<em>syabakah</em>) syirik.",
+      "id": 11
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "الَّذِي قَالَ اللَّهُ تَعَالَى فِيهِ: [[ayat:إِنَّ اللَّهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَنْ يَشَاءُ]]",
+      "keterangan": "Dalil atas betapa berbahayanya syirik: <strong>QS. An-Nisa': 116</strong>. Allah menegaskan bahwa Dia tidak akan mengampuni dosa syirik (jika pelakunya mati di atasnya tanpa taubat), namun Dia mengampuni dosa-dosa selain syirik bagi siapa saja yang Dia kehendaki.",
+      "id": 12
+    },
+    {
+      "babId": "bab-muqaddimah",
+      "subBabId": null,
+      "arab": "وَذَٰلِكَ بِمَعْرِفَةِ أَرْبَعِ قَوَاعِدَ ذَكَرَهَا اللَّهُ تَعَالَى فِي كِتَابِهِ",
+      "keterangan": "Jalan untuk selamat dari jeratan syirik dan memahami hakikatnya adalah dengan <strong>mengetahui empat kaidah</strong> yang telah disebutkan Allah Ta'ala di dalam Kitab-Nya (Al-Qur'an) — inilah empat kaidah yang akan dijelaskan satu per satu pada bab-bab selanjutnya.",
+      "id": 13
+    },
+    {
+      "babId": "bab-qaidah-1",
+      "subBabId": null,
+      "arab": "الْقَاعِدَةُ الْأُولَى: أَنْ تَعْلَمَ أَنَّ الْكُفَّارَ الَّذِينَ قَاتَلَهُمْ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ مُقِرُّونَ بِأَنَّ اللَّهَ تَعَالَى هُوَ الْخَالِقُ الْمُدَبِّرُ",
+      "keterangan": "<strong>Kaidah pertama</strong>: hendaklah engkau mengetahui bahwa kaum kafir yang diperangi oleh Rasulullah ﷺ sesungguhnya <strong>mengakui</strong> bahwa Allah Ta'ala-lah satu-satunya <em>Al-Khāliq</em> (Pencipta) dan <em>Al-Mudabbir</em> (Pengatur segala urusan alam semesta). Inilah yang disebut <strong>tauhid rububiyyah</strong>.",
+      "id": 14
+    },
+    {
+      "babId": "bab-qaidah-1",
+      "subBabId": null,
+      "arab": "وَأَنَّ ذَٰلِكَ لَمْ يُدْخِلْهُمْ فِي الْإِسْلَامِ",
+      "keterangan": "Meskipun mereka mengakui hal itu, <strong>pengakuan tersebut tidak menjadikan mereka masuk Islam</strong>. Artinya, sekadar mengakui bahwa Allah adalah pencipta dan pengatur alam belumlah cukup untuk menjadi seorang muslim.",
+      "id": 15
+    },
+    {
+      "babId": "bab-qaidah-1",
+      "subBabId": null,
+      "arab": "وَالدَّلِيلُ قَوْلُهُ تَعَالَى: [[ayat:قُلْ مَنْ يَرْزُقُكُمْ مِنَ السَّمَاءِ وَالْأَرْضِ أَمَّنْ يَمْلِكُ السَّمْعَ وَالْأَبْصَارَ وَمَنْ يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَيُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَمَنْ يُدَبِّرُ الْأَمْرَ فَسَيَقُولُونَ اللَّهُ فَقُلْ أَفَلَا تَتَّقُونَ]]",
+      "keterangan": "Dalil kaidah ini: <strong>QS. Yunus: 31</strong>. Allah memerintahkan Nabi-Nya ﷺ bertanya kepada kaum musyrikin: siapa yang memberi rezeki dari langit dan bumi, siapa yang menguasai pendengaran dan penglihatan, siapa yang mengeluarkan yang hidup dari yang mati dan sebaliknya, serta siapa yang mengatur segala urusan? Mereka pasti akan menjawab: <strong>\"Allah\"</strong>. Meski mengakui hal ini, mereka tetap diperintahkan untuk bertakwa (yakni mengesakan-Nya dalam ibadah), yang menunjukkan pengakuan rububiyyah saja belum cukup untuk menjadikan mereka muslim.",
+      "id": 16
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "الْقَاعِدَةُ الثَّانِيَةُ: أَنَّهُمْ يَقُولُونَ: مَا دَعَوْنَاهُمْ وَتَوَجَّهْنَا إِلَيْهِمْ إِلَّا لِطَلَبِ الْقُرْبَةِ وَالشَّفَاعَةِ",
+      "keterangan": "<strong>Kaidah kedua</strong>: bahwa kaum musyrikin berdalih, mereka berdoa dan menghadapkan diri kepada berhala-berhala serta orang-orang shalih itu <strong>bukan karena meyakini benda-benda itu bisa memberi manfaat/mudarat dengan sendirinya</strong>, melainkan hanya untuk mencari <em>al-qurbah</em> (kedekatan kepada Allah) dan mengharap <em>asy-syafā'ah</em> (syafaat/pertolongan) di sisi-Nya.",
+      "id": 17
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "فَدَلِيلُ الْقُرْبَةِ قَوْلُهُ تَعَالَى: [[ayat:وَالَّذِينَ اتَّخَذُوا مِنْ دُونِهِ أَوْلِيَاءَ مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ إِنَّ اللَّهَ يَحْكُمُ بَيْنَهُمْ فِي مَا هُمْ فِيهِ يَخْتَلِفُونَ إِنَّ اللَّهَ لَا يَهْدِي مَنْ هُوَ كَاذِبٌ كَفَّارٌ]]",
+      "keterangan": "Dalil <em>qurbah</em> (kedekatan): <strong>QS. Az-Zumar: 3</strong>. Allah mengabarkan alasan kaum musyrikin dalam menyembah selain-Nya: mereka mengaku tidak menyembah berhala-berhala itu kecuali agar berhala-berhala itu mendekatkan mereka kepada Allah sedekat-dekatnya. Ini membuktikan bahwa mereka sebenarnya sudah mengakui Allah sebagai tujuan akhir, namun tetap menyekutukan-Nya dengan perantara.",
+      "id": 18
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "وَدَلِيلُ الشَّفَاعَةِ قَوْلُهُ تَعَالَى: [[ayat:وَيَعْبُدُونَ مِنْ دُونِ اللَّهِ مَا لَا يَضُرُّهُمْ وَلَا يَنْفَعُهُمْ وَيَقُولُونَ هَٰؤُلَاءِ شُفَعَاؤُنَا عِنْدَ اللَّهِ]]",
+      "keterangan": "Dalil syafaat: <strong>QS. Yunus: 18</strong>. Allah menceritakan bahwa kaum musyrikin menyembah sesuatu yang tidak dapat memberi mudarat maupun manfaat kepada mereka, seraya berkata: <strong>\"Mereka itu adalah pemberi syafaat kami di sisi Allah.\"</strong> Ayat ini menegaskan bahwa dasar peribadatan mereka kepada selain Allah adalah semata-mata untuk mendapatkan syafaat.",
+      "id": 19
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "وَالشَّفَاعَةُ شَفَاعَتَانِ: شَفَاعَةٌ مَنْفِيَّةٌ، وَشَفَاعَةٌ مُثْبَتَةٌ",
+      "keterangan": "Penulis merinci bahwa <strong>syafaat itu ada dua macam</strong>: syafaat yang ditiadakan/dilarang (<em>manfiyyah</em>), dan syafaat yang diakui/ditetapkan syariat (<em>mutsbatah</em>). Pembagian ini penting untuk membedakan syafaat yang benar dari syafaat yang menjadi sarana kesyirikan.",
+      "id": 20
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "فَالشَّفَاعَةُ الْمَنْفِيَّةُ: مَا كَانَتْ تُطْلَبُ مِنْ غَيْرِ اللَّهِ فِيمَا لَا يَقْدِرُ عَلَيْهِ إِلَّا اللَّهُ",
+      "keterangan": "<strong>Syafaat yang ditiadakan/dilarang</strong>: yaitu syafaat yang diminta langsung dari selain Allah, dalam perkara yang hanya Allah sanggup melakukannya. Meminta syafaat dengan cara berdoa dan menyembah kepada perantara termasuk bentuk kesyirikan.",
+      "id": 21
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "وَالدَّلِيلُ قَوْلُهُ تَعَالَى: [[ayat:يَا أَيُّهَا الَّذِينَ آمَنُوا أَنْفِقُوا مِمَّا رَزَقْنَاكُمْ مِنْ قَبْلِ أَنْ يَأْتِيَ يَوْمٌ لَا بَيْعٌ فِيهِ وَلَا خُلَّةٌ وَلَا شَفَاعَةٌ وَالْكَافِرُونَ هُمُ الظَّالِمُونَ]]",
+      "keterangan": "Dalil syafaat yang ditiadakan: <strong>QS. Al-Baqarah: 254</strong>. Allah mengabarkan bahwa pada hari kiamat kelak tidak ada lagi jual-beli, tidak ada persahabatan (yang bisa menolong), dan tidak ada syafaat (yang bisa diminta secara langsung dari selain-Nya) — ayat ini turun dalam konteks memperingatkan orang-orang kafir yang menggantungkan harapan syafaat kepada sesembahan mereka.",
+      "id": 22
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "وَالشَّفَاعَةُ الْمُثْبَتَةُ: هِيَ الَّتِي تُطْلَبُ مِنَ اللَّهِ، وَالشَّافِعُ مُكَرَّمٌ بِالشَّفَاعَةِ، وَالْمَشْفُوعُ لَهُ مَنْ رَضِيَ اللَّهُ قَوْلَهُ وَعَمَلَهُ بَعْدَ الْإِذْنِ",
+      "keterangan": "Adapun <strong>syafaat yang diakui/ditetapkan</strong> dalam syariat memiliki tiga unsur: (1) permohonannya ditujukan kepada Allah semata, (2) pemberi syafaat dimuliakan Allah dengan diberi izin untuk memberi syafaat, dan (3) yang diberi syafaat adalah orang yang diridhai Allah baik ucapan maupun perbuatannya — sebagaimana syafaat Nabi ﷺ kelak di akhirat.",
+      "id": 23
+    },
+    {
+      "babId": "bab-qaidah-2",
+      "subBabId": null,
+      "arab": "كَمَا قَالَ تَعَالَى: [[ayat:مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ]]",
+      "keterangan": "Dalil syafaat yang ditetapkan: <strong>QS. Al-Baqarah: 255</strong> (ayat Kursi). Allah menegaskan tidak ada satu pun yang dapat memberi syafaat di sisi-Nya kecuali dengan izin-Nya — menunjukkan bahwa syafaat yang sah hanyalah yang terjadi atas izin Allah, bukan yang diminta secara langsung dari makhluk seolah-olah makhluk itu memiliki kuasa sendiri.",
+      "id": 24
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "الْقَاعِدَةُ الثَّالِثَةُ: أَنَّ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ ظَهَرَ عَلَى نَاسٍ مُتَفَرِّقِينَ فِي عِبَادَاتِهِمْ",
+      "keterangan": "<strong>Kaidah ketiga</strong>: bahwa Nabi Muhammad ﷺ diutus di tengah-tengah manusia yang <strong>beragam bentuk peribadatan (kesyirikan) mereka</strong> — tidak seragam dalam sesembahan yang mereka sembah selain Allah.",
+      "id": 25
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "بَعْضُهُمْ يَعْبُدُ الْمَلَائِكَةَ، وَبَعْضُهُمْ يَعْبُدُ الْأَنْبِيَاءَ وَالصَّالِحِينَ، وَبَعْضُهُمْ يَعْبُدُ الْأَشْجَارَ وَالْأَحْجَارَ، وَبَعْضُهُمْ يَعْبُدُ الشَّمْسَ وَالْقَمَرَ",
+      "keterangan": "Perincian keberagaman sesembahan mereka: sebagian menyembah <strong>malaikat</strong>, sebagian menyembah <strong>para nabi dan orang-orang shalih</strong>, sebagian menyembah <strong>pohon dan batu</strong>, dan sebagian lagi menyembah <strong>matahari dan bulan</strong>.",
+      "id": 26
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَقَاتَلَهُمْ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَلَمْ يُفَرِّقْ بَيْنَهُمْ",
+      "keterangan": "Meskipun sesembahan mereka berbeda-beda jenisnya, <strong>Rasulullah ﷺ tetap memerangi mereka semua tanpa membeda-bedakan</strong> — karena esensi kesyirikan tetap sama: mempersekutukan Allah dalam ibadah, apa pun objek yang disembah selain-Nya.",
+      "id": 27
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَالدَّلِيلُ قَوْلُهُ تَعَالَى: [[ayat:وَقَاتِلُوهُمْ حَتَّىٰ لَا تَكُونَ فِتْنَةٌ وَيَكُونَ الدِّينُ كُلُّهُ لِلَّهِ]]",
+      "keterangan": "Dalil kaidah ini: <strong>QS. Al-Anfal: 39</strong>. Allah memerintahkan untuk memerangi kaum musyrikin sampai tidak ada lagi fitnah (kesyirikan) dan seluruh ketaatan/ibadah murni hanya untuk Allah semata — perintah ini bersifat umum, mencakup segala bentuk sesembahan selain Allah, tanpa membeda-bedakan jenisnya.",
+      "id": 28
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَدَلِيلُ الشَّمْسِ وَالْقَمَرِ قَوْلُهُ تَعَالَى: [[ayat:وَمِنْ آيَاتِهِ اللَّيْلُ وَالنَّهَارُ وَالشَّمْسُ وَالْقَمَرُ لَا تَسْجُدُوا لِلشَّمْسِ وَلَا لِلْقَمَرِ وَاسْجُدُوا لِلَّهِ الَّذِي خَلَقَهُنَّ إِنْ كُنْتُمْ إِيَّاهُ تَعْبُدُونَ]]",
+      "keterangan": "Dalil khusus terkait penyembah matahari dan bulan: <strong>QS. Fushshilat: 37</strong>. Allah melarang bersujud kepada matahari dan bulan, dan memerintahkan agar sujud hanya kepada Allah yang menciptakan keduanya — menunjukkan bahwa matahari dan bulan, meski merupakan tanda kebesaran Allah, sama sekali tidak boleh dijadikan objek ibadah.",
+      "id": 29
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَدَلِيلُ الْمَلَائِكَةِ قَوْلُهُ تَعَالَى: [[ayat:وَلَا يَأْمُرَكُمْ أَنْ تَتَّخِذُوا الْمَلَائِكَةَ وَالنَّبِيِّينَ أَرْبَابًا، أَيَأْمُرُكُمْ بِالْكُفْرِ بَعْدَ إِذْ أَنْتُمْ مُسْلِمُونَ]]",
+      "keterangan": "Dalil khusus terkait penyembah malaikat: <strong>QS. Ali 'Imran: 80</strong>. Allah menegaskan bahwa tidak mungkin seorang nabi memerintahkan umatnya untuk menjadikan malaikat dan para nabi sebagai <em>arbāb</em> (sesembahan/tuhan), karena hal itu sama saja mengajak kepada kekufuran setelah keislaman.",
+      "id": 30
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَدَلِيلُ الصَّالِحِينَ قَوْلُهُ تَعَالَى: [[ayat:أُولَٰئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَىٰ رَبِّهِمُ الْوَسِيلَةَ أَيُّهُمْ أَقْرَبُ وَيَرْجُونَ رَحْمَتَهُ وَيَخَافُونَ عَذَابَهُ]]",
+      "keterangan": "Dalil khusus terkait penyembah orang-orang shalih: <strong>QS. Al-Isra': 57</strong>. Allah mengabarkan bahwa mereka yang diseru (seperti Nabi Isa 'alaihissalam, malaikat, atau orang shalih lain) justru mereka sendiri mencari <em>al-wasīlah</em> (jalan mendekatkan diri) kepada Allah, mengharap rahmat-Nya, dan takut akan azab-Nya — sehingga tidak layak mereka dijadikan sesembahan.",
+      "id": 31
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَدَلِيلُ الْأَشْجَارِ وَالْأَحْجَارِ قَوْلُهُ تَعَالَى: [[ayat:أَفَرَأَيْتُمُ اللَّاتَ وَالْعُزَّىٰ، وَمَنَاةَ الثَّالِثَةَ الْأُخْرَىٰ]]",
+      "keterangan": "Dalil khusus terkait penyembah pohon dan batu: <strong>QS. An-Najm: 19-20</strong>. Allah menyebut nama tiga berhala besar kaum Quraisy — <em>Al-Lata</em>, <em>Al-'Uzza</em>, dan <em>Manah</em> — yang berwujud batu (dan sebagiannya dahulu berupa pohon) yang disembah selain Allah. Penyebutan ini sebagai bantahan atas kesyirikan mereka.",
+      "id": 32
+    },
+    {
+      "babId": "bab-qaidah-3",
+      "subBabId": null,
+      "arab": "وَحَدِيثُ أَبِي وَاقِدٍ اللَّيْثِيِّ رَضِيَ اللَّهُ عَنْهُ، قَالَ: [[hadits:خَرَجْنَا مَعَ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِلَىٰ حُنَيْنٍ وَنَحْنُ حُدَثَاءُ عَهْدٍ بِكُفْرٍ، وَلِلْمُشْرِكِينَ سِدْرَةٌ يَعْكُفُونَ عِنْدَهَا وَيَنُوطُونَ بِهَا أَسْلِحَتَهُمْ، يُقَالُ لَهَا: ذَاتُ أَنْوَاطٍ، فَمَرَرْنَا بِسِدْرَةٍ، فَقُلْنَا: يَا رَسُولَ اللَّهِ، اجْعَلْ لَنَا ذَاتَ أَنْوَاطٍ كَمَا لَهُمْ ذَاتُ أَنْوَاطٍ]]",
+      "keterangan": "Dalil kedua terkait penyembah pohon: <strong>hadits Abu Waqid Al-Laitsi radhiyallahu 'anhu</strong>. Beliau bercerita bahwa dalam perjalanan bersama Rasulullah ﷺ menuju Perang Hunain, saat mereka masih baru meninggalkan kekufuran, mereka melewati sebuah pohon bidara (<em>Dzātu Anwāth</em>) yang biasa dijadikan kaum musyrikin tempat beri'tikaf dan menggantungkan senjata mereka untuk mengharap berkah. Sebagian sahabat bahkan meminta Nabi ﷺ untuk dibuatkan pohon serupa — menunjukkan betapa mudahnya kesyirikan seperti ini menyusup meski di kalangan orang yang baru masuk Islam, sehingga Nabi ﷺ segera menegur dan meluruskan mereka.",
+      "id": 33
+    },
+    {
+      "babId": "bab-qaidah-4",
+      "subBabId": null,
+      "arab": "الْقَاعِدَةُ الرَّابِعَةُ: أَنَّ مُشْرِكِي زَمَانِنَا أَغْلَظُ شِرْكًا مِنَ الْأَوَّلِينَ",
+      "keterangan": "<strong>Kaidah keempat</strong>: bahwa kesyirikan orang-orang belakangan (di zaman penulis, dan yang serupa dengan mereka) <strong>lebih berat</strong> dibandingkan kesyirikan orang-orang terdahulu (kaum musyrikin di zaman Nabi ﷺ).",
+      "id": 34
+    },
+    {
+      "babId": "bab-qaidah-4",
+      "subBabId": null,
+      "arab": "لِأَنَّ الْأَوَّلِينَ يُشْرِكُونَ فِي الرَّخَاءِ، وَيُخْلِصُونَ فِي الشِّدَّةِ، وَمُشْرِكُو زَمَانِنَا شِرْكُهُمْ دَائِمٌ فِي الرَّخَاءِ وَالشِّدَّةِ",
+      "keterangan": "Alasannya: <strong>orang-orang terdahulu</strong> berbuat syirik (berdoa kepada selain Allah) hanya <strong>ketika dalam keadaan lapang/aman</strong>, namun ketika ditimpa kesulitan dan bahaya yang genting, mereka <strong>kembali ikhlas</strong> hanya berdoa kepada Allah semata. Sedangkan <strong>kesyirikan orang-orang belakangan</strong> bersifat <strong>terus-menerus</strong>, baik dalam keadaan lapang maupun ketika ditimpa kesulitan — inilah sebab syirik mereka dinilai lebih berat.",
+      "id": 35
+    },
+    {
+      "babId": "bab-qaidah-4",
+      "subBabId": null,
+      "arab": "وَالدَّلِيلُ قَوْلُهُ تَعَالَى: [[ayat:فَإِذَا رَكِبُوا فِي الْفُلْكِ دَعَوُا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ فَلَمَّا نَجَّاهُمْ إِلَى الْبَرِّ إِذَا هُمْ يُشْرِكُونَ]]",
+      "keterangan": "Dalil kaidah ini: <strong>QS. Al-'Ankabut: 65</strong>. Allah menceritakan keadaan kaum musyrikin terdahulu: apabila mereka menaiki perahu (dalam kondisi genting di tengah lautan), mereka berdoa kepada Allah dengan ikhlas memurnikan agama (doa) hanya untuk-Nya. Namun setelah Allah menyelamatkan mereka ke daratan, mereka kembali berbuat syirik — menjadi bukti bahwa syirik mereka hilang saat genting, berbeda dengan syirik orang-orang belakangan yang tidak pernah lenyap baik dalam keadaan lapang maupun sempit.",
+      "id": 36
+    },
+    {
+      "babId": "bab-qaidah-4",
+      "subBabId": null,
+      "arab": "تَمَّتِ الْقَوَاعِدُ الْأَرْبَعُ، وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "keterangan": "Dengan selesainya penjelasan kaidah keempat ini, tuntaslah pembahasan <strong>Al-Qawa'idul Arba'</strong> (Empat Kaidah) yang disusun oleh Syaikh Muhammad bin Abdul Wahhab <em>rahimahullah</em> — sebuah risalah ringkas namun sangat penting untuk memahami hakikat tauhid dan syirik. Segala puji bagi Allah, Rabb semesta alam.",
+      "id": 37
+    }
+  ]
+}
