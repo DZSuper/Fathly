@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matan Al-Ajurrumiyyah | FathlyWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&family=Lateef:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../supports/matan-detail.css">
+</head>
+<body data-content="../data/jurumiyah.json" data-matan-id="1">
+
+    <!-- ============================================
+    HEADER
+    ============================================ -->
+    <header class="app-header">
+        <div class="brand">Fathly<span>Web</span></div>
+        <div style="display:flex;align-items:center;gap:0.8rem;flex-wrap:wrap;">
+            <a class="back-btn" href="../../../index.html">← Kembali</a>
+            <span class="title-kitab">متن الأجرومية</span>
+        </div>
+        <div class="actions">
+            <div class="font-switcher" id="fontSwitcher">
+                <button id="btnFontArab" aria-haspopup="true" aria-expanded="false">🔤 Font Arab</button>
+                <div class="font-switcher-menu" id="fontSwitcherMenu">
+                    <button class="font-option active" data-font="'Amiri', serif" style="font-family:'Amiri', serif;">أمثلة — Amiri</button>
+                    <button class="font-option" data-font="'Scheherazade New', serif" style="font-family:'Scheherazade New', serif;">أمثلة — Scheherazade</button>
+                    <button class="font-option" data-font="'Noto Naskh Arabic', serif" style="font-family:'Noto Naskh Arabic', serif;">أمثلة — Noto Naskh</button>
+                    <button class="font-option" data-font="'Lateef', serif" style="font-family:'Lateef', serif;">أمثلة — Lateef</button>
+                    <button class="font-option" data-font="'Aref Ruqaa', serif" style="font-family:'Aref Ruqaa', serif;">أمثلة — Aref Ruqaa</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+    MAIN LAYOUT
+    ============================================ -->
+    <div class="main-layout">
+
+        <!-- ==========================================
+        SIDEBAR KIRI - DAFTAR BAB
+        ========================================== -->
+        <div class="sidebar-bab" id="sidebarBab">
+            <button class="kitab-info-btn" id="btnInfoKitab">
+                <span class="icon">📖</span>
+                <span class="label">Info Kitab</span>
+                <span class="icon">📖</span>
+            </button>
+
+            <div class="label">Daftar Bab</div>
+
+            <div id="babListContainer"></div>
+        </div>
+
+        <!-- ==========================================
+        TENGAH - TEKS MATAN
+        ========================================== -->
+        <div class="content-area" id="contentArea">
+            <div class="bab-header">
+                <div class="judul" id="babJudul">المقدمة</div>
+                <div class="info">
+                    <span class="stat" id="babInfoStat">Bab 1 dari 8</span>
+                    <span class="stat" id="babBaitStat">1 Bait</span>
+                </div>
+            </div>
+
+            <div class="teks-bait" id="teksBait">
+                <!-- Bait dirender secara dinamis dari content.json oleh JS -->
+            </div>
+
+            <div class="nav-bawah">
+                <button id="btnPrev">← Sebelumnya</button>
+                <div class="halaman-nav" id="halamanNav"></div>
+                <button id="btnNext">Selanjutnya →</button>
+            </div>
+        </div>
+
+        <!-- ==========================================
+        SIDEBAR KANAN - TAFSIR + CATATAN + HIGHLIGHT
+        ========================================== -->
+        <div class="sidebar-tafsir" id="sidebarKeterangan">
+            <div class="tafsir-scroll-outer">
+            <div class="tafsir-scroll-inner">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="aktif" data-tab="keterangan">📖 Keterangan</button>
+                <button data-tab="catatan">📝 Catatan</button>
+                <button data-tab="highlight">🟡 Highlight</button>
+            </div>
+
+            <!-- Tab: Keterangan -->
+            <div class="tab-content aktif" id="tabKeterangan">
+            </div>
+
+            <!-- Tab: Catatan -->
+            <div class="tab-content" id="tabCatatan">
+                <div class="note-empty" id="noteEmpty">Belum ada catatan. Tekan lama sebuah bait untuk menambahkan catatan.</div>
+            </div>
+
+            <!-- Tab: Highlight -->
+            <div class="tab-content" id="tabHighlight">
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.5rem;">
+                    Filter berdasarkan warna:
+                </div>
+                <div class="color-picker-area" id="colorFilterArea">
+                    <div class="color-opt" style="background:#ffd54f;" data-color="#ffd54f"></div>
+                    <div class="color-opt" style="background:#4fc3f7;" data-color="#4fc3f7"></div>
+                    <div class="color-opt" style="background:#81c784;" data-color="#81c784"></div>
+                    <div class="color-opt" style="background:#ff8a65;" data-color="#ff8a65"></div>
+                    <div class="color-opt" style="background:#ce93d8;" data-color="#ce93d8"></div>
+                </div>
+
+                <div style="margin-top:0.8rem;font-size:0.7rem;color:var(--text-muted);" id="highlightFilterHint">
+                    Klik salah satu warna untuk menyaring daftar highlight. Tekan lama sebuah bait untuk menambahkan highlight baru.
+                </div>
+
+                <div id="highlightList" style="margin-top:0.8rem;border-top:1px solid var(--border);padding-top:0.8rem;">
+                    <div id="highlightEmpty" style="font-size:0.75rem;color:var(--text-muted);">Belum ada bait yang di-highlight.</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- ============================================
+    MODAL INFO KITAB
+    ============================================ -->
+    <div class="modal-overlay" id="modalInfoKitab">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+
+            <div class="modal-title">متن الأجرومية</div>
+            <div class="modal-sub">Al-Ajurrumiyyah · Kitab Nahwu Dasar</div>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Pengarang</span>
+                    <div class="value">
+                        <span class="arab">ابن آجروم</span>
+                        <span style="font-size:0.7rem;color:var(--text-muted);display:block;">Abu Abdillah Muhammad bin Muhammad bin Dawud Ash-Shanhaji</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Kategori</span>
+                    <div class="value">Nahwu · Ilmu Bahasa Arab</div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Tahun Penulisan</span>
+                    <div class="value">± 1323 M / 723 H</div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Jumlah Bab</span>
+                    <div class="value">8 Bab</div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Jumlah Bait</span>
+                    <div class="value">233 Bait</div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Popularitas</span>
+                    <div class="value">⭐⭐⭐⭐⭐ (98%)</div>
+                </div>
+            </div>
+
+            <div class="info-desc">
+                <span class="label">Tentang Kitab</span>
+                <div class="value">
+                    <strong>Al-Ajurrumiyyah</strong> adalah kitab nahwu dasar yang paling masyhur di dunia Islam. Ditulis oleh <strong>Ibnu Ajurrum</strong> (w. 1323 M), kitab ini menjadi rujukan utama di pesantren-pesantren seluruh dunia. Kitab ini disusun dengan metode yang sistematis, dimulai dari definisi <em>kalām</em>, kemudian membahas <em>i'rab</em>, <em>mabni</em>, dan berbagai macam <em>'amil</em>. Keistimewaannya terletak pada penyajian yang ringkas, padat, dan mudah dihafal, sehingga cocok untuk pemula.
+                </div>
+            </div>
+
+            <div style="margin-top:1rem;padding:0.8rem;background:rgba(212,160,23,0.05);border-radius:10px;border:1px solid rgba(212,160,23,0.1);">
+                <div style="font-size:0.65rem;color:var(--gold);opacity:0.6;display:flex;gap:0.8rem;flex-wrap:wrap;">
+                    <span>📚 12.000+ pembaca</span>
+                    <span>⭐ 4.8/5 rating</span>
+                    <span>📖 150+ komentar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+    MODAL TAMBAH/EDIT CATATAN
+    ============================================ -->
+    <div class="modal-overlay" id="modalCatatan">
+        <div class="modal-content modal-catatan-content">
+            <button class="modal-close" id="modalCatatanClose">✕</button>
+
+            <div class="modal-title modal-catatan-title">Tambah Catatan</div>
+            <div class="modal-sub" id="modalCatatanBaitRef"></div>
+
+            <textarea id="modalCatatanInput" class="modal-catatan-textarea" placeholder="Tulis catatan untuk bait ini..." rows="5"></textarea>
+
+            <div class="modal-catatan-footer">
+                <button class="modal-catatan-btn-cancel" id="modalCatatanCancel">Batal</button>
+                <button class="modal-catatan-btn-save" id="modalCatatanSave">Simpan Catatan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+    SCRIPT - SEMUA FITUR
+    ============================================ -->
+
+    <script src="../supports/matan-detail.js"></script>
+</body>
+</html>
