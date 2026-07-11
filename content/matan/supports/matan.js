@@ -14,6 +14,7 @@
         { id: 4, nama: 'العقيدة الطحاوية', namaLatin: 'Al-Aqidah At-Tahawiyyah', penulis: 'الطحاوي', kategori: 'tauhid', bab: 10, bait: 56, popularitas: 92 },
         { id: 5, nama: 'الأربعون النووية', namaLatin: 'Al-Arba\'in An-Nawawiyyah', penulis: 'النووي', kategori: 'hadits', bab: 42, bait: 42, popularitas: 96 },
         { id: 6, nama: 'قطر الندى', namaLatin: 'Qatr an-Nada', penulis: 'ابن هشام', kategori: 'nahwu', bab: 15, bait: 72, popularitas: 85 },
+        { id: 7, nama: 'القواعد الأربع', namaLatin: "Al-Qawa'idul Arba'", penulis: 'محمد بن عبد الوهاب', kategori: 'tauhid', bab: 5, bait: 37, popularitas: 94, halaman: 'content/matan/pages/qawaidul-arba.html' },
         { id: 8, nama: 'عمدة الأحكام', namaLatin: 'Umdah al-Ahkam', penulis: 'ابن دقيق العيد', kategori: 'hadits', bab: 16, bait: 120, popularitas: 80 },
         { id: 9, nama: 'متن الغاية والتقريب', namaLatin: 'Matn Al-Ghayah wa At-Taqrib', penulis: 'أبو شجاع', kategori: 'fiqih', bab: 20, bait: 95, popularitas: 78 },
         { id: 10, nama: 'ألفية ابن مالك', namaLatin: 'Alfiyyah Ibn Malik', penulis: 'ابن مالك', kategori: 'nahwu', bab: 0, bait: 1002, popularitas: 93 },
@@ -21,7 +22,7 @@
     ];
 
     var currentFilter = 'semua';
-    var currentSort = 'populer';
+    var currentSort = 'tersedia';
 
     // ===== HELPERS =====
     function findMatan(id) {
@@ -168,7 +169,14 @@
         }
 
         // Sort
-        if (currentSort === 'populer') {
+        if (currentSort === 'tersedia') {
+            result.sort(function(a, b) {
+                var aAda = a.halaman ? 1 : 0;
+                var bAda = b.halaman ? 1 : 0;
+                if (bAda !== aAda) return bAda - aAda;
+                return b.popularitas - a.popularitas;
+            });
+        } else if (currentSort === 'populer') {
             result.sort(function(a, b) { return b.popularitas - a.popularitas; });
         } else if (currentSort === 'az') {
             result.sort(function(a, b) { return a.namaLatin.localeCompare(b.namaLatin); });

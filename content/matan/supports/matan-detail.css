@@ -406,6 +406,15 @@
         .content-area .teks-bait .bait .arab {
             flex: 1;
         }
+
+        /* Kutipan ayat/hadits di dalam teks bait — dibungkus kurung ganda,
+           tanpa perbedaan gaya (warna/tebal/miring) dari teks matan biasa.
+           unicode-bidi: embed + dir="rtl" (di HTML) menjaga arah buka-tutup
+           kurung tetap benar meski teks panjang dan wrap ke beberapa baris. */
+        .content-area .teks-bait .bait .arab .quote-inline,
+        .sidebar-tafsir .tafsir-item .bait-ref .quote-inline {
+            unicode-bidi: embed;
+        }
         .content-area .teks-bait .bait .bait-actions {
             display: flex;
             gap: 0.2rem;

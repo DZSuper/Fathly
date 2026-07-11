@@ -44,6 +44,36 @@
         return div.innerHTML;
     }
 
+    // Parser kutipan ayat/hadits di dalam teks bait (field `arab`).
+    // Format penanda pada data JSON:
+    //   [[ayat: ...teks ayat...]]     -> dibungkus kurung ganda (( ... ))
+    //   [[hadits: ...teks hadits...]] -> dibungkus kurung ganda (( ... ))
+    // Kurung memakai tanda kurung ASCII biasa ( ) dan span diberi dir="rtl"
+    // eksplisit supaya kurung selalu terbuka/tertutup mengikuti arah teks
+    // Arab, tidak terbalik akibat wrapping baris atau algoritma bidi browser.
+    // Teks di luar penanda tetap dirender apa adanya (di-escape seperti biasa).
+    function renderArabWithQuotes(rawArab) {
+        var pattern = /\[\[(ayat|hadits):([\s\S]*?)\]\]/g;
+        var result = '';
+        var lastIndex = 0;
+        var match;
+
+        while ((match = pattern.exec(rawArab)) !== null) {
+            // Teks biasa sebelum penanda
+            result += escapeHtml(rawArab.slice(lastIndex, match.index));
+
+            var type = match[1];
+            var quoteText = escapeHtml(match[2].trim());
+
+            result += '<span class="quote-inline quote-' + type + '" dir="rtl">((' + quoteText + '))</span>';
+
+            lastIndex = pattern.lastIndex;
+        }
+
+        result += escapeHtml(rawArab.slice(lastIndex));
+        return result;
+    }
+
     function renderBaitsAndTafsir(contentData) {
         var teksBaitEl = document.getElementById('teksBait');
         var tabKeteranganEl = document.getElementById('tabKeterangan');
@@ -61,7 +91,7 @@
             baitEl.setAttribute('data-bait', String(i));
             baitEl.innerHTML =
                 '<span class="no">' + (i + 1) + '</span>' +
-                '<span class="arab">' + escapeHtml(b.arab) + '</span>';
+                '<span class="arab">' + renderArabWithQuotes(b.arab) + '</span>';
             fragBait.appendChild(baitEl);
 
             if (b.keterangan) {
@@ -70,7 +100,7 @@
                 tafsirEl.setAttribute('data-target', String(i));
                 var baitRefEl = document.createElement('div');
                 baitRefEl.className = 'bait-ref';
-                baitRefEl.textContent = b.arab;
+                baitRefEl.innerHTML = renderArabWithQuotes(b.arab);
                 var ketEl = document.createElement('div');
                 ketEl.className = 'keterangan';
                 // keterangan lama mengandung tag inline (strong/span/em) yang sudah
