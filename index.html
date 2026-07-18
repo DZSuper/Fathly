@@ -74,6 +74,7 @@
   <link rel="stylesheet" href="content/kutipan/supports/kutipan.css">
   <link rel="stylesheet" href="content/matan/supports/matan.css">
   <link rel="stylesheet" href="update-notice.css">
+  <link rel="stylesheet" href="content/dalil/supports/dalil.css">
   <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
   <link rel="apple-touch-icon" href="static/favicon.svg">
   <link rel="manifest" href="static/manifest.json">
@@ -365,21 +366,39 @@
 
     <!-- TAB: DALIL -->
     <main class="tab-content" id="tab-dalil">
-      <div class="coming-soon-wrap">
-        <div class="coming-soon-icon">📚</div>
-        <div class="coming-soon-badge">Segera Hadir</div>
-        <div class="coming-soon-title">Dalil</div>
-        <div class="coming-soon-desc">
-          Referensi dalil dari Al-Qur'an, Hadits Shahih, dan Ijma' Ulama —
-          dikelompokkan per tema fiqih dan aqidah, lengkap dengan teks Arab dan terjemahan.
+      <div class="dalil-search-hero">
+        <h1>Cari Dalil</h1>
+        <div class="dalil-search-box">
+          <span>🔍</span>
+          <input type="text" id="dalilSearchInput" placeholder="Cari ayat, kata kunci, atau tema..." autocomplete="off" spellcheck="false">
+          <span class="dalil-search-clear" id="dalilSearchClear">✕</span>
         </div>
-        <div class="coming-soon-features">
-          <div class="csf-item">📖 Dalil dari Al-Qur'an</div>
-          <div class="csf-item">📜 Hadits Shahih pilihan</div>
-          <div class="csf-item">🤝 Ijma' Ulama per masalah</div>
-          <div class="csf-item">🔎 Cari dalil berdasarkan tema</div>
+        <div class="dalil-hasil-info" id="dalilHasilInfo">Memuat data dalil...</div>
+      </div>
+
+      <div class="dalil-filter-tray">
+        <div class="dalil-filter-group">
+          <span class="dalil-label">Sumber</span>
+          <span class="dalil-chip aktif" data-sumber="semua">Semua</span>
+          <span class="dalil-chip" data-sumber="quran">Al-Qur'an</span>
+          <span class="dalil-chip" data-sumber="hadits">Hadits</span>
+        </div>
+        <div class="dalil-filter-group">
+          <span class="dalil-label">Derajat</span>
+          <span class="dalil-chip aktif" data-derajat="semua">Semua</span>
+          <span class="dalil-chip" data-derajat="shahih">Shahih</span>
+          <span class="dalil-chip" data-derajat="hasan">Hasan</span>
+          <span class="dalil-chip" data-derajat="dhaif">Dhaif</span>
+        </div>
+        <div class="dalil-filter-group">
+          <span class="dalil-label">Tema</span>
+          <span class="dalil-chip-group" id="dalilFilterTema">
+            <span class="dalil-chip aktif" data-tema="semua">Semua</span>
+          </span>
         </div>
       </div>
+
+      <div class="dalil-result-list" id="dalilResultList"></div>
     </main>
 
     <!-- TAB: KUTIPAN -->
@@ -723,6 +742,7 @@
     // (mencakup deteksi versi baru + popup konfirmasi update).
   </script>
   <script src="update-notice.js"></script>
+  <script src="content/dalil/supports/dalil.js"></script>
   <script src="content/matan/supports/matan.js"></script>
 </body>
 </html>

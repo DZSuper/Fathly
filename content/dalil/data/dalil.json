@@ -1,0 +1,158 @@
+{
+  "temaList": [
+    { "temaId": "sholat-berjamaah", "nama": "Sholat Berjamaah", "kategori": "fiqih" },
+    { "temaId": "riba", "nama": "Riba & Jual Beli", "kategori": "muamalah" },
+    { "temaId": "ulil-amri", "nama": "Ketaatan kepada Ulil Amri", "kategori": "aqidah" }
+  ],
+  "dalilList": [
+    {
+      "id": "d1",
+      "sumber": "quran",
+      "grade": "quran",
+      "rujukan": "QS. Al-Baqarah: 43",
+      "arab": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
+      "terjemahan": "Dan dirikanlah sholat, tunaikanlah zakat, dan ruku'lah beserta orang-orang yang ruku'.",
+      "tema": ["sholat-berjamaah"],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Perintah \"ruku'lah bersama orang yang ruku'\" dipahami sebagai anjuran mengerjakan sholat secara berjamaah, bukan mengerjakannya sendirian."
+        },
+        {
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Ayat ini mendorong sholat berjamaah dan menunjukkan keutamaan berkumpulnya kaum muslimin dalam ibadah, karena di dalamnya ada syiar dan persatuan."
+        }
+      ],
+      "takhrij": [
+        { "kitab": "Shahih Bukhari", "no": "645", "status": "ada" },
+        { "kitab": "Shahih Muslim", "no": "650", "status": "ada" }
+      ]
+    },
+    {
+      "id": "d2",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Ibnu Umar",
+      "kitab": "Bukhari",
+      "arab": "صَلَاةُ الْجَمَاعَةِ تَفْضُلُ صَلَاةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً",
+      "terjemahan": "Sholat berjamaah lebih utama daripada sholat sendirian dengan dua puluh tujuh derajat.",
+      "tema": ["sholat-berjamaah"],
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Angka 27 derajat ini bersifat pengabaran keutamaan secara umum, dan bisa bertambah tergantung kualitas kekhusyukan serta jumlah jamaah."
+        },
+        {
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini adalah dalil utama disunnahkannya sholat berjamaah bagi laki-laki, dan sebagian ulama memandangnya sebagai dalil wajib."
+        }
+      ],
+      "takhrij": [
+        { "kitab": "Shahih Bukhari", "no": "645", "status": "ada" },
+        { "kitab": "Shahih Muslim", "no": "650", "status": "ada" }
+      ]
+    },
+    {
+      "id": "d3",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Ibnu Majah, dari Ibnu Abbas",
+      "kitab": "Ibnu Majah",
+      "arab": "مَنْ سَمِعَ النِّدَاءَ فَلَمْ يَأْتِهِ فَلَا صَلَاةَ لَهُ إِلَّا مِنْ عُذْرٍ",
+      "terjemahan": "Barang siapa mendengar adzan lalu tidak mendatanginya, maka tidak ada sholat baginya, kecuali karena ada udzur.",
+      "tema": ["sholat-berjamaah"],
+      "tafsirBanding": [],
+      "takhrij": [
+        { "kitab": "Sunan Ibnu Majah", "no": "793", "status": "ada" },
+        { "kitab": "Shahih Ibnu Hibban", "no": "2064", "status": "ada" }
+      ]
+    },
+    {
+      "id": "d4",
+      "sumber": "quran",
+      "grade": "quran",
+      "rujukan": "QS. Al-Baqarah: 275",
+      "arab": "وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+      "terjemahan": "Padahal Allah telah menghalalkan jual beli dan mengharamkan riba.",
+      "tema": ["riba"],
+      "kitab": null,
+      "tafsirBanding": [],
+      "takhrij": []
+    },
+    {
+      "id": "d5",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Muslim, dari Jabir bin Abdillah",
+      "kitab": "Muslim",
+      "arab": "لَعَنَ رَسُولُ اللَّهِ ﷺ آكِلَ الرِّبَا وَمُوكِلَهُ",
+      "terjemahan": "Rasulullah ﷺ melaknat pemakan riba dan pemberi makan riba (yang membayarnya).",
+      "tema": ["riba"],
+      "tafsirBanding": [],
+      "takhrij": [
+        { "kitab": "Shahih Muslim", "no": "1598", "status": "ada" }
+      ]
+    },
+    {
+      "id": "d6",
+      "sumber": "quran",
+      "grade": "quran",
+      "rujukan": "QS. Ali 'Imran: 130",
+      "arab": "لَا تَأْكُلُوا الرِّبَا أَضْعَافًا مُضَاعَفَةً",
+      "terjemahan": "Janganlah kalian memakan riba dengan berlipat ganda.",
+      "tema": ["riba"],
+      "kitab": null,
+      "tafsirBanding": [],
+      "takhrij": []
+    },
+    {
+      "id": "d7",
+      "sumber": "hadits",
+      "grade": "hasan",
+      "rujukan": "HR. Ahmad, dari Abdullah bin Hanzhalah",
+      "kitab": "Ahmad",
+      "arab": "دِرْهَمُ رِبًا يَأْكُلُهُ الرَّجُلُ أَشَدُّ مِنْ سِتَّةٍ وَثَلَاثِينَ زَنْيَةً",
+      "terjemahan": "Satu dirham dari hasil riba yang dimakan seseorang, lebih berat dosanya daripada tiga puluh enam kali berzina.",
+      "tema": ["riba"],
+      "tafsirBanding": [],
+      "takhrij": []
+    },
+    {
+      "id": "d8",
+      "sumber": "quran",
+      "grade": "quran",
+      "rujukan": "QS. An-Nisa: 59",
+      "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ",
+      "terjemahan": "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul-Nya, dan ulil amri di antara kalian.",
+      "tema": ["ulil-amri"],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini memerintahkan ketaatan bertingkat: taat kepada Allah secara mutlak, taat kepada Rasul karena beliau menyampaikan wahyu, dan taat kepada ulil amri selama tidak memerintahkan maksiat."
+        },
+        {
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "\"Ulil amri\" mencakup penguasa dan ulama, dan ketaatan kepada mereka bersumber dari ketaatan kepada Allah dan Rasul-Nya, bukan berdiri sendiri."
+        },
+        {
+          "ulama": "Asy-Syaukani",
+          "kitab": "Fathul Qadir",
+          "isi": "Kata \"أطيعوا\" diulang untuk Allah dan Rasul, tapi tidak diulang untuk ulil amri — menunjukkan ketaatan kepada mereka bersifat mengikuti, bukan mandiri."
+        }
+      ],
+      "takhrij": [
+        { "kitab": "Shahih Bukhari", "no": "7137", "status": "ada" },
+        { "kitab": "Shahih Muslim", "no": "1839", "status": "ada" },
+        { "kitab": "Sunan Abu Dawud", "no": "2626", "status": "ada" }
+      ]
+    }
+  ]
+}

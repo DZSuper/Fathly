@@ -1,0 +1,170 @@
+/* =============================================
+   DALIL-DETAIL.CSS — Halaman Detail Dalil FathlyWeb
+   Konsep: Perbandingan Sumber (Preview 4)
+============================================= */
+
+:root {
+    --bg-dark: #0b0c0e;
+    --bg-card: rgba(255,255,255,0.04);
+    --bg-sidebar: #111318;
+    --gold: #ffd700;
+    --green: #00ff88;
+    --text-light: #f2f2f2;
+    --text-muted: rgba(242,242,242,0.55);
+    --border: rgba(0,255,136,0.18);
+    --transition: 0.25s ease;
+    --font-arabic: 'Amiri', 'Scheherazade New', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.dd-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--bg-dark);
+    z-index: 20;
+}
+.dd-back-btn {
+    color: var(--gold);
+    font-size: 0.8rem;
+    text-decoration: none;
+    width: 64px;
+}
+.dd-header-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.dd-main { padding-bottom: 2rem; }
+.dd-loading, .dd-error {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* ── ANCHOR (teks utama) ── */
+.dd-anchor {
+    margin: 1.2rem 1.1rem;
+    background: var(--bg-sidebar);
+    border: 1px solid rgba(255,215,0,0.3);
+    border-radius: 16px;
+    padding: 1.2rem 1.1rem;
+    text-align: center;
+}
+.dd-anchor .dd-grade {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.18rem 0.6rem;
+    border-radius: 6px;
+    margin-bottom: 0.6rem;
+}
+.dd-grade.quran { background: rgba(255,215,0,0.15); color: var(--gold); }
+.dd-grade.shahih { background: rgba(0,255,136,0.15); color: var(--green); }
+.dd-grade.hasan { background: rgba(120,170,255,0.15); color: #78aaff; }
+.dd-grade.dhaif { background: rgba(255,110,110,0.15); color: #ff6e6e; }
+
+.dd-anchor .dd-rujukan { font-size: 0.72rem; color: var(--gold); font-weight: 700; margin-bottom: 0.7rem; }
+.dd-anchor .dd-arab { font-family: var(--font-arabic); direction: rtl; font-size: 1.5rem; line-height: 2.3; margin-bottom: 0.7rem; }
+.dd-anchor .dd-terjemahan { font-size: 0.8rem; color: var(--text-muted); line-height: 1.65; }
+
+.dd-tema-row { display: flex; justify-content: center; gap: 0.4rem; margin-top: 0.8rem; flex-wrap: wrap; }
+.dd-tema-pill { font-size: 0.65rem; color: var(--gold); background: rgba(255,215,0,0.08); padding: 0.2rem 0.6rem; border-radius: 20px; }
+
+/* ── SECTION LABEL ── */
+.dd-section-label { padding: 0 1.1rem; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.6rem; }
+
+/* ── PERBANDINGAN TAFSIR ── */
+.dd-compare-scroll {
+    display: flex;
+    gap: 0.9rem;
+    overflow-x: auto;
+    padding: 0 1.1rem 0.4rem;
+    scroll-snap-type: x proximity;
+}
+.dd-compare-col {
+    scroll-snap-align: start;
+    min-width: 82%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem 1.05rem;
+}
+.dd-compare-col .dd-ulama {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+}
+.dd-compare-col .dd-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255,215,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+.dd-compare-col .dd-nama-ulama { font-size: 0.82rem; font-weight: 700; }
+.dd-compare-col .dd-kitab-ulama { font-size: 0.65rem; color: var(--text-muted); }
+.dd-compare-col .dd-konten { font-size: 0.78rem; color: var(--text-muted); line-height: 1.7; }
+
+.dd-indikator { display: flex; justify-content: center; gap: 5px; margin: 0.8rem 0 0.4rem; }
+.dd-indikator span { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.15); }
+.dd-indikator span.aktif { background: var(--gold); }
+
+/* ── TAKHRIJ TABLE ── */
+.dd-takhrij-table {
+    margin: 1.6rem 1.1rem 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.dd-takhrij-row {
+    display: flex;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    align-items: center;
+    gap: 0.7rem;
+}
+.dd-takhrij-row:last-child { border-bottom: none; }
+.dd-takhrij-row .dd-kitab-nama { font-size: 0.78rem; font-weight: 600; flex: 1; }
+.dd-takhrij-row .dd-no-hadits { font-size: 0.68rem; color: var(--text-muted); }
+.dd-takhrij-row .dd-status { font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 6px; background: rgba(0,255,136,0.15); color: var(--green); }
+
+/* ── KOSONG (belum ada data pembanding) ── */
+.dd-kosong-hint {
+    margin: 1.2rem 1.1rem 0;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+/* ── DESKTOP ── */
+@media (min-width: 900px) {
+    .dd-main { max-width: 760px; margin: 0 auto; }
+    .dd-compare-scroll { flex-wrap: wrap; }
+    .dd-compare-col { min-width: calc(33.333% - 0.6rem); }
+}

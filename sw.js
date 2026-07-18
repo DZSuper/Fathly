@@ -18,7 +18,7 @@
 //  di-deploy ke server.
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.7.0';
+const CACHE_NAME = 'fathlyweb-v1.9.0';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [
@@ -85,6 +85,17 @@ const PRECACHE_URLS = [
   '/content/matan/supports/matan-detail.css',
   '/content/matan/pages/jurumiyah.html',
   '/content/matan/data/jurumiyah.json',
+  '/content/matan/pages/qawaidul-arba.html',
+  '/content/matan/data/qawaidul-arba.json',
+  '/content/matan/pages/arbain.html',
+  '/content/matan/data/arbain.json',
+  // Tab Dalil
+  '/content/dalil/supports/dalil.css',
+  '/content/dalil/supports/dalil.js',
+  '/content/dalil/supports/dalil-detail.css',
+  '/content/dalil/supports/dalil-detail.js',
+  '/content/dalil/pages/detail.html',
+  '/content/dalil/data/dalil.json',
 ];
 
 // ── INSTALL: cache semua aset penting ─────────
