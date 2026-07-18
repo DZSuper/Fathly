@@ -12,7 +12,7 @@
         { id: 2, nama: 'متن أبي شجاع', namaLatin: 'Matn Abi Syuja\'', penulis: 'أبو شجاع', kategori: 'fiqih', bab: 14, bait: 68, popularitas: 95 },
         { id: 3, nama: 'الورقات', namaLatin: 'Al-Waraqat', penulis: 'الجويني', kategori: 'ushul', bab: 8, bait: 32, popularitas: 88 },
         { id: 4, nama: 'العقيدة الطحاوية', namaLatin: 'Al-Aqidah At-Tahawiyyah', penulis: 'الطحاوي', kategori: 'tauhid', bab: 10, bait: 56, popularitas: 92 },
-        { id: 5, nama: 'الأربعون النووية', namaLatin: 'Al-Arba\'in An-Nawawiyyah', penulis: 'النووي', kategori: 'hadits', bab: 42, bait: 42, popularitas: 96 },
+        { id: 5, nama: 'الأربعون النووية', namaLatin: 'Al-Arba\'in An-Nawawiyyah', penulis: 'النووي', kategori: 'hadits', bab: 2, bait: 448, popularitas: 96, halaman: 'content/matan/pages/arbain.html' },
         { id: 6, nama: 'قطر الندى', namaLatin: 'Qatr an-Nada', penulis: 'ابن هشام', kategori: 'nahwu', bab: 15, bait: 72, popularitas: 85 },
         { id: 7, nama: 'القواعد الأربع', namaLatin: "Al-Qawa'idul Arba'", penulis: 'محمد بن عبد الوهاب', kategori: 'tauhid', bab: 5, bait: 37, popularitas: 94, halaman: 'content/matan/pages/qawaidul-arba.html' },
         { id: 8, nama: 'عمدة الأحكام', namaLatin: 'Umdah al-Ahkam', penulis: 'ابن دقيق العيد', kategori: 'hadits', bab: 16, bait: 120, popularitas: 80 },
