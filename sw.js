@@ -18,7 +18,7 @@
 //  di-deploy ke server.
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.9.0';
+const CACHE_NAME = 'fathlyweb-v1.9.1';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [

@@ -110,7 +110,20 @@ body {
     margin-bottom: 0.7rem;
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--border);
+    position: relative;
 }
+.dd-jenis-badge {
+    margin-left: auto;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0.2rem 0.55rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.dd-jenis-tafsir { color: var(--gold); background: rgba(255,215,0,0.1); }
+.dd-jenis-qiraah { color: #7fd8ff; background: rgba(127,216,255,0.1); }
+.dd-jenis-faedah { color: var(--green); background: rgba(0,255,136,0.1); }
 .dd-compare-col .dd-avatar {
     width: 30px;
     height: 30px;
@@ -126,9 +139,7 @@ body {
 .dd-compare-col .dd-kitab-ulama { font-size: 0.65rem; color: var(--text-muted); }
 .dd-compare-col .dd-konten { font-size: 0.78rem; color: var(--text-muted); line-height: 1.7; }
 
-.dd-indikator { display: flex; justify-content: center; gap: 5px; margin: 0.8rem 0 0.4rem; }
-.dd-indikator span { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.15); }
-.dd-indikator span.aktif { background: var(--gold); }
+
 
 /* ── TAKHRIJ TABLE ── */
 .dd-takhrij-table {

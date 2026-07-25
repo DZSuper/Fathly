@@ -46,32 +46,39 @@
         );
     }
 
+    function jenisLabel(jenis) {
+        var map = { tafsir: 'Tafsir', qiraah: 'Qira\u2019ah', faedah: 'Faedah' };
+        return map[jenis] || 'Tafsir';
+    }
+
+    function jenisIcon(jenis) {
+        var map = { tafsir: '📖', qiraah: '🔤', faedah: '💡' };
+        return map[jenis] || '📖';
+    }
+
     function renderBanding(item) {
         if (!item.tafsirBanding || item.tafsirBanding.length === 0) return '';
 
         var kolom = item.tafsirBanding.map(function(t) {
+            var jenis = t.jenis || 'tafsir';
             return (
                 '<div class="dd-compare-col">' +
                     '<div class="dd-ulama">' +
-                        '<span class="dd-avatar">📖</span>' +
+                        '<span class="dd-avatar">' + jenisIcon(jenis) + '</span>' +
                         '<div>' +
                             '<div class="dd-nama-ulama">' + escapeHtml(t.ulama) + '</div>' +
-                            '<div class="dd-kitab-ulama">' + escapeHtml(t.kitab) + '</div>' +
+                            (t.kitab ? '<div class="dd-kitab-ulama">' + escapeHtml(t.kitab) + '</div>' : '') +
                         '</div>' +
+                        '<span class="dd-jenis-badge dd-jenis-' + jenis + '">' + jenisLabel(jenis) + '</span>' +
                     '</div>' +
                     '<div class="dd-konten">' + escapeHtml(t.isi) + '</div>' +
                 '</div>'
             );
         }).join('');
 
-        var titik = item.tafsirBanding.map(function(_, i) {
-            return '<span class="' + (i === 0 ? 'aktif' : '') + '"></span>';
-        }).join('');
-
         return (
             '<div class="dd-section-label">Geser untuk membandingkan penjelasan tiap ulama →</div>' +
-            '<div class="dd-compare-scroll">' + kolom + '</div>' +
-            '<div class="dd-indikator">' + titik + '</div>'
+            '<div class="dd-compare-scroll">' + kolom + '</div>'
         );
     }
 
