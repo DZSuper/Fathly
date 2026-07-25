@@ -2,9 +2,23 @@
 //  FathlyWeb — Service Worker
 //  Strategi: Cache-First untuk aset statis,
 //            Network-First untuk konten JSON
+//
+//  ⚠️ PENTING — WAJIB DIBACA SEBELUM DEPLOY:
+//  Setiap kali ada perubahan file apa pun di
+//  situs ini (HTML, CSS, JS, ATAU JSON konten),
+//  angka versi di CACHE_NAME di bawah ini HARUS
+//  dinaikkan (contoh: v1.7.0 → v1.7.1).
+//
+//  Inilah SATU-SATUNYA penanda yang membuat
+//  browser pengunjung lama sadar ada versi baru,
+//  lalu memicu popup "Sudah ada versi terbaru..."
+//  di index.html. Jika CACHE_NAME tidak diubah,
+//  Service Worker menganggap tidak ada yang baru
+//  dan popup TIDAK akan muncul, walau file sudah
+//  di-deploy ke server.
 // ─────────────────────────────────────────────
 
-const CACHE_NAME = 'fathlyweb-v1.6.0';
+const CACHE_NAME = 'fathlyweb-v1.9.2';
 
 // File yang langsung di-cache saat pertama install
 const PRECACHE_URLS = [
@@ -12,6 +26,8 @@ const PRECACHE_URLS = [
   '/index.html',
   '/menu.css',
   '/main.js',
+  '/update-notice.css',
+  '/update-notice.js',
   '/static/manifest.json',
   '/static/favicon.svg',
   '/content/catatan/pages/editor.html',
@@ -69,6 +85,17 @@ const PRECACHE_URLS = [
   '/content/matan/supports/matan-detail.css',
   '/content/matan/pages/jurumiyah.html',
   '/content/matan/data/jurumiyah.json',
+  '/content/matan/pages/qawaidul-arba.html',
+  '/content/matan/data/qawaidul-arba.json',
+  '/content/matan/pages/arbain.html',
+  '/content/matan/data/arbain.json',
+  // Tab Dalil
+  '/content/dalil/supports/dalil.css',
+  '/content/dalil/supports/dalil.js',
+  '/content/dalil/supports/dalil-detail.css',
+  '/content/dalil/supports/dalil-detail.js',
+  '/content/dalil/pages/detail.html',
+  '/content/dalil/data/dalil.json',
 ];
 
 // ── INSTALL: cache semua aset penting ─────────
@@ -78,10 +105,19 @@ self.addEventListener('install', function(e) {
       console.log('[SW] Pre-caching aset...');
       return cache.addAll(PRECACHE_URLS);
     }).then(function() {
-      console.log('[SW] Install selesai');
-      return self.skipWaiting(); // langsung aktif tanpa nunggu tab ditutup
+      console.log('[SW] Install selesai, menunggu konfirmasi user untuk aktif');
+      // TIDAK skipWaiting() otomatis — SW baru menunggu (state "waiting")
+      // sampai user memilih "Ya" di popup update, supaya versi lama tetap
+      // dipakai selama user belum menyetujui pembaruan.
     })
   );
+});
+
+// ── PESAN DARI HALAMAN: user menyetujui update ─
+self.addEventListener('message', function(e) {
+  if (e.data && e.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 // ── ACTIVATE: hapus cache versi lama ──────────
@@ -102,6 +138,7 @@ self.addEventListener('activate', function(e) {
     })
   );
 });
+
 
 // ── FETCH: strategi sesuai jenis file ─────────
 self.addEventListener('fetch', function(e) {

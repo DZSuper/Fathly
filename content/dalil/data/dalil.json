@@ -1,0 +1,334 @@
+{
+  "temaList": [
+    {
+      "temaId": "sholat-berjamaah",
+      "nama": "Sholat Berjamaah",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "riba",
+      "nama": "Riba & Jual Beli",
+      "kategori": "muamalah"
+    },
+    {
+      "temaId": "ulil-amri",
+      "nama": "Ketaatan kepada Ulil Amri",
+      "kategori": "aqidah"
+    }
+  ],
+  "dalilList": [
+    {
+      "id": "d1",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Baqarah: 43",
+      "arab": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
+      "terjemahan": "Dan dirikanlah sholat, tunaikanlah zakat, dan ruku'lah beserta orang-orang yang ruku'.",
+      "tema": [
+        "sholat-berjamaah"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Perintah \"ruku'lah bersama orang yang ruku'\" dipahami sebagai anjuran mengerjakan sholat secara berjamaah, bukan mengerjakannya sendirian.",
+          "jenis": "tafsir"
+        },
+        {
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Ayat ini mendorong sholat berjamaah dan menunjukkan keutamaan berkumpulnya kaum muslimin dalam ibadah, karena di dalamnya ada syiar dan persatuan.",
+          "jenis": "tafsir"
+        },
+        {
+          "jenis": "qiraah",
+          "ulama": "Imam 'Ashim (riwayat Hafsh)",
+          "kitab": "Qiraat Sab'ah",
+          "isi": "Lafazh وَارْكَعُوا dibaca dengan sukun pada ra' (war-ka'u) menurut riwayat Hafsh 'an 'Ashim, riwayat yang paling masyhur digunakan di kalangan mushaf cetakan saat ini."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini menggandengkan perintah sholat, zakat, dan ruku' bersama jamaah dalam satu rangkaian — menunjukkan bahwa ibadah dalam Islam tidak hanya bersifat individual, tetapi juga memiliki dimensi sosial dan kebersamaan."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "645",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "650",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Ibnu Umar",
+      "kitab": "Bukhari",
+      "arab": "صَلَاةُ الْجَمَاعَةِ تَفْضُلُ صَلَاةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً",
+      "terjemahan": "Sholat berjamaah lebih utama daripada sholat sendirian dengan dua puluh tujuh derajat.",
+      "tema": [
+        "sholat-berjamaah"
+      ],
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Angka 27 derajat ini bersifat pengabaran keutamaan secara umum, dan bisa bertambah tergantung kualitas kekhusyukan serta jumlah jamaah.",
+          "jenis": "tafsir"
+        },
+        {
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini adalah dalil utama disunnahkannya sholat berjamaah bagi laki-laki, dan sebagian ulama memandangnya sebagai dalil wajib.",
+          "jenis": "tafsir"
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini menjadi salah satu motivasi terbesar bagi kaum muslimin, khususnya laki-laki, untuk senantiasa menjaga sholat lima waktu secara berjamaah di masjid, karena besarnya kelipatan pahala yang dijanjikan."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "645",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "650",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Ibnu Majah, dari Ibnu Abbas",
+      "kitab": "Ibnu Majah",
+      "arab": "مَنْ سَمِعَ النِّدَاءَ فَلَمْ يَأْتِهِ فَلَا صَلَاةَ لَهُ إِلَّا مِنْ عُذْرٍ",
+      "terjemahan": "Barang siapa mendengar adzan lalu tidak mendatanginya, maka tidak ada sholat baginya, kecuali karena ada udzur.",
+      "tema": [
+        "sholat-berjamaah"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Hazm",
+          "kitab": "Al-Muhalla",
+          "isi": "Sebagian ulama, di antaranya Ibnu Hazm, memahami hadits ini secara tekstual sebagai dalil wajibnya sholat berjamaah di masjid bagi laki-laki yang mendengar adzan tanpa udzur, karena lafazh لا صلاة (tidak ada sholat) menunjukkan peniadaan keabsahan, bukan sekadar peniadaan kesempurnaan."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Qudamah",
+          "kitab": "Al-Mughni",
+          "isi": "Mayoritas ulama madzhab menafsirkan لا صلاة له (tidak ada sholat baginya) sebagai peniadaan kesempurnaan pahala, bukan peniadaan keabsahan sholat itu sendiri — sehingga sholatnya tetap sah, namun kehilangan keutamaan besar berjamaah."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini menjadi salah satu dalil terkuat yang digunakan ulama yang berpendapat wajibnya sholat berjamaah bagi laki-laki yang mampu, karena ancamannya sangat tegas dan hanya memberi keringanan bagi yang memiliki udzur syar'i."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Sunan Ibnu Majah",
+          "no": "793",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Ibnu Hibban",
+          "no": "2064",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Baqarah: 275",
+      "arab": "وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+      "terjemahan": "Padahal Allah telah menghalalkan jual beli dan mengharamkan riba.",
+      "tema": [
+        "riba"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini membantah anggapan kaum musyrikin dan pelaku riba yang menyamakan riba dengan jual beli. Allah menegaskan bahwa keduanya berbeda: jual beli dihalalkan karena mengandung pertukaran manfaat yang adil, sedangkan riba diharamkan karena mengandung unsur kezaliman dan pengambilan tambahan tanpa imbangan yang setara."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Penyandingan kata البيع (jual beli) dan الربا (riba) dalam ayat ini menunjukkan bahwa alasan sebagian orang menyamakan riba dengan jual beli itu keliru, karena Allah sendiri yang membedakan hukum keduanya secara tegas."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini menjadi salah satu dalil pokok dalam fiqih muamalah yang menjelaskan bahwa hukum asal jual beli adalah halal, sedangkan riba dalam bentuk apa pun—baik riba nasi'ah maupun riba fadhl—hukumnya haram."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d5",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Muslim, dari Jabir bin Abdillah",
+      "kitab": "Muslim",
+      "arab": "لَعَنَ رَسُولُ اللَّهِ ﷺ آكِلَ الرِّبَا وَمُوكِلَهُ",
+      "terjemahan": "Rasulullah ﷺ melaknat pemakan riba dan pemberi makan riba (yang membayarnya).",
+      "tema": [
+        "riba"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menunjukkan haramnya riba dengan ancaman yang sangat keras, yaitu laknat. An-Nawawi menjelaskan bahwa laknat di sini mencakup seluruh pihak yang terlibat dalam transaksi riba, tidak hanya yang mengambil keuntungan darinya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Dalam riwayat yang lebih lengkap, Nabi ﷺ juga melaknat penulis (juru tulis) transaksi riba dan dua orang saksinya, seraya bersabda bahwa mereka semua sama dalam dosa — menunjukkan beratnya larangan terlibat dalam riba, baik secara langsung maupun sebagai fasilitator."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Muslim",
+          "no": "1598",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Ali 'Imran: 130",
+      "arab": "لَا تَأْكُلُوا الرِّبَا أَضْعَافًا مُضَاعَفَةً",
+      "terjemahan": "Janganlah kalian memakan riba dengan berlipat ganda.",
+      "tema": [
+        "riba"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini turun berkenaan dengan praktik riba jahiliyah, yaitu penambahan berlipat ganda atas utang yang tidak mampu dibayar tepat waktu. Sebagian ulama sempat memahami bahwa yang diharamkan hanyalah riba yang berlipat ganda, namun ayat-ayat dan hadits lain menegaskan bahwa seluruh bentuk riba adalah haram, dan sifat أضعافًا مضاعفة (berlipat ganda) di sini hanyalah menggambarkan praktik yang umum terjadi saat itu, bukan syarat pengharaman."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Larangan dalam ayat ini mencakup seluruh bentuk riba, karena dalil-dalil syariat yang lain (seperti QS. Al-Baqarah: 275 dan berbagai hadits shahih) mengharamkan riba secara mutlak, tanpa membedakan sedikit atau banyak, berlipat ganda atau tidak."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini merupakan salah satu dari empat tahap pengharaman riba dalam Al-Qur'an secara bertahap, sebelum akhirnya diharamkan secara tegas dan menyeluruh dalam QS. Al-Baqarah: 278-279."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d7",
+      "sumber": "hadits",
+      "grade": "hasan",
+      "rujukan": "HR. Ahmad, dari Abdullah bin Hanzhalah",
+      "kitab": "Ahmad",
+      "arab": "دِرْهَمُ رِبًا يَأْكُلُهُ الرَّجُلُ أَشَدُّ مِنْ سِتَّةٍ وَثَلَاثِينَ زَنْيَةً",
+      "terjemahan": "Satu dirham dari hasil riba yang dimakan seseorang, lebih berat dosanya daripada tiga puluh enam kali berzina.",
+      "tema": [
+        "riba"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Al-Mundziri",
+          "kitab": "At-Targhib wa At-Tarhib",
+          "isi": "Hadits ini menggambarkan betapa besarnya dosa riba di sisi Allah, sampai disamakan dengan dosa yang jauh melampaui zina — sebuah perumpamaan yang menunjukkan bahaya riba bagi tatanan sosial dan ekonomi umat, bukan sekadar dosa pribadi."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Sebagian ulama hadits menilai sanad hadits ini tidak sampai derajat shahih namun tetap hasan li ghairihi karena memiliki penguat dari jalur lain, sehingga tetap dapat dijadikan dalil dalam bab targhib wa tarhib (motivasi dan ancaman), meskipun bukan dalil penetapan hukum pokok."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d8",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. An-Nisa: 59",
+      "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ",
+      "terjemahan": "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul-Nya, dan ulil amri di antara kalian.",
+      "tema": [
+        "ulil-amri"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini memerintahkan ketaatan bertingkat: taat kepada Allah secara mutlak, taat kepada Rasul karena beliau menyampaikan wahyu, dan taat kepada ulil amri selama tidak memerintahkan maksiat.",
+          "jenis": "tafsir"
+        },
+        {
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "\"Ulil amri\" mencakup penguasa dan ulama, dan ketaatan kepada mereka bersumber dari ketaatan kepada Allah dan Rasul-Nya, bukan berdiri sendiri.",
+          "jenis": "tafsir"
+        },
+        {
+          "ulama": "Asy-Syaukani",
+          "kitab": "Fathul Qadir",
+          "isi": "Kata \"أطيعوا\" diulang untuk Allah dan Rasul, tapi tidak diulang untuk ulil amri — menunjukkan ketaatan kepada mereka bersifat mengikuti, bukan mandiri.",
+          "jenis": "tafsir"
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "7137",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "1839",
+          "status": "ada"
+        },
+        {
+          "kitab": "Sunan Abu Dawud",
+          "no": "2626",
+          "status": "ada"
+        }
+      ]
+    }
+  ]
+}

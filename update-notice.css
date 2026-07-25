@@ -1,0 +1,135 @@
+/* =============================================
+   UPDATE-NOTICE.CSS — Popup notifikasi versi baru
+   Menggunakan design token dari menu.css
+============================================= */
+
+.update-notice-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 5000;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+}
+
+.update-notice-overlay.aktif {
+  display: flex;
+}
+
+.update-notice-card {
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: 18px 18px 0 0;
+  padding: 1.3rem 1.3rem calc(1.3rem + env(safe-area-inset-bottom, 0px));
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.45);
+  animation: updateNoticeSlideUp 0.28s ease-out;
+}
+
+@keyframes updateNoticeSlideUp {
+  from { transform: translateY(100%); opacity: 0.4; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (min-width: 640px) {
+  .update-notice-overlay {
+    align-items: center;
+  }
+  .update-notice-card {
+    border-radius: 18px;
+    animation: updateNoticeFadeIn 0.22s ease-out;
+  }
+  @keyframes updateNoticeFadeIn {
+    from { transform: translateY(12px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+}
+
+.update-notice-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.update-notice-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.update-notice-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+.update-notice-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.update-notice-actions button {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--border);
+  font-family: inherit;
+}
+
+.update-notice-btn-nanti {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.update-notice-btn-nanti:hover {
+  color: var(--text-light);
+  border-color: var(--text-muted);
+}
+
+.update-notice-btn-update {
+  background: var(--green);
+  color: #06120c;
+  border-color: var(--green);
+}
+
+.update-notice-btn-update:hover {
+  filter: brightness(1.08);
+}
+
+.update-notice-btn-update:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.update-notice-btn-update.loading {
+  position: relative;
+  color: transparent;
+}
+
+.update-notice-btn-update.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border: 2px solid rgba(6, 18, 12, 0.35);
+  border-top-color: #06120c;
+  border-radius: 50%;
+  animation: updateNoticeSpin 0.6s linear infinite;
+}
+
+@keyframes updateNoticeSpin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,251 @@
+/* =============================================
+   DALIL.CSS — Tab Dalil FathlyWeb
+   Filter: Accordion menyatu, multi-select (Filter C)
+   Semua class diberi prefix "dalil-" supaya tidak bentrok
+   dengan tab lain yang berbagi stylesheet global.
+============================================= */
+
+#tab-dalil {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ── HERO PENCARIAN ── */
+.dalil-search-hero { padding: 0.5rem 1rem 0.75rem; }
+.dalil-search-hero h1 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dalil-search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-sidebar);
+  border: 1.5px solid rgba(255, 215, 0, 0.3);
+  border-radius: 14px;
+  padding: 0.75rem 0.9rem;
+}
+.dalil-search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  flex: 1;
+  min-width: 0;
+}
+.dalil-search-box input::placeholder { color: var(--text-muted); }
+.dalil-search-clear {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: none;
+  padding: 0.1rem 0.3rem;
+}
+.dalil-search-clear.tampil { display: block; }
+
+.dalil-hasil-info {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+}
+.dalil-hasil-info b { color: var(--gold); }
+
+/* ── FILTER PANEL: ACCORDION MENYATU (Filter C) ──
+   Hanya 1 bagian (Sumber/Derajat/Tema) yang boleh terbuka sekaligus.
+   Tidak ada overlay — panel jadi bagian dari alur halaman biasa,
+   jadi tidak pernah terpotong di tepi layar seperti dropdown melayang. */
+.dalil-filter-panel {
+  margin: 0.9rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.dalil-acc-item { border-bottom: 1px solid var(--border); }
+.dalil-acc-item:last-child { border-bottom: none; }
+
+.dalil-acc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.dalil-acc-head .dalil-acc-kiri { display: flex; align-items: center; gap: 0.5rem; }
+.dalil-acc-nama { font-size: 0.8rem; font-weight: 600; }
+.dalil-acc-right { display: flex; align-items: center; gap: 0.5rem; }
+.dalil-acc-nilai {
+  font-size: 0.7rem;
+  color: var(--gold);
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dalil-acc-chevron {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.dalil-acc-item.terbuka .dalil-acc-chevron { transform: rotate(180deg); }
+
+.dalil-acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition);
+}
+.dalil-acc-item.terbuka .dalil-acc-body {
+  max-height: 280px;
+  overflow-y: auto;
+}
+.dalil-acc-body-inner {
+  padding: 0.2rem 1rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.dalil-acc-chip {
+  font-size: 0.74rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.dalil-acc-chip.aktif {
+  background: var(--gold);
+  color: #1a1300;
+  border-color: var(--gold);
+  font-weight: 700;
+}
+.dalil-acc-chip:not(.aktif):hover {
+  border-color: rgba(255, 215, 0, 0.4);
+  color: var(--text-light);
+}
+
+/* ── DAFTAR HASIL ── */
+.dalil-result-list {
+  padding: 0.9rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.dalil-result-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.dalil-result-item:hover,
+.dalil-result-item:active {
+  border-color: rgba(255, 215, 0, 0.4);
+}
+.dalil-result-item .dalil-top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.dalil-badge-sumber {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.14rem 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.dalil-badge-sumber.quran { background: rgba(255, 215, 0, 0.15); color: var(--gold); }
+.dalil-badge-sumber.hadits { background: rgba(255, 255, 255, 0.08); color: var(--text-light); border: 1px solid var(--border); }
+
+.dalil-badge-derajat {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.12rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.dalil-badge-derajat.shahih { background: rgba(0, 255, 136, 0.15); color: var(--green); }
+.dalil-badge-derajat.hasan { background: rgba(120, 170, 255, 0.15); color: #78aaff; }
+.dalil-badge-derajat.dhaif { background: rgba(255, 110, 110, 0.15); color: #ff6e6e; }
+.dalil-rujukan { font-size: 0.68rem; color: var(--text-muted); }
+
+.dalil-arab-preview {
+  font-family: var(--font-arabic, 'Amiri', 'Scheherazade New', serif);
+  direction: rtl;
+  font-size: 1.08rem;
+  line-height: 1.9;
+  text-align: right;
+  margin: 0.4rem 0 0.35rem;
+  color: var(--text-light);
+}
+.dalil-arab-preview mark {
+  background: rgba(255, 215, 0, 0.28);
+  color: var(--gold);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.dalil-terjemahan-preview {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+.dalil-tema-tag {
+  font-size: 0.64rem;
+  color: var(--gold);
+  margin-top: 0.5rem;
+  display: block;
+}
+.dalil-banding-hint {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dalil-empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  min-height: 60vh; /* fallback sebelum JS menghitung nilai presisi */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+.dalil-empty .ikon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+
+/* ── DESKTOP (opsional, mengikuti pola tab lain: dua kolom di layar lebar) ── */
+@media (min-width: 900px) {
+  .dalil-result-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  /* Saat kosong, .dalil-empty adalah satu-satunya child grid — tanpa ini ia
+     hanya mengisi kolom pertama (menempel di kiri) karena grid membaginya
+     jadi 2 kolom. grid-column: 1 / -1 membuatnya menembus kedua kolom
+     sehingga benar-benar center secara horizontal di seluruh lebar area. */
+  .dalil-result-list .dalil-empty {
+    grid-column: 1 / -1;
+  }
+}
