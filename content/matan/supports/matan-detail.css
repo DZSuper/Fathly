@@ -982,6 +982,23 @@
             border: 1px solid var(--border);
             box-shadow: var(--shadow);
             position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Fade gradient di bawah modal — penanda visual bahwa konten modal
+           masih berlanjut ke bawah dan bisa digeser, konsisten dengan pola
+           yang sama pada sidebar daftar bab. */
+        .modal-content::after {
+            content: "";
+            position: sticky;
+            bottom: -2rem;
+            left: -2rem;
+            right: -2rem;
+            height: 32px;
+            margin-top: -32px;
+            background: linear-gradient(180deg, transparent, var(--bg-card));
+            pointer-events: none;
+            order: 999;
         }
         .modal-content::-webkit-scrollbar {
             width: 3px;
@@ -1178,6 +1195,21 @@
                 gap: 0.2rem;
                 padding: 0.8rem;
             }
+            /* Fade gradient di bawah daftar bab — penanda visual bahwa
+               masih ada bab lain di bawah yang bisa digeser, supaya area
+               scroll internal tidak terkesan "terpotong begitu saja". */
+            .sidebar-bab::before {
+                content: "";
+                position: sticky;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 28px;
+                margin-top: -28px;
+                background: linear-gradient(180deg, transparent, var(--bg-card));
+                pointer-events: none;
+                order: 999;
+            }
             .sidebar-bab .bab-group {
                 width: 100%;
             }
@@ -1275,6 +1307,12 @@
                 min-width: 0;
                 width: min(330px, calc(100vw - 2rem));
                 right: -0.5rem;
+                /* Batasi tinggi dropdown supaya tidak "menjulur" menimpa
+                   konten di bawah header saat layar pendek (mode potrait
+                   HP) — kalau daftar opsi font tidak muat, dropdown-nya
+                   sendiri yang di-scroll, bukan mendorong tampilan lain. */
+                max-height: min(60vh, 360px);
+                overflow-y: auto;
             }
             .sidebar-tafsir {
                 height: 480px;
