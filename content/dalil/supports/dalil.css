@@ -223,12 +223,14 @@
   text-align: center;
   color: var(--text-muted);
   font-size: 0.8rem;
-  min-height: 60vh;
+  min-height: 60vh; /* fallback sebelum JS menghitung nilai presisi */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 .dalil-empty .ikon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
 
@@ -238,5 +240,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
+  }
+  /* Saat kosong, .dalil-empty adalah satu-satunya child grid — tanpa ini ia
+     hanya mengisi kolom pertama (menempel di kiri) karena grid membaginya
+     jadi 2 kolom. grid-column: 1 / -1 membuatnya menembus kedua kolom
+     sehingga benar-benar center secara horizontal di seluruh lebar area. */
+  .dalil-result-list .dalil-empty {
+    grid-column: 1 / -1;
   }
 }

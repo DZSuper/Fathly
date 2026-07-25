@@ -39,6 +39,28 @@
         return temaId;
     }
 
+    // Empty state "Tidak ada dalil yang cocok" harus tampil di tengah SISA
+    // ruang layar yang benar-benar terlihat pengguna, bukan sekadar tengah
+    // dari kontennya sendiri. Karena tinggi filter panel di atasnya bisa
+    // berubah-ubah (accordion Sumber/Derajat/Tema bisa expand/collapse),
+    // min-height statis (mis. via vh di CSS) tidak akurat — di sinilah kita
+    // hitung ulang secara dinamis: window.innerHeight dikurangi posisi
+    // elemen saat ini terhadap viewport.
+    function centerEmptyState() {
+        var el = document.getElementById('dalilEmptyState');
+        if (!el) return;
+        var top = el.getBoundingClientRect().top;
+        var sisa = window.innerHeight - top;
+        // Beri sedikit ruang bawah (2rem ~ 32px) supaya tidak mepet ke tepi.
+        el.style.minHeight = Math.max(sisa - 32, 160) + 'px';
+    }
+
+    // Hitung ulang saat layar berganti ukuran/orientasi (potrait <-> landscape)
+    // supaya posisi tetap center walau viewport berubah setelah dirender.
+    window.addEventListener('resize', function() {
+        window.requestAnimationFrame(centerEmptyState);
+    });
+
     function gradeLabel(grade) {
         var map = { quran: "AL-QUR'AN", shahih: 'SHAHIH', hasan: 'HASAN', dhaif: 'DHAIF' };
         return map[grade] || grade.toUpperCase();
@@ -172,10 +194,11 @@
 
         if (hasil.length === 0) {
             listEl.innerHTML =
-                '<div class="dalil-empty">' +
+                '<div class="dalil-empty" id="dalilEmptyState">' +
                     '<span class="ikon">🔍</span>' +
                     'Tidak ada dalil yang cocok.<br>Coba ubah kata kunci atau filter.' +
                 '</div>';
+            centerEmptyState();
             return;
         }
 
@@ -237,6 +260,9 @@
         var semuaItem = document.querySelectorAll('.dalil-acc-item');
         for (var i = 0; i < semuaItem.length; i++) semuaItem[i].classList.remove('terbuka');
         if (!sedangTerbuka) item.classList.add('terbuka');
+        // Tinggi panel filter berubah (animasi CSS), jadi posisi empty-state
+        // ikut bergeser — hitung ulang setelah transisi selesai.
+        window.setTimeout(centerEmptyState, 260);
     }
 
     // ===== EVENTS =====
@@ -301,7 +327,8 @@
             .catch(function(err) {
                 var listEl = document.getElementById('dalilResultList');
                 if (listEl) {
-                    listEl.innerHTML = '<div class="dalil-empty"><span class="ikon">⚠️</span>Gagal memuat data dalil.</div>';
+                    listEl.innerHTML = '<div class="dalil-empty" id="dalilEmptyState"><span class="ikon">⚠️</span>Gagal memuat data dalil.</div>';
+                    centerEmptyState();
                 }
                 console.error('Gagal memuat dalil.json:', err);
             });
