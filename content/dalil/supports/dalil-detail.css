@@ -64,7 +64,7 @@ body {
     padding: 1.2rem 1.1rem;
     text-align: center;
 }
-.dd-anchor .dd-grade {
+.dd-anchor .dd-badge-sumber {
     display: inline-block;
     font-size: 0.65rem;
     font-weight: 700;
@@ -72,10 +72,20 @@ body {
     border-radius: 6px;
     margin-bottom: 0.6rem;
 }
-.dd-grade.quran { background: rgba(255,215,0,0.15); color: var(--gold); }
-.dd-grade.shahih { background: rgba(0,255,136,0.15); color: var(--green); }
-.dd-grade.hasan { background: rgba(120,170,255,0.15); color: #78aaff; }
-.dd-grade.dhaif { background: rgba(255,110,110,0.15); color: #ff6e6e; }
+.dd-badge-sumber.quran { background: rgba(255,215,0,0.15); color: var(--gold); }
+.dd-badge-sumber.hadits { background: rgba(255,255,255,0.08); color: var(--text-light); border: 1px solid var(--border); }
+
+.dd-anchor .dd-badge-derajat {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 0.16rem 0.55rem;
+    border-radius: 6px;
+    margin-bottom: 0.6rem;
+}
+.dd-badge-derajat.shahih { background: rgba(0,255,136,0.15); color: var(--green); }
+.dd-badge-derajat.hasan { background: rgba(120,170,255,0.15); color: #78aaff; }
+.dd-badge-derajat.dhaif { background: rgba(255,110,110,0.15); color: #ff6e6e; }
 
 .dd-anchor .dd-rujukan { font-size: 0.72rem; color: var(--gold); font-weight: 700; margin-bottom: 0.7rem; }
 .dd-anchor .dd-arab { font-family: var(--font-arabic); direction: rtl; font-size: 1.5rem; line-height: 2.3; margin-bottom: 0.7rem; }
@@ -87,21 +97,41 @@ body {
 /* ── SECTION LABEL ── */
 .dd-section-label { padding: 0 1.1rem; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.6rem; }
 
-/* ── PERBANDINGAN TAFSIR ── */
+/* ── PERBANDINGAN TAFSIR ──
+   Carousel satu-kartu: setiap kartu mengisi penuh lebar area (persis 1
+   yang terlihat, center), dan geser akan langsung snap berpindah ke
+   kartu berikutnya/sebelumnya — bukan menampilkan potongan kartu lain
+   di tepi. scroll-snap-type "mandatory" (bukan "proximity") memaksa
+   posisi scroll selalu berhenti tepat di satu kartu.
+   Jarak ke tepi layar diberikan lewat padding pada SCROLL CONTAINER
+   (bukan margin pada kartu) — supaya lebar kartu yang terlihat persis
+   sama dengan .dd-anchor dan .dd-takhrij-table, konsisten di semua
+   ukuran layar dan orientasi (potrait/landscape). scroll-padding-inline
+   menjaga posisi snap tetap pas di dalam area yang sama. */
 .dd-compare-scroll {
     display: flex;
-    gap: 0.9rem;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
     overflow-x: auto;
-    padding: 0 1.1rem 0.4rem;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1.1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 1.1rem;
+    box-sizing: border-box;
 }
+.dd-compare-scroll::-webkit-scrollbar { display: none; }
 .dd-compare-col {
-    scroll-snap-align: start;
-    min-width: 82%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 1rem 1.05rem;
+    padding: 1rem 1.1rem 1rem 1rem;
+    overflow: hidden;
 }
 .dd-compare-col .dd-ulama {
     display: flex;
@@ -110,20 +140,7 @@ body {
     margin-bottom: 0.7rem;
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--border);
-    position: relative;
 }
-.dd-jenis-badge {
-    margin-left: auto;
-    font-size: 0.6rem;
-    font-weight: 700;
-    padding: 0.2rem 0.55rem;
-    border-radius: 20px;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-.dd-jenis-tafsir { color: var(--gold); background: rgba(255,215,0,0.1); }
-.dd-jenis-qiraah { color: #7fd8ff; background: rgba(127,216,255,0.1); }
-.dd-jenis-faedah { color: var(--green); background: rgba(0,255,136,0.1); }
 .dd-compare-col .dd-avatar {
     width: 30px;
     height: 30px;
@@ -139,7 +156,105 @@ body {
 .dd-compare-col .dd-kitab-ulama { font-size: 0.65rem; color: var(--text-muted); }
 .dd-compare-col .dd-konten { font-size: 0.78rem; color: var(--text-muted); line-height: 1.7; }
 
+/* Badge kecil jenis penjelasan, ditaruh di ujung kanan baris nama ulama */
+.dd-jenis-badge {
+    margin-left: auto;
+    flex-shrink: 0;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
 
+/* Varian warna per jenis penjelasan — border aksen di kiri kartu, warna
+   avatar bulat, warna badge, dan nuansa background yang sedikit berbeda
+   supaya tafsir / qira'at / faedah langsung terlihat beda tanpa perlu
+   membaca teksnya dulu.
+   - Tafsir : emas (identitas utama, penjelasan makna ayat/hadits)
+   - Qira'at: biru (variasi bacaan/riwayat)
+   - Faedah : hijau (pelajaran/insight praktis) */
+.dd-compare-col.jenis-tafsir {
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(180deg, rgba(255,215,0,0.05), var(--bg-card) 40%);
+}
+.dd-compare-col.jenis-tafsir .dd-avatar { background: rgba(255,215,0,0.15); color: var(--gold); }
+.dd-jenis-badge.jenis-tafsir,
+.dd-compare-col.jenis-tafsir .dd-jenis-badge { background: rgba(255,215,0,0.15); color: var(--gold); }
+
+.dd-compare-col.jenis-qiraah {
+    border-left: 3px solid #4fc3f7;
+    background: linear-gradient(180deg, rgba(79,195,247,0.07), var(--bg-card) 40%);
+}
+.dd-compare-col.jenis-qiraah .dd-avatar { background: rgba(79,195,247,0.15); color: #4fc3f7; }
+.dd-compare-col.jenis-qiraah .dd-jenis-badge { background: rgba(79,195,247,0.15); color: #4fc3f7; }
+
+.dd-compare-col.jenis-faedah {
+    border-left: 3px solid var(--green);
+    background: linear-gradient(180deg, rgba(0,255,136,0.06), var(--bg-card) 40%);
+}
+.dd-compare-col.jenis-faedah .dd-avatar { background: rgba(0,255,136,0.15); color: var(--green); }
+.dd-compare-col.jenis-faedah .dd-jenis-badge { background: rgba(0,255,136,0.15); color: var(--green); }
+
+/* Indikator dot: hanya dirender kalau kartunya lebih dari 1, dan aktif
+   mengikuti posisi scroll (diperbarui oleh dalil-detail.js). Kalau cuma
+   ada 1 kartu, dot tidak dirender sama sekali. */
+.dd-indikator { display: flex; justify-content: center; align-items: center; gap: 5px; margin: 0.8rem 0 0.4rem; }
+.dd-indikator span {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.15);
+    cursor: pointer;
+    transition: width 0.25s ease, background-color 0.25s ease;
+}
+.dd-indikator span.aktif { background: var(--gold); width: 16px; }
+
+/* ── QIRA'AT ── */
+.dd-qiroah-list { margin: 0 1.1rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.dd-qiroah-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+}
+.dd-qiroah-item .dd-qiroah-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.dd-qiroah-item .dd-imam { font-size: 0.8rem; font-weight: 700; color: var(--gold); }
+.dd-qiroah-item .dd-riwayat { font-size: 0.65rem; color: var(--text-muted); }
+.dd-qiroah-item .dd-bacaan {
+    font-family: var(--font-arabic);
+    direction: rtl;
+    font-size: 1.15rem;
+    line-height: 2;
+    text-align: right;
+    margin: 0.4rem 0;
+}
+.dd-qiroah-item .dd-qiroah-ket { font-size: 0.74rem; color: var(--text-muted); line-height: 1.55; }
+
+/* ── FAEDAH ── */
+.dd-faedah-box {
+    margin: 0 1.1rem;
+    background: rgba(255,215,0,0.05);
+    border: 1px solid rgba(255,215,0,0.22);
+    border-radius: 14px;
+    padding: 1.05rem 1.1rem;
+}
+.dd-faedah-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.dd-faedah-list li {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: 1.3rem;
+    position: relative;
+}
+.dd-faedah-list li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.75rem;
+}
 
 /* ── TAKHRIJ TABLE ── */
 .dd-takhrij-table {
@@ -173,9 +288,9 @@ body {
     font-size: 0.78rem;
 }
 
-/* ── DESKTOP ── */
+/* ── DESKTOP ──
+   Cuma melebarkan kolom tengah biar tidak terlalu lebar di layar besar.
+   TIDAK mengubah perilaku scroll horizontal manapun. */
 @media (min-width: 900px) {
     .dd-main { max-width: 760px; margin: 0 auto; }
-    .dd-compare-scroll { flex-wrap: wrap; }
-    .dd-compare-col { min-width: calc(33.333% - 0.6rem); }
 }

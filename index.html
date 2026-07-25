@@ -376,25 +376,42 @@
         <div class="dalil-hasil-info" id="dalilHasilInfo">Memuat data dalil...</div>
       </div>
 
-      <div class="dalil-filter-tray">
-        <div class="dalil-filter-group">
-          <span class="dalil-label">Sumber</span>
-          <span class="dalil-chip aktif" data-sumber="semua">Semua</span>
-          <span class="dalil-chip" data-sumber="quran">Al-Qur'an</span>
-          <span class="dalil-chip" data-sumber="hadits">Hadits</span>
+      <div class="dalil-filter-panel" id="dalilFilterPanel">
+        <div class="dalil-acc-item">
+          <div class="dalil-acc-head">
+            <span class="dalil-acc-nama">Sumber</span>
+            <span class="dalil-acc-right">
+              <span class="dalil-acc-nilai" id="dalilNilaiSumber">Semua</span>
+              <span class="dalil-acc-chevron">▾</span>
+            </span>
+          </div>
+          <div class="dalil-acc-body">
+            <div class="dalil-acc-body-inner" id="dalilOptSumber"></div>
+          </div>
         </div>
-        <div class="dalil-filter-group">
-          <span class="dalil-label">Derajat</span>
-          <span class="dalil-chip aktif" data-derajat="semua">Semua</span>
-          <span class="dalil-chip" data-derajat="shahih">Shahih</span>
-          <span class="dalil-chip" data-derajat="hasan">Hasan</span>
-          <span class="dalil-chip" data-derajat="dhaif">Dhaif</span>
+        <div class="dalil-acc-item">
+          <div class="dalil-acc-head">
+            <span class="dalil-acc-nama">Derajat</span>
+            <span class="dalil-acc-right">
+              <span class="dalil-acc-nilai" id="dalilNilaiDerajat">Semua</span>
+              <span class="dalil-acc-chevron">▾</span>
+            </span>
+          </div>
+          <div class="dalil-acc-body">
+            <div class="dalil-acc-body-inner" id="dalilOptDerajat"></div>
+          </div>
         </div>
-        <div class="dalil-filter-group">
-          <span class="dalil-label">Tema</span>
-          <span class="dalil-chip-group" id="dalilFilterTema">
-            <span class="dalil-chip aktif" data-tema="semua">Semua</span>
-          </span>
+        <div class="dalil-acc-item">
+          <div class="dalil-acc-head">
+            <span class="dalil-acc-nama">Tema</span>
+            <span class="dalil-acc-right">
+              <span class="dalil-acc-nilai" id="dalilNilaiTema">Semua</span>
+              <span class="dalil-acc-chevron">▾</span>
+            </span>
+          </div>
+          <div class="dalil-acc-body">
+            <div class="dalil-acc-body-inner" id="dalilOptTema"></div>
+          </div>
         </div>
       </div>
 

@@ -19,8 +19,12 @@
         return params.get('id');
     }
 
-    function gradeLabel(grade) {
-        var map = { quran: "AL-QUR'AN", shahih: 'HADITS SHAHIH', hasan: 'HADITS HASAN', dhaif: 'HADITS DHAIF' };
+    function sumberLabel(sumber) {
+        return sumber === 'quran' ? "AL-QUR'AN" : 'HADITS';
+    }
+
+    function derajatLabel(grade) {
+        var map = { shahih: 'SHAHIH', hasan: 'HASAN', dhaif: 'DHAIF' };
         return map[grade] || grade.toUpperCase();
     }
 
@@ -37,7 +41,8 @@
 
         return (
             '<div class="dd-anchor">' +
-                '<span class="dd-grade ' + item.grade + '">' + gradeLabel(item.grade) + '</span>' +
+                '<span class="dd-badge-sumber ' + item.sumber + '">' + sumberLabel(item.sumber) + '</span>' +
+                (item.sumber === 'hadits' ? ' <span class="dd-badge-derajat ' + item.grade + '">' + derajatLabel(item.grade) + '</span>' : '') +
                 '<div class="dd-rujukan">' + escapeHtml(item.rujukan) + '</div>' +
                 '<div class="dd-arab">' + escapeHtml(item.arab) + '</div>' +
                 '<div class="dd-terjemahan">"' + escapeHtml(item.terjemahan) + '"</div>' +
@@ -46,39 +51,87 @@
         );
     }
 
-    function jenisLabel(jenis) {
-        var map = { tafsir: 'Tafsir', qiraah: 'Qira\u2019ah', faedah: 'Faedah' };
-        return map[jenis] || 'Tafsir';
+    // Metadata tampilan per jenis penjelasan: ikon dan label kelas warna.
+    // Dipetakan dari field `jenis` pada tiap entri tafsirBanding, sehingga
+    // tafsir, qiraah, dan faedah punya identitas visual yang berbeda.
+    var JENIS_META = {
+        tafsir: { ikon: '📖', label: 'Tafsir', kelas: 'jenis-tafsir' },
+        qiraah: { ikon: '🎙️', label: 'Qira\u2019at', kelas: 'jenis-qiraah' },
+        faedah: { ikon: '💡', label: 'Faedah', kelas: 'jenis-faedah' }
+    };
+    function getJenisMeta(jenis) {
+        return JENIS_META[jenis] || { ikon: '📖', label: 'Penjelasan', kelas: 'jenis-tafsir' };
     }
 
-    function jenisIcon(jenis) {
-        var map = { tafsir: '📖', qiraah: '🔤', faedah: '💡' };
-        return map[jenis] || '📖';
-    }
-
+    // Kartu perbandingan tafsir. Indikator titik HANYA dirender kalau ada
+    // lebih dari 1 kartu (kalau cuma 1, tidak perlu dot sama sekali).
     function renderBanding(item) {
         if (!item.tafsirBanding || item.tafsirBanding.length === 0) return '';
 
         var kolom = item.tafsirBanding.map(function(t) {
-            var jenis = t.jenis || 'tafsir';
+            var meta = getJenisMeta(t.jenis);
             return (
-                '<div class="dd-compare-col">' +
+                '<div class="dd-compare-col ' + meta.kelas + '">' +
                     '<div class="dd-ulama">' +
-                        '<span class="dd-avatar">' + jenisIcon(jenis) + '</span>' +
+                        '<span class="dd-avatar">' + meta.ikon + '</span>' +
                         '<div>' +
                             '<div class="dd-nama-ulama">' + escapeHtml(t.ulama) + '</div>' +
-                            (t.kitab ? '<div class="dd-kitab-ulama">' + escapeHtml(t.kitab) + '</div>' : '') +
+                            '<div class="dd-kitab-ulama">' + (t.kitab ? escapeHtml(t.kitab) : meta.label) + '</div>' +
                         '</div>' +
-                        '<span class="dd-jenis-badge dd-jenis-' + jenis + '">' + jenisLabel(jenis) + '</span>' +
+                        '<span class="dd-jenis-badge">' + meta.label + '</span>' +
                     '</div>' +
                     '<div class="dd-konten">' + escapeHtml(t.isi) + '</div>' +
                 '</div>'
             );
         }).join('');
 
+        var hintHtml = item.tafsirBanding.length > 1
+            ? '<div class="dd-section-label">Geser untuk membandingkan penjelasan tiap ulama →</div>'
+            : '<div class="dd-section-label">Penjelasan ulama</div>';
+
+        var dotsHtml = '';
+        if (item.tafsirBanding.length > 1) {
+            var titik = item.tafsirBanding.map(function(_, i) {
+                return '<span class="' + (i === 0 ? 'aktif' : '') + '" data-idx="' + i + '"></span>';
+            }).join('');
+            dotsHtml = '<div class="dd-indikator" id="ddIndikatorBanding">' + titik + '</div>';
+        }
+
         return (
-            '<div class="dd-section-label">Geser untuk membandingkan penjelasan tiap ulama →</div>' +
-            '<div class="dd-compare-scroll">' + kolom + '</div>'
+            hintHtml +
+            '<div class="dd-compare-scroll" id="ddCompareScroll">' + kolom + '</div>' +
+            dotsHtml
+        );
+    }
+
+    function renderQiroah(item) {
+        if (!item.qiroah || item.qiroah.length === 0) return '';
+        var baris = item.qiroah.map(function(q) {
+            return (
+                '<div class="dd-qiroah-item">' +
+                    '<div class="dd-qiroah-head">' +
+                        '<span class="dd-imam">' + escapeHtml(q.imam) + '</span>' +
+                        '<span class="dd-riwayat">' + escapeHtml(q.riwayat) + '</span>' +
+                    '</div>' +
+                    '<div class="dd-bacaan">' + escapeHtml(q.bacaan) + '</div>' +
+                    '<div class="dd-qiroah-ket">' + escapeHtml(q.keterangan) + '</div>' +
+                '</div>'
+            );
+        }).join('');
+        return (
+            '<div class="dd-section-label" style="margin-top:1.6rem;">Perbedaan qira\'at (bacaan)</div>' +
+            '<div class="dd-qiroah-list">' + baris + '</div>'
+        );
+    }
+
+    function renderFaedah(item) {
+        if (!item.faedah || item.faedah.length === 0) return '';
+        var baris = item.faedah.map(function(f) {
+            return '<li>' + escapeHtml(f) + '</li>';
+        }).join('');
+        return (
+            '<div class="dd-section-label" style="margin-top:1.6rem;">Faedah</div>' +
+            '<div class="dd-faedah-box"><ul class="dd-faedah-list">' + baris + '</ul></div>'
         );
     }
 
@@ -99,21 +152,64 @@
         );
     }
 
+    // Sinkronkan dot indikator dengan posisi scroll horizontal kartu tafsir,
+    // dan buat dot bisa diklik untuk lompat ke kartu tertentu.
+    function bindCompareScrollSync() {
+        var scroller = document.getElementById('ddCompareScroll');
+        var indikator = document.getElementById('ddIndikatorBanding');
+        if (!scroller || !indikator) return;
+
+        var kolom = scroller.querySelectorAll('.dd-compare-col');
+        var dots = indikator.querySelectorAll('span');
+
+        function updateActiveDot() {
+            var scrollLeft = scroller.scrollLeft;
+            var terdekat = 0;
+            var jarakTerkecil = Infinity;
+            for (var i = 0; i < kolom.length; i++) {
+                var jarak = Math.abs(kolom[i].offsetLeft - scroller.offsetLeft - scrollLeft);
+                if (jarak < jarakTerkecil) { jarakTerkecil = jarak; terdekat = i; }
+            }
+            for (var j = 0; j < dots.length; j++) {
+                dots[j].classList.toggle('aktif', j === terdekat);
+            }
+        }
+
+        scroller.addEventListener('scroll', function() {
+            window.requestAnimationFrame(updateActiveDot);
+        });
+
+        indikator.addEventListener('click', function(e) {
+            var dot = e.target.closest('span[data-idx]');
+            if (!dot) return;
+            var idx = parseInt(dot.getAttribute('data-idx'), 10);
+            if (kolom[idx]) {
+                scroller.scrollTo({ left: kolom[idx].offsetLeft - scroller.offsetLeft, behavior: 'smooth' });
+            }
+        });
+    }
+
     function render(item, temaList) {
         var main = document.getElementById('ddMain');
         var adaBanding = item.tafsirBanding && item.tafsirBanding.length > 0;
+        var adaQiroah = item.qiroah && item.qiroah.length > 0;
+        var adaFaedah = item.faedah && item.faedah.length > 0;
         var adaTakhrij = item.takhrij && item.takhrij.length > 0;
 
         var html = renderAnchor(item, temaList);
         html += renderBanding(item);
+        html += renderQiroah(item);
+        html += renderFaedah(item);
         html += renderTakhrij(item);
 
-        if (!adaBanding && !adaTakhrij) {
-            html += '<div class="dd-kosong-hint">📊 Data perbandingan tafsir &amp; takhrij untuk dalil ini belum tersedia.</div>';
+        if (!adaBanding && !adaQiroah && !adaFaedah && !adaTakhrij) {
+            html += '<div class="dd-kosong-hint">📊 Data perbandingan tafsir, qira\'at, faedah, dan takhrij untuk dalil ini belum tersedia.</div>';
         }
 
         main.innerHTML = html;
         document.title = item.rujukan + ' | FathlyWeb';
+
+        bindCompareScrollSync();
     }
 
     function init() {

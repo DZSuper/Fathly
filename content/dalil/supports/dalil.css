@@ -1,6 +1,6 @@
 /* =============================================
    DALIL.CSS — Tab Dalil FathlyWeb
-   Konsep: Pencarian & Filter (Preview 2)
+   Filter: Accordion menyatu, multi-select (Filter C)
    Semua class diberi prefix "dalil-" supaya tidak bentrok
    dengan tab lain yang berbagi stylesheet global.
 ============================================= */
@@ -55,48 +55,83 @@
 }
 .dalil-hasil-info b { color: var(--gold); }
 
-/* ── FILTER TRAY ── */
-.dalil-filter-tray {
-  padding: 0.7rem 1rem 0.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+/* ── FILTER PANEL: ACCORDION MENYATU (Filter C) ──
+   Hanya 1 bagian (Sumber/Derajat/Tema) yang boleh terbuka sekaligus.
+   Tidak ada overlay — panel jadi bagian dari alur halaman biasa,
+   jadi tidak pernah terpotong di tepi layar seperti dropdown melayang. */
+.dalil-filter-panel {
+  margin: 0.9rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
 }
-.dalil-filter-group {
+.dalil-acc-item { border-bottom: 1px solid var(--border); }
+.dalil-acc-item:last-child { border-bottom: none; }
+
+.dalil-acc-head {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  overflow-x: auto;
-  scrollbar-width: none;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
-.dalil-filter-group::-webkit-scrollbar { display: none; }
-.dalil-filter-group .dalil-label {
-  font-size: 0.66rem;
-  color: var(--text-muted);
-  white-space: nowrap;
-  min-width: 56px;
-}
-.dalil-chip-group {
-  display: contents;
-}
-.dalil-chip {
+.dalil-acc-head .dalil-acc-kiri { display: flex; align-items: center; gap: 0.5rem; }
+.dalil-acc-nama { font-size: 0.8rem; font-weight: 600; }
+.dalil-acc-right { display: flex; align-items: center; gap: 0.5rem; }
+.dalil-acc-nilai {
   font-size: 0.7rem;
-  padding: 0.32rem 0.7rem;
+  color: var(--gold);
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.15rem 0.55rem;
   border-radius: 20px;
   white-space: nowrap;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dalil-acc-chevron {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.dalil-acc-item.terbuka .dalil-acc-chevron { transform: rotate(180deg); }
+
+.dalil-acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition);
+}
+.dalil-acc-item.terbuka .dalil-acc-body {
+  max-height: 280px;
+  overflow-y: auto;
+}
+.dalil-acc-body-inner {
+  padding: 0.2rem 1rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.dalil-acc-chip {
+  font-size: 0.74rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9px;
   border: 1px solid var(--border);
   color: var(--text-muted);
   cursor: pointer;
-  transition: var(--transition);
+  transition: all var(--transition);
   background: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
-.dalil-chip.aktif {
+.dalil-acc-chip.aktif {
   background: var(--gold);
   color: #1a1300;
   border-color: var(--gold);
   font-weight: 700;
 }
-.dalil-chip:not(.aktif):hover {
+.dalil-acc-chip:not(.aktif):hover {
   border-color: rgba(255, 215, 0, 0.4);
   color: var(--text-light);
 }
@@ -127,17 +162,26 @@
   margin-bottom: 0.5rem;
   flex-wrap: wrap;
 }
-.dalil-grade {
+.dalil-badge-sumber {
   font-size: 0.62rem;
   font-weight: 700;
   padding: 0.14rem 0.5rem;
   border-radius: 6px;
   white-space: nowrap;
 }
-.dalil-grade.quran { background: rgba(255, 215, 0, 0.15); color: var(--gold); }
-.dalil-grade.shahih { background: rgba(0, 255, 136, 0.15); color: var(--green); }
-.dalil-grade.hasan { background: rgba(120, 170, 255, 0.15); color: #78aaff; }
-.dalil-grade.dhaif { background: rgba(255, 110, 110, 0.15); color: #ff6e6e; }
+.dalil-badge-sumber.quran { background: rgba(255, 215, 0, 0.15); color: var(--gold); }
+.dalil-badge-sumber.hadits { background: rgba(255, 255, 255, 0.08); color: var(--text-light); border: 1px solid var(--border); }
+
+.dalil-badge-derajat {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.12rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.dalil-badge-derajat.shahih { background: rgba(0, 255, 136, 0.15); color: var(--green); }
+.dalil-badge-derajat.hasan { background: rgba(120, 170, 255, 0.15); color: #78aaff; }
+.dalil-badge-derajat.dhaif { background: rgba(255, 110, 110, 0.15); color: #ff6e6e; }
 .dalil-rujukan { font-size: 0.68rem; color: var(--text-muted); }
 
 .dalil-arab-preview {
@@ -177,9 +221,14 @@
 
 .dalil-empty {
   text-align: center;
-  padding: 2.5rem 1rem;
   color: var(--text-muted);
   font-size: 0.8rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 .dalil-empty .ikon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
 

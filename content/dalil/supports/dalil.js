@@ -1,6 +1,6 @@
 /* =============================================
    DALIL.JS — Tab Dalil FathlyWeb
-   Konsep: Pencarian & Filter (Preview 2)
+   Filter: Accordion menyatu, multi-select (Filter C)
    ES5, vanilla, mengikuti pola matan.js
 ============================================= */
 
@@ -10,14 +10,20 @@
     var DATA_URL = 'content/dalil/data/dalil.json';
     var DETAIL_PAGE = 'content/dalil/pages/detail.html';
 
+    // Tiap filter berupa ARRAY (mendukung multi-select). Nilai 'semua' berarti
+    // "tidak difilter" pada dimensi itu — begitu ada pilihan spesifik lain
+    // yang dipilih, 'semua' otomatis lepas (lihat toggleChip).
     var state = {
         dalilList: [],
         temaList: [],
         query: '',
-        filterSumber: 'semua',
-        filterDerajat: 'semua',
-        filterTema: 'semua'
+        filterSumber: ['semua'],
+        filterDerajat: ['semua'],
+        filterTema: ['semua']
     };
+
+    var DERAJAT_LABEL = { semua: 'Semua', shahih: 'Shahih', hasan: 'Hasan', dhaif: 'Dhaif' };
+    var SUMBER_LABEL = { semua: 'Semua', quran: "Al-Qur'an", hadits: 'Hadits' };
 
     // ===== HELPERS =====
     function escapeHtml(str) {
@@ -38,7 +44,41 @@
         return map[grade] || grade.toUpperCase();
     }
 
+    // Badge utama pada tiap kartu sekarang berbasis SUMBER (Al-Qur'an / Hadits),
+    // bukan derajat. Derajat (Shahih/Hasan/Dhaif) jadi badge kedua yang HANYA
+    // muncul untuk hadits — karena seluruh ayat Al-Qur'an sudah dianggap
+    // berderajat shahih (mutawatir) di data, tidak perlu label derajat berulang.
+    function sumberLabel(sumber) {
+        return sumber === 'quran' ? "AL-QUR'AN" : 'HADITS';
+    }
+
+    function derajatLabel(grade) {
+        var map = { shahih: 'SHAHIH', hasan: 'HASAN', dhaif: 'DHAIF' };
+        return map[grade] || grade.toUpperCase();
+    }
+
+    // Ringkasan nilai terpilih untuk ditampilkan di kepala accordion.
+    // 'semua' -> "Semua" | 1 pilihan -> nama pilihan itu | >1 -> "N dipilih"
+    function ringkasanFilter(arr, labelFn) {
+        if (arr.length === 0 || arr.indexOf('semua') !== -1) return 'Semua';
+        if (arr.length === 1) return labelFn(arr[0]);
+        return arr.length + ' dipilih';
+    }
+
     // ===== FILTER & SEARCH =====
+    function cocokMulti(nilai, arr) {
+        if (arr.indexOf('semua') !== -1) return true;
+        return arr.indexOf(nilai) !== -1;
+    }
+
+    function cocokTema(itemTema, arr) {
+        if (arr.indexOf('semua') !== -1) return true;
+        for (var i = 0; i < itemTema.length; i++) {
+            if (arr.indexOf(itemTema[i]) !== -1) return true;
+        }
+        return false;
+    }
+
     function cocokQuery(item, q) {
         if (!q) return true;
         q = q.toLowerCase();
@@ -56,9 +96,9 @@
 
     function getHasil() {
         return state.dalilList.filter(function(item) {
-            if (state.filterSumber !== 'semua' && item.sumber !== state.filterSumber) return false;
-            if (state.filterDerajat !== 'semua' && item.grade !== state.filterDerajat) return false;
-            if (state.filterTema !== 'semua' && item.tema.indexOf(state.filterTema) === -1) return false;
+            if (!cocokMulti(item.sumber, state.filterSumber)) return false;
+            if (!cocokMulti(item.grade, state.filterDerajat)) return false;
+            if (!cocokTema(item.tema, state.filterTema)) return false;
             if (!cocokQuery(item, state.query)) return false;
             return true;
         });
@@ -72,18 +112,50 @@
         return escaped.slice(0, idx) + '<mark>' + escaped.slice(idx, idx + q.length) + '</mark>' + escaped.slice(idx + q.length);
     }
 
-    // ===== RENDER =====
-    function renderChips() {
-        var temaWrap = document.getElementById('dalilFilterTema');
-        if (!temaWrap) return;
-        var html = '<span class="dalil-chip ' + (state.filterTema === 'semua' ? 'aktif' : '') + '" data-tema="semua">Semua</span>';
-        for (var i = 0; i < state.temaList.length; i++) {
-            var t = state.temaList[i];
-            html += '<span class="dalil-chip ' + (state.filterTema === t.temaId ? 'aktif' : '') + '" data-tema="' + t.temaId + '">' + escapeHtml(t.nama) + '</span>';
+    // ===== RENDER FILTER PANEL =====
+    function renderFilterOptions() {
+        // Sumber
+        var sumberWrap = document.getElementById('dalilOptSumber');
+        if (sumberWrap) {
+            var sumberKeys = ['semua', 'quran', 'hadits'];
+            sumberWrap.innerHTML = sumberKeys.map(function(k) {
+                var aktif = state.filterSumber.indexOf(k) !== -1;
+                return '<span class="dalil-acc-chip ' + (aktif ? 'aktif' : '') + '" data-key="sumber" data-value="' + k + '">' + SUMBER_LABEL[k] + '</span>';
+            }).join('');
         }
-        temaWrap.innerHTML = html;
+
+        // Derajat
+        var derajatWrap = document.getElementById('dalilOptDerajat');
+        if (derajatWrap) {
+            var derajatKeys = ['semua', 'shahih', 'hasan', 'dhaif'];
+            derajatWrap.innerHTML = derajatKeys.map(function(k) {
+                var aktif = state.filterDerajat.indexOf(k) !== -1;
+                return '<span class="dalil-acc-chip ' + (aktif ? 'aktif' : '') + '" data-key="derajat" data-value="' + k + '">' + DERAJAT_LABEL[k] + '</span>';
+            }).join('');
+        }
+
+        // Tema (dinamis dari data)
+        var temaWrap = document.getElementById('dalilOptTema');
+        if (temaWrap) {
+            var html = '<span class="dalil-acc-chip ' + (state.filterTema.indexOf('semua') !== -1 ? 'aktif' : '') + '" data-key="tema" data-value="semua">Semua</span>';
+            for (var i = 0; i < state.temaList.length; i++) {
+                var t = state.temaList[i];
+                var aktifTema = state.filterTema.indexOf(t.temaId) !== -1;
+                html += '<span class="dalil-acc-chip ' + (aktifTema ? 'aktif' : '') + '" data-key="tema" data-value="' + t.temaId + '">' + escapeHtml(t.nama) + '</span>';
+            }
+            temaWrap.innerHTML = html;
+        }
+
+        // Ringkasan di kepala accordion
+        var elSumber = document.getElementById('dalilNilaiSumber');
+        var elDerajat = document.getElementById('dalilNilaiDerajat');
+        var elTema = document.getElementById('dalilNilaiTema');
+        if (elSumber) elSumber.textContent = ringkasanFilter(state.filterSumber, function(k) { return SUMBER_LABEL[k]; });
+        if (elDerajat) elDerajat.textContent = ringkasanFilter(state.filterDerajat, function(k) { return DERAJAT_LABEL[k]; });
+        if (elTema) elTema.textContent = ringkasanFilter(state.filterTema, namaTema);
     }
 
+    // ===== RENDER HASIL =====
     function renderHasil() {
         var hasil = getHasil();
         var listEl = document.getElementById('dalilResultList');
@@ -115,7 +187,8 @@
             html +=
                 '<div class="dalil-result-item" data-id="' + item.id + '">' +
                     '<div class="dalil-top-row">' +
-                        '<span class="dalil-grade ' + item.grade + '">' + gradeLabel(item.grade) + '</span>' +
+                        '<span class="dalil-badge-sumber ' + item.sumber + '">' + sumberLabel(item.sumber) + '</span>' +
+                        (item.sumber === 'hadits' ? '<span class="dalil-badge-derajat ' + item.grade + '">' + derajatLabel(item.grade) + '</span>' : '') +
                         '<span class="dalil-rujukan">' + escapeHtml(item.rujukan) + '</span>' +
                     '</div>' +
                     '<div class="dalil-arab-preview">' + escapeHtml(item.arab) + '</div>' +
@@ -128,8 +201,42 @@
     }
 
     function renderAll() {
-        renderChips();
+        renderFilterOptions();
         renderHasil();
+    }
+
+    // ===== TOGGLE CHIP (multi-select) =====
+    // key: 'sumber' | 'derajat' | 'tema'
+    function toggleChip(key, value) {
+        var stateKey = 'filter' + key.charAt(0).toUpperCase() + key.slice(1);
+        var arr = state[stateKey];
+
+        if (value === 'semua') {
+            arr.length = 0;
+            arr.push('semua');
+        } else {
+            var idxSemua = arr.indexOf('semua');
+            if (idxSemua !== -1) arr.splice(idxSemua, 1);
+
+            var idxValue = arr.indexOf(value);
+            if (idxValue !== -1) {
+                arr.splice(idxValue, 1);
+                if (arr.length === 0) arr.push('semua');
+            } else {
+                arr.push(value);
+            }
+        }
+
+        renderFilterOptions();
+        renderHasil();
+    }
+
+    // ===== ACCORDION (hanya 1 terbuka sekaligus) =====
+    function toggleAccordion(item) {
+        var sedangTerbuka = item.classList.contains('terbuka');
+        var semuaItem = document.querySelectorAll('.dalil-acc-item');
+        for (var i = 0; i < semuaItem.length; i++) semuaItem[i].classList.remove('terbuka');
+        if (!sedangTerbuka) item.classList.add('terbuka');
     }
 
     // ===== EVENTS =====
@@ -154,33 +261,22 @@
         }
 
         document.addEventListener('click', function(e) {
-            var chip = e.target.closest('.dalil-chip[data-sumber]');
+            // Chip filter (multi-select) — dicek lebih dulu supaya klik di
+            // dalam body accordion tidak ikut membuka/menutup accordion-nya.
+            var chip = e.target.closest('.dalil-acc-chip');
             if (chip) {
-                state.filterSumber = chip.getAttribute('data-sumber');
-                var wrap = chip.parentElement;
-                var chips = wrap.querySelectorAll('.dalil-chip');
-                for (var i = 0; i < chips.length; i++) chips[i].classList.remove('aktif');
-                chip.classList.add('aktif');
-                renderHasil();
+                toggleChip(chip.getAttribute('data-key'), chip.getAttribute('data-value'));
                 return;
             }
-            var chipD = e.target.closest('.dalil-chip[data-derajat]');
-            if (chipD) {
-                state.filterDerajat = chipD.getAttribute('data-derajat');
-                var wrapD = chipD.parentElement;
-                var chipsD = wrapD.querySelectorAll('.dalil-chip');
-                for (var j = 0; j < chipsD.length; j++) chipsD[j].classList.remove('aktif');
-                chipD.classList.add('aktif');
-                renderHasil();
+
+            // Kepala accordion (buka/tutup)
+            var head = e.target.closest('.dalil-acc-head');
+            if (head) {
+                toggleAccordion(head.parentElement);
                 return;
             }
-            var chipT = e.target.closest('.dalil-chip[data-tema]');
-            if (chipT) {
-                state.filterTema = chipT.getAttribute('data-tema');
-                renderChips();
-                renderHasil();
-                return;
-            }
+
+            // Kartu hasil -> ke halaman detail
             var card = e.target.closest('.dalil-result-item');
             if (card) {
                 var id = card.getAttribute('data-id');
@@ -192,7 +288,7 @@
     // ===== INIT =====
     function initDalil() {
         var tabDalil = document.getElementById('tab-dalil');
-        if (!tabDalil) return; // halaman lain (mis. detail) tidak perlu load ini
+        if (!tabDalil) return; // halaman lain tidak perlu load ini
 
         fetch(DATA_URL)
             .then(function(res) { return res.json(); })
