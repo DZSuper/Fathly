@@ -69,7 +69,7 @@ collections:
                 widget: "string"
               - name: "konten"
                 label: "Konten"
-                widget: "markdown"
+                widget: "text"
 
       - name: "bidah"
         label: "Bid'ah"
