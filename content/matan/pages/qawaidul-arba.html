@@ -71,7 +71,9 @@
 
             <div class="nav-bawah">
                 <button id="btnPrev">← Sebelumnya</button>
-                <div class="halaman-nav" id="halamanNav"></div>
+                <button type="button" class="hal-tab-btn" id="btnHalamanTab" aria-haspopup="dialog">
+                    <span id="halamanTabLabel">Halaman 1 / 1</span>
+                </button>
                 <button id="btnNext">Selanjutnya →</button>
             </div>
         </div>
@@ -170,6 +172,22 @@
                 <div class="value">
                     <strong>Al-Qawa'idul Arba'</strong> (Empat Kaidah) adalah risalah ringkas namun sangat penting karya <strong>Syaikh Muhammad bin Abdul Wahhab</strong> <em>rahimahullah</em>. Risalah ini memuat empat kaidah pokok untuk memahami hakikat syirik yang dilakukan oleh kaum musyrikin di zaman Nabi ﷺ, sekaligus membedakannya dengan tauhid yang benar. Kitab ini menjadi salah satu materi dasar yang diajarkan di banyak pesantren dan majelis ilmu dalam mempelajari aqidah tauhid.
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+    MODAL DAFTAR HALAMAN
+    ============================================ -->
+    <div class="modal-overlay" id="modalDaftarHalaman">
+        <div class="modal-content modal-daftar-halaman-content">
+            <button class="modal-close" id="modalDaftarHalamanClose">✕</button>
+
+            <div class="modal-title" style="font-size:1.3rem;">Pilih Halaman</div>
+            <div class="modal-sub" id="modalDaftarHalamanSub">Total 1 halaman</div>
+
+            <div class="daftar-halaman-grid" id="daftarHalamanGrid">
+                <!-- Tombol nomor halaman dirender dinamis oleh JS -->
             </div>
         </div>
     </div>
