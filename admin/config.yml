@@ -1,10 +1,14 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: DZSuper/Fathly
   branch: main
+  base_url: https://sveltia-cms-auth.danisuryaanugrah12345.workers.dev
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
+# Catatan: opsi 'locale' di bawah ini sudah tidak berefek di Sveltia CMS —
+# bahasa UI terdeteksi otomatis dari browser. Aman dibiarkan atau dihapus.
 locale: 'id'
 
 collections:
