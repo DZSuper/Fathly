@@ -287,7 +287,12 @@
             // =============================================
             var baits = document.querySelectorAll('.teks-bait .bait');
             var keteranganItems = document.querySelectorAll('.tafsir-item');
-            var halamanNavEl = document.getElementById('halamanNav');
+            var btnHalamanTab = document.getElementById('btnHalamanTab');
+            var halamanTabLabel = document.getElementById('halamanTabLabel');
+            var modalDaftarHalaman = document.getElementById('modalDaftarHalaman');
+            var modalDaftarHalamanClose = document.getElementById('modalDaftarHalamanClose');
+            var modalDaftarHalamanSub = document.getElementById('modalDaftarHalamanSub');
+            var daftarHalamanGridEl = document.getElementById('daftarHalamanGrid');
 
             // =============================================
             // SINKRONISASI PROGRES HAFALAN — REAL-TIME
@@ -426,48 +431,88 @@
                 renderHalamanNav();
             }
 
-            // Bangun tombol nomor halaman bulat dengan elipsis untuk lompat jauh
+            // Perbarui label tombol "Halaman X / Y" dan, jika modal daftar
+            // halaman sedang terbuka, sorot halaman yang sedang aktif.
             function renderHalamanNav() {
-                if (!halamanNavEl) return;
-                halamanNavEl.innerHTML = '';
-
-                if (totalPages <= 1) return;
-
                 var current = currentPage + 1; // 1-indexed untuk tampilan
-                var pages = [];
-                var delta = 1; // jumlah tetangga kiri/kanan current yang selalu tampil
-
-                pages.push(1);
-                for (var p = current - delta; p <= current + delta; p++) {
-                    if (p > 1 && p < totalPages) pages.push(p);
+                if (halamanTabLabel) {
+                    halamanTabLabel.textContent = 'Halaman ' + current + ' / ' + totalPages;
                 }
-                if (totalPages > 1) pages.push(totalPages);
+                if (modalDaftarHalaman && modalDaftarHalaman.classList.contains('aktif')) {
+                    highlightHalamanAktif();
+                }
+            }
 
-                // Urutkan & hapus duplikat
-                pages = pages.filter(function(v, i, arr) { return arr.indexOf(v) === i; }).sort(function(a, b) { return a - b; });
+            // Bangun grid semua nomor halaman di dalam modal, sekali saja
+            // saat modal pertama kali dibuka (lalu di-reuse tiap dibuka lagi).
+            var daftarHalamanDirender = false;
+            function renderDaftarHalamanGrid() {
+                if (!daftarHalamanGridEl) return;
+                daftarHalamanGridEl.innerHTML = '';
 
-                var prev = null;
-                for (var k = 0; k < pages.length; k++) {
-                    var pg = pages[k];
-                    if (prev !== null && pg - prev > 1) {
-                        var ell = document.createElement('span');
-                        ell.className = 'hal-ellipsis';
-                        ell.textContent = '···';
-                        halamanNavEl.appendChild(ell);
-                    }
+                for (var p = 1; p <= totalPages; p++) {
                     (function(pageNum) {
                         var btn = document.createElement('button');
                         btn.type = 'button';
-                        btn.className = 'hal-btn' + (pageNum === current ? ' aktif' : '');
+                        btn.className = 'daftar-hal-btn';
                         btn.textContent = String(pageNum);
+                        btn.setAttribute('data-hal', String(pageNum));
                         btn.setAttribute('aria-label', 'Ke halaman ' + pageNum);
                         btn.addEventListener('click', function() {
                             showPage(pageNum - 1);
+                            closeDaftarHalamanModal();
                         });
-                        halamanNavEl.appendChild(btn);
-                    })(pg);
-                    prev = pg;
+                        daftarHalamanGridEl.appendChild(btn);
+                    })(p);
                 }
+                daftarHalamanDirender = true;
+                highlightHalamanAktif();
+            }
+
+            function highlightHalamanAktif() {
+                if (!daftarHalamanGridEl) return;
+                var current = currentPage + 1;
+                var tombolSemua = daftarHalamanGridEl.querySelectorAll('.daftar-hal-btn');
+                for (var i = 0; i < tombolSemua.length; i++) {
+                    var isAktif = tombolSemua[i].getAttribute('data-hal') === String(current);
+                    tombolSemua[i].classList.toggle('aktif', isAktif);
+                }
+            }
+
+            function openDaftarHalamanModal() {
+                if (!modalDaftarHalaman) return;
+                if (!daftarHalamanDirender) renderDaftarHalamanGrid();
+                if (modalDaftarHalamanSub) {
+                    modalDaftarHalamanSub.textContent = 'Total ' + totalPages + ' halaman';
+                }
+                highlightHalamanAktif();
+                modalDaftarHalaman.classList.add('aktif');
+                document.body.style.overflow = 'hidden';
+                // Gulir otomatis ke tombol halaman yang sedang aktif
+                var aktifBtn = daftarHalamanGridEl.querySelector('.daftar-hal-btn.aktif');
+                if (aktifBtn) {
+                    setTimeout(function() {
+                        aktifBtn.scrollIntoView({ block: 'center', behavior: 'auto' });
+                    }, 0);
+                }
+            }
+
+            function closeDaftarHalamanModal() {
+                if (!modalDaftarHalaman) return;
+                modalDaftarHalaman.classList.remove('aktif');
+                document.body.style.overflow = '';
+            }
+
+            if (btnHalamanTab) {
+                btnHalamanTab.addEventListener('click', openDaftarHalamanModal);
+            }
+            if (modalDaftarHalamanClose) {
+                modalDaftarHalamanClose.addEventListener('click', closeDaftarHalamanModal);
+            }
+            if (modalDaftarHalaman) {
+                modalDaftarHalaman.addEventListener('click', function(e) {
+                    if (e.target === modalDaftarHalaman) closeDaftarHalamanModal();
+                });
             }
 
             var pressHighlightTimers = {};
@@ -1329,6 +1374,10 @@
             document.addEventListener('keydown', function(e) {
                 if (modal.classList.contains('aktif')) return;
                 if (modalCatatan && modalCatatan.classList.contains('aktif')) return;
+                if (modalDaftarHalaman && modalDaftarHalaman.classList.contains('aktif')) {
+                    if (e.key === 'Escape') closeDaftarHalamanModal();
+                    return;
+                }
                 if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
                 if (e.key === 'ArrowRight') {
