@@ -91,7 +91,7 @@ collections:
                 widget: "string"
               - name: "konten"
                 label: "Konten"
-                widget: "markdown"
+                widget: "text"
 
       - name: "sifat"
         label: "Sifat Allah"
@@ -113,7 +113,7 @@ collections:
                 widget: "string"
               - name: "konten"
                 label: "Konten"
-                widget: "markdown"
+                widget: "text"
 
       - name: "iman"
         label: "Iman"
@@ -135,7 +135,7 @@ collections:
                 widget: "string"
               - name: "konten"
                 label: "Konten"
-                widget: "markdown"
+                widget: "text"
 
       - name: "abu-syuja"
         label: "Matan Abu Syuja'"
@@ -149,7 +149,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "umdatul-ahkam"
         label: "Umdatul Ahkam"
@@ -163,7 +163,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "jurumiyah"
         label: "Matan Jurumiyah"
@@ -177,7 +177,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "mutammimah"
         label: "Mutammimah"
@@ -191,7 +191,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "tashrif"
         label: "Kaedah-kaedah Tashrif"
@@ -205,7 +205,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "wazan"
         label: "Wazan-wazan Shorf"
@@ -219,7 +219,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "siroh-nabawi"
         label: "Siroh Nabawi"
@@ -233,7 +233,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
       - name: "siroh-sahabat"
         label: "Siroh Sahabat"
@@ -247,7 +247,7 @@ collections:
             fields:
               - {name: "id", label: "ID", widget: "string"}
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
-              - {name: "konten", label: "Konten", widget: "markdown"}
+              - {name: "konten", label: "Konten", widget: "text"}
 
   - name: "coming-soon"
     label: "Coming Soon"
