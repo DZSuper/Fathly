@@ -249,6 +249,231 @@ collections:
               - {name: "nama", label: "Nama Kelompok", widget: "string"}
               - {name: "konten", label: "Konten", widget: "text"}
 
+  # ── MATAN (Al-Ajurumiyyah, Qawa'idul Arba, Al-Arba'in) ───────
+  # Struktur tiap file: babList (daftar bab + sub-bab) dan baits (isi per bait).
+  # PENTING: urutan item di "Daftar Bait" HARUS mengikuti urutan bab di
+  # "Daftar Bab" (semua bait bab pertama dulu, baru bab kedua, dst) — sistem
+  # paginasi & sidebar di halaman matan bergantung pada urutan ini.
+  - name: "matan-mgr"
+    label: "📗 Matan"
+    files:
+
+      - name: "jurumiyah"
+        label: "Al-Ajurumiyyah"
+        file: "content/matan/data/jurumiyah.json"
+        fields:
+          - name: "babList"
+            label: "Daftar Bab"
+            widget: "list"
+            summary: "{{fields.title}}"
+            hint: "babId harus unik dan dipakai persis sama di kolom 'ID Bab' pada Daftar Bait di bawah."
+            fields:
+              - {name: "babId", label: "ID Bab (huruf kecil, tanda hubung)", widget: "string", hint: "Contoh: bab-muqaddimah"}
+              - {name: "title", label: "Judul Bab (Arab)", widget: "string"}
+              - name: "subBab"
+                label: "Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - {name: "subBabId", label: "ID Sub-Bab", widget: "string", hint: "Contoh: alamat_rafa. Harus dipakai persis sama di kolom 'ID Sub-Bab' pada bait terkait."}
+                  - {name: "title", label: "Judul Sub-Bab (Arab)", widget: "string"}
+          - name: "baits"
+            label: "Daftar Bait"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.arab}}"
+            hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
+            fields:
+              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - name: "babId"
+                label: "ID Bab"
+                widget: "relation"
+                collection: "matan-mgr"
+                file: "jurumiyah"
+                value_field: "babList.*.babId"
+                search_fields: ["babList.*.title", "babList.*.babId"]
+                display_fields: ["babList.*.babId"]
+                hint: "Pilih dari Daftar Bab di atas."
+              - {name: "subBabId", label: "ID Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)", widget: "string", required: false, hint: "Harus sama persis dengan ID Sub-Bab yang didaftarkan di bab terkait."}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text"}
+              - {name: "keterangan", label: "Keterangan", widget: "text", hint: "Boleh pakai HTML sederhana: <strong>, <em>, <span class=\"arab-ref\">istilah</span>"}
+
+      - name: "qawaidul-arba"
+        label: "Al-Qawa'idul Arba'"
+        file: "content/matan/data/qawaidul-arba.json"
+        fields:
+          - name: "babList"
+            label: "Daftar Bab"
+            widget: "list"
+            summary: "{{fields.title}}"
+            hint: "babId harus unik dan dipakai persis sama di kolom 'ID Bab' pada Daftar Bait di bawah."
+            fields:
+              - {name: "babId", label: "ID Bab (huruf kecil, tanda hubung)", widget: "string"}
+              - {name: "title", label: "Judul Bab (Arab)", widget: "string"}
+              - name: "subBab"
+                label: "Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - {name: "subBabId", label: "ID Sub-Bab", widget: "string"}
+                  - {name: "title", label: "Judul Sub-Bab (Arab)", widget: "string"}
+          - name: "baits"
+            label: "Daftar Bait"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.arab}}"
+            hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
+            fields:
+              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - name: "babId"
+                label: "ID Bab"
+                widget: "relation"
+                collection: "matan-mgr"
+                file: "qawaidul-arba"
+                value_field: "babList.*.babId"
+                search_fields: ["babList.*.title", "babList.*.babId"]
+                display_fields: ["babList.*.babId"]
+                hint: "Pilih dari Daftar Bab di atas."
+              - {name: "subBabId", label: "ID Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)", widget: "string", required: false}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text"}
+              - {name: "keterangan", label: "Keterangan", widget: "text", hint: "Boleh pakai HTML sederhana: <strong>, <em>, <span class=\"arab-ref\">istilah</span>"}
+
+      - name: "arbain"
+        label: "Al-Arba'in An-Nawawiyyah"
+        file: "content/matan/data/arbain.json"
+        fields:
+          - name: "babList"
+            label: "Daftar Bab"
+            widget: "list"
+            summary: "{{fields.title}}"
+            hint: "babId harus unik dan dipakai persis sama di kolom 'ID Bab' pada Daftar Bait di bawah."
+            fields:
+              - {name: "babId", label: "ID Bab (huruf kecil, tanda hubung)", widget: "string"}
+              - {name: "title", label: "Judul Bab (Arab)", widget: "string"}
+              - name: "subBab"
+                label: "Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - {name: "subBabId", label: "ID Sub-Bab", widget: "string"}
+                  - {name: "title", label: "Judul Sub-Bab (Arab)", widget: "string"}
+          - name: "baits"
+            label: "Daftar Bait (Hadits)"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.arab}}"
+            hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
+            fields:
+              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - name: "babId"
+                label: "ID Bab"
+                widget: "relation"
+                collection: "matan-mgr"
+                file: "arbain"
+                value_field: "babList.*.babId"
+                search_fields: ["babList.*.title", "babList.*.babId"]
+                display_fields: ["babList.*.babId"]
+                hint: "Pilih dari Daftar Bab di atas."
+              - {name: "subBabId", label: "ID Sub-Bab (kosongkan jika bab ini tidak punya sub-bab)", widget: "string", required: false}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text"}
+              - {name: "keterangan", label: "Keterangan", widget: "text", hint: "Boleh pakai HTML sederhana: <strong>, <em>, <span class=\"arab-ref\">istilah</span>"}
+
+  # ── DALIL ───────────────────────────────────────────────────
+  - name: "dalil-mgr"
+    label: "📖 Dalil"
+    files:
+      - name: "dalil"
+        label: "Dalil & Tema"
+        file: "content/dalil/data/dalil.json"
+        fields:
+
+          - name: "temaList"
+            label: "🏷️ Daftar Tema"
+            widget: "list"
+            summary: "{{fields.nama}}"
+            hint: "Tambah/ubah tema di sini otomatis muncul sebagai pilihan filter Tema di halaman Dalil."
+            fields:
+              - {name: "temaId", label: "ID Tema (huruf kecil, tanda hubung)", widget: "string", hint: "Contoh: sholat-berjamaah. Jangan diubah setelah dipakai oleh dalil manapun."}
+              - {name: "nama", label: "Nama Tampil", widget: "string", hint: "Contoh: Sholat Berjamaah"}
+              - name: "kategori"
+                label: "Kategori"
+                widget: "select"
+                options: ["fiqih", "aqidah", "muamalah", "akhlak"]
+
+          - name: "dalilList"
+            label: "📜 Daftar Dalil"
+            widget: "list"
+            summary: "{{fields.rujukan}}"
+            fields:
+              - {name: "id", label: "ID (huruf kecil, contoh: d09)", widget: "string", hint: "Harus unik — dipakai di URL halaman detail."}
+              - name: "sumber"
+                label: "Sumber"
+                widget: "select"
+                options:
+                  - {label: "Al-Qur'an", value: "quran"}
+                  - {label: "Hadits", value: "hadits"}
+              - name: "grade"
+                label: "Derajat"
+                widget: "select"
+                options:
+                  - {label: "Shahih", value: "shahih"}
+                  - {label: "Hasan", value: "hasan"}
+                  - {label: "Dhaif", value: "dhaif"}
+                hint: "Untuk ayat Al-Qur'an, selalu pilih Shahih (Al-Qur'an mutawatir) — badge derajat hanya tampil di kartu kalau Sumber = Hadits, jadi aman."
+              - {name: "rujukan", label: "Rujukan", widget: "string", hint: "Contoh: QS. Al-Baqarah: 43 / HR. Bukhari & Muslim, dari Ibnu Umar"}
+              - {name: "kitab", label: "Nama Kitab Hadits (kosongkan untuk Al-Qur'an)", widget: "string", required: false, hint: "Contoh: Bukhari, Muslim, Ibnu Majah"}
+              - {name: "arab", label: "Teks Arab (berharakat)", widget: "text"}
+              - {name: "terjemahan", label: "Terjemahan", widget: "text"}
+              - name: "tema"
+                label: "Tema"
+                widget: "relation"
+                collection: "dalil-mgr"
+                file: "dalil"
+                value_field: "temaList.*.temaId"
+                search_fields: ["temaList.*.nama", "temaList.*.temaId"]
+                display_fields: ["temaList.*.nama"]
+                multiple: true
+                hint: "Boleh pilih lebih dari satu tema. Tambah tema baru dulu di Daftar Tema di atas kalau belum ada, lalu simpan."
+
+              - name: "tafsirBanding"
+                label: "📊 Perbandingan Tafsir/Syarah Ulama"
+                widget: "list"
+                required: false
+                summary: "{{fields.ulama}} — {{fields.kitab}}"
+                hint: "Kosongkan kalau belum ada data pembanding untuk dalil ini."
+                fields:
+                  - {name: "ulama", label: "Nama Ulama", widget: "string"}
+                  - {name: "kitab", label: "Nama Kitab", widget: "string"}
+                  - {name: "isi", label: "Penjelasan", widget: "text"}
+
+              - name: "qiroah"
+                label: "🔤 Perbedaan Qira'at"
+                widget: "list"
+                required: false
+                summary: "{{fields.imam}}"
+                hint: "Khusus ayat Al-Qur'an. Kosongkan kalau tidak ada perbedaan qira'at yang perlu ditampilkan."
+                fields:
+                  - {name: "imam", label: "Nama Imam/Riwayat", widget: "string", hint: "Contoh: Hafsh 'an 'Ashim"}
+                  - {name: "riwayat", label: "Keterangan Riwayat", widget: "string", hint: "Contoh: Riwayat yang umum dipakai di mushaf cetakan Indonesia"}
+                  - {name: "bacaan", label: "Teks Bacaan (Arab)", widget: "text"}
+                  - {name: "keterangan", label: "Penjelasan Perbedaan", widget: "text"}
+
+              - name: "faedah"
+                label: "💡 Faedah"
+                widget: "list"
+                required: false
+                hint: "Poin-poin pelajaran dari dalil ini, satu poin per baris."
+
+              - name: "takhrij"
+                label: "🔗 Takhrij / Sumber Riwayat"
+                widget: "list"
+                required: false
+                summary: "{{fields.kitab}} no. {{fields.no}}"
+                fields:
+                  - {name: "kitab", label: "Nama Kitab Hadits", widget: "string", hint: "Contoh: Shahih Bukhari"}
+                  - {name: "no", label: "Nomor Hadits", widget: "string"}
+                  - {name: "status", label: "Status", widget: "string", default: "ada", hint: "Saat ini selalu \"ada\" — dibiarkan sebagai field untuk pengembangan ke depan."}
+
   - name: "coming-soon"
     label: "Coming Soon"
     files:
@@ -500,18 +725,6 @@ collections:
               - {name: "icon", label: "Ikon (emoji)", widget: "string", required: false, hint: "Contoh: ☀️ — kosongkan jika tidak ada"}
 
   # ── CERAMAH ─────────────────────────────────────────────────
-  - name: "ceramah-index-mgr"
-    label: "🗂️ Ceramah — Daftar ID"
-    files:
-      - name: "ceramah-index"
-        label: "Daftar ID Ceramah (urutan tampil)"
-        file: "content/ceramah/data/ceramah-index.json"
-        fields:
-          - name: "ids"
-            label: "ID Ceramah"
-            widget: "list"
-            hint: "Tambah ID baru di sini setiap kali menambah ceramah. Urutan di sini = urutan tampil."
-
   - name: "ceramah"
     label: "🎙️ Ceramah — Isi"
     folder: "content/ceramah/data/items"
