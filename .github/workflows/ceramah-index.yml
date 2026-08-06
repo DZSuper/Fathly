@@ -1,0 +1,61 @@
+name: Perbarui Indeks Ceramah
+
+# Jalan otomatis setiap ada perubahan file ceramah (tambah/hapus/ubah via CMS
+# ataupun commit manual). Membaca ulang SEMUA file di content/ceramah/data/items/
+# dan menulis ulang content/ceramah/data/ceramah-index.json supaya selalu sesuai
+# dengan ceramah yang benar-benar ada — tidak perlu diedit manual lagi.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/ceramah/data/items/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Buat ulang ceramah-index.json dari file yang ada
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dir = 'content/ceramah/data/items';
+            const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+
+            const ids = files.map(f => {
+              try {
+                const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+                // Utamakan field 'id' di dalam file; fallback ke nama file
+                // kalau field-nya kosong/hilang, supaya tidak pernah gagal total.
+                return data.id || f.replace(/\.json\$/, '');
+              } catch (e) {
+                console.error('Gagal baca ' + f + ', dilewati:', e.message);
+                return null;
+              }
+            }).filter(Boolean).sort();
+
+            const out = { ids };
+            fs.writeFileSync(
+              'content/ceramah/data/ceramah-index.json',
+              JSON.stringify(out, null, 2) + '\n'
+            );
+            console.log('Indeks diperbarui:', ids.length, 'ceramah ->', ids.join(', '));
+          "
+
+      - name: Commit perubahan (kalau ada)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/ceramah/data/ceramah-index.json
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan pada indeks — tidak perlu commit."
+          else
+            git commit -m "chore: perbarui indeks ceramah otomatis"
+            git push
+          fi
