@@ -125,20 +125,173 @@ function initTema() {
   };
   
   // ===================================
-  // BUAT INDIKATOR TERSIMPAN
+  // BUAT INDIKATOR TERSIMPAN (toast, dipakai ulang untuk pesan lain)
   // ===================================
   const saveIndicator = document.createElement('div');
   saveIndicator.className = 'save-indicator';
   saveIndicator.textContent = '✓ Tersimpan';
   document.body.appendChild(saveIndicator);
-  
-  function showSaveIndicator() {
+
+  let toastTimer = null;
+  function showToast(message) {
+    saveIndicator.textContent = message;
     saveIndicator.classList.add('show');
-    setTimeout(() => {
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
       saveIndicator.classList.remove('show');
     }, 2000);
   }
-  
+
+  function showSaveIndicator() {
+    showToast('✓ Tersimpan');
+  }
+
+  // ===================================
+  // MODAL KONFIRMASI KUSTOM (pengganti confirm()/alert() bawaan browser)
+  // ===================================
+  const confirmModalOverlay = document.createElement('div');
+  confirmModalOverlay.className = 'confirm-modal-overlay';
+  confirmModalOverlay.innerHTML = `
+    <div class="confirm-modal">
+      <div class="confirm-modal-icon">↺</div>
+      <h3 class="confirm-modal-title"></h3>
+      <p class="confirm-modal-text"></p>
+      <div class="confirm-modal-actions">
+        <button type="button" class="confirm-modal-btn confirm-modal-cancel">Batalkan</button>
+        <button type="button" class="confirm-modal-btn confirm-modal-ok">OK</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(confirmModalOverlay);
+
+  const confirmModalTitleEl = confirmModalOverlay.querySelector('.confirm-modal-title');
+  const confirmModalTextEl = confirmModalOverlay.querySelector('.confirm-modal-text');
+  const confirmModalOkBtn = confirmModalOverlay.querySelector('.confirm-modal-ok');
+  const confirmModalCancelBtn = confirmModalOverlay.querySelector('.confirm-modal-cancel');
+  let pendingConfirmAction = null;
+
+  function closeConfirmModal() {
+    confirmModalOverlay.classList.remove('tampil');
+    pendingConfirmAction = null;
+  }
+
+  function showConfirmModal(opts) {
+    confirmModalTitleEl.textContent = opts.title || 'Konfirmasi';
+    confirmModalTextEl.textContent = opts.text || '';
+    confirmModalOkBtn.textContent = opts.confirmLabel || 'OK';
+    pendingConfirmAction = typeof opts.onConfirm === 'function' ? opts.onConfirm : null;
+    confirmModalOverlay.classList.add('tampil');
+  }
+
+  confirmModalOkBtn.addEventListener('click', function() {
+    const action = pendingConfirmAction;
+    closeConfirmModal();
+    if (action) action();
+  });
+  confirmModalCancelBtn.addEventListener('click', closeConfirmModal);
+  confirmModalOverlay.addEventListener('click', function(e) {
+    if (e.target === confirmModalOverlay) closeConfirmModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && confirmModalOverlay.classList.contains('tampil')) closeConfirmModal();
+  });
+
+  // ===================================
+  // BOTTOM-SHEET KELOMPOK KUSTOM (pengganti <select> native di mobile)
+  // ===================================
+  const kelompokSheetOverlay = document.createElement('div');
+  kelompokSheetOverlay.className = 'kelompok-sheet-overlay';
+  kelompokSheetOverlay.innerHTML = `
+    <div class="kelompok-sheet">
+      <div class="kelompok-sheet-handle"></div>
+      <div class="kelompok-sheet-header">
+        <span class="kelompok-sheet-icon">☪</span>
+        <h3>Pilih Kelompok</h3>
+      </div>
+      <div class="kelompok-sheet-list"></div>
+    </div>
+  `;
+  document.body.appendChild(kelompokSheetOverlay);
+  const kelompokSheetList = kelompokSheetOverlay.querySelector('.kelompok-sheet-list');
+  let activeKelompokTrigger = null;
+  let activeKelompokSelect = null;
+
+  function closeKelompokSheet() {
+    kelompokSheetOverlay.classList.remove('tampil');
+    if (activeKelompokTrigger) activeKelompokTrigger.classList.remove('terbuka');
+    activeKelompokTrigger = null;
+    activeKelompokSelect = null;
+  }
+
+  function openKelompokSheet(triggerEl, selectEl) {
+    activeKelompokTrigger = triggerEl;
+    activeKelompokSelect = selectEl;
+    triggerEl.classList.add('terbuka');
+
+    kelompokSheetList.innerHTML = '';
+    Array.from(selectEl.options).forEach(function(opt) {
+      const item = document.createElement('div');
+      item.className = 'kelompok-sheet-item' + (opt.value === selectEl.value ? ' aktif' : '');
+      item.innerHTML = '<span>' + opt.textContent + '</span><span class="kelompok-sheet-check">✓</span>';
+      item.addEventListener('click', function() {
+        if (selectEl.value !== opt.value) {
+          selectEl.value = opt.value;
+          selectEl.dispatchEvent(new Event('change'));
+        }
+        closeKelompokSheet();
+      });
+      kelompokSheetList.appendChild(item);
+    });
+
+    kelompokSheetOverlay.classList.add('tampil');
+  }
+
+  kelompokSheetOverlay.addEventListener('click', function(e) {
+    if (e.target === kelompokSheetOverlay) closeKelompokSheet();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && kelompokSheetOverlay.classList.contains('tampil')) closeKelompokSheet();
+  });
+
+  function updateKelompokTriggerLabel(selectEl) {
+    if (!selectEl || !selectEl._kelompokTrigger) return;
+    const label = selectEl.options[selectEl.selectedIndex]
+      ? selectEl.options[selectEl.selectedIndex].textContent
+      : '';
+    selectEl._kelompokTrigger.querySelector('.kelompok-trigger-label').textContent = label;
+  }
+
+  // Bangun tombol trigger untuk setiap <select class="kelompok-dropdown">,
+  // menggantikan tampilan native-nya dengan bottom-sheet bertema situs.
+  function setupKelompokPickers() {
+    document.querySelectorAll('select.kelompok-dropdown').forEach(function(selectEl) {
+      if (selectEl.dataset.pickerReady) return; // hindari duplikasi jika dipanggil ulang
+      selectEl.dataset.pickerReady = '1';
+
+      const trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'kelompok-trigger';
+      trigger.innerHTML =
+        '<span class="kelompok-trigger-label">' +
+        (selectEl.options[selectEl.selectedIndex] ? selectEl.options[selectEl.selectedIndex].textContent : '') +
+        '</span><span class="kelompok-trigger-icon">▾</span>';
+
+      selectEl.insertAdjacentElement('afterend', trigger);
+
+      trigger.addEventListener('click', function() {
+        openKelompokSheet(trigger, selectEl);
+      });
+
+      // Simpan referensi trigger pada select-nya sendiri supaya bisa
+      // disinkronkan labelnya dari mana pun select ini diubah (mis. tombol desktop).
+      selectEl._kelompokTrigger = trigger;
+
+      selectEl.addEventListener('change', function() {
+        updateKelompokTriggerLabel(selectEl);
+      });
+    });
+  }
+
   // ===================================
   // SIMPAN KONTEN ORIGINAL
   // ===================================
@@ -207,18 +360,23 @@ function initTema() {
   // FUNGSI: Reset ke default
   // ===================================
   function resetToDefault() {
-    if (confirm('Apakah Anda yakin ingin mengembalikan semua penjelasan ke kondisi awal? Semua perubahan yang Anda buat akan hilang.')) {
-      document.querySelectorAll('#page2 .penjelasan-item').forEach(item => {
-        const kelompok = item.getAttribute('data-kelompok');
-        item.innerHTML = originalContent[kelompok];
-        item.contentEditable = false;
-      });
-      localStorage.removeItem(storageKeyEditing);
-      isEditing = false;
-      editBtn.textContent = 'EDIT';
-      editBtn.classList.remove('editing');
-      alert('Semua penjelasan telah dikembalikan ke kondisi awal!');
-    }
+    showConfirmModal({
+      title: 'Kembalikan ke Kondisi Awal?',
+      text: 'Semua penjelasan akan dikembalikan seperti semula. Perubahan yang belum disimpan akan hilang.',
+      confirmLabel: 'Ya, Kembalikan',
+      onConfirm: function() {
+        document.querySelectorAll('#page2 .penjelasan-item').forEach(item => {
+          const kelompok = item.getAttribute('data-kelompok');
+          item.innerHTML = originalContent[kelompok];
+          item.contentEditable = false;
+        });
+        localStorage.removeItem(storageKeyEditing);
+        isEditing = false;
+        editBtn.textContent = 'EDIT';
+        editBtn.classList.remove('editing');
+        showToast('↺ Dikembalikan ke kondisi awal');
+      }
+    });
   }
   
   // ===================================
@@ -427,6 +585,7 @@ function initTema() {
     
     if (dropdown) {
       dropdown.value = kelompok;
+      updateKelompokTriggerLabel(dropdown);
     }
     
     if (window.innerWidth <= 768) {
@@ -463,6 +622,9 @@ function initTema() {
       gantiPenjelasan(kelompok, pageNum);
     });
   });
+
+  // Ganti tampilan <select> native dengan trigger + bottom-sheet bertema situs
+  setupKelompokPickers();
   
   if (editBtn) {
     editBtn.addEventListener('click', toggleEditMode);

@@ -703,3 +703,293 @@ body {
     padding: 4px 8px;
   }
 }
+
+/* ============================================
+   KELOMPOK PICKER KUSTOM (pengganti <select> native)
+   ============================================ */
+
+/* Select asli disembunyikan total secara visual, tetap ada di DOM
+   sebagai sumber data (opsi & value) supaya logika lama tidak berubah */
+.kelompok-dropdown {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  display: block !important;
+}
+
+/* Tombol trigger pengganti dropdown, tampil hanya di mobile
+   (breakpoint sama seperti dropdown lama, lihat @media 768px) */
+.kelompok-trigger {
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 16px;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.06), transparent);
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+.kelompok-trigger:hover,
+.kelompok-trigger:active {
+  border-color: var(--green);
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.35);
+}
+
+.kelompok-trigger .kelompok-trigger-icon {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--green);
+  transition: transform 0.25s ease;
+}
+
+.kelompok-trigger.terbuka .kelompok-trigger-icon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .kelompok-trigger {
+    display: flex;
+  }
+}
+
+/* Overlay bottom-sheet */
+.kelompok-sheet-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 12, 14, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.kelompok-sheet-overlay.tampil {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.kelompok-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 75vh;
+  background: rgba(11, 12, 14, 0.98);
+  border: 2px solid var(--gold);
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 215, 0, 0.15);
+  padding: 10px 18px 24px;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  overflow-y: auto;
+}
+
+.kelompok-sheet-overlay.tampil .kelompok-sheet {
+  transform: translateY(0);
+}
+
+.kelompok-sheet-handle {
+  width: 42px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gold);
+  opacity: 0.5;
+  margin: 6px auto 14px;
+}
+
+.kelompok-sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.kelompok-sheet-header .kelompok-sheet-icon {
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.5));
+}
+
+.kelompok-sheet-header h3 {
+  color: var(--gold);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.kelompok-sheet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kelompok-sheet-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.kelompok-sheet-item:active {
+  transform: scale(0.98);
+}
+
+.kelompok-sheet-item.aktif {
+  border-color: var(--gold);
+  background: rgba(255, 215, 0, 0.08);
+  color: var(--gold);
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.kelompok-sheet-item .kelompok-sheet-check {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--bg-dark);
+  transition: all 0.2s ease;
+}
+
+.kelompok-sheet-item.aktif .kelompok-sheet-check {
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+/* ============================================
+   MODAL KONFIRMASI KUSTOM (pengganti confirm()/alert())
+   ============================================ */
+.confirm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 12, 14, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.confirm-modal-overlay.tampil {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.confirm-modal {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(11, 12, 14, 0.98);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  padding: 28px 24px 22px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.15);
+  transform: scale(0.9) translateY(10px);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.confirm-modal-overlay.tampil .confirm-modal {
+  transform: scale(1) translateY(0);
+}
+
+.confirm-modal-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--gold);
+}
+
+.confirm-modal-title {
+  color: var(--gold);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.confirm-modal-text {
+  color: var(--gray);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+
+.confirm-modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-modal-btn {
+  flex: 1;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-modal-cancel {
+  background: transparent;
+  border: 2px solid var(--border-color);
+  color: var(--text-light);
+}
+
+.confirm-modal-cancel:hover {
+  border-color: var(--text-light);
+}
+
+.confirm-modal-ok {
+  background: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--bg-dark);
+}
+
+.confirm-modal-ok:hover {
+  background: transparent;
+  color: var(--gold);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
