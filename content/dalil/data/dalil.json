@@ -14,6 +14,41 @@
       "temaId": "ulil-amri",
       "nama": "Ketaatan kepada Ulil Amri",
       "kategori": "aqidah"
+    },
+    {
+      "temaId": "kewajiban-sholat",
+      "nama": "Kewajiban Sholat",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "waktu-sholat",
+      "nama": "Waktu Sholat",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "hikmah-sholat",
+      "nama": "Hikmah Sholat",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "khusyuk-sholat",
+      "nama": "Khusyuk dalam Sholat",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "syarat-sholat",
+      "nama": "Syarat Sah Sholat",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "safar-sholat",
+      "nama": "Sholat bagi Musafir",
+      "kategori": "fiqih"
+    },
+    {
+      "temaId": "sujud-sahwi",
+      "nama": "Sujud Sahwi",
+      "kategori": "fiqih"
     }
   ],
   "dalilList": [
@@ -326,6 +361,359 @@
         {
           "kitab": "Sunan Abu Dawud",
           "no": "2626",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d9",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. An-Nisa: 103",
+      "arab": "إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَوْقُوتًا",
+      "terjemahan": "Sesungguhnya sholat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman.",
+      "tema": [
+        "kewajiban-sholat",
+        "waktu-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Kata كِتَابًا مَوْقُوتًا (kewajiban yang ditentukan waktunya) menunjukkan bahwa sholat bukan ibadah yang bebas dikerjakan kapan saja, melainkan telah ditetapkan Allah waktu-waktunya secara pasti, sehingga wajib dilaksanakan pada waktu yang telah ditentukan."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Ayat ini menjadi dalil pokok kewajiban sholat lima waktu atas setiap mukmin yang telah mukallaf, dan bahwa kewajiban tersebut terikat dengan waktu-waktu tertentu, bukan sekadar jumlah rakaat yang bisa dikerjakan sembarang waktu."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini turun dalam konteks pembahasan sholat khauf (sholat dalam kondisi perang/takut), namun kandungannya bersifat umum: menegaskan bahwa kewajiban sholat tidak gugur bahkan dalam kondisi genting sekalipun, hanya tata caranya yang diberi keringanan."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d10",
+      "sumber": "hadits",
+      "grade": "hasan",
+      "rujukan": "HR. Tirmidzi & Nasa'i, dari Abu Hurairah",
+      "kitab": "Tirmidzi",
+      "arab": "إِنَّ أَوَّلَ مَا يُحَاسَبُ بِهِ الْعَبْدُ يَوْمَ الْقِيَامَةِ مِنْ عَمَلِهِ صَلَاتُهُ، فَإِنْ صَلُحَتْ فَقَدْ أَفْلَحَ وَأَنْجَحَ، وَإِنْ فَسَدَتْ فَقَدْ خَابَ وَخَسِرَ",
+      "terjemahan": "Sesungguhnya amal seorang hamba yang pertama kali dihisab pada hari kiamat adalah sholatnya. Jika sholatnya baik, maka beruntung dan selamatlah ia. Namun jika sholatnya rusak, maka merugi dan celakalah ia.",
+      "tema": [
+        "kewajiban-sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Al-Mubarakfuri",
+          "kitab": "Tuhfatul Ahwadzi",
+          "isi": "Hadits ini menunjukkan kedudukan sholat sebagai amal yang paling didahulukan dalam hisab di akhirat, sehingga baik-buruknya sholat seseorang menjadi tolok ukur awal atas keseluruhan amalnya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Dalam riwayat lain disebutkan, jika sholat wajib seorang hamba kurang sempurna, maka Allah akan melihat apakah ia memiliki amalan sholat sunnah untuk menyempurnakan kekurangan tersebut — menunjukkan pentingnya membiasakan sholat sunnah rawatib sebagai penambal kekurangan sholat wajib."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Sunan At-Tirmidzi",
+          "no": "413",
+          "status": "ada"
+        },
+        {
+          "kitab": "Sunan An-Nasa'i",
+          "no": "465",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Abdullah bin Mas'ud",
+      "kitab": "Bukhari",
+      "arab": "سَأَلْتُ النَّبِيَّ ﷺ: أَيُّ الْعَمَلِ أَحَبُّ إِلَى اللَّهِ؟ قَالَ: الصَّلَاةُ عَلَى وَقْتِهَا",
+      "terjemahan": "Aku bertanya kepada Nabi ﷺ: \"Amalan apakah yang paling dicintai Allah?\" Beliau menjawab: \"Sholat pada waktunya.\"",
+      "tema": [
+        "waktu-sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Nabi ﷺ menempatkan sholat tepat waktu di urutan pertama amalan yang paling dicintai Allah, sebelum berbakti kepada orang tua dan jihad — menunjukkan betapa besar keutamaan menyegerakan sholat di awal waktunya, bukan menunda-nundanya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini menjadi salah satu dalil utama dianjurkannya mengerjakan sholat di awal waktu (di luar kondisi yang memang disunnahkan untuk diakhirkan, seperti Isya' atau sholat saat cuaca sangat panas), sebagai bentuk kesungguhan menyambut panggilan Allah."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "527",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "85",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Baqarah: 238",
+      "arab": "حَافِظُوا عَلَى الصَّلَوَاتِ وَالصَّلَاةِ الْوُسْطَىٰ وَقُومُوا لِلَّهِ قَانِتِينَ",
+      "terjemahan": "Peliharalah semua sholat(mu), dan (peliharalah) sholat wustha. Berdirilah karena Allah (dalam sholatmu) dengan khusyuk.",
+      "tema": [
+        "waktu-sholat",
+        "khusyuk-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Kata حَافِظُوا (peliharalah/jagalah) mencakup penjagaan terhadap waktu, syarat, rukun, dan kekhusyukan sholat secara keseluruhan. Adapun \"sholat wustha\" disebutkan secara khusus setelah penyebutan umum karena keutamaannya, dan mayoritas ulama menafsirkannya sebagai sholat Ashar."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Perintah قَانِتِينَ (dengan khusyuk/tunduk) menunjukkan bahwa sholat yang diperintahkan bukan sekadar gerakan fisik, melainkan harus disertai kekhusyukan hati dan ketundukan penuh kepada Allah."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Penyebutan sholat wustha secara khusus di tengah perintah menjaga seluruh sholat adalah bentuk athaf khash 'ala 'aam (menyebut yang khusus setelah yang umum) dalam bahasa Arab, sebagai penekanan atas pentingnya sholat tersebut dibanding sholat lainnya."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d13",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-'Ankabut: 45",
+      "arab": "إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ",
+      "terjemahan": "Sesungguhnya sholat itu mencegah dari (perbuatan) keji dan mungkar.",
+      "tema": [
+        "hikmah-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Sholat yang benar-benar didirikan dengan memenuhi syarat, rukun, dan kekhusyukannya akan membekas pada perilaku pelakunya, sehingga secara alami akan mencegahnya dari perbuatan keji dan mungkar dalam kehidupan sehari-hari."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Efek pencegahan dari keji dan mungkar ini sebanding dengan kualitas sholat seseorang — semakin sempurna kekhusyukan dan penghayatannya, semakin besar pula pengaruhnya dalam menjaga diri dari maksiat."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini menjadi dalil bahwa sholat bukan hanya ritual formal, melainkan memiliki fungsi pembinaan akhlak dan pencegahan diri dari dosa — sehingga jika seseorang rajin sholat namun masih mudah berbuat keji, hendaknya ia introspeksi kualitas kekhusyukan sholatnya."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d14",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Mu'minun: 1-2",
+      "arab": "قَدْ أَفْلَحَ الْمُؤْمِنُونَ، الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ",
+      "terjemahan": "Sungguh beruntung orang-orang yang beriman, (yaitu) orang-orang yang khusyuk dalam sholatnya.",
+      "tema": [
+        "khusyuk-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Allah memulai penyebutan sifat-sifat orang beriman yang beruntung dengan kekhusyukan dalam sholat, menunjukkan bahwa kekhusyukan adalah pintu masuk utama menuju keberuntungan seorang mukmin."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Khusyuk (الْخُشُوعُ) adalah hadirnya hati di hadapan Allah disertai ketenangan anggota badan, sehingga seseorang benar-benar merasakan makna setiap bacaan dan gerakan dalam sholatnya, bukan sekadar menggugurkan kewajiban."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Sebagian ulama salaf menjelaskan bahwa kekhusyukan itu bersumber dari mengetahui kepada siapa seseorang sedang bermunajat — semakin seseorang mengenal keagungan Allah, semakin mudah baginya menghadirkan kekhusyukan dalam sholat."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d15",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Muslim, dari Ibnu Umar",
+      "kitab": "Muslim",
+      "arab": "لَا تُقْبَلُ صَلَاةٌ بِغَيْرِ طُهُورٍ",
+      "terjemahan": "Tidak diterima sholat tanpa bersuci (wudhu).",
+      "tema": [
+        "syarat-sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menjadi dalil pokok bahwa thaharah (bersuci dari hadats) adalah syarat sah sholat, bukan sekadar anjuran — sehingga sholat yang dikerjakan tanpa wudhu (bagi yang berhadats) dihukumi tidak sah dan wajib diulang."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Sebagaimana dijelaskan dalam riwayat yang lebih panjang, hadits ini juga menyebutkan tidak diterimanya sedekah dari harta hasil ghulul (harta curian dari rampasan perang) — menunjukkan bahwa keabsahan suatu ibadah bergantung pada terpenuhinya syarat-syarat pokoknya, baik syarat lahiriah (bersuci) maupun syarat kehalalan sumbernya."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Muslim",
+          "no": "224",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Baqarah: 144",
+      "arab": "فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا وُجُوهَكُمْ شَطْرَهُ",
+      "terjemahan": "Maka palingkanlah wajahmu ke arah Masjidilharam. Dan di mana saja kamu berada, palingkanlah wajahmu ke arah itu.",
+      "tema": [
+        "syarat-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini turun sebagai penetapan kiblat baru (Ka'bah di Masjidilharam), menggantikan kiblat sebelumnya ke arah Baitul Maqdis, dan menjadi dalil pokok wajibnya menghadap kiblat sebagai salah satu syarat sah sholat."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Pengulangan perintah menghadap kiblat dua kali dalam ayat ini — sekali kepada Nabi ﷺ secara khusus dan sekali kepada umatnya secara umum \"di mana saja kamu berada\" — menunjukkan kewajiban ini berlaku universal, tidak terbatas pada Nabi ﷺ atau penduduk Makkah saja."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Para fuqaha menjelaskan bahwa yang wajib bagi orang yang jauh dari Ka'bah adalah menghadap ke arahnya (jihatul Ka'bah) semampunya, bukan harus tepat presisi ke bangunan Ka'bah itu sendiri — sehingga kesalahan kecil arah kiblat akibat keterbatasan ilmu pada masa itu tidak membatalkan sholat."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d17",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. An-Nisa: 101",
+      "arab": "وَإِذَا ضَرَبْتُمْ فِي الْأَرْضِ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَنْ تَقْصُرُوا مِنَ الصَّلَاةِ إِنْ خِفْتُمْ أَن يَفْتِنَكُمُ الَّذِينَ كَفَرُوا",
+      "terjemahan": "Dan apabila kamu bepergian di muka bumi, maka tidaklah mengapa kamu meng-qashar sholat(mu), jika kamu takut diserang orang-orang kafir.",
+      "tema": [
+        "safar-sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Meskipun ayat ini menyebut sebab \"takut diserang musuh\", hadits-hadits Nabi ﷺ dan praktik para sahabat menunjukkan bahwa qashar sholat tetap disyariatkan bagi musafir walau dalam keadaan aman, karena syarat \"takut\" dalam ayat ini bersifat menceritakan kondisi umum saat ayat turun, bukan syarat mutlak berlakunya hukum."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Qashar (meringkas sholat empat rakaat menjadi dua rakaat) adalah salah satu bentuk keringanan (rukhshah) yang Allah berikan bagi musafir, sebagai wujud kasih sayang-Nya terhadap kondisi perjalanan yang melelahkan."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Sayyidina Umar bin Al-Khaththab radhiyallahu 'anhu pernah ditanya tentang qashar sholat musafir dalam keadaan aman padahal ayat menyebut sebab ketakutan, dan beliau menjawab bahwa hal itu adalah sedekah dari Allah yang diberikan-Nya kepada umat ini, maka terimalah sedekah-Nya."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d18",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Abu Hurairah",
+      "kitab": "Bukhari",
+      "arab": "إِذَا شَكَّ أَحَدُكُمْ فِي صَلَاتِهِ فَلَمْ يَدْرِ كَمْ صَلَّى، ثَلَاثًا أَمْ أَرْبَعًا، فَلْيَطْرَحِ الشَّكَّ وَلْيَبْنِ عَلَىٰ مَا اسْتَيْقَنَ، ثُمَّ يَسْجُدُ سَجْدَتَيْنِ قَبْلَ أَنْ يُسَلِّمَ",
+      "terjemahan": "Apabila salah seorang dari kalian ragu dalam sholatnya, sehingga tidak tahu apakah ia sudah sholat tiga atau empat rakaat, maka hendaklah ia buang keraguan itu dan berpegang pada apa yang ia yakini, kemudian sujud dua kali sebelum salam.",
+      "tema": [
+        "sujud-sahwi"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menjadi dasar kaidah fiqih dalam mengatasi keraguan jumlah rakaat: seseorang wajib berpegang pada jumlah yang lebih sedikit dan diyakini (al-yaqin), bukan mengikuti dugaan atau sangkaan (azh-zhann), karena yakin tidak bisa hilang hanya dengan keraguan."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Sujud sahwi yang dilakukan sebelum salam ini berfungsi sebagai penambal kekurangan yang mungkin terjadi akibat keraguan tersebut, sekaligus sebagai bentuk penghinaan terhadap setan yang berusaha mengganggu kekhusyukan sholat seseorang, sebagaimana disebutkan dalam riwayat lain."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Ulama fiqih membedakan antara sujud sahwi sebelum salam dan sesudah salam tergantung jenis sebabnya (kelebihan, kekurangan, atau keraguan dalam rakaat/rukun sholat) — hadits ini menjadi salah satu rujukan utama dalam merinci kaidah-kaidah tersebut."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "401",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "571",
           "status": "ada"
         }
       ]
