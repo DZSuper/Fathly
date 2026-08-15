@@ -18,13 +18,13 @@ Ini adalah file untuk menyimpan beberapa informasi tentang website FathlyWeb
 
 
 #Masalah
-1. Jadikan tema dalil semua tentang sholat menjadi 1 tema saja (tidak terpisah-pisah) (dikerjakan di akun-3)
-2. CMS Sangat banyak masalah saat ingin digunakan terutama pada bagian dalil, sebagian wajib diisi seperti nama kitab di bagian faedah padahal tidak perlu, dll
-3. Sveltia CMS tidak bisa digunakan di browser bawaan Huawei karena tidak update
-4. E-book FathlyWeb belum selesai dikerjakan
-5. Claude app mengizinkan akses github untuk update otomatis
-6. Update tampilan mobile pada bagian matan detail belum selesai (dikerjakan di akun-1)
-7. Angka/nomor bait pada matan ditampilan CMS Sveltia belum selesai (dikerjakan di akun-4)
-8. Wordpress CMS (dikerjakan di akun-7)
+- [ ] Jadikan tema dalil semua tentang sholat menjadi 1 tema saja (tidak terpisah-pisah) (dikerjakan di akun-3)
+- [ ] CMS Sangat banyak masalah saat ingin digunakan terutama pada bagian dalil, sebagian wajib diisi seperti nama kitab di bagian faedah padahal tidak perlu, dll
+- [ ] Sveltia CMS tidak bisa digunakan di browser bawaan Huawei karena tidak update
+- [ ] E-book FathlyWeb belum selesai dikerjakan
+- [ ] Claude app mengizinkan akses github untuk update otomatis
+- [ ] Update tampilan mobile pada bagian matan detail belum selesai (dikerjakan di akun-1) 
+- [ ] Angka/nomor bait pada matan ditampilan CMS Sveltia belum selesai (dikerjakan di akun-4)
+- [ ] Wordpress CMS (dikerjakan di akun-7)
 
 #Workflow
