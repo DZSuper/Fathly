@@ -1,8 +1,8 @@
 {
   "temaList": [
     {
-      "temaId": "sholat-berjamaah",
-      "nama": "Sholat Berjamaah",
+      "temaId": "sholat",
+      "nama": "Sholat",
       "kategori": "fiqih"
     },
     {
@@ -60,7 +60,7 @@
       "arab": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
       "terjemahan": "Dan dirikanlah sholat, tunaikanlah zakat, dan ruku'lah beserta orang-orang yang ruku'.",
       "tema": [
-        "sholat-berjamaah"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -111,7 +111,7 @@
       "arab": "صَلَاةُ الْجَمَاعَةِ تَفْضُلُ صَلَاةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً",
       "terjemahan": "Sholat berjamaah lebih utama daripada sholat sendirian dengan dua puluh tujuh derajat.",
       "tema": [
-        "sholat-berjamaah"
+        "sholat"
       ],
       "tafsirBanding": [
         {
@@ -155,7 +155,7 @@
       "arab": "مَنْ سَمِعَ النِّدَاءَ فَلَمْ يَأْتِهِ فَلَا صَلَاةَ لَهُ إِلَّا مِنْ عُذْرٍ",
       "terjemahan": "Barang siapa mendengar adzan lalu tidak mendatanginya, maka tidak ada sholat baginya, kecuali karena ada udzur.",
       "tema": [
-        "sholat-berjamaah"
+        "sholat"
       ],
       "tafsirBanding": [
         {
@@ -373,8 +373,7 @@
       "arab": "إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَوْقُوتًا",
       "terjemahan": "Sesungguhnya sholat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman.",
       "tema": [
-        "kewajiban-sholat",
-        "waktu-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -408,7 +407,7 @@
       "arab": "إِنَّ أَوَّلَ مَا يُحَاسَبُ بِهِ الْعَبْدُ يَوْمَ الْقِيَامَةِ مِنْ عَمَلِهِ صَلَاتُهُ، فَإِنْ صَلُحَتْ فَقَدْ أَفْلَحَ وَأَنْجَحَ، وَإِنْ فَسَدَتْ فَقَدْ خَابَ وَخَسِرَ",
       "terjemahan": "Sesungguhnya amal seorang hamba yang pertama kali dihisab pada hari kiamat adalah sholatnya. Jika sholatnya baik, maka beruntung dan selamatlah ia. Namun jika sholatnya rusak, maka merugi dan celakalah ia.",
       "tema": [
-        "kewajiban-sholat"
+        "sholat"
       ],
       "tafsirBanding": [
         {
@@ -446,7 +445,7 @@
       "arab": "سَأَلْتُ النَّبِيَّ ﷺ: أَيُّ الْعَمَلِ أَحَبُّ إِلَى اللَّهِ؟ قَالَ: الصَّلَاةُ عَلَى وَقْتِهَا",
       "terjemahan": "Aku bertanya kepada Nabi ﷺ: \"Amalan apakah yang paling dicintai Allah?\" Beliau menjawab: \"Sholat pada waktunya.\"",
       "tema": [
-        "waktu-sholat"
+        "sholat"
       ],
       "tafsirBanding": [
         {
@@ -483,8 +482,7 @@
       "arab": "حَافِظُوا عَلَى الصَّلَوَاتِ وَالصَّلَاةِ الْوُسْطَىٰ وَقُومُوا لِلَّهِ قَانِتِينَ",
       "terjemahan": "Peliharalah semua sholat(mu), dan (peliharalah) sholat wustha. Berdirilah karena Allah (dalam sholatmu) dengan khusyuk.",
       "tema": [
-        "waktu-sholat",
-        "khusyuk-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -517,7 +515,7 @@
       "arab": "إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ",
       "terjemahan": "Sesungguhnya sholat itu mencegah dari (perbuatan) keji dan mungkar.",
       "tema": [
-        "hikmah-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -550,7 +548,7 @@
       "arab": "قَدْ أَفْلَحَ الْمُؤْمِنُونَ، الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ",
       "terjemahan": "Sungguh beruntung orang-orang yang beriman, (yaitu) orang-orang yang khusyuk dalam sholatnya.",
       "tema": [
-        "khusyuk-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -584,7 +582,7 @@
       "arab": "لَا تُقْبَلُ صَلَاةٌ بِغَيْرِ طُهُورٍ",
       "terjemahan": "Tidak diterima sholat tanpa bersuci (wudhu).",
       "tema": [
-        "syarat-sholat"
+        "sholat"
       ],
       "tafsirBanding": [
         {
@@ -616,7 +614,7 @@
       "arab": "فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا وُجُوهَكُمْ شَطْرَهُ",
       "terjemahan": "Maka palingkanlah wajahmu ke arah Masjidilharam. Dan di mana saja kamu berada, palingkanlah wajahmu ke arah itu.",
       "tema": [
-        "syarat-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -649,7 +647,7 @@
       "arab": "وَإِذَا ضَرَبْتُمْ فِي الْأَرْضِ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَنْ تَقْصُرُوا مِنَ الصَّلَاةِ إِنْ خِفْتُمْ أَن يَفْتِنَكُمُ الَّذِينَ كَفَرُوا",
       "terjemahan": "Dan apabila kamu bepergian di muka bumi, maka tidaklah mengapa kamu meng-qashar sholat(mu), jika kamu takut diserang orang-orang kafir.",
       "tema": [
-        "safar-sholat"
+        "sholat"
       ],
       "kitab": null,
       "tafsirBanding": [
@@ -683,7 +681,7 @@
       "arab": "إِذَا شَكَّ أَحَدُكُمْ فِي صَلَاتِهِ فَلَمْ يَدْرِ كَمْ صَلَّى، ثَلَاثًا أَمْ أَرْبَعًا، فَلْيَطْرَحِ الشَّكَّ وَلْيَبْنِ عَلَىٰ مَا اسْتَيْقَنَ، ثُمَّ يَسْجُدُ سَجْدَتَيْنِ قَبْلَ أَنْ يُسَلِّمَ",
       "terjemahan": "Apabila salah seorang dari kalian ragu dalam sholatnya, sehingga tidak tahu apakah ia sudah sholat tiga atau empat rakaat, maka hendaklah ia buang keraguan itu dan berpegang pada apa yang ia yakini, kemudian sujud dua kali sebelum salam.",
       "tema": [
-        "sujud-sahwi"
+        "sholat"
       ],
       "tafsirBanding": [
         {
