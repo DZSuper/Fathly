@@ -12,10 +12,21 @@ Ini adalah file untuk menyimpan beberapa informasi tentang website FathlyWeb
 
 #Peraturan Update Website
 * Aturan-aturan ini ditujukan kepada Claude yang akan terus-menerus update website FathlyWeb
-1. a
-2. a
-3. a
+A. Fitur :
+- UI & UX sangat diharapkan maksimal untuk para pengguna
+- Jangan ada tombol, pencarian, link, dll yang tidak berguna atau tidak efisien
+- Harus sangat memperhatikan kebutuhan pengguna dalam memakai website
 
+B. Konten :
+- Website ini adalah website islami dengan konsep harga mati terhadap pemahaman para salaf
+- Tidak boleh ada ceramah, penjelasan dalil, kutipan yang bertentangan dengan pemahaman salafus sholeh
+- Tidak boleh ada doa-doa atau dzikir yang bersumber dari hadits-hadits dhoif
+- Tidak boleh ada kutipan dari ulama-ulama NU, Sufi, Syiah, Hizbut Tahrir, Ikhwanul Muslimin dan kelompok-kelompok menyimpang lainnya
+- Wajib menyertakan sumber rujukan (minimal kitab) pada setiap kutipan
+
+C. Style :
+- Website ini dikembangkan menggunakan tablet (device layar lebar) tapi hendaknya lebih mengutamakan penggunakan HP (device layar kecil) karena banyaknya pengguna yang akan memakai HP (Mobile First)
+- Gaya website lebih mengedepankan kenyamanan mata sehingga defaultnya ber-tema gelap
 
 #Masalah
 - [x] Jadikan tema dalil semua tentang sholat menjadi 1 tema saja (tidak terpisah-pisah) (dikerjakan di akun-3)
@@ -28,3 +39,4 @@ Ini adalah file untuk menyimpan beberapa informasi tentang website FathlyWeb
 - [x] Wordpress CMS (dikerjakan di akun-7) {Batal}
 
 #Workflow
+- Di sini ditulis apa yang akan diupdate ke depannya untuk website Fathlyweb ini
