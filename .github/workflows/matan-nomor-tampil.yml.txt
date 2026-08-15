@@ -1,0 +1,76 @@
+name: Perbarui Nomor Tampil Bait Matan
+
+# Jalan otomatis setiap ada perubahan pada file data matan (tambah/hapus/
+# gabung bait via CMS ataupun commit manual). Menghitung ulang field
+# "noTampil" pada SETIAP bait berdasarkan posisi urutannya di dalam file
+# (1, 2, 3, ... selalu berurutan tanpa celah) — supaya penomoran yang
+# tampil di CMS maupun website selalu rapi walau bait dihapus/digabung
+# di tengah, tanpa perlu diedit manual.
+#
+# PENTING: field "id" pada tiap bait TIDAK disentuh sama sekali oleh
+# workflow ini — id tetap permanen dan aman dipakai sistem (catatan,
+# highlight, dsb). Hanya "noTampil" (murni penanda visual) yang dihitung
+# ulang di sini.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/matan/data/jurumiyah.json'
+      - 'content/matan/data/arbain.json'
+      - 'content/matan/data/qawaidul-arba.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-nomor-tampil:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Hitung ulang noTampil berdasarkan posisi bait
+        run: |
+          node -e "
+            const fs = require('fs');
+            const files = [
+              'content/matan/data/jurumiyah.json',
+              'content/matan/data/arbain.json',
+              'content/matan/data/qawaidul-arba.json'
+            ];
+
+            for (const file of files) {
+              if (!fs.existsSync(file)) continue;
+
+              const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+              if (!Array.isArray(data.baits)) continue;
+
+              let changed = false;
+              data.baits.forEach((bait, i) => {
+                const expected = i + 1;
+                if (bait.noTampil !== expected) {
+                  bait.noTampil = expected;
+                  changed = true;
+                }
+              });
+
+              if (changed) {
+                fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
+                console.log(file + ': noTampil diperbarui untuk ' + data.baits.length + ' bait');
+              } else {
+                console.log(file + ': noTampil sudah sesuai, tidak ada perubahan');
+              }
+            }
+          "
+
+      - name: Commit perubahan (kalau ada)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/matan/data/jurumiyah.json content/matan/data/arbain.json content/matan/data/qawaidul-arba.json
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan pada nomor tampil — tidak perlu commit."
+          else
+            git commit -m "chore: perbarui nomor tampil bait matan otomatis"
+            git push
+          fi

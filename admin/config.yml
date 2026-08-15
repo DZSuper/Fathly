@@ -281,10 +281,11 @@ collections:
           - name: "baits"
             label: "Daftar Bait"
             widget: "list"
-            summary: "{{fields.id}} — {{fields.arab}}"
+            summary: "#{{fields.noTampil}} — {{fields.arab}}"
             hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
             fields:
-              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - {name: "id", label: "ID Bait (permanen — JANGAN diubah/dirapikan ulang; dipakai sistem untuk catatan & highlight pengguna)", widget: "number", value_type: "int", hint: "Angka mulai dari 0. Untuk bait BARU: isi dengan angka terakhir + 1. JANGAN mengubah id bait yang sudah ada meski urutan bait dihapus/digabung di tengah."}
+              - {name: "noTampil", label: "Nomor Tampil (otomatis, jangan diisi manual)", widget: "hidden", default: 0}
               - name: "babId"
                 label: "ID Bab"
                 widget: "relation"
@@ -321,10 +322,11 @@ collections:
           - name: "baits"
             label: "Daftar Bait"
             widget: "list"
-            summary: "{{fields.id}} — {{fields.arab}}"
+            summary: "#{{fields.noTampil}} — {{fields.arab}}"
             hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
             fields:
-              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - {name: "id", label: "ID Bait (permanen — JANGAN diubah/dirapikan ulang; dipakai sistem untuk catatan & highlight pengguna)", widget: "number", value_type: "int", hint: "Angka mulai dari 0 (atau lanjutan penomoran file ini). Untuk bait BARU: isi dengan angka terakhir + 1. JANGAN mengubah id bait yang sudah ada meski urutan bait dihapus/digabung di tengah."}
+              - {name: "noTampil", label: "Nomor Tampil (otomatis, jangan diisi manual)", widget: "hidden", default: 0}
               - name: "babId"
                 label: "ID Bab"
                 widget: "relation"
@@ -361,10 +363,11 @@ collections:
           - name: "baits"
             label: "Daftar Bait (Hadits)"
             widget: "list"
-            summary: "{{fields.id}} — {{fields.arab}}"
+            summary: "#{{fields.noTampil}} — {{fields.arab}}"
             hint: "Urutan di sini = urutan tampil, HARUS berurutan mengikuti Daftar Bab di atas."
             fields:
-              - {name: "id", label: "Nomor Urut (angka, mulai dari 0)", widget: "number", value_type: "int"}
+              - {name: "id", label: "ID Bait (permanen — JANGAN diubah/dirapikan ulang; dipakai sistem untuk catatan & highlight pengguna)", widget: "number", value_type: "int", hint: "Angka mulai dari 0. Untuk bait BARU: isi dengan angka terakhir + 1. JANGAN mengubah id bait yang sudah ada meski urutan bait dihapus/digabung di tengah."}
+              - {name: "noTampil", label: "Nomor Tampil (otomatis, jangan diisi manual)", widget: "hidden", default: 0}
               - name: "babId"
                 label: "ID Bab"
                 widget: "relation"
