@@ -680,6 +680,270 @@
           "status": "ada"
         }
       ]
+    },
+    {
+      "id": "d19",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-A'raf: 31",
+      "arab": "يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ",
+      "terjemahan": "Wahai anak cucu Adam, pakailah pakaianmu yang indah pada setiap (memasuki) masjid.",
+      "tema": [
+        "sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini turun berkaitan dengan kebiasaan sebagian orang jahiliyah yang melakukan thawaf di Ka'bah dalam keadaan telanjang. Allah memerintahkan agar menutup aurat dan berpakaian pantas setiap kali hendak beribadah, termasuk ketika mengerjakan sholat."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Kata زِينَتَكُمْ (perhiasan/pakaianmu) mencakup pakaian yang menutup aurat sekaligus pakaian yang baik dan pantas dipakai, menunjukkan disyariatkannya berpakaian rapi ketika sholat, bukan sekadar menutup aurat dengan seadanya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Para fuqaha menjadikan ayat ini sebagai salah satu dalil pokok bahwa menutup aurat merupakan syarat sah sholat, yang batasannya dirinci lebih lanjut dalam hadits-hadits lain—berbeda antara aurat laki-laki dan perempuan."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d20",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Ubadah bin Shamit",
+      "kitab": "Bukhari",
+      "arab": "لَا صَلَاةَ لِمَنْ لَمْ يَقْرَأْ بِفَاتِحَةِ الْكِتَابِ",
+      "terjemahan": "Tidak sah sholat bagi orang yang tidak membaca Al-Fatihah (dalam sholatnya).",
+      "tema": [
+        "sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menjadi dalil pokok wajibnya membaca Al-Fatihah pada setiap rakaat sholat, sebagai salah satu rukun qauli (ucapan) yang tidak bisa digantikan surat atau bacaan lain."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Ulama berbeda pendapat mengenai kewajiban bacaan Al-Fatihah bagi makmum di belakang imam pada sholat jahriyah (yang dikeraskan bacaannya), namun jumhur ulama tetap mewajibkannya bagi setiap orang yang sholat, baik sebagai imam, makmum, maupun sholat sendirian."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini menjadi dalil bahwa Al-Fatihah adalah rukun sholat yang tidak boleh ditinggalkan, sehingga sholat yang di dalamnya tidak dibaca Al-Fatihah tanpa udzur syar'i dianggap tidak sah dan wajib diulang."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "756",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "394",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d21",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Muslim, dari Jabir bin Abdillah",
+      "kitab": "Muslim",
+      "arab": "بَيْنَ الرَّجُلِ وَبَيْنَ الشِّرْكِ وَالْكُفْرِ تَرْكُ الصَّلَاةِ",
+      "terjemahan": "Batas antara seseorang dengan kesyirikan dan kekufuran adalah meninggalkan sholat.",
+      "tema": [
+        "sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menjadi salah satu dalil bagi ulama—di antaranya sebagian ulama salaf—yang berpendapat bahwa meninggalkan sholat secara sengaja tanpa udzur termasuk bentuk kekufuran, karena besarnya kedudukan sholat sebagai pembeda antara iman dan kekufuran."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnul Qayyim",
+          "kitab": "Kitab Ash-Shalah",
+          "isi": "Meninggalkan sholat adalah dosa besar yang sangat berbahaya, dan berbagai nash syariat menjadikannya pembeda utama antara seorang mukmin dengan orang kafir, sekalipun pelakunya mengaku beriman dalam hatinya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Ulama berbeda pendapat mengenai jenis kekufuran yang dimaksud dalam hadits ini—apakah kufur akbar (mengeluarkan seseorang dari Islam) atau kufur ashghar (dosa besar yang tidak sampai mengeluarkan dari Islam)—namun seluruhnya sepakat bahwa meninggalkan sholat adalah perkara yang sangat besar bahayanya."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Muslim",
+          "no": "82",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d22",
+      "sumber": "quran",
+      "grade": "shahih",
+      "rujukan": "QS. Al-Jumu'ah: 9",
+      "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا نُودِيَ لِلصَّلَاةِ مِن يَوْمِ الْجُمُعَةِ فَاسْعَوْا إِلَىٰ ذِكْرِ اللَّهِ وَذَرُوا الْبَيْعَ",
+      "terjemahan": "Wahai orang-orang yang beriman, apabila diseru untuk melaksanakan sholat pada hari Jum'at, maka bersegeralah kamu mengingat Allah dan tinggalkanlah jual beli.",
+      "tema": [
+        "sholat"
+      ],
+      "kitab": null,
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Katsir",
+          "kitab": "Tafsir Al-Qur'an Al-'Azhim",
+          "isi": "Ayat ini menjadi dalil wajibnya sholat Jum'at bagi laki-laki muslim yang mukim dan tidak memiliki udzur, dengan perintah meninggalkan aktivitas duniawi seperti jual beli begitu adzan Jum'at dikumandangkan."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "As-Sa'di",
+          "kitab": "Taisir Al-Karim Ar-Rahman",
+          "isi": "Kata فَاسْعَوْا (bersegeralah) dalam ayat ini dimaknai bersegera secara maknawi, yaitu kesungguhan hati dan langkah menuju sholat, bukan berlari secara fisik—karena Nabi ﷺ justru melarang umatnya tergesa-gesa berlari menuju sholat."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Ayat",
+          "kitab": null,
+          "isi": "Ayat ini menjadi dasar hukum fiqih bahwa transaksi jual beli yang dilakukan setelah adzan kedua Jum'at dikumandangkan, bagi orang yang wajib menghadirinya, hukumnya makruh bahkan sebagian ulama menegaskan haram sampai selesai menunaikan sholat Jum'at."
+        }
+      ],
+      "takhrij": []
+    },
+    {
+      "id": "d23",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Muslim, dari Abu Hurairah",
+      "kitab": "Muslim",
+      "arab": "أَفْضَلُ الصَّلَاةِ بَعْدَ الْفَرِيضَةِ صَلَاةُ اللَّيْلِ",
+      "terjemahan": "Sholat yang paling utama setelah sholat wajib adalah sholat malam.",
+      "tema": [
+        "sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menunjukkan keutamaan besar sholat sunnah di malam hari (qiyamul lail/tahajjud) dibandingkan sholat-sholat sunnah lainnya, karena dikerjakan pada waktu yang penuh kekhusyukan, sunyi, dan jauh dari riya."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Para ulama menjelaskan bahwa keutamaan sholat malam ini juga disebabkan perjuangan melawan rasa kantuk dan kenyamanan tidur untuk bangun beribadah, sehingga pahalanya lebih besar dibanding sholat sunnah yang dikerjakan di siang hari."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Muslim",
+          "no": "1163",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d24",
+      "sumber": "hadits",
+      "grade": "hasan",
+      "rujukan": "HR. Abu Dawud & Ibnu Majah, dari Ummu Salamah",
+      "kitab": "Abu Dawud",
+      "arab": "الصَّلَاةَ الصَّلَاةَ وَمَا مَلَكَتْ أَيْمَانُكُمْ",
+      "terjemahan": "(Jagalah) sholat, sholat, dan (peliharalah hak) budak-budak yang kalian miliki.",
+      "tema": [
+        "sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnul Qayyim",
+          "kitab": "Zadul Ma'ad",
+          "isi": "Kalimat ini adalah wasiat terakhir Rasulullah ﷺ yang terus beliau ulang-ulang menjelang wafatnya, hingga lisan beliau nyaris tak mampu lagi mengucapkannya dengan jelas—menunjukkan betapa besar perhatian beliau terhadap penjagaan sholat sampai akhir hayat."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini menjadi dalil bahwa sholat adalah wasiat paling penting yang diwariskan Nabi ﷺ kepada umatnya sebelum wafat, sehingga sudah sepantasnya sholat menjadi prioritas utama dalam kehidupan setiap muslim, melebihi urusan-urusan duniawi lainnya."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Sunan Abu Dawud",
+          "no": "5156",
+          "status": "ada"
+        },
+        {
+          "kitab": "Sunan Ibnu Majah",
+          "no": "2698",
+          "status": "ada"
+        }
+      ]
+    },
+    {
+      "id": "d25",
+      "sumber": "hadits",
+      "grade": "shahih",
+      "rujukan": "HR. Bukhari & Muslim, dari Abu Hurairah",
+      "kitab": "Bukhari",
+      "arab": "ارْجِعْ فَصَلِّ فَإِنَّكَ لَمْ تُصَلِّ",
+      "terjemahan": "Kembalilah dan sholatlah lagi, karena sesungguhnya engkau belum sholat (dengan benar).",
+      "tema": [
+        "sholat"
+      ],
+      "tafsirBanding": [
+        {
+          "jenis": "tafsir",
+          "ulama": "Ibnu Hajar Al-Asqalani",
+          "kitab": "Fathul Bari",
+          "isi": "Kisah ini terjadi ketika Nabi ﷺ melihat seorang sahabat mengerjakan sholat dengan tergesa-gesa tanpa thumakninah (ketenangan) pada ruku' dan sujudnya, sehingga Nabi ﷺ memerintahkannya untuk mengulang sholat tersebut hingga tiga kali."
+        },
+        {
+          "jenis": "tafsir",
+          "ulama": "An-Nawawi",
+          "kitab": "Syarh Shahih Muslim",
+          "isi": "Hadits ini menjadi dalil pokok wajibnya thumakninah, yaitu diam sejenak dengan tenang pada setiap rukun fi'li (perbuatan) sholat seperti ruku', i'tidal, sujud, dan duduk di antara dua sujud—bukan sekadar gerakan yang tergesa-gesa."
+        },
+        {
+          "jenis": "faedah",
+          "ulama": "Faedah Hadits",
+          "kitab": null,
+          "isi": "Hadits ini dikenal di kalangan ulama sebagai hadits musii' fi shalatih (kisah orang yang buruk sholatnya), dan menjadi rujukan utama para fuqaha dalam merinci rukun-rukun perbuatan sholat yang wajib dikerjakan dengan tenang dan sempurna, bukan asal cepat selesai."
+        }
+      ],
+      "takhrij": [
+        {
+          "kitab": "Shahih Bukhari",
+          "no": "757",
+          "status": "ada"
+        },
+        {
+          "kitab": "Shahih Muslim",
+          "no": "397",
+          "status": "ada"
+        }
+      ]
     }
   ]
 }
